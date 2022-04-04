@@ -1,1 +1,1 @@
-# lontreau-shopify
+# Lontreau Shopify
