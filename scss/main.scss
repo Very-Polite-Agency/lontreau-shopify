@@ -1,116 +1,156 @@
 // If you want to include a CSS file from NPM, when you import the file, omit the '.css' portion of the file path
 
 //////////////////////////////////////////////////////////
-////  Sass Modules
-//////////////////////////////////////////////////////////
-
-@use "sass:color";
-@use "sass:math";
-@use "sass:map";
-
-//////////////////////////////////////////////////////////
 ////  Variables & Mixins
 //////////////////////////////////////////////////////////
 
-@import './_variables.scss';
-@import './_mixins.scss';
+@import './variables.scss';
+@import './mixins.scss';
 
 //////////////////////////////////////////////////////////
-////  Vendor
+////  Theme CSS Variables
+//////////////////////////////////////////////////////////
+
+:root {
+
+  //////////////////////////////////////////////////////////
+  ////  Bootstrap
+  //////////////////////////////////////////////////////////
+
+  // ---------------------------------------- Gutter Width
+  --bs-gutter-width: #{ $grid-gutter-width };
+  --bs-gutter-x: #{ $grid-gutter-width };
+
+  // ---------------------------------------- Container Breakpoints
+  --bs-container-breakpoint--sm: #{ map-get( $grid-breakpoints, sm ) };
+  --bs-container-breakpoint--md: #{ map-get( $grid-breakpoints, md ) };
+  --bs-container-breakpoint--lg: #{ map-get( $grid-breakpoints, lg ) };
+  --bs-container-breakpoint--xl: #{ map-get( $grid-breakpoints, xl ) };
+  --bs-container-breakpoint--xxl: #{ map-get( $grid-breakpoints, xxl ) };
+
+  // ---------------------------------------- Container Max Widths
+  --bs-container-width--sm: #{ map-get( $container-max-widths, sm ) };
+  --bs-container-width--md: #{ map-get( $container-max-widths, md ) };
+  --bs-container-width--lg: #{ map-get( $container-max-widths, lg ) };
+  --bs-container-width--xl: #{ map-get( $container-max-widths, xl ) };
+  --bs-container-width--xxl: #{ map-get( $container-max-widths, xxl ) };
+
+  //////////////////////////////////////////////////////////
+  ////  Theme
+  //////////////////////////////////////////////////////////
+
+  // ---------------------------------------- Body Copy
+  --theme-body-copy: #{ map-get( $theme-body-copy-sizes, 'base' ) };
+  --theme-body-copy--sm: #{ map-get( $theme-body-copy-sizes, 'sm' ) };
+  --theme-body-copy--md: #{ map-get( $theme-body-copy-sizes, 'md' ) };
+  --theme-body-copy--lg: #{ map-get( $theme-body-copy-sizes, 'lg' ) };
+  --theme-body-copy--xl: #{ map-get( $theme-body-copy-sizes, 'xl' ) };
+  --theme-body-copy--xxl: #{ map-get( $theme-body-copy-sizes, 'xxl' ) };
+
+  // ---------------------------------------- Border
+  --theme-border-radius: #{ map-get( $theme-border, 'radius' ) };
+  --theme-border-width: #{ map-get( $theme-border, 'width' ) };
+
+  // ---------------------------------------- Button | Font Size
+  --theme-button-font-size: #{ map-get( $theme-button-font-sizes, base ) };
+  --theme-button-font-size--sm: #{ map-get( $theme-button-font-sizes, sm ) };
+  --theme-button-font-size--md: #{ map-get( $theme-button-font-sizes, md ) };
+  --theme-button-font-size--lg: #{ map-get( $theme-button-font-sizes, lg ) };
+  --theme-button-font-size--xl: #{ map-get( $theme-button-font-sizes, xl ) };
+  --theme-button-font-size--xxl: #{ map-get( $theme-button-font-sizes, xxl ) };
+
+  // ---------------------------------------- Button | Height
+  --theme-button-min-height: #{ map-get( $theme-button-min-heights, base ) };
+  --theme-button-min-height--sm: #{ map-get( $theme-button-min-heights, sm ) };
+  --theme-button-min-height--md: #{ map-get( $theme-button-min-heights, md ) };
+  --theme-button-min-height--lg: #{ map-get( $theme-button-min-heights, lg ) };
+  --theme-button-min-height--xl: #{ map-get( $theme-button-min-heights, xl ) };
+  --theme-button-min-height--xxl: #{ map-get( $theme-button-min-heights, xxl ) };
+
+  // ---------------------------------------- Button | Height
+  --theme-button-min-width: #{ map-get( $theme-button-min-widths, base ) };
+  --theme-button-min-width--sm: #{ map-get( $theme-button-min-widths, sm ) };
+  --theme-button-min-width--md: #{ map-get( $theme-button-min-widths, md ) };
+  --theme-button-min-width--lg: #{ map-get( $theme-button-min-widths, lg ) };
+  --theme-button-min-width--xl: #{ map-get( $theme-button-min-widths, xl ) };
+  --theme-button-min-width--xxl: #{ map-get( $theme-button-min-widths, xxl ) };
+
+  // ---------------------------------------- Colours
+  --theme-colour-black: #{ hexToRGB( map-get( $theme-colours, 'black' ) ) };
+  --theme-colour-forrest: #{ hexToRGB( map-get( $theme-colours, 'forrest' ) ) };
+  --theme-colour-grass: #{ hexToRGB( map-get( $theme-colours, 'grass' ) ) };
+  --theme-colour-white: #{ hexToRGB( map-get( $theme-colours, 'white' ) ) };
+
+  // ---------------------------------------- Container
+  --theme-container--sm: #{ map-get( $container-max-widths, 'sm' ) };
+  --theme-container--md: #{ map-get( $container-max-widths, 'md' ) };
+  --theme-container--lg: #{ map-get( $container-max-widths, 'lg' ) };
+  --theme-container--xl: #{ map-get( $container-max-widths, 'xl' ) };
+  --theme-container--xxl: #{ map-get( $container-max-widths, 'xxl' ) };
+
+  // ---------------------------------------- Header
+  --theme-header-height: #{ map-get( $theme-header-heights, 'base' ) };
+  --theme-header-height--sm: #{ map-get( $theme-header-heights, 'sm' ) };
+  --theme-header-height--md: #{ map-get( $theme-header-heights, 'md' ) };
+  --theme-header-height--lg: #{ map-get( $theme-header-heights, 'lg' ) };
+  --theme-header-height--xl: #{ map-get( $theme-header-heights, 'xl' ) };
+  --theme-header-height--xxl: #{ map-get( $theme-header-heights, 'xxl' ) };
+
+  // ---------------------------------------- Icon
+  --theme-icon-size-social: 32px;
+
+  // ---------------------------------------- Font Families
+  --theme-font-family--sans-serif: sans-serif;
+  --theme-font-family--serif: sans-serif;
+  --theme-font-family--display: serif;
+
+  --theme-font-family--sans-serif--primary: sans-serif;
+  --theme-font-family--serif--primary: serif;
+
+  // ---------------------------------------- Transitions
+  --theme-transition-duration: 300ms;
+  --theme-transition-opacity: 0.3333;
+
+}
+
+//////////////////////////////////////////////////////////
+////  Vendors
 //////////////////////////////////////////////////////////
 
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/@glidejs/glide/dist/css/glide.core.min';
-@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
-@import '../node_modules/nouislider/dist/nouislider';
+// @import '../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
 @import '../node_modules/aos/dist/aos';
-@import '../node_modules/flexmasonry/dist/flexmasonry';
 
 //////////////////////////////////////////////////////////
 ////  Component
 //////////////////////////////////////////////////////////
 
-// checked && nu
-@import './components/about-us.scss';
+@import './components/body-copy.scss';
 @import './components/button.scss';
 @import './components/card.scss';
 @import './components/collapsible.scss';
-@import './components/dynamic-grid.scss';
 @import './components/field.scss';
 @import './components/form.scss';
-@import './components/grid-listing.scss';
+@import './components/heading.scss';
 @import './components/input.scss';
-@import './components/instagram-feed.scss';
-@import './components/intro-para.scss';
-@import './components/intro.scss';
-@import './components/job-application.scss';
-@import './components/job-listing.scss';
-@import './components/label.scss';
-@import './components/listing.scss';
-@import './components/micro-modal.scss';
-@import './components/micro-modal-customization.scss';
-@import './components/offset-list.scss';
-@import './components/pagination.scss';
-@import './components/project-filters.scss';
-@import './components/select.scss';
-@import './components/services.scss';
-@import './components/soul.scss';
-@import './components/textarea.scss';
-
-
-
-@import './components/adjacent-posts.scss';
-@import './components/before-after.scss';
-@import './components/callout.scss';
-@import './components/cta.scss';
-@import './components/cta-feature.scss';
-@import './components/fifty-fifty.scss';
-@import './components/fixed-background.scss';
-@import './components/gallery.scss';
-@import './components/glide.scss';
-@import './components/hero.scss';
-@import './components/images.scss';
-@import './components/job-listing.scss';
 @import './components/lazyload.scss';
 @import './components/link.scss';
-
-@import './components/masonry.scss';
 @import './components/navigation.scss';
-@import './components/newspaper.scss';
-@import './components/offset-grid.scss';
-@import './components/placeholder.scss';
-@import './components/post-meta.scss';
-@import './components/post-preview.scss';
-@import './components/project-listing.scss';
-@import './components/project-preview';
-@import './components/section.scss';
-@import './components/share-this.scss';
-@import './components/shop-room.scss';
-@import './components/social-accounts.scss';
-@import './components/svg.scss';
-@import './components/text-feature.scss';
-@import './components/testimonials.scss';
-@import './components/vr.scss';
+@import './components/pagination.scss';
+@import './components/select.scss';
+@import './components/textarea.scss';
 
 //////////////////////////////////////////////////////////
 ////  Theme
 //////////////////////////////////////////////////////////
 
-@import './theme/animations.scss';
-@import './theme/archive.scss';
-@import './theme/articles.scss';
-@import './theme/blog-post.scss';
+@import './theme/404.scss';
+@import './theme/article.scss';
+@import './theme/blog.scss';
 @import './theme/body.scss';
-@import './theme/category.scss';
-@import './theme/error-404.scss';
+@import './theme/collection.scss';
 @import './theme/footer.scss';
-@import './theme/fonts.scss';
 @import './theme/header.scss';
-@import './theme/index.scss';
-@import './theme/mobile-menu.scss';
 @import './theme/page.scss';
-@import './theme/page.contact-us.scss';
-@import './theme/page.post-listing.scss';
-@import './theme/project.scss';
-@import './theme/taxonomy.scss';
-@import './theme/typography.scss';
+@import './theme/product.scss';

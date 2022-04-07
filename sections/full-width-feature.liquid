@@ -1,4 +1,21 @@
-<h1>Full Width Feature</h1>
+{% assign section_name = 'full-width-feature' %}
+
+{% assign title = section.settings.title | default: '' %}
+{% assign message = section.settings.message | default: '' %}
+
+<div class="{{ section_name }}" id="{{ section.id }}">
+  {% render 'layout--container' %}
+
+    {% if title != blank %}
+      <h3>{{ title }}</h3>
+    {% endif %}
+
+    {% if message != blank %}
+      <div>{{ message }}</div>
+    {% endif %}
+
+  {% render 'layout--container', state: 'closed' %}
+</div>
 
 {% schema %}
 {

@@ -51,9 +51,7 @@
 
     {% render 'theme--css-variables' %}
 
-    {{ 'base.css' | asset_url | stylesheet_tag }}
-
-    {% comment %} Include Pre-load Fonts{% endcomment %}
+    {{ 'main.css' | asset_url | stylesheet_tag }}
 
     {% comment %}
       ## Do we need this

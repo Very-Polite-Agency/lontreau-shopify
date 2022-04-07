@@ -1,0 +1,22 @@
+{% comment %}
+
+  Use snippet like so...
+
+  {%
+    render 'layout--container',
+    state: 'open',
+    col: 'col-12',
+    container: 'container-fluid'
+  %}
+
+{% endcomment %}
+
+{% assign state = state | default: 'open' %}
+{% assign container = container | default: 'container' %}
+{% assign col = col | default: 'col-12' %}
+
+{%- if state == 'open' -%}
+  <div class="{{ container }}"><div class="row"><div class="{{ col }}">
+{%- else -%}
+  </div></div></div>
+{%- endif -%}
