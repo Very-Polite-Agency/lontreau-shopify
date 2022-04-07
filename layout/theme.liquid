@@ -1,20 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="">
-    <link rel="canonical" href="{{ canonical_url }}">
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-
-    {%- if settings.favicon != blank -%}
-      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
-    {%- endif -%}
-
-    {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
-      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
-    {%- endunless -%}
 
     <title>
       {{ page_title }}
@@ -23,17 +9,47 @@
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
 
-    {% if page_description %}
-      <meta name="description" content="{{ page_description | escape }}">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta name="author" content="Very Polite">
+  	<meta http-equiv="Expires" content="7" />
+
+    <!-- Cannoical URL -->
+  	<link rel='canonical' href='{{ canonical_url }}'>
+
+    <!-- Icons -->
+    <link href='{{ "favicon.ico" | asset_url }}' type='image/x-icon' rel='shortcut icon' />
+    <link href='{{ "apple-touch-icon.png" | asset_url }}' type='image/png' rel='apple-touch-icon'>
+
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href='//www.google-analytics.com'>
+
+    <!-- Preconnect -->
+    <link rel='preconnect' href='https://fonts.googleapis.com' crossorigin>
+    <link rel='preconnect' href='https://ajax.googleapis.com' crossorigin>
+    <link rel='preconnect' href='https://cdn.shopify.com' crossorigin>
+    <link rel='preconnect' href='https://v.shopify.com' crossorigin>
+
+    <!-- Preload Fonts  -->
+    {% render 'theme--preload-fonts', fonts: 'Sample, Sample2, Sampl3' %}
+
+    <!-- SEO -->
+    {% assign enable_seo = true %}
+    {% if enable_seo %}
+      {% if page_description %}
+        <meta name="description" content="{{ page_description | escape }}">
+      {% endif %}
+      {% render 'theme--meta-tags' %}
+    {% else %}
+  		<meta name="robots" content="noindex, nofollow">
     {% endif %}
 
-    {% render 'meta-tags' %}
-
-    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'vendors.min.js' | asset_url }}" async></script>
 
     {{ content_for_header }}
 
-    {% render 'theme-css-variables' %}
+    {% render 'theme--css-variables' %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
@@ -71,6 +87,8 @@
         <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
       {%- endif -%}
     {% endcomment %}
+
+    <script src="{{ 'main.min.js' | asset_url }}" defer></script>
 
   </body>
 </html>

@@ -1,0 +1,268 @@
+@use "sass:color";
+@use "sass:math";
+@use "sass:map";
+
+//////////////////////////////////////////////////////////
+////  SCSS | Vendors Customization
+//////////////////////////////////////////////////////////
+
+@import 'components/_hamburger.scss';
+
+//////////////////////////////////////////////////////////
+////  SCSS | Functions & Mixins
+//////////////////////////////////////////////////////////
+
+@function hexToRGB( $hex: false ) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+//////////////////////////////////////////////////////////
+////  SCSS | Vars
+//////////////////////////////////////////////////////////
+
+// ---------------------------------------- Theme Info
+$theme-info: (
+  'author': 'Very Polite Agency',
+  'name': 'Studio D',
+  'uri': 'https://weareverypolite.com',
+  'desc': 'Detail oriented, beautifully complex, yet overwhelmingly simple. Less is more, fully responsive and most certainly mobile first.',
+  'version': '2.0',
+);
+
+// ---------------------------------------- Typography | Body Copy
+$theme-body-copy-sizes: (
+  'base': 15px,
+  'sm': 15px,
+  'md': 17px,
+  'lg': 14px,
+  'xl': 16px,
+  'xxl': 18px
+);
+
+// ---------------------------------------- Border Radius
+$theme-border: (
+  'radius': 4px,
+  'width': 1px,
+);
+
+// ---------------------------------------- Button | Font Size
+$theme-button-font-sizes: (
+  'base': 13px,
+  'sm': 14px,
+  'md': 15px,
+  'lg': 13px,
+  'xl': 14px,
+  'xxl': 15px
+);
+
+// ---------------------------------------- Button | Height
+$theme-button-min-heights: (
+  'base': 40px,
+  'sm': 42px,
+  'md': 44px,
+  'lg': 40px,
+  'xl': 42px,
+  'xxl': 44px
+);
+
+// ---------------------------------------- Button | Height
+$theme-button-min-widths: (
+  'base': 136px,
+  'sm': 136px,
+  'md': 136px,
+  'lg': 116px,
+  'xl': 120px,
+  'xxl': 124px
+);
+
+// ---------------------------------------- Colours
+$theme-colours: (
+  'black': #000000,
+  'white': #ffffff,
+  'red': #FF000F,
+);
+
+// ---------------------------------------- Font Sizes | Heading
+$theme-field-min-heights: (
+  'base': 38px,
+  'sm': 38px,
+  'md': 38px,
+  'lg': 38px,
+  'xl': 38px,
+  'xxl': 38px,
+);
+
+// ---------------------------------------- Font Sizes | Heading
+$theme-font-sizes-heading: (
+  'base': 32px,
+  'sm': 42px,
+  'md': 52px,
+  'lg': 32px,
+  'xl': 42px,
+  'xxl': 52px
+);
+
+// ---------------------------------------- Header Height
+$theme-header-heights: (
+  'base': 100px,
+  'sm': 110px,
+  'md': 120px,
+  'lg': 90px,
+  'xl': 100px,
+  'xxl': 110px
+);
+
+// ---------------------------------------- Bootstrap | Gutter
+$grid-gutter-width: 20px;
+
+// ---------------------------------------- Bootstrap | Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// ---------------------------------------- Bootstrap | Container Sizes
+$container-max-widths: (
+  sm: 540px,
+  md: 740px,
+  lg: 960px,
+  xl: 1160px,
+  xxl: 1360px
+);
+
+//////////////////////////////////////////////////////////
+////  CSS | Variables
+//////////////////////////////////////////////////////////
+
+:root {
+
+  //////////////////////////////////////////////////////////
+  ////  Bootstrap
+  //////////////////////////////////////////////////////////
+
+  // ---------------------------------------- Gutter Width
+  --bs-gutter-width: #{ $grid-gutter-width };
+  --bs-gutter-x: #{ $grid-gutter-width };
+
+  // ---------------------------------------- Container Breakpoints
+  --bs-container-breakpoint--sm: #{ map-get( $grid-breakpoints, sm ) };
+  --bs-container-breakpoint--md: #{ map-get( $grid-breakpoints, md ) };
+  --bs-container-breakpoint--lg: #{ map-get( $grid-breakpoints, lg ) };
+  --bs-container-breakpoint--xl: #{ map-get( $grid-breakpoints, xl ) };
+  --bs-container-breakpoint--xxl: #{ map-get( $grid-breakpoints, xxl ) };
+
+  // ---------------------------------------- Container Max Widths
+  --bs-container-width--sm: #{ map-get( $container-max-widths, sm ) };
+  --bs-container-width--md: #{ map-get( $container-max-widths, md ) };
+  --bs-container-width--lg: #{ map-get( $container-max-widths, lg ) };
+  --bs-container-width--xl: #{ map-get( $container-max-widths, xl ) };
+  --bs-container-width--xxl: #{ map-get( $container-max-widths, xxl ) };
+
+  //////////////////////////////////////////////////////////
+  ////  Theme
+  //////////////////////////////////////////////////////////
+
+  // ---------------------------------------- Body Copy
+  --theme-body-copy: #{ map-get( $theme-body-copy-sizes, 'base' ) };
+  --theme-body-copy--sm: #{ map-get( $theme-body-copy-sizes, 'sm' ) };
+  --theme-body-copy--md: #{ map-get( $theme-body-copy-sizes, 'md' ) };
+  --theme-body-copy--lg: #{ map-get( $theme-body-copy-sizes, 'lg' ) };
+  --theme-body-copy--xl: #{ map-get( $theme-body-copy-sizes, 'xl' ) };
+  --theme-body-copy--xxl: #{ map-get( $theme-body-copy-sizes, 'xxl' ) };
+
+  // ---------------------------------------- Border
+  --theme-border-radius: #{ map-get( $theme-border, 'radius' ) };
+  --theme-border-width: #{ map-get( $theme-border, 'width' ) };
+
+  // ---------------------------------------- Button | Font Size
+  --theme-button-font-size: #{ map-get( $theme-button-font-sizes, base ) };
+  --theme-button-font-size--sm: #{ map-get( $theme-button-font-sizes, sm ) };
+  --theme-button-font-size--md: #{ map-get( $theme-button-font-sizes, md ) };
+  --theme-button-font-size--lg: #{ map-get( $theme-button-font-sizes, lg ) };
+  --theme-button-font-size--xl: #{ map-get( $theme-button-font-sizes, xl ) };
+  --theme-button-font-size--xxl: #{ map-get( $theme-button-font-sizes, xxl ) };
+
+  // ---------------------------------------- Button | Height
+  --theme-button-min-height: #{ map-get( $theme-button-min-heights, base ) };
+  --theme-button-min-height--sm: #{ map-get( $theme-button-min-heights, sm ) };
+  --theme-button-min-height--md: #{ map-get( $theme-button-min-heights, md ) };
+  --theme-button-min-height--lg: #{ map-get( $theme-button-min-heights, lg ) };
+  --theme-button-min-height--xl: #{ map-get( $theme-button-min-heights, xl ) };
+  --theme-button-min-height--xxl: #{ map-get( $theme-button-min-heights, xxl ) };
+
+  // ---------------------------------------- Button | Height
+  --theme-button-min-width: #{ map-get( $theme-button-min-widths, base ) };
+  --theme-button-min-width--sm: #{ map-get( $theme-button-min-widths, sm ) };
+  --theme-button-min-width--md: #{ map-get( $theme-button-min-widths, md ) };
+  --theme-button-min-width--lg: #{ map-get( $theme-button-min-widths, lg ) };
+  --theme-button-min-width--xl: #{ map-get( $theme-button-min-widths, xl ) };
+  --theme-button-min-width--xxl: #{ map-get( $theme-button-min-widths, xxl ) };
+
+  // ---------------------------------------- Colours
+  --theme-colour-black: #{ hexToRGB( map-get( $theme-colours, 'black') ) };
+  --theme-colour-white: #{ hexToRGB( map-get( $theme-colours, 'white') ) };
+  --theme-colour-red: #{ hexToRGB( map-get( $theme-colours, 'red') ) };
+
+  // ---------------------------------------- Container
+  --theme-container--sm: #{ map-get( $container-max-widths, 'sm' ) };
+  --theme-container--md: #{ map-get( $container-max-widths, 'md' ) };
+  --theme-container--lg: #{ map-get( $container-max-widths, 'lg' ) };
+  --theme-container--xl: #{ map-get( $container-max-widths, 'xl' ) };
+  --theme-container--xxl: #{ map-get( $container-max-widths, 'xxl' ) };
+
+  // ---------------------------------------- Glider
+  --theme-glider-bullet-size: 6px;
+
+  // ---------------------------------------- Field Sizes
+  --theme-field-min-height: #{ map-get( $theme-field-min-heights, 'base' ) };
+  --theme-field-min-height--sm: #{ map-get( $theme-field-min-heights, 'sm' ) };
+  --theme-field-min-height--md: #{ map-get( $theme-field-min-heights, 'md' ) };
+  --theme-field-min-height--lg: #{ map-get( $theme-field-min-heights, 'lg' ) };
+  --theme-field-min-height--xl: #{ map-get( $theme-field-min-heights, 'xl' ) };
+  --theme-field-min-height--xxl: #{ map-get( $theme-field-min-heights, 'xxl' ) };
+
+  // ---------------------------------------- Header
+  --theme-header-height: #{ map-get( $theme-header-heights, 'base' ) };
+  --theme-header-height--sm: #{ map-get( $theme-header-heights, 'sm' ) };
+  --theme-header-height--md: #{ map-get( $theme-header-heights, 'md' ) };
+  --theme-header-height--lg: #{ map-get( $theme-header-heights, 'lg' ) };
+  --theme-header-height--xl: #{ map-get( $theme-header-heights, 'xl' ) };
+  --theme-header-height--xxl: #{ map-get( $theme-header-heights, 'xxl' ) };
+
+  // ---------------------------------------- Font Families
+  --theme-font-family--sans-serif: sans-serif;
+  --theme-font-family--serif: sans-serif;
+  --theme-font-family--display: serif;
+
+  --theme-font-family--sans-serif--neue-montreal: 'Neue Montreal', sans-serif; // 300, 300i, normal, normali, bold, boldi
+
+  --theme-font-family--serif--gt-alpina: 'GT Alpina', serif; // 100, 300, normal
+  --theme-font-family--serif--gt-alpina-fine: 'GT Alpina Fine', serif; // 100
+
+  --theme-header-height--total: auto;
+
+  // ---------------------------------------- Hover
+  --theme-hover-opacity: 0.6666;
+  --theme-hover-opacity--light: 0.6;
+  --theme-hover-opacity--heavy: 0.3;
+
+  // ---------------------------------------- Section Margins
+  --theme-section-margin: 65px;
+  --theme-section-margin--sm: 70px;
+  --theme-section-margin--md: 75px;
+  --theme-section-margin--lg: 100px;
+  --theme-section-margin--xl: 110px;
+  --theme-section-margin--xxl: 120px;
+
+  // ---------------------------------------- Transitions
+  --theme-transition-duration: 300ms;
+  --theme-transition-delay: 0ms;
+
+  // ---------------------------------------- Viewport
+  --theme-viewport-height--total: auto;
+
+}

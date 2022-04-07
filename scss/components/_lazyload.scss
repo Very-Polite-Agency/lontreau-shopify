@@ -1,0 +1,61 @@
+//////////////////////////////////////////////////////////
+////  Lazy Loader | Vars
+//////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////
+////  Lazy Loader | Styles
+//////////////////////////////////////////////////////////
+
+.lazyload-item {
+
+  transition-property: opacity;
+	opacity: 0;
+	display: block;
+
+	&--inline {
+  	height: auto;
+  	width: 100%;
+	}
+
+  &--background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &.lazyload-item--image {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &.lazyload-item--video {
+      object-position: center center;
+      object-fit: cover;
+    }
+  }
+
+  &--image {}
+
+  &--video {}
+
+	&.lazyloaded {
+    opacity: 1;
+	}
+
+	$base: 50;
+	$step: 50;
+  @while $base < 4000 {
+
+    &[data-transition-duration='#{$base}'] {
+      transition-duration: $base * 1ms
+    }
+
+    &[data-transition-delay='#{$base}'] {
+      transition-delay: $base * 1ms
+    }
+
+    $base: $base + $step;
+
+  }
+
+} // .lazyload-item

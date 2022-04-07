@@ -1,0 +1,244 @@
+//////////////////////////////////////////////////////////
+////  Mixins
+//////////////////////////////////////////////////////////
+
+@mixin clearfix {
+	clear: both;
+	&:after{
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+  }
+}
+
+@mixin keyframes( $animation-name ) {
+  @keyframes #{$animation-name} { @content; }
+}
+
+@mixin animation( $str ) {
+  animation: #{$str};
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
+}
+
+@mixin greysacle( $value ) {
+  filter:#{"grayscale(#{$value})"};
+}
+
+@mixin brightness( $value ) {
+  filter: brightness( $value );
+}
+
+@function lighten( $color, $percentage ) {
+  @return mix( white, $color, $percentage );
+}
+
+@function darken( $color, $percentage ) {
+  @return mix( black, $color, $percentage );
+}
+
+//////////////////////////////////////////////////////////
+////  UI/UX | Button
+//////////////////////////////////////////////////////////
+
+@mixin button( $style: 'default' ) {
+
+  transition:
+    background var(--theme-transition-duration),
+    border var(--theme-transition-duration),
+    color var(--theme-transition-duration),
+    height var(--theme-transition-duration),
+    opacity var(--theme-transition-duration);
+  display: inline-flex;
+  width: auto;
+  align-items: center;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+
+  span {
+    display: block;
+    & + span {
+      margin-left: 7px;
+    }
+  }
+
+  svg {
+    fill: currentColor;
+    display: block;
+    height: 100%;
+    width: auto;
+  }
+
+  .button__icon {
+    transition: transform var(--theme-transition-duration);
+    transform: translate3d( 0, 0, 0 );
+    height: 7px;
+    width: auto;
+  }
+
+  .button__title {
+    line-height: 1;
+  }
+
+  @if $style == 'primary' {
+    @include post-subtitle();
+    border: 1px solid transparent;
+    color: rgba( var(--theme-colour-black), 1 );
+    min-height: 40px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    &:active,
+    &:focus,
+    &:hover {
+      opacity: var(--theme-hover-opacity--heavy);
+    }
+  }
+
+  @if $style == 'primary-outlined' {
+    @include post-subtitle();
+    border: 1px solid rgba( var(--theme-colour-black), 1 );
+    color: rgba( var(--theme-colour-black), 1 );
+    min-height: 40px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    &:active,
+    &:focus,
+    &:hover {
+      opacity: var(--theme-hover-opacity--heavy);
+    }
+  }
+
+}
+
+//////////////////////////////////////////////////////////
+////  UI/UX | Breakpoints
+//////////////////////////////////////////////////////////
+
+@mixin breakpoints( $size ) {
+
+  @if $size == sm {
+	  @media (min-width: map-get( $grid-breakpoints, sm )) { @content; }
+  }
+
+  @else if $size == md {
+    @media (min-width: map-get( $grid-breakpoints, md )) { @content; }
+  }
+
+  @else if $size == lg {
+    @media (min-width: map-get( $grid-breakpoints, lg )) { @content; }
+  }
+
+  @else if $size == xl {
+    @media (min-width: map-get( $grid-breakpoints, xl )) { @content; }
+  }
+
+  @else if $size == xxl {
+    @media (min-width: map-get( $grid-breakpoints, xxl )) { @content; }
+  }
+
+}
+
+//////////////////////////////////////////////////////////
+////  Typography | Body Copy
+//////////////////////////////////////////////////////////
+
+// ---------------------------------------- Body Copy
+@mixin body-copy( $font-size-modifier: 1, $line-height: 1.2, $font-weight: normal ) {
+
+  font-size: calc( var(--theme-body-copy) * #{$font-size-modifier} );
+  font-weight: $font-weight;
+  line-height: $line-height;
+
+  @include media-breakpoint-up(sm) {
+    font-size: calc( var(--theme-body-copy--sm) * #{$font-size-modifier} );
+  } // min width sm
+
+  @include media-breakpoint-up(md) {
+    font-size: calc( var(--theme-body-copy--md) * #{$font-size-modifier} );
+  } // min width md
+
+  @include media-breakpoint-up(lg) {
+    font-size: calc( var(--theme-body-copy--lg) * #{$font-size-modifier} );
+  } // min width lg
+
+  @include media-breakpoint-up(xl) {
+    font-size: calc( var(--theme-body-copy--xl) * #{$font-size-modifier} );
+  } // min width xl
+
+  @include media-breakpoint-up(xxl) {
+    font-size: calc( var(--theme-body-copy--xxl) * #{$font-size-modifier} );
+  } // min width xxl
+
+}
+
+// ---------------------------------------- Subtitle
+@mixin post-subtitle( $font-size-modifier: 1 ) {
+
+  font-family: var(--theme-font-family--sans-serif--neue-montreal);
+  color: rgba(var(--theme-colour-black), 1 );
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px * $font-size-modifier;
+
+  @include breakpoints(sm) {} // min width sm
+
+  @include breakpoints(md) {} // min width md
+
+  @include breakpoints(lg) {
+
+    font-size: 11px * $font-size-modifier;
+
+  } // min width lg
+
+  @include breakpoints(xl) {
+
+    font-size: 12px * $font-size-modifier;
+
+  } // min width xl
+
+  @include breakpoints(xxl) {
+
+    font-size: 13px * $font-size-modifier;
+
+  } // min width xxl
+
+}
+
+// ---------------------------------------- Minimum Height for Fields
+@mixin field-min-height() {
+
+  min-height: var(--theme-field-min-height);
+
+  @include breakpoints(sm) {
+    min-height: var(--theme-field-min-height--sm);
+  } // min width sm
+
+  @include breakpoints(md) {
+    min-height: var(--theme-field-min-height--md);
+  } // min width md
+
+  @include breakpoints(lg) {
+    min-height: var(--theme-field-min-height--lg);
+  } // min width lg
+
+  @include breakpoints(xl) {
+    min-height: var(--theme-field-min-height--xl);
+  } // min width xl
+
+  @include breakpoints(xxl) {
+    min-height: var(--theme-field-min-height--xxl);
+  } // min width xxl
+
+}
