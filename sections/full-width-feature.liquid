@@ -1,9 +1,10 @@
 {% assign section_name = 'full-width-feature' %}
+{% assign section_id = section_name | append: '--' | append: section.id %}
 
 {% assign title = section.settings.title | default: '' %}
 {% assign message = section.settings.message | default: '' %}
 
-<div class="{{ section_name }}" id="{{ section.id }}">
+<div class="{{ section_name }}" id="{{ section_id }}">
   {% render 'layout--container' %}
 
     {% if title != blank %}
