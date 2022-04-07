@@ -10,9 +10,8 @@
   <div class="{{ section_name }}__media">
     {%
       render 'content--lazyload-image',
-      alt_text: title,
       background: true,
-      classes: 'sample-class',
+      classes: 'full-width-feature__background-image',
       image: image,
       preload: true,
       responsive: true,
@@ -69,9 +68,6 @@
       "options": [
         {
           "value": "large", "label": "Large"
-        },
-        {
-          "value": "small", "label": "Small"
         },
         {
           "value": "auto", "label": "Auto"
