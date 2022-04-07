@@ -1,10 +1,29 @@
 .fifty-fifty-feature {
 
   position: relative;
+  padding: 60px 0;
 
   .button {
     width: 100%;
   }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    padding: 70px 0;
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {
+
+    padding: 80px 0;
+
+  } // min width xxl
 
 
 }

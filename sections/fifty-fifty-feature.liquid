@@ -3,30 +3,39 @@
 
 {% assign cta_title = section.settings.cta_title | default: false %}
 {% assign cta_link = section.settings.cta_link | default: false %}
+{% assign heading = section.settings.heading | default: false %}
+{% assign hide_image_mobile = section.settings.hide_image_mobile | default: false %}
 {% assign image = section.settings.image | default: false %}
-{% assign heading = section.settings.heading | default: '' %}
-{% assign message = section.settings.message | default: '' %}
+{% assign message = section.settings.message | default: false %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}">
   <div class="{{ section_name }}__main">
     {% render 'layout--container' %}
 
-      {% render 'tools--debug-this', state: cta_title %}
-      {% render 'tools--debug-this', state: cta_link %}
+      {% if heading or message %}
+        <div class="{{ section_name }}__content">
 
-      {% if title != blank %}
-        <h3 class="{{ section_name }}__title title--1">{{ title }}</h3>
+          {% if heading %}
+            <h2 class="{{ section_name }}__heading heading--2">{{ heading }}</h2>
+          {% endif %}
+
+          {% if message %}
+            <div class="{{ section_name }}__message body-copy--m">{{ message }}</div>
+          {% endif %}
+
+          {% if cta_title and cta_link %}
+            <div class="{{ section_name }}__cta">
+              <a class="button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
+                <span class="button__title">{{ cta_title }}</span>
+              </a>
+            </div>
+          {% endif %}
+        </div>
       {% endif %}
 
-      {% if message != blank %}
-        <div class="{{ section_name }}__heading body-copy--m">{{ message }}</div>
-      {% endif %}
-
-      {% if cta_title and cta_link %}
-        <div class="{{ section_name }}__cta">
-          <a class="button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
-            <span class="button__title">{{ cta_title }}</span>
-          </a>
+      {% if image %}
+        <div class="{{ section_name }}__image {% if hide_image_mobile %}d-none d-lg-block{% endif %}">
+          {% render 'content--lazyload-image', image: image %}
         </div>
       {% endif %}
 
@@ -81,6 +90,12 @@
       "label": "Hide on mobile",
       "type": "checkbox",
       "id": "hidden_mobile",
+      "default": false
+    },
+    {
+      "label": "Hide on mobile",
+      "type": "checkbox",
+      "id": "hide_image_mobile",
       "default": false
     },
     {
