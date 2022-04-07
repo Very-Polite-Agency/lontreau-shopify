@@ -1,0 +1,87 @@
+{% assign section_name = 'fifty-fifty-feature' %}
+{% assign section_id = section_name | append: '--' | append: section.id %}
+
+{% assign cta_title = section.settings.cta_title | default: '' %}
+{% assign cta_link = section.settings.cta_link | default: '' %}
+{% assign image = section.settings.image | default: false %}
+{% assign heading = section.settings.heading | default: '' %}
+{% assign message = section.settings.message | default: '' %}
+
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}">
+  <div class="{{ section_name }}__main">
+    {% render 'layout--container' %}
+
+      {% if title != blank %}
+        <h3 class="{{ section_name }}__title title--1">{{ title }}</h3>
+      {% endif %}
+
+      {% if message != blank %}
+        <div class="{{ section_name }}__heading heading--2">{{ message }}</div>
+      {% endif %}
+
+    {% render 'layout--container', state: 'closed' %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Fifty-Fifty Feature",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "content": "Content",
+      "type": "header"
+    },
+    {
+      "label": "Heading",
+      "type": "richtext",
+      "id": "heading"
+    },
+     {
+      "label": "Message",
+      "type": "richtext",
+      "id": "message"
+    },
+    {
+      "content": "Media",
+      "type": "header"
+    },
+    {
+      "label": "Image",
+      "type": "image_picker",
+      "id": "image"
+    },
+    {
+      "label": "Hide on mobile",
+      "type": "checkbox",
+      "id": "hidden_mobile",
+      "default": false
+    },
+    {
+      "content": "Settings",
+      "type": "header"
+    },
+    {
+      "label": "Layout",
+      "type": "select",
+      "options": [
+        {
+          "value": "image-right", "label": "Image Right"
+        },
+        {
+          "value": "image-left", "label": "Image Left"
+        }
+      ],
+      "default": "image-right",
+      "id": "layout"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Fifty-Fifty Feature"
+    }
+  ]
+}
+{% endschema %}
