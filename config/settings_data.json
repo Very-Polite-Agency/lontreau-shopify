@@ -97,76 +97,14 @@
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
     "sections": {
-      "announcement-bar": {
-        "type": "announcement-bar",
-        "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "background-1",
-              "link": ""
-            }
-          },
-          "59b2c6c4-d5ab-4b3e-815e-88e158fed403": {
-            "type": "announcement",
-            "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "accent-1",
-              "link": ""
-            }
-          },
-          "66410edd-45c8-49aa-b98b-00c927d36463": {
-            "type": "announcement",
-            "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "accent-1",
-              "link": ""
-            }
-          },
-          "1006ef24-c997-4e43-abeb-d369a74b273d": {
-            "type": "announcement",
-            "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "accent-1",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "announcement-bar-0",
-          "59b2c6c4-d5ab-4b3e-815e-88e158fed403",
-          "66410edd-45c8-49aa-b98b-00c927d36463",
-          "1006ef24-c997-4e43-abeb-d369a74b273d"
-        ],
-        "settings": {
-        }
-      },
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-1",
-          "logo_width": 90,
-          "logo_position": "middle-left",
-          "menu": "main-menu",
-          "show_line_separator": true,
-          "enable_sticky_header": true,
-          "margin_bottom": 0
         }
       },
       "footer": {
         "type": "footer",
         "settings": {
-          "color_scheme": "background-1",
-          "newsletter_enable": false,
-          "newsletter_heading": "Subscribe to our emails",
-          "show_social": false,
-          "enable_country_selector": false,
-          "enable_language_selector": false,
-          "payment_enable": false,
-          "margin_top": 48,
-          "padding_top": 36,
-          "padding_bottom": 36
         }
       },
       "main-password-header": {
