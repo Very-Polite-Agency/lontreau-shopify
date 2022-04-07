@@ -4,19 +4,22 @@
 {% assign height = section.settings.height | default: 'auto' %}
 {% assign image = section.settings.image | default: false %}
 {% assign message = section.settings.message | default: '' %}
+{% assign parallax = section.settings.parallax | default: false %}
 {% assign title = section.settings.title | default: '' %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}">
   <div class="{{ section_name }}__media">
-    {%
-      render 'content--lazyload-image',
-      background: true,
-      classes: 'full-width-feature__background-image',
-      image: image,
-      preload: true,
-      responsive: true,
-      duration: 500,
-    %}
+    {% if parallax %}<div class='{{ section_name }}__media-clip media__clip'>{% endif %}
+      {%
+        render 'content--lazyload-image',
+        background: true,
+        classes: 'full-width-feature__background-image',
+        image: image,
+        preload: true,
+        responsive: true,
+        duration: 500,
+      %}
+    {% if parallax %}</div>{% endif %}
   </div>
   <div class="{{ section_name }}__main">
     {% render 'layout--container' %}
@@ -52,6 +55,16 @@
       "label": "Message",
       "type": "richtext",
       "id": "message"
+    },
+    {
+      "content": "Media",
+      "type": "header"
+    },
+    {
+      "label": "Parallax",
+      "type": "checkbox",
+      "id": "parallax",
+      "default": false
     },
     {
       "label": "Image",
