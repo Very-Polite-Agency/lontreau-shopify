@@ -16,7 +16,15 @@
       {% endif %}
 
       {% if message != blank %}
-        <div class="{{ section_name }}__heading heading--2">{{ message }}</div>
+        <div class="{{ section_name }}__heading body-copy--m">{{ message }}</div>
+      {% endif %}
+
+      {% if cta_title != blank and cta_link != blank %}
+        <div class="{{ section_name }}__cta">
+          <a class="button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
+            <span class="button__title">{{ cta_title }}</span>
+          </a>
+        </div>
       {% endif %}
 
     {% render 'layout--container', state: 'closed' %}

@@ -1,0 +1,41 @@
+.body-copy {
+
+  p, li {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    font-style: inherit;
+    a {
+      transition: border 280ms;
+      border-bottom-width: var(--theme-border-width);
+      border-bottom-color: inherit;
+      border-bottom-style: solid;
+      color: inherit;
+      display: inline-block;
+      width: auto;
+      text-decoration: none;
+      outline: none;
+      &:focus,
+      &:hover {
+        border-bottom-color: transparent;
+        text-decoration: none;
+        outline: none;
+      }
+    }
+  }
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  &--m {
+    @extend .heading;
+    font-family: var(--theme-font-family--serif--primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+}
