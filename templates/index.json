@@ -4,21 +4,24 @@
       "type": "full-width-feature",
       "settings": {
         "title": "Our Mission",
-        "message": "<p>hello@lontreau.com<\/p>"
+        "message": "<p>hello@lontreau.com<\/p>",
+        "height": "large"
       }
     },
     "16493606352f275ae2": {
       "type": "full-width-feature",
       "settings": {
         "title": "The Lontreau Kit:",
-        "message": "<p>Designed to <\/p><p>move <em>with you<\/em> <\/p>"
+        "message": "<p>Designed to <\/p><p>move <em>with you<\/em> <\/p>",
+        "height": "large"
       }
     },
     "16493635494e59cb2e": {
       "type": "full-width-feature",
       "settings": {
         "title": "Our Mission",
-        "message": "<p>Create regenerative <\/p><p>skincare products that<\/p><p> <em>work as hard<\/em> as you do.<\/p>"
+        "message": "<p>Create regenerative <\/p><p>skincare products that<\/p><p> <em>work as hard<\/em> as you do.<\/p>",
+        "height": "small"
       }
     }
   },
