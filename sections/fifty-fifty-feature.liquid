@@ -6,12 +6,14 @@
 {% assign heading = section.settings.heading | default: false %}
 {% assign hide_image_mobile = section.settings.hide_image_mobile | default: false %}
 {% assign image = section.settings.image | default: false %}
+{% assign layout = section.settings.layout | default: 'image-right' %}
 {% assign message = section.settings.message | default: false %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}">
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}">
   <div class="{{ section_name }}__main">
     {% render 'layout--container' %}
 
+    <div class="{{ section_name }}__layout">
       {% if heading or message %}
         <div class="{{ section_name }}__content">
 
@@ -38,6 +40,7 @@
           {% render 'content--lazyload-image', image: image %}
         </div>
       {% endif %}
+    </div>
 
     {% render 'layout--container', state: 'closed' %}
   </div>
@@ -58,7 +61,18 @@
       "type": "richtext",
       "id": "heading"
     },
-     {
+    {
+      "label": "Highlight",
+      "type": "select",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "stroke", "label": "Stroke" },
+        { "value": "circle", "label": "Circle" }
+      ],
+      "default": "standard",
+      "id": "highlight"
+    },
+    {
       "label": "Message",
       "type": "richtext",
       "id": "message"
