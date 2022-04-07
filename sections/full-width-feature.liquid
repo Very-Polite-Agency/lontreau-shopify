@@ -2,11 +2,23 @@
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
 {% assign height = section.settings.height | default: 'auto' %}
+{% assign image = section.settings.image | default: false %}
 {% assign message = section.settings.message | default: '' %}
 {% assign title = section.settings.title | default: '' %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}">
-  <div class="{{ section_name }}__media"></div>
+  <div class="{{ section_name }}__media">
+    {%
+      render 'content--lazyload-image',
+      alt_text: title,
+      background: true,
+      classes: 'sample-class',
+      image: image,
+      preload: true,
+      responsive: true,
+      duration: 500,
+    %}
+  </div>
   <div class="{{ section_name }}__main">
     {% render 'layout--container' %}
 
