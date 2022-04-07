@@ -1,10 +1,11 @@
 {% assign section_name = 'full-width-feature' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
-{% assign title = section.settings.title | default: '' %}
+{% assign height = section.settings.height | default: 'auto' %}
 {% assign message = section.settings.message | default: '' %}
+{% assign title = section.settings.title | default: '' %}
 
-<div class="{{ section_name }}" id="{{ section_id }}">
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}">
   <div class="{{ section_name }}__media"></div>
   <div class="{{ section_name }}__main">
     {% render 'layout--container' %}
@@ -64,7 +65,7 @@
           "value": "auto", "label": "Auto"
         }
       ],
-      "default": "large",
+      "default": "auto",
       "id": "height"
     }
   ],

@@ -24,6 +24,23 @@
     font-size: 42px;
     line-height: 1.14;
     letter-spacing: -0.02em;
+    em, i {
+      position: relative;
+      z-index: 0;
+      display: inline-block;
+      line-height: 0.9;
+      &::after {
+        background: rgba(var(--theme-colour-grass),1);
+        display: block;
+        content: '';
+        width: 100%;
+        height: 10px;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        z-index: -1;
+      }
+    }
   }
 
   @include breakpoint(sm) {} // min width sm
@@ -34,6 +51,11 @@
 
     &--2 {
       font-size: 52px;
+      em, i {
+        &::after {
+          height: 12px;
+        }
+      }
     }
 
   } // min width lg
