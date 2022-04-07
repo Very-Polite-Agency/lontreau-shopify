@@ -6,9 +6,17 @@
         "title": "Our Mission",
         "message": "<p>hello@lontreau.com<\/p>"
       }
+    },
+    "16493606352f275ae2": {
+      "type": "full-width-feature",
+      "settings": {
+        "title": "The Lontreau Kit:",
+        "message": "<p>Designed to move with you <\/p>"
+      }
     }
   },
   "order": [
-    "1649358548eba2154c"
+    "1649358548eba2154c",
+    "16493606352f275ae2"
   ]
 }
