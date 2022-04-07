@@ -4,7 +4,7 @@
       "type": "full-width-feature",
       "settings": {
         "title": "Our Mission",
-        "message": "<p>hello@lontreau.com<\/p>",
+        "message": "<p><a href=\"mailto:hello@lontreau.com\" title=\"Email Us\">hello@lontreau.com<\/a><\/p>",
         "height": "auto"
       }
     },
