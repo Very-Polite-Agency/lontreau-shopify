@@ -13,10 +13,18 @@
         "title": "The Lontreau Kit:",
         "message": "<p>Designed to <\/p><p>move <em>with you<\/em> <\/p>"
       }
+    },
+    "16493635494e59cb2e": {
+      "type": "full-width-feature",
+      "settings": {
+        "title": "Our Mission",
+        "message": "<p>Create regenerative skincare products that <em>work as hard<\/em> as you do.<\/p>"
+      }
     }
   },
   "order": [
     "1649358548eba2154c",
-    "16493606352f275ae2"
+    "16493606352f275ae2",
+    "16493635494e59cb2e"
   ]
 }
