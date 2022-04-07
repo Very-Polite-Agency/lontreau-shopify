@@ -4,9 +4,9 @@
       "type": "full-width-feature",
       "settings": {
         "title": "",
-        "message": "",
+        "message": "<p>Our <em>Skin<\/em><\/p>",
         "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--auto_3x_98697aff-9d23-4586-afb8-b51f94b5ea8d.png",
-        "height": "large"
+        "height": "auto"
       }
     },
     "1649358548eba2154c": {
