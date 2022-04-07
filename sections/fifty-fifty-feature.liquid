@@ -1,8 +1,8 @@
 {% assign section_name = 'fifty-fifty-feature' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
-{% assign cta_title = section.settings.cta_title | default: '' %}
-{% assign cta_link = section.settings.cta_link | default: '' %}
+{% assign cta_title = section.settings.cta_title | default: false %}
+{% assign cta_link = section.settings.cta_link | default: false %}
 {% assign image = section.settings.image | default: false %}
 {% assign heading = section.settings.heading | default: '' %}
 {% assign message = section.settings.message | default: '' %}
@@ -10,6 +10,9 @@
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}">
   <div class="{{ section_name }}__main">
     {% render 'layout--container' %}
+
+      {% render 'layout--container', state: cta_title %}
+      {% render 'layout--container', state: cta_link %}
 
       {% if title != blank %}
         <h3 class="{{ section_name }}__title title--1">{{ title }}</h3>

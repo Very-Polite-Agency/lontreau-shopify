@@ -1,0 +1,13 @@
+{% comment %}
+
+  Use snippet like so...
+
+  {% render 'tools--debug-this', item: shopify_object %}
+
+{% endcomment %}
+
+{% assign item = item | default: 'Not Set' %}
+
+{% if item %}
+  <script>console.log( {{ item | json }} );</script>
+{% endif %}

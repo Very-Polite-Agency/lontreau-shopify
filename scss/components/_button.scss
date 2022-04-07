@@ -10,11 +10,23 @@
   align-items: center;
   min-height: 46px;
   line-height: 1;
+  text-decoration: none;
 
   &--primary {
     @extend .button;
     background: rgba(var(--theme-colour-grass),1);
     color: rgba(var(--theme-colour-black),1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    &:focus,
+    &:hover {
+      background: rgba(var(--theme-colour-grass),1);
+      color: rgba(var(--theme-colour-black),1);
+    }
   }
 
 }
