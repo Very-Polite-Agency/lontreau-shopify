@@ -123,10 +123,10 @@
 }
 
 //////////////////////////////////////////////////////////
-////  UI/UX | Breakpoints
+////  UI/UX | Breakpoint
 //////////////////////////////////////////////////////////
 
-@mixin breakpoints( $size ) {
+@mixin breakpoint( $size ) {
 
   @if $size == sm {
 	  @media (min-width: map-get( $grid-breakpoints, sm )) { @content; }

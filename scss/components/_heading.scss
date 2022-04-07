@@ -1,0 +1,51 @@
+.heading {
+
+  p, a {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: inline-block;
+    width: auto;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &--2 {
+    @extend .heading;
+    font-family: var(--theme-font-family--serif--primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+  }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    &--2 {
+      font-size: 52px;
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {
+
+    &--2 {
+      font-size: 62px;
+    }
+
+  } // min width xxl
+
+}

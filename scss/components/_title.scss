@@ -1,0 +1,37 @@
+.title {
+
+  font-family: var(--theme-font-family--sans-serif--primary);
+
+  &--1 {
+    @extend .title;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 0.07em;
+  }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    &--1 {
+      font-size: 22px;
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {
+
+    &--1 {
+      font-size: 24px;
+    }
+
+  } // min width xxl
+
+}

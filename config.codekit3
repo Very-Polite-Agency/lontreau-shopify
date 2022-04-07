@@ -564,6 +564,48 @@
       "sC" : 3,
       "tS" : 1
     },
+    "\/assets\/NeueBit-Bold.eot" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/NeueBit-Bold.eot",
+      "oF" : 0
+    },
+    "\/assets\/NeueBit-Bold.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/NeueBit-Bold.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/NeueBit-Bold.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/NeueBit-Bold.ttf",
+      "oF" : 0
+    },
+    "\/assets\/NeueBit-Bold.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/NeueBit-Bold.woff",
+      "oF" : 0
+    },
+    "\/assets\/NeueBit-Bold.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/NeueBit-Bold.woff2",
+      "oF" : 0
+    },
     "\/assets\/newsletter-section.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -810,6 +852,90 @@
       "oAP" : "\/assets\/section-rich-text.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/assets\/SelfModern-Italic.eot" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/SelfModern-Italic.eot",
+      "oF" : 0
+    },
+    "\/assets\/SelfModern-Italic.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/SelfModern-Italic.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/SelfModern-Italic.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/SelfModern-Italic.ttf",
+      "oF" : 0
+    },
+    "\/assets\/SelfModern-Italic.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/SelfModern-Italic.woff",
+      "oF" : 0
+    },
+    "\/assets\/SelfModern-Italic.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/SelfModern-Italic.woff2",
+      "oF" : 0
+    },
+    "\/assets\/SelfModern-Regular.eot" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/SelfModern-Regular.eot",
+      "oF" : 0
+    },
+    "\/assets\/SelfModern-Regular.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/SelfModern-Regular.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/SelfModern-Regular.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/SelfModern-Regular.ttf",
+      "oF" : 0
+    },
+    "\/assets\/SelfModern-Regular.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/SelfModern-Regular.woff",
+      "oF" : 0
+    },
+    "\/assets\/SelfModern-Regular.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/SelfModern-Regular.woff2",
+      "oF" : 0
     },
     "\/assets\/share.js" : {
       "bF" : 0,
@@ -1643,6 +1769,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/scss\/components\/_full-width-feature.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/_full-width-feature.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/scss\/components\/_heading.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1763,6 +1904,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/scss\/components\/_title.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/_title.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/scss\/main.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1848,6 +2004,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/_collection.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/theme\/_fonts.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/_fonts.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,

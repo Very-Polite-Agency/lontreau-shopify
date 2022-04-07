@@ -104,8 +104,8 @@
   --theme-font-family--serif: sans-serif;
   --theme-font-family--display: serif;
 
-  --theme-font-family--sans-serif--primary: sans-serif;
-  --theme-font-family--serif--primary: serif;
+  --theme-font-family--sans-serif--primary: 'NeueBit', sans-serif;
+  --theme-font-family--serif--primary: 'Self Modern', serif;
 
   // ---------------------------------------- Transitions
   --theme-transition-duration: 300ms;
@@ -132,6 +132,7 @@
 @import './components/collapsible.scss';
 @import './components/field.scss';
 @import './components/form.scss';
+@import './components/full-width-feature.scss';
 @import './components/heading.scss';
 @import './components/input.scss';
 @import './components/lazyload.scss';
@@ -140,6 +141,7 @@
 @import './components/pagination.scss';
 @import './components/select.scss';
 @import './components/textarea.scss';
+@import './components/title.scss';
 
 //////////////////////////////////////////////////////////
 ////  Theme
@@ -150,6 +152,7 @@
 @import './theme/blog.scss';
 @import './theme/body.scss';
 @import './theme/collection.scss';
+@import './theme/fonts.scss';
 @import './theme/footer.scss';
 @import './theme/header.scss';
 @import './theme/page.scss';

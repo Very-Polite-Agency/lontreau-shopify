@@ -5,17 +5,20 @@
 {% assign message = section.settings.message | default: '' %}
 
 <div class="{{ section_name }}" id="{{ section_id }}">
-  {% render 'layout--container' %}
+  <div class="{{ section_name }}__media"></div>
+  <div class="{{ section_name }}__main">
+    {% render 'layout--container' %}
 
-    {% if title != blank %}
-      <h3>{{ title }}</h3>
-    {% endif %}
+      {% if title != blank %}
+        <h3 class="{{ section_name }}__title title--1">{{ title }}</h3>
+      {% endif %}
 
-    {% if message != blank %}
-      <div>{{ message }}</div>
-    {% endif %}
+      {% if message != blank %}
+        <div class="{{ section_name }}__heading heading--2">{{ message }}</div>
+      {% endif %}
 
-  {% render 'layout--container', state: 'closed' %}
+    {% render 'layout--container', state: 'closed' %}
+  </div>
 </div>
 
 {% schema %}
