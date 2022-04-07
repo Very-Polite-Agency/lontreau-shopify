@@ -6,8 +6,5 @@
 
 {% endcomment %}
 
-{% assign item = item | default: 'Not Set' %}
+<script>console.log( {{ item | json }} );</script>
 
-{% if item %}
-  <script>console.log( {{ item | json }} );</script>
-{% endif %}

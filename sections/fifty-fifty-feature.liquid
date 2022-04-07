@@ -11,8 +11,8 @@
   <div class="{{ section_name }}__main">
     {% render 'layout--container' %}
 
-      {% render 'layout--container', state: cta_title %}
-      {% render 'layout--container', state: cta_link %}
+      {% render 'tools--debug-this', state: cta_title %}
+      {% render 'tools--debug-this', state: cta_link %}
 
       {% if title != blank %}
         <h3 class="{{ section_name }}__title title--1">{{ title }}</h3>
@@ -22,7 +22,7 @@
         <div class="{{ section_name }}__heading body-copy--m">{{ message }}</div>
       {% endif %}
 
-      {% if cta_title != blank and cta_link != blank %}
+      {% if cta_title and cta_link %}
         <div class="{{ section_name }}__cta">
           <a class="button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
             <span class="button__title">{{ cta_title }}</span>
