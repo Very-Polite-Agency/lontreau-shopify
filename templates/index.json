@@ -1,5 +1,14 @@
 {
   "sections": {
+    "164936493171d7e74a": {
+      "type": "full-width-feature",
+      "settings": {
+        "title": "",
+        "message": "",
+        "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--auto_3x_98697aff-9d23-4586-afb8-b51f94b5ea8d.png",
+        "height": "large"
+      }
+    },
     "1649358548eba2154c": {
       "type": "full-width-feature",
       "settings": {
@@ -26,6 +35,7 @@
     }
   },
   "order": [
+    "164936493171d7e74a",
     "1649358548eba2154c",
     "16493606352f275ae2",
     "16493635494e59cb2e"
