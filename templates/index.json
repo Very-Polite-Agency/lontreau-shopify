@@ -82,6 +82,15 @@
         "parallax": false,
         "height": "large"
       }
+    },
+    "1649439380ba38508d": {
+      "type": "accordion-with-image",
+      "settings": {
+        "heading": "<p>Our <em>Values<\/em><\/p>",
+        "highlight": "standard",
+        "message": "<p>Nulla finibus turpis a dapibus consequat. In eu est nisl. Pellentesque at tincidunt est. Nullam ut porta nisl. Proin sed elit vestibulum, viverra nibh a, interdum neque. Maecenas hendrerit quis enim ut luctus.<\/p>",
+        "layout": "image-right"
+      }
     }
   },
   "order": [
@@ -91,6 +100,7 @@
     "16493606352f275ae2",
     "16493714966922f573",
     "16493759755f3cddf5",
-    "16493635494e59cb2e"
+    "16493635494e59cb2e",
+    "1649439380ba38508d"
   ]
 }
