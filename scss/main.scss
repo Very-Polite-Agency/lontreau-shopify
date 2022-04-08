@@ -76,9 +76,16 @@
   --theme-button-min-width--xxl: #{ map-get( $theme-button-min-widths, xxl ) };
 
   // ---------------------------------------- Colours
+  --theme-colour-aqua: #{ hexToRGB( map-get( $theme-colours, 'aqua' ) ) };
   --theme-colour-black: #{ hexToRGB( map-get( $theme-colours, 'black' ) ) };
+  --theme-colour-brick: #{ hexToRGB( map-get( $theme-colours, 'brick' ) ) };
+  --theme-colour-fog: #{ hexToRGB( map-get( $theme-colours, 'fog' ) ) };
   --theme-colour-forrest: #{ hexToRGB( map-get( $theme-colours, 'forrest' ) ) };
+  --theme-colour-forrest-dark: #{ hexToRGB( map-get( $theme-colours, 'forrest-dark' ) ) };
   --theme-colour-grass: #{ hexToRGB( map-get( $theme-colours, 'grass' ) ) };
+  --theme-colour-liliac: #{ hexToRGB( map-get( $theme-colours, 'liliac' ) ) };
+  --theme-colour-maize: #{ hexToRGB( map-get( $theme-colours, 'maize' ) ) };
+  --theme-colour-salmon: #{ hexToRGB( map-get( $theme-colours, 'salmon' ) ) };
   --theme-colour-white: #{ hexToRGB( map-get( $theme-colours, 'white' ) ) };
 
   // ---------------------------------------- Container
@@ -108,7 +115,7 @@
   --theme-font-family--serif--primary: 'Self Modern', serif;
 
   // ---------------------------------------- Transitions
-  --theme-transition-duration: 300ms;
+  --theme-transition-duration: 280ms;
   --theme-transition-opacity: 0.3333;
 
 }

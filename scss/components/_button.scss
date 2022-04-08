@@ -1,5 +1,9 @@
 .button {
 
+  transition:
+    background var(--theme-transition-duration),
+    color var(--theme-transition-duration),
+    opacity var(--theme-transition-duration);
   outline: none;
   border: none;
   padding: 0;
@@ -31,19 +35,39 @@
   }
 
   &--collapsible,
-  &--primary {
+  &--primary,
+  &--secondary {
     @extend .button;
   }
 
-  &--collapsible {
-    color: rgba(var(--theme-colour-black),1);
+  &--collapsible,
+  &--primary,
+  &--secondary,
+  &--tertiary {
     font-family: var(--theme-font-family--sans-serif--primary);
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 1;
     letter-spacing: 0.07em;
-    text-transform: uppercase;
+    text-transform: uppercase
+  }
+
+  &--secondary,
+  &--tertiary {
+    border-width: 2p;
+    border-style: solid;
+    border-radius: 2px;
+    &:focus,
+    &:hover {
+      background: rgba(var(--theme-colour-grass),1);
+      border-color: rgba(var(--theme-colour-grass),1);
+      color: rgba(var(--theme-colour-black),1);
+    }
+  }
+
+  &--collapsible {
+    color: rgba(var(--theme-colour-black),1);
     width: 100%;
     .button__icon {
       transform: rotate(45deg);
@@ -60,17 +84,21 @@
   &--primary {
     background: rgba(var(--theme-colour-grass),1);
     color: rgba(var(--theme-colour-black),1);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 0.9;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
     &:focus,
     &:hover {
-      background: rgba(var(--theme-colour-grass),1);
-      color: rgba(var(--theme-colour-black),1);
+      background: rgba(var(--theme-colour-forrest),1);
+      color: rgba(var(--theme-colour-grass),1);
     }
+  }
+
+  &--secondary {
+    border-color: rgba(var(--theme-colour-white),1);
+    color: rgba(var(--theme-colour-white),1);
+  }
+
+  &--tertiary {
+    border-color: rgba(var(--theme-colour-black),1);
+    color: rgba(var(--theme-colour-black),1);
   }
 
 }

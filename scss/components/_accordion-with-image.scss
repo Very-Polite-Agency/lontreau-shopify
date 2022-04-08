@@ -4,14 +4,14 @@
 
   .collapsible {
     &__content {
-      padding: var(--bs-gutter-width) 0;
+      padding-bottom: var(--bs-gutter-width);
     }
   }
 
   &__heading,
   &__message {
-    .accordion-with-image__accordion {
-      margin-top: 60px;
+    & + .accordion-with-image__accordion {
+      margin-top: 40px;
     }
   }
 
@@ -46,7 +46,46 @@
     &__heading,
     &__message {
       .accordion-with-image__accordion {
-        margin-top: 70px;
+        margin-top: 60px;
+      }
+    }
+
+    &__content {
+      width: 60%;
+    }
+
+    &__image {
+      width: 40%;
+      margin: unset;
+      & + .accordion-with-image__content {
+        margin-top: 0px;
+      }
+    }
+
+    &__layout {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &[data-layout="image-right"] {
+      .accordion-with-image__content {
+        order: 1;
+      }
+      .accordion-with-image__image {
+        order: 2;
+        padding-left: 10%;
+      }
+    }
+
+    &[data-layout="image-left"] {
+      .accordion-with-image__content {
+        order: 2;
+      }
+      .accordion-with-image__image {
+        order: 1;
+        padding-right: 10%;
       }
     }
 
