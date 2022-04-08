@@ -1,0 +1,48 @@
+.highlight {
+
+  em, i {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    line-height: 0.9;
+    &::after {
+      display: block;
+      content: '';
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  &--standard,
+  &--stroke {
+    @extend .highlight;
+  }
+
+  &--standard {
+    em, i {
+      &::after {
+        background: rgba(var(--theme-colour-grass),1);
+        height: 10px;
+        bottom: 5px;
+        left: 5px;
+      }
+    }
+  }
+
+  &--stroke {
+    em, i {
+      &::after {
+        background: url('./LONTREAU--highlight--stroke.svg');
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: 100% auto;
+        height: 10px;
+        bottom: -10px;
+        left: -2%;
+        width: 108%;
+      }
+    }
+  }
+
+}

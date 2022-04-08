@@ -2,6 +2,7 @@
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
 {% assign height = section.settings.height | default: 'auto' %}
+{% assign highlight = section.settings.highlight | default: false %}
 {% assign image = section.settings.image | default: false %}
 {% assign message = section.settings.message | default: '' %}
 {% assign parallax = section.settings.parallax | default: false %}
@@ -29,7 +30,7 @@
       {% endif %}
 
       {% if message != blank %}
-        <div class="{{ section_name }}__heading heading--2">{{ message }}</div>
+        <div class="{{ section_name }}__heading heading--2 {% if highlight %} highlight--{{ highlight }}{% endif %}">{{ message }}</div>
       {% endif %}
 
     {% render 'layout--container', state: 'closed' %}
@@ -55,6 +56,17 @@
       "label": "Message",
       "type": "richtext",
       "id": "message"
+    },
+    {
+      "label": "Highlight",
+      "type": "select",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "stroke", "label": "Stroke" },
+        { "value": "circle", "label": "Circle" }
+      ],
+      "default": "standard",
+      "id": "highlight"
     },
     {
       "content": "Media",

@@ -5,6 +5,7 @@
 {% assign cta_link = section.settings.cta_link | default: false %}
 {% assign heading = section.settings.heading | default: false %}
 {% assign hide_image_mobile = section.settings.hide_image_mobile | default: false %}
+{% assign highlight = section.settings.highlight | default: false %}
 {% assign image = section.settings.image | default: false %}
 {% assign layout = section.settings.layout | default: 'image-right' %}
 {% assign message = section.settings.message | default: false %}
@@ -18,7 +19,7 @@
         <div class="{{ section_name }}__content">
 
           {% if heading %}
-            <h2 class="{{ section_name }}__heading heading--2">{{ heading }}</h2>
+            <h2 class="{{ section_name }}__heading heading--2 {% if highlight %} highlight--{{ highlight }}{% endif %}">{{ heading }}</h2>
           {% endif %}
 
           {% if message %}
