@@ -1,0 +1,17 @@
+.collapsible {
+
+  &__content {
+    padding: var(--bs-gutter-width) 0;
+  }
+
+  &__trigger {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & + .collapsible {
+    border-top: 1px solid rgba(var(--theme-colour-black),1);
+  }
+
+}

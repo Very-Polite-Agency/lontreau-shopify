@@ -6,38 +6,65 @@
 {% assign highlight = section.settings.highlight | default: false %}
 {% assign image = section.settings.image | default: false %}
 {% assign layout = section.settings.layout | default: 'image-right' %}
+{% assign message = section.settings.message | default: false %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}">
   <div class="{{ section_name }}__main">
     {% render 'layout--container' %}
+      <div class="{{ section_name }}__layout">
 
-    <div class="{{ section_name }}__layout">
+        {% if image %}
+          <div class="{{ section_name }}__image {% if hide_image_mobile %}d-none d-lg-block{% endif %}">
+            {% render 'content--lazyload-image', image: image %}
+          </div>
+        {% endif %}
 
-      {% if heading or message or accordions %}
-        <div class="{{ section_name }}__content">
+        {% if heading or message or accordions %}
+          <div class="{{ section_name }}__content">
 
-          {% if heading %}
-            <h2 class="{{ section_name }}__heading heading--2 {% if highlight %} highlight--{{ highlight }}{% endif %}">{{ heading }}</h2>
-          {% endif %}
+            {% if heading %}
+              <h2 class="{{ section_name }}__heading heading--2 {% if highlight %} highlight--{{ highlight }}{% endif %}">{{ heading }}</h2>
+            {% endif %}
 
-          {% if message %}
-            <div class="{{ section_name }}__message body-copy--m">{{ message }}</div>
-          {% endif %}
+            {% if message %}
+              <div class="{{ section_name }}__message body-copy--m">{{ message }}</div>
+            {% endif %}
 
-          {% if accordions %}
-            {% render 'tools--debug-this', item: accordions %}
-          {% endif %}
+            {% if accordions %}
+              <div class="{{ section_name }}__accordion">
+                {% for block in accordions %}
 
-        </div>
-      {% endif %}
+                  {% assign item_id = section_name | append: '__item--' | append: block.id %}
+                  {% assign message = block.settings.message | default: false %}
+                  {% assign title = block.settings.title | default: false %}
 
-      {% if image %}
-        <div class="{{ section_name }}__image {% if hide_image_mobile %}d-none d-lg-block{% endif %}">
-          {% render 'content--lazyload-image', image: image %}
-        </div>
-      {% endif %}
-    </div>
+                  {% if title and message %}
+                    <div class="{{ section_name }}__item collapsible">
+                      <button
+                        class="button--collapsible collapsible__trigger {% unless forloop.first %}collapsed{% endunless %}"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#{{ item_id }}"
+                        aria-expanded="false"
+                        aria-controls="{{ item_id }}"
+                      >
+                        <span class="button__title">{{ title }}</span>
+                        <span class="button__icon">{% render 'svg--icon.plus' %}</span>
+                      </button>
+                      <div class="collapsible__main collapse {% if forloop.first %}show{% endif %}" id="{{ item_id }}">
+                        <div class="collapsible__content body-copy--m">{{ message}}</div>
+                      </div>
+                    </div>
+                  {% endif %}
 
+                {% endfor %}
+              </div>
+            {% endif %}
+
+          </div>
+        {% endif %}
+
+      </div>
     {% render 'layout--container', state: 'closed' %}
   </div>
 </div>
