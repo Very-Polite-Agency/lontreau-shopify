@@ -8,6 +8,31 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
+    "name": "Social",
+    "settings": [
+      {
+        "label": "Facebook",
+        "type": "text",
+        "id": "social_link_facebook"
+      },
+      {
+        "label": "Instagram",
+        "type": "text",
+        "id": "social_link_instagram"
+      },
+      {
+        "label": "LinkedIn",
+        "type": "text",
+        "id": "social_link_linkedin"
+      },
+      {
+        "label": "Twitter",
+        "type": "text",
+        "id": "social_link_twitter"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {

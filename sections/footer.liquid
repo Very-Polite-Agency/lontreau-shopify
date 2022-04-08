@@ -1,9 +1,47 @@
-<h1>Footer Section</h1>
+{% assign section_name = 'footer' %}
+{% assign section_id = section_name | append: '--' | append: section.id %}
+
+{% assign main_menu = section.settings.menu_menu | default: false %}
+{% assign policies_menu = section.settings.policies_menu | default: false %}
+
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}">
+  <div class="{{ section_name }}__main">
+    {% render 'layout--container' %}
+      <div class="{{ section_name }}__layout">
+        <div class="{{ section_name }}__brand">
+          <a href="/" target="_self" title="Home">Home</a>
+        </div>
+        <div class="{{ section_name }}__menus">
+        </div>
+        <div class="{{ section_name }}__contact">
+        </div>
+      </div>
+    {% render 'layout--container', state: 'closed' %}
+  </div>
+</div>
+
 {% schema %}
   {
     "name": "Footer",
-    "settings": [],
-	"blocks": []
+    "tag": "footer",
+    "class": "footer",
+    "settings": [
+      {
+        "content": "Navigation",
+        "type": "header"
+      },
+      {
+        "label": "Main Menu",
+        "type": "link_list",
+        "id": "menu_menu"
+      },
+      {
+        "label": "Policies Menu",
+        "type": "link_list",
+        "id": "policies_menu"
+      }
+    ],
+	  "blocks": []
   }
 {% endschema %}
 
