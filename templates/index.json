@@ -92,10 +92,34 @@
             "title": "Inspired Storytelling",
             "message": ""
           }
+        },
+        "235d6bc6-bd74-493a-9710-877185887cb0": {
+          "type": "accordion",
+          "settings": {
+            "title": "Build our Community",
+            "message": ""
+          }
+        },
+        "86113c3f-438f-494a-912c-ca75b2919dc9": {
+          "type": "accordion",
+          "settings": {
+            "title": "Respect the Earth",
+            "message": ""
+          }
+        },
+        "2fa5cfcc-46b5-4ca3-9959-2dc6f83ee504": {
+          "type": "accordion",
+          "settings": {
+            "title": "",
+            "message": ""
+          }
         }
       },
       "block_order": [
-        "a7d97f03-be91-43f0-91f2-bb6507ec60f0"
+        "a7d97f03-be91-43f0-91f2-bb6507ec60f0",
+        "235d6bc6-bd74-493a-9710-877185887cb0",
+        "86113c3f-438f-494a-912c-ca75b2919dc9",
+        "2fa5cfcc-46b5-4ca3-9959-2dc6f83ee504"
       ],
       "settings": {
         "heading": "<p>Our <em>Values<\/em><\/p>",
