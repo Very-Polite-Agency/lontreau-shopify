@@ -59,7 +59,7 @@
       "type": "fifty-fifty-feature",
       "settings": {
         "heading": "<p>Here to be <em>Hard & Soft<\/em><\/p>",
-        "highlight": "stroke",
+        "highlight": "circle",
         "message": "<p>Lontreau is a skincare brand focused on regenerative formulations for everyone from endurance athletes to everyday movers looking for ingredient-rich skincare.<\/p>",
         "cta_title": "Learn Morer",
         "cta_link": "shopify:\/\/pages\/contact",
