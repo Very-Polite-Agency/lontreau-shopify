@@ -85,6 +85,18 @@
     },
     "1649439380ba38508d": {
       "type": "accordion-with-image",
+      "blocks": {
+        "a7d97f03-be91-43f0-91f2-bb6507ec60f0": {
+          "type": "accordion",
+          "settings": {
+            "title": "Inspired Storytelling",
+            "message": ""
+          }
+        }
+      },
+      "block_order": [
+        "a7d97f03-be91-43f0-91f2-bb6507ec60f0"
+      ],
       "settings": {
         "heading": "<p>Our <em>Values<\/em><\/p>",
         "highlight": "standard",
