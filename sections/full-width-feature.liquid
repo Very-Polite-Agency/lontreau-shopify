@@ -6,7 +6,8 @@
 {% assign image = section.settings.image | default: false %}
 {% assign message = section.settings.message | default: '' %}
 {% assign parallax = section.settings.parallax | default: false %}
-{% assign title = section.settings.title | default: '' %}
+{% assign subtitle = section.settings.subtitle | default: false %}
+{% assign title = section.settings.title | default: false %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}">
   <div class="{{ section_name }}__media">
@@ -27,6 +28,10 @@
 
       {% if title != blank %}
         <h3 class="{{ section_name }}__title title--1">{{ title }}</h3>
+      {% endif %}
+
+      {% if subtitle %}
+        <h4>{{ subtitle }}</h4>
       {% endif %}
 
       {% if message != blank %}
@@ -51,6 +56,11 @@
       "label": "Title",
       "type": "text",
       "id": "title"
+    },
+    {
+      "label": "Subtitle",
+      "type": "text",
+      "id": "subtitle"
     },
     {
       "label": "Message",
