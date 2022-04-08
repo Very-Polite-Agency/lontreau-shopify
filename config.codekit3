@@ -2220,22 +2220,6 @@
       "oAP" : "\/sections\/cart-notification-product.liquid",
       "oF" : 0
     },
-    "\/sections\/collage.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/collage.liquid",
-      "oF" : 0
-    },
-    "\/sections\/collapsible-content.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/collapsible-content.liquid",
-      "oF" : 0
-    },
     "\/sections\/collection-list.liquid" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2316,36 +2300,12 @@
       "oAP" : "\/sections\/full-width-feature.liquid",
       "oF" : 0
     },
-    "\/sections\/full-width-image-feature.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/full-width-image-feature.liquid",
-      "oF" : 0
-    },
     "\/sections\/header.liquid" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/header.liquid",
-      "oF" : 0
-    },
-    "\/sections\/image-banner.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/image-banner.liquid",
-      "oF" : 0
-    },
-    "\/sections\/image-with-text.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/image-with-text.liquid",
       "oF" : 0
     },
     "\/sections\/main-404.liquid" : {
@@ -2452,14 +2412,6 @@
       "oAP" : "\/sections\/main-search.liquid",
       "oF" : 0
     },
-    "\/sections\/multicolumn.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/multicolumn.liquid",
-      "oF" : 0
-    },
     "\/sections\/newsletter.liquid" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2514,14 +2466,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/slideshow.liquid",
-      "oF" : 0
-    },
-    "\/sections\/test-feature-section.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/test-feature-section.liquid",
       "oF" : 0
     },
     "\/sections\/video.liquid" : {
