@@ -2149,6 +2149,14 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/sections\/accordion-with-image.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/accordion-with-image.liquid",
+      "oF" : 0
+    },
     "\/sections\/announcements.liquid" : {
       "cB" : 0,
       "ft" : 8192,

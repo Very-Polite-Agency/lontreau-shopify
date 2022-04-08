@@ -63,4 +63,36 @@
     }
   }
 
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    &--standard {
+      em, i {
+        &::after {
+          height: 12px;
+          bottom: 5px;
+        }
+      }
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {
+
+    &--standard {
+      em, i {
+        &::after {
+          height: 14px;
+          bottom: 5px;
+        }
+      }
+    }
+
+  } // min width xxl
+
 }
