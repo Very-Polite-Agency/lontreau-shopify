@@ -37,7 +37,7 @@
       "settings": {
         "title": "The Lontreau Kit:",
         "message": "<p>Designed to <\/p><p>move <em>with you<\/em> <\/p>",
-        "highlight": "standard",
+        "highlight": "circle",
         "parallax": false,
         "height": "auto"
       }
