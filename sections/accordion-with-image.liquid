@@ -49,7 +49,7 @@
                         aria-controls="{{ item_id }}"
                       >
                         <span class="button__title">{{ title }}</span>
-                        <span class="button__icon">{% render 'svg--icon.plus' %}</span>
+                        <span class="button__icon">{% render 'svg--icon', icon_type: 'plus' %}</span>
                       </button>
                       <div class="collapsible__main collapse {% if forloop.first %}show{% endif %}" id="{{ item_id }}">
                         <div class="collapsible__content body-copy--m">{{ message}}</div>

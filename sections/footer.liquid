@@ -3,6 +3,10 @@
 
 {% assign main_menu = section.settings.menu_menu | default: false %}
 {% assign policies_menu = section.settings.policies_menu | default: false %}
+{% assign social_link_facebook = section.settings.social_link_facebook | default: false %}
+{% assign social_link_instagram = section.settings.social_link_instagram | default: false %}
+{% assign social_link_linkedin = section.settings.social_link_linkedin | default: false %}
+{% assign social_link_twitter = section.settings.social_link_twitter | default: false %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}">
   <div class="{{ section_name }}__main">
@@ -13,8 +17,34 @@
         </div>
         <div class="{{ section_name }}__menus">
         </div>
+
         <div class="{{ section_name }}__contact">
+          {% if social_link_facebook or social_link_instagram or social_link_twitter %}
+            <nav class="navigation">
+            {% if social_link_facebook %}
+              <div class="navigation__item">
+                <a href="{{ social_link_facebook }}" target="_blank" title="{{ shop.name }} Facebook Acccount">
+                  {% render 'svg--icon', type: 'twitter' %}
+                </a>
+              </div>
+            {% endif %}
+            {% if social_link_instagram %}
+              <div class="navigation__item">
+                <a href="{{ social_link_instagram }}" target="_blank" title="{{ shop.name }} Instagram Acccount">
+                  {% render 'svg--icon', type: 'twitter' %}
+                </a>
+              </div>
+            {% endif %}
+            {% if social_link_twitter %}
+              <div class="navigation__item">
+                <a href="{{ social_link_twitter }}" target="_blank" title="{{ shop.name }} Twitter Acccount">
+                  {% render 'svg--icon', type: 'twitter' %}
+                </a>
+              </div>
+            {% endif %}
+          {% endif %}
         </div>
+
       </div>
     {% render 'layout--container', state: 'closed' %}
   </div>
