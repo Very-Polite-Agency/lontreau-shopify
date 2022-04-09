@@ -2244,6 +2244,14 @@
       "oAP" : "\/sections\/custom-liquid.liquid",
       "oF" : 0
     },
+    "\/sections\/educational-carousel.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/educational-carousel.liquid",
+      "oF" : 0
+    },
     "\/sections\/email-signup-banner.liquid" : {
       "cB" : 0,
       "ft" : 8192,

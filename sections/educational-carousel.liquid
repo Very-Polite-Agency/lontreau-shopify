@@ -1,0 +1,106 @@
+{% assign section_name = 'educational-carousel' %}
+{% assign section_id = section_name | append: '--' | append: section.id %}
+
+{% assign alignment = section.settings.alignment | default: 'center' %}
+{% assign heading = section.settings.heading | default: false %}
+{% assign highlight = section.settings.highlight | default: false %}
+{% assign message = section.settings.message | default: false %}
+{% assign style = section.settings.style | default: 'light' %}
+
+<div class="{{ section_name }}" id="{{ section_id }}" data-alignment="{{ alignment }}" data-style="{{ style }}">
+  <div class="{{ section_name }}__main">
+
+    {% if heading != blank %}
+      <div class="{{ section_name }}__heading heading--2 {% if highlight %} highlight--{{ highlight }}{% endif %}">{{ heading }}</div>
+    {% endif %}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Educational Carousel",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "content": "Content",
+      "type": "header"
+    },
+    {
+      "label": "Alignment",
+      "type": "select",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center",
+      "id": "alignment"
+    },
+    {
+      "label": "Heading",
+      "type": "richtext",
+      "id": "heading"
+    },
+    {
+      "label": "Highlight",
+      "type": "select",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "stroke", "label": "Stroke" },
+        { "value": "circle", "label": "Circle" }
+      ],
+      "default": "standard",
+      "id": "highlight"
+    },
+    {
+      "label": "Message",
+      "type": "richtext",
+      "id": "message"
+    },
+    {
+      "content": "Settings",
+      "type": "header"
+    },
+    {
+      "label": "Style",
+      "type": "select",
+      "options": [
+        { "value": "light", "label": "Light" },
+        { "value": "dark", "label": "Dark" }
+      ],
+      "default": "light",
+      "id": "style"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Label & Symbol",
+      "type": "label-symbol",
+      "settings": [
+        {
+          "label": "Title",
+          "type": "text",
+          "id": "title"
+        },
+        {
+          "label": "Label",
+          "type": "text",
+          "id": "label"
+        },
+        {
+          "label": "Symbol",
+          "type": "image_picker",
+          "id": "symbol"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Educational Carousel"
+    }
+  ]
+}
+{% endschema %}
