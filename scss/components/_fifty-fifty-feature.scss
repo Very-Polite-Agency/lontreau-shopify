@@ -88,6 +88,9 @@
     &__content {
       margin-left: unset;
       margin-right: unset;
+      & + .fifty-fifty-feature__image {
+        margin-top: 0;
+      }
     }
 
     &__layout {
@@ -118,15 +121,22 @@
     }
 
     &[data-style="wide"] {
+      padding: 0;
       .fifty-fifty-feature__content {
         width: 66.6666%;
         margin-left: unset;
         margin-right: unset;
+        padding: 0 10%;
       }
       .fifty-fifty-feature__image {
         width: 33.3333%;
         margin-left: unset;
         margin-right: unset;
+      }
+      .fifty-fifty-feature__layout {
+        max-width: 1800px;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
