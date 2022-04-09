@@ -24,7 +24,8 @@
     "1649465165b511fb1d": {
       "type": "feature-carousel",
       "settings": {
-        "heading": "<p>We have&lt;br&gt; <em>high standards<\/em><\/p>",
+        "alignment": "center",
+        "heading": "<p>We have <em>high standards<\/em><\/p>",
         "highlight": "standard",
         "message": "<p>Lorem ipsum laoreet dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.<\/p>",
         "style": "light"
