@@ -1,13 +1,22 @@
 {% assign section_name = 'feature-carousel' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign alignment = section.settings.alignment | default: 'center' %}
 {% assign heading = section.settings.heading | default: false %}
 {% assign highlight = section.settings.highlight | default: false %}
 {% assign message = section.settings.message | default: false %}
+{% assign style = section.settings.style | default: 'light' %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}" data-style="{{ style }}">
+<div class="{{ section_name }}" id="{{ section_id }}" data-alignment="{{ alignment }}" data-style="{{ style }}">
   <div class="{{ section_name }}__main">
-    <h2>Feature Carousel</h2>
+
+    {% if heading != blank %}
+
+
+
+      <div class="{{ section_name }}__heading heading--2 {% if highlight %} highlight--{{ highlight }}{% endif %}">{{ heading }}</div>
+    {% endif %}
+
   </div>
 </div>
 
@@ -73,6 +82,11 @@
       "name": "Label & Symbol",
       "type": "label-symbol",
       "settings": [
+        {
+          "label": "Title",
+          "type": "text",
+          "id": "title"
+        },
         {
           "label": "Label",
           "type": "text",
