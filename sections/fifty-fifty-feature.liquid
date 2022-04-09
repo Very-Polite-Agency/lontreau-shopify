@@ -9,8 +9,9 @@
 {% assign image = section.settings.image | default: false %}
 {% assign layout = section.settings.layout | default: 'image-right' %}
 {% assign message = section.settings.message | default: false %}
+{% assign style = section.settings.style | default: 'standard' %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}">
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}" data-style="{{ style }}">
   <div class="{{ section_name }}__main">
     {% render 'layout--container' %}
 
@@ -112,15 +113,21 @@
       "type": "header"
     },
     {
+      "label": "Style",
+      "type": "select",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "wide", "label": "Wide" }
+      ],
+      "default": "standard",
+      "id": "style"
+    },
+    {
       "label": "Layout",
       "type": "select",
       "options": [
-        {
-          "value": "image-right", "label": "Image Right"
-        },
-        {
-          "value": "image-left", "label": "Image Left"
-        }
+        { "value": "image-right", "label": "Image Right" },
+        { "value": "image-left", "label": "Image Left" }
       ],
       "default": "image-right",
       "id": "layout"
