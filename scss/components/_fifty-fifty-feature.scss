@@ -39,6 +39,23 @@
     flex-flow: column;
   }
 
+  &[data-style="standard"] {}
+
+  &[data-style="wide"] {
+    padding-bottom: 0;
+    .fifty-fifty-feature__content {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .fifty-fifty-feature__image {
+      width: 100%;
+      left: unset;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   @include breakpoint(sm) {
 
     &__content {
@@ -97,6 +114,19 @@
       }
       .fifty-fifty-feature__image {
         order: 1;
+      }
+    }
+
+    &[data-style="wide"] {
+      .fifty-fifty-feature__content {
+        width: 66.6666%;
+        margin-left: unset;
+        margin-right: unset;
+      }
+      .fifty-fifty-feature__image {
+        width: 33.3333%;
+        margin-left: unset;
+        margin-right: unset;
       }
     }
 

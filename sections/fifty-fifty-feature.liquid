@@ -13,9 +13,9 @@
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}" data-style="{{ style }}">
   <div class="{{ section_name }}__main">
-    {% render 'layout--container' %}
+    {% unless style == 'wide' %}{% render 'layout--container' %}{% endunless %}
 
-    <div class="{{ section_name }}__layout">
+      <div class="{{ section_name }}__layout">
       {% if heading or message %}
         <div class="{{ section_name }}__content">
 
@@ -44,7 +44,7 @@
       {% endif %}
     </div>
 
-    {% render 'layout--container', state: 'closed' %}
+    {% unless style == 'wide' %}{% render 'layout--container', state: 'closed' %}{% endunless %}
   </div>
 </div>
 
