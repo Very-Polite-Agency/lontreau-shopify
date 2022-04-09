@@ -1,0 +1,67 @@
+{% assign section_name = 'feature-carousel' %}
+{% assign section_id = section_name | append: '--' | append: section.id %}
+
+{% assign heading = section.settings.heading | default: false %}
+{% assign highlight = section.settings.highlight | default: false %}
+{% assign message = section.settings.message | default: false %}
+
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}" data-style="{{ style }}">
+  <div class="{{ section_name }}__main">
+    <h2>Feature Carousel</h2>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Feature Carousel",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "content": "Content",
+      "type": "header"
+    },
+    {
+      "label": "Heading",
+      "type": "richtext",
+      "id": "heading"
+    },
+    {
+      "label": "Highlight",
+      "type": "select",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "stroke", "label": "Stroke" },
+        { "value": "circle", "label": "Circle" }
+      ],
+      "default": "standard",
+      "id": "highlight"
+    },
+    {
+      "label": "Message",
+      "type": "richtext",
+      "id": "message"
+    },
+    {
+      "content": "Settings",
+      "type": "header"
+    },
+    {
+      "label": "Style",
+      "type": "select",
+      "options": [
+        { "value": "light", "label": "Light" },
+        { "value": "dark", "label": "Dark" }
+      ],
+      "default": "light",
+      "id": "style"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Feature Carousel"
+    }
+  ]
+}
+{% endschema %}
