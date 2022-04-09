@@ -22,6 +22,17 @@
       "type": "header"
     },
     {
+      "label": "Alignment",
+      "type": "select",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center",
+      "id": "alignment"
+    },
+    {
       "label": "Heading",
       "type": "richtext",
       "id": "heading"
@@ -57,7 +68,24 @@
       "id": "style"
     }
   ],
-  "blocks": [],
+  "blocks": [
+    {
+      "name": "Label & Symbol",
+      "type": "label-symbol",
+      "settings": [
+        {
+          "label": "Label",
+          "type": "text",
+          "id": "label"
+        },
+        {
+          "label": "Symbol",
+          "type": "image_picker",
+          "id": "symbol"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "Feature Carousel"
