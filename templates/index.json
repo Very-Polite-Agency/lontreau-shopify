@@ -70,11 +70,11 @@
         "3114d372-6d96-437f-b99f-326f1315de6c"
       ],
       "settings": {
-        "alignment": "center",
+        "alignment": "right",
         "heading": "<p>We have <em>high standards<\/em><\/p>",
         "highlight": "circle",
         "message": "",
-        "style": "dark"
+        "style": "light"
       }
     },
     "164936493171d7e74a": {
