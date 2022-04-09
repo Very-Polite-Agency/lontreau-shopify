@@ -23,24 +23,6 @@
     },
     "1649465165b511fb1d": {
       "type": "feature-carousel",
-      "blocks": {
-        "af1539dc-a692-4cae-9046-3c45bdc765de": {
-          "type": "label-symbol",
-          "settings": {
-            "label": "Sample"
-          }
-        },
-        "eb1858c0-9ec3-40a2-be9f-dcb06c16fe77": {
-          "type": "label-symbol",
-          "settings": {
-            "label": "Sample 2"
-          }
-        }
-      },
-      "block_order": [
-        "af1539dc-a692-4cae-9046-3c45bdc765de",
-        "eb1858c0-9ec3-40a2-be9f-dcb06c16fe77"
-      ],
       "settings": {
         "heading": "<p>We have <em>high standards<\/em><\/p>",
         "highlight": "standard",
