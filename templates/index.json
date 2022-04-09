@@ -26,7 +26,7 @@
       "settings": {
         "alignment": "center",
         "heading": "<p>We have <em>high standards<\/em><\/p>",
-        "highlight": "standard",
+        "highlight": "circle",
         "message": "",
         "style": "light"
       }
