@@ -47,13 +47,20 @@
           "settings": {
             "title": "Alcohol Free"
           }
+        },
+        "c5703ba6-61ad-4f88-b9d4-755ba0bdd4fe": {
+          "type": "minimal-slide",
+          "settings": {
+            "title": "Cruelty-Free"
+          }
         }
       },
       "block_order": [
         "f1b669c8-fe9a-4623-bde1-711c9373ac0f",
         "874b38c9-05eb-4f07-8b33-77c479ae8953",
         "88807be9-08ac-472f-9d94-8a823f371848",
-        "6c2d8924-5127-4539-a416-63cfa881341a"
+        "6c2d8924-5127-4539-a416-63cfa881341a",
+        "c5703ba6-61ad-4f88-b9d4-755ba0bdd4fe"
       ],
       "settings": {
         "alignment": "center",
