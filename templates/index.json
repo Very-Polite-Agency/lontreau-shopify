@@ -23,6 +23,38 @@
     },
     "1649466683f889447e": {
       "type": "educational-carousel",
+      "blocks": {
+        "f1b669c8-fe9a-4623-bde1-711c9373ac0f": {
+          "type": "minimal-slide",
+          "settings": {
+            "title": "Paraben Free"
+          }
+        },
+        "874b38c9-05eb-4f07-8b33-77c479ae8953": {
+          "type": "minimal-slide",
+          "settings": {
+            "title": "Vegan"
+          }
+        },
+        "88807be9-08ac-472f-9d94-8a823f371848": {
+          "type": "minimal-slide",
+          "settings": {
+            "title": ""
+          }
+        },
+        "6c2d8924-5127-4539-a416-63cfa881341a": {
+          "type": "minimal-slide",
+          "settings": {
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "f1b669c8-fe9a-4623-bde1-711c9373ac0f",
+        "874b38c9-05eb-4f07-8b33-77c479ae8953",
+        "88807be9-08ac-472f-9d94-8a823f371848",
+        "6c2d8924-5127-4539-a416-63cfa881341a"
+      ],
       "settings": {
         "alignment": "center",
         "heading": "<p>We have <em>high standards<\/em><\/p>",
