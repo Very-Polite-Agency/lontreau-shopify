@@ -25,8 +25,8 @@
       "type": "educational-carousel",
       "settings": {
         "alignment": "center",
-        "heading": "<p>We have  <em>high standards<\/em><\/p>",
-        "highlight": "stroke",
+        "heading": "<p>We have <em>high standards<\/em><\/p>",
+        "highlight": "standard",
         "message": "",
         "style": "light"
       }
