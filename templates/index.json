@@ -53,6 +53,12 @@
           "settings": {
             "title": "Cruelty-Free"
           }
+        },
+        "3114d372-6d96-437f-b99f-326f1315de6c": {
+          "type": "minimal-slide",
+          "settings": {
+            "title": "Responsibly Sourced"
+          }
         }
       },
       "block_order": [
@@ -60,7 +66,8 @@
         "874b38c9-05eb-4f07-8b33-77c479ae8953",
         "88807be9-08ac-472f-9d94-8a823f371848",
         "6c2d8924-5127-4539-a416-63cfa881341a",
-        "c5703ba6-61ad-4f88-b9d4-755ba0bdd4fe"
+        "c5703ba6-61ad-4f88-b9d4-755ba0bdd4fe",
+        "3114d372-6d96-437f-b99f-326f1315de6c"
       ],
       "settings": {
         "alignment": "center",
