@@ -73,11 +73,12 @@
     "1649464267fea0d6f8": {
       "type": "fifty-fifty-feature",
       "settings": {
-        "heading": "<p>Some other great Heading<\/p>",
+        "heading": "<p>Some other great heading to choose from<\/p>",
         "highlight": "standard",
         "message": "<p>Nullam quis lectus ac neque malesuada mollis eget at augue. Sed nec erat et lorem facilisis eleifend vitae fermentum felis. Proin sit amet sagittis neque.<\/p>",
         "cta_title": "",
         "cta_link": "",
+        "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--default_3x_d3a9c3bb-0e8c-4c6e-a41f-f7dc52d2fc2f.png",
         "hide_image_mobile": false,
         "style": "standard",
         "layout": "image-right"
