@@ -4,7 +4,6 @@
       "type": "full-width-feature",
       "settings": {
         "title": "",
-        "subtitle": "",
         "message": "<p>Informed by Science <\/p><p><em>Designed to Move<\/em><\/p>",
         "highlight": "standard",
         "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--large_2x_dbdb0c77-33c7-4bdf-9573-d7b5a903ee67.png",
@@ -16,7 +15,6 @@
       "type": "full-width-feature",
       "settings": {
         "title": "Our Mission",
-        "subtitle": "",
         "message": "<p><a href=\"mailto:hello@lontreau.com\" title=\"Email Us\">hello@lontreau.com<\/a><\/p>",
         "highlight": "standard",
         "parallax": false,
@@ -27,7 +25,6 @@
       "type": "full-width-feature",
       "settings": {
         "title": "",
-        "subtitle": "",
         "message": "<p>Our <em>Skin<\/em><\/p>",
         "highlight": "standard",
         "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--auto_3x_98697aff-9d23-4586-afb8-b51f94b5ea8d.png",
@@ -39,7 +36,6 @@
       "type": "full-width-feature",
       "settings": {
         "title": "The Lontreau Kit:",
-        "subtitle": "",
         "message": "<p>Designed to <\/p><p>move <em>with you<\/em> <\/p>",
         "highlight": "circle",
         "parallax": false,
@@ -56,6 +52,7 @@
         "cta_link": "shopify:\/\/pages\/contact",
         "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--default_3x_d3a9c3bb-0e8c-4c6e-a41f-f7dc52d2fc2f.png",
         "hide_image_mobile": true,
+        "style": "standard",
         "layout": "image-right"
       }
     },
@@ -67,8 +64,9 @@
         "message": "<p>Lontreau is a skincare brand focused on regenerative formulations for everyone from endurance athletes to everyday movers looking for ingredient-rich skincare.<\/p>",
         "cta_title": "Learn Morer",
         "cta_link": "shopify:\/\/pages\/contact",
-        "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--default_3x_d3a9c3bb-0e8c-4c6e-a41f-f7dc52d2fc2f.png",
+        "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--wide_2x_e6a66d64-eb95-41cf-84aa-c093104a5d1f.png",
         "hide_image_mobile": false,
+        "style": "wide",
         "layout": "image-left"
       }
     },
@@ -76,7 +74,6 @@
       "type": "full-width-feature",
       "settings": {
         "title": "Our Mission",
-        "subtitle": "",
         "message": "<p>Create regenerative <\/p><p>skincare products that<\/p><p> <em>work as hard<\/em> as you do.<\/p>",
         "highlight": "standard",
         "parallax": false,
