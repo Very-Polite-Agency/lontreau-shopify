@@ -21,6 +21,63 @@
         "height": "auto"
       }
     },
+    "16497917113a4ded5d": {
+      "type": "educational-carousel",
+      "blocks": {
+        "adc3d92d-0e2f-4350-85ee-4e618c4752d9": {
+          "type": "minimal",
+          "settings": {
+            "title": "Paraben Free"
+          }
+        },
+        "df9e9046-0f46-43ee-9c5a-d8c2a6230c45": {
+          "type": "minimal",
+          "settings": {
+            "title": "Vegan"
+          }
+        },
+        "17789e71-4aed-4bdb-977d-dabaf85ea394": {
+          "type": "minimal",
+          "settings": {
+            "title": "Cruelty-Free"
+          }
+        },
+        "b1ead237-de99-4b31-8a48-1d1af47c4f69": {
+          "type": "minimal",
+          "settings": {
+            "title": "Alcohol-Free"
+          }
+        },
+        "600d8e2d-b6ab-4547-bd4e-470576095654": {
+          "type": "minimal",
+          "settings": {
+            "title": "Sustainable"
+          }
+        },
+        "ae82c396-778c-430a-a6ea-873af63356f2": {
+          "type": "minimal",
+          "settings": {
+            "title": "Gluten-Free"
+          }
+        }
+      },
+      "block_order": [
+        "adc3d92d-0e2f-4350-85ee-4e618c4752d9",
+        "df9e9046-0f46-43ee-9c5a-d8c2a6230c45",
+        "17789e71-4aed-4bdb-977d-dabaf85ea394",
+        "b1ead237-de99-4b31-8a48-1d1af47c4f69",
+        "600d8e2d-b6ab-4547-bd4e-470576095654",
+        "ae82c396-778c-430a-a6ea-873af63356f2"
+      ],
+      "settings": {
+        "content_type": "minimal",
+        "alignment": "center",
+        "heading": "<p>We have <em>high standards<\/em><\/p>",
+        "highlight": "standard",
+        "message": "<p>Nam quis augue sit amet arcu rutrum suscipit ut a lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc integer.<\/p>",
+        "style": "light"
+      }
+    },
     "164936493171d7e74a": {
       "type": "full-width-feature",
       "settings": {
@@ -30,6 +87,61 @@
         "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--auto_3x_98697aff-9d23-4586-afb8-b51f94b5ea8d.png",
         "parallax": true,
         "height": "auto"
+      }
+    },
+    "1649791718078b153a": {
+      "type": "educational-carousel",
+      "blocks": {
+        "bfe2201c-4b50-4d80-8385-b9bee6bea25e": {
+          "type": "detailed",
+          "settings": {
+            "title": "Botanicals",
+            "description": "<p>Nam felis orci, semper eu diam eu, faucibus elementum dolor. Curabitur efficitur sollicitudin lacinia. Duis id nibh vestibulum, feugiat ipsum vitae, ultricies nulla.<\/p>"
+          }
+        },
+        "d8a4a2ff-3b17-4d60-824b-2197eaa26873": {
+          "type": "detailed",
+          "settings": {
+            "title": "Antioxidants",
+            "description": "<p>Sed in rhoncus lorem. Donec facilisis dui a nibh lacinia rutrum. Praesent enim nunc, faucibus sed augue id, pellentesque rutrum lorem. Sed commodo varius massa nunc.<\/p>"
+          }
+        },
+        "3d7ca12d-103b-4b74-98b1-f418c4468cae": {
+          "type": "detailed",
+          "settings": {
+            "title": "Peptides",
+            "description": "<p>Aenean nec est a neque lobortis iaculis in id felis. Nullam eu ullamcorper ligula, non porta ligula. Aliquam sagittis interdum odio, sed posuere metus pulvinar amet.<\/p>"
+          }
+        },
+        "901aa3b7-4ca8-433a-8c13-8a69c4e8c3f3": {
+          "type": "detailed",
+          "settings": {
+            "title": "Gluten-Free",
+            "description": "<p>Maecenas dictum ex velit. Etiam maximus metus nec nunc egestas facilisis. Morbi nisl diam, feugiat non lectus in, feugiat tempor nunc. Proin iaculis gravida viverra.<\/p>"
+          }
+        },
+        "9a3d7579-9b61-443f-adc6-7a7b03bbcb6e": {
+          "type": "detailed",
+          "settings": {
+            "title": "Vegan",
+            "description": "<p>Aliquam vehicula risus ligula, vitae laoreet lectus tempor eu. Aenean a leo vel risus condimentum fermentum. Suspendisse vitae nulla est. Fusce suscipit sodales sed.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "bfe2201c-4b50-4d80-8385-b9bee6bea25e",
+        "d8a4a2ff-3b17-4d60-824b-2197eaa26873",
+        "3d7ca12d-103b-4b74-98b1-f418c4468cae",
+        "901aa3b7-4ca8-433a-8c13-8a69c4e8c3f3",
+        "9a3d7579-9b61-443f-adc6-7a7b03bbcb6e"
+      ],
+      "settings": {
+        "content_type": "detailed",
+        "alignment": "center",
+        "heading": "<p>Endurance <em>Ingredients<\/em><\/p>",
+        "highlight": "circle",
+        "message": "<p>Curabitur cursus purus a massa commodo, et rutrum nulla commodo. Sed ultrices at quam ut rutrum. Integer nec quam convallis velit cursus aliquet. Pellentesque vitae hendrerit felis, sed tempus tortor. Praesent et leo aliquam.<\/p>",
+        "style": "light"
       }
     },
     "16493606352f275ae2": {
@@ -144,7 +256,9 @@
   "order": [
     "1649371027bf029c73",
     "1649358548eba2154c",
+    "16497917113a4ded5d",
     "164936493171d7e74a",
+    "1649791718078b153a",
     "16493606352f275ae2",
     "16493714966922f573",
     "16493759755f3cddf5",
