@@ -76,13 +76,13 @@
 
   &[data-content-type="detailed"] {
     .educational-carousel__item {
-      flex-flow: flex-start;
+      align-items: flex-start;
     }
   }
 
   &[data-content-type="minimal"] {
     .educational-carousel__item {
-      flex-flow: column;
+      align-items: center;
     }
   }
 
