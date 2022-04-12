@@ -2,10 +2,14 @@
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
 {% assign alignment = section.settings.alignment | default: 'center' %}
+{% assign content_type = section.settings.content_type | default: 'minimal' %}
 {% assign heading = section.settings.heading | default: false %}
 {% assign highlight = section.settings.highlight | default: false %}
 {% assign message = section.settings.message | default: false %}
 {% assign style = section.settings.style | default: 'light' %}
+{% assign blocks = section.blocks | where: "type", content_type %}
+
+{% render 'tools--debug-this', item: blocks %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-alignment="{{ alignment }}" data-style="{{ style }}">
   <div class="{{ section_name }}__main">
@@ -28,6 +32,16 @@
     {
       "content": "Content",
       "type": "header"
+    },
+    {
+      "label": "Type",
+      "type": "select",
+      "options": [
+        { "value": "minimal", "label": "Minimal" },
+        { "value": "detailed", "label": "Detailed" }
+      ],
+      "default": "minimal",
+      "id": "content_type"
     },
     {
       "label": "Alignment",
@@ -79,8 +93,8 @@
   ],
   "blocks": [
     {
-      "name": "Detailed Slide",
-      "type": "detailed-slide",
+      "name": "Detailed",
+      "type": "detailed",
       "settings": [
         {
           "label": "Title",
@@ -101,8 +115,8 @@
       ]
     },
     {
-      "name": "Minimal Slide",
-      "type": "minimal-slide",
+      "name": "Minimal",
+      "type": "minimal",
       "settings": [
         {
           "label": "Title",
@@ -111,6 +125,7 @@
         },
         {
           "label": "Image",
+          "info": "For optimal results, select an image that is at least 300px wide and no larger than 50kb in file-size.",
           "type": "image_picker",
           "id": "image"
         }
