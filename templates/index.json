@@ -91,6 +91,50 @@
     },
     "1649791718078b153a": {
       "type": "educational-carousel",
+      "blocks": {
+        "bfe2201c-4b50-4d80-8385-b9bee6bea25e": {
+          "type": "detailed",
+          "settings": {
+            "title": "Botanicals",
+            "description": ""
+          }
+        },
+        "d8a4a2ff-3b17-4d60-824b-2197eaa26873": {
+          "type": "detailed",
+          "settings": {
+            "title": "Antioxidants",
+            "description": ""
+          }
+        },
+        "3d7ca12d-103b-4b74-98b1-f418c4468cae": {
+          "type": "detailed",
+          "settings": {
+            "title": "Peptides",
+            "description": ""
+          }
+        },
+        "901aa3b7-4ca8-433a-8c13-8a69c4e8c3f3": {
+          "type": "detailed",
+          "settings": {
+            "title": "Gluten-Free",
+            "description": ""
+          }
+        },
+        "9a3d7579-9b61-443f-adc6-7a7b03bbcb6e": {
+          "type": "detailed",
+          "settings": {
+            "title": "Vegan",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "bfe2201c-4b50-4d80-8385-b9bee6bea25e",
+        "d8a4a2ff-3b17-4d60-824b-2197eaa26873",
+        "3d7ca12d-103b-4b74-98b1-f418c4468cae",
+        "901aa3b7-4ca8-433a-8c13-8a69c4e8c3f3",
+        "9a3d7579-9b61-443f-adc6-7a7b03bbcb6e"
+      ],
       "settings": {
         "content_type": "detailed",
         "alignment": "center",
