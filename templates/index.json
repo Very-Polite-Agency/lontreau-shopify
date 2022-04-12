@@ -117,14 +117,14 @@
           "type": "detailed",
           "settings": {
             "title": "Gluten-Free",
-            "description": ""
+            "description": "<p>Maecenas dictum ex velit. Etiam maximus metus nec nunc egestas facilisis. Morbi nisl diam, feugiat non lectus in, feugiat tempor nunc. Proin iaculis gravida viverra.<\/p>"
           }
         },
         "9a3d7579-9b61-443f-adc6-7a7b03bbcb6e": {
           "type": "detailed",
           "settings": {
             "title": "Vegan",
-            "description": ""
+            "description": "<p>Aliquam vehicula risus ligula, vitae laoreet lectus tempor eu. Aenean a leo vel risus condimentum fermentum. Suspendisse vitae nulla est. Fusce suscipit sodales sed.<\/p>"
           }
         }
       },
