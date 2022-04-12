@@ -102,35 +102,40 @@
           "type": "detailed",
           "settings": {
             "title": "Botanicals",
-            "description": "<p>Nam felis orci, semper eu diam eu, faucibus elementum dolor. Curabitur efficitur sollicitudin lacinia. Duis id nibh vestibulum, feugiat ipsum vitae, ultricies nulla.<\/p>"
+            "description": "<p>Nam felis orci, semper eu diam eu, faucibus elementum dolor. Curabitur efficitur sollicitudin lacinia. Duis id nibh vestibulum, feugiat ipsum vitae, ultricies nulla.<\/p>",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-02.png"
           }
         },
         "d8a4a2ff-3b17-4d60-824b-2197eaa26873": {
           "type": "detailed",
           "settings": {
             "title": "Antioxidants",
-            "description": "<p>Sed in rhoncus lorem. Donec facilisis dui a nibh lacinia rutrum. Praesent enim nunc, faucibus sed augue id, pellentesque rutrum lorem. Sed commodo varius massa nunc.<\/p>"
+            "description": "<p>Sed in rhoncus lorem. Donec facilisis dui a nibh lacinia rutrum. Praesent enim nunc, faucibus sed augue id, pellentesque rutrum lorem. Sed commodo varius massa nunc.<\/p>",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-03.png"
           }
         },
         "3d7ca12d-103b-4b74-98b1-f418c4468cae": {
           "type": "detailed",
           "settings": {
             "title": "Peptides",
-            "description": "<p>Aenean nec est a neque lobortis iaculis in id felis. Nullam eu ullamcorper ligula, non porta ligula. Aliquam sagittis interdum odio, sed posuere metus pulvinar amet.<\/p>"
+            "description": "<p>Aenean nec est a neque lobortis iaculis in id felis. Nullam eu ullamcorper ligula, non porta ligula. Aliquam sagittis interdum odio, sed posuere metus pulvinar amet.<\/p>",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-01.png"
           }
         },
         "901aa3b7-4ca8-433a-8c13-8a69c4e8c3f3": {
           "type": "detailed",
           "settings": {
             "title": "Gluten-Free",
-            "description": "<p>Maecenas dictum ex velit. Etiam maximus metus nec nunc egestas facilisis. Morbi nisl diam, feugiat non lectus in, feugiat tempor nunc. Proin iaculis gravida viverra.<\/p>"
+            "description": "<p>Maecenas dictum ex velit. Etiam maximus metus nec nunc egestas facilisis. Morbi nisl diam, feugiat non lectus in, feugiat tempor nunc. Proin iaculis gravida viverra.<\/p>",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-02.png"
           }
         },
         "9a3d7579-9b61-443f-adc6-7a7b03bbcb6e": {
           "type": "detailed",
           "settings": {
             "title": "Vegan",
-            "description": "<p>Aliquam vehicula risus ligula, vitae laoreet lectus tempor eu. Aenean a leo vel risus condimentum fermentum. Suspendisse vitae nulla est. Fusce suscipit sodales sed.<\/p>"
+            "description": "<p>Aliquam vehicula risus ligula, vitae laoreet lectus tempor eu. Aenean a leo vel risus condimentum fermentum. Suspendisse vitae nulla est. Fusce suscipit sodales sed.<\/p>",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-01.png"
           }
         }
       },
