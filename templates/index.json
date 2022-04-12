@@ -21,62 +21,6 @@
         "height": "auto"
       }
     },
-    "1649466683f889447e": {
-      "type": "educational-carousel",
-      "blocks": {
-        "f1b669c8-fe9a-4623-bde1-711c9373ac0f": {
-          "type": "minimal-slide",
-          "settings": {
-            "title": "Paraben Free"
-          }
-        },
-        "874b38c9-05eb-4f07-8b33-77c479ae8953": {
-          "type": "minimal-slide",
-          "settings": {
-            "title": "Vegan"
-          }
-        },
-        "88807be9-08ac-472f-9d94-8a823f371848": {
-          "type": "minimal-slide",
-          "settings": {
-            "title": "Sustainable"
-          }
-        },
-        "6c2d8924-5127-4539-a416-63cfa881341a": {
-          "type": "minimal-slide",
-          "settings": {
-            "title": "Alcohol Free"
-          }
-        },
-        "c5703ba6-61ad-4f88-b9d4-755ba0bdd4fe": {
-          "type": "minimal-slide",
-          "settings": {
-            "title": "Cruelty-Free"
-          }
-        },
-        "3114d372-6d96-437f-b99f-326f1315de6c": {
-          "type": "minimal-slide",
-          "settings": {
-            "title": "Responsibly Sourced"
-          }
-        }
-      },
-      "block_order": [
-        "f1b669c8-fe9a-4623-bde1-711c9373ac0f",
-        "874b38c9-05eb-4f07-8b33-77c479ae8953",
-        "88807be9-08ac-472f-9d94-8a823f371848",
-        "6c2d8924-5127-4539-a416-63cfa881341a",
-        "c5703ba6-61ad-4f88-b9d4-755ba0bdd4fe",
-        "3114d372-6d96-437f-b99f-326f1315de6c"
-      ],
-      "settings": {
-        "alignment": "center",
-        "heading": "<p>We have <em>high standards<\/em><\/p>",
-        "highlight": "standard",
-        "message": "<p>Quisque pretium, neque non pellentesque porta, massa sapien lacinia dolor, vel aliquet tellus felis et mi. Sed iaculis vehicula tortor sed maximus. Aenean euismod nisl non placerat aliquam. Etiam fermentum maximus odio. Ut eu lorem eget dui eleifend.<\/p>",
-        "style": "dark"
-      }
-    },
     "164936493171d7e74a": {
       "type": "full-width-feature",
       "settings": {
@@ -86,68 +30,6 @@
         "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--auto_3x_98697aff-9d23-4586-afb8-b51f94b5ea8d.png",
         "parallax": true,
         "height": "auto"
-      }
-    },
-    "164979058247be2f78": {
-      "type": "educational-carousel",
-      "blocks": {
-        "30146b80-b012-4355-a070-14a9bed2f46a": {
-          "type": "detailed-slide",
-          "settings": {
-            "title": "Botanicals",
-            "description": "<p>Donec sed semper nunc. Sed venenatis non lectus in ultrices. Etiam tristique felis et rhoncus molestie. Donec suscipit, nunc sed euismod eleifend, felis ipsum sodales posuere.<\/p>"
-          }
-        },
-        "56a04b53-6300-4701-97f2-81a8e64061b1": {
-          "type": "detailed-slide",
-          "settings": {
-            "title": "Antioxidants",
-            "description": "<p>Sed eget augue vitae erat lobortis dignissim. Nunc mattis nibh laoreet lorem tempor tincidunt. Morbi in lacus nec justo ultrices lacinia in non lorem. Vivamus eu nisl vel sit.<\/p>"
-          }
-        },
-        "c160b496-608f-40a5-9197-7f27a413ff0f": {
-          "type": "detailed-slide",
-          "settings": {
-            "title": "Peptides",
-            "description": "<p>Sed ultrices vehicula egestas. Praesent posuere orci arcu, at pretium enim elementum sed. Suspendisse a mi vel lectus posuere mollis. Nulla dictum ipsum non elit ultrices dui.<\/p>"
-          }
-        },
-        "9e88793a-1760-4023-8554-49ae4f0fd0ed": {
-          "type": "detailed-slide",
-          "settings": {
-            "title": "Detail Charlie",
-            "description": "<p>Quisque quis nisi a odio scelerisque convallis. Proin eu semper nisi. Sed hendrerit vel lorem eget maximus. Quisque non egestas sem. Maecenas augue elit, rhoncus aliquam eros.<\/p>"
-          }
-        },
-        "8018421d-ff80-41bf-86f5-20a29766f55a": {
-          "type": "detailed-slide",
-          "settings": {
-            "title": "Detail Delta",
-            "description": "<p>Sed auctor velit magna, eget aliquet augue auctor at. Nunc mi mauris, molestie volutpat erat ac, fringilla rhoncus felis. Aenean vestibulum diam id facilisis volutpat vivamus.<\/p>"
-          }
-        },
-        "c8674f4b-e3d1-48c4-8045-09874412354e": {
-          "type": "detailed-slide",
-          "settings": {
-            "title": "Detail Echo",
-            "description": "<p>Phasellus ut enim nec quam rhoncus imperdiet tempor eget enim. Sed lacus quam, semper eget nisi vitae, pellentesque cursus sapien. Morbi id felis lacus. Sed auctor dictum est.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "30146b80-b012-4355-a070-14a9bed2f46a",
-        "56a04b53-6300-4701-97f2-81a8e64061b1",
-        "c160b496-608f-40a5-9197-7f27a413ff0f",
-        "9e88793a-1760-4023-8554-49ae4f0fd0ed",
-        "8018421d-ff80-41bf-86f5-20a29766f55a",
-        "c8674f4b-e3d1-48c4-8045-09874412354e"
-      ],
-      "settings": {
-        "alignment": "center",
-        "heading": "",
-        "highlight": "standard",
-        "message": "",
-        "style": "light"
       }
     },
     "16493606352f275ae2": {
@@ -262,9 +144,7 @@
   "order": [
     "1649371027bf029c73",
     "1649358548eba2154c",
-    "1649466683f889447e",
     "164936493171d7e74a",
-    "164979058247be2f78",
     "16493606352f275ae2",
     "16493714966922f573",
     "16493759755f3cddf5",
