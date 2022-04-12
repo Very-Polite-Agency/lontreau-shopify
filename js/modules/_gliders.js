@@ -90,27 +90,6 @@ const Gliders = (() => {
 
       switch ( style ) {
 
-        case 'post-listing':
-          options = gliderOptions({
-            animationDuration: 450,
-            autoplay: 0,
-            breakpoints: {
-              9999: {
-                 // up to 9999
-                peek: { before: 0, after: 140 },
-                perView: 2,
-                focusAt: 0,
-              },
-              991: {
-                // up to 992
-                peek: { before: 0, after: 90 },
-                perView: 1,
-                focusAt: 0,
-              },
-            },
-            gap: 40,
-          });
-          break;
         case 'featured-gallery':
           options = gliderOptions({
             animationDuration: 450,

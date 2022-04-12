@@ -8,6 +8,7 @@
 {% assign message = section.settings.message | default: false %}
 {% assign style = section.settings.style | default: 'light' %}
 {% assign blocks = section.blocks | where: "type", content_type | default: false %}
+{% assign glider_id = section_id | append: '--glider' %}
 {% assign is_glider = false %}
 {% if blocks.size > 3 %}
   {% assign is_glider = true %}
@@ -32,27 +33,37 @@
     {% if blocks %}
       <div class="{{ section_name }}__blocks">
 
-        {% for block in blocks %}
+        {% if is_glider %}<div class="glide js--glider" id="{{ glider_id }}" data-glide-style="{{ section_name }}">{% endif %}
+          {% if is_glider %}<div class="glide__track" data-glide-el="track">{% endif %}
+            {% if is_glider %}<ul class="glide__slides">{% endif %}
 
-          {% assign description = block.settings.description | default: false %}
-          {% assign image = block.settings.image | default: false %}
-          {% assign title = block.settings.title | default: false %}
+              {% for block in blocks %}
 
-          {% if title or image %}
-            <div class="{{ section_name }}__item">
-              {% if image %}
-                <div class="{{ section_name }}__image">{% render 'content--lazyload-image', alt_text: title, image: image %}</div>
-              {% endif %}
-              {% if title %}
-                <strong class="{{ section_name }}__title label--primary">{{ title }}</strong>
-              {% endif %}
-              {% if description %}
-                <div class="{{ section_name }}__description body-copy--alt">{{ description }}</div>
-              {% endif %}
-            </div>
-          {% endif %}
+                {% assign description = block.settings.description | default: false %}
+                {% assign image = block.settings.image | default: false %}
+                {% assign title = block.settings.title | default: false %}
 
-        {% endfor %}
+                {% if title or image %}
+                  {% if is_glider %}<li class="glide__slide">{% endif %}
+                    <div class="{{ section_name }}__item">
+                      {% if image %}
+                        <div class="{{ section_name }}__image">{% render 'content--lazyload-image', alt_text: title, image: image %}</div>
+                      {% endif %}
+                      {% if title %}
+                        <strong class="{{ section_name }}__title label--primary">{{ title }}</strong>
+                      {% endif %}
+                      {% if description %}
+                        <div class="{{ section_name }}__description body-copy--alt">{{ description }}</div>
+                      {% endif %}
+                    </div>
+                  {% if is_glider %}</li>{% endif %}
+                {% endif %}
+
+              {% endfor %}
+
+            {% if is_glider %}</ul>{% endif %}
+          {% if is_glider %}</div>{% endif %}
+        {% if is_glider %}</div>{% endif %}
 
       </div>
     {% endif %}

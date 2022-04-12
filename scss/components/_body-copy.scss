@@ -45,12 +45,21 @@
   &--alt {
     @extend .body-copy;
     font-family: var(--theme-font-family--sans-serif--primary);
-    color: rgba(var(--theme-colour-black),1);
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.23;
     letter-spacing: 0.05em;
+  }
+
+  &--large {
+    @extend .body-copy;
+    font-family: var(--theme-font-family--serif--primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
   }
 
 }

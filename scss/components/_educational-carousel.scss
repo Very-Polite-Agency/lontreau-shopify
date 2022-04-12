@@ -12,6 +12,18 @@
     padding: 0 var(--bs-gutter-width);
   }
 
+  &__content {
+    & + .educational-carousel__blocks {
+      margin-top: 65px;
+    }
+  }
+
+  &__heading {
+    & + .educational-carousel__message {
+      margin-top: 22px;
+    }
+  }
+
   &__image {
     width: 100px;
     height: 100px;
@@ -72,7 +84,32 @@
 
   @include breakpoint(sm) {} // min width sm
 
-  @include breakpoint(md) {} // min width md
+  @include breakpoint(md) {
+
+    &__message {
+      width: 70%;
+    }
+
+    &[data-alignment="left"] {
+      .educational-carousel__message {
+        margin-right: auto;
+      }
+    }
+
+    &[data-alignment="center"] {
+      .educational-carousel__message {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+
+    &[data-alignment="right"] {
+      .educational-carousel__message {
+        margin-left: auto;
+      }
+    }
+
+  } // min width md
 
   @include breakpoint(lg) {
 
