@@ -89,6 +89,17 @@
         "height": "auto"
       }
     },
+    "1649791718078b153a": {
+      "type": "educational-carousel",
+      "settings": {
+        "content_type": "detailed",
+        "alignment": "center",
+        "heading": "<p>Endurance <em>Ingredients<\/em><\/p>",
+        "highlight": "circle",
+        "message": "<p>Curabitur cursus purus a massa commodo, et rutrum nulla commodo. Sed ultrices at quam ut rutrum. Integer nec quam convallis velit cursus aliquet. Pellentesque vitae hendrerit felis, sed tempus tortor. Praesent et leo aliquam.<\/p>",
+        "style": "light"
+      }
+    },
     "16493606352f275ae2": {
       "type": "full-width-feature",
       "settings": {
@@ -203,6 +214,7 @@
     "1649358548eba2154c",
     "16497917113a4ded5d",
     "164936493171d7e74a",
+    "1649791718078b153a",
     "16493606352f275ae2",
     "16493714966922f573",
     "16493759755f3cddf5",
