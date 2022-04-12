@@ -49,7 +49,7 @@
                       <div class="{{ section_name }}__image">{% render 'content--lazyload-image', alt_text: title, image: image %}</div>
                     {% endif %}
                     {% if title %}
-                      <strong class="{{ section_name }}__title label--primary">{{ title }}</strong>
+                      <strong class="{{ section_name }}__title label--primary">{{ title }}<span class="{{ section_name }}__hr"></span></strong>
                     {% endif %}
                     {% if description %}
                       <div class="{{ section_name }}__description body-copy--alt">{{ description }}</div>

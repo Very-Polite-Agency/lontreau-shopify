@@ -29,8 +29,8 @@ const Gliders = (() => {
 
     let options = {
       animationTimingFunc: 'ease-in-out',
-      animationDuration: 550,
-      autoplay: 0,
+      animationDuration: 280,
+      autoplay: 3200,
       breakpoints: {
         // up to 9999
         9999: {
@@ -90,12 +90,65 @@ const Gliders = (() => {
 
       switch ( style ) {
 
-        case 'educational-carousel-minimal':
+        case 'educational-carousel-detailed':
           options = gliderOptions({
-            animationDuration: 450,
             autoplay: 0,
             breakpoints: {
-              999: {
+              9999: {
+                // up to 1400
+                focusAt: 'center',
+                perView: 17,
+              },
+              2499: {
+                // up to 1400
+                focusAt: 'center',
+                perView: 15,
+              },
+              1999: {
+                // up to 1400
+                focusAt: 'center',
+                perView: 13,
+              },
+              1799: {
+                // up to 1400
+                focusAt: 'center',
+                perView: 11,
+              },
+              1599: {
+                // up to 1400
+                focusAt: 'center',
+                perView: 9,
+              },
+              1399: {
+                // up to 1400
+                focusAt: 'center',
+                perView: 7,
+              },
+              1199: {
+                // up to 1200
+                focusAt: 'center',
+                perView: 6,
+              },
+              991: {
+                // up to 992
+                focusAt: 'center',
+                peek: { before: 75, after: 75 },
+                perView: 5,
+              },
+              767: {
+                // up to 768
+                focusAt: 'center',
+                perView: 1,
+              }
+            },
+            gap: 0,
+            peek: 0,
+          });
+          break;
+        case 'educational-carousel-minimal':
+          options = gliderOptions({
+            breakpoints: {
+              9999: {
                 // up to 1400
                 focusAt: 'center',
                 perView: 17,

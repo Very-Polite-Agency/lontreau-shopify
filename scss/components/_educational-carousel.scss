@@ -3,6 +3,12 @@
   position: relative;
   padding: 60px 0;
 
+  .glide {
+    &__slide {
+      height: auto;
+    }
+  }
+
   &__main {
     display: flex;
     width: 100%;
@@ -22,6 +28,12 @@
     & + .educational-carousel__message {
       margin-top: 22px;
     }
+  }
+
+  &__hr {
+    display: block;
+    height: 2px;
+    flex: 1;
   }
 
   &__image {
@@ -75,12 +87,22 @@
 
   &[data-content-type="detailed"] {
     .educational-carousel__item {
+      background: rgba(var(--theme-colour-black),0.1);
       align-items: flex-start;
       text-align: left;
+    }
+    .educational-carousel__title {
+      display: inline-flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
     }
   }
 
   &[data-content-type="minimal"] {
+    .educational-carousel__hr {
+      display: none;
+    }
     .educational-carousel__item {
       align-items: center;
       text-align: center;
@@ -116,7 +138,19 @@
     color: rgba(var(--theme-colour-white),1);
     .glide {
       &__controls--technical {
-        border-top-color: transparent;
+        background: rgba(var(--theme-colour-forrest-dark),1);
+        border-top: none;
+        .button {
+          background: rgba(var(--theme-colour-grass),1);
+          color: rgba(var(--theme-colour-forrest),1);
+          border: none;
+          &.prev {
+            background: rgba(var(--theme-colour-grass),0.7);
+          }
+          &:hover {
+            background: rgba(var(--theme-colour-white),1);
+          }
+        }
       }
     }
   }
