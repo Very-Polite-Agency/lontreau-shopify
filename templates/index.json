@@ -90,6 +90,18 @@
     },
     "164979058247be2f78": {
       "type": "educational-carousel",
+      "blocks": {
+        "30146b80-b012-4355-a070-14a9bed2f46a": {
+          "type": "detailed-slide",
+          "settings": {
+            "title": "Botanicals",
+            "description": "<p>Donec sed semper nunc. Sed venenatis non lectus in ultrices. Etiam tristique felis et rhoncus molestie. Donec suscipit, nunc sed euismod eleifend, felis ipsum sodales posuere.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "30146b80-b012-4355-a070-14a9bed2f46a"
+      ],
       "settings": {
         "alignment": "center",
         "heading": "",
