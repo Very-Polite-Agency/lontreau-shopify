@@ -36,10 +36,17 @@
           {% assign image = block.settings.image | default: false %}
           {% assign title = block.settings.title | default: false %}
 
-          {% if title and image %}
+          {% if title or image %}
             <div class="{{ section_name }}__item">
-              <div class="{{ section_name }}__image">{% render 'content--lazyload-image', alt_text: title, image: image %}</div>
-              <strong class="{{ section_name }}__title">{{ title }}</strong>
+              {% if image %}
+                <div class="{{ section_name }}__image">{% render 'content--lazyload-image', alt_text: title, image: image %}</div>
+              {% endif %}
+              {% if title %}
+                <strong class="{{ section_name }}__title">{{ title }}</strong>
+              {% endif %}
+              {% if description %}
+                <div class="{{ section_name }}__description">{{ description }}</div>
+              {% endif %}
             </div>
           {% endif %}
 
