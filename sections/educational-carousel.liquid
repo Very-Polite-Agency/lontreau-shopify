@@ -14,7 +14,7 @@
   {% assign is_glider = true %}
 {% endif %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-alignment="{{ alignment }}" data-style="{{ style }}" {% if is_glider %}data-is-glider{% endif %}>
+<div class="{{ section_name }}" id="{{ section_id }}" data-alignment="{{ alignment }}" data-content-type="{{ content_type }}" data-style="{{ style }}" {% if is_glider %}data-is-glider{% endif %}>
   <div class="{{ section_name }}__main">
 
     {% if heading or message %}

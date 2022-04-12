@@ -55,6 +55,12 @@
     }
   }
 
+  &[data-is-glider] {
+    .educational-carousel__blocks {
+      padding: 0;
+    }
+  }
+
   &[data-alignment="left"] {
     .educational-carousel__content {
       text-align: left;
