@@ -97,10 +97,18 @@
             "title": "Botanicals",
             "description": "<p>Donec sed semper nunc. Sed venenatis non lectus in ultrices. Etiam tristique felis et rhoncus molestie. Donec suscipit, nunc sed euismod eleifend, felis ipsum sodales posuere.<\/p>"
           }
+        },
+        "56a04b53-6300-4701-97f2-81a8e64061b1": {
+          "type": "detailed-slide",
+          "settings": {
+            "title": "Antioxidants",
+            "description": "<p>Sed eget augue vitae erat lobortis dignissim. Nunc mattis nibh laoreet lorem tempor tincidunt. Morbi in lacus nec justo ultrices lacinia in non lorem. Vivamus eu nisl vel sit.<\/p>"
+          }
         }
       },
       "block_order": [
-        "30146b80-b012-4355-a070-14a9bed2f46a"
+        "30146b80-b012-4355-a070-14a9bed2f46a",
+        "56a04b53-6300-4701-97f2-81a8e64061b1"
       ],
       "settings": {
         "alignment": "center",
