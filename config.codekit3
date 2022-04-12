@@ -530,6 +530,26 @@
       "sC" : 3,
       "tS" : 1
     },
+    "\/assets\/icon-minus.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/icon-minus.svg",
+      "oF" : 0,
+      "opt" : 1,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/icon-plus.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/icon-plus.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/LONTREAU--highlight--circle.svg" : {
       "ft" : 2097152,
       "miP" : 0,

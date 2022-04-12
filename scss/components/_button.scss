@@ -70,13 +70,36 @@
     color: rgba(var(--theme-colour-black),1);
     width: 100%;
     .button__icon {
-      transform: rotate(45deg);
+      position: relative;
       height: 18px;
       width: 18px;
+      img, svg {
+        display: block;
+        width: auto;
+        height: 100%;
+      }
+    }
+    .button__icon-minus,
+    .button__icon-plus {
+      transition: opacity 150ms;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .button__icon-minus {
+      opacity: 1;
+    }
+    .button__icon-plus {
+      opacity: 0;
     }
     &.collapsed {
-      .button__icon {
-        transform: rotate(0);
+      .button__icon-minus {
+        opacity: 0;
+      }
+      .button__icon-plus {
+        opacity: 1;
       }
     }
   }
