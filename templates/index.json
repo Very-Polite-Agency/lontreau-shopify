@@ -21,62 +21,6 @@
         "height": "auto"
       }
     },
-    "1649466683f889447e": {
-      "type": "educational-carousel",
-      "blocks": {
-        "f1b669c8-fe9a-4623-bde1-711c9373ac0f": {
-          "type": "minimal-slide",
-          "settings": {
-            "title": "Paraben Free"
-          }
-        },
-        "874b38c9-05eb-4f07-8b33-77c479ae8953": {
-          "type": "minimal-slide",
-          "settings": {
-            "title": "Vegan"
-          }
-        },
-        "88807be9-08ac-472f-9d94-8a823f371848": {
-          "type": "minimal-slide",
-          "settings": {
-            "title": "Sustainable"
-          }
-        },
-        "6c2d8924-5127-4539-a416-63cfa881341a": {
-          "type": "minimal-slide",
-          "settings": {
-            "title": "Alcohol Free"
-          }
-        },
-        "c5703ba6-61ad-4f88-b9d4-755ba0bdd4fe": {
-          "type": "minimal-slide",
-          "settings": {
-            "title": "Cruelty-Free"
-          }
-        },
-        "3114d372-6d96-437f-b99f-326f1315de6c": {
-          "type": "minimal-slide",
-          "settings": {
-            "title": "Responsibly Sourced"
-          }
-        }
-      },
-      "block_order": [
-        "f1b669c8-fe9a-4623-bde1-711c9373ac0f",
-        "874b38c9-05eb-4f07-8b33-77c479ae8953",
-        "88807be9-08ac-472f-9d94-8a823f371848",
-        "6c2d8924-5127-4539-a416-63cfa881341a",
-        "c5703ba6-61ad-4f88-b9d4-755ba0bdd4fe",
-        "3114d372-6d96-437f-b99f-326f1315de6c"
-      ],
-      "settings": {
-        "alignment": "right",
-        "heading": "<p>We have <em>high standards<\/em><\/p>",
-        "highlight": "standard",
-        "message": "<p>Quisque pretium, neque non pellentesque porta, massa sapien lacinia dolor, vel aliquet tellus felis et mi. Sed iaculis vehicula tortor sed maximus. Aenean euismod nisl non placerat aliquam. Etiam fermentum maximus odio. Ut eu lorem eget dui eleifend.<\/p>",
-        "style": "dark"
-      }
-    },
     "164936493171d7e74a": {
       "type": "full-width-feature",
       "settings": {
@@ -200,7 +144,6 @@
   "order": [
     "1649371027bf029c73",
     "1649358548eba2154c",
-    "1649466683f889447e",
     "164936493171d7e74a",
     "16493606352f275ae2",
     "16493714966922f573",
