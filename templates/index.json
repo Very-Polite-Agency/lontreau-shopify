@@ -23,6 +23,17 @@
     },
     "16497917113a4ded5d": {
       "type": "educational-carousel",
+      "blocks": {
+        "adc3d92d-0e2f-4350-85ee-4e618c4752d9": {
+          "type": "minimal",
+          "settings": {
+            "title": "Paraben Free"
+          }
+        }
+      },
+      "block_order": [
+        "adc3d92d-0e2f-4350-85ee-4e618c4752d9"
+      ],
       "settings": {
         "content_type": "minimal",
         "alignment": "center",
