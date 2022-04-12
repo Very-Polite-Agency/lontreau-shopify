@@ -5,10 +5,49 @@
     display: flex;
     &--technical {
       @extend .glide__controls;
+      position: absolute;
+      bottom: 0;
+      left: 0;
       width: 100%;
       justify-content: flex-end;
       align-items: center;
+      border-top-width: 2px;
+      border-top-style: solid;
+      .button {
+        border-width: 2px;
+        border-style: solid;
+        border-top: none;
+        width: 65px;
+        height: 65px;
+        background: red;
+        justify-content: center;
+        align-items: center;
+        & + .button {
+          border-left: none;
+        }
+      }
     }
   }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    &__controls {
+      &--technical {
+        .button {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
 
 }

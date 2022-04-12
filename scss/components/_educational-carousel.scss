@@ -88,17 +88,36 @@
 
   &[data-is-glider] {
     .educational-carousel__main {
-      padding: 0;
+      padding: 0 0 65px;
     }
   }
 
   &[data-style="light"] {
     color: rgba(var(--theme-colour-black),1);
+    .glide {
+      &__controls--technical {
+        border-top-color: rgba(var(--theme-colour-grass),1);
+        .button {
+          border-color: rgba(var(--theme-colour-grass),1);
+          color: rgba(var(--theme-colour-grass),1);
+          background: transparent;
+          &:hover {
+            background: rgba(var(--theme-colour-grass),1);
+            color: rgba(var(--theme-colour-white),1);
+          }
+        }
+      }
+    }
   }
 
   &[data-style="dark"] {
     background: rgba(var(--theme-colour-forrest),1);
     color: rgba(var(--theme-colour-white),1);
+    .glide {
+      &__controls--technical {
+        border-top-color: transparent;
+      }
+    }
   }
 
   @include breakpoint(sm) {} // min width sm
@@ -125,6 +144,12 @@
     &[data-alignment="right"] {
       .educational-carousel__message {
         margin-left: auto;
+      }
+    }
+
+    &[data-is-glider] {
+      .educational-carousel__main {
+        padding: 0 0 45px;
       }
     }
 
