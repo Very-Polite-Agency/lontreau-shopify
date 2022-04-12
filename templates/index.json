@@ -129,8 +129,8 @@
         "c8674f4b-e3d1-48c4-8045-09874412354e": {
           "type": "detailed-slide",
           "settings": {
-            "title": "",
-            "description": ""
+            "title": "Detail Echo",
+            "description": "<p>Phasellus ut enim nec quam rhoncus imperdiet tempor eget enim. Sed lacus quam, semper eget nisi vitae, pellentesque cursus sapien. Morbi id felis lacus. Sed auctor dictum est.<\/p>"
           }
         }
       },
