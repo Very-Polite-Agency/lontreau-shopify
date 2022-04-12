@@ -1,0 +1,18 @@
+.label {
+
+  font-family: var(--theme-font-family--sans-serif--primary);
+  color: rgba(var(--theme-colour-black),1);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+
+  &--primary {
+    @extend .label;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    line-height: 1.23;
+  }
+
+}
