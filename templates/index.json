@@ -96,14 +96,14 @@
           "type": "detailed",
           "settings": {
             "title": "Botanicals",
-            "description": ""
+            "description": "<p>Nam felis orci, semper eu diam eu, faucibus elementum dolor. Curabitur efficitur sollicitudin lacinia. Duis id nibh vestibulum, feugiat ipsum vitae, ultricies nulla.<\/p>"
           }
         },
         "d8a4a2ff-3b17-4d60-824b-2197eaa26873": {
           "type": "detailed",
           "settings": {
             "title": "Antioxidants",
-            "description": ""
+            "description": "<p>Sed in rhoncus lorem. Donec facilisis dui a nibh lacinia rutrum. Praesent enim nunc, faucibus sed augue id, pellentesque rutrum lorem. Sed commodo varius massa nunc.<\/p>"
           }
         },
         "3d7ca12d-103b-4b74-98b1-f418c4468cae": {
