@@ -111,12 +111,20 @@
             "title": "Peptides",
             "description": "<p>Sed ultrices vehicula egestas. Praesent posuere orci arcu, at pretium enim elementum sed. Suspendisse a mi vel lectus posuere mollis. Nulla dictum ipsum non elit ultrices dui.<\/p>"
           }
+        },
+        "9e88793a-1760-4023-8554-49ae4f0fd0ed": {
+          "type": "detailed-slide",
+          "settings": {
+            "title": "Detail Charlie",
+            "description": "<p>Quisque quis nisi a odio scelerisque convallis. Proin eu semper nisi. Sed hendrerit vel lorem eget maximus. Quisque non egestas sem. Maecenas augue elit, rhoncus aliquam eros.<\/p>"
+          }
         }
       },
       "block_order": [
         "30146b80-b012-4355-a070-14a9bed2f46a",
         "56a04b53-6300-4701-97f2-81a8e64061b1",
-        "c160b496-608f-40a5-9197-7f27a413ff0f"
+        "c160b496-608f-40a5-9197-7f27a413ff0f",
+        "9e88793a-1760-4023-8554-49ae4f0fd0ed"
       ],
       "settings": {
         "alignment": "center",
