@@ -72,9 +72,9 @@
       "settings": {
         "alignment": "right",
         "heading": "<p>We have <em>high standards<\/em><\/p>",
-        "highlight": "circle",
-        "message": "",
-        "style": "light"
+        "highlight": "standard",
+        "message": "<p>Quisque pretium, neque non pellentesque porta, massa sapien lacinia dolor, vel aliquet tellus felis et mi. Sed iaculis vehicula tortor sed maximus. Aenean euismod nisl non placerat aliquam. Etiam fermentum maximus odio. Ut eu lorem eget dui eleifend.<\/p>",
+        "style": "dark"
       }
     },
     "164936493171d7e74a": {
