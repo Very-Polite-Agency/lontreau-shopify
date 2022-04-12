@@ -43,7 +43,8 @@
     display: inline-flex;
     width: 100%;
     flex-flow: column;
-    align-items: flex-start;
+    align-items: center;
+    background: rgba(var(--theme-colour-black),0.2);
     & + .educational-carousel__item {
       margin-top: 65px;
     }
@@ -52,12 +53,6 @@
   &__title {
     & + .educational-carousel__description {
       margin-top: 12px;
-    }
-  }
-
-  &[data-is-glider] {
-    .educational-carousel__blocks {
-      padding: 0;
     }
   }
 
@@ -76,6 +71,24 @@
   &[data-alignment="right"] {
     .educational-carousel__content {
       text-align: right;
+    }
+  }
+
+  &[data-content-type="detailed"] {
+    .educational-carousel__item {
+      flex-flow: flex-start;
+    }
+  }
+
+  &[data-content-type="minimal"] {
+    .educational-carousel__item {
+      flex-flow: column;
+    }
+  }
+
+  &[data-is-glider] {
+    .educational-carousel__blocks {
+      padding: 0;
     }
   }
 
