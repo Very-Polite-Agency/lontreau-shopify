@@ -3,7 +3,7 @@
   position: relative;
   padding: 60px 0;
 
-  &__blocks {
+  &__main {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -12,8 +12,8 @@
     padding: 0 var(--bs-gutter-width);
   }
 
-  &__content {
-    & + .educational-carousel__blocks {
+  &__intro {
+    & + .educational-carousel__main {
       margin-top: 65px;
     }
   }
@@ -57,19 +57,19 @@
   }
 
   &[data-alignment="left"] {
-    .educational-carousel__content {
+    .educational-carousel__intro {
       text-align: left;
     }
   }
 
   &[data-alignment="center"] {
-    .educational-carousel__content {
+    .educational-carousel__intro {
       text-align: center;
     }
   }
 
   &[data-alignment="right"] {
-    .educational-carousel__content {
+    .educational-carousel__intro {
       text-align: right;
     }
   }
@@ -87,7 +87,7 @@
   }
 
   &[data-is-glider] {
-    .educational-carousel__blocks {
+    .educational-carousel__main {
       padding: 0;
     }
   }

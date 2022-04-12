@@ -15,60 +15,66 @@
 {% endif %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-alignment="{{ alignment }}" data-content-type="{{ content_type }}" data-style="{{ style }}" {% if is_glider %}data-is-glider{% endif %}>
-  <div class="{{ section_name }}__main">
 
-    {% if heading or message %}
-      <div class="{{ section_name }}__content">
-        {% render 'layout--container' %}
-          {% if heading %}
-            <div class="{{ section_name }}__heading heading--2 {% if highlight %} highlight--{{ highlight }}{% endif %}">{{ heading }}</div>
-          {% endif %}
-          {% if message %}
-            <div class="{{ section_name }}__message body-copy--large">{{ message }}</div>
-          {% endif %}
-        {% render 'layout--container', state: 'closed' %}
-      </div>
-    {% endif %}
+  {% if heading or message %}
+    <div class="{{ section_name }}__intro">
+      {% render 'layout--container' %}
+        {% if heading %}
+          <div class="{{ section_name }}__heading heading--2 {% if highlight %} highlight--{{ highlight }}{% endif %}">{{ heading }}</div>
+        {% endif %}
+        {% if message %}
+          <div class="{{ section_name }}__message body-copy--large">{{ message }}</div>
+        {% endif %}
+      {% render 'layout--container', state: 'closed' %}
+    </div>
+  {% endif %}
 
-    {% if blocks %}
-      <div class="{{ section_name }}__blocks {% if is_glider %}with-glider{% endif %}">
+  {% if blocks %}
+    <div class="{{ section_name }}__main {% if is_glider %}with-glider{% endif %}">
 
-        {% if is_glider %}<div class="glide js--glider" id="{{ glider_id }}" data-glide-style="{{ section_name }}-{{ content_type }}">{% endif %}
-          {% if is_glider %}<div class="glide__track" data-glide-el="track">{% endif %}
-            {% if is_glider %}<ul class="glide__slides">{% endif %}
+      {% if is_glider %}<div class="glide js--glider" id="{{ glider_id }}" data-glide-style="{{ section_name }}-{{ content_type }}">{% endif %}
+        {% if is_glider %}<div class="glide__track" data-glide-el="track">{% endif %}
+          {% if is_glider %}<ul class="glide__slides">{% endif %}
 
-              {% for block in blocks %}
+            {% for block in blocks %}
 
-                {% assign description = block.settings.description | default: false %}
-                {% assign image = block.settings.image | default: false %}
-                {% assign title = block.settings.title | default: false %}
+              {% assign description = block.settings.description | default: false %}
+              {% assign image = block.settings.image | default: false %}
+              {% assign title = block.settings.title | default: false %}
 
-                {% if title or image %}
-                  {% if is_glider %}<li class="glide__slide">{% endif %}
-                    <div class="{{ section_name }}__item">
-                      {% if image %}
-                        <div class="{{ section_name }}__image">{% render 'content--lazyload-image', alt_text: title, image: image %}</div>
-                      {% endif %}
-                      {% if title %}
-                        <strong class="{{ section_name }}__title label--primary">{{ title }}</strong>
-                      {% endif %}
-                      {% if description %}
-                        <div class="{{ section_name }}__description body-copy--alt">{{ description }}</div>
-                      {% endif %}
-                    </div>
-                  {% if is_glider %}</li>{% endif %}
-                {% endif %}
+              {% if title or image %}
+                {% if is_glider %}<li class="glide__slide">{% endif %}
+                  <div class="{{ section_name }}__item">
+                    {% if image %}
+                      <div class="{{ section_name }}__image">{% render 'content--lazyload-image', alt_text: title, image: image %}</div>
+                    {% endif %}
+                    {% if title %}
+                      <strong class="{{ section_name }}__title label--primary">{{ title }}</strong>
+                    {% endif %}
+                    {% if description %}
+                      <div class="{{ section_name }}__description body-copy--alt">{{ description }}</div>
+                    {% endif %}
+                  </div>
+                {% if is_glider %}</li>{% endif %}
+              {% endif %}
 
-              {% endfor %}
+            {% endfor %}
 
-            {% if is_glider %}</ul>{% endif %}
-          {% if is_glider %}</div>{% endif %}
+          {% if is_glider %}</ul>{% endif %}
         {% if is_glider %}</div>{% endif %}
+      {% if is_glider %}</div>{% endif %}
 
-      </div>
-    {% endif %}
+    </div>
+  {% endif %}
 
-  </div>
+
+  {% if is_glider %}
+    <div class="glide__controls">
+      <button class="glide__button button prev" data-target="#{{ glider_id }}">Previous</button>
+      <button class="glide__button button next" data-target="#{{ glider_id }}">Next</button>
+    </div>
+  {% endif %}
+
 </div>
 
 {% schema %}
