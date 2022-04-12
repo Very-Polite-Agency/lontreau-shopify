@@ -18,12 +18,14 @@
 
     {% if heading or message %}
       <div class="{{ section_name }}__content">
-        {% if heading %}
-          <div class="{{ section_name }}__heading heading--2 {% if highlight %} highlight--{{ highlight }}{% endif %}">{{ heading }}</div>
-        {% endif %}
-        {% if message %}
-          <div class="{{ section_name }}__message body-copy--large">{{ message }}</div>
-        {% endif %}
+        {% render 'layout--container' %}
+          {% if heading %}
+            <div class="{{ section_name }}__heading heading--2 {% if highlight %} highlight--{{ highlight }}{% endif %}">{{ heading }}</div>
+          {% endif %}
+          {% if message %}
+            <div class="{{ section_name }}__message body-copy--large">{{ message }}</div>
+          {% endif %}
+        {% render 'layout--container', state: 'closed' %}
       </div>
     {% endif %}
 
