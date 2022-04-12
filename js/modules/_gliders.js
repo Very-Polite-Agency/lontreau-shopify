@@ -90,10 +90,10 @@ const Gliders = (() => {
 
       switch ( style ) {
 
-        case 'featured-gallery':
+        case 'educational-carousel-minimal':
           options = gliderOptions({
             animationDuration: 450,
-            autoplay: 3200,
+            autoplay: 0,
             breakpoints: {
               9999: {
                 // up to 9999
@@ -103,14 +103,12 @@ const Gliders = (() => {
               },
               991: {
                 // up to 992
-                peek: 32,
-                perView: 1,
                 focusAt: 'center',
+                perView: 3,
               },
             },
             gap: 24,
             peek: 0,
-            perView: 3,
           });
           break;
         case 'soul':
