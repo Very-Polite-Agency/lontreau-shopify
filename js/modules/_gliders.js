@@ -95,7 +95,17 @@ const Gliders = (() => {
             animationDuration: 450,
             autoplay: 0,
             breakpoints: {
-              9999: {
+              999: {
+                // up to 1400
+                focusAt: 'center',
+                perView: 17,
+              },
+              2499: {
+                // up to 1400
+                focusAt: 'center',
+                perView: 15,
+              },
+              1999: {
                 // up to 1400
                 focusAt: 'center',
                 perView: 13,
@@ -123,13 +133,26 @@ const Gliders = (() => {
               991: {
                 // up to 992
                 focusAt: 'center',
+                peek: { before: 75, after: 75 },
                 perView: 5,
               },
               767: {
                 // up to 768
                 focusAt: 'center',
+                peek: { before: 55, after: 55 },
+                perView: 4,
+              },
+              575: {
+                // up to 576
+                focusAt: 'center',
                 peek: { before: 35, after: 35 },
-                perView: 2,
+                perView: 3,
+              },
+              400: {
+                // up to 576
+                focusAt: 'center',
+                peek: { before: 15, after: 15 },
+                perView: 1,
               },
             },
             gap: 24,

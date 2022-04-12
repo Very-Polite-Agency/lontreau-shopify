@@ -30,6 +30,9 @@
         & + .button {
           border-left: none;
         }
+        &__icon {
+          height: 28px;
+        }
       }
     }
   }
@@ -45,6 +48,9 @@
         .button {
           width: 45px;
           height: 45px;
+          &__icon {
+            height: 18px;
+          }
         }
       }
     }

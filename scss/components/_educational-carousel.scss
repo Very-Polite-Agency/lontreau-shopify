@@ -44,7 +44,6 @@
     width: 100%;
     flex-flow: column;
     align-items: center;
-    background: rgba(var(--theme-colour-black),0.2);
     & + .educational-carousel__item {
       margin-top: 65px;
     }
@@ -77,12 +76,14 @@
   &[data-content-type="detailed"] {
     .educational-carousel__item {
       align-items: flex-start;
+      text-align: left;
     }
   }
 
   &[data-content-type="minimal"] {
     .educational-carousel__item {
       align-items: center;
+      text-align: center;
     }
   }
 
