@@ -28,6 +28,11 @@
     fill: currentColor;
   }
 
+  &__icon,
+  &__title {
+    display: block;
+  }
+
   &__icon {
     transition:
       opacity var(--theme-transition-duration),

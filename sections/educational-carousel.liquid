@@ -70,8 +70,12 @@
 
   {% if is_glider %}
     <div class="glide__controls--technical">
-      <button class="glide__button button prev" data-target="#{{ glider_id }}">{% render 'svg--icon', icon_type: 'arrow' %}</button>
-      <button class="glide__button button next" data-target="#{{ glider_id }}">{% render 'svg--icon', icon_type: 'arrow' %}</button>
+      <button class="glide__button button prev" data-target="#{{ glider_id }}">
+        <span class="button__icon">{% render 'svg--icon', icon_type: 'arrow' %}</span>
+      </button>
+      <button class="glide__button button next" data-target="#{{ glider_id }}">
+        <span class="button__icon">{% render 'svg--icon', icon_type: 'arrow' %}</span>
+      </button>
     </div>
   {% endif %}
 
