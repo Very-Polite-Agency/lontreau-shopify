@@ -21,6 +21,17 @@
         "height": "auto"
       }
     },
+    "16497917113a4ded5d": {
+      "type": "educational-carousel",
+      "settings": {
+        "content_type": "minimal",
+        "alignment": "center",
+        "heading": "<p>We have <em>high standards<\/em><\/p>",
+        "highlight": "standard",
+        "message": "",
+        "style": "light"
+      }
+    },
     "164936493171d7e74a": {
       "type": "full-width-feature",
       "settings": {
@@ -144,6 +155,7 @@
   "order": [
     "1649371027bf029c73",
     "1649358548eba2154c",
+    "16497917113a4ded5d",
     "164936493171d7e74a",
     "16493606352f275ae2",
     "16493714966922f573",
