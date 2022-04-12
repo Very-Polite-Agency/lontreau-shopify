@@ -27,37 +27,43 @@
         "adc3d92d-0e2f-4350-85ee-4e618c4752d9": {
           "type": "minimal",
           "settings": {
-            "title": "Paraben Free"
+            "title": "Paraben Free",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-01.png"
           }
         },
         "df9e9046-0f46-43ee-9c5a-d8c2a6230c45": {
           "type": "minimal",
           "settings": {
-            "title": "Vegan"
+            "title": "Vegan",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-03.png"
           }
         },
         "17789e71-4aed-4bdb-977d-dabaf85ea394": {
           "type": "minimal",
           "settings": {
-            "title": "Cruelty-Free"
+            "title": "Cruelty-Free",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-02.png"
           }
         },
         "b1ead237-de99-4b31-8a48-1d1af47c4f69": {
           "type": "minimal",
           "settings": {
-            "title": "Alcohol-Free"
+            "title": "Alcohol-Free",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-03.png"
           }
         },
         "600d8e2d-b6ab-4547-bd4e-470576095654": {
           "type": "minimal",
           "settings": {
-            "title": "Sustainable"
+            "title": "Sustainable",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-02.png"
           }
         },
         "ae82c396-778c-430a-a6ea-873af63356f2": {
           "type": "minimal",
           "settings": {
-            "title": "Gluten-Free"
+            "title": "Gluten-Free",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-01.png"
           }
         }
       },
