@@ -31,9 +31,11 @@
   }
 
   &__hr {
+    background: rgba(var(--theme-colour-grass), 1);
     display: block;
     height: 2px;
     flex: 1;
+    margin-left: 10px;
   }
 
   &__image {
@@ -96,6 +98,7 @@
       flex-flow: row nowrap;
       justify-content: flex-start;
       align-items: center;
+      width: 100%;
     }
   }
 
@@ -160,7 +163,7 @@
   @include breakpoint(md) {
 
     &__message {
-      width: 70%;
+      width: 80%;
     }
 
     &[data-alignment="left"] {
@@ -182,6 +185,12 @@
       }
     }
 
+    &[data-content-type="detailed"] {
+      .educational-carousel__item {
+        padding-left: calc( 2 * var(--bs-gutter-width) );
+      }
+    }
+
     &[data-is-glider] {
       .educational-carousel__main {
         padding: 0 0 45px;
@@ -194,11 +203,19 @@
 
     padding: 70px 0;
 
+    &__message {
+      width: 75%;
+    }
+
   } // min width lg
 
   @include breakpoint(xl) {} // min width xl
 
   @include breakpoint(xxl) {
+
+    &__message {
+      width: 70%;
+    }
 
     padding: 80px 0;
 
