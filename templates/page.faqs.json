@@ -6,9 +6,20 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "164988306417b0ac41": {
+      "type": "full-width-feature",
+      "settings": {
+        "title": "FAQs",
+        "message": "",
+        "highlight": "standard",
+        "parallax": false,
+        "height": "auto"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "164988306417b0ac41"
   ]
 }
