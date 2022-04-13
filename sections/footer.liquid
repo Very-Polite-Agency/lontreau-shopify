@@ -22,6 +22,7 @@
 
         <div class="{{ section_name }}__menus">
           {% if main_menu %}
+            {% render 'tools--debug-this', item: main_menu %}
             {% render 'navigation', menu_handle: main_menu %}
           {% endif %}
           {% if extra_menu %}
