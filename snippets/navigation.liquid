@@ -1,13 +1,14 @@
 {% comment %} {% render 'navigation', menu: policies_menu %} {% endcomment %}
 
-{% assign menu = menu | default: false %}
+{% assign menu_handle = menu_handle | default: false %}
 
-{% if menu %}
+{% if menu_handle %}
 
-  {% assign levels = menu.levels %}
+  {% assign links = linklists[menu_handle] | default: false %}
+  {% assign levels = linklists[menu_handle].levels | default: 0 %}
 
   <nav>
-    <strong>Navigation</strong>
+    <strong>Navigation {{ links.size }}</strong>
     <strong>Levels: {{ levels }}</strong>
   </nav>
 
