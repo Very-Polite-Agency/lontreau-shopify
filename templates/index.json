@@ -301,6 +301,17 @@
         "image": "shopify:\/\/shop_images\/LONTREAU--accordion-with-image--image_3x_a53858f8-5a2e-459c-8541-a6bcbeadd8fc.png",
         "layout": "image-right"
       }
+    },
+    "16498131368d361219": {
+      "type": "educational-carousel",
+      "settings": {
+        "content_type": "detailed",
+        "alignment": "center",
+        "heading": "<p>We Believe <em>in Clean<\/em><\/p>",
+        "highlight": "standard",
+        "message": "",
+        "style": "dark"
+      }
     }
   },
   "order": [
@@ -315,6 +326,7 @@
     "16493759755f3cddf5",
     "1649464267fea0d6f8",
     "16493635494e59cb2e",
-    "1649439380ba38508d"
+    "1649439380ba38508d",
+    "16498131368d361219"
   ]
 }
