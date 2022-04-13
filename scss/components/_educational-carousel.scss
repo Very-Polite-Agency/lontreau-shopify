@@ -86,6 +86,9 @@
       align-items: flex-start;
       text-align: left;
       width: 100%;
+      & + .educational-carousel__item {
+        margin-top: 50px;
+      }
     }
     .educational-carousel__main {
       padding-left: var(--bs-gutter-width);
@@ -104,6 +107,11 @@
       .educational-carousel__main {
         padding-right: 0;
       }
+      .educational-carousel__item {
+        & + .educational-carousel__item {
+          margin-top: 0;
+        }
+      }
     }
   }
 
@@ -119,6 +127,11 @@
       justify-content: center;
       align-items: flex-start;
       flex-flow: row;
+    }
+    &[data-is-glider] {
+      .educational-carousel__main {
+        max-width: none;
+      }
     }
   }
 
@@ -182,10 +195,11 @@
 
     &[data-content-type="detailed"] {
       .educational-carousel__main {
-        width: var(--bs-container-width--sm);
+        max-width: var(--bs-container-width--sm);
       }
       &[data-is-glider] {
         .educational-carousel__main {
+          max-width: none;
           padding-left: calc( ((100% - var(--bs-container-width--sm)) / 2) + var(--bs-gutter-width) );
         }
       }
@@ -198,11 +212,13 @@
         }
       }
       .educational-carousel__main {
-        width: var(--bs-container-width--sm);
+        max-width: var(--bs-container-width--sm);
         flex-flow: row nowrap;
         justify-content: space-evenly;
         align-items: flex-start;
-        &.with-glider {
+      }
+      &[data-is-glider] {
+        .educational-carousel__main {
           width: 100%;
         }
       }
@@ -236,10 +252,17 @@
     }
 
     &[data-content-type="detailed"] {
+      .educational-carousel__item {
+        width: 80%;
+        margin: auto;
+      }
       .educational-carousel__main {
-        width: var(--bs-container-width--md);
+        max-width: var(--bs-container-width--md);
       }
       &[data-is-glider] {
+        .educational-carousel__item {
+          width: 100%;
+        }
         .educational-carousel__main {
           padding-left: calc( ((100% - var(--bs-container-width--md)) / 2) + var(--bs-gutter-width) );
         }
@@ -248,7 +271,7 @@
 
     &[data-content-type="minimal"] {
       .educational-carousel__main {
-        width: var(--bs-container-width--md);
+        max-width: var(--bs-container-width--md);
       }
     }
 
@@ -274,14 +297,28 @@
     }
 
     &[data-content-type="detailed"] {
+      .educational-carousel__item {
+        width: auto;
+        flex: 1;
+        & + .educational-carousel__item {
+          margin: 0;
+        }
+      }
       .educational-carousel__main {
-        padding-left: calc( ((100% - var(--bs-container-width--lg)) / 2) + var(--bs-gutter-width) );
+        max-width: var(--bs-container-width--lg);
+        flex-flow: row nowrap;
+        gap: 32px;
+      }
+      &[data-is-glider] {
+        .educational-carousel__main {
+          padding-left: calc( ((100% - var(--bs-container-width--lg)) / 2) + var(--bs-gutter-width) );
+        }
       }
     }
 
     &[data-content-type="minimal"] {
       .educational-carousel__main {
-        width: var(--bs-container-width--lg);
+        max-width: var(--bs-container-width--lg);
       }
     }
 
@@ -291,7 +328,12 @@
 
     &[data-content-type="detailed"] {
       .educational-carousel__main {
-        padding-left: calc( ((100% - var(--bs-container-width--xl)) / 2) + var(--bs-gutter-width) );
+        max-width: var(--bs-container-width--xl);
+      }
+      &[data-is-glider] {
+        .educational-carousel__main {
+          padding-left: calc( ((100% - var(--bs-container-width--xl)) / 2) + var(--bs-gutter-width) );
+        }
       }
     }
 
@@ -307,7 +349,12 @@
 
     &[data-content-type="detailed"] {
       .educational-carousel__main {
-        padding-left: calc( ((100% - var(--bs-container-width--xxl)) / 2) + var(--bs-gutter-width) );
+        max-width: var(--bs-container-width--xxl);
+      }
+      &[data-is-glider] {
+        .educational-carousel__main {
+          padding-left: calc( ((100% - var(--bs-container-width--xxl)) / 2) + var(--bs-gutter-width) );
+        }
       }
     }
 
