@@ -60,13 +60,14 @@
 
             {% endfor %}
 
+
+
           {% if is_glider %}</ul>{% endif %}
         {% if is_glider %}</div>{% endif %}
       {% if is_glider %}</div>{% endif %}
 
     </div>
   {% endif %}
-
 
   {% if is_glider %}
     <div class="glide__controls--technical">
@@ -80,6 +81,12 @@
   {% endif %}
 
 </div>
+
+{% javascript %}
+
+
+
+{% endjavascript %}
 
 {% schema %}
 {
@@ -143,6 +150,7 @@
       "type": "select",
       "options": [
         { "value": "light", "label": "Light" },
+        { "value": "grey", "label": "Grey" }
         { "value": "dark", "label": "Dark" }
       ],
       "default": "light",

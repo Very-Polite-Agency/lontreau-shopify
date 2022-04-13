@@ -97,18 +97,6 @@ const Gliders = (() => {
               9999: {
                 focusAt: 0,
                 gap: 32,
-                peek: { before: 0, after: 225 },
-                perView: 7,
-              },
-              2199: {
-                focusAt: 0,
-                gap: 32,
-                peek: { before: 0, after: 200 },
-                perView: 6,
-              },
-              1899: {
-                focusAt: 0,
-                gap: 32,
                 peek: { before: 0, after: 175 },
                 perView: 5,
               },

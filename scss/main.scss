@@ -76,6 +76,7 @@
   --theme-button-min-width--xxl: #{ map-get( $theme-button-min-widths, xxl ) };
 
   // ---------------------------------------- Colours
+  --theme-colour-asphalt: #{ hexToRGB( map-get( $theme-colours, 'asphalt' ) ) };
   --theme-colour-aqua: #{ hexToRGB( map-get( $theme-colours, 'aqua' ) ) };
   --theme-colour-black: #{ hexToRGB( map-get( $theme-colours, 'black' ) ) };
   --theme-colour-brick: #{ hexToRGB( map-get( $theme-colours, 'brick' ) ) };
@@ -102,6 +103,9 @@
   --theme-header-height--lg: #{ map-get( $theme-header-heights, 'lg' ) };
   --theme-header-height--xl: #{ map-get( $theme-header-heights, 'xl' ) };
   --theme-header-height--xxl: #{ map-get( $theme-header-heights, 'xxl' ) };
+
+
+  --theme-container-max-offset-left: auto;
 
   // ---------------------------------------- Icon
   --theme-icon-size-social: 32px;

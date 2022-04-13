@@ -15,7 +15,6 @@
     justify-content: center;
     align-items: flex-start;
     flex-flow: column;
-    padding: 0 var(--bs-gutter-width);
   }
 
   &__intro {
@@ -89,9 +88,12 @@
 
   &[data-content-type="detailed"] {
     .educational-carousel__item {
-      background: rgba(var(--theme-colour-black),0.1);
       align-items: flex-start;
       text-align: left;
+    }
+    .educational-carousel__main {
+      padding-left: var(--bs-gutter-width);
+      width: 100%;
     }
     .educational-carousel__title {
       display: inline-flex;
@@ -114,10 +116,11 @@
 
   &[data-is-glider] {
     .educational-carousel__main {
-      padding: 0 0 65px;
+      padding-bottom: 65px;
     }
   }
 
+  &[data-style="grey"],
   &[data-style="light"] {
     color: rgba(var(--theme-colour-black),1);
     .glide {
@@ -134,6 +137,10 @@
         }
       }
     }
+  }
+
+  &[data-style="grey"] {
+    background: rgba(var(--theme-colour-asphalt),1);
   }
 
   &[data-style="dark"] {
@@ -158,7 +165,15 @@
     }
   }
 
-  @include breakpoint(sm) {} // min width sm
+  @include breakpoint(sm) {
+
+    &[data-content-type="detailed"] {
+      .educational-carousel__main {
+        padding-left: calc( ((100% - var(--bs-container-width--sm)) / 2) + var(--bs-gutter-width) );
+      }
+    }
+
+  } // min width sm
 
   @include breakpoint(md) {
 
@@ -185,9 +200,15 @@
       }
     }
 
+    &[data-content-type="detailed"] {
+      .educational-carousel__main {
+        padding-left: calc( ((100% - var(--bs-container-width--md)) / 2) + var(--bs-gutter-width) );
+      }
+    }
+
     &[data-is-glider] {
       .educational-carousel__main {
-        padding: 0 0 45px;
+        padding-bottom: 45px;
       }
     }
 
@@ -201,9 +222,23 @@
       width: 75%;
     }
 
+    &[data-content-type="detailed"] {
+      .educational-carousel__main {
+        padding-left: calc( ((100% - var(--bs-container-width--lg)) / 2) + var(--bs-gutter-width) );
+      }
+    }
+
   } // min width lg
 
-  @include breakpoint(xl) {} // min width xl
+  @include breakpoint(xl) {
+
+    &[data-content-type="detailed"] {
+      .educational-carousel__main {
+        padding-left: calc( ((100% - var(--bs-container-width--xl)) / 2) + var(--bs-gutter-width) );
+      }
+    }
+
+  } // min width xl
 
   @include breakpoint(xxl) {
 
@@ -212,6 +247,12 @@
     }
 
     padding: 80px 0;
+
+    &[data-content-type="detailed"] {
+      .educational-carousel__main {
+        padding-left: calc( ((100% - var(--bs-container-width--xxl)) / 2) + var(--bs-gutter-width) );
+      }
+    }
 
   } // min width xxl
 
