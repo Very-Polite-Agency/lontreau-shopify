@@ -1,17 +1,16 @@
-{% comment %} {% render 'navigation', menu: policies_menu %} {% endcomment %}
-
 {% assign menu_handle = menu_handle | default: false %}
 
 {% if menu_handle %}
 
+  {% assign snippet_name = 'navigation' %}
   {% assign links = linklists[menu_handle].links | default: false %}
   {% assign levels = linklists[menu_handle].levels | default: 0 %}
 
-  <nav>
-    <strong>Navigation {{ links.size }}</strong>
-    <strong>Levels: {{ levels }}</strong>
+  <nav class="{{ snippet_name }}">
     {% for link in links %}
-      <a href="{{ link.url }}">{{ link.title }}</a>
+      <div class="{{ snippet_name }}__item">
+        <a class="{{ snippet_name }}__link" href="{{ link.url }}">{{ link.title }}</a>
+      </div>
     {% endfor %}
   </nav>
 
