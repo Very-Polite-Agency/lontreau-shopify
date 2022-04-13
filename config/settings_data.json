@@ -105,6 +105,11 @@
       "footer": {
         "type": "footer",
         "settings": {
+          "phone": "604-112-2154",
+          "email": "hello@lontreau.com",
+          "menu_menu": "",
+          "extra_menu": "",
+          "policies_menu": ""
         }
       },
       "main-password-header": {
@@ -118,6 +123,11 @@
         "type": "main-password-footer",
         "settings": {
           "color_scheme": "background-1"
+        }
+      },
+      "announcements": {
+        "type": "announcements",
+        "settings": {
         }
       }
     },
