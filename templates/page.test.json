@@ -6,9 +6,20 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "1649871514a94e2e1c": {
+      "type": "full-width-feature",
+      "settings": {
+        "title": "Sample Title",
+        "message": "<p>Donec id nibh semper, viverra est id, imperdiet quam. Mauris et purus pellentesque, imperdiet velit vel, rutrum massa.<\/p>",
+        "highlight": "standard",
+        "parallax": false,
+        "height": "auto"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1649871514a94e2e1c"
   ]
 }
