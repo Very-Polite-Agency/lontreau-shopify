@@ -304,6 +304,37 @@
     },
     "16498131368d361219": {
       "type": "educational-carousel",
+      "blocks": {
+        "94056496-c010-449c-9f94-f6401bb23680": {
+          "type": "detailed",
+          "settings": {
+            "title": "Detail Alpha",
+            "description": "",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-02.png"
+          }
+        },
+        "7882c4e3-0ef6-4b81-960e-95daa2a754f8": {
+          "type": "detailed",
+          "settings": {
+            "title": "Detail Bravo",
+            "description": "",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-01.png"
+          }
+        },
+        "90b7ca8a-64d2-4da5-9cfe-7fe5097077bc": {
+          "type": "detailed",
+          "settings": {
+            "title": "Detail Charlie",
+            "description": "",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-03.png"
+          }
+        }
+      },
+      "block_order": [
+        "94056496-c010-449c-9f94-f6401bb23680",
+        "7882c4e3-0ef6-4b81-960e-95daa2a754f8",
+        "90b7ca8a-64d2-4da5-9cfe-7fe5097077bc"
+      ],
       "settings": {
         "content_type": "detailed",
         "alignment": "center",
