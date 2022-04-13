@@ -32,10 +32,6 @@
   {% if blocks %}
     <div class="{{ section_name }}__main {% if is_glider %}with-glider{% endif %}">
 
-      {% if 'detailed' == content_type %}
-        {% render 'layout--container' %}
-      {% endif %}
-
       {% if is_glider %}<div class="glide js--glider" id="{{ glider_id }}" data-glide-style="{{ section_name }}-{{ content_type }}">{% endif %}
         {% if is_glider %}<div class="glide__track" data-glide-el="track">{% endif %}
           {% if is_glider %}<ul class="glide__slides">{% endif %}
@@ -67,10 +63,6 @@
           {% if is_glider %}</ul>{% endif %}
         {% if is_glider %}</div>{% endif %}
       {% if is_glider %}</div>{% endif %}
-
-      {% if 'detailed' == content_type %}
-        {% render 'layout--container', state: 'closed' %}
-      {% endif %}
 
     </div>
   {% endif %}

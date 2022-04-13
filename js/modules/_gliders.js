@@ -95,49 +95,52 @@ const Gliders = (() => {
             autoplay: 0,
             breakpoints: {
               9999: {
-                // up to 1400
-                focusAt: 'center',
-                perView: 17,
-              },
-              2499: {
-                // up to 1400
-                focusAt: 'center',
-                perView: 15,
-              },
-              1999: {
-                // up to 1400
-                focusAt: 'center',
-                perView: 13,
-              },
-              1799: {
-                // up to 1400
-                focusAt: 'center',
-                perView: 11,
-              },
-              1599: {
-                // up to 1400
-                focusAt: 'center',
-                perView: 9,
-              },
-              1399: {
-                // up to 1400
-                focusAt: 'center',
+                focusAt: 0,
+                gap: 32,
+                peek: { before: 0, after: 225 },
                 perView: 7,
               },
-              1199: {
-                // up to 1200
-                focusAt: 'center',
+              2199: {
+                focusAt: 0,
+                gap: 32,
+                peek: { before: 0, after: 200 },
                 perView: 6,
+              },
+              1899: {
+                focusAt: 0,
+                gap: 32,
+                peek: { before: 0, after: 175 },
+                perView: 5,
+              },
+              1599: {
+                focusAt: 0,
+                gap: 32,
+                peek: { before: 0, after: 150 },
+                perView: 4,
+              },
+              1299: {
+                focusAt: 0,
+                gap: 32,
+                peek: { before: 0, after: 125 },
+                perView: 3,
               },
               991: {
                 // up to 992
-                focusAt: 'center',
-                peek: { before: 75, after: 75 },
-                perView: 5,
+                focusAt: 0,
+                gap: 32,
+                peek: { before: 0, after: 100 },
+                perView: 2,
               },
               767: {
                 // up to 768
-                focusAt: 'center',
+                focusAt: 0,
+                gap: 32,
+                peek: { before: 0, after: 75 },
+                perView: 1,
+              },
+              575: {
+                // up to 576
+                focusAt: 0,
                 perView: 1,
               }
             },

@@ -185,12 +185,6 @@
       }
     }
 
-    &[data-content-type="detailed"] {
-      .educational-carousel__item {
-        padding-left: calc( 2 * var(--bs-gutter-width) );
-      }
-    }
-
     &[data-is-glider] {
       .educational-carousel__main {
         padding: 0 0 45px;
