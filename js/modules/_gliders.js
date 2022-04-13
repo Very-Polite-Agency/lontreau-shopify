@@ -142,94 +142,62 @@ const Gliders = (() => {
               9999: {
                 // up to 1400
                 focusAt: 'center',
-                perView: 17,
-              },
-              2499: {
-                // up to 1400
-                focusAt: 'center',
-                perView: 15,
-              },
-              1999: {
-                // up to 1400
-                focusAt: 'center',
-                perView: 13,
-              },
-              1799: {
-                // up to 1400
-                focusAt: 'center',
+                gap: 72,
+                peek: 0,
                 perView: 11,
               },
               1599: {
                 // up to 1400
                 focusAt: 'center',
+                gap: 62,
+                peek: 0,
                 perView: 9,
               },
               1399: {
                 // up to 1400
                 focusAt: 'center',
+                gap: 52,
+                peek: 0,
                 perView: 7,
               },
               1199: {
                 // up to 1200
                 focusAt: 'center',
+                gap: 42,
+                peek: 0,
                 perView: 6,
               },
               991: {
                 // up to 992
                 focusAt: 'center',
-                peek: { before: 75, after: 75 },
+                gap: 32,
+                peek: 0,
                 perView: 5,
               },
               767: {
                 // up to 768
                 focusAt: 'center',
+                gap: 32,
                 peek: { before: 55, after: 55 },
                 perView: 4,
               },
               575: {
                 // up to 576
                 focusAt: 'center',
+                gap: 32,
                 peek: { before: 35, after: 35 },
                 perView: 3,
               },
               400: {
                 // up to 576
                 focusAt: 'center',
+                gap: 32,
                 peek: { before: 15, after: 15 },
                 perView: 1,
               },
             },
-            gap: 24,
+            gap: 32,
             peek: 0,
-          });
-          break;
-        case 'soul':
-          options = gliderOptions({
-            animationDuration: 450,
-            autoplay: 0,
-            breakpoints: {
-              991: {
-                // up to 991
-                peek: { before: 0, after: 0 },
-                perView: 1,
-                focusAt: 0,
-              },
-              575: {
-                // up to 991
-                peek: { before: 30, after: 30 },
-                perView: 1,
-                focusAt: 0,
-              },
-            },
-            gap: 20,
-          });
-          break;
-        case 'testimonials':
-          options = gliderOptions({
-            animationDuration: 450,
-            autoplay: 0,
-            breakpoints: {},
-            gap: 24,
           });
           break;
       }
