@@ -13,8 +13,11 @@
     {% render 'layout--container' %}
       <div class="{{ section_name }}__layout">
         <div class="{{ section_name }}__brand">
-          <a href="/" target="_self" title="Home">Home</a>
+          <a href="/" target="_self" title="Home">
+            {% render 'svg--icon', icon_type: 'brand.logo.small' %}
+          </a>
         </div>
+
         <div class="{{ section_name }}__menus">
         </div>
 
