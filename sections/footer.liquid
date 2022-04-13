@@ -21,9 +21,15 @@
         </div>
 
         <div class="{{ section_name }}__menus">
-          {% if main_menu %}Main Menu{% endif %}
-          {% if extra_menu %}Extra Menu{% endif %}
-          {% if policies_menu %}Policies{% endif %}
+          {% if main_menu %}
+            {% render 'navigation', menu: main_menu %}
+          {% endif %}
+          {% if extra_menu %}
+            {% render 'navigation', menu: extra_menu %}
+          {% endif %}
+          {% if policies_menu %}
+            {% render 'navigation', menu: policies_menu %}
+          {% endif %}
         </div>
 
         <div class="{{ section_name }}__contact">

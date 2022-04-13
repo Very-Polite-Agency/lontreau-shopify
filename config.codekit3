@@ -2919,6 +2919,14 @@
       "oAP" : "\/snippets\/layout--container.liquid",
       "oF" : 0
     },
+    "\/snippets\/navigation.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/navigation.liquid",
+      "oF" : 0
+    },
     "\/snippets\/pagination.liquid" : {
       "cB" : 0,
       "ft" : 8192,
