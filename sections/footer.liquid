@@ -22,13 +22,10 @@
 
         <div class="{{ section_name }}__menus">
           {% if main_menu %}
-            {% render 'navigation', menu_handle: main_menu %}
+            {% render 'navigation', classes: 'custom__classes', menu_handle: main_menu %}
           {% endif %}
           {% if extra_menu %}
-            {% render 'navigation', menu_handle: extra_menu %}
-          {% endif %}
-          {% if policies_menu %}
-            {% render 'navigation', menu_handle: policies_menu %}
+            {% render 'navigation', classes: 'custom__classes_2', menu_handle: extra_menu %}
           {% endif %}
         </div>
 

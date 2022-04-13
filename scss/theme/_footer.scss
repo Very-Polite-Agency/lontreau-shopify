@@ -2,19 +2,36 @@
 
   background: rgba(var(--theme-colour-forrest-dark), 1);
   color: rgba(var(--theme-colour-white), 1);
+  padding: 32px 0;
 
   &__brand {
     width: 32px;
+    margin-left: auto;
     a, img, svg {
       height: auto;
       width: 100%;
       display: block;
     }
+    a {
+      transition: opacity var(--theme-transition-duration);
+      opacity: 1;
+      &:hover  {
+        opacity: 0.5;
+      }
+    }
   }
 
   &__layout {
     display: flex;
-    flex: content;
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  &__menus {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
     align-items: flex-start;
   }
 
