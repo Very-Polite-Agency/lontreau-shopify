@@ -4,12 +4,18 @@
   color: rgba(var(--theme-colour-white), 1);
 
   &__brand {
-    height: 100px;
+    width: 32px;
     a, img, svg {
-      height: 100%;
-      width: auto;
+      height: auto;
+      width: 100%;
       display: block;
     }
+  }
+
+  &__layout {
+    display: flex;
+    flex: content;
+    align-items: flex-start;
   }
 
 }
