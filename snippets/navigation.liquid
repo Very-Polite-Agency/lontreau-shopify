@@ -4,12 +4,15 @@
 
 {% if menu_handle %}
 
-  {% assign links = linklists[menu_handle] | default: false %}
+  {% assign links = linklists[menu_handle].links | default: false %}
   {% assign levels = linklists[menu_handle].levels | default: 0 %}
 
   <nav>
     <strong>Navigation {{ links.size }}</strong>
     <strong>Levels: {{ levels }}</strong>
+    {% for link in links %}
+      <a href="{{ link.url }}">{{ link.title }}</a>
+    {% endfor %}
   </nav>
 
 {% endif %}
