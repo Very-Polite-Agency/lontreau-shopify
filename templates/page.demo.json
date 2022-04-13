@@ -16,10 +16,22 @@
         "parallax": false,
         "height": "auto"
       }
+    },
+    "1649871763aafb85aa": {
+      "type": "full-width-feature",
+      "settings": {
+        "title": "Demo Title Two",
+        "message": "",
+        "highlight": "standard",
+        "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--large_2x_dbdb0c77-33c7-4bdf-9573-d7b5a903ee67.png",
+        "parallax": false,
+        "height": "large"
+      }
     }
   },
   "order": [
     "main",
-    "16498716862814dedf"
+    "16498716862814dedf",
+    "1649871763aafb85aa"
   ]
 }
