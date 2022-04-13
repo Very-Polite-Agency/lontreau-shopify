@@ -1,6 +1,7 @@
 {% assign section_name = 'footer' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign extra_menu = section.settings.extra_menu | default: false %}
 {% assign main_menu = section.settings.menu_menu | default: false %}
 {% assign policies_menu = section.settings.policies_menu | default: false %}
 {% assign social_link_facebook = section.settings.social_link_facebook | default: false %}
@@ -8,43 +9,48 @@
 {% assign social_link_linkedin = section.settings.social_link_linkedin | default: false %}
 {% assign social_link_twitter = section.settings.social_link_twitter | default: false %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}">
+<div class="{{ section_name }}" id="{{ section_id }}">
   <div class="{{ section_name }}__main">
     {% render 'layout--container' %}
       <div class="{{ section_name }}__layout">
+
         <div class="{{ section_name }}__brand">
           <a href="/" target="_self" title="Home">
-            {% render 'svg--icon', icon_type: 'brand.logo.small' %}
+            {% render 'svg', type: 'brand.logo.small' %}
           </a>
         </div>
 
         <div class="{{ section_name }}__menus">
+          {% if main_menu %}Main Menu{% endif %}
+          {% if extra_menu %}Extra Menu{% endif %}
+          {% if policies_menu %}Policies{% endif %}
         </div>
 
         <div class="{{ section_name }}__contact">
           {% if social_link_facebook or social_link_instagram or social_link_twitter %}
-            <nav class="navigation">
-            {% if social_link_facebook %}
-              <div class="navigation__item">
-                <a href="{{ social_link_facebook }}" target="_blank" title="{{ shop.name }} Facebook Acccount">
-                  {% render 'svg--icon', type: 'twitter' %}
-                </a>
-              </div>
-            {% endif %}
-            {% if social_link_instagram %}
-              <div class="navigation__item">
-                <a href="{{ social_link_instagram }}" target="_blank" title="{{ shop.name }} Instagram Acccount">
-                  {% render 'svg--icon', type: 'twitter' %}
-                </a>
-              </div>
-            {% endif %}
-            {% if social_link_twitter %}
-              <div class="navigation__item">
-                <a href="{{ social_link_twitter }}" target="_blank" title="{{ shop.name }} Twitter Acccount">
-                  {% render 'svg--icon', type: 'twitter' %}
-                </a>
-              </div>
-            {% endif %}
+            <nav class="{{ section_name }}__social navigation">
+              {% if social_link_instagram %}
+                <div class="{{ section_name }}__social-item navigation__item">
+                  <a href="{{ social_link_instagram }}" target="_blank" title="{{ shop.name }} Instagram Acccount">
+                    {% render 'svg', type: 'icon.instagram' %}
+                  </a>
+                </div>
+              {% endif %}
+              {% if social_link_twitter %}
+                <div class="{{ section_name }}__social-item navigation__item">
+                  <a href="{{ social_link_twitter }}" target="_blank" title="{{ shop.name }} Twitter Acccount">
+                    {% render 'svg', type: 'icon.twitter' %}
+                  </a>
+                </div>
+              {% endif %}
+              {% if social_link_facebook %}
+                <div class="{{ section_name }}__social-item navigation__item">
+                  <a href="{{ social_link_facebook }}" target="_blank" title="{{ shop.name }} Facebook Acccount">
+                    {% render 'svg', type: 'icon.facebook' %}
+                  </a>
+                </div>
+              {% endif %}
+            </nav>
           {% endif %}
         </div>
 
@@ -60,6 +66,20 @@
     "class": "footer",
     "settings": [
       {
+        "content": "Contact Info",
+        "type": "header"
+      },
+      {
+        "label": "Phone",
+        "type": "text",
+        "id": "phone"
+      },
+      {
+        "label": "Email",
+        "type": "text",
+        "id": "email"
+      },
+      {
         "content": "Navigation",
         "type": "header"
       },
@@ -67,6 +87,11 @@
         "label": "Main Menu",
         "type": "link_list",
         "id": "menu_menu"
+      },
+      {
+        "label": "Extra Menu",
+        "type": "link_list",
+        "id": "extra_menu"
       },
       {
         "label": "Policies Menu",

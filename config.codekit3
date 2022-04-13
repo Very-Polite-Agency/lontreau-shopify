@@ -2951,20 +2951,20 @@
       "oAP" : "\/snippets\/product-thumbnail.liquid",
       "oF" : 0
     },
-    "\/snippets\/svg--icon.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/snippets\/svg--icon.liquid",
-      "oF" : 0
-    },
     "\/snippets\/svg--icon.plus.liquid" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/snippets\/svg--icon.plus.liquid",
+      "oF" : 0
+    },
+    "\/snippets\/svg.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/svg.liquid",
       "oF" : 0
     },
     "\/snippets\/theme--css-variables.liquid" : {
@@ -3127,10 +3127,34 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/templates\/page.demo.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/templates\/page.demo.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/templates\/page.faqs.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/templates\/page.faqs.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/templates\/page.json" : {
       "ft" : 524288,
       "oA" : 0,
       "oAP" : "\/templates\/page.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/templates\/page.test.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/templates\/page.test.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
