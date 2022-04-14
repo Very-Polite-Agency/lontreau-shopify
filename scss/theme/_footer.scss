@@ -22,6 +22,9 @@
     & + .footer__menus {
       margin-top: 50px;
     }
+    & + .footer__main {
+      margin-top: 48px;
+    }
   }
 
   &__contact {
@@ -80,12 +83,6 @@
     line-height: 1;
     letter-spacing: 0.07em;
     text-transform: uppercase;
-  }
-
-  &__layout {
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
   }
 
   &__menus {
