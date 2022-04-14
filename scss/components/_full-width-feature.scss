@@ -12,13 +12,10 @@
     color: rgba(var(--theme-colour-grass),1);
   }
 
-  &__heading {
-
-  }
-
   &__main {
     position: relative;
     z-index: 10;
+    width: 100%;
   }
 
   &__media {

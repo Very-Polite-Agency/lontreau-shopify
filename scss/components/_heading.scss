@@ -24,14 +24,26 @@
     font-family: var(--theme-font-family--serif--primary);
     font-style: normal;
     font-weight: 400;
-    font-size: 42px;
+    font-size: 37px;
     line-height: 1.14;
     letter-spacing: -0.02em;
   }
 
-  @include breakpoint(sm) {} // min width sm
+  @include breakpoint(sm) {
 
-  @include breakpoint(md) {} // min width md
+    &--2 {
+      font-size: 44px;
+    }
+
+  } // min width sm
+
+  @include breakpoint(md) {
+
+    &--2 {
+      font-size: 48px;
+    }
+
+  } // min width md
 
   @include breakpoint(lg) {
 

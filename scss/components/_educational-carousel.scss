@@ -149,6 +149,7 @@
         border-top-color: rgba(var(--theme-colour-grass),1);
         .button {
           border-color: rgba(var(--theme-colour-grass),1);
+          border-bottom: none;
           color: rgba(var(--theme-colour-grass),1);
           background: transparent;
           &:hover {
