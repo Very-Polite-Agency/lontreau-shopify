@@ -169,4 +169,52 @@
     }
   }
 
+  @include breakpoint(sm) {
+
+    &__menus {
+      .navigation {
+        & + .navigation {
+          margin-left: calc(3 * var(--bs-gutter-width));
+        }
+      }
+    }
+
+  } // min width sm
+
+  @include breakpoint(md) {
+
+    &__menus {
+      .navigation {
+        & + .navigation {
+          margin-left: calc(4 * var(--bs-gutter-width));
+        }
+      }
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {
+
+    &__copyright {
+      order: 1;
+    }
+
+    &__menus-policies {
+      order: 2;
+      flex-flow: row nowrap;
+      .navigation {
+        &__item {
+          & + .navigation__item {
+            margin: 0 0 0 45px;
+          }
+        }
+      }
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
 }

@@ -11,78 +11,75 @@
 {% assign social_link_twitter = settings.social_link_twitter | default: false %}
 
 <div class="{{ section_name }}" id="{{ section_id }}">
-  <div class="{{ section_name }}__main">
-    {% render 'layout--container' %}
-      <div class="{{ section_name }}__layout">
+  {% render 'layout--container' %}
 
-        <div class="{{ section_name }}__brand">
-          <a href="/" target="_self" title="Home">
-            {% render 'svg', type: 'brand.logo.small' %}
-          </a>
-        </div>
+    <div class="{{ section_name }}__brand">
+      <a href="/" target="_self" title="Home">
+        {% render 'svg', type: 'brand.logo.small' %}
+      </a>
+    </div>
 
-        <div class="{{ section_name }}__menus">
-          {% if main_menu %}
-            {% render 'navigation', classes: 'footer__menus-main navigation--circle', menu_handle: main_menu %}
-          {% endif %}
-          {% if extra_menu %}
-            {% render 'navigation', classes: 'footer__menus-extra navigation--circle', menu_handle: extra_menu %}
-          {% endif %}
-        </div>
+    <div class="{{ section_name }}__main">
+      <div class="{{ section_name }}__menus">
+        {% if main_menu %}
+          {% render 'navigation', classes: 'footer__menus-main navigation--circle', menu_handle: main_menu %}
+        {% endif %}
+        {% if extra_menu %}
+          {% render 'navigation', classes: 'footer__menus-extra navigation--circle', menu_handle: extra_menu %}
+        {% endif %}
+      </div>
+      <div class="{{ section_name }}__contact">
 
-        <div class="{{ section_name }}__contact">
+        {% if social_link_facebook or social_link_instagram or social_link_twitter %}
+          <nav class="{{ section_name }}__social navigation">
+            {% if social_link_instagram %}
+              <div class="{{ section_name }}__social-item">
+                <a href="{{ social_link_instagram }}" target="_blank" title="{{ shop.name }} Instagram Acccount">
+                  {% render 'svg', type: 'icon.instagram' %}
+                </a>
+              </div>
+            {% endif %}
+            {% if social_link_twitter %}
+              <div class="{{ section_name }}__social-item">
+                <a href="{{ social_link_twitter }}" target="_blank" title="{{ shop.name }} Twitter Acccount">
+                  {% render 'svg', type: 'icon.twitter' %}
+                </a>
+              </div>
+            {% endif %}
+            {% if social_link_facebook %}
+              <div class="{{ section_name }}__social-item">
+                <a href="{{ social_link_facebook }}" target="_blank" title="{{ shop.name }} Facebook Acccount">
+                  {% render 'svg', type: 'icon.facebook' %}
+                </a>
+              </div>
+            {% endif %}
+          </nav>
+        {% endif %}
 
-          {% if social_link_facebook or social_link_instagram or social_link_twitter %}
-            <nav class="{{ section_name }}__social navigation">
-              {% if social_link_instagram %}
-                <div class="{{ section_name }}__social-item">
-                  <a href="{{ social_link_instagram }}" target="_blank" title="{{ shop.name }} Instagram Acccount">
-                    {% render 'svg', type: 'icon.instagram' %}
-                  </a>
-                </div>
-              {% endif %}
-              {% if social_link_twitter %}
-                <div class="{{ section_name }}__social-item">
-                  <a href="{{ social_link_twitter }}" target="_blank" title="{{ shop.name }} Twitter Acccount">
-                    {% render 'svg', type: 'icon.twitter' %}
-                  </a>
-                </div>
-              {% endif %}
-              {% if social_link_facebook %}
-                <div class="{{ section_name }}__social-item">
-                  <a href="{{ social_link_facebook }}" target="_blank" title="{{ shop.name }} Facebook Acccount">
-                    {% render 'svg', type: 'icon.facebook' %}
-                  </a>
-                </div>
-              {% endif %}
-            </nav>
-          {% endif %}
-
-          {% if contact_email or contact_phone %}
-            <div class="{{ section_name }}__contact-details">
-              {% if contact_email %}
-                <a href="mailto:{{ contact_email }}" target="_self" title="Email {{ shop.name }}">{{ contact_email }}</a>
-              {% endif %}
-              {% if contact_phone %}
-                <a href="tel:{{ contact_phone }}" target="_self" title="Call {{ shop.name }}">{{ contact_phone }}</a>
-              {% endif %}
-            </div>
-          {% endif %}
-
-        </div>
-
-        <div class="{{ section_name }}__hr"></div>
-
-        <div class="{{ section_name }}__legal">
-          {% if policies_menu %}
-            {% render 'navigation', classes: 'footer__menus-policies', menu_handle: policies_menu %}
-          {% endif %}
-          <div class="{{ section_name }}__copyright">&copy; {{ shop.name }} {{ "now" | date: "%Y" }}.</div>
-        </div>
+        {% if contact_email or contact_phone %}
+          <div class="{{ section_name }}__contact-details">
+            {% if contact_email %}
+              <a href="mailto:{{ contact_email }}" target="_self" title="Email {{ shop.name }}">{{ contact_email }}</a>
+            {% endif %}
+            {% if contact_phone %}
+              <a href="tel:{{ contact_phone }}" target="_self" title="Call {{ shop.name }}">{{ contact_phone }}</a>
+            {% endif %}
+          </div>
+        {% endif %}
 
       </div>
-    {% render 'layout--container', state: 'closed' %}
-  </div>
+    </div>
+
+    <div class="{{ section_name }}__hr"></div>
+
+    <div class="{{ section_name }}__legal">
+      {% if policies_menu %}
+        {% render 'navigation', classes: 'footer__menus-policies', menu_handle: policies_menu %}
+      {% endif %}
+      <div class="{{ section_name }}__copyright">&copy; {{ shop.name }} {{ "now" | date: "%Y" }}.</div>
+    </div>
+
+  {% render 'layout--container', state: 'closed' %}
 </div>
 
 {% schema %}
