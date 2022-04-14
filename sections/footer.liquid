@@ -62,10 +62,10 @@
           {% if contact_email or contact_phone %}
             <div class="{{ section_name }}__contact-details">
               {% if contact_email %}
-                <a href="mailt:{{ contact_email }}" target="" title="">{{ contact_email }}</a>
+                <a href="mailto:{{ contact_email }}" target="" title="Email {{ shop.name }}">{{ contact_email }}</a>
               {% endif %}
               {% if contact_phone %}
-                <a href="tel:{{ contact_phone }}" target="" title="">{{ contact_phone }}</a>
+                <a href="tel:{{ contact_phone }}" target="" title="Call {{ shop.name }}">{{ contact_phone }}</a>
               {% endif %}
             </div>
           {% endif %}
