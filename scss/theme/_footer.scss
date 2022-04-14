@@ -26,6 +26,60 @@
 
   &__contact {
     margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    a {
+      color: rgba(var(--theme-colour-grass),1);
+    }
+    &-details {
+      display: inline-flex;
+      flex-flow: column;
+      align-items: flex-end;
+      a {
+        font-family: var(--theme-font-family--sans-serif);
+        font-style: normal;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1;
+        text-align: right;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        text-decoration: none;
+        & + a {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  &__hr {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: url('./stroke.hr.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    margin-top: 40px;
+  }
+
+  &__legal {
+    color: rgba(var(--theme-colour-white),1);
+    font-family: var(--theme-font-family--sans-serif);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: flex-end;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
   }
 
   &__layout {
@@ -42,7 +96,7 @@
     align-items: flex-start;
     .navigation {
       & + .navigation {
-        margin-left: var(--bs-gutter-width);
+        margin-left: calc( 1.25 * var(--bs-gutter-width));
       }
     }
     &-extra,
@@ -80,6 +134,37 @@
             z-index: -1;
           }
         }
+      }
+    }
+    &-policies {
+      flex-flow: column;
+      align-items: flex-start;
+      .navigation {
+        &__item {
+          overflow: visible;
+          & + .navigation__item {
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  &__social {
+    display: inline-flex;
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
+    &-item {
+      height: 22px;
+      width: 22px;
+      & + .footer__social-item {
+        margin-left: 26px;
+      }
+      a, img, svg {
+        display: block;
+        width: 100%;
+        height: 100%;
       }
     }
   }
