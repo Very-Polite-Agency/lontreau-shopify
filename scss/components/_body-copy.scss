@@ -52,7 +52,8 @@
     letter-spacing: 0.05em;
   }
 
-  &--large {
+  &--large,
+  &--xl {
     @extend .body-copy;
     font-family: var(--theme-font-family--serif--primary);
     font-style: normal;

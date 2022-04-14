@@ -13,9 +13,16 @@
 
   <nav class="{{ snippet_classes }}">
     {% for link in links %}
+
+      {% assign active = link.active %}
+      {% assign title = link.title %}
+      {% assign type = link.type %}
+      {% assign url = link.url %}
+
       <div class="{{ snippet_name }}__item">
-        <a class="{{ snippet_name }}__link" href="{{ link.url }}">{{ link.title }}</a>
+        <a class="{{ snippet_name }}__link{% if active %} active{% endif %}" href="{{ url }}" title="{{ title }}">{{ title }}</a>
       </div>
+
     {% endfor %}
   </nav>
 

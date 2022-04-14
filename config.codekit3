@@ -530,31 +530,61 @@
       "sC" : 3,
       "tS" : 1
     },
-    "\/assets\/icon-arrow-right.svg" : {
+    "\/assets\/icon.arrow-right.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/icon-arrow-right.svg",
+      "oAP" : "\/assets\/icon.arrow-right.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/assets\/icon-minus.svg" : {
+    "\/assets\/icon.facebook.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/icon-minus.svg",
+      "oAP" : "\/assets\/icon.facebook.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/icon.instagram.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/icon.instagram.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/icon.minus.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/icon.minus.svg",
       "oF" : 0,
       "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/assets\/icon-plus.svg" : {
+    "\/assets\/icon.plus.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/icon-plus.svg",
+      "oAP" : "\/assets\/icon.plus.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/icon.twitter.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/icon.twitter.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -2957,14 +2987,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/snippets\/product-thumbnail.liquid",
-      "oF" : 0
-    },
-    "\/snippets\/svg--icon.plus.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/snippets\/svg--icon.plus.liquid",
       "oF" : 0
     },
     "\/snippets\/svg.liquid" : {

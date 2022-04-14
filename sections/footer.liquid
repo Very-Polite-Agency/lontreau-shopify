@@ -1,6 +1,8 @@
 {% assign section_name = 'footer' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign contact_email = section.settings.email | default: false %}
+{% assign contact_phone = section.settings.phone | default: false %}
 {% assign extra_menu = section.settings.extra_menu | default: false %}
 {% assign main_menu = section.settings.menu_menu | default: false %}
 {% assign policies_menu = section.settings.policies_menu | default: false %}
@@ -22,32 +24,33 @@
 
         <div class="{{ section_name }}__menus">
           {% if main_menu %}
-            {% render 'navigation', classes: 'custom__classes', menu_handle: main_menu %}
+            {% render 'navigation', classes: 'footer__menus-main navigation--circle', menu_handle: main_menu %}
           {% endif %}
           {% if extra_menu %}
-            {% render 'navigation', classes: 'custom__classes_2', menu_handle: extra_menu %}
+            {% render 'navigation', classes: 'footer__menus-extra navigation--circle', menu_handle: extra_menu %}
           {% endif %}
         </div>
 
         <div class="{{ section_name }}__contact">
+
           {% if social_link_facebook or social_link_instagram or social_link_twitter %}
             <nav class="{{ section_name }}__social navigation">
               {% if social_link_instagram %}
-                <div class="{{ section_name }}__social-item navigation__item">
+                <div class="navigation__item">
                   <a href="{{ social_link_instagram }}" target="_blank" title="{{ shop.name }} Instagram Acccount">
                     {% render 'svg', type: 'icon.instagram' %}
                   </a>
                 </div>
               {% endif %}
               {% if social_link_twitter %}
-                <div class="{{ section_name }}__social-item navigation__item">
+                <div class="navigation__item">
                   <a href="{{ social_link_twitter }}" target="_blank" title="{{ shop.name }} Twitter Acccount">
                     {% render 'svg', type: 'icon.twitter' %}
                   </a>
                 </div>
               {% endif %}
               {% if social_link_facebook %}
-                <div class="{{ section_name }}__social-item navigation__item">
+                <div class="navigation__item">
                   <a href="{{ social_link_facebook }}" target="_blank" title="{{ shop.name }} Facebook Acccount">
                     {% render 'svg', type: 'icon.facebook' %}
                   </a>
@@ -55,6 +58,18 @@
               {% endif %}
             </nav>
           {% endif %}
+
+          {% if contact_email or contact_phone %}
+            <div class="{{ section_name }}__contact-details">
+              {% if contact_email %}
+                <a href="mailt:{{ contact_email }}" target="" title="">{{ contact_email }}</a>
+              {% endif %}
+              {% if contact_phone %}
+                <a href="tel:{{ contact_phone }}" target="" title="">{{ contact_phone }}</a>
+              {% endif %}
+            </div>
+          {% endif %}
+
         </div>
 
       </div>
