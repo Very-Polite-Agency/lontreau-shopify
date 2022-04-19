@@ -3,6 +3,13 @@
     "main": {
       "type": "full-width-feature",
       "settings": {
+        "title": "",
+        "heading": "<p>About <em>Lontreau<\/em><\/p>",
+        "heading_highlight": "standard",
+        "image": "shopify:\/\/shop_images\/LONTREAU--about-page--hero_2x_e636d79b-1883-48c7-8caa-f85754400c43.png",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "auto"
       }
     }
   },
