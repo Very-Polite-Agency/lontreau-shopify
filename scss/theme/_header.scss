@@ -1,0 +1,39 @@
+.header {
+
+  transition: background var(--theme-transition-duration);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%);
+  color: rgba(var(--theme-colour-white),1);
+  position: fixed;
+  width: 100%;
+  z-index: 25;
+
+  svg {
+    fill: currentColor;
+  }
+
+  &__brand {
+    color: rgba(var(--theme-colour-grass),1);
+    height: 40px;
+    a, img, svg {
+      color: inherit;
+      display: block;
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &__layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+  }
+
+  &:hover,
+  &.hover-active,
+  .scroll-position--scrolled & {
+    background: rgba(var(--theme-colour-white),1);
+    color: rgba(var(--theme-colour-black),1);
+  }
+
+}

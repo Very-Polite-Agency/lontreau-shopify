@@ -1,11 +1,11 @@
 {% assign section_name = 'header' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
-{% assign main_menu = section.settings.menu_menu | default: false %}
+{% assign menu_main = section.settings.menu_main | default: false %}
 
-<div class="{{ section_name }}" id="{{ section_id }}">
+<div class="{{ section_name }}__main">
   {% render 'layout--container' %}
-    <div class="{{ section_name }}__main">
+    <div class="{{ section_name }}__layout">
 
       <div class="{{ section_name }}__brand">
         <a href="/" target="_self" title="Home">
@@ -13,8 +13,8 @@
         </a>
       </div>
 
-      {% if main_menu %}
-        {% render 'navigation', classes: 'header__main-menu', menu_handle: main_menu %}
+      {% if menu_main %}
+        {% render 'navigation', classes: 'header__main-menu', menu_handle: menu_main %}
       {% endif %}
 
     </div>
@@ -30,6 +30,8 @@
 {% schema %}
   {
     "name": "Header",
+    "tag": "header",
+    "class": "header",
     "settings": [
       {
         "content": "Navigation",
@@ -38,7 +40,7 @@
       {
         "label": "Main Menu",
         "type": "link_list",
-        "id": "main_menu"
+        "id": "menu_main"
       }
     ],
 	  "blocks": []
