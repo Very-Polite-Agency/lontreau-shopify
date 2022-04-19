@@ -11,9 +11,21 @@
         "anchor_id": "",
         "height": "auto"
       }
+    },
+    "1650406820d7117f5d": {
+      "type": "full-width-feature",
+      "settings": {
+        "title": "Our Mission",
+        "heading": "<p>Create regenerative skincare products that<em> work as hard<\/em> as you do.<\/p>",
+        "heading_highlight": "stroke",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "large"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1650406820d7117f5d"
   ]
 }
