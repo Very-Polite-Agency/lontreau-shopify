@@ -1,7 +1,6 @@
 {% assign section_name = 'full-width-feature' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
-{% assign anchor_id = section.settings.anchor_id | default: false %}
 {% assign height = section.settings.height | default: 'auto' %}
 {% assign highlight = section.settings.highlight | default: false %}
 {% assign image = section.settings.image | default: false %}
@@ -9,7 +8,7 @@
 {% assign parallax = section.settings.parallax | default: false %}
 {% assign title = section.settings.title | default: false %}
 
-{% if section.settings.anchor_id %}
+{% if section.settings.anchor_id != blank %}
   {% assign section_id = section.settings.anchor_id %}
 {% endif %}
 
