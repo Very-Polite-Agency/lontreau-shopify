@@ -4,8 +4,8 @@
       "type": "full-width-feature",
       "settings": {
         "title": "",
-        "message": "<p><em>Contact<\/em> Us<\/p>",
-        "highlight": "standard",
+        "heading": "<p><em>Contact<\/em> Us<\/p>",
+        "heading_highlight": "standard",
         "image": "shopify:\/\/shop_images\/LONTREAU--contact-us-page--hero_2x_ac0533f4-907f-4469-8de1-3d3d15ce6c00.png",
         "parallax": false,
         "anchor_id": "",
@@ -23,18 +23,17 @@
       "type": "contact-form",
       "settings": {
         "heading": "",
-        "heading_size": "h1",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading_highlight": "standard",
+        "message": "",
+        "anchor_id": ""
       }
     },
     "165040309375f284e1": {
       "type": "full-width-feature",
       "settings": {
         "title": "Don’t Like Forms? Email us at",
-        "message": "<p>hello@lontreau.com<\/p>",
-        "highlight": "standard",
+        "heading": "",
+        "heading_highlight": "standard",
         "parallax": false,
         "anchor_id": "",
         "height": "auto"
