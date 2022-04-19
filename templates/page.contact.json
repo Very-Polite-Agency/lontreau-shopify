@@ -1,21 +1,4 @@
 {
-<<<<<<< HEAD
-  "sections": {
-		"main": {
-			"settings": {
-				"anchor_id": "",
-				"heading": "<p><em>Contact<\/em> Us<\/p>",
-				"heading_highlight": "standard",
-				"height": "auto",
-				"image": "shopify:\/\/shop_images\/LONTREAU--contact-us-page--hero_2x_ac0533f4-907f-4469-8de1-3d3d15ce6c00.png",
-				"parallax": false,
-				"title": ""
-			},
-			"type": "full-width-feature"
-		}
-	},
-	"order": ["main"]
-=======
   "order": [
     "main",
     "1650406218faa7e24c"
@@ -43,5 +26,4 @@
       }
     }
   }
->>>>>>> 2442d888e7498a17136d15ceaa13409ff55aafd4
 }
