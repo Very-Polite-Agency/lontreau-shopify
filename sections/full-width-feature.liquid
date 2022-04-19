@@ -13,6 +13,7 @@
 {% endif %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}">
+
   <div class="{{ section_name }}__media">
     {% if parallax %}<div class='{{ section_name }}__media-clip media__clip'>{% endif %}
       {%
@@ -26,19 +27,18 @@
       %}
     {% if parallax %}</div>{% endif %}
   </div>
+
   <div class="{{ section_name }}__main">
     {% render 'layout--container' %}
-
       {% if title != blank %}
         <h3 class="{{ section_name }}__title title--1">{{ title }}</h3>
       {% endif %}
-
       {% if heading != blank %}
         <div class="{{ section_name }}__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</div>
       {% endif %}
-
     {% render 'layout--container', state: 'closed' %}
   </div>
+
 </div>
 
 {% schema %}
