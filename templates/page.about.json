@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "full-width-feature",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
