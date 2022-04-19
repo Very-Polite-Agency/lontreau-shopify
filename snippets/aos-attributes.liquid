@@ -1,0 +1,51 @@
+{% comment %}
+
+  Use snippet like so...
+
+  /*
+  *  Note:
+  *  AOS library (https://www.npmjs.com/package/aos) needs to be installed
+  *  and initialized. JS and CSS files are required for anything to happen.
+  *
+  *  Timing:
+  *  Both delay and duration must be increments of 50
+  *
+  *  Bugs:
+  *  Offset and Mirror are buggy. Disable them for now.
+  */
+
+  {%
+    render 'content--lazyload-image',
+    transition: 'fade-up',
+    aos_offset: 100,
+    delay: 0,
+    duration: 1000,
+    easing: 'ease-in-out',
+    mirror: 'false',
+    once: 'false',
+    anchor: 'top-bottom',
+  %}
+
+{% endcomment %}
+
+{% comment %} ## Default Values ## {% endcomment %}
+{%- assign transition = transition | default: 'fade-up' -%}
+
+{%- assign delay = delay | default: 0 -%}
+{%- assign duration = duration | default: 1000 -%}
+{%- assign easing = easing | default: 'ease-in-out' -%}
+{%- assign once = once | default: 'false' -%}
+{%- assign anchor = anchor | default: 'top-bottom' -%}
+{% comment %} {%- assign aos_offset = aos_offset | default: 150 -%} {% endcomment %}
+{% comment %} {%- assign mirror = mirror | default: 'true' -%} {% endcomment %}
+
+{%- assign html = 'data-aos="' | append: transition | append: '"' -%}
+{%- assign html = html | append: ' data-aos-delay="' | append: delay | append: '"' -%}
+{%- assign html = html | append: ' data-aos-duration="' | append: duration | append: '"' -%}
+{%- assign html = html | append: ' data-aos-easing="' | append: easing | append: '"' -%}
+{%- assign html = html | append: ' data-aos-once="' | append: once | append: '"' -%}
+{%- assign html = html | append: ' data-aos-anchor-placement="' | append: anchor | append: '"' -%}
+{% comment %} {%- assign html = html | append: ' data-aos-offset="' | append: aos_offset | append: '"' -%} {% endcomment %}
+{% comment %} {%- assign html = html | append: ' data-aos-mirror="' | append: mirror | append: '"' -%} {% endcomment %}
+
+{{- html -}}

@@ -33,7 +33,7 @@
     margin-bottom: 0;
   }
 
-  &--m {
+  &--regular {
     @extend .body-copy;
     font-family: var(--theme-font-family--serif--primary);
     font-style: normal;
