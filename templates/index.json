@@ -8,6 +8,7 @@
         "highlight": "standard",
         "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--large_2x_dbdb0c77-33c7-4bdf-9573-d7b5a903ee67.png",
         "parallax": false,
+        "anchor_id": "test-anchor-id",
         "height": "large"
       }
     },
@@ -57,6 +58,7 @@
         "message": "<p><a href=\"mailto:hello@lontreau.com\" title=\"Email Us\">hello@lontreau.com<\/a><\/p>",
         "highlight": "standard",
         "parallax": false,
+        "anchor_id": "",
         "height": "auto"
       }
     },
@@ -131,6 +133,7 @@
         "highlight": "standard",
         "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--auto_3x_98697aff-9d23-4586-afb8-b51f94b5ea8d.png",
         "parallax": true,
+        "anchor_id": "",
         "height": "auto"
       }
     },
@@ -201,6 +204,7 @@
         "message": "<p>Designed to <\/p><p>move <em>with you<\/em> <\/p>",
         "highlight": "circle",
         "parallax": false,
+        "anchor_id": "",
         "height": "auto"
       }
     },
@@ -253,6 +257,7 @@
         "message": "<p>Create regenerative <\/p><p>skincare products that<\/p><p> <em>work as hard<\/em> as you do.<\/p>",
         "highlight": "standard",
         "parallax": false,
+        "anchor_id": "",
         "height": "large"
       }
     },
