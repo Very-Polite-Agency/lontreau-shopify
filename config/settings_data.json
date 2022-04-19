@@ -12,7 +12,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "main": "policies"
+          "menu_main": "header-menu"
         }
       },
       "footer": {
