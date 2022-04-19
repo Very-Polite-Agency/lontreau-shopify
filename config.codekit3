@@ -2911,6 +2911,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/templates\/page.about.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/templates\/page.about.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/templates\/page.contact.json" : {
       "ft" : 524288,
       "oA" : 0,

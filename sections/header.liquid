@@ -1,13 +1,50 @@
-{% schema %}
-  {
-    "name": "Header",
-    "settings": [],
-	  "blocks": []
-  }
-{% endschema %}
+{% assign section_name = 'footer' %}
+{% assign section_id = section_name | append: '--' | append: section.id %}
+
+{% assign contact_email = section.settings.email | default: false %}
+{% assign contact_phone = section.settings.phone | default: false %}
+{% assign extra_menu = section.settings.extra_menu | default: false %}
+{% assign main_menu = section.settings.menu_menu | default: false %}
+{% assign policies_menu = section.settings.policies_menu | default: false %}
+{% assign social_link_facebook = settings.social_link_facebook | default: false %}
+{% assign social_link_instagram = settings.social_link_instagram | default: false %}
+{% assign social_link_twitter = settings.social_link_twitter | default: false %}
+
+<div class="{{ section_name }}" id="{{ section_id }}">
+  {% render 'layout--container' %}
+    <div class="{{ section_name }}__main">
+
+      <div class="{{ section_name }}__brand">
+        <a href="/" target="_self" title="Home">
+          {% render 'svg', type: 'brand.logo.circle' %}
+        </a>
+      </div>
+
+    </div>
+  {% render 'layout--container', state: 'closed' %}
+</div>
 
 {% stylesheet %}
 {% endstylesheet %}
 
 {% javascript %}
 {% endjavascript %}
+
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "content": "Navigation",
+        "type": "header"
+      },
+      {
+        "label": "Main Menu",
+        "type": "link_list",
+        "id": "menu_menu"
+      }
+    ],
+	  "blocks": []
+  }
+{% endschema %}
+
