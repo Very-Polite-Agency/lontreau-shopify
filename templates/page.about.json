@@ -32,10 +32,34 @@
             "title": "Inspire Through Storytelling",
             "message": "<p>Etiam sed cursus purus, eget semper metus. Ut egestas diam lobortis, molestie lorem a, consequat orci. Cras rhoncus nulla a convallis accumsan. Vestibulum fringilla mi ut urna mattis, sit amet dictum nisi dapibus.<\/p>"
           }
+        },
+        "48745a14-664b-46e6-9851-21ec50104515": {
+          "type": "accordion",
+          "settings": {
+            "title": "Build Up Our Community",
+            "message": ""
+          }
+        },
+        "5375ad3e-ffad-4a2c-b28d-cf48fc419309": {
+          "type": "accordion",
+          "settings": {
+            "title": "",
+            "message": ""
+          }
+        },
+        "2cfa670c-1bf3-4e9f-b927-e6268a199368": {
+          "type": "accordion",
+          "settings": {
+            "title": "",
+            "message": ""
+          }
         }
       },
       "block_order": [
-        "fbe99967-b9ec-4f4f-9b9f-8a702ef221b9"
+        "fbe99967-b9ec-4f4f-9b9f-8a702ef221b9",
+        "48745a14-664b-46e6-9851-21ec50104515",
+        "5375ad3e-ffad-4a2c-b28d-cf48fc419309",
+        "2cfa670c-1bf3-4e9f-b927-e6268a199368"
       ],
       "settings": {
         "heading": "<p>Our <em>Values<\/em><\/p>",
