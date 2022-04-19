@@ -1,11 +1,9 @@
 {
   "sections": {
-    "main": {
-      "type": "full-width-feature",
-      "settings": {}
-    }
-  },
-  "order": [
-    "main"
-  ]
+		"main": {
+			"settings": {},
+			"type": "full-width-feature"
+		}
+	},
+	"order": ["main"]
 }
