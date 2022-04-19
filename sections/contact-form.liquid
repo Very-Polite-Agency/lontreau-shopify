@@ -12,11 +12,11 @@
 <div class="{{ section_name }}" id="{{ section_id }}">
   {% render 'layout--container', state: 'open', col: 'col-12 col-lg-6 offset-lg-3' %}
     <div class="{{ section_name }}__main">
-      {% if title != blank %}
-        <h3 class="{{ section_name }}__title title--1">{{ title }}</h3>
-      {% endif %}
       {% if heading != blank %}
         <div class="{{ section_name }}__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</div>
+      {% endif %}
+      {% if message != blank %}
+        <div class="{{ section_name }}__message body-copy--2">{{ message }}</div>
       {% endif %}
       {% render 'form--contact-us' %}
     </div>

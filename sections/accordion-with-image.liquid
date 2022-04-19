@@ -35,10 +35,10 @@
                 {% for block in accordions %}
 
                   {% assign item_id = section_name | append: '__item--' | append: block.id %}
-                  {% assign message = block.settings.message | default: false %}
-                  {% assign title = block.settings.title | default: false %}
+                  {% assign item_message = block.settings.message | default: false %}
+                  {% assign item_title = block.settings.title | default: false %}
 
-                  {% if title and message %}
+                  {% if item_title and item_message %}
                     <div class="{{ section_name }}__item collapsible">
                       <button
                         class="button--collapsible collapsible__trigger {% unless forloop.first %}collapsed{% endunless %}"
@@ -48,7 +48,7 @@
                         aria-expanded="false"
                         aria-controls="{{ item_id }}"
                       >
-                        <span class="button__title">{{ title }}</span>
+                        <span class="button__title">{{ item_title }}</span>
                         <span class="button__icon">
                           <span class="button__icon-plus">
                             {% render 'svg', type: 'icon.plus' %}
@@ -59,7 +59,7 @@
                         </span>
                       </button>
                       <div class="collapsible__main collapse {% if forloop.first %}show{% endif %}" id="{{ item_id }}">
-                        <div class="collapsible__content body-copy--m">{{ message}}</div>
+                        <div class="collapsible__content body-copy--m">{{ item_message }}</div>
                       </div>
                     </div>
                   {% endif %}

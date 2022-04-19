@@ -1,0 +1,106 @@
+{% assign section_name = 'the-team' %}
+{% assign section_id = section_name | append: '--' | append: section.id %}
+
+{% assign heading = section.settings.heading | default: '' %}
+{% assign heading_highlight = section.settings.heading_highlight | default: false %}
+{% assign message = section.settings.message | default: '' %}
+{% assign team_members = section.blocks | where: 'type', 'team_member' | default: false %}
+
+{% if section.settings.anchor_id != blank %}
+  {% assign section_id = section.settings.anchor_id %}
+{% endif %}
+
+<div class="{{ section_name }}" id="{{ section_id }}">
+  {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+    <div class="{{ section_name }}__main">
+
+      {% if heading != blank %}
+        <div class="{{ section_name }}__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</div>
+      {% endif %}
+
+      {% if message != blank %}
+        <div class="{{ section_name }}__message body-copy">{{ message }}</div>
+      {% endif %}
+
+      {% if team_members %}
+        <div class="{{ section_name }}__accordion">
+          {% assign team_members_size = team_members.size %}
+          {% for block in team_members %}
+
+            {% assign item_id = section_name | append: '__item--' | append: block.id %}
+            {% assign bio = block.settings.bio | default: false %}
+            {% assign name = block.settings.name | default: false %}
+
+            {% if name and bio %}
+              <div class="{{ section_name }}__item">
+                <strong>{{ name }}</strong>
+                <div>{{ bio }}</div>
+              </div>
+            {% endif %}
+
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    </div>
+  {% render 'layout--container', state: 'closed' %}
+</div>
+
+{% schema %}
+{
+  "name": "The Team",
+  "tag": "section",
+  "class": "section section--the-team",
+  "settings": [
+    {
+      "label": "Heading",
+      "type": "richtext",
+      "id": "heading"
+    },
+    {
+      "label": "Heading Highlight",
+      "type": "select",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "stroke", "label": "Stroke" },
+        { "value": "circle", "label": "Circle" }
+      ],
+      "default": "standard",
+      "id": "heading_highlight"
+    },
+    {
+      "content": "Settings",
+      "type": "header"
+    },
+    {
+      "label": "Anchor ID",
+      "info": "Optionally include a unique ID so that sections within the page can be linked to. Anchor IDs must be all lowercase, unique and replaced empty spaces with hyphens. For example: my-great-section-anchor",
+      "type": "text",
+      "id": "anchor_id"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Team Member",
+      "type": "team_member",
+      "settings": [
+        {
+          "label": "Name",
+          "type": "text",
+          "id": "name"
+        },
+        {
+          "label": "Bio",
+          "type": "richtext",
+          "id": "bio"
+        }
+       ]
+     }
+  ],
+  "presets": [
+    {
+      "name": "The Team"
+    }
+  ]
+}
+{% endschema %}
