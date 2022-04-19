@@ -1,4 +1,4 @@
-{% assign section_name = 'footer' %}
+{% assign section_name = 'header' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
 {% assign main_menu = section.settings.menu_menu | default: false %}
@@ -38,7 +38,7 @@
       {
         "label": "Main Menu",
         "type": "link_list",
-        "id": "menu_menu"
+        "id": "main_menu"
       }
     ],
 	  "blocks": []
