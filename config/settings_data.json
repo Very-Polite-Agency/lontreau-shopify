@@ -1,5 +1,8 @@
 {
   "current": {
+    "social_link_facebook": "https:\/\/www.facebook.com\/",
+    "social_link_instagram": "https:\/\/www.instagram.com\/",
+    "social_link_twitter": "https:\/\/twitter.com\/",
     "sections": {
       "announcements": {
         "type": "announcements",
