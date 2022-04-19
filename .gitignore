@@ -23,7 +23,7 @@ dist/
 target/
 dist/
 
-# JetBrains IDE
+# IDEs
 .idea/
 .nova/
 

@@ -86,6 +86,12 @@
     line-height: 1;
     letter-spacing: 0.07em;
     text-transform: uppercase;
+    a {
+      color: inherit;
+      &:hover {
+        color: rgba(var(--theme-colour-grass), 1);
+      }
+    }
   }
 
   &__menus {
