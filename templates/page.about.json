@@ -43,15 +43,15 @@
         "5375ad3e-ffad-4a2c-b28d-cf48fc419309": {
           "type": "accordion",
           "settings": {
-            "title": "",
+            "title": "Respect The Earth",
             "message": ""
           }
         },
         "2cfa670c-1bf3-4e9f-b927-e6268a199368": {
           "type": "accordion",
           "settings": {
-            "title": "",
-            "message": ""
+            "title": "Prioritise Effort Over Perfection",
+            "message": "<p>Aliquam erat volutpat. Vestibulum eget felis porttitor turpis mollis pharetra vitae a libero. Maecenas id rhoncus ipsum, vitae rutrum libero. Ut suscipit venenatis nulla finibus scelerisque. Nulla ut elit in magna ornare hendrerit ut vel libero. Maecenas in nisi arcu. Donec eleifend justo et tincidunt posuere.<\/p>"
           }
         }
       },
