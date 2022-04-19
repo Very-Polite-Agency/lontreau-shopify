@@ -1,12 +1,17 @@
 {% assign section_name = 'full-width-feature' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign anchor_id = section.settings.anchor_id | default: false %}
 {% assign height = section.settings.height | default: 'auto' %}
 {% assign highlight = section.settings.highlight | default: false %}
 {% assign image = section.settings.image | default: false %}
 {% assign message = section.settings.message | default: '' %}
 {% assign parallax = section.settings.parallax | default: false %}
 {% assign title = section.settings.title | default: false %}
+
+{% if section.settings.anchor_id %}
+  {% assign section_id = section.settings.anchor_id %}
+{% endif %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}">
   <div class="{{ section_name }}__media">
@@ -89,7 +94,7 @@
     },
     {
       "label": "Anchor ID",
-      "info": "Optionally include a unique ID so that section can be linked to. Must be all lowercase, unique and replaced empty spaces with hyphens. For example: my-great-section-anchor",
+      "info": "Optionally include a unique ID so that sections within the page can be linked to. Anchor IDs must be all lowercase, unique and replaced empty spaces with hyphens. For example: my-great-section-anchor",
       "type": "text",
       "id": "anchor_id"
     },
