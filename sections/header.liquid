@@ -1,14 +1,7 @@
 {% assign section_name = 'footer' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
-{% assign contact_email = section.settings.email | default: false %}
-{% assign contact_phone = section.settings.phone | default: false %}
-{% assign extra_menu = section.settings.extra_menu | default: false %}
 {% assign main_menu = section.settings.menu_menu | default: false %}
-{% assign policies_menu = section.settings.policies_menu | default: false %}
-{% assign social_link_facebook = settings.social_link_facebook | default: false %}
-{% assign social_link_instagram = settings.social_link_instagram | default: false %}
-{% assign social_link_twitter = settings.social_link_twitter | default: false %}
 
 <div class="{{ section_name }}" id="{{ section_id }}">
   {% render 'layout--container' %}
@@ -19,6 +12,10 @@
           {% render 'svg', type: 'brand.logo.circle' %}
         </a>
       </div>
+
+      {% if main_menu %}
+        {% render 'navigation', classes: 'header__main-menu', menu_handle: main_menu %}
+      {% endif %}
 
     </div>
   {% render 'layout--container', state: 'closed' %}
