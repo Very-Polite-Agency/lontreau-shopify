@@ -12,7 +12,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "menu_menu": "header-menu"
+          "main_menu": "header-menu"
         }
       },
       "footer": {
@@ -20,7 +20,7 @@
         "settings": {
           "phone": "604-112-2154",
           "email": "hello@lontreau.com",
-          "menu_menu": "main-menu",
+          "main_menu": "",
           "extra_menu": "lontreau-journey",
           "policies_menu": "policies"
         }
