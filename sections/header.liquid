@@ -1,7 +1,7 @@
 {% assign section_name = 'header' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
-{% assign main = section.settings.main | default: false %}
+{% assign menu_main = section.settings.menu_main | default: false %}
 
 <div class="{{ section_name }}__main">
   {% render 'layout--container' %}
@@ -13,10 +13,10 @@
         </a>
       </div>
 
-      {% render 'tools--debug-this', item: main %}
+      {% render 'tools--debug-this', item: menu_main %}
 
-      {% if main %}
-        {% render 'navigation', classes: 'header__main-menu', menu_handle: main %}
+      {% if menu_main %}
+        {% render 'navigation', classes: 'header__main-menu', menu_handle: menu_main %}
       {% endif %}
 
     </div>
@@ -42,7 +42,7 @@
       {
         "label": "Main Menu",
         "type": "link_list",
-        "id": "main"
+        "id": "menu_main"
       }
     ],
 	  "blocks": []
