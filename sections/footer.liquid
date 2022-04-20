@@ -3,9 +3,9 @@
 
 {% assign contact_email = section.settings.email | default: false %}
 {% assign contact_phone = section.settings.phone | default: false %}
-{% assign extra_menu = section.settings.extra_menu | default: false %}
-{% assign main_menu = section.settings.menu_menu | default: false %}
-{% assign policies_menu = section.settings.policies_menu | default: false %}
+{% assign menu_extra = section.settings.menu_extra | default: false %}
+{% assign menu_main = section.settings.menu_main | default: false %}
+{% assign menu_policies = section.settings.menu_policies | default: false %}
 {% assign social_link_facebook = settings.social_link_facebook | default: false %}
 {% assign social_link_instagram = settings.social_link_instagram | default: false %}
 {% assign social_link_twitter = settings.social_link_twitter | default: false %}
@@ -114,17 +114,17 @@
       {
         "label": "Main Menu",
         "type": "link_list",
-        "id": "main_menu"
+        "id": "menu_main"
       },
       {
         "label": "Extra Menu",
         "type": "link_list",
-        "id": "extra_menu"
+        "id": "menu_extra"
       },
       {
         "label": "Policies Menu",
         "type": "link_list",
-        "id": "policies_menu"
+        "id": "menu_policies"
       }
     ],
 	  "blocks": []

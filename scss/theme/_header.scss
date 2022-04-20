@@ -11,6 +11,24 @@
     fill: currentColor;
   }
 
+  .navigation {
+    &__item {
+      display: inline-flex;
+      & + .navigation__item {
+        margin-left: 60px;
+      }
+    }
+    &__link {
+      font-family: var(--theme-font-family--serif--primary);
+      color: inherit;
+      font-size: 28px;
+      &.active,
+      &:hover {
+        font-style: italic;
+      }
+    }
+  }
+
   &__brand {
     color: rgba(var(--theme-colour-grass),1);
     height: 40px;
