@@ -155,13 +155,13 @@
     "1650498009580f157d": {
       "type": "carousel-education",
       "settings": {
-        "content_type": "minimal",
+        "content_type": "detailed",
         "alignment": "center",
         "heading": "<p><em>The Needs<\/em> of an Athlete<\/p>",
         "heading_highlight": "circle",
         "message": "<p>Aenean egestas id mauris fermentum efficitur. Quisque non nisi tristique, bibendum turpis ac, varius mauris. Nulla iaculis vestibulum ex, vel consequat dolor volutpat eget. Curabitur tempor nisl augue, rutrum ultrices neque consequat ac.<\/p>",
         "anchor_id": "",
-        "style": "light"
+        "style": "dark"
       }
     }
   },
