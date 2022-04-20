@@ -32,12 +32,23 @@
 
           {% assign item_id = section_name | append: '__item--' | append: block.id %}
           {% assign bio = block.settings.bio | default: false %}
-          {% assign name = block.settings.name | default: false %}
+          {% assign name = block.settings.title | default: false %}
+          {% assign photo = block.settings.photo | default: false %}
 
           {% if name and bio %}
             <div class="{{ section_name }}__item">
-              <strong>{{ name }}</strong>
-              <div>{{ bio }}</div>
+              <strong class="{{ section_name }}__item-name">{{ name }}</strong>
+              <div class="{{ section_name }}__item-bio">{{ bio }}</div>
+              {% if photo %}
+                <div class="{{ section_name }}__item-photo">
+                  {%
+                    render 'content--lazyload-image',
+                    alt_text: name,
+                    image: photo,
+                    duration: 300,
+                  %}
+                </div>
+              {% endif %}
             </div>
           {% endif %}
 
@@ -96,11 +107,6 @@
           "label": "Name",
           "type": "text",
           "id": "title"
-        },
-        {
-          "label": "Name",
-          "type": "text",
-          "id": "name"
         },
         {
           "label": "Bio",
