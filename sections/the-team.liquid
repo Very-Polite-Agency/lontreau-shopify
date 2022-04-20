@@ -32,23 +32,31 @@
 
           {% assign item_id = section_name | append: '__item--' | append: block.id %}
           {% assign bio = block.settings.bio | default: false %}
+          {% assign job_title = lock.settings.job_title | default: false %}
           {% assign name = block.settings.title | default: false %}
           {% assign photo = block.settings.photo | default: false %}
 
           {% if name and bio %}
             <div class="{{ section_name }}__item">
-              <strong class="{{ section_name }}__item-name">{{ name }}</strong>
-              <div class="{{ section_name }}__item-bio">{{ bio }}</div>
-              {% if photo %}
-                <div class="{{ section_name }}__item-photo">
-                  {%
-                    render 'content--lazyload-image',
-                    alt_text: name,
-                    image: photo,
-                    duration: 300,
-                  %}
+              <div class="{{ section_name }}__item-header">
+                <strong class="{{ section_name }}__item-name body-copy--xl">{{ name }}</strong>
+              </div>
+              <div class="{{ section_name }}__item-body">
+                <div class="{{ section_name }}__item-details">
+                  {% if job_title %}<div class="{{ section_name }}__item-job-title">{{ job_title }}</div>{% endif %}
+                  {% if bio %}<div class="{{ section_name }}__item-bio body-copy--regular">{{ bio }}</div>{% endif %}
                 </div>
-              {% endif %}
+                {% if photo %}
+                  <div class="{{ section_name }}__item-photo">
+                    {%
+                      render 'content--lazyload-image',
+                      alt_text: name,
+                      image: photo,
+                      duration: 300,
+                    %}
+                  </div>
+                {% endif %}
+              </div>
             </div>
           {% endif %}
 
@@ -107,6 +115,11 @@
           "label": "Name",
           "type": "text",
           "id": "title"
+        },
+        {
+          "label": "Job Title",
+          "type": "text",
+          "id": "job_title"
         },
         {
           "label": "Bio",
