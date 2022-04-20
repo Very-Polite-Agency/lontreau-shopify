@@ -16,21 +16,6 @@
         "height": "large"
       }
     },
-    "1650417217a58d6a29": {
-      "type": "fifty-fifty-feature",
-      "settings": {
-        "heading": "<p>Here to be <em>Hard & Soft<\/em><\/p>",
-        "heading_highlight": "standard",
-        "message": "<p>Lontreau is a skincare brand focused on regenerative formulations for everyone from endurance athletes to everyday movers looking for ingredient-rich skincare.<\/p>",
-        "cta_title": "",
-        "cta_link": "",
-        "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--default_3x_d3a9c3bb-0e8c-4c6e-a41f-f7dc52d2fc2f.png",
-        "hide_image_mobile": false,
-        "anchor_id": "",
-        "style": "standard",
-        "layout": "image-right"
-      }
-    },
     "1649358548eba2154c": {
       "type": "full-width-feature",
       "settings": {
@@ -60,36 +45,6 @@
         "parallax": false,
         "anchor_id": "",
         "height": "auto"
-      }
-    },
-    "16493606352f275ae2": {
-      "type": "full-width-feature",
-      "settings": {
-        "text_theme": "light",
-        "title": "The Lontreau Kit:",
-        "heading": "",
-        "heading_highlight": "standard",
-        "message": "",
-        "cta_title": "",
-        "cta_link": "",
-        "parallax": false,
-        "anchor_id": "",
-        "height": "auto"
-      }
-    },
-    "16493714966922f573": {
-      "type": "fifty-fifty-feature",
-      "settings": {
-        "heading": "<p>Here to be <em>Hard & Soft<\/em><\/p>",
-        "heading_highlight": "standard",
-        "message": "<p>Lontreau is a skincare brand focused on regenerative formulations for everyone from endurance athletes to everyday movers looking for ingredient-rich skincare.<\/p>",
-        "cta_title": "Learn More",
-        "cta_link": "shopify:\/\/pages\/contact",
-        "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--default_3x_d3a9c3bb-0e8c-4c6e-a41f-f7dc52d2fc2f.png",
-        "hide_image_mobile": true,
-        "anchor_id": "",
-        "style": "standard",
-        "layout": "image-right"
       }
     },
     "16493759755f3cddf5": {
@@ -187,11 +142,8 @@
   },
   "order": [
     "1649371027bf029c73",
-    "1650417217a58d6a29",
     "1649358548eba2154c",
     "164936493171d7e74a",
-    "16493606352f275ae2",
-    "16493714966922f573",
     "16493759755f3cddf5",
     "1649464267fea0d6f8",
     "16493635494e59cb2e",
