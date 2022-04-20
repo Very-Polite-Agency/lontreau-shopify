@@ -32,7 +32,7 @@
 
           {% assign item_id = section_name | append: '__item--' | append: block.id %}
           {% assign bio = block.settings.bio | default: false %}
-          {% assign job_title = lock.settings.job_title | default: false %}
+          {% assign job_title = block.settings.job_title | default: false %}
           {% assign name = block.settings.title | default: false %}
           {% assign photo = block.settings.photo | default: false %}
 
