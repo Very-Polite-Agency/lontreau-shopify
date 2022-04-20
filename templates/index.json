@@ -3,6 +3,7 @@
     "1649371027bf029c73": {
       "type": "full-width-feature",
       "settings": {
+        "text_theme": "light",
         "title": "",
         "heading": "",
         "heading_highlight": "standard",
@@ -32,6 +33,7 @@
     "1649358548eba2154c": {
       "type": "full-width-feature",
       "settings": {
+        "text_theme": "light",
         "title": "The Lontreau Kit:",
         "heading": "<p>Designed to move <em>with you <\/em><\/p>",
         "heading_highlight": "stroke",
@@ -46,6 +48,7 @@
     "164936493171d7e74a": {
       "type": "full-width-feature",
       "settings": {
+        "text_theme": "dark",
         "title": "",
         "heading": "<p><em>Goal-setting<\/em> ingredients<\/p>",
         "heading_highlight": "stroke",
@@ -121,6 +124,7 @@
     "16493606352f275ae2": {
       "type": "full-width-feature",
       "settings": {
+        "text_theme": "light",
         "title": "The Lontreau Kit:",
         "heading": "",
         "heading_highlight": "standard",
@@ -177,6 +181,7 @@
     "16493635494e59cb2e": {
       "type": "full-width-feature",
       "settings": {
+        "text_theme": "light",
         "title": "Our Mission",
         "heading": "",
         "heading_highlight": "standard",
