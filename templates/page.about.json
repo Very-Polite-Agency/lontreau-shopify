@@ -23,6 +23,26 @@
         "height": "large"
       }
     },
+    "16504147450799a25f": {
+      "type": "the-team",
+      "blocks": {
+        "594b8bec-0553-4182-bca7-1755dc6bf452": {
+          "type": "team_member",
+          "settings": {
+            "name": "Angie Buonassisi",
+            "bio": ""
+          }
+        }
+      },
+      "block_order": [
+        "594b8bec-0553-4182-bca7-1755dc6bf452"
+      ],
+      "settings": {
+        "heading": "<p>Who <em>we are<\/em><\/p>",
+        "heading_highlight": "stroke",
+        "anchor_id": ""
+      }
+    },
     "165040682270d7b672": {
       "type": "accordion-with-image",
       "blocks": {
@@ -73,6 +93,7 @@
   "order": [
     "main",
     "1650406820d7117f5d",
+    "16504147450799a25f",
     "165040682270d7b672"
   ]
 }
