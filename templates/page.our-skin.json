@@ -87,12 +87,20 @@
             "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine and sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>",
             "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
           }
+        },
+        "239a0d19-8b6b-4724-ad6c-19ca71ad0058": {
+          "type": "detailed",
+          "settings": {
+            "title": "Something Else",
+            "description": "<p>In nec lacus accumsan, euismod orci at, lacinia erat. Mauris erat nisi, sagittis vel libero eu, blandit congue nisl. Sed imperdiet eros sed magna molestie, sit amet elementum leo interdum.<\/p>"
+          }
         }
       },
       "block_order": [
         "4794f423-54d7-42a5-884f-e1e1fb67475d",
         "184aaa19-497a-472e-9880-3de8d4d0e0cd",
-        "04113340-a6f3-4111-a8c7-eec9ba7f0e70"
+        "04113340-a6f3-4111-a8c7-eec9ba7f0e70",
+        "239a0d19-8b6b-4724-ad6c-19ca71ad0058"
       ],
       "settings": {
         "content_type": "detailed",
