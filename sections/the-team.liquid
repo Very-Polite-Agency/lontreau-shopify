@@ -42,10 +42,12 @@
                 <strong class="{{ section_name }}__item-name body-copy--xl">{{ name }}</strong>
               </div>
               <div class="{{ section_name }}__item-body">
-                <div class="{{ section_name }}__item-details">
-                  {% if job_title %}<div class="{{ section_name }}__item-job-title">{{ job_title }}</div>{% endif %}
-                  {% if bio %}<div class="{{ section_name }}__item-bio body-copy--regular">{{ bio }}</div>{% endif %}
-                </div>
+                {% if job_title or bio %}
+                  <div class="{{ section_name }}__item-details">
+                    {% if job_title %}<div class="{{ section_name }}__item-job-title">{{ job_title }}</div>{% endif %}
+                    {% if bio %}<div class="{{ section_name }}__item-bio body-copy--regular">{{ bio }}</div>{% endif %}
+                  </div>
+                {% endif %}
                 {% if photo %}
                   <div class="{{ section_name }}__item-photo">
                     {%
