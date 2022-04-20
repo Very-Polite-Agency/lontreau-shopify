@@ -169,6 +169,17 @@
             "image_figure": "",
             "image_caption": ""
           }
+        },
+        "5fed777e-16b1-4ae1-ab2e-3d62855d8696": {
+          "type": "accordion",
+          "settings": {
+            "title": "Microbiota & Skin Dysbiosis",
+            "message": "",
+            "cta_title": "",
+            "cta_link": "",
+            "image_figure": "",
+            "image_caption": ""
+          }
         }
       },
       "block_order": [
@@ -176,7 +187,8 @@
         "87c8a20b-3d74-4969-a82c-36d250ab8a93",
         "cae49aa7-a0fe-428a-9124-de23fdf4f607",
         "b99e0a2b-2f34-4fb4-ba00-8307d9079462",
-        "f43e9bc2-8651-4b27-9859-d754a55614d7"
+        "f43e9bc2-8651-4b27-9859-d754a55614d7",
+        "5fed777e-16b1-4ae1-ab2e-3d62855d8696"
       ],
       "settings": {
         "heading": "",
