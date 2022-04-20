@@ -31,22 +31,6 @@
         "height": "auto"
       }
     },
-    "16504791332b7186fd": {
-      "type": "full-width-feature",
-      "settings": {
-        "text_theme": "light",
-        "title": "",
-        "heading": "<p>Informed by Science <\/p><p><em>Designed to Move<\/em><\/p>",
-        "heading_highlight": "stroke",
-        "message": "",
-        "cta_title": "",
-        "cta_link": "",
-        "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--large_2x_dbdb0c77-33c7-4bdf-9573-d7b5a903ee67.png",
-        "parallax": false,
-        "anchor_id": "",
-        "height": "large"
-      }
-    },
     "165048835013ce33c0": {
       "type": "accordion-education",
       "blocks": {
@@ -136,12 +120,43 @@
         "message": "<p>Aliquam felis ante, imperdiet vel urna at, elementum sagittis felis. Donec maximus quam ex, quis dapibus nibh tristique in. Nulla eu ex lacus.<\/p>",
         "anchor_id": ""
       }
+    },
+    "16504791332b7186fd": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "",
+        "heading": "<p>Informed by Science <\/p><p><em>Designed to Move<\/em><\/p>",
+        "heading_highlight": "stroke",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--large_2x_dbdb0c77-33c7-4bdf-9573-d7b5a903ee67.png",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "large"
+      }
+    },
+    "1650498006237fa6fb": {
+      "type": "fifty-fifty-feature",
+      "settings": {
+        "heading": "",
+        "heading_highlight": "standard",
+        "message": "<p>Athletes expect a lot of their bodies — but what about their skin?  From the chlorine of a pool to the pollution from road cycling or the extreme cold of skiing, our skin is constantly up against the elements. That’s why we create ingredient-rich formulations that are designed specifically for an athlete’s skin. We thoughtfully select our ingredients to create efficacious formulas that work as hard as you do.<\/p>",
+        "cta_title": "Learn more about Our Ingredients",
+        "cta_link": "shopify:\/\/pages\/our-ingredients",
+        "hide_image_mobile": false,
+        "anchor_id": "",
+        "style": "standard",
+        "layout": "image-right"
+      }
     }
   },
   "order": [
     "main",
     "1650479051fa4e9bc1",
+    "165048835013ce33c0",
     "16504791332b7186fd",
-    "165048835013ce33c0"
+    "1650498006237fa6fb"
   ]
 }
