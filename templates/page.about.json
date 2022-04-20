@@ -3,9 +3,13 @@
     "main": {
       "type": "full-width-feature",
       "settings": {
+        "text_theme": "light",
         "title": "",
         "heading": "<p>About <em>Lontreau<\/em><\/p>",
         "heading_highlight": "standard",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
         "image": "shopify:\/\/shop_images\/LONTREAU--about-page--hero_2x_e636d79b-1883-48c7-8caa-f85754400c43.png",
         "parallax": false,
         "anchor_id": "",
@@ -15,9 +19,13 @@
     "1650406820d7117f5d": {
       "type": "full-width-feature",
       "settings": {
+        "text_theme": "light",
         "title": "Our Mission",
         "heading": "<p>Create regenerative skincare products that<em> work as hard<\/em> as you do.<\/p>",
         "heading_highlight": "stroke",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
         "parallax": false,
         "anchor_id": "",
         "height": "large"
@@ -42,6 +50,7 @@
       "settings": {
         "heading": "<p>Who <em>we are<\/em><\/p>",
         "heading_highlight": "stroke",
+        "message": "<p>Cras aliquam malesuada arcu, sagittis imperdiet felis blandit vitae. Donec eleifend sit amet risus ut pulvinar. Mauris placerat, ante vitae molestie pulvinar, odio est finibus elit, vitae sodales sem ligula sollicitudin nunc.<\/p>",
         "anchor_id": ""
       }
     },
@@ -85,9 +94,10 @@
       ],
       "settings": {
         "heading": "<p>Our <em>Values<\/em><\/p>",
-        "highlight": "circle",
+        "heading_highlight": "standard",
         "message": "",
         "image": "shopify:\/\/shop_images\/LONTREAU--accordion-with-image--image_3x_a53858f8-5a2e-459c-8541-a6bcbeadd8fc.png",
+        "anchor_id": "",
         "layout": "image-left"
       }
     }
