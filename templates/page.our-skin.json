@@ -154,6 +154,18 @@
     },
     "1650498009580f157d": {
       "type": "carousel-education",
+      "blocks": {
+        "0be36e13-37b8-4585-bd57-fb626debe9e8": {
+          "type": "detailed",
+          "settings": {
+            "title": "Synergistic",
+            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is not only better for your skin barrier, but also for the planet. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0be36e13-37b8-4585-bd57-fb626debe9e8"
+      ],
       "settings": {
         "content_type": "detailed",
         "alignment": "center",
