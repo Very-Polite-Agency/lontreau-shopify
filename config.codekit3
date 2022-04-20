@@ -1859,6 +1859,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/scss\/components\/_carousel-education.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/_carousel-education.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/scss\/components\/_collapsible.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1869,21 +1884,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/_collapsible.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/scss\/components\/_educational-carousel.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/_educational-carousel.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
