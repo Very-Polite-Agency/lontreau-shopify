@@ -67,13 +67,29 @@
         "4794f423-54d7-42a5-884f-e1e1fb67475d": {
           "type": "detailed",
           "settings": {
-            "title": "",
+            "title": "Synergistic",
             "description": ""
+          }
+        },
+        "184aaa19-497a-472e-9880-3de8d4d0e0cd": {
+          "type": "detailed",
+          "settings": {
+            "title": "Innovative",
+            "description": ""
+          }
+        },
+        "04113340-a6f3-4111-a8c7-eec9ba7f0e70": {
+          "type": "detailed",
+          "settings": {
+            "title": "Prevention",
+            "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine and sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>"
           }
         }
       },
       "block_order": [
-        "4794f423-54d7-42a5-884f-e1e1fb67475d"
+        "4794f423-54d7-42a5-884f-e1e1fb67475d",
+        "184aaa19-497a-472e-9880-3de8d4d0e0cd",
+        "04113340-a6f3-4111-a8c7-eec9ba7f0e70"
       ],
       "settings": {
         "content_type": "detailed",
