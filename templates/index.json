@@ -37,77 +37,14 @@
         "height": "auto"
       }
     },
-    "16497917113a4ded5d": {
-      "type": "educational-carousel",
-      "blocks": {
-        "adc3d92d-0e2f-4350-85ee-4e618c4752d9": {
-          "type": "minimal",
-          "settings": {
-            "title": "Paraben Free and some other stuff",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-01.png"
-          }
-        },
-        "df9e9046-0f46-43ee-9c5a-d8c2a6230c45": {
-          "type": "minimal",
-          "settings": {
-            "title": "Vegan",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-03.png"
-          }
-        },
-        "17789e71-4aed-4bdb-977d-dabaf85ea394": {
-          "type": "minimal",
-          "settings": {
-            "title": "Cruelty-Free",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-02.png"
-          }
-        },
-        "b1ead237-de99-4b31-8a48-1d1af47c4f69": {
-          "type": "minimal",
-          "settings": {
-            "title": "Alcohol-Free",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-03.png"
-          }
-        },
-        "600d8e2d-b6ab-4547-bd4e-470576095654": {
-          "type": "minimal",
-          "settings": {
-            "title": "Sustainable",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-02.png"
-          }
-        },
-        "ae82c396-778c-430a-a6ea-873af63356f2": {
-          "type": "minimal",
-          "settings": {
-            "title": "Gluten-Free",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-01.png"
-          }
-        }
-      },
-      "block_order": [
-        "adc3d92d-0e2f-4350-85ee-4e618c4752d9",
-        "df9e9046-0f46-43ee-9c5a-d8c2a6230c45",
-        "17789e71-4aed-4bdb-977d-dabaf85ea394",
-        "b1ead237-de99-4b31-8a48-1d1af47c4f69",
-        "600d8e2d-b6ab-4547-bd4e-470576095654",
-        "ae82c396-778c-430a-a6ea-873af63356f2"
-      ],
-      "settings": {
-        "content_type": "minimal",
-        "alignment": "center",
-        "heading": "<p>We have <em>high standards<\/em><\/p>",
-        "highlight": "standard",
-        "message": "<p>Nam quis augue sit amet arcu rutrum suscipit ut a lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc integer.<\/p>",
-        "style": "grey"
-      }
-    },
     "164936493171d7e74a": {
       "type": "full-width-feature",
       "settings": {
         "title": "",
-        "heading": "",
-        "heading_highlight": "standard",
+        "heading": "<p><em>Goal-setting<\/em> ingredients<\/p>",
+        "heading_highlight": "stroke",
         "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--auto_3x_98697aff-9d23-4586-afb8-b51f94b5ea8d.png",
-        "parallax": true,
+        "parallax": false,
         "anchor_id": "",
         "height": "auto"
       }
@@ -329,7 +266,6 @@
     "1649371027bf029c73",
     "1650417217a58d6a29",
     "1649358548eba2154c",
-    "16497917113a4ded5d",
     "164936493171d7e74a",
     "1649791718078b153a",
     "16493606352f275ae2",
