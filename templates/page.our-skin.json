@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "main": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "",
+        "heading": "<p>Our <em>Skin<\/em><\/p>",
+        "heading_highlight": "stroke",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--auto_3x_98697aff-9d23-4586-afb8-b51f94b5ea8d.png",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "auto"
+      }
+    },
+    "1650479051fa4e9bc1": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "",
+        "heading": "<p>Skin + <em>The Elements<\/em><\/p>",
+        "heading_highlight": "circle",
+        "message": "<p>As athletes, our passions can take us from early morning swims to mid-day runs in the sun and long bike rides fighting against wind and exhaust. We do it all because we love it — but an athlete’s skin is exposed to a wide range of environmental stressors like sun, cold, wind, pollution and chemicals. At Lontreau, we use the latest science and research to create unique formulations designed specifically to help protect and restore an athlete’s skin.<\/p>",
+        "cta_title": "",
+        "cta_link": "",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "auto"
+      }
+    },
+    "16504791332b7186fd": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "",
+        "heading": "<p>Informed by Science <\/p><p><em>Designed to Move<\/em><\/p>",
+        "heading_highlight": "stroke",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--large_2x_dbdb0c77-33c7-4bdf-9573-d7b5a903ee67.png",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "large"
+      }
+    },
+    "16504792043cfba876": {
+      "type": "fifty-fifty-feature",
+      "settings": {
+        "heading": "",
+        "highlight": "standard",
+        "message": "<p>Athletes expect a lot of their bodies — but what about their skin?  From the chlorine of a pool to the pollution from road cycling or the extreme cold of skiing, our skin is constantly up against the elements. That’s why we create ingredient-rich formulations that are designed specifically for an athlete’s skin. We thoughtfully select our ingredients to create efficacious formulas that work as hard as you do. <\/p>",
+        "cta_title": "Learn more about Our Ingredients",
+        "cta_link": "shopify:\/\/pages\/our-ingredients",
+        "image": "shopify:\/\/shop_images\/LONTREAU--our-skin-page--FF_3x_1fcaf6c9-ad9c-466f-9995-3bd2d7dd8a32.png",
+        "hide_image_mobile": false,
+        "style": "wide",
+        "layout": "image-right"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1650479051fa4e9bc1",
+    "16504791332b7186fd",
+    "16504792043cfba876"
+  ]
+}
