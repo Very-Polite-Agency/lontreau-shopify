@@ -47,20 +47,6 @@
         "height": "large"
       }
     },
-    "16504792043cfba876": {
-      "type": "fifty-fifty-feature",
-      "settings": {
-        "heading": "",
-        "highlight": "standard",
-        "message": "<p>Athletes expect a lot of their bodies — but what about their skin?  From the chlorine of a pool to the pollution from road cycling or the extreme cold of skiing, our skin is constantly up against the elements. That’s why we create ingredient-rich formulations that are designed specifically for an athlete’s skin. We thoughtfully select our ingredients to create efficacious formulas that work as hard as you do. <\/p>",
-        "cta_title": "Learn more about Our Ingredients",
-        "cta_link": "shopify:\/\/pages\/our-ingredients",
-        "image": "shopify:\/\/shop_images\/LONTREAU--our-skin-page--FF_3x_1fcaf6c9-ad9c-466f-9995-3bd2d7dd8a32.png",
-        "hide_image_mobile": false,
-        "style": "wide",
-        "layout": "image-right"
-      }
-    },
     "165048835013ce33c0": {
       "type": "accordion-education",
       "blocks": {
@@ -147,7 +133,8 @@
       "settings": {
         "heading": "<p>We Believe <em>in Clean<\/em><\/p>",
         "heading_highlight": "standard",
-        "message": "<p>Aliquam felis ante, imperdiet vel urna at, elementum sagittis felis. Donec maximus quam ex, quis dapibus nibh tristique in. Nulla eu ex lacus.<\/p>"
+        "message": "<p>Aliquam felis ante, imperdiet vel urna at, elementum sagittis felis. Donec maximus quam ex, quis dapibus nibh tristique in. Nulla eu ex lacus.<\/p>",
+        "anchor_id": ""
       }
     }
   },
@@ -155,7 +142,6 @@
     "main",
     "1650479051fa4e9bc1",
     "16504791332b7186fd",
-    "16504792043cfba876",
     "165048835013ce33c0"
   ]
 }
