@@ -61,57 +61,6 @@
         "layout": "image-right"
       }
     },
-    "16504799472b7e541f": {
-      "type": "educational-carousel",
-      "blocks": {
-        "4794f423-54d7-42a5-884f-e1e1fb67475d": {
-          "type": "detailed",
-          "settings": {
-            "title": "Synergistic",
-            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is not only better for your skin barrier, but also for the planet. <\/p>",
-            "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
-          }
-        },
-        "184aaa19-497a-472e-9880-3de8d4d0e0cd": {
-          "type": "detailed",
-          "settings": {
-            "title": "Innovative",
-            "description": "<p>Our skincare products are rooted in science. We carefully select research-backed ingredients to design high-performing preventative skincare formulations that can stand up to extreme environments and lifestyles. <\/p>",
-            "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
-          }
-        },
-        "04113340-a6f3-4111-a8c7-eec9ba7f0e70": {
-          "type": "detailed",
-          "settings": {
-            "title": "Prevention",
-            "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine and sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>",
-            "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
-          }
-        },
-        "239a0d19-8b6b-4724-ad6c-19ca71ad0058": {
-          "type": "detailed",
-          "settings": {
-            "title": "Something Else",
-            "description": "<p>In nec lacus accumsan, euismod orci at, lacinia erat. Mauris erat nisi, sagittis vel libero eu, blandit congue nisl. Sed imperdiet eros sed magna molestie, sit amet elementum leo interdum.<\/p>",
-            "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
-          }
-        }
-      },
-      "block_order": [
-        "4794f423-54d7-42a5-884f-e1e1fb67475d",
-        "184aaa19-497a-472e-9880-3de8d4d0e0cd",
-        "04113340-a6f3-4111-a8c7-eec9ba7f0e70",
-        "239a0d19-8b6b-4724-ad6c-19ca71ad0058"
-      ],
-      "settings": {
-        "content_type": "detailed",
-        "alignment": "left",
-        "heading": "<p><em>The Needs<\/em> of an Athlete<\/p>",
-        "highlight": "circle",
-        "message": "",
-        "style": "dark"
-      }
-    },
     "165048835013ce33c0": {
       "type": "accordion-education",
       "blocks": {
@@ -207,7 +156,6 @@
     "1650479051fa4e9bc1",
     "16504791332b7186fd",
     "16504792043cfba876",
-    "16504799472b7e541f",
     "165048835013ce33c0"
   ]
 }
