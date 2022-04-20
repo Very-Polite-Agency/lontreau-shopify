@@ -1,8 +1,20 @@
 .the-team {
 
+  padding: 60px 0;
+
+  &__heading {
+    text-align: center;
+    & + .the-team__item {
+      margin-top: 60px;
+    }
+  }
+
   &__item {
     border: 1px solid rgba(var(--theme-colour-black), 1);
     display: block;
+    &-bio {
+      padding: 25px 28px;
+    }
     &-body {
       display: flex;
       justify-content: space-between;
@@ -14,7 +26,7 @@
       order: 2;
     }
     &-header {
-      background: rgba(var(--theme-colour-asphalt), 0.05);
+      background: rgba(var(--theme-colour-asphalt), 0.5);
       border-bottom: 1px solid rgba(var(--theme-colour-black), 1);
       padding: 25px 28px;
     }
@@ -38,10 +50,24 @@
 
   @include breakpoint(md) {} // min width md
 
-  @include breakpoint(lg) {} // min width lg
+  @include breakpoint(lg) {
+
+    padding: 70px 0;
+
+    &__heading {
+      & + .the-team__item {
+        margin-top: 70px;
+      }
+    }
+
+  } // min width lg
 
   @include breakpoint(xl) {} // min width xl
 
-  @include breakpoint(xxl) {} // min width xxl
+  @include breakpoint(xxl) {
+
+    padding: 80px 0;
+
+  } // min width xxl
 
 }
