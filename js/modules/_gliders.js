@@ -90,7 +90,7 @@ const Gliders = (() => {
 
       switch ( style ) {
 
-        case 'educational-carousel-detailed':
+        case 'carousel-education-detailed':
           options = gliderOptions({
             autoplay: 0,
             breakpoints: {
@@ -136,7 +136,7 @@ const Gliders = (() => {
             peek: 0,
           });
           break;
-        case 'educational-carousel-minimal':
+        case 'carousel-education-minimal':
           options = gliderOptions({
             breakpoints: {
               9999: {
