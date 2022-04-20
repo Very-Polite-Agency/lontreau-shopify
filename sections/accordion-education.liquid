@@ -40,7 +40,7 @@
           <div class="{{ section_name }}__item collapsible">
 
             <button
-              class="{{ section_name }}__item-trigger button--collapsible collapsible__trigger {% unless forloop.first %}collapsed{% endunless %}"
+              class="{{ section_name }}__item-trigger button--collapsible collapsible__trigger body-copy--large{% unless forloop.first %} collapsed{% endunless %}"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#{{ item_id }}"

@@ -1,6 +1,19 @@
 .accordion-education {
 
+  border: 1px solid red;
 
+  &__item {
+    &-content {
+      order: 2;
+    }
+    &-image {
+      order: 1;
+    }
+    &-layout {
+      display: flex;
+      flex-flow: column;
+    }
+  }
 
   @include breakpoint(sm) {} // min width sm
 

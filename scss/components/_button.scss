@@ -45,7 +45,6 @@
     @extend .button;
   }
 
-  &--collapsible,
   &--primary,
   &--secondary,
   &--tertiary {
@@ -72,8 +71,8 @@
   }
 
   &--collapsible {
-    color: rgba(var(--theme-colour-black),1);
     width: 100%;
+    padding: 15px 0;
     .button__icon {
       position: relative;
       height: 18px;
