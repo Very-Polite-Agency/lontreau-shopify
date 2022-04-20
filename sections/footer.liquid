@@ -21,11 +21,11 @@
 
     <div class="{{ section_name }}__main">
       <div class="{{ section_name }}__menus">
-        {% if main_menu %}
-          {% render 'navigation', classes: 'footer__menus-main navigation--circle', menu_handle: main_menu %}
+        {% if menu_main %}
+          {% render 'navigation', classes: 'footer__menus-main navigation--circle', menu_handle: menu_main %}
         {% endif %}
-        {% if extra_menu %}
-          {% render 'navigation', classes: 'footer__menus-extra navigation--circle', menu_handle: extra_menu %}
+        {% if menu_extra %}
+          {% render 'navigation', classes: 'footer__menus-extra navigation--circle', menu_handle: menu_extra %}
         {% endif %}
       </div>
       <div class="{{ section_name }}__contact">
@@ -73,8 +73,8 @@
     <div class="{{ section_name }}__hr"></div>
 
     <div class="{{ section_name }}__legal">
-      {% if policies_menu %}
-        {% render 'navigation', classes: 'footer__menus-policies', menu_handle: policies_menu %}
+      {% if menu_policies %}
+        {% render 'navigation', classes: 'footer__menus-policies', menu_handle: menu_policies %}
       {% endif %}
       <div class="{{ section_name }}__copyright">&copy; {{ shop.name }} {{ "now" | date: "%Y" }}.</div>
     </div>
