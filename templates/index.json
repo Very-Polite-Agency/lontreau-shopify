@@ -12,51 +12,26 @@
         "height": "large"
       }
     },
-    "1649813131e8a059a5": {
-      "type": "educational-carousel",
-      "blocks": {
-        "52b1705f-e4d2-4a3b-be82-0ae86109c6b3": {
-          "type": "minimal",
-          "settings": {
-            "title": "",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-02.png"
-          }
-        },
-        "3c68aa11-f89d-42f5-bd19-8c950677b29d": {
-          "type": "minimal",
-          "settings": {
-            "title": "",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-03.png"
-          }
-        },
-        "067d59a3-fcdd-4b91-a8ea-40cc244c65f4": {
-          "type": "minimal",
-          "settings": {
-            "title": "",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-01.png"
-          }
-        }
-      },
-      "block_order": [
-        "52b1705f-e4d2-4a3b-be82-0ae86109c6b3",
-        "3c68aa11-f89d-42f5-bd19-8c950677b29d",
-        "067d59a3-fcdd-4b91-a8ea-40cc244c65f4"
-      ],
+    "1650417217a58d6a29": {
+      "type": "fifty-fifty-feature",
       "settings": {
-        "content_type": "minimal",
-        "alignment": "center",
-        "heading": "<p>We Believe <em>in Clean<\/em><\/p>",
-        "highlight": "circle",
+        "heading": "<p>Here to be <em>Hard & Soft<\/em><\/p>",
+        "highlight": "standard",
         "message": "",
-        "style": "grey"
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--default_3x_d3a9c3bb-0e8c-4c6e-a41f-f7dc52d2fc2f.png",
+        "hide_image_mobile": false,
+        "style": "standard",
+        "layout": "image-right"
       }
     },
     "1649358548eba2154c": {
       "type": "full-width-feature",
       "settings": {
-        "title": "Our Mission",
-        "heading": "",
-        "heading_highlight": "standard",
+        "title": "The Lontreau Kit:",
+        "heading": "<p>Designed to move <em>with you <\/em><\/p>",
+        "heading_highlight": "stroke",
         "parallax": false,
         "anchor_id": "",
         "height": "auto"
@@ -352,7 +327,7 @@
   },
   "order": [
     "1649371027bf029c73",
-    "1649813131e8a059a5",
+    "1650417217a58d6a29",
     "1649358548eba2154c",
     "16497917113a4ded5d",
     "164936493171d7e74a",
