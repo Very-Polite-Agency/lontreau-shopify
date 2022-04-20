@@ -16,13 +16,13 @@
   }
 
   &__intro {
-    & + .educational-carousel__main {
+    & + .carousel-education__main {
       margin-top: 65px;
     }
   }
 
   &__heading {
-    & + .educational-carousel__message {
+    & + .carousel-education__message {
       margin-top: 22px;
     }
   }
@@ -38,14 +38,13 @@
   &__image {
     width: 85px;
     height: 85px;
-    border-radius: 100%;
     overflow: hidden;
     a, img, svg {
       display: block;
       width: 100%;
     }
-    & + .educational-carousel__description,
-    & + .educational-carousel__title {
+    & + .carousel-education__description,
+    & + .carousel-education__title {
       margin-top: 20px;
     }
   }
@@ -58,45 +57,45 @@
   }
 
   &__title {
-    & + .educational-carousel__description {
+    & + .carousel-education__description {
       margin-top: 12px;
     }
   }
 
   &[data-alignment="left"] {
-    .educational-carousel__intro {
+    .carousel-education__intro {
       text-align: left;
     }
   }
 
   &[data-alignment="center"] {
-    .educational-carousel__intro {
+    .carousel-education__intro {
       text-align: center;
     }
   }
 
   &[data-alignment="right"] {
-    .educational-carousel__intro {
+    .carousel-education__intro {
       text-align: right;
     }
   }
 
   &[data-content-type="detailed"] {
-    .educational-carousel__item {
+    .carousel-education__item {
       align-items: flex-start;
       text-align: left;
       width: 100%;
-      & + .educational-carousel__item {
+      & + .carousel-education__item {
         margin-top: 50px;
       }
     }
-    .educational-carousel__main {
+    .carousel-education__main {
       padding-left: var(--bs-gutter-width);
       padding-right: var(--bs-gutter-width);
       width: 100%;
       flex-flow: column;
     }
-    .educational-carousel__title {
+    .carousel-education__title {
       display: inline-flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
@@ -104,11 +103,11 @@
       width: 100%;
     }
     &[data-is-glider] {
-      .educational-carousel__main {
+      .carousel-education__main {
         padding-right: 0;
       }
-      .educational-carousel__item {
-        & + .educational-carousel__item {
+      .carousel-education__item {
+        & + .carousel-education__item {
           margin-top: 0;
         }
       }
@@ -116,27 +115,27 @@
   }
 
   &[data-content-type="minimal"] {
-    .educational-carousel__hr {
+    .carousel-education__hr {
       display: none;
     }
-    .educational-carousel__item {
+    .carousel-education__item {
       align-items: center;
       text-align: center;
     }
-    .educational-carousel__main {
+    .carousel-education__main {
       justify-content: center;
       align-items: flex-start;
       flex-flow: row;
     }
     &[data-is-glider] {
-      .educational-carousel__main {
+      .carousel-education__main {
         max-width: none;
       }
     }
   }
 
   &[data-is-glider] {
-    .educational-carousel__main {
+    .carousel-education__main {
       padding-bottom: 65px;
     }
   }
@@ -195,11 +194,11 @@
     }
 
     &[data-content-type="detailed"] {
-      .educational-carousel__main {
+      .carousel-education__main {
         max-width: var(--bs-container-width--sm);
       }
       &[data-is-glider] {
-        .educational-carousel__main {
+        .carousel-education__main {
           max-width: none;
           padding-left: calc( ((100% - var(--bs-container-width--sm)) / 2) + var(--bs-gutter-width) );
         }
@@ -207,19 +206,19 @@
     }
 
     &[data-content-type="minimal"] {
-      .educational-carousel__item {
-        & + .educational-carousel__item {
+      .carousel-education__item {
+        & + .carousel-education__item {
           margin-top: 0;
         }
       }
-      .educational-carousel__main {
+      .carousel-education__main {
         max-width: var(--bs-container-width--sm);
         flex-flow: row nowrap;
         justify-content: space-evenly;
         align-items: flex-start;
       }
       &[data-is-glider] {
-        .educational-carousel__main {
+        .carousel-education__main {
           width: 100%;
         }
       }
@@ -234,50 +233,50 @@
     }
 
     &[data-alignment="left"] {
-      .educational-carousel__message {
+      .carousel-education__message {
         margin-right: auto;
       }
     }
 
     &[data-alignment="center"] {
-      .educational-carousel__message {
+      .carousel-education__message {
         margin-right: auto;
         margin-left: auto;
       }
     }
 
     &[data-alignment="right"] {
-      .educational-carousel__message {
+      .carousel-education__message {
         margin-left: auto;
       }
     }
 
     &[data-content-type="detailed"] {
-      .educational-carousel__item {
+      .carousel-education__item {
         width: 80%;
         margin: auto;
       }
-      .educational-carousel__main {
+      .carousel-education__main {
         max-width: var(--bs-container-width--md);
       }
       &[data-is-glider] {
-        .educational-carousel__item {
+        .carousel-education__item {
           width: 100%;
         }
-        .educational-carousel__main {
+        .carousel-education__main {
           padding-left: calc( ((100% - var(--bs-container-width--md)) / 2) + var(--bs-gutter-width) );
         }
       }
     }
 
     &[data-content-type="minimal"] {
-      .educational-carousel__main {
+      .carousel-education__main {
         max-width: var(--bs-container-width--md);
       }
     }
 
     &[data-is-glider] {
-      .educational-carousel__main {
+      .carousel-education__main {
         padding-bottom: 45px;
       }
     }
@@ -298,28 +297,28 @@
     }
 
     &[data-content-type="detailed"] {
-      .educational-carousel__item {
+      .carousel-education__item {
         width: auto;
         flex: 1;
         margin: 0;
-        & + .educational-carousel__item {
+        & + .carousel-education__item {
           margin: 0;
         }
       }
-      .educational-carousel__main {
+      .carousel-education__main {
         max-width: var(--bs-container-width--lg);
         flex-flow: row nowrap;
         gap: 32px;
       }
       &[data-is-glider] {
-        .educational-carousel__main {
+        .carousel-education__main {
           padding-left: calc( ((100% - var(--bs-container-width--lg)) / 2) + var(--bs-gutter-width) );
         }
       }
     }
 
     &[data-content-type="minimal"] {
-      .educational-carousel__main {
+      .carousel-education__main {
         max-width: var(--bs-container-width--lg);
       }
     }
@@ -329,11 +328,11 @@
   @include breakpoint(xl) {
 
     &[data-content-type="detailed"] {
-      .educational-carousel__main {
+      .carousel-education__main {
         max-width: var(--bs-container-width--xl);
       }
       &[data-is-glider] {
-        .educational-carousel__main {
+        .carousel-education__main {
           padding-left: calc( ((100% - var(--bs-container-width--xl)) / 2) + var(--bs-gutter-width) );
         }
       }
@@ -350,11 +349,11 @@
     padding: 80px 0;
 
     &[data-content-type="detailed"] {
-      .educational-carousel__main {
+      .carousel-education__main {
         max-width: var(--bs-container-width--xxl);
       }
       &[data-is-glider] {
-        .educational-carousel__main {
+        .carousel-education__main {
           padding-left: calc( ((100% - var(--bs-container-width--xxl)) / 2) + var(--bs-gutter-width) );
         }
       }
