@@ -9,13 +9,14 @@
 {% assign image = section.settings.image | default: false %}
 {% assign message = section.settings.message | default: false %}
 {% assign parallax = section.settings.parallax | default: false %}
+{% assign text_theme = section.settings.text_theme | default: 'light' %}
 {% assign title = section.settings.title | default: false %}
 
 {% if section.settings.anchor_id != blank %}
   {% assign section_id = section.settings.anchor_id %}
 {% endif %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}">
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-text-theme="{{ text_theme }}">
 
   <div class="{{ section_name }}__media">
     {% if parallax %}<div class='{{ section_name }}__media-clip media__clip'>{% endif %}
@@ -68,6 +69,16 @@
     {
       "content": "Content",
       "type": "header"
+    },
+    {
+      "label": "Text Theme",
+      "type": "select",
+      "options": [
+        { "value": "light", "label": "Light" },
+        { "value": "dark", "label": "Dark" }
+      ],
+      "default": "light",
+      "id": "text_theme"
     },
     {
       "label": "Title",

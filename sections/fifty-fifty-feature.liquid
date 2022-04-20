@@ -24,7 +24,7 @@
           {% endif %}
 
           {% if message %}
-            <div class="{{ section_name }}__message body-copy--m">{{ message }}</div>
+            <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
           {% endif %}
 
           {% if cta_title and cta_link %}
@@ -43,6 +43,7 @@
           {% render 'content--lazyload-image', image: image %}
         </div>
       {% endif %}
+
     </div>
 
     {% unless style == 'wide' %}{% render 'layout--container', state: 'closed' %}{% endunless %}

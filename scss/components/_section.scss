@@ -1,6 +1,13 @@
 .section {
+
   position: relative;
-  &--accordion-with-image {}
-  &--full-width-feature {}
-  &--fifty-fifty-feature {}
+
+  [data-text-theme="dark"] {
+    color: rgba(var(--theme-colour-black),1);
+  }
+
+  [data-text-theme="light"] {
+    color: rgba(var(--theme-colour-white),1);
+  }
+
 }
