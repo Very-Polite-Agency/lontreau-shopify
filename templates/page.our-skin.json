@@ -197,7 +197,7 @@
       ],
       "settings": {
         "heading": "<p>We Believe <em>in Clean<\/em><\/p>",
-        "heading_highlight": "stroke",
+        "heading_highlight": "standard",
         "message": "<p>Aliquam felis ante, imperdiet vel urna at, elementum sagittis felis. Donec maximus quam ex, quis dapibus nibh tristique in. Nulla eu ex lacus.<\/p>"
       }
     }
