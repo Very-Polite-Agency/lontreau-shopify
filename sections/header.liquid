@@ -14,8 +14,12 @@
       </div>
 
       {% if menu_main %}
-        {% render 'navigation', classes: 'header__main-menu', menu_handle: menu_main %}
+        {% render 'navigation', classes: 'header__main-menu d-none d-lg-inline-flex', menu_handle: menu_main %}
       {% endif %}
+
+      <button class="{{ section_name }}__button button d-inline-flex d-lg-none" type="button">
+        <span class="button__title">Menu</span>
+      </button>
 
     </div>
   {% render 'layout--container', state: 'closed' %}

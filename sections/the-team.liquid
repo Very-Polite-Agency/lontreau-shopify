@@ -23,23 +23,25 @@
       {% endif %}
 
       {% if team_members %}
-        <div class="{{ section_name }}__accordion">
-          {% assign team_members_size = team_members.size %}
-          {% for block in team_members %}
+        {% assign is_collapsible = false %}
+        {% if team_members.size > 1 %}
+          {% assign is_collapsible = true %}
+        {% endif %}
 
-            {% assign item_id = section_name | append: '__item--' | append: block.id %}
-            {% assign bio = block.settings.bio | default: false %}
-            {% assign name = block.settings.name | default: false %}
+        {% for block in team_members %}
 
-            {% if name and bio %}
-              <div class="{{ section_name }}__item">
-                <strong>{{ name }}</strong>
-                <div>{{ bio }}</div>
-              </div>
-            {% endif %}
+          {% assign item_id = section_name | append: '__item--' | append: block.id %}
+          {% assign bio = block.settings.bio | default: false %}
+          {% assign name = block.settings.name | default: false %}
 
-          {% endfor %}
-        </div>
+          {% if name and bio %}
+            <div class="{{ section_name }}__item">
+              <strong>{{ name }}</strong>
+              <div>{{ bio }}</div>
+            </div>
+          {% endif %}
+
+        {% endfor %}
       {% endif %}
 
     </div>
@@ -84,6 +86,12 @@
       "name": "Team Member",
       "type": "team_member",
       "settings": [
+        {
+          "label": "Photo",
+          "info": "For optimal results upload an image with a 4:5 aspect ratio, a minimum width of 750px and a maximum file-size of 150kbs.",
+          "type": "image_picker",
+          "id": "photo"
+        },
         {
           "label": "Name",
           "type": "text",
