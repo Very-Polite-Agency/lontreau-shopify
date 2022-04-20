@@ -1,0 +1,186 @@
+{% assign section_name = 'education-accordion' %}
+{% assign section_id = section_name | append: '--' | append: section.id %}
+
+{% assign accordions = section.blocks | where: 'type', 'accordion' | default: false %}
+{% assign heading = section.settings.heading | default: false %}
+{% assign heading_highlight = section.settings.heading_highlight | default: false %}
+{% assign message = section.settings.message | default: false %}
+
+{% if section.settings.anchor_id != blank %}
+  {% assign section_id = section.settings.anchor_id %}
+{% endif %}
+
+<div class="{{ section_name }}" id="{{ section_id }}">
+  {% render 'layout--container' %}
+
+    {% if heading or message %}
+      <div class="{{ section_name }}__intro">
+        {% if heading != blank %}
+          <h2 class="{{ section_name }}__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
+        {% endif %}
+        {% if message != blank %}
+          <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if accordions %}
+      {% for block in accordions %}
+
+        {% assign cta_link = block.settings.cta_link | default: false %}
+        {% assign cta_title = block.settings.cta_title | default: false %}
+        {% assign image = block.settings.image | default: false %}
+        {% assign image_caption = block.settings.image_caption | default: false %}
+        {% assign image_figure = block.settings.image_figure | default: false %}
+        {% assign item_id = section_name | append: '__item--' | append: block.id %}
+        {% assign message = block.settings.message | default: false %}
+        {% assign title = block.settings.title | default: false %}
+
+        {% if title and message %}
+          <div class="{{ section_name }}__item collapsible">
+
+            <button
+              class="{{ section_name }}__item-trigger button--collapsible collapsible__trigger {% unless forloop.first %}collapsed{% endunless %}"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#{{ item_id }}"
+              aria-expanded="false"
+              aria-controls="{{ item_id }}"
+            >
+              <span class="button__title">{{ title }}</span>
+              <span class="button__icon">
+                <span class="button__icon-plus">{% render 'svg', type: 'icon.plus' %}</span>
+                <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
+              </span>
+            </button>
+
+            <div class="{{ section_name }}__item-main collapsible__main collapse {% if forloop.first %}show{% endif %}" id="{{ item_id }}">
+              <div class="{{ section_name }}__item-layout">
+                <div class="{{ section_name }}__item-content">
+                  <div class="{{ section_name }}__item-message body-copy--regular">{{ message }}</div>
+                  {% if cta_link and cta_title %}
+                    <div class="{{ section_name }}__item-cta">
+                      <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
+                        <span class="button__title">{{ cta_title }}</span>
+                      </a>
+                    </div>
+                  {% endif %}
+                </div>
+                {% if image %}
+                  <div class="{{ section_name }}__item-image">
+                    {%
+                      render 'content--lazyload-image',
+                      alt_text: title,
+                      image: image,
+                      duration: 300,
+                    %}
+                    {% if image_figure %}<span class="{{ section_name }}__item-image-figure">{{ image_figure }}</span>{% endif %}
+                    {% if image_caption %}<span class="{{ section_name }}__item-image-caption">{{ image_caption }}</span>{% endif %}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+
+          </div>
+        {% endif %}
+
+      {% endfor %}
+    {% endif %}
+
+  {% render 'layout--container', state: 'closed' %}
+</div>
+
+{% schema %}
+{
+  "name": "Education Accordion",
+  "tag": "section",
+  "class": "section section--education-accordion",
+  "settings": [
+    {
+      "content": "Intro",
+      "type": "header"
+    },
+    {
+      "label": "Heading",
+      "type": "richtext",
+      "id": "heading"
+    },
+    {
+      "label": "Heading Highlight",
+      "type": "select",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "stroke", "label": "Stroke" },
+        { "value": "circle", "label": "Circle" }
+      ],
+      "default": "standard",
+      "id": "heading_highlight"
+    },
+    {
+      "label": "Message",
+      "type": "richtext",
+      "id": "message"
+    }
+  ],
+  "blocks": [
+  	{
+       "name": "Accordion",
+       "type": "accordion",
+       "settings": [
+          {
+            "content": "Content",
+            "type": "header"
+          },
+          {
+            "label": "Title",
+            "type": "text",
+            "id": "title"
+          },
+          {
+            "label": "Message",
+            "type": "richtext",
+            "id": "message"
+          },
+          {
+            "content": "Call to Action",
+            "type": "paragraph"
+          },
+          {
+            "label": "Title",
+            "type": "text",
+            "id": "cta_title"
+          },
+          {
+            "label": "Link",
+            "type": "url",
+            "id": "cta_link"
+          },
+          {
+            "content": "Media",
+            "type": "header"
+          },
+          {
+            "label": "Image",
+            "type": "image_picker",
+            "id": "image"
+          },
+          {
+            "label": "Image Figure",
+            "type": "text",
+            "id": "image_figure"
+          },
+          {
+            "label": "Image Caption",
+            "type": "text",
+            "id": "image_caption"
+          }
+       ]
+     }
+  ],
+  "presets": [
+    {
+      "name": "Education Accordion"
+    }
+  ]
+}
+{% endschema %}

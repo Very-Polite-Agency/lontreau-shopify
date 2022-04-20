@@ -170,7 +170,7 @@
     color: rgba(var(--theme-colour-white),1);
     .glide {
       &__controls--technical {
-        background: rgba(var(--theme-colour-forrest-dark),1);
+        background: rgba(var(--theme-colour-forrest-dark),0.4);
         border-top: none;
         .button {
           background: rgba(var(--theme-colour-grass),1);

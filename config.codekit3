@@ -2294,6 +2294,14 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/sections\/accordion-education.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/accordion-education.liquid",
+      "oF" : 0
+    },
     "\/sections\/accordion-with-image.liquid" : {
       "cB" : 0,
       "ft" : 8192,
