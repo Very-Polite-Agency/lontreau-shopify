@@ -14,7 +14,7 @@
 
   {% if heading != blank or message != blank %}
     <div class="{{ section_name }}__intro intro">
-      {% render 'layout--container', state: 'open', col: 'col-12' %}
+      {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
         {% if heading != blank %}
           <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
         {% endif %}
