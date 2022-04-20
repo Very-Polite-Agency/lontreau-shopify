@@ -1,10 +1,13 @@
 {% assign section_name = 'full-width-feature' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign cta_title = section.settings.cta_title | default: false %}
+{% assign cta_link = section.settings.cta_link | default: false %}
 {% assign heading = section.settings.heading | default: '' %}
 {% assign height = section.settings.height | default: 'auto' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: false %}
 {% assign image = section.settings.image | default: false %}
+{% assign message = section.settings.message | default: false %}
 {% assign parallax = section.settings.parallax | default: false %}
 {% assign title = section.settings.title | default: false %}
 
@@ -30,12 +33,27 @@
 
   <div class="{{ section_name }}__main">
     {% render 'layout--container' %}
+
       {% if title != blank %}
         <h3 class="{{ section_name }}__title title--1">{{ title }}</h3>
       {% endif %}
+
       {% if heading != blank %}
         <div class="{{ section_name }}__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</div>
       {% endif %}
+
+      {% if message != blank %}
+        <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
+      {% endif %}
+
+      {% if cta_title and cta_link %}
+        <div class="{{ section_name }}__cta">
+          <a class="button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
+            <span class="button__title">{{ cta_title }}</span>
+          </a>
+        </div>
+      {% endif %}
+
     {% render 'layout--container', state: 'closed' %}
   </div>
 
