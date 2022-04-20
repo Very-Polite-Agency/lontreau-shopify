@@ -159,21 +159,24 @@
           "type": "detailed",
           "settings": {
             "title": "Synergistic",
-            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is not only better for your skin barrier, but also for the planet. <\/p>"
+            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is not only better for your skin barrier, but also for the planet. <\/p>",
+            "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
           }
         },
         "e98410e9-a551-42d8-aa2c-df3ff9da1c4b": {
           "type": "detailed",
           "settings": {
             "title": "Innovative",
-            "description": "<p>Our skincare products are rooted in science. We carefully select research-backed ingredients to design high-performing preventative skincare formulations that can stand up to extreme environments and lifestyles.<\/p>"
+            "description": "<p>Our skincare products are rooted in science. We carefully select research-backed ingredients to design high-performing preventative skincare formulations that can stand up to extreme environments and lifestyles.<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
           }
         },
         "c616d856-9b6c-4a8f-a9d9-85f9409c7d3d": {
           "type": "detailed",
           "settings": {
             "title": "Prevention",
-            "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine and sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>"
+            "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine and sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
           }
         }
       },
