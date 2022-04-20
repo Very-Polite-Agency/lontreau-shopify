@@ -61,66 +61,6 @@
         "height": "auto"
       }
     },
-    "1649791718078b153a": {
-      "type": "educational-carousel",
-      "blocks": {
-        "bfe2201c-4b50-4d80-8385-b9bee6bea25e": {
-          "type": "detailed",
-          "settings": {
-            "title": "Botanicals",
-            "description": "<p>Nam felis orci, semper eu diam eu, faucibus elementum dolor. Curabitur efficitur sollicitudin lacinia. Duis id nibh vestibulum, feugiat ipsum vitae, ultricies nulla.<\/p>",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-02.png"
-          }
-        },
-        "d8a4a2ff-3b17-4d60-824b-2197eaa26873": {
-          "type": "detailed",
-          "settings": {
-            "title": "Antioxidants",
-            "description": "<p>Sed in rhoncus lorem. Donec facilisis dui a nibh lacinia rutrum. Praesent enim nunc, faucibus sed augue id, pellentesque rutrum lorem. Sed commodo varius massa nunc.<\/p>",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-03.png"
-          }
-        },
-        "3d7ca12d-103b-4b74-98b1-f418c4468cae": {
-          "type": "detailed",
-          "settings": {
-            "title": "Peptides",
-            "description": "<p>Aenean nec est a neque lobortis iaculis in id felis. Nullam eu ullamcorper ligula, non porta ligula. Aliquam sagittis interdum odio, sed posuere metus pulvinar amet.<\/p>",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-01.png"
-          }
-        },
-        "901aa3b7-4ca8-433a-8c13-8a69c4e8c3f3": {
-          "type": "detailed",
-          "settings": {
-            "title": "Gluten-Free",
-            "description": "<p>Maecenas dictum ex velit. Etiam maximus metus nec nunc egestas facilisis. Morbi nisl diam, feugiat non lectus in, feugiat tempor nunc. Proin iaculis gravida viverra.<\/p>",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-02.png"
-          }
-        },
-        "9a3d7579-9b61-443f-adc6-7a7b03bbcb6e": {
-          "type": "detailed",
-          "settings": {
-            "title": "Vegan",
-            "description": "<p>Aliquam vehicula risus ligula, vitae laoreet lectus tempor eu. Aenean a leo vel risus condimentum fermentum. Suspendisse vitae nulla est. Fusce suscipit sodales sed.<\/p>",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-01.png"
-          }
-        }
-      },
-      "block_order": [
-        "bfe2201c-4b50-4d80-8385-b9bee6bea25e",
-        "d8a4a2ff-3b17-4d60-824b-2197eaa26873",
-        "3d7ca12d-103b-4b74-98b1-f418c4468cae",
-        "901aa3b7-4ca8-433a-8c13-8a69c4e8c3f3",
-        "9a3d7579-9b61-443f-adc6-7a7b03bbcb6e"
-      ],
-      "settings": {
-        "content_type": "detailed",
-        "alignment": "left",
-        "heading": "<p>Endurance <em>Ingredients<\/em><\/p>",
-        "highlight": "circle",
-        "message": "<p>Curabitur cursus purus a massa commodo, et rutrum nulla commodo. Sed ultrices at quam ut rutrum. Integer nec quam convallis velit cursus aliquet. Pellentesque vitae hendrerit felis, sed tempus tortor. Praesent et leo aliquam.<\/p>",
-        "style": "dark"
-      }
-    },
     "16493606352f275ae2": {
       "type": "full-width-feature",
       "settings": {
@@ -238,48 +178,6 @@
         "image": "shopify:\/\/shop_images\/LONTREAU--accordion-with-image--image_3x_a53858f8-5a2e-459c-8541-a6bcbeadd8fc.png",
         "layout": "image-right"
       }
-    },
-    "16498131368d361219": {
-      "type": "educational-carousel",
-      "blocks": {
-        "94056496-c010-449c-9f94-f6401bb23680": {
-          "type": "detailed",
-          "settings": {
-            "title": "Detail Alpha",
-            "description": "<p>Nam felis orci, semper eu diam eu, faucibus elementum dolor. Curabitur efficitur sollicitudin lacinia. Duis id nibh vestibulum, feugiat ipsum vitae, ultricies nulla.<\/p>",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-02.png"
-          }
-        },
-        "7882c4e3-0ef6-4b81-960e-95daa2a754f8": {
-          "type": "detailed",
-          "settings": {
-            "title": "Detail Bravo",
-            "description": "<p>Sed in rhoncus lorem. Donec facilisis dui a nibh lacinia rutrum. Praesent enim nunc, faucibus sed augue id, pellentesque rutrum lorem. Sed commodo varius massa nunc.<\/p>",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-01.png"
-          }
-        },
-        "90b7ca8a-64d2-4da5-9cfe-7fe5097077bc": {
-          "type": "detailed",
-          "settings": {
-            "title": "Detail Charlie",
-            "description": "<p>Aenean nec est a neque lobortis iaculis in id felis. Nullam eu ullamcorper ligula, non porta ligula. Aliquam sagittis interdum odio, sed posuere metus pulvinar amet.<\/p>",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-03.png"
-          }
-        }
-      },
-      "block_order": [
-        "94056496-c010-449c-9f94-f6401bb23680",
-        "7882c4e3-0ef6-4b81-960e-95daa2a754f8",
-        "90b7ca8a-64d2-4da5-9cfe-7fe5097077bc"
-      ],
-      "settings": {
-        "content_type": "detailed",
-        "alignment": "center",
-        "heading": "<p>We Believe <em>in Clean<\/em><\/p>",
-        "highlight": "standard",
-        "message": "",
-        "style": "dark"
-      }
     }
   },
   "order": [
@@ -287,13 +185,11 @@
     "1650417217a58d6a29",
     "1649358548eba2154c",
     "164936493171d7e74a",
-    "1649791718078b153a",
     "16493606352f275ae2",
     "16493714966922f573",
     "16493759755f3cddf5",
     "1649464267fea0d6f8",
     "16493635494e59cb2e",
-    "1649439380ba38508d",
-    "16498131368d361219"
+    "1649439380ba38508d"
   ]
 }
