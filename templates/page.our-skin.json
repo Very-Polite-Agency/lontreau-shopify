@@ -147,12 +147,24 @@
             "image_figure": "",
             "image_caption": ""
           }
+        },
+        "b99e0a2b-2f34-4fb4-ba00-8307d9079462": {
+          "type": "accordion",
+          "settings": {
+            "title": "Oxidative Stress & Free Radicals",
+            "message": "",
+            "cta_title": "",
+            "cta_link": "",
+            "image_figure": "",
+            "image_caption": ""
+          }
         }
       },
       "block_order": [
         "553f02eb-9466-4197-b697-7a71cf92c598",
         "87c8a20b-3d74-4969-a82c-36d250ab8a93",
-        "cae49aa7-a0fe-428a-9124-de23fdf4f607"
+        "cae49aa7-a0fe-428a-9124-de23fdf4f607",
+        "b99e0a2b-2f34-4fb4-ba00-8307d9079462"
       ],
       "settings": {
         "heading": "",
