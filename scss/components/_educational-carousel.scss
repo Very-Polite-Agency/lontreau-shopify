@@ -301,6 +301,7 @@
       .educational-carousel__item {
         width: auto;
         flex: 1;
+        margin: 0;
         & + .educational-carousel__item {
           margin: 0;
         }
