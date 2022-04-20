@@ -1,7 +1,5 @@
 .accordion-with-image {
 
-  padding: 60px 0;
-
   .collapsible {
     &__content {
       padding-bottom: var(--bs-gutter-width);
@@ -40,8 +38,6 @@
   @include breakpoint(md) {} // min width md
 
   @include breakpoint(lg) {
-
-    padding: 70px 0;
 
     &__heading,
     &__message {
@@ -93,10 +89,6 @@
 
   @include breakpoint(xl) {} // min width xl
 
-  @include breakpoint(xxl) {
-
-    padding: 80px 0;
-
-  } // min width xxl
+  @include breakpoint(xxl) {} // min width xxl
 
 }
