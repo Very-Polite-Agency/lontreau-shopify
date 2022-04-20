@@ -20,12 +20,13 @@
       "type": "fifty-fifty-feature",
       "settings": {
         "heading": "<p>Here to be <em>Hard & Soft<\/em><\/p>",
-        "highlight": "standard",
+        "heading_highlight": "standard",
         "message": "<p>Lontreau is a skincare brand focused on regenerative formulations for everyone from endurance athletes to everyday movers looking for ingredient-rich skincare.<\/p>",
         "cta_title": "",
         "cta_link": "",
         "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--default_3x_d3a9c3bb-0e8c-4c6e-a41f-f7dc52d2fc2f.png",
         "hide_image_mobile": false,
+        "anchor_id": "",
         "style": "standard",
         "layout": "image-right"
       }
@@ -80,12 +81,13 @@
       "type": "fifty-fifty-feature",
       "settings": {
         "heading": "<p>Here to be <em>Hard & Soft<\/em><\/p>",
-        "highlight": "standard",
+        "heading_highlight": "standard",
         "message": "<p>Lontreau is a skincare brand focused on regenerative formulations for everyone from endurance athletes to everyday movers looking for ingredient-rich skincare.<\/p>",
         "cta_title": "Learn More",
         "cta_link": "shopify:\/\/pages\/contact",
         "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--default_3x_d3a9c3bb-0e8c-4c6e-a41f-f7dc52d2fc2f.png",
         "hide_image_mobile": true,
+        "anchor_id": "",
         "style": "standard",
         "layout": "image-right"
       }
@@ -94,12 +96,13 @@
       "type": "fifty-fifty-feature",
       "settings": {
         "heading": "<p>Here to be <em>Hard & Soft<\/em><\/p>",
-        "highlight": "circle",
+        "heading_highlight": "standard",
         "message": "<p>Lontreau is a skincare brand focused on regenerative formulations for everyone from endurance athletes to everyday movers looking for ingredient-rich skincare.<\/p>",
         "cta_title": "Learn Morer",
         "cta_link": "shopify:\/\/pages\/contact",
         "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--wide_2x_e6a66d64-eb95-41cf-84aa-c093104a5d1f.png",
         "hide_image_mobile": false,
+        "anchor_id": "",
         "style": "wide",
         "layout": "image-left"
       }
@@ -108,12 +111,13 @@
       "type": "fifty-fifty-feature",
       "settings": {
         "heading": "<p>Some other great heading to choose from<\/p>",
-        "highlight": "standard",
+        "heading_highlight": "standard",
         "message": "<p>Nullam quis lectus ac neque malesuada mollis eget at augue. Sed nec erat et lorem facilisis eleifend vitae fermentum felis. Proin sit amet sagittis neque.<\/p>",
         "cta_title": "",
         "cta_link": "",
         "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--default_3x_d3a9c3bb-0e8c-4c6e-a41f-f7dc52d2fc2f.png",
         "hide_image_mobile": false,
+        "anchor_id": "",
         "style": "standard",
         "layout": "image-right"
       }
@@ -173,9 +177,10 @@
       ],
       "settings": {
         "heading": "<p>Our <em>Values<\/em><\/p>",
-        "highlight": "standard",
+        "heading_highlight": "standard",
         "message": "<p>Nulla finibus turpis a dapibus consequat. In eu est nisl. Pellentesque at tincidunt est. Nullam ut porta nisl. Proin sed elit vestibulum, viverra nibh a, interdum neque. Maecenas hendrerit quis enim ut luctus.<\/p>",
         "image": "shopify:\/\/shop_images\/LONTREAU--accordion-with-image--image_3x_a53858f8-5a2e-459c-8541-a6bcbeadd8fc.png",
+        "anchor_id": "",
         "layout": "image-right"
       }
     }
