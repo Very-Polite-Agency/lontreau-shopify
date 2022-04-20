@@ -2,11 +2,15 @@
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
 {% assign accordions = section.blocks | where: 'type', 'accordion' | default: false %}
-{% assign heading = section.settings.heading | default: false %}
-{% assign highlight = section.settings.highlight | default: false %}
+{% assign heading = section.settings.heading | default: '' %}
+{% assign heading_highlight = section.settings.heading_highlight | default: 'standard' %}
 {% assign image = section.settings.image | default: false %}
 {% assign layout = section.settings.layout | default: 'image-right' %}
-{% assign message = section.settings.message | default: false %}
+{% assign message = section.settings.message | default: '' %}
+
+{% if section.settings.anchor_id != blank %}
+  {% assign section_id = section.settings.anchor_id %}
+{% endif %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}">
   <div class="{{ section_name }}__main">
@@ -19,15 +23,15 @@
           </div>
         {% endif %}
 
-        {% if heading or message or accordions %}
+        {% if heading != blank or message != blank or accordions %}
           <div class="{{ section_name }}__content">
 
-            {% if heading %}
-              <h2 class="{{ section_name }}__heading heading--2 {% if highlight %} highlight--{{ highlight }}{% endif %}">{{ heading }}</h2>
+            {% if heading != blank %}
+              <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
             {% endif %}
 
-            {% if message %}
-              <div class="{{ section_name }}__message body-copy--m">{{ message }}</div>
+            {% if message != blank %}
+              <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
             {% endif %}
 
             {% if accordions %}
@@ -76,11 +80,17 @@
   </div>
 </div>
 
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
 {% schema %}
 {
   "name": "Accordion with Image",
   "tag": "section",
-  "class": "section section--accordion-with-image section--py",
+  "class": "section section--accordion-with-image",
   "settings": [
     {
       "content": "Content",
@@ -92,7 +102,7 @@
       "id": "heading"
     },
     {
-      "label": "Highlight",
+      "label": "Heading Highlight",
       "type": "select",
       "options": [
         { "value": "standard", "label": "Standard" },
@@ -100,10 +110,11 @@
         { "value": "circle", "label": "Circle" }
       ],
       "default": "standard",
-      "id": "highlight"
+      "id": "heading_highlight"
     },
     {
       "label": "Message",
+      "info": "For optimal results, keep content within 250 characters.",
       "type": "richtext",
       "id": "message"
     },
@@ -119,6 +130,12 @@
     {
       "content": "Settings",
       "type": "header"
+    },
+    {
+      "label": "Anchor ID",
+      "info": "Optionally include a unique ID so that sections within the page can be linked to. Anchor IDs must be all lowercase, unique and replaced empty spaces with hyphens. For example: my-great-section-anchor",
+      "type": "text",
+      "id": "anchor_id"
     },
     {
       "label": "Layout",

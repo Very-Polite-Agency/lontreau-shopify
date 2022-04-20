@@ -3,13 +3,17 @@
 
 {% assign cta_title = section.settings.cta_title | default: false %}
 {% assign cta_link = section.settings.cta_link | default: false %}
-{% assign heading = section.settings.heading | default: false %}
+{% assign heading = section.settings.heading | default: '' %}
+{% assign heading_highlight = section.settings.heading_highlight | default: 'standard' %}
 {% assign hide_image_mobile = section.settings.hide_image_mobile | default: false %}
-{% assign highlight = section.settings.highlight | default: false %}
 {% assign image = section.settings.image | default: false %}
 {% assign layout = section.settings.layout | default: 'image-right' %}
-{% assign message = section.settings.message | default: false %}
+{% assign message = section.settings.message | default: '' %}
 {% assign style = section.settings.style | default: 'standard' %}
+
+{% if section.settings.anchor_id != blank %}
+  {% assign section_id = section.settings.anchor_id %}
+{% endif %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}" data-style="{{ style }}">
   <div class="{{ section_name }}__main">
@@ -66,7 +70,7 @@
       "id": "heading"
     },
     {
-      "label": "Highlight",
+      "label": "Heading Highlight",
       "type": "select",
       "options": [
         { "value": "standard", "label": "Standard" },
@@ -74,10 +78,11 @@
         { "value": "circle", "label": "Circle" }
       ],
       "default": "standard",
-      "id": "highlight"
+      "id": "heading_highlight"
     },
     {
       "label": "Message",
+      "info": "For optimal results, keep content within 250 characters.",
       "type": "richtext",
       "id": "message"
     },
@@ -113,6 +118,12 @@
     {
       "content": "Settings",
       "type": "header"
+    },
+    {
+      "label": "Anchor ID",
+      "info": "Optionally include a unique ID so that sections within the page can be linked to. Anchor IDs must be all lowercase, unique and replaced empty spaces with hyphens. For example: my-great-section-anchor",
+      "type": "text",
+      "id": "anchor_id"
     },
     {
       "label": "Style",

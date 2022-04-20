@@ -2371,6 +2371,14 @@
       "oAP" : "\/sections\/apps.liquid",
       "oF" : 0
     },
+    "\/sections\/carousel-education.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/carousel-education.liquid",
+      "oF" : 0
+    },
     "\/sections\/cart-icon-bubble.liquid" : {
       "cB" : 0,
       "ft" : 8192,
