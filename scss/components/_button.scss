@@ -112,6 +112,8 @@
   &--primary {
     background: rgba(var(--theme-colour-grass),1);
     color: rgba(var(--theme-colour-black),1);
+    width: 100%;
+    max-width: 300px;
     &:focus,
     &:hover {
       background: rgba(var(--theme-colour-forrest),1);

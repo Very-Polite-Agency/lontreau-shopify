@@ -39,8 +39,6 @@
     flex-flow: column;
   }
 
-  &[data-style="standard"] {}
-
   &[data-style="wide"] {
     padding-bottom: 0;
     .fifty-fifty-feature__content {
@@ -120,6 +118,12 @@
       }
     }
 
+    &[data-style="standard"] {
+      .fifty-fifty-feature__content {
+        padding: 0 7%;
+      }
+    }
+
     &[data-style="wide"] {
       padding: 0;
       .fifty-fifty-feature__content {
@@ -142,13 +146,26 @@
 
   } // min width lg
 
-  @include breakpoint(xl) {} // min width xl
+  @include breakpoint(xl) {
+
+    &[data-style="standard"] {
+      .fifty-fifty-feature__content {
+        padding: 0 8%;
+      }
+    }
+
+  } // min width xl
 
   @include breakpoint(xxl) {
 
     padding: 80px 0;
 
-  } // min width xxl
+    &[data-style="standard"] {
+      .fifty-fifty-feature__content {
+        padding: 0 9%;
+      }
+    }
 
+  } // min width xxl
 
 }

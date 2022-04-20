@@ -33,7 +33,7 @@
   </div>
 
   <div class="{{ section_name }}__main">
-    {% render 'layout--container' %}
+    {% render 'layout--container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
 
       {% if title != blank %}
         <h3 class="{{ section_name }}__title title--1">{{ title }}</h3>

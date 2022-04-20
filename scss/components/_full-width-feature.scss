@@ -12,6 +12,19 @@
     color: rgba(var(--theme-colour-grass),1);
   }
 
+  &__heading,
+  &__message {
+    & + .full-width-feature__cta {
+      margin-top: 22px;
+    }
+  }
+
+  &__heading {
+    & + .full-width-feature__message {
+      margin-top: 32px;
+    }
+  }
+
   &__main {
     position: relative;
     z-index: 10;
@@ -67,6 +80,19 @@
   @include breakpoint(md) {} // min width md
 
   @include breakpoint(lg) {
+
+    &__heading,
+    &__message {
+      & + .full-width-feature__cta {
+        margin-top: 32px;
+      }
+    }
+
+    &__heading {
+      & + .full-width-feature__message {
+        margin-top: 40px;
+      }
+    }
 
     &[data-section-height="auto"] {
       padding: 100px 0;
