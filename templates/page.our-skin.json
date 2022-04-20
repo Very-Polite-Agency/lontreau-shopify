@@ -92,7 +92,8 @@
           "type": "detailed",
           "settings": {
             "title": "Something Else",
-            "description": "<p>In nec lacus accumsan, euismod orci at, lacinia erat. Mauris erat nisi, sagittis vel libero eu, blandit congue nisl. Sed imperdiet eros sed magna molestie, sit amet elementum leo interdum.<\/p>"
+            "description": "<p>In nec lacus accumsan, euismod orci at, lacinia erat. Mauris erat nisi, sagittis vel libero eu, blandit congue nisl. Sed imperdiet eros sed magna molestie, sit amet elementum leo interdum.<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
           }
         }
       },
