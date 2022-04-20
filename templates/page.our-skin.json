@@ -183,7 +183,8 @@
           "type": "detailed",
           "settings": {
             "title": "Something Else",
-            "description": "<p>Sed finibus risus quis ipsum ultricies pharetra. Maecenas rutrum dui eu est imperdiet condimentum. Nunc ultrices tempor dui vitae ornare. Ut rutrum dolor a aliquam vulputate.<\/p>"
+            "description": "<p>Sed finibus risus quis ipsum ultricies pharetra. Maecenas rutrum dui eu est imperdiet condimentum. Nunc ultrices tempor dui vitae ornare. Ut rutrum dolor a aliquam vulputate.<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
           }
         }
       },
