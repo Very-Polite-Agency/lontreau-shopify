@@ -159,32 +159,43 @@
           "type": "detailed",
           "settings": {
             "title": "Synergistic",
-            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is not only better for your skin barrier, but also for the planet. <\/p>"
+            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is not only better for your skin barrier, but also for the planet. <\/p>",
+            "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
           }
         },
         "e98410e9-a551-42d8-aa2c-df3ff9da1c4b": {
           "type": "detailed",
           "settings": {
             "title": "Innovative",
-            "description": "<p>Our skincare products are rooted in science. We carefully select research-backed ingredients to design high-performing preventative skincare formulations that can stand up to extreme environments and lifestyles.<\/p>"
+            "description": "<p>Our skincare products are rooted in science. We carefully select research-backed ingredients to design high-performing preventative skincare formulations that can stand up to extreme environments and lifestyles.<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
           }
         },
         "c616d856-9b6c-4a8f-a9d9-85f9409c7d3d": {
           "type": "detailed",
           "settings": {
             "title": "Prevention",
-            "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine and sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>"
+            "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine and sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
+          }
+        },
+        "51559e9d-5ff2-4707-b2cd-29ca2e61d229": {
+          "type": "detailed",
+          "settings": {
+            "title": "Something Else",
+            "description": "<p>Sed finibus risus quis ipsum ultricies pharetra. Maecenas rutrum dui eu est imperdiet condimentum. Nunc ultrices tempor dui vitae ornare. Ut rutrum dolor a aliquam vulputate.<\/p>"
           }
         }
       },
       "block_order": [
         "0be36e13-37b8-4585-bd57-fb626debe9e8",
         "e98410e9-a551-42d8-aa2c-df3ff9da1c4b",
-        "c616d856-9b6c-4a8f-a9d9-85f9409c7d3d"
+        "c616d856-9b6c-4a8f-a9d9-85f9409c7d3d",
+        "51559e9d-5ff2-4707-b2cd-29ca2e61d229"
       ],
       "settings": {
         "content_type": "detailed",
-        "alignment": "center",
+        "alignment": "left",
         "heading": "<p><em>The Needs<\/em> of an Athlete<\/p>",
         "heading_highlight": "circle",
         "message": "<p>Aenean egestas id mauris fermentum efficitur. Quisque non nisi tristique, bibendum turpis ac, varius mauris. Nulla iaculis vestibulum ex, vel consequat dolor volutpat eget. Curabitur tempor nisl augue, rutrum ultrices neque consequat ac.<\/p>",
