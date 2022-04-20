@@ -60,12 +60,36 @@
         "style": "wide",
         "layout": "image-right"
       }
+    },
+    "16504799472b7e541f": {
+      "type": "educational-carousel",
+      "blocks": {
+        "4794f423-54d7-42a5-884f-e1e1fb67475d": {
+          "type": "detailed",
+          "settings": {
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "4794f423-54d7-42a5-884f-e1e1fb67475d"
+      ],
+      "settings": {
+        "content_type": "detailed",
+        "alignment": "left",
+        "heading": "<p><em>The Needs<\/em> of an Athlete<\/p>",
+        "highlight": "circle",
+        "message": "",
+        "style": "dark"
+      }
     }
   },
   "order": [
     "main",
     "1650479051fa4e9bc1",
     "16504791332b7186fd",
-    "16504792043cfba876"
+    "16504792043cfba876",
+    "16504799472b7e541f"
   ]
 }
