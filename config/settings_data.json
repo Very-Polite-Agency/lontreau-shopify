@@ -20,9 +20,9 @@
         "settings": {
           "phone": "604-112-2154",
           "email": "hello@lontreau.com",
-          "main_menu": "main-menu",
-          "extra_menu": "lontreau-journey",
-          "policies_menu": "policies"
+          "menu_main": "main-menu",
+          "menu_extra": "lontreau-journey",
+          "menu_policies": "policies"
         }
       }
     },
