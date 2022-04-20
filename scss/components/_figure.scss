@@ -1,0 +1,13 @@
+.figure {
+
+  font-family: var(--theme-font-family--serif--primary);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+
+  &--1 {
+    @extend .figure;
+    font-style: italic;
+  }
+
+}

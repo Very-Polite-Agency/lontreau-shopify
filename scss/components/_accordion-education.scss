@@ -1,25 +1,115 @@
 .accordion-education {
 
-  border: 1px solid red;
-
   &__item {
     &-content {
       order: 2;
+      & + .accordion-education__item-image {
+        margin-bottom: 38px;
+      }
+    }
+    &-cta {
+      margin-top: 25px;
+      &-button {
+        width: 100%;
+      }
     }
     &-image {
       order: 1;
+      img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+      }
+      &-caption,
+      &-figure {
+        display: block;
+      }
+      &-details {
+        display: flex;
+        width: 80%;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin: 24px auto 0;
+        text-align: center;
+      }
+      &-figure {
+        & + .accordion-education__item-image-caption {
+          margin-top: 14px;
+        }
+      }
     }
     &-layout {
       display: flex;
       flex-flow: column;
+      padding: var(--bs-gutter-width) 0 calc(2*var(--bs-gutter-width));
     }
   }
 
-  @include breakpoint(sm) {} // min width sm
+  @include breakpoint(sm) {
 
-  @include breakpoint(md) {} // min width md
+    &__item {
+      &-image {
+        img {
+          max-width: 375px;
+        }
+        &-details {
+          width: 100%;
+          max-width: 350px;
+        }
+      }
+    }
 
-  @include breakpoint(lg) {} // min width lg
+  } // min width sm
+
+  @include breakpoint(md) {
+
+    &__item {
+      &-image {
+        img {
+          max-width: 500px;
+        }
+        &-details {
+          max-width: 400px;
+        }
+      }
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {
+
+    &__item {
+      &-content {
+        order: 1;
+        flex: 1;
+        & + .accordion-education__item-image {
+          margin-bottom: 0;
+        }
+      }
+      &-image {
+        width: 38%;
+        order: 1;
+        img {
+          width: 75%;
+          max-width: none;
+        }
+        &-details {
+          padding: 0 calc(0.5*var(--bs-gutter-width));
+          width: 75%;
+          margin-top: 32px;
+        }
+      }
+      &-layout {
+        gap: var(--bs-gutter-width);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    }
+
+  } // min width lg
 
   @include breakpoint(xl) {} // min width xl
 

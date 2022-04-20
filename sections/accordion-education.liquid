@@ -1,4 +1,4 @@
-{% assign section_name = 'education-accordion' %}
+{% assign section_name = 'accordion-education' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
 {% assign accordions = section.blocks | where: 'type', 'accordion' | default: false %}
@@ -11,7 +11,7 @@
 {% endif %}
 
 <div class="{{ section_name }}" id="{{ section_id }}">
-  {% render 'layout--container' %}
+  {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
 
     {% if heading or message %}
       <div class="{{ section_name }}__intro">
@@ -60,7 +60,7 @@
                   <div class="{{ section_name }}__item-message body-copy--regular">{{ message }}</div>
                   {% if cta_link and cta_title %}
                     <div class="{{ section_name }}__item-cta">
-                      <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
+                      <a class="{{ section_name }}__item-cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
                         <span class="button__title">{{ cta_title }}</span>
                       </a>
                     </div>
@@ -74,8 +74,12 @@
                       image: image,
                       duration: 300,
                     %}
-                    {% if image_figure %}<span class="{{ section_name }}__item-image-figure">{{ image_figure }}</span>{% endif %}
-                    {% if image_caption %}<span class="{{ section_name }}__item-image-caption">{{ image_caption }}</span>{% endif %}
+                    {% if image_figure or image_caption %}
+                      <div class="{{ section_name }}__item-image-details">
+                        {% if image_figure %}<span class="{{ section_name }}__item-image-figure figure--1">{{ image_figure }}</span>{% endif %}
+                        {% if image_caption %}<span class="{{ section_name }}__item-image-caption caption--1">{{ image_caption }}</span>{% endif %}
+                      </div>
+                    {% endif %}
                   </div>
                 {% endif %}
               </div>
@@ -94,7 +98,7 @@
 {
   "name": "Education Accordion",
   "tag": "section",
-  "class": "section section--education-accordion section--py",
+  "class": "section section--accordion-education section--py",
   "settings": [
     {
       "content": "Intro",
