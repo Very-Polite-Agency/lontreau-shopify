@@ -15,9 +15,25 @@
         "anchor_id": "",
         "height": "auto"
       }
+    },
+    "1650479051fa4e9bc1": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "",
+        "heading": "<p>Skin + <em>The Elements<\/em><\/p>",
+        "heading_highlight": "circle",
+        "message": "<p>As athletes, our passions can take us from early morning swims to mid-day runs in the sun and long bike rides fighting against wind and exhaust. We do it all because we love it — but an athlete’s skin is exposed to a wide range of environmental stressors like sun, cold, wind, pollution and chemicals. At Lontreau, we use the latest science and research to create unique formulations designed specifically to help protect and restore an athlete’s skin.<\/p>",
+        "cta_title": "",
+        "cta_link": "",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "auto"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1650479051fa4e9bc1"
   ]
 }
