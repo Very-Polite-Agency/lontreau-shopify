@@ -196,7 +196,7 @@
         "5fed777e-16b1-4ae1-ab2e-3d62855d8696"
       ],
       "settings": {
-        "heading": "<p>We Believe in Clean<\/p>",
+        "heading": "<p>We Believe <em>in Clean<\/em><\/p>",
         "heading_highlight": "stroke",
         "message": "<p>Aliquam felis ante, imperdiet vel urna at, elementum sagittis felis. Donec maximus quam ex, quis dapibus nibh tristique in. Nulla eu ex lacus.<\/p>"
       }
