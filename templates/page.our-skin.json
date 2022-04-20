@@ -130,7 +130,7 @@
           "type": "accordion",
           "settings": {
             "title": "UV, Infrared and Heat Induced Damage",
-            "message": "",
+            "message": "<p>Aenean a pretium ligula. Duis et tortor mi. Fusce lectus ligula, vulputate vitae eleifend nec, pellentesque varius velit. Aenean laoreet mauris ac tellus commodo, non cursus nisl lacinia. Mauris sagittis tincidunt pellentesque. Fusce tempor bibendum luctus. Donec a tellus id urna imperdiet luctus in at ex. In ac nunc at sem fringilla dignissim sit amet nec felis. Donec eu vehicula ante, quis egestas ligula. <\/p><p>Vestibulum eget ex faucibus, ornare est vitae, gravida justo. Morbi augue erat, mollis ut dignissim eu, semper et nibh. Sed semper fringilla efficitur. Cras volutpat dapibus nibh, sit amet porta dui ornare iaculis. Duis blandit metus nunc, et eleifend sem rhoncus quis.<\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
