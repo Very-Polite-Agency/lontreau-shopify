@@ -158,8 +158,8 @@
             "cta_title": "",
             "cta_link": "",
             "image": "shopify:\/\/shop_images\/Stocksy_comp_4000427--tall.jpg",
-            "image_figure": "",
-            "image_caption": ""
+            "image_figure": "Fig. C",
+            "image_caption": "Duis at nulla justo. Cras consequat dui a velit dictum rhoncus."
           }
         },
         "f43e9bc2-8651-4b27-9859-d754a55614d7": {
@@ -170,7 +170,7 @@
             "cta_title": "",
             "cta_link": "",
             "image": "shopify:\/\/shop_images\/Stocksy_comp_2003470--tall.jpg",
-            "image_figure": "",
+            "image_figure": "Fig. D",
             "image_caption": ""
           }
         },
@@ -182,7 +182,7 @@
             "cta_title": "",
             "cta_link": "",
             "image": "shopify:\/\/shop_images\/Stocksy_comp_3986691--tall.jpg",
-            "image_figure": "",
+            "image_figure": "Fig E.",
             "image_caption": "Environmental stressors like sun, cold, wind, pollution and chemicals"
           }
         }
@@ -196,8 +196,8 @@
         "5fed777e-16b1-4ae1-ab2e-3d62855d8696"
       ],
       "settings": {
-        "heading": "",
-        "heading_highlight": "standard",
+        "heading": "<p>We Believe in Clean<\/p>",
+        "heading_highlight": "stroke",
         "message": ""
       }
     }
