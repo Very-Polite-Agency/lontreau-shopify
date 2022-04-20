@@ -2966,6 +2966,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/templates\/page.our-skin.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/templates\/page.our-skin.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/templates\/page.test.json" : {
       "ft" : 524288,
       "oA" : 0,

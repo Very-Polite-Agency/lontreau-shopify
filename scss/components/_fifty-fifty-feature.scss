@@ -17,6 +17,7 @@
     margin-top: 30px;
     &-button {
       width: 100%;
+      max-width: none;
     }
   }
 
@@ -157,6 +158,12 @@
       }
     }
 
+    &[data-style="wide"] {
+      .fifty-fifty-feature__content {
+        padding: 0 12.5%;
+      }
+    }
+
   } // min width xl
 
   @include breakpoint(xxl) {
@@ -166,6 +173,12 @@
     &[data-style="standard"] {
       .fifty-fifty-feature__content {
         padding: 0 9%;
+      }
+    }
+
+    &[data-style="wide"] {
+      .fifty-fifty-feature__content {
+        padding: 0 15%;
       }
     }
 
