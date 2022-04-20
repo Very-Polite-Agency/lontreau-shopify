@@ -111,6 +111,42 @@
         "message": "",
         "style": "dark"
       }
+    },
+    "165048835013ce33c0": {
+      "type": "accordion-education",
+      "blocks": {
+        "553f02eb-9466-4197-b697-7a71cf92c598": {
+          "type": "accordion",
+          "settings": {
+            "title": "The Skin Barrier",
+            "message": "",
+            "cta_title": "",
+            "cta_link": "",
+            "image_figure": "",
+            "image_caption": ""
+          }
+        },
+        "87c8a20b-3d74-4969-a82c-36d250ab8a93": {
+          "type": "accordion",
+          "settings": {
+            "title": "UV, Infrared and Heat Induced Damage",
+            "message": "",
+            "cta_title": "",
+            "cta_link": "",
+            "image_figure": "",
+            "image_caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "553f02eb-9466-4197-b697-7a71cf92c598",
+        "87c8a20b-3d74-4969-a82c-36d250ab8a93"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_highlight": "standard",
+        "message": ""
+      }
     }
   },
   "order": [
@@ -118,6 +154,7 @@
     "1650479051fa4e9bc1",
     "16504791332b7186fd",
     "16504792043cfba876",
-    "16504799472b7e541f"
+    "16504799472b7e541f",
+    "165048835013ce33c0"
   ]
 }
