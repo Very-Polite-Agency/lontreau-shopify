@@ -47,36 +47,6 @@
         "height": "auto"
       }
     },
-    "16493759755f3cddf5": {
-      "type": "fifty-fifty-feature",
-      "settings": {
-        "heading": "<p>Here to be <em>Hard & Soft<\/em><\/p>",
-        "heading_highlight": "standard",
-        "message": "<p>Lontreau is a skincare brand focused on regenerative formulations for everyone from endurance athletes to everyday movers looking for ingredient-rich skincare.<\/p>",
-        "cta_title": "Learn Morer",
-        "cta_link": "shopify:\/\/pages\/contact",
-        "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--wide_2x_e6a66d64-eb95-41cf-84aa-c093104a5d1f.png",
-        "hide_image_mobile": false,
-        "anchor_id": "",
-        "style": "wide",
-        "layout": "image-left"
-      }
-    },
-    "1649464267fea0d6f8": {
-      "type": "fifty-fifty-feature",
-      "settings": {
-        "heading": "<p>Some other great heading to choose from<\/p>",
-        "heading_highlight": "standard",
-        "message": "<p>Nullam quis lectus ac neque malesuada mollis eget at augue. Sed nec erat et lorem facilisis eleifend vitae fermentum felis. Proin sit amet sagittis neque.<\/p>",
-        "cta_title": "",
-        "cta_link": "",
-        "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--default_3x_d3a9c3bb-0e8c-4c6e-a41f-f7dc52d2fc2f.png",
-        "hide_image_mobile": false,
-        "anchor_id": "",
-        "style": "standard",
-        "layout": "image-right"
-      }
-    },
     "16493635494e59cb2e": {
       "type": "full-width-feature",
       "settings": {
@@ -144,8 +114,6 @@
     "1649371027bf029c73",
     "1649358548eba2154c",
     "164936493171d7e74a",
-    "16493759755f3cddf5",
-    "1649464267fea0d6f8",
     "16493635494e59cb2e",
     "1649439380ba38508d"
   ]
