@@ -18,6 +18,34 @@
     },
     "16505022401e5283d2": {
       "type": "carousel-education",
+      "blocks": {
+        "16719436-cba9-4706-8898-79bcb2257fc6": {
+          "type": "detailed",
+          "settings": {
+            "title": "Antioxidants",
+            "description": ""
+          }
+        },
+        "b7f7458e-60ef-407c-a177-e41dd106f08a": {
+          "type": "detailed",
+          "settings": {
+            "title": "Phytomolecules",
+            "description": ""
+          }
+        },
+        "f8894a1d-d745-4004-a6a8-ec4b00beac80": {
+          "type": "detailed",
+          "settings": {
+            "title": "Vitamins",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "16719436-cba9-4706-8898-79bcb2257fc6",
+        "b7f7458e-60ef-407c-a177-e41dd106f08a",
+        "f8894a1d-d745-4004-a6a8-ec4b00beac80"
+      ],
       "settings": {
         "content_type": "detailed",
         "alignment": "left",
