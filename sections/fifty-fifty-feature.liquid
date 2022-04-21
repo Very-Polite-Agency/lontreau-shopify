@@ -11,6 +11,7 @@
 {% assign layout = section.settings.layout | default: 'image-right' %}
 {% assign message = section.settings.message | default: '' %}
 {% assign style = section.settings.style | default: 'standard' %}
+{% assign title = section.settings.title | default: '' %}
 
 {% if section.settings.anchor_id != blank %}
   {% assign section_id = section.settings.anchor_id %}
@@ -22,8 +23,12 @@
 
       <div class="{{ section_name }}__layout">
 
-      {% if heading != blank or message != blank %}
+      {% if heading != blank or message != blank or title != blank %}
         <div class="{{ section_name }}__content">
+
+          {% if title != blank %}
+            <strong class="{{ section_name }}__title title--1">{{ title }}</strong>
+          {% endif %}
 
           {% if heading != blank %}
             <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
@@ -65,6 +70,11 @@
     {
       "content": "Content",
       "type": "header"
+    },
+    {
+      "label": "Title",
+      "type": "text",
+      "id": "title"
     },
     {
       "label": "Heading",

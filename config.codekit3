@@ -3051,6 +3051,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/templates\/page.our-standards.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/templates\/page.our-standards.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/templates\/page.test.json" : {
       "ft" : 524288,
       "oA" : 0,
