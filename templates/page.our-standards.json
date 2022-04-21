@@ -37,19 +37,22 @@
         "55ddd189-8124-4a23-aecd-7bd5fcf975ab": {
           "type": "minimal",
           "settings": {
-            "title": "Paraben Free"
+            "title": "Paraben Free",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-03.png"
           }
         },
         "bf906307-7ce2-4df8-82d5-87f5206290d7": {
           "type": "minimal",
           "settings": {
-            "title": "Vegan"
+            "title": "Vegan",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-01.png"
           }
         },
         "405a91c6-dc52-49de-b5f1-0d7d134e9c9a": {
           "type": "minimal",
           "settings": {
-            "title": "Sustainable"
+            "title": "Sustainable",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-02.png"
           }
         },
         "59374510-d779-47cc-b2c4-4830d0cd0bb2": {
