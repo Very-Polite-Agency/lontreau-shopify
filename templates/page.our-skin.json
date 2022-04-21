@@ -115,9 +115,9 @@
         "5fed777e-16b1-4ae1-ab2e-3d62855d8696"
       ],
       "settings": {
-        "heading": "<p>We Believe <em>in Clean<\/em><\/p>",
+        "heading": "",
         "heading_highlight": "standard",
-        "message": "<p>In pellentesque, nibh quis tempus rutrum, ipsum eros malesuada elit, a venenatis velit erat mattis enim. Suspendisse ut dui nec tellus ornare rhoncus vitae at sem. Etiam velit erat, tincidunt et neque ut, hendrerit aliquam ante.<\/p>",
+        "message": "",
         "anchor_id": ""
       }
     },
