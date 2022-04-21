@@ -15,9 +15,22 @@
         "anchor_id": "",
         "height": "auto"
       }
+    },
+    "1650503127b4b591a4": {
+      "type": "carousel-education",
+      "settings": {
+        "content_type": "minimal",
+        "alignment": "center",
+        "heading": "<p>High-performance ingredients for your endurance skincare routine. <\/p>",
+        "heading_highlight": "standard",
+        "message": "",
+        "anchor_id": "",
+        "style": "grey"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1650503127b4b591a4"
   ]
 }
