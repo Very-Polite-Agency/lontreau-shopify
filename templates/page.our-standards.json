@@ -33,6 +33,45 @@
     },
     "165050592780ca364f": {
       "type": "carousel-education",
+      "blocks": {
+        "55ddd189-8124-4a23-aecd-7bd5fcf975ab": {
+          "type": "minimal",
+          "settings": {
+            "title": ""
+          }
+        },
+        "bf906307-7ce2-4df8-82d5-87f5206290d7": {
+          "type": "minimal",
+          "settings": {
+            "title": ""
+          }
+        },
+        "405a91c6-dc52-49de-b5f1-0d7d134e9c9a": {
+          "type": "minimal",
+          "settings": {
+            "title": ""
+          }
+        },
+        "59374510-d779-47cc-b2c4-4830d0cd0bb2": {
+          "type": "minimal",
+          "settings": {
+            "title": ""
+          }
+        },
+        "e8e79490-1416-4712-a553-46b03a7aaa92": {
+          "type": "minimal",
+          "settings": {
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "55ddd189-8124-4a23-aecd-7bd5fcf975ab",
+        "bf906307-7ce2-4df8-82d5-87f5206290d7",
+        "405a91c6-dc52-49de-b5f1-0d7d134e9c9a",
+        "59374510-d779-47cc-b2c4-4830d0cd0bb2",
+        "e8e79490-1416-4712-a553-46b03a7aaa92"
+      ],
       "settings": {
         "content_type": "minimal",
         "alignment": "center",
