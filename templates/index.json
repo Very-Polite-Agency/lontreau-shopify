@@ -16,6 +16,22 @@
         "height": "large"
       }
     },
+    "16505837988dc9d01f": {
+      "type": "fifty-fifty-feature",
+      "settings": {
+        "title": "",
+        "heading": "<p>Here to be<\/p><p><em>Hard & Soft<\/em><\/p>",
+        "heading_highlight": "standard",
+        "message": "<p>Lontreau is a skincare brand focused on regenerative formulations for everyone from endurance athletes to everyday movers looking for ingredient-rich skincare.<\/p>",
+        "cta_title": "",
+        "cta_link": "",
+        "hide_image_mobile": false,
+        "anchor_id": "",
+        "style": "standard",
+        "layout": "image-right",
+        "colour_theme": "light"
+      }
+    },
     "1649358548eba2154c": {
       "type": "full-width-feature",
       "settings": {
@@ -112,6 +128,7 @@
   },
   "order": [
     "1649371027bf029c73",
+    "16505837988dc9d01f",
     "1649358548eba2154c",
     "164936493171d7e74a",
     "16493635494e59cb2e",
