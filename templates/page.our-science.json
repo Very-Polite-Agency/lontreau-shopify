@@ -3,6 +3,16 @@
     "main": {
       "type": "full-width-feature",
       "settings": {
+        "text_theme": "light",
+        "title": "",
+        "heading": "<p>Our <em>Science<\/em><\/p>",
+        "heading_highlight": "stroke",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "auto"
       }
     }
   },
