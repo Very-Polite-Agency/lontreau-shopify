@@ -14,9 +14,25 @@
         "anchor_id": "",
         "height": "auto"
       }
+    },
+    "165050592499e00319": {
+      "type": "fifty-fifty-feature",
+      "settings": {
+        "heading": "<p>Packaging <em>Features<\/em> <\/p>",
+        "heading_highlight": "standard",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "hide_image_mobile": false,
+        "anchor_id": "",
+        "style": "wide",
+        "layout": "image-left",
+        "colour_theme": "grey"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "165050592499e00319"
   ]
 }
