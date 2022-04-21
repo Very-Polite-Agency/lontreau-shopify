@@ -49,6 +49,18 @@
     },
     "16505007247ed3495b": {
       "type": "accordion-with-image",
+      "blocks": {
+        "c2801b35-348d-405e-b2cd-80122c3e0953": {
+          "type": "accordion",
+          "settings": {
+            "title": "Value Alpha",
+            "message": "<p>Nunc bibendum felis turpis, quis porttitor nibh cursus ac. Nullam vulputate pretium neque sed molestie. Phasellus accumsan laoreet lacinia. Etiam in nibh non dolor commodo venenatis. Ut rutrum magna dolor, vel porta velit porta ultrices. Aenean ac dui faucibus dolor commodo ornare eget non sem. Etiam tincidunt mi a justo ornare tempor. Aenean leo ex, rhoncus sed bibendum vitae, ultricies sit amet mi. Maecenas imperdiet, tortor nec venenatis viverra, ante augue sodales purus, et tristique purus velit ut tellus. Nunc at ligula ultrices dolor faucibus rhoncus. Vestibulum mattis lobortis massa efficitur porta.<\/p><p>Sed nec elit a nibh porttitor dictum. Morbi posuere enim et erat sagittis, ac sagittis eros vulputate. Integer lacinia elit ultricies imperdiet porta. Etiam sit amet pellentesque turpis, id rhoncus velit. Phasellus eget turpis lacinia, suscipit tortor tincidunt, interdum nisl. Suspendisse ut metus dolor. Sed ultricies nisi quam, nec volutpat ipsum tempus ut. Donec ac tellus auctor, tincidunt elit id, pretium urna. Nunc pulvinar lectus sit amet vulputate dictum. Vivamus id luctus enim, quis luctus justo. Vestibulum laoreet vestibulum rhoncus. Nam in fermentum orci.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c2801b35-348d-405e-b2cd-80122c3e0953"
+      ],
       "settings": {
         "heading": "<p>Our <em>Values<\/em><\/p>",
         "heading_highlight": "circle",
