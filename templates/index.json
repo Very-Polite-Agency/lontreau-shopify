@@ -70,8 +70,9 @@
         "heading": "<p><em>Next-level <\/em><\/p><p>standards<\/p>",
         "heading_highlight": "circle",
         "message": "<p>We don’t believe in junk miles when we train, and we carry that same ethos into our brand: every ingredient and every element of packaging is here for a reason. Learn more about what makes our formulations unique.<\/p>",
-        "cta_title": "",
-        "cta_link": "",
+        "cta_title": "Learn More",
+        "cta_link": "shopify:\/\/pages\/our-standards",
+        "image": "shopify:\/\/shop_images\/LONTREAU--home-page--our-standards_3x_da93550b-b929-4897-af79-8584dd57212c.png",
         "anchor_id": "",
         "layout": "image-right",
         "colour_theme": "light"
