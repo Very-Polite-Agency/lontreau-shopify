@@ -15,9 +15,22 @@
         "anchor_id": "",
         "height": "auto"
       }
+    },
+    "16505022401e5283d2": {
+      "type": "carousel-education",
+      "settings": {
+        "content_type": "minimal",
+        "alignment": "center",
+        "heading": "<p><em>Endurance<\/em> Ingredients<\/p>",
+        "heading_highlight": "circle",
+        "message": "",
+        "anchor_id": "",
+        "style": "light"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16505022401e5283d2"
   ]
 }
