@@ -96,6 +96,34 @@
     },
     "1650500945f5b63511": {
       "type": "carousel-education",
+      "blocks": {
+        "89d1e872-6efc-4271-bbb5-2f99102edb50": {
+          "type": "minimal",
+          "settings": {
+            "title": "",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-01.png"
+          }
+        },
+        "53ae3dc4-5f6c-4206-9090-002bdcef471b": {
+          "type": "minimal",
+          "settings": {
+            "title": "",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-03.png"
+          }
+        },
+        "fcee7258-7fa1-4865-8a1d-c2c79d11e4fd": {
+          "type": "minimal",
+          "settings": {
+            "title": "",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-02.png"
+          }
+        }
+      },
+      "block_order": [
+        "89d1e872-6efc-4271-bbb5-2f99102edb50",
+        "53ae3dc4-5f6c-4206-9090-002bdcef471b",
+        "fcee7258-7fa1-4865-8a1d-c2c79d11e4fd"
+      ],
       "settings": {
         "content_type": "minimal",
         "alignment": "center",
