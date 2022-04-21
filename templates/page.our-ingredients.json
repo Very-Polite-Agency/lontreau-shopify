@@ -67,10 +67,21 @@
         "anchor_id": "",
         "style": "light"
       }
+    },
+    "16505026180b60acc4": {
+      "type": "accordion-with-image",
+      "settings": {
+        "heading": "<p>Our <em>Global<\/em> <\/p><p>Citizenship Goals <\/p>",
+        "heading_highlight": "stroke",
+        "message": "",
+        "anchor_id": "",
+        "layout": "image-right"
+      }
     }
   },
   "order": [
     "main",
-    "16505022401e5283d2"
+    "16505022401e5283d2",
+    "16505026180b60acc4"
   ]
 }
