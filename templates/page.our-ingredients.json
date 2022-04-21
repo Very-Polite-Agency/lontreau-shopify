@@ -19,8 +19,8 @@
     "16505022401e5283d2": {
       "type": "carousel-education",
       "settings": {
-        "content_type": "minimal",
-        "alignment": "center",
+        "content_type": "detailed",
+        "alignment": "left",
         "heading": "<p><em>Endurance<\/em> Ingredients<\/p>",
         "heading_highlight": "circle",
         "message": "",
