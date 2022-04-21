@@ -1,7 +1,6 @@
 .carousel-education {
 
   position: relative;
-  padding: 60px 0;
 
   .glide {
     &__slide {
@@ -36,8 +35,8 @@
   }
 
   &__image {
-    width: 85px;
-    height: 85px;
+    width: var(--theme-carousel-education-image-size);
+    height: var(--theme-carousel-education-image-size);
     overflow: hidden;
     a, img, svg {
       display: block;
@@ -45,7 +44,7 @@
     }
     & + .carousel-education__description,
     & + .carousel-education__title {
-      margin-top: 20px;
+      margin-top: 25px;
     }
   }
 
@@ -189,8 +188,8 @@
   @include breakpoint(sm) {
 
     &__image {
-      width: 100px;
-      height: 100px;
+      width: var(--theme-carousel-education-image-size--sm);
+      height: var(--theme-carousel-education-image-size--sm);
     }
 
     &[data-content-type="detailed"] {
@@ -227,6 +226,11 @@
   } // min width sm
 
   @include breakpoint(md) {
+
+    &__image {
+      width: var(--theme-carousel-education-image-size--md);
+      height: var(--theme-carousel-education-image-size--md);
+    }
 
     &__message {
       width: 80%;
@@ -285,11 +289,9 @@
 
   @include breakpoint(lg) {
 
-    padding: 70px 0;
-
     &__image {
-      width: 120px;
-      height: 120px;
+      width: var(--theme-carousel-education-image-size--lg);
+      height: var(--theme-carousel-education-image-size--lg);
     }
 
     &__message {
@@ -327,6 +329,11 @@
 
   @include breakpoint(xl) {
 
+    &__image {
+      width: var(--theme-carousel-education-image-size--xl);
+      height: var(--theme-carousel-education-image-size--xl);
+    }
+
     &[data-content-type="detailed"] {
       .carousel-education__main {
         max-width: var(--bs-container-width--xl);
@@ -342,11 +349,14 @@
 
   @include breakpoint(xxl) {
 
+    &__image {
+      width: var(--theme-carousel-education-image-size--xxl);
+      height: var(--theme-carousel-education-image-size--xxl);
+    }
+
     &__message {
       width: 70%;
     }
-
-    padding: 80px 0;
 
     &[data-content-type="detailed"] {
       .carousel-education__main {

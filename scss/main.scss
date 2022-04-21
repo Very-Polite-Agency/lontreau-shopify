@@ -75,6 +75,14 @@
   --theme-button-min-width--xl: #{ map-get( $theme-button-min-widths, xl ) };
   --theme-button-min-width--xxl: #{ map-get( $theme-button-min-widths, xxl ) };
 
+  // ---------------------------------------- Carousel | Education
+  --theme-carousel-education-image-size: 55px;
+  --theme-carousel-education-image-size--sm: 60px;
+  --theme-carousel-education-image-size--md: 65px;
+  --theme-carousel-education-image-size--lg: 75px;
+  --theme-carousel-education-image-size--xl: 80px;
+  --theme-carousel-education-image-size--xxl: 85px;
+
   // ---------------------------------------- Colours
   --theme-colour-asphalt: #{ hexToRGB( map-get( $theme-colours, 'asphalt' ) ) };
   --theme-colour-aqua: #{ hexToRGB( map-get( $theme-colours, 'aqua' ) ) };

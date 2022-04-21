@@ -64,6 +64,13 @@
 
   @include breakpoint(md) {
 
+    .intro {
+      &__heading,
+      &__message {
+        padding-right: 20%;
+      }
+    }
+
     &__item {
       &-image {
         img {
@@ -78,6 +85,13 @@
   } // min width md
 
   @include breakpoint(lg) {
+
+    .intro {
+      &__heading,
+      &__message {
+        padding-right: 20%;
+      }
+    }
 
     &__item {
       &-content {
