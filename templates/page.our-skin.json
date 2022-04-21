@@ -149,7 +149,8 @@
         "hide_image_mobile": false,
         "anchor_id": "",
         "style": "wide",
-        "layout": "image-right"
+        "layout": "image-right",
+        "colour_theme": "light"
       }
     },
     "1650498009580f157d": {
@@ -201,7 +202,7 @@
         "heading_highlight": "circle",
         "message": "<p>Aenean egestas id mauris fermentum efficitur. Quisque non nisi tristique, bibendum turpis ac, varius mauris. Nulla iaculis vestibulum ex, vel consequat dolor volutpat eget. Curabitur tempor nisl augue, rutrum ultrices neque consequat ac.<\/p>",
         "anchor_id": "",
-        "style": "dark"
+        "colour_theme": "dark"
       }
     }
   },
