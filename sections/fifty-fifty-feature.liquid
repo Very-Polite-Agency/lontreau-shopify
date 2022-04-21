@@ -20,14 +20,15 @@
     {% unless style == 'wide' %}{% render 'layout--container' %}{% endunless %}
 
       <div class="{{ section_name }}__layout">
-      {% if heading or message %}
+
+      {% if heading != blank or message != blank %}
         <div class="{{ section_name }}__content">
 
-          {% if heading %}
-            <h2 class="{{ section_name }}__heading heading--2 {% if highlight %} highlight--{{ highlight }}{% endif %}">{{ heading }}</h2>
+          {% if heading != blank %}
+            <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
           {% endif %}
 
-          {% if message %}
+          {% if message != blank %}
             <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
           {% endif %}
 
