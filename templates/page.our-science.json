@@ -25,10 +25,18 @@
             "title": "Vegetal Glycogen",
             "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-01.png"
           }
+        },
+        "910eed3f-0eef-4e15-861a-71c107abcab3": {
+          "type": "minimal",
+          "settings": {
+            "title": "Squalane",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-03.png"
+          }
         }
       },
       "block_order": [
-        "abe9ba98-95ff-4a1f-8ac9-439c302b4e5c"
+        "abe9ba98-95ff-4a1f-8ac9-439c302b4e5c",
+        "910eed3f-0eef-4e15-861a-71c107abcab3"
       ],
       "settings": {
         "content_type": "minimal",
