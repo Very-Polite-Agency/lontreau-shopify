@@ -30,10 +30,26 @@
         "style": "wide",
         "layout": "image-right"
       }
+    },
+    "16505007220d454290": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "A Skin Journey",
+        "heading": "<p>Defy the elements, <\/p><p><em>Defy expectations<\/em><\/p>",
+        "heading_highlight": "stroke",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "auto"
+      }
     }
   },
   "order": [
     "main",
-    "16505006587b6a34d3"
+    "16505006587b6a34d3",
+    "16505007220d454290"
   ]
 }
