@@ -82,14 +82,14 @@
           "type": "accordion",
           "settings": {
             "title": "Repurpose Global Plastic Neutral Program",
-            "message": ""
+            "message": "<p>Aenean ut mi felis. Ut at suscipit felis, eu porta risus. Ut sapien nisi, accumsan pellentesque mauris facilisis, lobortis euismod nisl. Maecenas aliquam varius facilisis. Vivamus at libero sem. Phasellus pellentesque aliquam augue, non malesuada ex luctus id. Aliquam erat volutpat. Curabitur lacinia justo sed viverra euismod. Sed at sapien vitae velit hendrerit pretium. Morbi eu condimentum dui, vel consequat magna. Nullam eu aliquet turpis.<\/p><p>Praesent ac ante vitae tortor vulputate gravida et non arcu. Donec turpis est, vulputate efficitur porttitor sit amet, maximus at felis. Nulla vehicula est nec commodo tincidunt. Proin hendrerit nibh quis ante euismod dapibus. Curabitur finibus dictum tellus sit amet tincidunt. Ut pellentesque tellus purus, et pulvinar nisl interdum ut. Aliquam consectetur orci nisl, ac feugiat risus hendrerit sit amet. Sed ac faucibus felis. Morbi suscipit ultricies nisi, eget suscipit diam accumsan id. Duis porta, tellus id porttitor tempor, nisl enim scelerisque est, nec condimentum turpis est non metus. Morbi tristique est vel iaculis placerat. Aliquam id velit luctus, venenatis augue a, imperdiet ex.<\/p>"
           }
         },
         "a6c1fb0f-399e-43b5-92a1-a111a60ef0e7": {
           "type": "accordion",
           "settings": {
             "title": "1% for the Planet",
-            "message": ""
+            "message": "<p>Duis accumsan quam nunc, vulputate blandit ipsum hendrerit ac. Praesent vehicula ipsum at arcu convallis, ut viverra metus laoreet. Aenean facilisis venenatis laoreet. In et ante purus. Sed tellus odio, consequat ut massa nec, pellentesque luctus mi. In sed lectus porttitor, placerat leo id, tincidunt purus. Donec aliquam magna sit amet magna hendrerit aliquet. Sed sodales ornare risus, quis tempor dolor pretium eget. Vivamus lobortis, felis sed gravida tempus, orci nibh volutpat velit, nec volutpat urna odio sed sem. Nullam id nunc vestibulum, faucibus lectus sed, fermentum sem. Integer tristique consequat eros, cursus ornare urna convallis dictum. Vestibulum tellus risus, finibus eget laoreet sit amet, vehicula ut ante.<\/p>"
           }
         }
       },
