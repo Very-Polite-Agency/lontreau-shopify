@@ -55,13 +55,15 @@
         "59374510-d779-47cc-b2c4-4830d0cd0bb2": {
           "type": "minimal",
           "settings": {
-            "title": "Alcohol Free"
+            "title": "Alcohol Free",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-01.png"
           }
         },
         "e8e79490-1416-4712-a553-46b03a7aaa92": {
           "type": "minimal",
           "settings": {
-            "title": "Cruelty-Free"
+            "title": "Cruelty-Free",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-01.png"
           }
         }
       },
