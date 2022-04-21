@@ -41,9 +41,10 @@
         "message": "",
         "cta_title": "",
         "cta_link": "",
+        "image": "shopify:\/\/shop_images\/LONTREAU--our-philosophy-page--FF2_2x_4a5a006e-5845-4b50-a211-a91e4c276d4e.png",
         "parallax": false,
         "anchor_id": "",
-        "height": "auto"
+        "height": "large"
       }
     }
   },
