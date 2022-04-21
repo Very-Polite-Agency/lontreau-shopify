@@ -23,21 +23,24 @@
           "type": "detailed",
           "settings": {
             "title": "Antioxidants",
-            "description": "<p>Antioxidants are all-stars. By neutralising free radicals, they defend the skin’s barrier from pollution, improve the skin’s natural repair response and support sunscreen to keep you protected. <\/p>"
+            "description": "<p>Antioxidants are all-stars. By neutralising free radicals, they defend the skin’s barrier from pollution, improve the skin’s natural repair response and support sunscreen to keep you protected.<\/p>",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-02.png"
           }
         },
         "b7f7458e-60ef-407c-a177-e41dd106f08a": {
           "type": "detailed",
           "settings": {
             "title": "Phytomolecules",
-            "description": "<p>Active plant compounds are a natural team player for our skin. Phytomolecules work with our skin cells to support everything from the stimulation of collagen to the production of antibacterial properties. <\/p>"
+            "description": "<p>Active plant compounds are a natural team player for our skin. Phytomolecules work with our skin cells to support everything from the stimulation of collagen to the production of antibacterial properties. <\/p>",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-03.png"
           }
         },
         "f8894a1d-d745-4004-a6a8-ec4b00beac80": {
           "type": "detailed",
           "settings": {
             "title": "Vitamins",
-            "description": "<p>For our bodies, these powerful micronutrients support optimal function, and they do the same for our skin. Vitamins are the heavy lifters in any regenerative skincare routine, they help in supporting the healthy function of our skin barrier and cellular response. <\/p>"
+            "description": "<p>For our bodies, these powerful micronutrients support optimal function, and they do the same for our skin. Vitamins are the heavy lifters in any regenerative skincare routine, they help in supporting the healthy function of our skin barrier and cellular response. <\/p>",
+            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-01.png"
           }
         }
       },
