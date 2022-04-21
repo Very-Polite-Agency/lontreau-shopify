@@ -2,11 +2,11 @@
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
 {% assign alignment = section.settings.alignment | default: 'center' %}
+{% assign colour_theme = section.settings.colour_theme | default: 'light' %}
 {% assign content_type = section.settings.content_type | default: 'minimal' %}
 {% assign heading = section.settings.heading | default: '' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: 'standard' %}
 {% assign message = section.settings.message | default: '' %}
-{% assign style = section.settings.style | default: 'light' %}
 {% assign blocks = section.blocks | where: "type", content_type | default: false %}
 {% assign glider_id = section_id | append: '--glider' %}
 {% assign is_glider = false %}
@@ -19,7 +19,7 @@
   {% assign is_glider = true %}
 {% endif %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-content-type="{{ content_type }}" data-style="{{ style }}" {% if is_glider %}data-is-glider{% endif %} data-section-padding>
+<div class="{{ section_name }}" id="{{ section_id }}" data-content-type="{{ content_type }}" data-colour-theme-{{ colour_theme }} {% if is_glider %}data-is-glider{% endif %} data-section-padding>
 
   {% if heading != blank or message != blank %}
     <div class="{{ section_name }}__intro intro" data-text-alignment-{{ alignment }}>
@@ -155,7 +155,7 @@
       "id": "anchor_id"
     },
     {
-      "label": "Style",
+      "label": "Colour Theme",
       "type": "select",
       "options": [
         { "value": "light", "label": "Light" },
@@ -163,7 +163,7 @@
         { "value": "dark", "label": "Dark" }
       ],
       "default": "light",
-      "id": "style"
+      "id": "colour_theme"
     }
   ],
   "blocks": [

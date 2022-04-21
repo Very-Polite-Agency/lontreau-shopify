@@ -1,6 +1,7 @@
 {% assign section_name = 'fifty-fifty-feature' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign colour_theme = section.settings.colour_theme | default: 'light' %}
 {% assign cta_title = section.settings.cta_title | default: false %}
 {% assign cta_link = section.settings.cta_link | default: false %}
 {% assign heading = section.settings.heading | default: '' %}
@@ -15,7 +16,7 @@
   {% assign section_id = section.settings.anchor_id %}
 {% endif %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}" data-style="{{ style }}">
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-colour-theme-{{ colour_theme }} data-layout="{{ layout }}" data-style="{{ style }}">
   <div class="{{ section_name }}__main">
     {% unless style == 'wide' %}{% render 'layout--container' %}{% endunless %}
 
@@ -145,6 +146,16 @@
       ],
       "default": "image-right",
       "id": "layout"
+    },
+    {
+      "label": "Colour Theme",
+      "type": "select",
+      "options": [
+        { "value": "light", "label": "Light" },
+        { "value": "grey", "label": "Grey" }
+      ],
+      "default": "light",
+      "id": "colour_theme"
     }
   ],
   "blocks": [],

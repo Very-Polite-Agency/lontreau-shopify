@@ -22,6 +22,24 @@
     }
   }
 
+  [data-colour-theme-grey],
+  [data-colour-theme-light] {
+    color: rgba(var(--theme-colour-black), 1);
+  }
+
+  [data-colour-theme-grey] {
+    background: rgba(var(--theme-colour-asphalt), 1);
+  }
+
+  [data-colour-theme-light] {
+    background: rgba(var(--theme-colour-white), 1);
+  }
+
+  [data-colour-theme-dark] {
+    background: rgba(var(--theme-colour-forrest), 1);
+    color: rgba(var(--theme-colour-white), 1);
+  }
+
   [data-section-padding] {
     padding: 60px 0;
   }

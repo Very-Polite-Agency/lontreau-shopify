@@ -139,9 +139,8 @@
     }
   }
 
-  &[data-style="grey"],
-  &[data-style="light"] {
-    color: rgba(var(--theme-colour-black),1);
+  &[data-colour-theme-grey],
+  &[data-colour-theme-light] {
     .glide {
       &__controls--technical {
         border-top-color: rgba(var(--theme-colour-grass),1);
@@ -159,13 +158,7 @@
     }
   }
 
-  &[data-style="grey"] {
-    background: rgba(var(--theme-colour-asphalt),1);
-  }
-
-  &[data-style="dark"] {
-    background: rgba(var(--theme-colour-forrest),1);
-    color: rgba(var(--theme-colour-white),1);
+  &[data-colour-theme-dark] {
     .glide {
       &__controls--technical {
         background: rgba(var(--theme-colour-forrest-dark),0.4);
