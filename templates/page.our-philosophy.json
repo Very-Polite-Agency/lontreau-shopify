@@ -28,7 +28,8 @@
         "hide_image_mobile": false,
         "anchor_id": "",
         "style": "wide",
-        "layout": "image-right"
+        "layout": "image-right",
+        "colour_theme": "light"
       }
     },
     "16505007220d454290": {
@@ -131,7 +132,7 @@
         "heading_highlight": "stroke",
         "message": "",
         "anchor_id": "",
-        "style": "dark"
+        "colour_theme": "dark"
       }
     }
   },
