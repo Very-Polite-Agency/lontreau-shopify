@@ -21,7 +21,7 @@
       "settings": {
         "text_theme": "light",
         "title": "Our Mission",
-        "heading": "<p>Create regenerative skincare products that<em> work as hard<\/em> as you do.<\/p>",
+        "heading": "<p>Create regenerative <\/p><p>skincare products that<em> <\/em><\/p><p><em>work as hard<\/em> as you do.<\/p>",
         "heading_highlight": "stroke",
         "message": "",
         "cta_title": "",
