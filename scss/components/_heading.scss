@@ -1,7 +1,6 @@
 .heading {
 
   margin: 0;
-  padding: 0;
 
   p, a {
     font-weight: inherit;
@@ -19,6 +18,11 @@
     text-decoration: none;
   }
 
+  &--2,
+  &--4 {
+    @extend .heading;
+  }
+
   &--2 {
     @extend .heading;
     font-family: var(--theme-font-family--serif--primary);
@@ -29,10 +33,24 @@
     letter-spacing: -0.02em;
   }
 
+  &--4 {
+    font-family: var(--theme-font-family--sans-serif--primary);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
   @include breakpoint(sm) {
 
     &--2 {
       font-size: 44px;
+    }
+
+    &--4 {
+      font-size: 20px;
     }
 
   } // min width sm
@@ -41,6 +59,10 @@
 
     &--2 {
       font-size: 48px;
+    }
+
+    &--4 {
+      font-size: 22px;
     }
 
   } // min width md
@@ -56,6 +78,10 @@
       }
     }
 
+    &--4 {
+      font-size: 20px;
+    }
+
   } // min width lg
 
   @include breakpoint(xl) {} // min width xl
@@ -64,6 +90,10 @@
 
     &--2 {
       font-size: 62px;
+    }
+
+    &--4 {
+      font-size: 24px;
     }
 
   } // min width xxl

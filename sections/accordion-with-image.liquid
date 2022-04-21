@@ -45,7 +45,7 @@
                   {% if title and message %}
                     <div class="{{ section_name }}__item collapsible">
                       <button
-                        class="button--collapsible collapsible__trigger {% unless forloop.first %}collapsed{% endunless %}"
+                        class="button--collapsible collapsible__trigger heading--4{% unless forloop.first %} collapsed{% endunless %}"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#{{ item_id }}"
