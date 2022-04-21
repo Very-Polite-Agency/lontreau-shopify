@@ -64,66 +64,17 @@
         "height": "auto"
       }
     },
-    "16493635494e59cb2e": {
-      "type": "full-width-feature",
+    "1650584831258bfc23": {
+      "type": "fifty-fifty-framed",
       "settings": {
-        "text_theme": "light",
-        "title": "Our Mission",
-        "heading": "",
-        "heading_highlight": "standard",
-        "message": "",
+        "heading": "<p><em>Next-level <\/em><\/p><p>standards<\/p>",
+        "heading_highlight": "circle",
+        "message": "<p>We don’t believe in junk miles when we train, and we carry that same ethos into our brand: every ingredient and every element of packaging is here for a reason. Learn more about what makes our formulations unique.<\/p>",
         "cta_title": "",
         "cta_link": "",
-        "parallax": false,
         "anchor_id": "",
-        "height": "large"
-      }
-    },
-    "1649439380ba38508d": {
-      "type": "accordion-with-image",
-      "blocks": {
-        "a7d97f03-be91-43f0-91f2-bb6507ec60f0": {
-          "type": "accordion",
-          "settings": {
-            "title": "Inspired Storytelling",
-            "message": "<p>Aenean sit amet enim varius, rhoncus leo id, euismod purus. Sed auctor erat elit, ac luctus magna faucibus sit amet. Donec vulputate mollis semper. Suspendisse tristique et dui vel mattis. Integer ex mauris, lobortis ac mollis vel, lacinia sed turpis. Maecenas non rhoncus lacus. Proin sit amet vehicula ligula. Proin nec lorem ut augue varius commodo. Praesent in tincidunt urna. Proin ut sollicitudin orci. Pellentesque hendrerit nisl leo, a tempus urna interdum nec. Proin odio magna, tincidunt ut risus sit amet, placerat semper nulla.<\/p><p>Sed in fermentum augue. Sed vulputate mi vitae commodo convallis. Donec ut dui ipsum. Suspendisse a faucibus diam, viverra euismod leo. Donec in rutrum enim. Sed eleifend nibh at neque rutrum porta. Aliquam erat volutpat.<\/p>"
-          }
-        },
-        "235d6bc6-bd74-493a-9710-877185887cb0": {
-          "type": "accordion",
-          "settings": {
-            "title": "Build our Community",
-            "message": "<p>Suspendisse vehicula semper viverra. Morbi hendrerit sapien risus, eu posuere massa convallis at. Ut et risus justo. Suspendisse ullamcorper ante vel nunc bibendum, eget fermentum purus malesuada. Morbi ac lorem et est maximus iaculis. Pellentesque lorem diam, commodo ac dui et, maximus tincidunt ex. Curabitur mattis mauris eu maximus malesuada. Nunc auctor metus eget bibendum dapibus. Integer ut mauris et ex eleifend finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec non nisi imperdiet, auctor odio sit amet, pulvinar tellus. Sed a magna mi. Sed dignissim luctus ultrices. Aliquam congue neque non lorem tincidunt, eu laoreet magna eleifend.<\/p><p>Praesent facilisis sodales purus vitae accumsan. Suspendisse ornare viverra massa vel ultrices. Suspendisse ipsum enim, iaculis sed ipsum ut, semper sagittis dui. In dapibus odio arcu, vitae lobortis metus finibus sit amet. Morbi sodales lobortis ultricies. Sed vel leo non purus pretium mattis ac sed urna. Duis eget pellentesque justo. Nunc tellus ipsum, lobortis in eros feugiat, iaculis lacinia mauris. Curabitur tincidunt turpis finibus sem elementum aliquet. Sed ex ipsum, hendrerit sed ligula ut, semper dapibus eros. Nullam sit amet fringilla massa, eu sodales nulla. Ut accumsan enim augue, a fringilla eros viverra ac. Integer eget orci est. Aenean ac orci congue, suscipit purus in, suscipit ligula. Vivamus at consectetur turpis.<\/p>"
-          }
-        },
-        "86113c3f-438f-494a-912c-ca75b2919dc9": {
-          "type": "accordion",
-          "settings": {
-            "title": "Respect the Earth",
-            "message": "<p>Praesent facilisis sodales purus vitae accumsan. Suspendisse ornare viverra massa vel ultrices. Suspendisse ipsum enim, iaculis sed ipsum ut, semper sagittis dui. In dapibus odio arcu, vitae lobortis metus finibus sit amet. Morbi sodales lobortis ultricies. Sed vel leo non purus pretium mattis ac sed urna. <\/p><p>Duis eget pellentesque justo. Nunc tellus ipsum, lobortis in eros feugiat, iaculis lacinia mauris. Curabitur tincidunt turpis finibus sem elementum aliquet. Sed ex ipsum, hendrerit sed ligula ut, semper dapibus eros. Nullam sit amet fringilla massa, eu sodales nulla. Ut accumsan enim augue, a fringilla eros viverra ac. Integer eget orci est. Aenean ac orci congue, suscipit purus in, suscipit ligula. Vivamus at consectetur turpis.<\/p><p>Quisque vel facilisis tortor. Nulla sit amet nulla urna. Nulla fringilla, tellus eu dictum convallis, tortor nisi blandit tellus, at dignissim orci augue at felis. Etiam non velit urna. Vestibulum lacus purus, efficitur eget ligula ut, hendrerit bibendum sem. Donec commodo convallis tempor. Aenean faucibus lorem nunc, sed eleifend ipsum sollicitudin ac.<\/p>"
-          }
-        },
-        "2fa5cfcc-46b5-4ca3-9959-2dc6f83ee504": {
-          "type": "accordion",
-          "settings": {
-            "title": "Effort over Perfection",
-            "message": "<p>Morbi condimentum, purus at ultrices iaculis, felis lacus imperdiet nunc, sit amet egestas arcu enim interdum elit. Donec maximus porta aliquam. Quisque posuere dui vitae nibh commodo ultricies. Suspendisse fermentum quam lacus, at tempus ipsum elementum nec. Morbi dapibus, nisi sit amet sagittis fermentum, sapien tortor venenatis arcu, at sagittis nunc orci tempus nulla. Maecenas hendrerit dolor ac lectus auctor, non ultricies massa porta. In quis arcu ipsum. Integer ac nibh eget sapien aliquam mattis. Aliquam eu lacinia diam, eget suscipit mauris. Fusce sapien orci, scelerisque sit amet malesuada quis, cursus et eros. Donec eu laoreet nisi. In nec vestibulum ex. Nunc ut tellus sit amet tortor posuere accumsan quis suscipit lorem.<\/p><p>Cras malesuada risus eu velit vulputate, nec eleifend sapien pharetra. Nullam dolor odio, tempus et maximus vel, consequat sit amet lorem. Nulla auctor rhoncus diam, quis vulputate mauris fringilla sagittis. Ut sagittis ultricies mauris. Nam ullamcorper lacus a ipsum accumsan faucibus. Maecenas maximus lectus massa. Suspendisse tempor libero eu augue blandit, feugiat elementum metus ullamcorper. Praesent ex dui, maximus ut sem et, volutpat sollicitudin felis. Quisque ut leo eget justo convallis fermentum. Ut bibendum diam a lorem euismod, quis vestibulum arcu venenatis. Nam eget nisi non libero gravida pharetra.<\/p><p>Mauris aliquam, est et pulvinar accumsan, odio lectus molestie mi, sit amet efficitur nulla lectus non eros. Mauris ultricies lacus ut justo iaculis, quis tincidunt massa lacinia. Aenean feugiat condimentum eros a egestas. Suspendisse non odio ut lectus commodo dignissim vitae eget ipsum. Proin lacinia ac dolor sit amet consequat. Morbi orci elit, congue sed pretium vitae, condimentum et augue. Nullam porttitor lorem id vehicula auctor. Nam et nisl consequat nisl ornare fringilla. Quisque a diam sed elit vestibulum fermentum. Curabitur id nibh suscipit, aliquam turpis vel, interdum lectus. Sed dictum purus nulla, molestie scelerisque massa imperdiet a.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "a7d97f03-be91-43f0-91f2-bb6507ec60f0",
-        "235d6bc6-bd74-493a-9710-877185887cb0",
-        "86113c3f-438f-494a-912c-ca75b2919dc9",
-        "2fa5cfcc-46b5-4ca3-9959-2dc6f83ee504"
-      ],
-      "settings": {
-        "heading": "<p>Our <em>Values<\/em><\/p>",
-        "heading_highlight": "standard",
-        "message": "<p>Nulla finibus turpis a dapibus consequat. In eu est nisl. Pellentesque at tincidunt est. Nullam ut porta nisl. Proin sed elit vestibulum, viverra nibh a, interdum neque. Maecenas hendrerit quis enim ut luctus.<\/p>",
-        "image": "shopify:\/\/shop_images\/LONTREAU--accordion-with-image--image_3x_a53858f8-5a2e-459c-8541-a6bcbeadd8fc.png",
-        "anchor_id": "",
-        "layout": "image-right"
+        "layout": "image-right",
+        "colour_theme": "light"
       }
     }
   },
@@ -132,7 +83,6 @@
     "16505837988dc9d01f",
     "1649358548eba2154c",
     "164936493171d7e74a",
-    "16493635494e59cb2e",
-    "1649439380ba38508d"
+    "1650584831258bfc23"
   ]
 }
