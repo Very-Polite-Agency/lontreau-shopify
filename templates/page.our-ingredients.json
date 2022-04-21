@@ -81,14 +81,22 @@
         "03c98591-44e2-478a-a9f7-bbcd5ea6b5c5": {
           "type": "accordion",
           "settings": {
-            "title": "",
+            "title": "Repurpose Global Plastic Neutral Program",
+            "message": ""
+          }
+        },
+        "a6c1fb0f-399e-43b5-92a1-a111a60ef0e7": {
+          "type": "accordion",
+          "settings": {
+            "title": "1% for the Planet",
             "message": ""
           }
         }
       },
       "block_order": [
         "bf9e63e3-5c88-410c-b734-2a96218f5e45",
-        "03c98591-44e2-478a-a9f7-bbcd5ea6b5c5"
+        "03c98591-44e2-478a-a9f7-bbcd5ea6b5c5",
+        "a6c1fb0f-399e-43b5-92a1-a111a60ef0e7"
       ],
       "settings": {
         "heading": "<p>Our <em>Global<\/em> <\/p><p>Citizenship Goals <\/p>",
