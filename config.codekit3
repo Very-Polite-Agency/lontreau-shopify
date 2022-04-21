@@ -2483,6 +2483,14 @@
       "oAP" : "\/sections\/fifty-fifty-feature.liquid",
       "oF" : 0
     },
+    "\/sections\/fifty-fifty-framed.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/fifty-fifty-framed.liquid",
+      "oF" : 0
+    },
     "\/sections\/footer.liquid" : {
       "cB" : 0,
       "ft" : 8192,

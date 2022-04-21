@@ -1,0 +1,145 @@
+{% assign section_name = 'fifty-fifty-framed' %}
+{% assign section_id = section_name | append: '--' | append: section.id %}
+
+{% assign colour_theme = section.settings.colour_theme | default: 'light' %}
+{% assign cta_title = section.settings.cta_title | default: false %}
+{% assign cta_link = section.settings.cta_link | default: false %}
+{% assign heading = section.settings.heading | default: '' %}
+{% assign heading_highlight = section.settings.heading_highlight | default: 'standard' %}
+{% assign image = section.settings.image | default: false %}
+{% assign layout = section.settings.layout | default: 'image-right' %}
+{% assign message = section.settings.message | default: '' %}
+
+{% if section.settings.anchor_id != blank %}
+  {% assign section_id = section.settings.anchor_id %}
+{% endif %}
+
+<div class="{{ section_name }}" id="{{ section_id }}" data-colour-theme-{{ colour_theme }} data-layout="{{ layout }}">
+  <div class="{{ section_name }}__layout">
+
+    {% if image %}
+      <div class="{{ section_name }}__image">
+        {% render 'content--lazyload-image', image: image %}
+      </div>
+    {% endif %}
+
+    {% if heading != blank or message != blank %}
+      <div class="{{ section_name }}__content">
+
+        {% if heading != blank %}
+          <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
+        {% endif %}
+
+        {% if message != blank %}
+          <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
+        {% endif %}
+
+        {% if cta_title and cta_link %}
+          <div class="{{ section_name }}__cta">
+            <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
+              <span class="button__title">{{ cta_title }}</span>
+            </a>
+          </div>
+        {% endif %}
+
+      </div>
+    {% endif %}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Framed Fifty-Fifty",
+  "tag": "section",
+  "class": "section section--fifty-fifty-framed",
+  "settings": [
+    {
+      "content": "Content",
+      "type": "header"
+    },
+    {
+      "label": "Heading",
+      "type": "richtext",
+      "id": "heading"
+    },
+    {
+      "label": "Heading Highlight",
+      "type": "select",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "stroke", "label": "Stroke" },
+        { "value": "circle", "label": "Circle" }
+      ],
+      "default": "standard",
+      "id": "heading_highlight"
+    },
+    {
+      "label": "Message",
+      "info": "For optimal results, keep content within 250 characters.",
+      "type": "richtext",
+      "id": "message"
+    },
+    {
+      "content": "Call to Action",
+      "type": "paragraph"
+    },
+    {
+      "label": "Title",
+      "type": "text",
+      "id": "cta_title"
+    },
+    {
+      "label": "Link",
+      "type": "url",
+      "id": "cta_link"
+    },
+    {
+      "content": "Media",
+      "type": "header"
+    },
+    {
+      "label": "Image",
+      "type": "image_picker",
+      "id": "image"
+    },
+    {
+      "content": "Settings",
+      "type": "header"
+    },
+    {
+      "label": "Anchor ID",
+      "info": "Optionally include a unique ID so that sections within the page can be linked to. Anchor IDs must be all lowercase, unique and replaced empty spaces with hyphens. For example: my-great-section-anchor",
+      "type": "text",
+      "id": "anchor_id"
+    },
+    {
+      "label": "Layout",
+      "type": "select",
+      "options": [
+        { "value": "image-right", "label": "Image Right" },
+        { "value": "image-left", "label": "Image Left" }
+      ],
+      "default": "image-right",
+      "id": "layout"
+    },
+    {
+      "label": "Colour Theme",
+      "type": "select",
+      "options": [
+        { "value": "light", "label": "Light" },
+        { "value": "grey", "label": "Grey" },
+        { "value": "dark", "label": "Dark" }
+      ],
+      "default": "light",
+      "id": "colour_theme"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Framed Fifty-Fifty"
+    }
+  ]
+}
+{% endschema %}
