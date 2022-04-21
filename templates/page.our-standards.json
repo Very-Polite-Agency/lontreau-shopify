@@ -30,10 +30,23 @@
         "layout": "image-left",
         "colour_theme": "grey"
       }
+    },
+    "165050592780ca364f": {
+      "type": "carousel-education",
+      "settings": {
+        "content_type": "minimal",
+        "alignment": "center",
+        "heading": "<p>We have <em>high standards<\/em><\/p>",
+        "heading_highlight": "stroke",
+        "message": "",
+        "anchor_id": "",
+        "colour_theme": "light"
+      }
     }
   },
   "order": [
     "main",
-    "165050592499e00319"
+    "165050592499e00319",
+    "165050592780ca364f"
   ]
 }
