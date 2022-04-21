@@ -1,7 +1,5 @@
 .the-team {
 
-  padding: 60px 0;
-
   &__heading {
     text-align: center;
     & + .the-team__item {
@@ -82,8 +80,6 @@
 
   @include breakpoint(lg) {
 
-    padding: 70px 0;
-
     &__heading {
       & + .the-team__item {
         margin-top: 70px;
@@ -94,10 +90,6 @@
 
   @include breakpoint(xl) {} // min width xl
 
-  @include breakpoint(xxl) {
-
-    padding: 80px 0;
-
-  } // min width xxl
+  @include breakpoint(xxl) {} // min width xxl
 
 }

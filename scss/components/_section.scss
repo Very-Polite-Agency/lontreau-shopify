@@ -3,9 +3,27 @@
   position: relative;
 
   .intro {
+
+    &__heading,
+    &__message {
+      & + .intro__cta {
+        margin-top: 22px;
+      }
+    }
+
+    &__heading {
+      & + .intro__message {
+        margin-top: 32px;
+      }
+    }
+
     & + .main {
       margin-top: 45px;
     }
+  }
+
+  [data-section-padding] {
+    padding: 60px 0;
   }
 
   [data-text-theme="dark"] {
@@ -32,8 +50,8 @@
       }
     }
 
-    &--py {
-      padding: 70px 0;
+    [data-section-padding] {
+      padding: 75px 0;
     }
 
   } // min width lg
@@ -48,8 +66,8 @@
       }
     }
 
-    &--py {
-      padding: 80px 0;
+    [data-section-padding] {
+      padding: 90px 0;
     }
 
   } // min width xxl

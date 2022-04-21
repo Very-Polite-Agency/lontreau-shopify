@@ -10,7 +10,7 @@
   {% assign section_id = section.settings.anchor_id %}
 {% endif %}
 
-<div class="{{ section_name }}" id="{{ section_id }}">
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
 
   {% if heading != blank or message != blank %}
     <div class="{{ section_name }}__intro intro">

@@ -12,7 +12,7 @@
   {% assign section_id = section.settings.anchor_id %}
 {% endif %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}">
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}" data-section-padding>
   <div class="{{ section_name }}__main">
     {% render 'layout--container' %}
       <div class="{{ section_name }}__layout">
