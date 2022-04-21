@@ -19,10 +19,10 @@
   {% assign is_glider = true %}
 {% endif %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-alignment="{{ alignment }}" data-content-type="{{ content_type }}" data-style="{{ style }}" {% if is_glider %}data-is-glider{% endif %} data-section-padding>
+<div class="{{ section_name }}" id="{{ section_id }}" data-content-type="{{ content_type }}" data-style="{{ style }}" {% if is_glider %}data-is-glider{% endif %} data-section-padding>
 
   {% if heading != blank or message != blank %}
-    <div class="{{ section_name }}__intro intro">
+    <div class="{{ section_name }}__intro intro" data-text-alignment-{{ alignment }}>
       {% render 'layout--container', state: 'open', col: 'col-12' %}
         {% if heading != blank %}
           <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>

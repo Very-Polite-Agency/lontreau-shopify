@@ -3035,6 +3035,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/templates\/page.our-science.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/templates\/page.our-science.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/templates\/page.our-skin.json" : {
       "ft" : 524288,
       "oA" : 0,
