@@ -68,7 +68,7 @@
           "type": "accordion",
           "settings": {
             "title": "Respect the Earth",
-            "message": ""
+            "message": "<p>Donec molestie, nulla sit amet iaculis semper, dui felis hendrerit arcu, non ornare velit ipsum nec magna. Fusce cursus arcu sed dolor lacinia tincidunt. Phasellus consequat mi quis fermentum porttitor. In quis porttitor tellus. Sed mi odio, semper eu pretium id, dictum id dolor. Proin venenatis sem nec dui maximus, sit amet dapibus massa eleifend. Integer urna dolor, cursus vel laoreet id, malesuada sed sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis facilisis, tortor pulvinar hendrerit pharetra, erat mauris suscipit purus, nec euismod turpis dolor at dui. Vestibulum lorem arcu, euismod in viverra pulvinar, pharetra sed eros. Curabitur vel metus vestibulum, porttitor eros eget, mollis purus. Duis sagittis, diam sed iaculis gravida, orci odio faucibus nisl, eu elementum nulla ex eu velit. Nam ante sapien, suscipit consectetur est ac, commodo dictum arcu.<\/p>"
           }
         },
         "cb328457-8097-4190-bf9a-36c97a493ee0": {
@@ -93,12 +93,25 @@
         "anchor_id": "",
         "layout": "image-left"
       }
+    },
+    "1650500945f5b63511": {
+      "type": "carousel-education",
+      "settings": {
+        "content_type": "minimal",
+        "alignment": "center",
+        "heading": "<p>We Believe <em>in Clean<\/em><\/p>",
+        "heading_highlight": "stroke",
+        "message": "",
+        "anchor_id": "",
+        "style": "dark"
+      }
     }
   },
   "order": [
     "main",
     "16505006587b6a34d3",
     "16505007220d454290",
-    "16505007247ed3495b"
+    "16505007247ed3495b",
+    "1650500945f5b63511"
   ]
 }
