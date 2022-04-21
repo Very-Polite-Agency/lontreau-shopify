@@ -15,9 +15,24 @@
         "anchor_id": "",
         "height": "auto"
       }
+    },
+    "16505006587b6a34d3": {
+      "type": "fifty-fifty-feature",
+      "settings": {
+        "heading": "<p>We <em>know<\/em> skin<\/p>",
+        "heading_highlight": "standard",
+        "message": "<p>Lontreau is founded by the co-owner of renowned medical aesthetic and cosmetic surgery clinic, 8 West Clinic. With over 10 years in the business of skin, Lontreau products have been developed to support the common concerns of clients, while being uniquely tailored to athletes. The team behind Lontreau is passionate about sport and use their own experience to create products that can benefit everyone from athletes to movement enthusiasts. Learn more about Lontreau here (hyperlink to About Lontreau). <\/p>",
+        "cta_title": "",
+        "cta_link": "",
+        "hide_image_mobile": false,
+        "anchor_id": "",
+        "style": "standard",
+        "layout": "image-right"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16505006587b6a34d3"
   ]
 }
