@@ -33,18 +33,28 @@
     }
     &__link {
       &::after {
+        transition: opacity var(--theme-transition-duration);
+        display: block;
+        content: '';
+        width: 100%;
+        position: absolute;
+        z-index: -1;
         background: url('./LONTREAU--highlight--stroke.svg');
         background-repeat: no-repeat;
         background-position: center left;
         background-size: 100% auto;
         height: 10px;
-        bottom: -10px;
+        bottom: -4px;
         left: -2%;
         width: 108%;
+        opacity: 0;
       }
       &.active,
       &:hover {
         color: inherit;
+        &::after {
+          opacity: 1;
+        }
       }
     }
   }

@@ -168,6 +168,7 @@
     }
 
     &[data-style-wide] {
+       padding: 0;
       .fifty-fifty-feature {
         &__content {
           padding: 0 12.5%;
@@ -190,6 +191,7 @@
     }
 
     &[data-style-wide] {
+      padding: 0;
       .fifty-fifty-feature {
         &__content {
           padding: 0 15%;
