@@ -148,6 +148,10 @@
     @media (min-width: map-get( $grid-breakpoints, xxl )) { @content; }
   }
 
+  @else {
+    @media (min-width: $size) { @content; }
+  }
+
 }
 
 //////////////////////////////////////////////////////////

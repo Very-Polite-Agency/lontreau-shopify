@@ -20,7 +20,6 @@
 {% endif %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-colour-theme-{{ colour_theme }} data-layout-{{ layout }} data-layout="{{ layout }}">
-  <div class="{{ section_name }}__frame"></div>
   <div class="{{ section_name }}__layout">
 
     {% if image %}
@@ -42,7 +41,7 @@
             {% endif %}
             {% if cta_title and cta_link %}
               <div class="{{ section_name }}__cta intro__cta">
-                <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
+                <a class="{{ section_name }}__cta-button button" href="{{ cta_link }}" title="{{ cta_title }}">
                   <span class="button__title">{{ cta_title }}</span>
                 </a>
               </div>
@@ -52,6 +51,8 @@
         {% render 'layout--container', state: 'closed' %}
       </div>
     {% endif %}
+
+    <div class="{{ section_name }}__vr"></div>
 
   </div>
 </div>

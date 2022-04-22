@@ -7,13 +7,13 @@
     &__heading,
     &__message {
       & + .intro__cta {
-        margin-top: 22px;
+        margin-top: 28px;
       }
     }
 
     &__heading {
       & + .intro__message {
-        margin-top: 32px;
+        margin-top: 28px;
       }
     }
 
@@ -38,6 +38,11 @@
   [data-colour-theme-dark] {
     background: rgba(var(--theme-colour-forrest), 1);
     color: rgba(var(--theme-colour-white), 1);
+    .button {
+      border: 2px solid rgba(var(--theme-colour-white),1);
+      border-radius: 2px;
+      color: rgba(var(--theme-colour-white),1);
+    }
   }
 
   [data-layout-image-left] {}
@@ -75,6 +80,20 @@
   @include breakpoint(lg) {
 
     .intro {
+
+      &__heading,
+      &__message {
+        & + .intro__cta {
+          margin-top: 32px;
+        }
+      }
+
+      &__heading {
+        & + .intro__message {
+          margin-top: 28px;
+        }
+      }
+
       & + .main {
         margin-top: 65px;
       }
