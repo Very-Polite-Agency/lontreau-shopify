@@ -2828,6 +2828,14 @@
       "oAP" : "\/snippets\/input.liquid",
       "oF" : 0
     },
+    "\/snippets\/label.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/label.liquid",
+      "oF" : 0
+    },
     "\/snippets\/layout--container.liquid" : {
       "cB" : 0,
       "ft" : 8192,

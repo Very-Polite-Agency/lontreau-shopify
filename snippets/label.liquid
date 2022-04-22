@@ -1,0 +1,6 @@
+{% assign classes = classes | default: '' %}
+{% assign value = value | default: '' %}
+
+{% if value != blank %}
+  <label {% if classes != blank %}class="{{- classes -}}"{% endif %}>{{- value -}}</label>
+{% endif %}

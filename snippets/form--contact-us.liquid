@@ -1,11 +1,46 @@
 {%- form 'contact', id: 'form--contact-us', class: 'form js--validate-me' -%}
 
-      {% render 'input', classes: 'input--standard input--text', name: 'contact[first_name]' %}
-      {% render 'input', classes: 'input--standard input--text', name: 'contact[last_name]' %}
-      {% render 'input', classes: 'input--standard input--email', name: 'contact[email]' %}
-      {% render 'input', classes: 'input--standard input--company', name: 'contact[company]' %}
-      {% render 'textarea', classes: 'textarea--standard textarea--body', name: 'contact[body]' %}
+      <div class="form__main">
 
-      <button class="button--submit" type="submit">Contact Us</button>
+            <div class="form__field">
+                  {% render 'label', classes: 'label--standard', value: 'Rude' %}
+                  {% render 'input', classes: 'input--standard input--rude', name: 'contact[rude]' %}
+            </div>
+
+            <div class="form__field">
+                  {% render 'label', classes: 'label--standard', value: 'First Name' %}
+                  {% render 'input', classes: 'input--standard input--text', name: 'contact[first_name]' %}
+            </div>
+
+            <div class="form__field">
+                  {% render 'label', classes: 'label--standard', value: 'Last Name' %}
+                  {% render 'input', classes: 'input--standard input--text', name: 'contact[last_name]' %}
+            </div>
+
+            <div class="form__field">
+                  {% render 'label', classes: 'label--standard', value: 'Email' %}
+                  {% render 'input', classes: 'input--standard input--email', name: 'contact[email]' %}
+            </div>
+
+            <div class="form__field">
+                  {% render 'label', classes: 'label--standard', value: 'Company' %}
+                  {% render 'input', classes: 'input--standard input--company', name: 'contact[company]' %}
+            </div>
+
+            <div class="form__field">
+                  {% render 'label', classes: 'label--standard', value: 'How Can We Help You?' %}
+                  {% render 'textarea', classes: 'textarea--standard textarea--body', name: 'contact[body]' %}
+            </div>
+
+            <div class="form__field">
+                  <button class="button--submit" type="submit">Contact Us</button>
+            </div>
+
+      </div>
+
+
+      <div class="form__loading">
+            <div class="form__spinner"></div>
+      </div>
 
 {%- endform -%}
