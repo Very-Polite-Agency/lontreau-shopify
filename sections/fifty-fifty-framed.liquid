@@ -26,7 +26,7 @@
 
     {% if heading != blank or message != blank %}
       <div class="{{ section_name }}__main">
-        {% render 'layout--container', state: 'open', col: 'col-12', container: 'container-fluid' %}
+        {% render 'layout--container', state: 'open', col: 'col-12 col-lg-6', container: 'container-fluid' %}
 
           <div class="{{ section_name }}__content intro">
             {% if heading != blank %}
