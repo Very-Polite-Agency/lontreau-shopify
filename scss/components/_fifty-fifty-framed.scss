@@ -26,14 +26,18 @@
 	  }
   }
 
+  &__layout {
+    position: relative;
+  }
+
   &__vr {
     display: block;
-    width: auto;
-    height: 100%;
+    width: calc( 100% - (2 * var(--bs-container-fluid-padding) ));
+    min-height: 1px;
     background: green;
     position: absolute;
-    top: 0;
-    left: 0;
+    left: var(--bs-container-fluid-padding);
+    bottom: var(--bs-container-fluid-padding);
   }
 
   @include breakpoint(sm) {
