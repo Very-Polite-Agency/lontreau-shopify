@@ -3,14 +3,18 @@
   font-family: var(--theme-font-family--sans-serif--primary);
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+
+  &--form-field {
+    @extend.label;
+    font-size: 13px;
+  }
 
   &--primary {
     @extend .label;
     font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
     line-height: 1.23;
   }
 

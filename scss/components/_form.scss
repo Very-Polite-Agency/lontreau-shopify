@@ -1,0 +1,10 @@
+.form {
+
+  position: relative;
+
+
+  &--contact-us {
+    @extend .form;
+  }
+
+}
