@@ -19,13 +19,14 @@
     "16505006587b6a34d3": {
       "type": "fifty-fifty-feature",
       "settings": {
+        "title": "",
         "heading": "<p>We <em>know<\/em> skin<\/p>",
         "heading_highlight": "standard",
         "message": "<p>Lontreau is founded by the co-owner of renowned medical aesthetic and cosmetic surgery clinic, 8 West Clinic. With over 10 years in the business of skin, Lontreau products have been developed to support the common concerns of clients, while being uniquely tailored to athletes. The team behind Lontreau is passionate about sport and use their own experience to create products that can benefit everyone from athletes to movement enthusiasts. Learn more about Lontreau here (hyperlink to About Lontreau). <\/p>",
         "cta_title": "Learn More",
         "cta_link": "shopify:\/\/pages\/about",
         "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--wide_2x_e6a66d64-eb95-41cf-84aa-c093104a5d1f.png",
-        "hide_image_mobile": false,
+        "hide_image_mobile": true,
         "anchor_id": "",
         "style": "wide",
         "layout": "image-right",
@@ -46,6 +47,20 @@
         "parallax": false,
         "anchor_id": "",
         "height": "large"
+      }
+    },
+    "16506645476d2fc333": {
+      "type": "fifty-fifty-framed",
+      "settings": {
+        "heading": "<p><em>Next-level <\/em><\/p><p>standards<\/p>",
+        "heading_highlight": "circle",
+        "message": "<p>We don’t believe in junk miles when we train, and we carry that same ethos into our brand: every ingredient and every element of packaging is here for a reason. Learn more about what makes our formulations unique.<\/p>",
+        "cta_title": "Learn More",
+        "cta_link": "shopify:\/\/pages\/demo",
+        "image": "shopify:\/\/shop_images\/LONTREAU--our-philosophy-page--FFF_3x_117566c7-bb93-45cb-be53-63e5c1d6a219.png",
+        "anchor_id": "",
+        "layout": "image-right",
+        "colour_theme": "dark"
       }
     },
     "16505007247ed3495b": {
@@ -140,6 +155,7 @@
     "main",
     "16505006587b6a34d3",
     "16505007220d454290",
+    "16506645476d2fc333",
     "16505007247ed3495b",
     "1650500945f5b63511"
   ]
