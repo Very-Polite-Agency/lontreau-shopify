@@ -1,0 +1,15 @@
+{% assign classes = name | default: '' %}
+{% assign name = name | default: '' %}
+{% assign placeholder = value | default: '' %}
+{% assign type = type | default: 'text' %}
+{% assign value = value | default: '' %}
+
+{% if name != blank %}
+  <input
+    {%- if classes != blank -%}class="{{- classes =}}"{%- endif -%}
+    type="{{- name -}}"
+    name="{{- name -}}"
+    {%- if value != blank -%}value="{{- value -}}"{%- endif -%}
+    {%- if placeholder != blank -%}placeholder="{{- placeholder -}}"{%- endif -%}
+  >
+{% endif %}

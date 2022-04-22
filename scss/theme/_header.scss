@@ -68,6 +68,13 @@
       height: 100%;
       width: auto;
     }
+    a {
+      transition: opacity var(--theme-transition-duration);
+      opacity: 1;
+      &:hover {
+        opacity: var(--theme-transition-opacity);
+      }
+    }
   }
 
   &__layout {

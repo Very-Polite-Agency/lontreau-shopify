@@ -28,6 +28,8 @@
     @extend .input;
     background: rgba(var(--theme-colour-asphalt),1);
     color: rgba(var(--theme-colour-black),1);
+    min-height: 56px;
+    padding: 10px;
   }
 
   @include breakpoint(sm) {} // min width sm
