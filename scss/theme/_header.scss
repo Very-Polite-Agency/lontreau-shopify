@@ -32,9 +32,19 @@
       }
     }
     &__link {
+      &::after {
+        background: url('./LONTREAU--highlight--stroke.svg');
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: 100% auto;
+        height: 10px;
+        bottom: -10px;
+        left: -2%;
+        width: 108%;
+      }
       &.active,
       &:hover {
-        font-style: italic;
+        color: inherit;
       }
     }
   }

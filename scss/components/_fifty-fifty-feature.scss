@@ -53,6 +53,14 @@
     }
   }
 
+  &[data-style-wide] {
+    .fifty-fifty-feature {
+      &__content {
+        padding: 60px 0 75px;
+      }
+    }
+  }
+
   @include breakpoint(sm) {
 
     &__content {
@@ -117,29 +125,33 @@
       }
     }
 
-    &[data-style="standard"] {
-      .fifty-fifty-feature__content {
-        padding: 0 7%;
+    &[data-style-standard] {
+      .fifty-fifty-feature {
+        &__content {
+          padding: 0 7%;
+        }
       }
     }
 
-    &[data-style="wide"] {
+    &[data-style-wide] {
       padding: 0;
-      .fifty-fifty-feature__content {
-        width: 60%;
-        margin-left: unset;
-        margin-right: unset;
-        padding: 0 10%;
-      }
-      .fifty-fifty-feature__image {
-        width: 40%;
-        margin-left: unset;
-        margin-right: unset;
-      }
-      .fifty-fifty-feature__layout {
-        max-width: var(--theme-layout--fifty-fifty-max-width);
-        margin-left: auto;
-        margin-right: auto;
+      .fifty-fifty-feature {
+        &__content {
+          width: 60%;
+          margin-left: unset;
+          margin-right: unset;
+          padding: 0 10%;
+        }
+        &__image {
+          width: 40%;
+          margin-left: unset;
+          margin-right: unset;
+        }
+        &__layout {
+          max-width: var(--theme-layout--fifty-fifty-max-width);
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     }
 
@@ -147,15 +159,19 @@
 
   @include breakpoint(xl) {
 
-    &[data-style="standard"] {
-      .fifty-fifty-feature__content {
-        padding: 0 8%;
+    &[data-style-standard] {
+      .fifty-fifty-feature {
+        &__content {
+          padding: 0 8%;
+        }
       }
     }
 
-    &[data-style="wide"] {
-      .fifty-fifty-feature__content {
-        padding: 0 12.5%;
+    &[data-style-wide] {
+      .fifty-fifty-feature {
+        &__content {
+          padding: 0 12.5%;
+        }
       }
     }
 
@@ -165,15 +181,19 @@
 
     padding: 80px 0;
 
-    &[data-style="standard"] {
-      .fifty-fifty-feature__content {
-        padding: 0 9%;
+    &[data-style-standard] {
+      .fifty-fifty-feature {
+        &__content {
+          padding: 0 9%;
+        }
       }
     }
 
-    &[data-style="wide"] {
-      .fifty-fifty-feature__content {
-        padding: 0 15%;
+    &[data-style-wide] {
+      .fifty-fifty-feature {
+        &__content {
+          padding: 0 15%;
+        }
       }
     }
 
