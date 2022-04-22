@@ -14,7 +14,7 @@
   {% assign section_id = section.settings.anchor_id %}
 {% endif %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-colour-theme-{{ colour_theme }} data-layout="{{ layout }}">
+<div class="{{ section_name }}" id="{{ section_id }}" data-colour-theme-{{ colour_theme }} data-layout-{{ layout }} data-layout="{{ layout }}">
   <div class="{{ section_name }}__frame"></div>
   <div class="{{ section_name }}__layout">
 
@@ -25,24 +25,26 @@
     {% endif %}
 
     {% if heading != blank or message != blank %}
-      <div class="{{ section_name }}__content">
+      <div class="{{ section_name }}__main">
+        <div class="{{ section_name }}__content intro">
 
-        {% if heading != blank %}
-          <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
-        {% endif %}
+          {% if heading != blank %}
+            <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
+          {% endif %}
 
-        {% if message != blank %}
-          <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
-        {% endif %}
+          {% if message != blank %}
+            <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
+          {% endif %}
 
-        {% if cta_title and cta_link %}
-          <div class="{{ section_name }}__cta">
-            <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
-              <span class="button__title">{{ cta_title }}</span>
-            </a>
-          </div>
-        {% endif %}
+          {% if cta_title and cta_link %}
+            <div class="{{ section_name }}__cta">
+              <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
+                <span class="button__title">{{ cta_title }}</span>
+              </a>
+            </div>
+          {% endif %}
 
+        </div>
       </div>
     {% endif %}
 
