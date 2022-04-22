@@ -6,9 +6,9 @@
 
 {% if name != blank %}
   <textarea
-    {%- if classes != blank -%}class="{{- classes -}}"{%- endif -%}
+    {% if classes != blank %}class="{{- classes -}}"{% endif %}
     name="{{- name -}}"
-    {%- if value != blank -%}value="{{- value -}}"{%- endif -%}
-    {%- if placeholder != blank -%}placeholder="{{- placeholder -}}"{%- endif -%}
+    {% if value != blank %}value="{{- value -}}"{% endif %}
+    {% if placeholder != blank %}placeholder="{{- placeholder -}}"{% endif %}
   ></textarea>
 {% endif %}
