@@ -5,11 +5,10 @@
 {% assign value = value | default: '' %}
 
 {% if name != blank %}
-  <input
+  <textarea
     {%- if classes != blank -%}class="{{- classes =}}"{%- endif -%}
-    type="{{- type -}}"
     name="{{- name -}}"
     {%- if value != blank -%}value="{{- value -}}"{%- endif -%}
     {%- if placeholder != blank -%}placeholder="{{- placeholder -}}"{%- endif -%}
-  >
+  ></textarea>
 {% endif %}

@@ -2884,6 +2884,14 @@
       "oAP" : "\/snippets\/svg.liquid",
       "oF" : 0
     },
+    "\/snippets\/textarea.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/textarea.liquid",
+      "oF" : 0
+    },
     "\/snippets\/theme--classes.liquid" : {
       "cB" : 0,
       "ft" : 8192,
