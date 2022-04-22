@@ -21,6 +21,9 @@
   --bs-gutter-width: #{ $grid-gutter-width };
   --bs-gutter-x: #{ $grid-gutter-width };
 
+  // ---------------------------------------- Container Fluid Padding
+  --bs-container-fluid-padding: 32px;
+
   // ---------------------------------------- Container Breakpoints
   --bs-container-breakpoint--sm: #{ map-get( $grid-breakpoints, sm ) };
   --bs-container-breakpoint--md: #{ map-get( $grid-breakpoints, md ) };
@@ -186,6 +189,7 @@
 @import './theme/blog.scss';
 @import './theme/body.scss';
 @import './theme/collection.scss';
+@import './theme/container.scss';
 @import './theme/fonts.scss';
 @import './theme/footer.scss';
 @import './theme/header.scss';
