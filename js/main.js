@@ -11,6 +11,7 @@
 // @codekit-prepend "./modules/_mobileMenu.js";
 // @codekit-prepend "./modules/_modals";
 // @codekit-prepend "./modules/_scrolling.js";
+// @codekit-prepend "./modules/_sections.js";
 // @codekit-prepend "./modules/_sizing.js";
 // @codekit-prepend "./modules/_theme.js";
 // @codekit-prepend "./modules/_tools.js";
@@ -24,14 +25,17 @@ let forms = new Forms();
 let gliders = new Gliders();
 let instagramFeed = new InstagramFeed();
 let mobileMenu = new MobileMenu();
+let sections = new Sections();
 let scrolling = new Scrolling();
 let sizing = new Sizing();
+let tools = new Tools();
 
 Theme.init([
   forms,
   gliders,
   instagramFeed,
   mobileMenu,
+  sections,
   scrolling,
   sizing,
   credits,

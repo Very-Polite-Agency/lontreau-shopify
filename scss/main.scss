@@ -115,12 +115,6 @@
   --theme-header-height--xl: #{ map-get( $theme-header-heights, 'xl' ) };
   --theme-header-height--xxl: #{ map-get( $theme-header-heights, 'xxl' ) };
 
-
-  --theme-container-max-offset-left: auto;
-
-  // ---------------------------------------- Icon
-  --theme-icon-size-social: 32px;
-
   // ---------------------------------------- Font Families
   --theme-font-family--sans-serif: sans-serif;
   --theme-font-family--serif: sans-serif;

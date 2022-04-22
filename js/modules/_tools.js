@@ -16,6 +16,32 @@ const Tools = (() => {
   }
 
   //////////////////////////////////////////////////////////
+  ////  Get Elemetn Padding
+  //////////////////////////////////////////////////////////
+
+  const getPadding = ( $element ) => {
+
+		let style = $element.currentStyle || window.getComputedStyle($element);
+    let result = {
+      getLeft: function() {
+        return parseInt(style.paddingLeft);
+      },
+      getTop: function() {
+        return parseInt(style.paddingTop);
+      },
+      getRight: function() {
+        return parseInt(style.paddingRight);
+      },
+      getBottom: function() {
+        return parseInt(style.paddingBottom);
+      }
+    }
+
+  	return result;
+
+  }
+
+  //////////////////////////////////////////////////////////
   ////  Set Local Storage Value
   //////////////////////////////////////////////////////////
 
@@ -115,6 +141,7 @@ const Tools = (() => {
     info,
     addClass,
     getLocalStorageValueByKey,
+    getPadding,
     getElementHeightByTag,
     getArrayOfElementsByTag,
     removeClass,
