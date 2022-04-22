@@ -17,7 +17,16 @@
   {% assign section_id = section.settings.anchor_id %}
 {% endif %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-colour-theme-{{ colour_theme }} data-layout="{{ layout }}" data-style="{{ style }}">
+<div
+  class="{{ section_name }}"
+  id="{{ section_id }}"
+  data-section-height="{{ height }}"
+  data-layout="{{ layout }}"
+  data-style="{{ style }}"
+  data-colour-theme-{{ colour_theme }}
+  data-layout-"{{ layout }}"
+  data-style-"{{ style }}"
+>
   <div class="{{ section_name }}__main">
     {% unless style == 'wide' %}{% render 'layout--container' %}{% endunless %}
 
