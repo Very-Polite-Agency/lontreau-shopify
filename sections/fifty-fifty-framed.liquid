@@ -15,11 +15,12 @@
 {% endif %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-colour-theme-{{ colour_theme }} data-layout="{{ layout }}">
+  <div class="{{ section_name }}__frame"></div>
   <div class="{{ section_name }}__layout">
 
     {% if image %}
       <div class="{{ section_name }}__image">
-        {% render 'content--lazyload-image', image: image %}
+        {% render 'content--lazyload-image', background: true, image: image %}
       </div>
     {% endif %}
 

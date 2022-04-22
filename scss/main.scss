@@ -126,6 +126,9 @@
   --theme-font-family--sans-serif--primary: 'NeueBit', sans-serif;
   --theme-font-family--serif--primary: 'Self Modern', serif;
 
+  // ---------------------------------------- Layout | Fifty-Fifty
+  --theme-layout--fifty-fifty-max-width: 1800px;
+
   // ---------------------------------------- Transitions
   --theme-transition-duration: 280ms;
   --theme-transition-opacity: 0.3333;
@@ -155,6 +158,7 @@
 @import './components/collapsible.scss';
 @import './components/field.scss';
 @import './components/fifty-fifty-feature.scss';
+@import './components/fifty-fifty-framed.scss';
 @import './components/figure.scss';
 @import './components/form.scss';
 @import './components/full-width-feature.scss';
