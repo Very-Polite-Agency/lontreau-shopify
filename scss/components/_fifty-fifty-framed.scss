@@ -5,7 +5,6 @@
   &__content {
     width: calc( 100% - 32px );
     padding: 60px 0;
-    // border: 1px solid red;
   }
 
   &__cta {
@@ -74,6 +73,7 @@
 
     &__content {
       max-width: 450px;
+      width: 100%;
     }
 
   } // min width sm
@@ -81,7 +81,7 @@
   @include breakpoint(md) {
 
     &__content {
-      max-width: 500px;
+      max-width: 600px;
     }
 
   } // min width md
@@ -171,9 +171,9 @@
     }
 
     &__image {
-      max-height: 720px;
+      max-height: 680px;
       @supports not (aspect-ratio: auto) {
-        height: 720px;
+        height: 680px;
 	    }
     }
 
@@ -202,9 +202,9 @@
     }
 
     &__image {
-      max-height: 900px;
+      max-height: 780px;
       @supports not (aspect-ratio: auto) {
-        height: 900px;
+        height: 780px;
 	    }
     }
 
@@ -233,9 +233,9 @@
     }
 
     &__image {
-      max-height: 1000px;
+      max-height: 880px;
       @supports not (aspect-ratio: auto) {
-        height: 1000px;
+        height: 880px;
 	    }
     }
 
@@ -264,9 +264,9 @@
     }
 
     &__image {
-      max-height: 1100px;
+      max-height: 980px;
       @supports not (aspect-ratio: auto) {
-        height: 1100px;
+        height: 980px;
 	    }
     }
 
