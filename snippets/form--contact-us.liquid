@@ -12,7 +12,7 @@
                   {% render 'input', classes: 'input--primary input--text', name: 'contact[first_name]', type: 'text' %}
             </div>
 
-            <div class="form__field field">
+            <div class="form__field field error">
                   {% render 'label', classes: 'label--form-field', value: 'Last Name' %}
                   {% render 'input', classes: 'input--primary input--text', name: 'contact[last_name]', type: 'text' %}
             </div>
@@ -32,12 +32,12 @@
                   {% render 'input', classes: 'input--primary input--company', name: 'contact[company]', type: 'text' %}
             </div>
 
-            <div class="form__field field">
+            <div class="form__field field error">
                   {% render 'label', classes: 'label--form-field', value: 'How Can We Help You?' %}
                   {% render 'textarea', classes: 'textarea--primary textarea--body', name: 'contact[body]' %}
             </div>
 
-            <div class="form__field">
+            <div class="form__field field">
                   <button class="button--submit" type="submit">Contact Us</button>
             </div>
 

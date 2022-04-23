@@ -1,0 +1,32 @@
+.textarea {
+
+   transition:
+    background var(--theme-transition-duration),
+    border var(--theme-transition-duration),
+    color var(--theme-transition-duration),
+    opacity var(--theme-transition-duration);
+  font-family: var(--theme-font-family--sans-serif--primary);
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  line-height: 1.25;
+  text-decoration: none;
+  background: transparent;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+
+  &--primary {
+    @extend .input;
+    background: rgba(var(--theme-colour-asphalt),1);
+    color: rgba(var(--theme-colour-black),1);
+    min-height: 175px;
+    padding: 10px;
+    width: 100%;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid transparent;
+  }
+
+}
