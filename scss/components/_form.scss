@@ -9,8 +9,17 @@
       top: 10px;
       left: 10px;
     }
+    .error {
+      input {
+        color: rgba(var(--theme-colour-brick),1);
+        border-color: rgba(var(--theme-colour-brick),1);
+      }
+    }
     .field {
       width: 100%;
+      & + .field {
+        margin-top: var(--bs-gutter-width);
+      }
     }
   }
 

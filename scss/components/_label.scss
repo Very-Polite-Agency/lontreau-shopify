@@ -11,6 +11,9 @@
     @extend.label;
     font-size: 13px;
     color: #828282;
+    & + .input--primary {
+      padding-top: 30px;
+    }
   }
 
   &--primary {
