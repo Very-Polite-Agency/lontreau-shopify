@@ -2,8 +2,28 @@
 
   padding: 60px 0;
 
+  &__heading,
+  &__message {
+    & + form {
+      margin-top: 38px;
+    }
+  }
+
+  &__heading {
+    & + .contact-form__message {
+      margin-top: 20px;
+    }
+  }
+
   &__main {
     text-align: center;
+  }
+
+  &__message {
+    text-transform: uppercase;
+    width: 100%;
+    margin: auto;
+    max-width: 380px;
   }
 
   @include breakpoint(sm) {} // min width sm
@@ -13,6 +33,12 @@
   @include breakpoint(lg) {
 
     padding: 70px 0;
+
+    &__heading {
+      & + .contact-form__message {
+        margin-top: 22px;
+      }
+    }
 
   } // min width lg
 

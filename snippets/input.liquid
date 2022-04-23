@@ -9,7 +9,15 @@
     {% if classes != blank %}class="{{- classes -}}"{% endif %}
     type="{{- type -}}"
     name="{{- name -}}"
+    autocomplete="{{- name -}}"
     {% if value != blank %}value="{{- value -}}"{% endif %}
     {% if placeholder != blank %}placeholder="{{- placeholder -}}"{% endif %}
+    {% case name %}
+      {% when 'email' %}
+        spellcheck="false"
+        autocapitalize="off"
+      {% when 'tel' %}
+        pattern="[0-9\-]*"
+    {% endcase %}
   >
 {% endif %}
