@@ -2,9 +2,16 @@
 
   position: relative;
 
-
   &--contact-us {
     @extend .form;
+    label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    .field {
+      width: 100%;
+    }
   }
 
 }
