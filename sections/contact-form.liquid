@@ -3,7 +3,7 @@
 
 {% assign heading = section.settings.heading | default: '' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: false %}
-{% assign title = section.settings.title | default: false %}
+{% assign message = section.settings.message | default: false %}
 
 {% if section.settings.anchor_id != blank %}
   {% assign section_id = section.settings.anchor_id %}
