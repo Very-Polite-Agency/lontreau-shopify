@@ -4,27 +4,32 @@
 
             <div class="form__field field">
                   {% render 'label', classes: 'label--form-field', value: 'Rude' %}
-                  {% render 'input', classes: 'input--primary input--rude', name: 'contact[rude]' %}
+                  {% render 'input', classes: 'input--primary input--rude', name: 'contact[rude]', type: 'text' %}
             </div>
 
             <div class="form__field field">
                   {% render 'label', classes: 'label--form-field', value: 'First Name' %}
-                  {% render 'input', classes: 'input--primary input--text', name: 'contact[first_name]' %}
+                  {% render 'input', classes: 'input--primary input--text', name: 'contact[first_name]', type: 'text' %}
             </div>
 
             <div class="form__field field">
                   {% render 'label', classes: 'label--form-field', value: 'Last Name' %}
-                  {% render 'input', classes: 'input--primary input--text', name: 'contact[last_name]' %}
+                  {% render 'input', classes: 'input--primary input--text', name: 'contact[last_name]', type: 'text' %}
+            </div>
+
+            <div class="form__field field">
+                  {% render 'label', classes: 'label--form-field', value: 'Phone' %}
+                  {% render 'input', classes: 'input--primary input--phone', name: 'contact[phone]', type: 'tel' %}
             </div>
 
             <div class="form__field field">
                   {% render 'label', classes: 'label--form-field', value: 'Email' %}
-                  {% render 'input', classes: 'input--primary input--email', name: 'contact[email]' %}
+                  {% render 'input', classes: 'input--primary input--email', name: 'contact[email]', type: 'email' %}
             </div>
 
             <div class="form__field field">
                   {% render 'label', classes: 'label--form-field', value: 'Company' %}
-                  {% render 'input', classes: 'input--primary input--company', name: 'contact[company]' %}
+                  {% render 'input', classes: 'input--primary input--company', name: 'contact[company]', type: 'text' %}
             </div>
 
             <div class="form__field field">

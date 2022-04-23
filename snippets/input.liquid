@@ -12,7 +12,7 @@
     autocomplete="{{- name -}}"
     {% if value != blank %}value="{{- value -}}"{% endif %}
     {% if placeholder != blank %}placeholder="{{- placeholder -}}"{% endif %}
-    {% case name %}
+    {% case type %}
       {% when 'email' %}
         spellcheck="false"
         autocapitalize="off"
