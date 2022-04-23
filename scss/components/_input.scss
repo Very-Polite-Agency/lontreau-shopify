@@ -33,6 +33,7 @@
     width: 100%;
     font-size: 20px;
     letter-spacing: 0.05em;
+    border-bottom: 1px solid transparent;
   }
 
   @include breakpoint(sm) {} // min width sm
