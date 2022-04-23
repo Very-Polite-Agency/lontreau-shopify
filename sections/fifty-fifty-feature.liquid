@@ -24,8 +24,8 @@
   data-layout="{{ layout }}"
   data-style="{{ style }}"
   data-colour-theme-{{ colour_theme }}
-  data-layout-"{{ layout }}"
-  data-style-"{{ style }}"
+  data-layout-{{ layout }}
+  data-style-{{ style }}
 >
   <div class="{{ section_name }}__main">
     {% unless style == 'wide' %}{% render 'layout--container' %}{% endunless %}
