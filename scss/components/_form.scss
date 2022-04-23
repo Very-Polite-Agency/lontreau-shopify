@@ -10,7 +10,8 @@
       left: 10px;
     }
     .error {
-      input {
+      input,
+      textarea {
         color: rgba(var(--theme-colour-brick),1);
         border-color: rgba(var(--theme-colour-brick),1);
       }
