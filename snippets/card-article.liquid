@@ -3,6 +3,7 @@
   {% assign snippet_name = 'card-article' %}
   {% assign snippet_classes = snippet_name %}
   {% assign snippet_id = snippet_name | append: '--' | append: article.id -%}
+  {% assign style = style | default: 'not-set' %}
 
   {% if classes and classes != empty %}
     {% assign snippet_classes = snippet_classes | prepend: ' ' | prepend: classes %}
@@ -10,11 +11,13 @@
 
   {% assign autor = article.author | default: '' %}
   {% assign date_published = article.published_at %}
+  {% assign excerpt = article.excerpt | default: '' %}
   {% assign image = article.image | default: false %}
   {% assign title = article.title | default: '' %}
   {% assign url = article.url | default: '' %}
 
-  <article class="{{ snippet_classes }}" id="{{ snippet_id }}">
+  <article class="{{ snippet_classes }}" id="{{ snippet_id }}" data-style="{{ style }}">
+
     <div class="{{ snippet_name }}__featured-image article__featured-image">
       <a class="{{ snippet_name }}__featured-image-link" href="{{ url }}" title="{{ title }}" target="_self">
         {%
@@ -29,10 +32,11 @@
       <strong class="{{ snippet_name }}__title article__title">
         <a class="{{ snippet_name }}__title-link" href="{{ url }}" title="{{ title }}" target="_self">{{ title }}</a>
       </strong>
-      <div class="{{ snippet_name }}__cta article__title">
-        <a class="{{ snippet_name }}__cta-link link--text" href="{{ url }}" title="{{ title }}" target="_self">Read More</a>
-      </div>
+      {% if 'blog--featured' == style and excerpt != blank %}
+        <div class="{{ snippet_name }}__excerpt body-copy--1"><p>{{ excerpt | truncate: 20 }}</p></div>
+      {% endif %}
     </div>
+
   </article>
 
 {%- endif -%}
