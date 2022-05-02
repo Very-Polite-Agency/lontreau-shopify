@@ -33,7 +33,7 @@
         <a class="{{ snippet_name }}__title-link" href="{{ url }}" title="{{ title }}" target="_self">{{ title }}</a>
       </strong>
       {% if 'blog--featured' == style and excerpt != blank %}
-        <div class="{{ snippet_name }}__excerpt body-copy--1"><p>{{ excerpt | truncate: 20 }}</p></div>
+        <div class="{{ snippet_name }}__excerpt"><p>{{ excerpt | truncate: 175 }}</p></div>
       {% endif %}
     </div>
 

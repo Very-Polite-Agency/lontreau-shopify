@@ -7,8 +7,10 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  &__content {
-    background: red;
+  &__content,
+  &__featured-image {
+    display: block;
+    width: 100%;
   }
 
   &__cta {
@@ -21,9 +23,16 @@
     }
   }
 
+  &__excerpt {
+    font-family: var(--theme-font-family--serif--primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
   &__featured-image {
     position: relative;
-    width: 100%;
     aspect-ratio: 3/2;
     @supports not (aspect-ratio: auto) {
       height: 300px;
@@ -52,6 +61,9 @@
         opacity: 0.6;
         color: inherit;
       }
+    }
+    & + .card-article__excerpt {
+      margin-top: 30px;
     }
   }
 
@@ -84,7 +96,9 @@
 
     [data-paginate-pages-current="1"] & {
       &:first-child {
-
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
       }
     }
 
