@@ -3,13 +3,9 @@
     "main": {
       "type": "main-blog",
       "settings": {
-        "layout": "collage",
-        "show_image": true,
-        "image_height": "medium",
-        "show_date": true,
-        "show_author": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "hero_heading": "<p>Blog<\/p>",
+        "hero_heading_highlight": "standard",
+        "hero_image": "shopify:\/\/shop_images\/LONTREAU--blog-featured-image-01.png"
       }
     }
   },
