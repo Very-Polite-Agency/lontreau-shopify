@@ -1,144 +1,118 @@
-{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
-{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+{%- assign section_name = 'blog' -%}
+{%- assign section_id = section_name | append: '--' | append: section.id -%}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
+{% assign hero_heading = section.settings.hero_heading | default: '' %}
+{% assign hero_image = section.settings.hero_image | default: false %}
+{% assign hero_info = section.settings.hero_info | default: '' %}
+{% assign hero_text_colour_theme = section.settings.hero_text_colour_theme | default: 'light' %}
+{% assign post_per_page = section.settings.post_per_page | default: 6 %}
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
+{%- paginate blog.articles by post_per_page -%}
 
-{%- paginate blog.articles by 6 -%}
-  <div class="main-blog page-width section-{{ section.id }}-padding">
-    <h1 class="title--primary">{{ blog.title | escape }}</h1>
+  {% if hero_heading != blank or hero_info != blank or hero_image %}
+    <div class="{{ section_name }}__hero">
+      {% render 'layout--container', state: 'open' %}
+        <div class="{{ section_name }}__hero-main">
 
-    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
-      {%- for article in blog.articles -%}
-        <div class="blog-articles__article article">
-          {%- render 'article-card',
-            article: article,
-            media_height: section.settings.image_height,
-            media_aspect_ratio: article.image.aspect_ratio,
-            show_image: section.settings.show_image,
-            show_date: section.settings.show_date,
-            show_author: section.settings.show_author,
-            show_excerpt: true 
-          -%}
+          {% if hero_image %}
+            <div class="{{ section_name }}__hero-media">
+              {%
+                render 'content--lazyload-image',
+                background: true,
+                image: hero_image,
+              %}
+            </div>
+          {% endif %}
+
+          {% if hero_heading != blank or hero_info != blank %}
+            <div class="{{ section_name }}__hero-content" data-text-colour-theme-{{ hero_text_colour_theme }}>
+              {% if hero_heading != blank %}<h1 class="{{ section_name }}__title heading--1">{{ hero_heading }}</h1>{% endif %}
+              {% if hero_info != blank %}<div class="{{ section_name }}__info body-copy--1">{{ hero_info }}</div>{% endif %}
+            </div>
+          {% endif %}
+
         </div>
-      {%- endfor -%}
+      {% render 'layout--container', state: 'closed' %}
     </div>
+  {% endif %}
 
-    {%- if paginate.pages > 1 -%}
-      {%- render 'pagination', paginate: paginate -%}
-    {%- endif -%}
+  <div class="{{ section_name }}__main">
+    {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+      <div class="{{ section_name }}__list listing--grid">
+        {%- for article in blog.articles -%}
+          {%- render 'card-article', article: article, classes: 'blog__article' -%}
+        {%- endfor -%}
+      </div>
+    {% render 'layout--container', state: 'closed' %}
   </div>
+
+  {%- if paginate.pages > 1 -%}
+    {%- render 'pagination', classes: 'blog__pagination' col: 'col-12 col-lg-10 offset-lg-1', paginate: paginate -%}
+  {%- endif -%}
+
 {%- endpaginate -%}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
 
 {% schema %}
 {
-  "name": "t:sections.main-blog.name",
-  "tag": "section",
-  "class": "section",
+  "name": "Blog",
+  "tag": "div",
+  "class": "blog",
   "settings": [
     {
-      "type": "header",
-      "content": "t:sections.main-blog.settings.header.content"
+      "content": "Hero",
+      "type": "header"
     },
     {
+      "content": "Content",
+      "type": "paragraph"
+    },
+    {
+      "label": "Heading",
+      "type": "text",
+      "id": "hero_heading"
+    },
+    {
+      "label": "Info",
+      "type": "richtext",
+      "id": "hero_info"
+    },
+    {
+      "label": "Text Colour Theme",
       "type": "select",
-      "id": "layout",
       "options": [
-        {
-          "value": "grid",
-          "label": "t:sections.main-blog.settings.layout.options__1.label"
-        },
-        {
-          "value": "collage",
-          "label": "t:sections.main-blog.settings.layout.options__2.label"
-        }
+        { "value": "light", "label": "Light" },
+        { "value": "dark", "label": "Dark" }
       ],
-      "default": "collage",
-      "label": "t:sections.main-blog.settings.layout.label",
-      "info": "t:sections.main-blog.settings.layout.info"
+      "default": "light",
+      "id": "hero_text_colour_theme"
     },
     {
-      "type": "checkbox",
-      "id": "show_image",
-      "default": true,
-      "label": "t:sections.main-blog.settings.show_image.label"
+      "content": "Media",
+      "type": "paragraph"
     },
     {
-      "type": "select",
-      "id": "image_height",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.main-blog.settings.image_height.options__1.label"
-        },
-        {
-          "value": "small",
-          "label": "t:sections.main-blog.settings.image_height.options__2.label"
-        },
-        {
-          "value": "medium",
-          "label": "t:sections.main-blog.settings.image_height.options__3.label"
-        },
-        {
-          "value": "large",
-          "label": "t:sections.main-blog.settings.image_height.options__4.label"
-        }
-      ],
-      "default": "medium",
-      "label": "t:sections.main-blog.settings.image_height.label",
-      "info": "t:sections.main-blog.settings.image_height.info"
+      "label": "Image",
+      "type": "image_picker",
+      "id": "hero_image"
     },
     {
-      "type": "checkbox",
-      "id": "show_date",
-      "default": true,
-      "label": "t:sections.main-blog.settings.show_date.label"
+      "content": "Settings",
+      "type": "header"
     },
     {
-      "type": "checkbox",
-      "id": "show_author",
-      "default": false,
-      "label": "t:sections.main-blog.settings.show_author.label"
-    },
-    {
-      "type": "paragraph",
-      "content": "t:sections.main-blog.settings.paragraph.content"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
+      "label": "Posts per page",
       "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
+      "min": 6,
+      "max": 16,
+      "step": 2,
+      "default": 6,
+      "id": "post_per_page"
     }
   ]
 }
