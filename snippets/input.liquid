@@ -1,8 +1,14 @@
 {% assign classes = classes | default: '' %}
+{% assign hidden = hidden | default: false %}
 {% assign name = name | default: '' %}
 {% assign placeholder = placeholder | default: '' %}
+{% assign readonly = readonly | default: false %}
 {% assign type = type | default: 'text' %}
 {% assign value = value | default: '' %}
+
+{% if hidden %}
+  {% assign classes = 'd-none' %}
+{% endif %}
 
 {% if name != blank %}
   <input
@@ -12,6 +18,7 @@
     autocomplete="{{- type -}}"
     {% if value != blank %}value="{{- value -}}"{% endif %}
     {% if placeholder != blank %}placeholder="{{- placeholder -}}"{% endif %}
+    {% if readonly %}readonly{% endif %}
     {% case type %}
       {% when 'email' %}
         spellcheck="false"

@@ -1,51 +1,48 @@
 {%- form 'contact', id: 'form--contact-us', class: 'form form--contact-us js--validate-me' -%}
 
-      <div class="form__main">
+  <div class="form__main">
 
-            <div class="form__field field">
-                  {% render 'label', classes: 'label--form-field', value: 'Rude' %}
-                  {% render 'input', classes: 'input--primary input--rude', name: 'contact[rude]', type: 'text' %}
-            </div>
+    <div class="form__field field field--rude">
+      {% render 'label', classes: 'label--form-field', value: 'Rude' %}
+      {% render 'input', classes: 'input--primary input--rude', name: 'contact[rude]', type: 'text' %}
+    </div>
 
-            <div class="form__field field">
-                  {% render 'label', classes: 'label--form-field', value: 'First Name' %}
-                  {% render 'input', classes: 'input--primary input--text', name: 'contact[first_name]', type: 'text' %}
-            </div>
+    <div class="form__field field">
+      {% render 'label', classes: 'label--form-field', value: 'First Name' %}
+      {% render 'input', classes: 'input--primary input--text', name: 'contact[first_name]', type: 'text' %}
+    </div>
 
-            <div class="form__field field error">
-                  {% render 'label', classes: 'label--form-field', value: 'Last Name' %}
-                  {% render 'input', classes: 'input--primary input--text', name: 'contact[last_name]', type: 'text' %}
-            </div>
+    <div class="form__field field error">
+      {% render 'label', classes: 'label--form-field', value: 'Last Name' %}
+      {% render 'input', classes: 'input--primary input--text', name: 'contact[last_name]', type: 'text' %}
+    </div>
 
-            <div class="form__field field">
-                  {% render 'label', classes: 'label--form-field', value: 'Phone' %}
-                  {% render 'input', classes: 'input--primary input--phone', name: 'contact[phone]', type: 'tel' %}
-            </div>
+    <div class="form__field field">
+      {% render 'label', classes: 'label--form-field', value: 'Phone' %}
+      {% render 'input', classes: 'input--primary input--phone', name: 'contact[phone]', type: 'tel' %}
+    </div>
 
-            <div class="form__field field">
-                  {% render 'label', classes: 'label--form-field', value: 'Email' %}
-                  {% render 'input', classes: 'input--primary input--email', name: 'contact[email]', type: 'email' %}
-            </div>
+    <div class="form__field field">
+      {% render 'label', classes: 'label--form-field', value: 'Email' %}
+      {% render 'input', classes: 'input--primary input--email', name: 'contact[email]', type: 'email' %}
+    </div>
 
-            <div class="form__field field">
-                  {% render 'label', classes: 'label--form-field', value: 'Company' %}
-                  {% render 'input', classes: 'input--primary input--company', name: 'contact[company]', type: 'text' %}
-            </div>
+    <div class="form__field field">
+      {% render 'label', classes: 'label--form-field', value: 'Company' %}
+      {% render 'input', classes: 'input--primary input--company', name: 'contact[company]', type: 'text' %}
+    </div>
 
-            <div class="form__field field error">
-                  {% render 'label', classes: 'label--form-field', value: 'How Can We Help You?' %}
-                  {% render 'textarea', classes: 'textarea--primary textarea--body', name: 'contact[body]' %}
-            </div>
+    <div class="form__field field error">
+      {% render 'label', classes: 'label--form-field', value: 'How Can We Help You?' %}
+      {% render 'textarea', classes: 'textarea--primary textarea--body', name: 'contact[body]' %}
+    </div>
 
-            <div class="form__field field">
-                  <button class="button--submit" type="submit">Contact Us</button>
-            </div>
+    <button class="form__submit-button button--primary" type="submit">Submit</button>
 
-      </div>
+  </div>
 
-
-      <div class="form__loading">
-            <div class="form__spinner"></div>
-      </div>
+  <div class="form__loading">
+    <div class="form__spinner"></div>
+  </div>
 
 {%- endform -%}

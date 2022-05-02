@@ -2755,12 +2755,12 @@
       "oAP" : "\/snippets\/aos-attributes.liquid",
       "oF" : 0
     },
-    "\/snippets\/article-card.liquid" : {
+    "\/snippets\/card-article.liquid" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/snippets\/article-card.liquid",
+      "oAP" : "\/snippets\/card-article.liquid",
       "oF" : 0
     },
     "\/snippets\/card-collection.liquid" : {

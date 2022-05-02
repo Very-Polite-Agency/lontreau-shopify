@@ -1,53 +1,54 @@
-{% comment %}
-    Renders a set of links for paginated results. Must be used within paginate tags.
+{%- if paginate and paginate.parts.size > 0 -%}
 
-    Usage:
-    {% paginate results by 2 %}
-      {% render 'pagination', paginate: paginate, anchor: '#yourID' %}
-    {% endpaginate %}
+  {% assign snippet_name = 'pagination' %}
+  {% assign snippet_classes = snippet_name %}
 
-    Accepts:
-    - paginate: {Object}
-    - anchor: {String} (optional) This can be added so that on page reload it takes you to wherever you've placed your anchor tag.
-{% endcomment %}
+  {% if classes and classes != empty %}
+    {% assign snippet_classes = snippet_classes | prepend: ' ' | prepend: classes %}
+  {% endif %}
 
-<link rel="stylesheet" href="{{ 'component-pagination.css' | asset_url }}" media="print" onload="this.media='all'">
-<noscript>{{ 'component-pagination.css' | asset_url | stylesheet_tag }}</noscript>
+  <nav class="{{ snippet_classes }}" role="navigation" aria-label="{{ template.name | capitalize }} Pagination">
 
-{%- if paginate.parts.size > 0 -%}
-  <div class="pagination-wrapper">
-    <nav class="pagination" role="navigation" aria-label="{{ 'general.pagination.label' | t }}">
-      <ul class="pagination__list list-unstyled" role="list">
-      {%- if paginate.previous -%}
-        <li>
+    {% if col and col != blank %}
+      {% render 'layout--container', state: 'open', col: col %}
+    {% endif %}
+
+    <div class="{{ snippet_name }}__layout">
+
+      <div class="{{ snippet_name }}__item previous d-none">
+        {%- if paginate.previous -%}
           <a href="{{ paginate.previous.url }}{{ anchor }}" class="pagination__item pagination__item--next pagination__item-arrow link motion-reduce" aria-label="{{ 'general.pagination.previous' | t }}">
-            {% render 'icon-caret' %}
           </a>
-        </li>
-      {%- endif -%}
+        {%- endif -%}
+      </div>
 
       {%- for part in paginate.parts -%}
-        <li>
+        <div class="{{ snippet_name }}__item page">
           {%- if part.is_link -%}
-            <a href="{{ part.url }}{{ anchor }}" class="pagination__item link" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">{{ part.title }}</a>
+            <a href="{{ part.url }}{{ anchor }}">{{ part.title }}</a>
           {%- else -%}
             {%- if part.title == paginate.current_page -%}
-              <span class="pagination__item pagination__item--current" aria-current="page" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">{{ part.title }}</span>
+              <span>{{ part.title }}</span>
             {%- else -%}
-              <span class="pagination__item">{{ part.title }}</span>
+              <span>{{ part.title }}</span>
             {%- endif -%}
           {%- endif -%}
-        </li>
+        </div>
       {%- endfor -%}
 
-      {%- if paginate.next -%}
-        <li>
+      <div class="{{ snippet_name }}__item next d-none">
+        {%- if paginate.next -%}
           <a href="{{ paginate.next.url }}{{ anchor }}" class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce" aria-label="{{ 'general.pagination.next' | t }}" >
-            {%- render 'icon-caret' -%}
           </a>
-        </li>
-      {%- endif -%}
-      </ul>
-    </nav>
-  </div>
+        {%- endif -%}
+      </div>
+
+    </div>
+
+    {% if col and col != blank %}
+      {% render 'layout--container', state: 'closed' %}
+    {% endif %}
+
+  </nav>
+
 {%- endif -%}

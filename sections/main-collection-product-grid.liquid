@@ -1,217 +1,122 @@
-{{ 'template-collection.css' | asset_url | stylesheet_tag }}
-{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
-{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{%- assign section_name = 'collection-product-grid' -%}
+{%- assign section_id = section_name | append: '--' | append: section.id -%}
 
-<link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{% if section.settings.anchor_id != blank %}
+  {% assign section_id = section.settings.anchor_id %}
+{% endif %}
 
-<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+{% assign title = collection.title | defualt: '' %}
+{% assign description = collection.description | defualt: '' %}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
+<div class="{{ section_name }}" id="{{ section_id }}">
+  {%- paginate collection.products by section.settings.products_per_page -%}
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+    {%- if collection.products.size == 0 -%}
+
+       <div class="{{ section_name }}__hero">
+        {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+          <div class="{{ section_name }}__hero-content">
+            <h1 class="{{ section_name }}__title heading--1">{{ title }}</h1>
+            <div class="{{ section_name }}__description body-copy--1">It looks like there are currently no products in this collection!</div>
+          </div>
+        {% render 'layout--container', state: 'closed' %}
+       </div>
+
+    {%- else -%}
+
+      <div class="{{ section_name }}__hero">
+        {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+          <div class="{{ section_name }}__hero-layout">
+
+            <div class="{{ section_name }}__hero-content">
+              <h1 class="{{ section_name }}__title heading--1">{{ title }}</h1>
+              {% if description != blank and false %}
+                <div class="{{ section_name }}__description body-copy--1">{{ description }}</div>
+              {% endif %}
+            </div>
+
+            <div class="{{ section_name }}__sort-filter">
+              <label class="{{ section_name }}__sort-filter-label caption--1">Sort by</label>
+              <select class="{{ section_name }}__sort-filter-options select--1" id="sort-by">
+                {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
+                {% for option in collection.sort_options %}
+                  <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>{% render 'sort-option-name', option_value: option.value %}</option>
+                {% endfor %}
+              </select>
+            </div>
+
+          </div>
+        {% render 'layout--container', state: 'closed' %}
+      </div>
+
+      <div class="{{ section_name }}__main">
+        {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+          <div class="{{ section_name }}__listing listing--{{ section_name }}">
+            {%- for product in collection.products -%}
+              {% render 'card-product', product: product, style: section_name %}
+            {%- endfor -%}
+          </div>
+        {% render 'layout--container', state: 'closed' %}
+      </div>
+
+      {%- if paginate.pages > 1 -%}
+        {% render 'pagination', paginate: paginate, anchor: '' %}
+      {%- endif -%}
+
+    {%- endif -%}
+
+  {%- endpaginate -%}
+</div>
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+  Shopify.queryParams = {};
+
+  // Preserve existing query parameters
+  if (location.search.length) {
+    var params = location.search.substr(1).split('&');
+    for (var i = 0; i < params.length; i++) {
+      var keyValue = params[i].split('=');
+      if (keyValue.length) {
+        Shopify.queryParams[decodeURIComponent(keyValue[0])] = decodeURIComponent(keyValue[1]);
+      }
     }
   }
-{%- endstyle -%}
 
-<div class="section-{{ section.id }}-padding">
-  {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
-    {{ 'component-facets.css' | asset_url | stylesheet_tag }}
-    <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
-  
-    <div class="page-width" id="main-collection-filters" data-id="{{ section.id }}">
-      {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, collapse_on_larger_devices: section.settings.collapse_on_larger_devices %}
-    </div>
-  {%- endif -%}
-  
-  <div id="ProductGridContainer">
-    {%- paginate collection.products by section.settings.products_per_page -%}
-      {%- if collection.products.size == 0 -%}
-        <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
-          <div class="loading-overlay gradient"></div>
-          <div class="title-wrapper center">
-            <h2 class="title title--primary">
-              {{ 'sections.collection_template.empty' | t }}<br>
-              {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
-            </h2>
-          </div>
-        </div>
-      {%- else -%}
-        <div class="collection page-width">
-          <div class="loading-overlay gradient"></div>
-  
-          <ul id="product-grid" data-id="{{ section.id }}" class="
-            grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
-            {% if section.settings.columns_desktop == 1 %} grid--full-width{% else %}
-              grid--{{ section.settings.columns_desktop }}-col-desktop
-            {% endif %}">
-            {%- for product in collection.products -%}
-              {% assign lazy_load = false %}
-              {%- if forloop.index > 2 -%}
-                {%- assign lazy_load = true -%}
-              {%- endif -%}
+  // Update sort_by query parameter on select change
+  document.querySelector('#sort-by').addEventListener('change', function(e) {
+    Shopify.queryParams.sort_by = e.target.value;
+    location.search = new URLSearchParams(Shopify.queryParams).toString();
+  });
 
-              <li class="grid__item">
-                {% render 'card-product',
-                  card_product: product,
-                  media_aspect_ratio: section.settings.image_ratio,
-                  show_secondary_image: section.settings.show_secondary_image,
-                  show_vendor: section.settings.show_vendor,
-                  show_rating: section.settings.show_rating,
-                  lazy_load: lazy_load
-                %}
-              </li>
-            {%- endfor -%}
-          </ul>
-  
-          {%- if paginate.pages > 1 -%}
-            {% render 'pagination', paginate: paginate, anchor: '' %}
-          {%- endif -%}
-        </div>
-      {%- endif -%}
-    {%- endpaginate -%}
-  </div>
-</div>
+{% endjavascript %}
 
 {% schema %}
 {
-  "name": "t:sections.main-collection-product-grid.name",
-  "class": "section",
+  "name": "Collection Product Grid",
+  "class": "section section--collection-grid",
   "settings": [
     {
-      "type": "range",
-      "id": "products_per_page",
-      "min": 8,
-      "max": 24,
-      "step": 4,
-      "default": 16,
-      "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
-    },
-    {
-      "type": "range",
-      "id": "columns_desktop",
-      "min": 1,
-      "max": 5,
-      "step": 1,
-      "default": 4,
-      "label": "t:sections.main-collection-product-grid.settings.columns_desktop.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.main-collection-product-grid.settings.header__3.content"
-    },
-    {
+      "label": "Products per Page",
       "type": "select",
-      "id": "image_ratio",
       "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__1.label"
-        },
-        {
-          "value": "portrait",
-          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__2.label"
-        },
-        {
-          "value": "square",
-          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__3.label"
-        }
+        { "value": "3", "label": "3" },
+        { "value": "9", "label": "9" },
+        { "value": "12", "label": "12" },
+        { "value": "18", "label": "18" },
+        { "value": "24", "label": "24" }
       ],
-      "default": "adapt",
-      "label": "t:sections.main-collection-product-grid.settings.image_ratio.label"
+      "default": "9",
+      "id": "products_per_page"
     },
     {
+      "label": "Show second image on hover",
       "type": "checkbox",
-      "id": "show_secondary_image",
       "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_vendor",
-      "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_rating",
-      "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.show_rating.label",
-      "info": "t:sections.main-collection-product-grid.settings.show_rating.info"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.main-collection-product-grid.settings.header__1.content"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_filtering",
-      "default": true,
-      "label": "t:sections.main-collection-product-grid.settings.enable_filtering.label",
-      "info": "t:sections.main-collection-product-grid.settings.enable_filtering.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_sorting",
-      "default": true,
-      "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "collapse_on_larger_devices",
-      "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.collapse_on_larger_devices.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.main-collection-product-grid.settings.header_mobile.content"
-    },
-    {
-      "type": "select",
-      "id": "columns_mobile",
-      "default": "2",
-      "label": "t:sections.main-collection-product-grid.settings.columns_mobile.label",
-      "options": [
-        {
-          "value": "1",
-          "label": "t:sections.main-collection-product-grid.settings.columns_mobile.options__1.label"
-        },
-        {
-          "value": "2",
-          "label": "t:sections.main-collection-product-grid.settings.columns_mobile.options__2.label"
-        }
-      ]
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
+      "id": "show_secondary_image"
     }
   ]
 }

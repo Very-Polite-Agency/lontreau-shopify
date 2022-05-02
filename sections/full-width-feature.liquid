@@ -1,8 +1,8 @@
 {% assign section_name = 'full-width-feature' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
-{% assign cta_title = section.settings.cta_title | default: false %}
-{% assign cta_link = section.settings.cta_link | default: false %}
+{% assign cta_title = section.settings.cta_title | default: '' %}
+{% assign cta_link = section.settings.cta_link | default: '' %}
 {% assign heading = section.settings.heading | default: '' %}
 {% assign height = section.settings.height | default: 'auto' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: false %}
@@ -47,7 +47,7 @@
         <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
       {% endif %}
 
-      {% if cta_title and cta_link %}
+      {% if cta_title != blank and cta_link != blank %}
         <div class="{{ section_name }}__cta">
           <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
             <span class="button__title">{{ cta_title }}</span>

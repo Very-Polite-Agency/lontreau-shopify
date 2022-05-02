@@ -1,0 +1,38 @@
+{%- if article and article != blank -%}
+
+  {% assign snippet_name = 'card-article' %}
+  {% assign snippet_classes = snippet_name %}
+  {% assign snippet_id = snippet_name | append: '--' | append: article.id -%}
+
+  {% if classes and classes != empty %}
+    {% assign snippet_classes = snippet_classes | prepend: ' ' | prepend: classes %}
+  {% endif %}
+
+  {% assign autor = article.author | default: '' %}
+  {% assign date_published = article.published_at %}
+  {% assign image = article.image | default: false %}
+  {% assign title = article.title | default: '' %}
+  {% assign url = article.url | default: '' %}
+
+  <article class="{{ snippet_classes }}" id="{{ snippet_id }}">
+    <div class="{{ snippet_name }}__featured-image article__featured-image">
+      <a class="{{ snippet_name }}__featured-image-link" href="{{ url }}" title="{{ title }}" target="_self">
+        {%
+          render 'content--lazyload-image',
+          background: true,
+          image: image,
+        %}
+      </a>
+    </div>
+    <div class="{{ snippet_name }}__content">
+      <time class="{{ snippet_name }}__date article__date" datetime="{{ date_published | date: "%Y-%m-%d" }}">{{ date_published | date: "%B %e, %Y" }}</time>
+      <strong class="{{ snippet_name }}__title article__title">
+        <a class="{{ snippet_name }}__title-link" href="{{ url }}" title="{{ title }}" target="_self">{{ title }}</a>
+      </strong>
+      <div class="{{ snippet_name }}__cta article__title">
+        <a class="{{ snippet_name }}__cta-link link--text" href="{{ url }}" title="{{ title }}" target="_self">Read More</a>
+      </div>
+    </div>
+  </article>
+
+{%- endif -%}
