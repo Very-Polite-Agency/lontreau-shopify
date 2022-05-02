@@ -1,0 +1,24 @@
+.blog {_blog.scss
+
+  &__hero {
+    &-media {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      @supports not (aspect-ratio: auto) {
+        height: 300px;
+	    }
+    }
+  }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {} // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
+}
