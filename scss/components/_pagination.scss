@@ -1,0 +1,47 @@
+.pagination {
+
+  margin-top: 55px;
+
+  &__item {
+    color: rgba(var(--theme-colour-black),1);
+    font-family: var(--theme-font-family--sans-serif--primary);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 0.9;
+    text-transform: capitalize;
+    margin: 0 20px;
+    a {
+      transition: opacity var(--theme-transition-duration);
+      color: inherit;
+      opacity: 0.3;
+      text-decoration: none;
+      &:focus,
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__layout {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    margin-top: 75px;
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
+}

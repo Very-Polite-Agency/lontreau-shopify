@@ -5,7 +5,7 @@
 {% assign hero_heading_highlight = section.settings.hero_heading_highlight | default: false %}
 {% assign hero_image = section.settings.hero_image | default: false %}
 
-{%- paginate blog.articles by 9 -%}
+{%- paginate blog.articles by 3 -%}
 
   {% if hero_heading != blank or hero_image %}
     <div class="{{ section_name }}__hero">
@@ -31,9 +31,13 @@
 
   <div class="{{ section_name }}__main">
     {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
-      <div class="{{ section_name }}__list listing--grid">
+      <div class="{{ section_name }}__list listing--{{ section_name }}" data-paginate-pages-current="{{ paginate.current_page }}" data-paginate-pages="{{ paginate.pages }}">
         {%- for article in blog.articles -%}
-          {%- render 'card-article', article: article, classes: 'blog__article' -%}
+          {% assign card_style = section_name %}
+          {% if forloop.index == 1 and paginate.current_page == 1 %}
+            {% assign card_style = section_name | append: '--featured' %}
+          {% endif %}
+          {%- render 'card-article', article: article, classes: 'blog__article', style: card_style -%}
         {%- endfor -%}
       </div>
     {% render 'layout--container', state: 'closed' %}

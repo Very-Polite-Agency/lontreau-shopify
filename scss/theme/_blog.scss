@@ -1,24 +1,81 @@
-.blog {_blog.scss
+.blog {
 
   &__hero {
-    &-media {
-      position: relative;
+    position: relative;
+    &-content {
+      color: rgba(var(--theme-colour-white),1);
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      aspect-ratio: 16/9;
-      @supports not (aspect-ratio: auto) {
-        height: 300px;
-	    }
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+    &-media {
+      max-height: var(--theme-hero-height);
+      height: 100vh;
+    }
+    & + .blog__main {
+      margin-top: 30px;
     }
   }
 
-  @include breakpoint(sm) {} // min width sm
+  &__main {}
 
-  @include breakpoint(md) {} // min width md
+  @include breakpoint(sm) {
 
-  @include breakpoint(lg) {} // min width lg
+    &__hero {
+      &-media {
+        max-height: var(--theme-hero-height--sm);
+      }
+    }
 
-  @include breakpoint(xl) {} // min width xl
+  } // min width sm
 
-  @include breakpoint(xxl) {} // min width xxl
+  @include breakpoint(md) {
+
+    &__hero {
+      &-media {
+        max-height: var(--theme-hero-height--md);
+      }
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {
+
+    &__hero {
+      &-media {
+        max-height: var(--theme-hero-height--lg);
+      }
+      & + .blog__main {
+        margin-top: 130px;
+      }
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {
+
+    &__hero {
+      &-media {
+        max-height: var(--theme-hero-height--xl);
+      }
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    &__hero {
+      &-media {
+        max-height: var(--theme-hero-height--xxl);
+      }
+    }
+
+  } // min width xxl
 
 }

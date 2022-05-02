@@ -115,6 +115,14 @@
   --theme-header-height--xl: #{ map-get( $theme-header-heights, 'xl' ) };
   --theme-header-height--xxl: #{ map-get( $theme-header-heights, 'xxl' ) };
 
+    // ---------------------------------------- Header
+  --theme-hero-height: #{ map-get( $theme-hero-heights, 'base' ) };
+  --theme-hero-height--sm: #{ map-get( $theme-hero-heights, 'sm' ) };
+  --theme-hero-height--md: #{ map-get( $theme-hero-heights, 'md' ) };
+  --theme-hero-height--lg: #{ map-get( $theme-hero-heights, 'lg' ) };
+  --theme-hero-height--xl: #{ map-get( $theme-hero-heights, 'xl' ) };
+  --theme-hero-height--xxl: #{ map-get( $theme-hero-heights, 'xxl' ) };
+
   // ---------------------------------------- Font Families
   --theme-font-family--sans-serif: sans-serif;
   --theme-font-family--serif: sans-serif;
@@ -151,6 +159,7 @@
 @import './components/button.scss';
 @import './components/caption.scss';
 @import './components/card.scss';
+@import './components/card-article.scss';
 @import './components/carousel-education.scss';
 @import './components/collapsible.scss';
 @import './components/contact-form.scss';
@@ -167,6 +176,7 @@
 @import './components/label.scss';
 @import './components/lazyload.scss';
 @import './components/link.scss';
+@import './components/listing.scss';
 @import './components/navigation.scss';
 @import './components/pagination.scss';
 @import './components/section.scss';

@@ -119,6 +119,15 @@ $theme-header-heights: (
   'xxl': 110px
 );
 
+$theme-hero-heights: (
+  'base': 100vh,
+  'sm': 66vh,
+  'md': 75vh,
+  'lg': 375px,
+  'xl': 475px,
+  'xxl': 575px
+);
+
 // ---------------------------------------- Bootstrap | Gutter
 $grid-gutter-width: 20px;
 
