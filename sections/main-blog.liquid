@@ -2,37 +2,30 @@
 {%- assign section_id = section_name | append: '--' | append: section.id -%}
 
 {% assign hero_heading = section.settings.hero_heading | default: '' %}
+{% assign hero_heading_highlight = section.settings.hero_heading_highlight | default: false %}
 {% assign hero_image = section.settings.hero_image | default: false %}
-{% assign hero_info = section.settings.hero_info | default: '' %}
-{% assign hero_text_colour_theme = section.settings.hero_text_colour_theme | default: 'light' %}
-{% assign post_per_page = section.settings.post_per_page | default: 6 %}
 
-{%- paginate blog.articles by post_per_page -%}
+{%- paginate blog.articles by 9 -%}
 
-  {% if hero_heading != blank or hero_info != blank or hero_image %}
+  {% if hero_heading != blank or hero_image %}
     <div class="{{ section_name }}__hero">
-      {% render 'layout--container', state: 'open' %}
-        <div class="{{ section_name }}__hero-main">
-
-          {% if hero_image %}
-            <div class="{{ section_name }}__hero-media">
-              {%
-                render 'content--lazyload-image',
-                background: true,
-                image: hero_image,
-              %}
-            </div>
-          {% endif %}
-
-          {% if hero_heading != blank or hero_info != blank %}
-            <div class="{{ section_name }}__hero-content" data-text-colour-theme-{{ hero_text_colour_theme }}>
-              {% if hero_heading != blank %}<h1 class="{{ section_name }}__title heading--1">{{ hero_heading }}</h1>{% endif %}
-              {% if hero_info != blank %}<div class="{{ section_name }}__info body-copy--1">{{ hero_info }}</div>{% endif %}
-            </div>
-          {% endif %}
-
+      {% if hero_image %}
+        <div class="{{ section_name }}__hero-media">
+          {%
+            render 'content--lazyload-image',
+            background: true,
+            classes: 'blog__background-image',
+            image: hero_image,
+          %}
         </div>
-      {% render 'layout--container', state: 'closed' %}
+      {% endif %}
+      {% if hero_heading != blank %}
+        <div class="{{ section_name }}__hero-content">
+          {% if hero_heading != blank %}
+            <div class="{{ section_name }}__heading heading--2 {% if hero_heading_highlight %} highlight--{{ hero_heading_highlight }}{% endif %}">{{ hero_heading }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
     </div>
   {% endif %}
 
@@ -74,23 +67,19 @@
     },
     {
       "label": "Heading",
-      "type": "text",
+      "type": "richtext",
       "id": "hero_heading"
     },
     {
-      "label": "Info",
-      "type": "richtext",
-      "id": "hero_info"
-    },
-    {
-      "label": "Text Colour Theme",
+      "label": "Heading Highlight",
       "type": "select",
       "options": [
-        { "value": "light", "label": "Light" },
-        { "value": "dark", "label": "Dark" }
+        { "value": "standard", "label": "Standard" },
+        { "value": "stroke", "label": "Stroke" },
+        { "value": "circle", "label": "Circle" }
       ],
-      "default": "light",
-      "id": "hero_text_colour_theme"
+      "default": "standard",
+      "id": "hero_heading_highlight"
     },
     {
       "content": "Media",
@@ -100,19 +89,6 @@
       "label": "Image",
       "type": "image_picker",
       "id": "hero_image"
-    },
-    {
-      "content": "Settings",
-      "type": "header"
-    },
-    {
-      "label": "Posts per page",
-      "type": "range",
-      "min": 6,
-      "max": 16,
-      "step": 2,
-      "default": 6,
-      "id": "post_per_page"
     }
   ]
 }
