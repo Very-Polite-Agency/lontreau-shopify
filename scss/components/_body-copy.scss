@@ -1,7 +1,7 @@
 .body-copy {
 
   ol, p, ul {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
   }
 
   p, li {
@@ -33,6 +33,7 @@
     margin-bottom: 0;
   }
 
+  &--1,
   &--regular {
     @extend .body-copy;
     font-family: var(--theme-font-family--serif--primary);
@@ -74,7 +75,13 @@
 
   @include breakpoint(md) {} // min width md
 
-  @include breakpoint(lg) {} // min width lg
+  @include breakpoint(lg) {
+
+    ol, p, ul {
+      margin-bottom: 28px;
+    }
+
+  } // min width lg
 
   @include breakpoint(xl) {} // min width xl
 

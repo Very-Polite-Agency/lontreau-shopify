@@ -15,15 +15,12 @@
 
   <div class="{{ section_name }}__hero">
     {% if featured_image %}
-      {% render 'layout--container', state: 'open', col: 'col-12 col-lg-6 offset-lg-3' %}
-        <div class="{{ section_name }}__hero-image">
-          {%
-            render 'content--lazyload-image',
-            alt_text: title,
-            image: featured_image,
-          %}
-        </div>
-      {% render 'layout--container', state: 'closed' %}
+      {%
+        render 'content--lazyload-image',
+        background: true,
+        classes: 'article__hero-image',
+        image: featured_image,
+      %}
     {% endif %}
   </div>
 
@@ -32,7 +29,7 @@
 
       <time class="{{ section_name }}__date" datetime="{{ date_published | date: "%Y-%m-%d" }}">{{ date_published | date: "%B %e, %Y" }}</time>
 
-      <h1 class="{{ section_name }}__title">{{ title }}</h1>
+      <h1 class="{{ section_name }}__title heading--3">{{ title }}</h1>
 
       {% if content != blank %}
         <div class="{{ section_name }}__content rte body-copy--1">{{ content }}</div>
@@ -49,14 +46,14 @@
 
   {% if article_next or article_previous %}
     <div class='{{ section_name }}__footer'>
-      {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+      {% render 'layout--container', state: 'open', col: 'col-12' %}
         <h2 class='{{ section_name }}__heading heading--1'>Related Articles</h2>
         <div class='{{ section_name }}__related-articles listing--flex'>
           {% if article_previous %}
-            {%- render 'card-article', article: article_previous, classes: 'article__related-articles-item previous' -%}
+            {%- render 'card-article', article: article_previous, classes: 'article__related-articles-item previous', style: 'blog' -%}
           {% endif %}
           {% if article_next %}
-            {%- render 'card-article', article: article_next, classes: 'article__related-articles-item next' -%}
+            {%- render 'card-article', article: article_next, classes: 'article__related-articles-item next', style: 'blog' -%}
           {% endif %}
         </div>
       {% render 'layout--container', state: 'close' %}

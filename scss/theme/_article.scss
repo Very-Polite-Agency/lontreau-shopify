@@ -5,6 +5,25 @@
     display: block;
   }
 
+  &__content {
+    p:first-of-type {
+      font-size: 20px;
+      position: relative;
+      &:after {
+        display: block;
+        content: '';
+        background: url('./LONTREAU--highlight--stroke.svg');
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: 100% auto;
+        height: 10px;
+        left: 0;
+        width: 100%;
+        margin-top: 22px;
+      }
+    }
+  }
+
   &__date {
     color: rgba(var(--theme-colour-grass),1);
     font-family: var(--theme-font-family--sans-serif--primary);
@@ -14,27 +33,82 @@
     line-height: 1.12;
     letter-spacing: 0.07em;
     text-transform: uppercase;
+    & + .article__title {
+      margin-top: 14px;
+    }
+  }
+
+  &__hero {
+    max-height: var(--theme-hero-height);
+    height: 100vh;
+    position: relative;
+    & + .article__body {
+      margin-top: 50px;
+    }
   }
 
   &__title {
     font-family: var(--theme-font-family--serif--primary);
     font-style: normal;
     font-weight: 400;
+    & + .article__content {
+      margin-top: 28px;
+    }
   }
 
-  @include breakpoint(sm) {} // min width sm
+  @include breakpoint(sm) {
 
-  @include breakpoint(md) {} // min width md
+    &__hero {
+      max-height: var(--theme-hero-height--sm);
+    }
+
+  } // min width sm
+
+  @include breakpoint(md) {
+
+    &__hero {
+      max-height: var(--theme-hero-height--md);
+    }
+
+  } // min width md
 
   @include breakpoint(lg) {
 
+    &__content {
+      p:first-of-type {
+        &:after {
+          margin-top: 28px;
+        }
+      }
+    }
+
+    &__hero {
+      max-height: var(--theme-hero-height--lg);
+      & + .article__body {
+        margin-top: 75px;
+      }
+    }
+
     &__date {
       font-size: 15px;
+      & + .article__title {
+        margin-top: 26px;
+      }
+    }
+
+    &__title {
+      & + .article__content {
+        margin-top: 32px;
+      }
     }
 
   } // min width lg
 
   @include breakpoint(xl) {
+
+    &__hero {
+      max-height: var(--theme-hero-height--xl);
+    }
 
     &__date {
       font-size: 16px;
@@ -43,6 +117,10 @@
   } // min width xl
 
   @include breakpoint(xxl) {
+
+    &__hero {
+      max-height: var(--theme-hero-height--xxl);
+    }
 
     &__date {
       font-size: 17px;

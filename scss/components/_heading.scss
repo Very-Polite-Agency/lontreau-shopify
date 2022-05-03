@@ -19,18 +19,26 @@
   }
 
   &--2,
+  &--3,
   &--4 {
     @extend .heading;
   }
 
-  &--2 {
-    @extend .heading;
+  &--2,
+  &--3 {
     font-family: var(--theme-font-family--serif--primary);
     font-style: normal;
     font-weight: 400;
-    font-size: 37px;
     line-height: 1.14;
     letter-spacing: -0.02em;
+  }
+
+  &--2 {
+    font-size: 37px;
+  }
+
+  &--3 {
+    font-size: 28px;
   }
 
   &--4 {
@@ -49,6 +57,10 @@
       font-size: 44px;
     }
 
+    &--3 {
+      font-size: 32px;
+    }
+
     &--4 {
       font-size: 20px;
     }
@@ -59,6 +71,10 @@
 
     &--2 {
       font-size: 48px;
+    }
+
+    &--3 {
+      font-size: 36px;
     }
 
     &--4 {
@@ -78,18 +94,32 @@
       }
     }
 
+    &--3 {
+      font-size: 36px;
+    }
+
     &--4 {
       font-size: 20px;
     }
 
   } // min width lg
 
-  @include breakpoint(xl) {} // min width xl
+  @include breakpoint(xl) {
+
+    &--3 {
+      font-size: 38px;
+    }
+
+  } // min width xl
 
   @include breakpoint(xxl) {
 
     &--2 {
       font-size: 62px;
+    }
+
+    &--3 {
+      font-size: 40px;
     }
 
     &--4 {
