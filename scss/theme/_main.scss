@@ -1,0 +1,23 @@
+main {
+
+  &.template--blog {
+    padding-bottom: 65px;
+  }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    &.template--blog {
+      padding-bottom: 95px;
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
+}

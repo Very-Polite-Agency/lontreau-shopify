@@ -51,6 +51,7 @@
 
   &__title {
     font-size: 14px;
+    line-height: 1.33;
     &-link {
       transition: opacity var(--theme-transition-duration);
       color: inherit;
@@ -69,6 +70,7 @@
 
   [data-paginate-pages-current="1"] & {
     &:first-child {
+      margin-bottom: 10px;
       .card-article {
         &__date {
           & + .card-article__title {
@@ -94,18 +96,145 @@
 
   @include breakpoint(lg) {
 
+    &__date {
+      & + .card-article__title {
+        margin-top: 11px;
+      }
+    }
+
+    &__featured-image {
+      aspect-ratio: 16/9;
+      @supports not (aspect-ratio: auto) {
+        height: 300px;
+      }
+      & + .card-article__content {
+        margin-top: 20px;
+      }
+    }
+
+    &__title {
+      font-size: 22px;
+      & + .card-article__excerpt {
+        margin-top: 20px;
+      }
+    }
+
     [data-paginate-pages-current="1"] & {
       &:first-child {
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
+        column-gap: var(--bs-gutter-width);
+        .card-article {
+          &__content {
+            order: 1;
+            padding: 0 var(--bs-gutter-width);
+          }
+          &__date {
+            & + .card-article__title {
+              margin-top: 12px;
+            }
+          }
+          &__excerpt {
+            font-size: 17px;
+          }
+          &__featured-image {
+            order: 2;
+            aspect-ratio: 3/2;
+            & + .card-article__content {
+              margin: 0;
+            }
+          }
+          &__title {
+            font-size: 32px;
+            line-height: 1.14;
+          }
+        }
       }
     }
 
   } // min width lg
 
-  @include breakpoint(xl) {} // min width xl
+  @include breakpoint(xl) {
 
-  @include breakpoint(xxl) {} // min width xxl
+    &__date {
+      & + .card-article__title {
+        margin-top: 12px;
+      }
+    }
+
+    &__featured-image {
+      & + .card-article__content {
+        margin-top: 22px;
+      }
+    }
+
+    &__title {
+      font-size: 24px;
+      & + .card-article__excerpt {
+        margin-top: 22px;
+      }
+    }
+
+    [data-paginate-pages-current="1"] & {
+      &:first-child {
+        .card-article {
+          &__date {
+            & + .card-article__title {
+              margin-top: 13px;
+            }
+          }
+          &__excerpt {
+            font-size: 18px;
+          }
+          &__title {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    &__date {
+      & + .card-article__title {
+        margin-top: 13px;
+      }
+    }
+
+    &__featured-image {
+      & + .card-article__content {
+        margin-top: 24px;
+      }
+    }
+
+    &__title {
+      font-size: 26px;
+      & + .card-article__excerpt {
+        margin-top: 24px;
+      }
+    }
+
+    [data-paginate-pages-current="1"] & {
+      &:first-child {
+        .card-article {
+          &__date {
+            & + .card-article__title {
+              margin-top: 14px;
+            }
+          }
+          &__excerpt {
+            font-size: 19px;
+          }
+          &__title {
+            font-size: 42px;
+          }
+        }
+      }
+    }
+
+  } // min width xxl
 
 }

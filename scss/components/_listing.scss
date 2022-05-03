@@ -52,8 +52,8 @@
 
   @include breakpoint(lg) {
 
-    &--collection-product-grid {
-      grid-template-columns: 1fr 1fr 1fr;
+    &--blog {
+      row-gap: 75px;
     }
 
   } // min width lg

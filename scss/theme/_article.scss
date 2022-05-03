@@ -20,8 +20,34 @@
     font-family: var(--theme-font-family--serif--primary);
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.33;
   }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    &__date {
+      font-size: 15px;
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {
+
+    &__date {
+      font-size: 16px;
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    &__date {
+      font-size: 17px;
+    }
+
+  } // min width xxl
 
 }

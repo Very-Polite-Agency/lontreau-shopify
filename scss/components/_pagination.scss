@@ -6,20 +6,37 @@
     color: rgba(var(--theme-colour-black),1);
     font-family: var(--theme-font-family--sans-serif--primary);
     font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 0.9;
-    text-transform: capitalize;
-    margin: 0 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin: 0 10px;
+    a,
+    span {
+      background: rgba(var(--theme-colour-grass),0);
+      color: rgba(var(--theme-colour-black),0.3333);
+      border-radius: 100%;
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
     a {
-      transition: opacity var(--theme-transition-duration);
-      color: inherit;
-      opacity: 0.3;
+      transition:
+        background var(--theme-transition-duration),
+        color var(--theme-transition-duration);
       text-decoration: none;
       &:focus,
       &:hover {
-        opacity: 1;
+        background: rgba(var(--theme-colour-grass),1);
+        color: rgba(var(--theme-colour-black),1);
       }
+    }
+    span {
+      background: rgba(var(--theme-colour-grass),1);
+      color: rgba(var(--theme-colour-black),1);
     }
   }
 
@@ -36,7 +53,7 @@
 
   @include breakpoint(lg) {
 
-    margin-top: 75px;
+    margin-top: 85px;
 
   } // min width lg
 
