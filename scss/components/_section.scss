@@ -17,6 +17,15 @@
       }
     }
 
+    &__title {
+      & + .intro__heading {
+        margin-top: 24px;
+      }
+      & + .intro__message {
+        margin-top: 18px;
+      }
+    }
+
     & + .main {
       margin-top: 45px;
     }

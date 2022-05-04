@@ -1,3 +1,31 @@
 .cards-feature  {
-  background: red;
+
+  &__intro {
+    text-align: center;
+    & + .cards-feature__main {
+      margin-top: 55px;
+    }
+  }
+
+  &__title {
+    color: rgba(var(--theme-colour-grass),1);
+  }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    &__intro {
+      & + .cards-feature__main {
+        margin-top: 80px;
+      }
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
 }
