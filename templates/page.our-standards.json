@@ -10,6 +10,7 @@
         "message": "",
         "cta_title": "",
         "cta_link": "",
+        "image": "shopify:\/\/shop_images\/full-width-feature-01.png",
         "parallax": false,
         "anchor_id": "",
         "height": "auto"
@@ -18,6 +19,7 @@
     "165050592499e00319": {
       "type": "fifty-fifty-feature",
       "settings": {
+        "title": "",
         "heading": "<p>Packaging <em>Features<\/em> <\/p>",
         "heading_highlight": "standard",
         "message": "<p>Our serums are stability-tested and safely housed in our unique, 100% recyclable airless containers. Instead of using springs, our mono-material technology ensures the entirety of the packaging can be recycled and maintains the integrity of the ingredients by protecting them from oxidization to ensure the longevity and quality of every Lontreau product. The lightweight packaging is designed to be easily thrown into your sports bag so your kit can come with you, wherever you go.<\/p>",
