@@ -231,26 +231,6 @@ const Forms = (() => {
 
     $form.classList.add('posting');
 
-    // if ( $form && action && data ) {
-    //   $.ajax({
-    //     url: action,
-    //     type: 'POST',
-    //     //async: true,  // maybe disable with formspree?
-    //     data: data,
-    //     //dataType: "json", //
-    //     processData: false,
-    //     contentType: false,
-    //     success: function ( $data, $textStatus, $jqXHR ) {
-    //       console.log( '[ Forms.init() ] Ajax Success', this.data );
-    //       confirmation( $form );
-    //     },
-    //     error: function( $jqXHR, $textStatus, $errorThrown ) {
-    //       console.log( '[ Forms.init() ] Ajax Error' );
-    //       console.log( [ $jqXHR, $textStatus, $errorThrown ] );
-    //     }
-    //   });
-    // }
-
     axios.post( formAction, formData, options )
       .then(( data ) => {
         if ( debug ) console.log( 'then() data :: ', data );
@@ -262,8 +242,10 @@ const Forms = (() => {
         console.log( 'catch() data :: ', data );
       }).finally(() => {
         $form.reset();
-        $form.classList.remove('posting');
-      });
+        setTimeout(() => {
+          $form.classList.remove('posting');
+        }, 2500 );
+    });
 
   };
 
