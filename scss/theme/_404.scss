@@ -1,9 +1,28 @@
 .error-404 {
-
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-flow: column;
+  &__heading {
+    & + .error-404__cta {
+      margin-top: 50px;
+    }
+  }
+  @include breakpoint(sm) {} // min width sm
 
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+    &__heading {
+      & + .error-404__cta {
+        margin-top: 42px;
+      }
+    }
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
 }
