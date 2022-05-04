@@ -46,9 +46,8 @@
 
   {% if article_next or article_previous %}
     <div class='{{ section_name }}__footer'>
-      {% render 'bs-container', state: 'open', col: 'col-12' %}
-        <h2 class='{{ section_name }}__heading heading--1'>Related Articles</h2>
-        <div class='{{ section_name }}__related-articles listing--flex'>
+      {% render 'bs-container', state: 'open' %}
+        <div class='{{ section_name }}__related-articles listing--related-articles'>
           {% if article_previous %}
             {%- render 'card-article', article: article_previous, classes: 'article__related-articles-item previous', style: 'blog' -%}
           {% endif %}
