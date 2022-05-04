@@ -63,11 +63,9 @@
 
         {% if cta %}
           <div class="{{ section_name }}__cta">
-            {% render 'bs-container', state: 'open' %}
-              <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
-                <span class="button__title">{{ cta_title }}</span>
-              </a>
-            {% render 'bs-container', state: 'close' %}
+            <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
+              <span class="button__title">{{ cta_title }}</span>
+            </a>
           </div>
         {% endif %}
 
