@@ -18,6 +18,26 @@
     },
     "1651706615bd39644c": {
       "type": "cards-feature",
+      "blocks": {
+        "733b495d-6871-481b-8958-0da708b77c8e": {
+          "type": "card",
+          "settings": {
+            "title": "Ingredients",
+            "message": ""
+          }
+        },
+        "0e464fce-edaa-427b-90ad-e390c3d89341": {
+          "type": "card",
+          "settings": {
+            "title": "Packaging",
+            "message": ""
+          }
+        }
+      },
+      "block_order": [
+        "733b495d-6871-481b-8958-0da708b77c8e",
+        "0e464fce-edaa-427b-90ad-e390c3d89341"
+      ],
       "settings": {
         "title": "Our Journey to sustainable",
         "heading": "",
