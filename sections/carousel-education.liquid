@@ -51,7 +51,7 @@
                 {% if is_glider %}<li class="glide__slide">{% endif %}
                   <div class="{{ section_name }}__item">
                     {% if image %}
-                      <div class="{{ section_name }}__image">{% render 'content--lazyload-image', alt_text: title, image: image %}</div>
+                      <div class="{{ section_name }}__image">{% render 'lazyload-image', alt_text: title, image: image %}</div>
                     {% endif %}
                     {% if title %}
                       <strong class="{{ section_name }}__title label--primary">{{ title }}<span class="{{ section_name }}__hr"></span></strong>

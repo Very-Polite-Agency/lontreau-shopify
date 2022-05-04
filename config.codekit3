@@ -2904,14 +2904,6 @@
       "oAP" : "\/snippets\/cart-notification.liquid",
       "oF" : 0
     },
-    "\/snippets\/content--lazyload-image.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/snippets\/content--lazyload-image.liquid",
-      "oF" : 0
-    },
     "\/snippets\/email-signup-banner-background-mobile.liquid" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2982,6 +2974,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/snippets\/label.liquid",
+      "oF" : 0
+    },
+    "\/snippets\/lazyload-image.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/lazyload-image.liquid",
       "oF" : 0
     },
     "\/snippets\/navigation.liquid" : {

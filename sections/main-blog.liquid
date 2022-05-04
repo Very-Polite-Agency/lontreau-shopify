@@ -12,7 +12,7 @@
       {% if hero_image %}
         <div class="{{ section_name }}__hero-media">
           {%
-            render 'content--lazyload-image',
+            render 'lazyload-image',
             background: true,
             classes: 'blog__background-image',
             image: hero_image,

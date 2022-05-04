@@ -50,7 +50,23 @@
         <div class="{{ section_name }}__cards">
           {% for block in cards %}
 
+            {% assign image = block.settings.image | default: false %}
+            {% assign message = block.settings.message | default: '' %}
+            {% assign title = block.settings.title | default: '' %}
 
+            {% if title != blank and message != blank %}
+              <div class="{{ section_name }}__cards-item">
+                {% if image %}
+                  <div class="{{ section_name }}__cards-item-image">
+                    {% render 'lazyload-image', alt_text: title, image: image %}
+                  </div>
+                {% endif %}
+                <div class="{{ section_name }}__cards-item-content">
+                  <strong class="{{ section_name }}__cards-item-title">{{ title }}</strong>
+                  <div class="{{ section_name }}__cards-item-message body-copy--1">{{ message }}</div>
+                </div>
+              </div>
+            {% endif %}
 
           {% endfor %}
         </div>

@@ -21,7 +21,7 @@
   <div class="{{ section_name }}__media">
     {% if parallax %}<div class='{{ section_name }}__media-clip media__clip'>{% endif %}
       {%
-        render 'content--lazyload-image',
+        render 'lazyload-image',
         background: true,
         classes: 'full-width-feature__background-image',
         image: image,

@@ -19,7 +19,7 @@
 
         {% if image %}
           <div class="{{ section_name }}__image {% if hide_image_mobile %}d-none d-lg-block{% endif %}">
-            {% render 'content--lazyload-image', image: image %}
+            {% render 'lazyload-image', image: image %}
           </div>
         {% endif %}
 

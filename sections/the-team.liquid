@@ -57,7 +57,7 @@
                 {% if photo %}
                   <div class="{{ section_name }}__item-photo">
                     {%
-                      render 'content--lazyload-image',
+                      render 'lazyload-image',
                       alt_text: name,
                       image: photo,
                       duration: 300,
