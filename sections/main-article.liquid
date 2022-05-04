@@ -40,10 +40,7 @@
         <div class="{{ section_name }}__content rte body-copy--1">{{ content }}</div>
       {% endif %}
 
-      {% if tags.size %}
-        {%- render 'tags', classes: 'article__tags', blog: blog, tags: tags -%}
-      {%- endif -%}
-
+      {%- render 'tags', classes: 'article__tags', blog: blog, tags: tags -%}
       {%- render 'share-this', classes: 'article__share-this', title: title -%}
 
     {% render 'bs-container', state: 'closed' %}

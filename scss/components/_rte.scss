@@ -1,0 +1,31 @@
+.rte {
+
+  p {
+    position: relative;
+  }
+
+  img {
+    width: calc( 100% + (2*var(--bs-container-fluid-padding)) );
+    left: calc( -1 * var(--bs-container-fluid-padding));
+    display: block;
+    position: relative;
+  }
+
+  @include breakpoint(sm) {
+
+    img {
+      width: 100%;
+      left: unset;
+    }
+
+  } // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {} // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
+}

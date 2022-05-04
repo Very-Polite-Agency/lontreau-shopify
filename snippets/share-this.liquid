@@ -37,11 +37,11 @@
       <div class="{{ snippet_name }}__item label">Share</div>
 
       <div class="{{ snippet_name }}__item facebook">
-        <a href="http://www.facebook.com/sharer/sharer.php?u={{ shareable_url | url_encode }}&t={{ title | url_encode }}" target="_blank" rel="noopener" title="Share on Facebook">FB</a>
+        <a href="http://www.facebook.com/sharer/sharer.php?u={{ shareable_url | url_encode }}&t={{ title | url_encode }}" target="_blank" rel="noopener" title="Share on Facebook">{% render 'svg', type: 'icon.facebook' %}</a>
       </div>
 
       <div class="{{ snippet_name }}__item twitter">
-        <a href="https://twitter.com/intent/tweet?url={{ shareable_url | url_encode }}&via={{ twitter_account }}" target="_blank" rel="noopener" title="Share on Twitter">TW</a>
+        <a href="https://twitter.com/intent/tweet?url={{ shareable_url | url_encode }}&via={{ twitter_account }}" target="_blank" rel="noopener" title="Share on Twitter">{% render 'svg', type: 'icon.twitter' %}</a>
       </div>
 
       <div class="{{ snippet_name }}__item email">
