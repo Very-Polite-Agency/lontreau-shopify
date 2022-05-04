@@ -18,26 +18,26 @@
   {% assign cta = true %}
 {% endif %}
 
-<div class="{{ section_name }}" id="{{ section_id }}">
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
 
   {% if heading != blank or message != blank %}
     <div class="{{ section_name }}__intro">
       {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
 
         {% if title != blank %}
-          <strong class="{{ section_name }}__title title--1">{{ title }}</strong>
+          <strong class="{{ section_name }}__title intro__title title--1">{{ title }}</strong>
         {% endif %}
 
         {%
           render 'heading-highlight',
-          classes: 'cards-feature__heading heading--2',
+          classes: 'cards-feature__heading intro__heading heading--2',
           heading: heading,
           style: heading_highlight,
           tag: 'h2'
         %}
 
         {% if message != blank %}
-          <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
+          <div class="{{ section_name }}__message intro__message body-copy--regular">{{ message }}</div>
         {% endif %}
 
       {% render 'bs-container', state: 'closed' %}
