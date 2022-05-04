@@ -47,6 +47,10 @@
     }
   }
 
+  &__related-articles {
+    margin-top: 45px;
+  }
+
   &__title {
     font-family: var(--theme-font-family--serif--primary);
     font-style: normal;
@@ -94,6 +98,10 @@
       & + .article__title {
         margin-top: 26px;
       }
+    }
+
+    &__related-articles {
+      margin-top: 55px;
     }
 
     &__title {

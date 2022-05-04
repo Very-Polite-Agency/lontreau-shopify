@@ -40,6 +40,14 @@
     }
   }
 
+  &--related-articles {
+    column-gap: var(--bs-gutter-width);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
   @include breakpoint(sm) {} // min width sm
 
   @include breakpoint(md) {
