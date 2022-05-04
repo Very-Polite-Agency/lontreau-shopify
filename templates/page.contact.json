@@ -1,7 +1,8 @@
 {
   "order": [
     "main",
-    "1650406218faa7e24c"
+    "1650406218faa7e24c",
+    "1651704899ef2f90f5"
   ],
   "sections": {
     "main": {
@@ -27,6 +28,21 @@
         "heading_highlight": "circle",
         "message": "<p>Fill out the the form below and we’ll get back to your inquiry within 2 business days.<\/p>",
         "anchor_id": ""
+      }
+    },
+    "1651704899ef2f90f5": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "Don’t Like Forms? Email us at",
+        "heading": "<p>hello@lontreau.com<\/p>",
+        "heading_highlight": "standard",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "auto"
       }
     }
   }
