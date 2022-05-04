@@ -1,5 +1,5 @@
 {% assign section_name = 'error-404' %}
-{% assign section_id = section_name | append: '--' | append: section.id %}
+{% assign section_id = section_name | append: '--' | section.id %}
 
 {% assign colour_theme = section.settings.colour_theme | default: 'light' %}
 {% assign cta_title = section.settings.cta_title | default: false %}
@@ -7,8 +7,8 @@
 {% assign heading = section.settings.heading | default: '' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: 'standard' %}
 
-<div class="{{ section_name }}" id="{{ section_id }}">
-  {% render 'bs-container', state: 'open', col: 'col-12 col-lg-6 offset-lg-3' %}
+<div class="{{ section_name }}" id="{{ section_id }}" data-colour-theme-{{ colour_theme }}>
+  {% render 'bs-container', state: 'open' %}
     <div class="{{ section_name }}__main">
 
       {%
@@ -41,6 +41,7 @@
   {
     "name": "404",
     "tag": "section",
+    "class": "section section--error-404",
     "settings": [
       {
         "content": "Content",
