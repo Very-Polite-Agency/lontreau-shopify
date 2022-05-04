@@ -54,6 +54,23 @@
         "anchor_id": ""
       }
     },
+    "16505596403ca3ddd4": {
+      "type": "fifty-fifty-feature",
+      "settings": {
+        "title": "About the Clinic",
+        "heading": "",
+        "heading_highlight": "standard",
+        "message": "<p>8 West is built on the premise that self-betterment is about more than looking younger or living longer — it’s about living better. Since opening 8 West over 10 years ago, the clinic has become recognised for delivering reliable medical aesthetic treatments and accomplished cosmetic surgery, all with a family feel.<\/p>",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/LONTREAU--about-page--FF_2x_5d60e7b7-8a91-40cc-8e20-e22eea40eb4d.png",
+        "hide_image_mobile": false,
+        "anchor_id": "",
+        "style": "wide",
+        "layout": "image-right",
+        "colour_theme": "grey"
+      }
+    },
     "165040682270d7b672": {
       "type": "accordion-with-image",
       "blocks": {
@@ -100,29 +117,13 @@
         "anchor_id": "",
         "layout": "image-left"
       }
-    },
-    "16505596403ca3ddd4": {
-      "type": "fifty-fifty-feature",
-      "settings": {
-        "heading": "",
-        "heading_highlight": "standard",
-        "message": "<p>8 West is built on the premise that self-betterment is about more than looking younger or living longer — it’s about living better. Since opening 8 West over 10 years ago, the clinic has become recognised for delivering reliable medical aesthetic treatments and accomplished cosmetic surgery, all with a family feel.<\/p>",
-        "cta_title": "",
-        "cta_link": "",
-        "image": "shopify:\/\/shop_images\/LONTREAU--about-page--FF_2x_5d60e7b7-8a91-40cc-8e20-e22eea40eb4d.png",
-        "hide_image_mobile": false,
-        "anchor_id": "",
-        "style": "wide",
-        "layout": "image-right",
-        "colour_theme": "grey"
-      }
     }
   },
   "order": [
     "main",
     "1650406820d7117f5d",
     "16504147450799a25f",
-    "165040682270d7b672",
-    "16505596403ca3ddd4"
+    "16505596403ca3ddd4",
+    "165040682270d7b672"
   ]
 }
