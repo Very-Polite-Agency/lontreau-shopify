@@ -3,17 +3,42 @@
   &__cards {
 
     &-content {
-      background: rgba(var(--theme-colour-asphalt),1);
+      background: rgba(var(--theme-colour-asphalt),0.1);
+      color: rgba(var(--theme-colour-asphalt),1);
+      font-family: var(--theme-font-family--sans-serif--primary);
       padding: 40px 30px 50px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 0.9;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      a {
+        color: rgba(var(--theme-colour-grass),1);
+        border-bottom: 1px solid rgba(var(--theme-colour-grass),1);
+      }
     }
 
-    &-image {}
+    &-image {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
 
     &-item {}
 
-    &-message {}
+    &-message {
+      font-size: 14px;
+      line-height: 1.23;
+    }
 
-    &-title {}
+    &-title {
+      & + .cards-feature__cards-message {
+        margin-top: 12px;
+      }
+    }
 
   }
 
