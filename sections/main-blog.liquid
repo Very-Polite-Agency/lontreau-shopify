@@ -21,9 +21,13 @@
       {% endif %}
       {% if hero_heading != blank %}
         <div class="{{ section_name }}__hero-content">
-          {% if hero_heading != blank %}
-            <div class="{{ section_name }}__heading heading--2 {% if hero_heading_highlight %} highlight--{{ hero_heading_highlight }}{% endif %}">{{ hero_heading }}</div>
-          {% endif %}
+          {%
+            render 'heading-highlight',
+            classes: 'blog__heading heading--2',
+            heading: hero_heading,
+            style: hero_heading_highlight,
+            tag: 'h2'
+          %}
         </div>
       {% endif %}
     </div>
