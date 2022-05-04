@@ -1,5 +1,22 @@
 .cards-feature  {
 
+  &__cards {
+
+    &-content {
+      background: rgba(var(--theme-colour-asphalt),1);
+      padding: 40px 30px 50px;
+    }
+
+    &-image {}
+
+    &-item {}
+
+    &-message {}
+
+    &-title {}
+
+  }
+
   &__intro {
     text-align: center;
     & + .cards-feature__main {
