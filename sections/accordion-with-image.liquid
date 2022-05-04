@@ -14,7 +14,7 @@
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}" data-section-padding>
   <div class="{{ section_name }}__main">
-    {% render 'layout--container' %}
+    {% render 'bs-container' %}
       <div class="{{ section_name }}__layout">
 
         {% if image %}
@@ -76,7 +76,7 @@
         {% endif %}
 
       </div>
-    {% render 'layout--container', state: 'closed' %}
+    {% render 'bs-container', state: 'closed' %}
   </div>
 </div>
 

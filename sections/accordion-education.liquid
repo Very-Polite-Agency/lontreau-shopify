@@ -14,20 +14,20 @@
 
   {% if heading != blank or message != blank %}
     <div class="{{ section_name }}__intro intro">
-      {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+      {% render 'bs-container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
         {% if heading != blank %}
           <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
         {% endif %}
         {% if message != blank %}
           <div class="{{ section_name }}__message intro__message body-copy--regular">{{ message }}</div>
         {% endif %}
-      {% render 'layout--container', state: 'closed' %}
+      {% render 'bs-container', state: 'closed' %}
     </div>
   {% endif %}
 
   {% if accordions %}
     <div class="{{ section_name }}__main main">
-      {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+      {% render 'bs-container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
 
         {% for block in accordions %}
 
@@ -94,7 +94,7 @@
 
         {% endfor %}
 
-      {% render 'layout--container', state: 'closed' %}
+      {% render 'bs-container', state: 'closed' %}
     </div>
   {% endif %}
 

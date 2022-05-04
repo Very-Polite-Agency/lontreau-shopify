@@ -10,7 +10,7 @@
 {% endif %}
 
 <div class="{{ section_name }}" id="{{ section_id }}">
-  {% render 'layout--container', state: 'open', col: 'col-12 col-lg-6 offset-lg-3' %}
+  {% render 'bs-container', state: 'open', col: 'col-12 col-lg-6 offset-lg-3' %}
     <div class="{{ section_name }}__main">
       {% if heading != blank %}
         <div class="{{ section_name }}__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</div>
@@ -20,7 +20,7 @@
       {% endif %}
       {% render 'form--contact-us' %}
     </div>
-  {% render 'layout--container', state: 'closed' %}
+  {% render 'bs-container', state: 'closed' %}
 </div>
 
 {% schema %}

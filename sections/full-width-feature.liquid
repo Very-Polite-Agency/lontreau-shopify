@@ -33,7 +33,7 @@
   </div>
 
   <div class="{{ section_name }}__main">
-    {% render 'layout--container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
+    {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
 
       {% if title != blank %}
         <strong class="{{ section_name }}__title title--1">{{ title }}</strong>
@@ -55,7 +55,7 @@
         </div>
       {% endif %}
 
-    {% render 'layout--container', state: 'closed' %}
+    {% render 'bs-container', state: 'closed' %}
   </div>
 
 </div>

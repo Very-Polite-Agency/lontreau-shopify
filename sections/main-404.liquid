@@ -1,23 +1,81 @@
-<style type="text/css">
-  .template-404 .title + * {
-    margin-top: 1rem;
-  }
+{% assign section_name = 'error-404' %}
+{% assign section_id = section_name | append: '--' | append: section.id %}
 
-  @media screen and (min-width: 750px) {
-    .template-404 .title + * {
-      margin-top: 2rem;
-    }
-  }
-</style>
+{% assign colour_theme = section.settings.colour_theme | default: 'light' %}
+{% assign cta_title = section.settings.cta_title | default: false %}
+{% assign cta_link = section.settings.cta_link | default: false %}
+{% assign heading = section.settings.heading | default: '' %}
+{% assign heading_highlight = section.settings.heading_highlight | default: 'standard' %}
 
-<div class="template-404 page-width page-margin center">
-  <p>
-    {{ 'templates.404.subtext' | t }}
-  </p>
-  <h1 class="title">
-    {{ 'templates.404.title' | t }}
-  </h1>
-  <a href="{{ routes.all_products_collection_url }}" class="button">
-    {{ 'general.continue_shopping' | t }}
-  </a>
+<div class="{{ section_name }}" id="{{ section_id }}">
+  {% render 'bs-container', state: 'open', col: 'col-12 col-lg-6 offset-lg-3' %}
+    <div class="{{ section_name }}__main">
+
+      {%
+        render 'heading-highlight',
+        classes: 'error-404__heading intro__heading heading--2',
+        heading: heading,
+        style: heading_highlight,
+        tag: 'h1'
+      %}
+
+      {% if cta_title != blank and cta_link != blank %}
+        <div class="{{ section_name }}__cta">
+          <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
+            <span class="button__title">{{ cta_title }}</span>
+          </a>
+        </div>
+      {% endif %}
+
+    </div>
+  {% render 'bs-container', state: 'closed' %}
 </div>
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+{% schema %}
+  {
+    "name": "404",
+    "tag": "section",
+    "settings": [
+      {
+        "content": "Content",
+        "type": "header"
+      },
+      {
+        "label": "Heading",
+        "type": "richtext",
+        "id": "heading"
+      },
+      {
+        "label": "Heading Highlight",
+        "type": "select",
+        "options": [
+          { "value": "standard", "label": "Standard" },
+          { "value": "stroke", "label": "Stroke" },
+          { "value": "circle", "label": "Circle" }
+        ],
+        "default": "standard",
+        "id": "heading_highlight"
+      },
+      {
+        "content": "Call to Action",
+        "type": "paragraph"
+      },
+      {
+        "label": "Title",
+        "type": "text",
+        "id": "cta_title"
+      },
+      {
+        "label": "Link",
+        "type": "url",
+        "id": "cta_link"
+      }
+    ]
+  }
+{% endschema %}

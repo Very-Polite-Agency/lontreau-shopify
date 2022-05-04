@@ -10,7 +10,7 @@
   <nav class="{{ snippet_classes }}" role="navigation" aria-label="{{ template.name | capitalize }} Pagination">
 
     {% if col and col != blank %}
-      {% render 'layout--container', state: 'open', col: col %}
+      {% render 'bs-container', state: 'open', col: col %}
     {% endif %}
 
     <div class="{{ snippet_name }}__layout">
@@ -46,7 +46,7 @@
     </div>
 
     {% if col and col != blank %}
-      {% render 'layout--container', state: 'closed' %}
+      {% render 'bs-container', state: 'closed' %}
     {% endif %}
 
   </nav>

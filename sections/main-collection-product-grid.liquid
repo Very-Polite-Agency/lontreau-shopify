@@ -14,18 +14,18 @@
     {%- if collection.products.size == 0 -%}
 
        <div class="{{ section_name }}__hero">
-        {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+        {% render 'bs-container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
           <div class="{{ section_name }}__hero-content">
             <h1 class="{{ section_name }}__title heading--1">{{ title }}</h1>
             <div class="{{ section_name }}__description body-copy--1">It looks like there are currently no products in this collection!</div>
           </div>
-        {% render 'layout--container', state: 'closed' %}
+        {% render 'bs-container', state: 'closed' %}
        </div>
 
     {%- else -%}
 
       <div class="{{ section_name }}__hero">
-        {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+        {% render 'bs-container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
           <div class="{{ section_name }}__hero-layout">
 
             <div class="{{ section_name }}__hero-content">
@@ -46,17 +46,17 @@
             </div>
 
           </div>
-        {% render 'layout--container', state: 'closed' %}
+        {% render 'bs-container', state: 'closed' %}
       </div>
 
       <div class="{{ section_name }}__main">
-        {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+        {% render 'bs-container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
           <div class="{{ section_name }}__listing listing--{{ section_name }}">
             {%- for product in collection.products -%}
               {% render 'card-product', product: product, style: section_name %}
             {%- endfor -%}
           </div>
-        {% render 'layout--container', state: 'closed' %}
+        {% render 'bs-container', state: 'closed' %}
       </div>
 
       {%- if paginate.pages > 1 -%}

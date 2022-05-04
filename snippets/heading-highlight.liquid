@@ -1,0 +1,9 @@
+{%- if heading and heading != blank -%}
+
+  {% assign classes = classes | default: 'heading--2' %}
+  {% assign style = style | default: 'standard' %}
+  {% assign tag = tag | default: 'h2' %}
+
+  <{{ tag }} class="{{ classes }} highlight--{{ style }}">{{ heading }}</{{ tag }}>
+
+{%- endif -%}

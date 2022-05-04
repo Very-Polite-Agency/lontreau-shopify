@@ -28,7 +28,7 @@
   data-style-{{ style }}
 >
   <div class="{{ section_name }}__main">
-    {% unless style == 'wide' %}{% render 'layout--container' %}{% endunless %}
+    {% unless style == 'wide' %}{% render 'bs-container' %}{% endunless %}
 
       <div class="{{ section_name }}__layout">
 
@@ -66,7 +66,7 @@
 
     </div>
 
-    {% unless style == 'wide' %}{% render 'layout--container', state: 'closed' %}{% endunless %}
+    {% unless style == 'wide' %}{% render 'bs-container', state: 'closed' %}{% endunless %}
   </div>
 </div>
 

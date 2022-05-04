@@ -30,7 +30,7 @@
 
     {% if heading != blank or message != blank %}
       <div class="{{ section_name }}__main">
-        {% render 'layout--container', state: 'open', col: columns, container: 'container-fluid' %}
+        {% render 'bs-container', state: 'open', col: columns, container: 'container-fluid' %}
 
           <div class="{{ section_name }}__content intro">
             {% if heading != blank %}
@@ -48,7 +48,7 @@
             {% endif %}
           </div>
 
-        {% render 'layout--container', state: 'closed' %}
+        {% render 'bs-container', state: 'closed' %}
       </div>
     {% endif %}
 

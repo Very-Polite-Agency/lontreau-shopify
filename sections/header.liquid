@@ -4,7 +4,7 @@
 {% assign menu_main = section.settings.menu_main | default: false %}
 
 <div class="{{ section_name }}__main">
-  {% render 'layout--container' %}
+  {% render 'bs-container' %}
     <div class="{{ section_name }}__layout">
 
       <div class="{{ section_name }}__brand">
@@ -22,7 +22,7 @@
       </button>
 
     </div>
-  {% render 'layout--container', state: 'closed' %}
+  {% render 'bs-container', state: 'closed' %}
 </div>
 
 {% stylesheet %}

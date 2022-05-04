@@ -2800,6 +2800,14 @@
       "oAP" : "\/snippets\/aos-attributes.liquid",
       "oF" : 0
     },
+    "\/snippets\/bs-container.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/bs-container.liquid",
+      "oF" : 0
+    },
     "\/snippets\/card-article.liquid" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2880,6 +2888,14 @@
       "oAP" : "\/snippets\/form--contact-us.liquid",
       "oF" : 0
     },
+    "\/snippets\/heading-highlight.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/heading-highlight.liquid",
+      "oF" : 0
+    },
     "\/snippets\/input.liquid" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2902,14 +2918,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/snippets\/label.liquid",
-      "oF" : 0
-    },
-    "\/snippets\/layout--container.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/snippets\/layout--container.liquid",
       "oF" : 0
     },
     "\/snippets\/navigation.liquid" : {

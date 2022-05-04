@@ -30,7 +30,7 @@
   {% endif %}
 
   <div class="{{ section_name }}__main">
-    {% render 'layout--container', state: 'open', col: 'col-12' %}
+    {% render 'bs-container', state: 'open', col: 'col-12' %}
       <div class="{{ section_name }}__list listing--{{ section_name }}" data-paginate-pages-current="{{ paginate.current_page }}" data-paginate-pages="{{ paginate.pages }}">
         {%- for article in blog.articles -%}
           {% assign card_style = section_name %}
@@ -40,7 +40,7 @@
           {%- render 'card-article', article: article, classes: 'blog__article', style: card_style -%}
         {%- endfor -%}
       </div>
-    {% render 'layout--container', state: 'closed' %}
+    {% render 'bs-container', state: 'closed' %}
   </div>
 
   {%- if paginate.pages > 1 -%}
