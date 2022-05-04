@@ -62,7 +62,7 @@ const Forms = (() => {
 
           case 'password':
           case 'text':
-            if ( ! validator.isEmpty( $field.value ) ) {
+            if ( ! validator.isEmpty( $field.value.trim() ) ) {
               isValid = true;
             }
             break;
@@ -77,7 +77,7 @@ const Forms = (() => {
         break;
 
       case 'TEXTAREA':
-        if ( ! validator.isEmpty( $field.value ) ) {
+        if ( ! validator.isEmpty( $field.value.trim() ) ) {
           isValid = true;
         }
         break;
