@@ -135,10 +135,20 @@
       padding: 20px 0;
     }
 
+    &--primary {
+      max-width: 380px;
+    }
+
   } // min width lg
 
   @include breakpoint(xl) {} // min width xl
 
-  @include breakpoint(xxl) {} // min width xxl
+  @include breakpoint(xxl) {
+
+    &--primary {
+      max-width: 420px;
+    }
+
+  } // min width xxl
 
 }
