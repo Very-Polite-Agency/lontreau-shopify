@@ -53,6 +53,9 @@
 
   &__related-articles {
     margin-top: 45px;
+    & + .article__cta {
+      margin-top: 45px;
+    }
   }
 
   &__title {
@@ -106,6 +109,9 @@
 
     &__related-articles {
       margin-top: 55px;
+      & + .article__cta {
+        margin-top: 100px;
+      }
     }
 
     &__title {

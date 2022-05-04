@@ -4,12 +4,17 @@
 {% assign article_next = blog.next_article | default: false %}
 {% assign article_previous = blog.previous_article | default: false %}
 {% assign content = article.content | default: '' %}
-{% assign cta_title = section.settings.cta_title | default: '' %}
+{% assign cta = false %}
 {% assign cta_link = section.settings.cta_link | default: '' %}
+{% assign cta_title = section.settings.cta_title | default: '' %}
 {% assign date_published = article.published_at %}
 {% assign featured_image = article.image | default: false %}
 {% assign tags = article.tags | default: '' %}
 {% assign title = article.title | default: '' %}
+
+{% if cta_link != blank and cta_title != blank %}
+  {% assign cta = true %}
+{% endif %}
 
 <article class="{{ section_name }}" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -44,10 +49,12 @@
     {% render 'bs-container', state: 'closed' %}
   </div>
 
-  {% if article_next or article_previous %}
+  {% if article_next or article_previous or cta %}
     <div class='{{ section_name }}__footer'>
       {% render 'bs-container', state: 'open' %}
-        <div class='{{ section_name }}__related-articles listing--related-articles'>
+
+        {% if article_next or article_previous %}
+          <div class='{{ section_name }}__related-articles listing--related-articles'>
           {% if article_previous %}
             {%- render 'card-article', article: article_previous, classes: 'article__related-articles-item previous', style: 'blog' -%}
           {% endif %}
@@ -55,16 +62,18 @@
             {%- render 'card-article', article: article_next, classes: 'article__related-articles-item next', style: 'blog' -%}
           {% endif %}
         </div>
-      {% render 'bs-container', state: 'close' %}
-    </div>
-  {% endif %}
+        {% endif %}
 
-  {% if cta_title != blank and cta_link != blank %}
-    <div class="{{ section_name }}__cta">
-      {% render 'bs-container', state: 'open' %}
-        <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
-          <span class="button__title">{{ cta_title }}</span>
-        </a>
+        {% if cta %}
+          <div class="{{ section_name }}__cta">
+            {% render 'bs-container', state: 'open' %}
+              <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
+                <span class="button__title">{{ cta_title }}</span>
+              </a>
+            {% render 'bs-container', state: 'close' %}
+          </div>
+        {% endif %}
+
       {% render 'bs-container', state: 'close' %}
     </div>
   {% endif %}

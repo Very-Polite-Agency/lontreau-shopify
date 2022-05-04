@@ -1,5 +1,6 @@
 main {
 
+  &.template--article,
   &.template--blog {
     padding-bottom: 65px;
   }
@@ -10,6 +11,7 @@ main {
 
   @include breakpoint(lg) {
 
+    &.template--article,
     &.template--blog {
       padding-bottom: 95px;
     }
