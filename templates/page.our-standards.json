@@ -16,6 +16,40 @@
         "height": "auto"
       }
     },
+    "1651706615bd39644c": {
+      "type": "cards-feature",
+      "blocks": {
+        "733b495d-6871-481b-8958-0da708b77c8e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cards-feature-card-image-01.png",
+            "title": "Ingredients",
+            "message": "<p>All our ingredient-dense formulations are designed to simplify your skincare routine, both to support your barrier function and to reduce the packaging waste caused by the overuse of products. We focus on finding ingredients that are clinically proven while being non-GMO, manufactured in Canada and produced from renewable resources. We’ve applied for the prestigious EWG Certification to demonstrate our commitment to Clean. <\/p>"
+          }
+        },
+        "0e464fce-edaa-427b-90ad-e390c3d89341": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cards-feature-card-image-02.png",
+            "title": "Packaging",
+            "message": "<p>Along with our commitment to reducing packaging waste through synergistic formulations, we have Especially designed our packaging to be BPA free, 100% recyclable and Plastic Neutral. We aim to continue researching ways to both offset and reduce carbon production to go further and reach Plastic Negative.<\/p><p>Learn more about our dedication to sustainability. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "733b495d-6871-481b-8958-0da708b77c8e",
+        "0e464fce-edaa-427b-90ad-e390c3d89341"
+      ],
+      "settings": {
+        "title": "Our Journey to sustainable",
+        "heading": "",
+        "heading_highlight": "standard",
+        "message": "<p>As athletes, we enjoy the benefits of our environment with every run, ski and ride. We choose better quality gear from ethical manufacturers, drink from reusable containers and tread lightly when we train. We do this because we’re all trying to make positive changes for a more sustainable future. We acknowledge getting better is a journey, here’s what Lontreau is doing to get there. <\/p>",
+        "cta_title": "",
+        "cta_link": "",
+        "anchor_id": ""
+      }
+    },
     "165050592499e00319": {
       "type": "fifty-fifty-feature",
       "settings": {
@@ -108,6 +142,7 @@
   },
   "order": [
     "main",
+    "1651706615bd39644c",
     "165050592499e00319",
     "165050592780ca364f",
     "16505061690b04c31e"
