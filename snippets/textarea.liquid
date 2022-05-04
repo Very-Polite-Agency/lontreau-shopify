@@ -4,6 +4,10 @@
 {% assign readonly = readonly | default: false %}
 {% assign value = value | default: '' %}
 
+{% if required %}
+ {% assign classes = classes | append: ' required' | strip %}
+{% endif %}
+
 {% if name != blank %}
   <textarea
     {% if classes != blank %}class="{{- classes -}}"{% endif %}

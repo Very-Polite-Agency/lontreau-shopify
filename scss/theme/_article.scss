@@ -5,6 +5,11 @@
     display: block;
   }
 
+  &__share-this,
+  &__tags {
+    width: 100%;
+  }
+
   &__content {
     p:first-of-type {
       font-size: 20px;
@@ -21,6 +26,10 @@
         width: 100%;
         margin-top: 22px;
       }
+    }
+    & + .article__share-this,
+    & + .article__tags {
+      margin-top: 45px;
     }
   }
 
@@ -58,8 +67,10 @@
     }
   }
 
-  &__share-this {
-    margin-top: 45px;
+  &__tags {
+    & + .article__share-this {
+      margin-top: 20px;
+    }
   }
 
   &__title {
@@ -95,6 +106,10 @@
           margin-top: 28px;
         }
       }
+      & + .article__share-this,
+      & + .article__tags {
+        margin-top: 55px;
+      }
     }
 
     &__hero {
@@ -116,10 +131,6 @@
       & + .article__cta {
         margin-top: 100px;
       }
-    }
-
-    &__share-this {
-      margin-top: 100px;
     }
 
     &__title {

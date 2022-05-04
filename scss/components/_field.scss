@@ -2,4 +2,8 @@
   position: relative;
   display: inline-flex;
   width: auto;
+  &--rude {
+    position: absolute;
+    left: -9999px;
+  }
 }

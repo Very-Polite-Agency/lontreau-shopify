@@ -9,10 +9,10 @@
 
     <div class="form__field field">
       {% render 'label', classes: 'label--form-field', value: 'First Name' %}
-      {% render 'input', classes: 'input--primary input--text', name: 'contact[first_name]', type: 'text' %}
+      {% render 'input', classes: 'input--primary input--text', required: true, name: 'contact[first_name]', type: 'text' %}
     </div>
 
-    <div class="form__field field error">
+    <div class="form__field field">
       {% render 'label', classes: 'label--form-field', value: 'Last Name' %}
       {% render 'input', classes: 'input--primary input--text', name: 'contact[last_name]', type: 'text' %}
     </div>
@@ -24,7 +24,7 @@
 
     <div class="form__field field">
       {% render 'label', classes: 'label--form-field', value: 'Email' %}
-      {% render 'input', classes: 'input--primary input--email', name: 'contact[email]', type: 'email' %}
+      {% render 'input', classes: 'input--primary input--email', required: true, name: 'contact[email]', type: 'email' %}
     </div>
 
     <div class="form__field field">
@@ -32,9 +32,9 @@
       {% render 'input', classes: 'input--primary input--company', name: 'contact[company]', type: 'text' %}
     </div>
 
-    <div class="form__field field error">
+    <div class="form__field field">
       {% render 'label', classes: 'label--form-field', value: 'How Can We Help You?' %}
-      {% render 'textarea', classes: 'textarea--primary textarea--body', name: 'contact[body]' %}
+      {% render 'textarea', classes: 'textarea--primary textarea--body', required: true, name: 'contact[body]' %}
     </div>
 
     <button class="form__submit-button button--primary" type="submit">Submit</button>

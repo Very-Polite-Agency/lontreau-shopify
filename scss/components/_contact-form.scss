@@ -2,6 +2,12 @@
 
   padding: 60px 0;
 
+  .form {
+    &__submit-button {
+      margin-top: 32px;
+    }
+  }
+
   &__heading,
   &__message {
     & + form {
@@ -33,6 +39,12 @@
   @include breakpoint(lg) {
 
     padding: 70px 0;
+
+    .form {
+      &__submit-button {
+        max-width: none;
+      }
+    }
 
     &__heading {
       & + .contact-form__message {

@@ -4,7 +4,7 @@
 
 const Forms = (() => {
 
-  let debug = false;
+  let debug = true;
   let info = { name : 'Forms', version : '2.1' };
 
   let tools = new Tools();
@@ -218,6 +218,12 @@ const Forms = (() => {
     let formAction = $form.action || false;
     let formData = new FormData( $form );
     let redirectURL = $form.dataset.redirectUrl || false;
+    let options = {
+      headers: {
+        processData: false,
+        contentType: false,
+      },
+    };
 
     formFiles.forEach( ( file, index ) => {
       formData.append( 'additional_docs' , file );
@@ -225,7 +231,27 @@ const Forms = (() => {
 
     $form.classList.add('posting');
 
-    axios.post( formAction, formData )
+    // if ( $form && action && data ) {
+    //   $.ajax({
+    //     url: action,
+    //     type: 'POST',
+    //     //async: true,  // maybe disable with formspree?
+    //     data: data,
+    //     //dataType: "json", //
+    //     processData: false,
+    //     contentType: false,
+    //     success: function ( $data, $textStatus, $jqXHR ) {
+    //       console.log( '[ Forms.init() ] Ajax Success', this.data );
+    //       confirmation( $form );
+    //     },
+    //     error: function( $jqXHR, $textStatus, $errorThrown ) {
+    //       console.log( '[ Forms.init() ] Ajax Error' );
+    //       console.log( [ $jqXHR, $textStatus, $errorThrown ] );
+    //     }
+    //   });
+    // }
+
+    axios.post( formAction, formData, options )
       .then(( data ) => {
         if ( debug ) console.log( 'then() data :: ', data );
         if ( redirectURL ) {

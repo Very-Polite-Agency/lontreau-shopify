@@ -18,6 +18,11 @@
       opacity: 0.3333;
     }
   }
+  &__item {
+    & + .tags__item {
+      margin-left: 18px;
+    }
+  }
   &__layout {
     display: flex;
     width: 100%;
