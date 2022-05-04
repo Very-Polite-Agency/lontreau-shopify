@@ -1,1 +1,45 @@
-[{"name":"theme_info","theme_author":"Very Polite Agency","theme_documentation_url":"https:\/\/help.shopify.com\/en\/manual\/online-store\/themes","theme_name":"Lontreau","theme_support_url":"https:\/\/support.shopify.com\/","theme_version":"1.0.0"},{"name":"Social","settings":[{"id":"social_link_facebook","label":"Facebook","type":"text"},{"id":"social_link_instagram","label":"Instagram","type":"text"},{"id":"social_link_linkedin","label":"Linked In","type":"text"},{"id":"social_link_twitter","label":"Twitter","type":"text"},{"id":"social_link_vimeo","label":"Vimeo","type":"text"},{"id":"social_link_youtube","label":"YouTube","type":"text"}]}]
+[
+  {
+    "name": "theme_info",
+    "theme_author": "Very Polite Agency",
+    "theme_documentation_url": "https:\/\/help.shopify.com\/en\/manual\/online-store\/themes",
+    "theme_name": "Lontreau",
+    "theme_support_url": "https:\/\/support.shopify.com\/",
+    "theme_version": "1.0.0"
+  },
+  {
+    "name": "Social",
+    "settings": [
+      {
+        "id": "social_link_facebook",
+        "label": "Facebook",
+        "type": "text"
+      },
+      {
+        "id": "social_link_instagram",
+        "label": "Instagram",
+        "type": "text"
+      },
+      {
+        "id": "social_link_linkedin",
+        "label": "Linked In",
+        "type": "text"
+      },
+      {
+        "id": "social_link_twitter",
+        "label": "Twitter",
+        "type": "text"
+      },
+      {
+        "id": "social_link_vimeo",
+        "label": "Vimeo",
+        "type": "text"
+      },
+      {
+        "id": "social_link_youtube",
+        "label": "YouTube",
+        "type": "text"
+      }
+    ]
+  }
+]
