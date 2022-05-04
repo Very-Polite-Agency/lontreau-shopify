@@ -46,6 +46,15 @@
     width: 100%;
     justify-content: space-between;
     flex-flow: row wrap;
+    .card-article {
+      width: 50%;
+    }
+    .previous {
+      order: 1;
+    }
+    .next {
+      order: 2;
+    }
   }
 
   @include breakpoint(sm) {} // min width sm
