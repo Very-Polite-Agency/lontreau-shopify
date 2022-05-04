@@ -2528,6 +2528,14 @@
       "oAP" : "\/sections\/apps.liquid",
       "oF" : 0
     },
+    "\/sections\/cards-feature.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/cards-feature.liquid",
+      "oF" : 0
+    },
     "\/sections\/carousel-education.liquid" : {
       "cB" : 0,
       "ft" : 8192,

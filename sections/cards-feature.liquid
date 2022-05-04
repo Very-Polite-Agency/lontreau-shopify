@@ -1,0 +1,154 @@
+{% assign section_name = 'cards-feature' %}
+{% assign section_id = section_name | append: '--' | append: section.id %}
+
+{% assign cards = section.blocks | where: 'type', 'card' | default: false %}
+{% assign cta = false %}
+{% assign cta_link = section.settings.cta_link | default: '' %}
+{% assign cta_title = section.settings.cta_title | default: '' %}
+{% assign heading = section.settings.heading | default: '' %}
+{% assign heading_highlight = section.settings.heading_highlight | default: false %}
+{% assign message = section.settings.message | default: false %}
+{% assign title = section.settings.title | default: false %}
+
+{% if section.settings.anchor_id != blank %}
+  {% assign section_id = section.settings.anchor_id %}
+{% endif %}
+
+{% if cta_link != blank and cta_title != blank %}
+  {% assign cta = true %}
+{% endif %}
+
+<div class="{{ section_name }}" id="{{ section_id }}">
+
+  {% if heading != blank or message != blank %}
+    <div class="{{ section_name }}__intro">
+      {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
+
+        {% if title != blank %}
+          <strong class="{{ section_name }}__title title--1">{{ title }}</strong>
+        {% endif %}
+
+        {%
+          render 'heading-highlight',
+          classes: 'cards-feature__heading heading--2',
+          heading: heading,
+          style: heading_highlight,
+          tag: 'h2'
+        %}
+
+        {% if message != blank %}
+          <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
+        {% endif %}
+
+      {% render 'bs-container', state: 'closed' %}
+    </div>
+  {% endif %}
+
+  {% if cards %}
+    <div class="{{ section_name }}__main">
+      {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
+        <div class="{{ section_name }}__cards">
+          {% for block in cards %}
+
+
+
+          {% endfor %}
+        </div>
+      {% render 'bs-container', state: 'closed' %}
+    </div>
+  {% endif %}
+
+</div>
+
+{% schema %}
+{
+  "name": "Cards Feature",
+  "tag": "section",
+  "class": "section section--cards-feature",
+  "settings": [
+    {
+      "content": "Content",
+      "type": "header"
+    },
+    {
+      "label": "Title",
+      "type": "text",
+      "id": "title"
+    },
+    {
+      "label": "Heading",
+      "type": "richtext",
+      "id": "heading"
+    },
+    {
+      "label": "Heading Highlight",
+      "type": "select",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "stroke", "label": "Stroke" },
+        { "value": "circle", "label": "Circle" }
+      ],
+      "default": "standard",
+      "id": "heading_highlight"
+    },
+    {
+      "label": "Message",
+      "type": "richtext",
+      "id": "message"
+    },
+    {
+      "content": "Call to Action",
+      "type": "paragraph"
+    },
+    {
+      "label": "Title",
+      "type": "text",
+      "id": "cta_title"
+    },
+    {
+      "label": "Link",
+      "type": "url",
+      "id": "cta_link"
+    },
+    {
+      "content": "Settings",
+      "type": "header"
+    },
+    {
+      "label": "Anchor ID",
+      "info": "Optionally include a unique ID so that sections within the page can be linked to. Anchor IDs must be all lowercase, unique and replaced empty spaces with hyphens. For example: my-great-section-anchor",
+      "type": "text",
+      "id": "anchor_id"
+    }
+  ],
+  "blocks": [
+    {
+       "name": "Card",
+       "type": "card",
+       "limit": 12,
+       "settings": [
+          {
+            "label": "Image",
+            "type": "image_picker",
+            "id": "image"
+          },
+          {
+            "label": "Title",
+            "type": "text",
+            "id": "title"
+          },
+          {
+            "label": "Message",
+            "type": "richtext",
+            "id": "message"
+          }
+       ]
+     }
+  ],
+  "presets": [
+    {
+      "name": "Cards Feature"
+    }
+  ]
+}
+{% endschema %}
