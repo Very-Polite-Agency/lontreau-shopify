@@ -55,6 +55,8 @@
 
   &__main {
     text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
     & + .featured-product__aside,
     & + .featured-product__media {
       margin-top: 36px;
@@ -75,7 +77,17 @@
 
   @include breakpoint(sm) {} // min width sm
 
-  @include breakpoint(md) {} // min width md
+  @include breakpoint(md) {
+
+    &__aside {
+      max-width: 520px;
+    }
+
+    &__main {
+      max-width: 480px;
+    }
+
+  } // min width md
 
   @include breakpoint(lg) {
 
@@ -84,17 +96,25 @@
     &__aside {
       width: 33.33333%;
       margin: 0;
+      max-width: none;
     }
 
     &__layout {
-      border: 1px solid blue;
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: center;
+      column-gap: var(--bs-container-fluid-padding);
     }
 
     &__main {
+      max-width: none;
       text-align: left;
+      .body-copy--large {
+        font-size: 20px;
+      }
+      .heading--2 {
+        font-size: 42px;
+      }
       & + .featured-product__aside,
       & + .featured-product__media {
         margin-top: 0;
@@ -148,6 +168,15 @@
 
   @include breakpoint(xl) {
 
+    &__main {
+      .body-copy--large {
+        font-size: 22px;
+      }
+      .heading--2 {
+        font-size: 42px;
+      }
+    }
+
     &__markers {
       &-item {
         font-size: 16px;
@@ -157,6 +186,15 @@
   } // min width xl
 
   @include breakpoint(xxl) {
+
+    &__main {
+      .body-copy--large {
+        font-size: 24px;
+      }
+      .heading--2 {
+        font-size: 52px;
+      }
+    }
 
     &__markers {
       &-item {

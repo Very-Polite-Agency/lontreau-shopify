@@ -14,77 +14,81 @@
 {% assign product_link = product.url | default: '' %}
 {% assign product_title = product.title | default: '' %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
+{% if product %}
+  <div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
 
-  {% if markers %}
-    <div class="{{ section_name }}__markers">
-      {% for block in markers %}
+    {% if markers %}
+      <div class="{{ section_name }}__markers">
+        {% for block in markers %}
 
-        {% assign title = block.settings.title | default: '' %}
+          {% assign title = block.settings.title | default: '' %}
 
-        {% if title != blank %}
-          <div class="{{ section_name }}__markers-item">{{ title }}</div>
+          {% if title != blank %}
+            <div class="{{ section_name }}__markers-item">{{ title }}</div>
+          {% endif %}
+
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% render 'bs-container' %}
+      <div class="{{ section_name }}__layout">
+
+        {% if heading != blank or message != blank %}
+          <div class="{{ section_name }}__main">
+            {%
+              render 'heading-highlight',
+              classes: 'cards-feature__heading intro__heading heading--2',
+              heading: heading,
+              style: heading_highlight,
+              tag: 'h2'
+            %}
+            {% if message != blank %}
+              <div class="{{ section_name }}__message intro__message body-copy--large">{{ message }}</div>
+            {% endif %}
+          </div>
         {% endif %}
 
-      {% endfor %}
-    </div>
-  {% endif %}
-
-  {% render 'bs-container' %}
-    <div class="{{ section_name }}__layout">
-
-      {% if heading != blank or message != blank %}
-        <div class="{{ section_name }}__main">
-          {%
-            render 'heading-highlight',
-            classes: 'cards-feature__heading intro__heading heading--2',
-            heading: heading,
-            style: heading_highlight,
-            tag: 'h2'
-          %}
-          {% if message != blank %}
-            <div class="{{ section_name }}__message intro__message body-copy--large">{{ message }}</div>
-          {% endif %}
-        </div>
-      {% endif %}
-
-      {% if image %}
-        <div class="{{ section_name }}__media">
-          {%
-            render 'lazyload-image',
-            alt_text: heading,
-            image: image,
-          %}
-        </div>
-      {% endif %}
-
-      {% if aside_heading != blank or aside_message != blank or aside_subheading %}
-        <div class="{{ section_name }}__aside">
-          {% if product_icon %}
-            <div class="{{ section_name }}__aside-icon">
+        {% if image %}
+          <div class="{{ section_name }}__media">
+            <a href="{{ product_link }}" target="_self" title="{{ product_title }}">
               {%
                 render 'lazyload-image',
-                alt_text: product_title,
-                image: product_icon,
+                alt_text: heading,
+                image: image,
               %}
-            </div>
-          {% endif %}
-          {% if aside_heading %}<strong class="{{ section_name }}__aside-heading title--1">{{ aside_heading }}</strong>{% endif %}
-          {% if aside_subheading %}<strong class="{{ section_name }}__aside-subheading title--1">{{ aside_subheading }}</strong>{% endif %}
-          {% if aside_message %}<div class="{{ section_name }}__aside-message body-copy--alt-small">{{ aside_message }}</div>{% endif %}
-          {% if product %}
-            <div class="{{ section_name }}__cta d-lg-none">
-              <a class="{{ section_name }}__cta-button button--primary" href="{{ product_link }}" title="{{ product_title }}">
-                <span class="button__title">Shop {{ product_title }}</span>
-              </a>
-            </div>
-          {% endif %}
-        </div>
-      {% endif %}
+            </a>
+          </div>
+        {% endif %}
 
-    </div>
-  {% render 'bs-container', state: 'closed' %}
-</div>
+        {% if aside_heading != blank or aside_message != blank or aside_subheading %}
+          <div class="{{ section_name }}__aside">
+            {% if product_icon %}
+              <div class="{{ section_name }}__aside-icon">
+                {%
+                  render 'lazyload-image',
+                  alt_text: product_title,
+                  image: product_icon,
+                %}
+              </div>
+            {% endif %}
+            {% if aside_heading %}<strong class="{{ section_name }}__aside-heading title--1">{{ aside_heading }}</strong>{% endif %}
+            {% if aside_subheading %}<strong class="{{ section_name }}__aside-subheading title--1">{{ aside_subheading }}</strong>{% endif %}
+            {% if aside_message %}<div class="{{ section_name }}__aside-message body-copy--alt-small">{{ aside_message }}</div>{% endif %}
+            {% if product %}
+              <div class="{{ section_name }}__cta d-lg-none">
+                <a class="{{ section_name }}__cta-button button--primary" href="{{ product_link }}" title="{{ product_title }}">
+                  <span class="button__title">Shop {{ product_title }}</span>
+                </a>
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+
+      </div>
+    {% render 'bs-container', state: 'closed' %}
+  </div>
+{% endif %}
 
 {% schema %}
 {
