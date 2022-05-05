@@ -65,7 +65,11 @@
   </div>
 
   {% if curved_arrow_enable %}
-    <div class="{{ section_name }}__curved-arrow">{% render 'svg', type: 'icon.arrow-curved-path' %}</div>
+    <div class="{{ section_name }}__curved-arrow">
+      <div class="{{ section_name }}__curved-arrow-icon">
+        {% render 'svg', type: 'icon.arrow-curved-path' %}
+      </div>
+    </div>
   {% endif %}
 
 </div>
