@@ -1,19 +1,21 @@
 .listing {
 
+  &--cards-feature,
   &--collection-product-grid,
   &--flex,
   &--grid {
     width: 100%;
     margin: auto;
-    row-gap: 45px;
     column-gap: 0;
   }
 
-  &--flex {
-    display: flex;
-    flex-flow: column;
+  &--collection-product-grid,
+  &--flex,
+  &--grid {
+    row-gap: 45px;
   }
 
+  &--cards-feature,
   &--collection-product-grid,
   &--grid {
     display: grid;
@@ -38,6 +40,15 @@
         }
       }
     }
+  }
+
+  &--cards-feature {
+    row-gap: var(--bs-gutter-width);
+  }
+
+  &--flex {
+    display: flex;
+    flex-flow: column;
   }
 
   &--related-articles {
