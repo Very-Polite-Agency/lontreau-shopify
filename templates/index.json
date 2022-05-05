@@ -51,14 +51,13 @@
     "16517719953345c3cc": {
       "type": "featured-product",
       "settings": {
+        "product": "sample-product-alpha",
         "heading": "<p>The <em>only kit<\/em> you need. <\/p>",
         "heading_highlight": "circle",
         "message": "<p>Nulla in dolor pretium, mollis lectus in, elementum dolor. Suspendisse sed dignissim diam. Donec porta scelerisque turpis in suscipit. Fusce lectus nisi, egestas non pretium eget, scelerisque nec felis. Nulla lacinia integer.<\/p>",
         "aside_heading": "Stage",
         "aside_subheading": "Defense Barrier",
         "aside_message": "<p>Phasellus quis felis eros. In egestas ut odio sed accumsan. Etiam tempus laoreet felis, pharetra finibus nunc luctus sit dui.<\/p>",
-        "cta_title": "",
-        "cta_link": "",
         "anchor_id": "",
         "colour_theme": "light"
       }
