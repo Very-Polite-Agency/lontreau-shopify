@@ -10,8 +10,9 @@
 {% assign markers = section.blocks | where: 'type', 'marker' | default: false %}
 {% assign message = section.settings.message | default: '' %}
 {% assign product = section.settings.product | default: false %}
-
-{% render 'tools--debug-this', item: product.metafields %}
+{% assign product_icon = product.metafields.product.icon | default: false %}
+{% assign product_link = product.url | default: '' %}
+{% assign product_title = product.title | default: '' %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
 
@@ -59,10 +60,25 @@
 
       {% if aside_heading != blank or aside_message != blank or aside_subheading %}
         <div class="{{ section_name }}__aside">
-          <div class="{{ section_name }}__aside-icon">{% render 'svg', type: 'icon.arrrow' %}</div>
-          {% if aside_heading %}<strong class="{{ section_name }}__aside-heading">{{ aside_heading }}</strong>{% endif %}
-          {% if aside_subheading %}<strong class="{{ section_name }}__aside-subheading">{{ aside_subheading }}</strong>{% endif %}
-          {% if aside_message %}<div class="{{ section_name }}__aside-message">{{ aside_message }}</div>{% endif %}
+          {% if product_icon %}
+            <div class="{{ section_name }}__aside-icon">
+              {%
+                render 'lazyload-image',
+                alt_text: product_title,
+                image: product_icon,
+              %}
+            </div>
+          {% endif %}
+          {% if aside_heading %}<strong class="{{ section_name }}__aside-heading title--1">{{ aside_heading }}</strong>{% endif %}
+          {% if aside_subheading %}<strong class="{{ section_name }}__aside-subheading title--1">{{ aside_subheading }}</strong>{% endif %}
+          {% if aside_message %}<div class="{{ section_name }}__aside-message body-copy--alt-small">{{ aside_message }}</div>{% endif %}
+          {% if product %}
+            <div class="{{ section_name }}__cta d-lg-none">
+              <a class="{{ section_name }}__cta-button button--primary" href="{{ product_link }}" title="{{ product_title }}">
+                <span class="button__title">Shop {{ product_title }}</span>
+              </a>
+            </div>
+          {% endif %}
         </div>
       {% endif %}
 

@@ -34,8 +34,16 @@
   }
 
   &--1,
-  &--regular {
+  &--regular,
+  &--alt,
+  &--alt-small,
+  &--large,
+  &--xl {
     @extend .body-copy;
+  }
+
+  &--1,
+  &--regular {
     font-family: var(--theme-font-family--serif--primary);
     font-style: normal;
     font-weight: 400;
@@ -43,25 +51,31 @@
     line-height: 1.5;
   }
 
-  &--alt {
-    @extend .body-copy;
+  &--alt,
+  &--alt-small {
     font-family: var(--theme-font-family--sans-serif--primary);
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 1.23;
     letter-spacing: 0.05em;
+    line-height: 1.23;
   }
 
   &--large,
   &--xl {
-    @extend .body-copy;
     font-family: var(--theme-font-family--serif--primary);
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 1.33;
     letter-spacing: -0.02em;
+  }
+
+  &--alt {
+    font-size: 20px;
+  }
+
+  &--alt-small {
+    font-size: 15px;
   }
 
   @include breakpoint(sm) {
@@ -86,6 +100,14 @@
       font-size: 16px;
     }
 
+    &--alt {
+      font-size: 20px;
+    }
+
+    &--alt-small {
+      font-size: 15px;
+    }
+
   } // min width lg
 
   @include breakpoint(xl) {
@@ -95,6 +117,14 @@
       font-size: 18px;
     }
 
+    &--alt {
+      font-size: 22px;
+    }
+
+    &--alt-small {
+      font-size: 17px;
+    }
+
   } // min width xl
 
   @include breakpoint(xxl) {
@@ -102,6 +132,14 @@
     &--1,
     &--regular {
       font-size: 20px;
+    }
+
+    &--alt {
+      font-size: 24px;
+    }
+
+    &--alt-small {
+      font-size: 19px;
     }
 
   } // min width xxl
