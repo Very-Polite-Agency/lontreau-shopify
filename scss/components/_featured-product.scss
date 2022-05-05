@@ -1,0 +1,58 @@
+.featured-product {
+
+  &__layout {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-flow: column;
+  }
+
+  &__markers {
+    display: none;
+  }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    &__markers {
+      border: 1px solid red;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      &-item {
+        position: absolute;
+        &:nth-child(1) {
+          top: var(--bs-container-fluid-padding);
+          left: var(--bs-container-fluid-padding);
+        }
+        &:nth-child(2) {
+          top: var(--bs-container-fluid-padding);
+          right: var(--bs-container-fluid-padding);
+        }
+        &:nth-child(3) {
+          bottom: var(--bs-container-fluid-padding);
+          left: var(--bs-container-fluid-padding);
+        }
+        &:nth-child(4) {
+          bottom: var(--bs-container-fluid-padding);
+          right: var(--bs-container-fluid-padding);
+        }
+      }
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
+}
