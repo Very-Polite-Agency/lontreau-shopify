@@ -19,73 +19,48 @@
     "1651711852cdf63075": {
       "type": "featured-product",
       "blocks": {
-        "1651711852b98fc541-0": {
-          "type": "text",
+        "efb1f771-3d38-4605-b0c8-1f312ff656c6": {
+          "type": "marker",
           "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
+            "title": "Pollution Defense"
           }
         },
-        "1651711852b98fc541-1": {
-          "type": "title",
+        "2edb7b91-b086-4a13-a2f9-d303f8b228d2": {
+          "type": "marker",
           "settings": {
-            "heading_size": "h1"
+            "title": "Tone + Texture"
           }
         },
-        "1651711852b98fc541-2": {
-          "type": "text",
+        "c79c1f73-c593-4bcb-9fd3-9a2a1b82d792": {
+          "type": "marker",
           "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
+            "title": "Moisture Barrier"
           }
         },
-        "1651711852b98fc541-3": {
-          "type": "price",
+        "46ba11cf-b2a7-4e55-b23b-acd0f9f5f7a1": {
+          "type": "marker",
           "settings": {
-          }
-        },
-        "1651711852b98fc541-4": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "1651711852b98fc541-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "1651711852b98fc541-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "1651711852b98fc541-7": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
+            "title": "Rapid Radiance"
           }
         }
       },
       "block_order": [
-        "1651711852b98fc541-0",
-        "1651711852b98fc541-1",
-        "1651711852b98fc541-2",
-        "1651711852b98fc541-3",
-        "1651711852b98fc541-4",
-        "1651711852b98fc541-5",
-        "1651711852b98fc541-6",
-        "1651711852b98fc541-7"
+        "efb1f771-3d38-4605-b0c8-1f312ff656c6",
+        "2edb7b91-b086-4a13-a2f9-d303f8b228d2",
+        "c79c1f73-c593-4bcb-9fd3-9a2a1b82d792",
+        "46ba11cf-b2a7-4e55-b23b-acd0f9f5f7a1"
       ],
       "settings": {
-        "product": "",
-        "color_scheme": "background-1",
-        "secondary_background": false,
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "<p>The <em>only kit<\/em> you need.<\/p>",
+        "heading_highlight": "circle",
+        "message": "<p>Nulla in dolor pretium, mollis lectus in, elementum dolor. Suspendisse sed dignissim diam. Donec porta scelerisque turpis in suscipit. Fusce lectus nisi, egestas non pretium eget, scelerisque nec felis. Nulla lacinia integer.<\/p>",
+        "aside_title": "",
+        "aside_heading": "",
+        "aside_message": "<p>The Lontreau product line is made up of ingredients that work as hard as you do.<\/p>",
+        "cta_title": "",
+        "cta_link": "",
+        "anchor_id": "",
+        "colour_theme": "light"
       }
     },
     "1650503127b4b591a4": {
