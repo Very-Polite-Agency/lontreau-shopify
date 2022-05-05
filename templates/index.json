@@ -45,7 +45,22 @@
         "cta_link": "",
         "parallax": false,
         "anchor_id": "",
-        "height": "auto"
+        "height": "large"
+      }
+    },
+    "16517719953345c3cc": {
+      "type": "featured-product",
+      "settings": {
+        "heading": "<p>The <em>only kit<\/em> you need. <\/p>",
+        "heading_highlight": "circle",
+        "message": "<p>Nulla in dolor pretium, mollis lectus in, elementum dolor. Suspendisse sed dignissim diam. Donec porta scelerisque turpis in suscipit. Fusce lectus nisi, egestas non pretium eget, scelerisque nec felis. Nulla lacinia integer.<\/p>",
+        "aside_heading": "Stage",
+        "aside_subheading": "Defense Barrier",
+        "aside_message": "<p>Phasellus quis felis eros. In egestas ut odio sed accumsan. Etiam tempus laoreet felis, pharetra finibus nunc luctus sit dui.<\/p>",
+        "cta_title": "Shop the Full Kit",
+        "cta_link": "shopify:\/\/pages\/our-skin",
+        "anchor_id": "",
+        "colour_theme": "light"
       }
     },
     "164936493171d7e74a": {
@@ -83,6 +98,7 @@
     "1649371027bf029c73",
     "16505837988dc9d01f",
     "1649358548eba2154c",
+    "16517719953345c3cc",
     "164936493171d7e74a",
     "1650584831258bfc23"
   ]
