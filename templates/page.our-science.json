@@ -16,6 +16,78 @@
         "height": "auto"
       }
     },
+    "1651711852cdf63075": {
+      "type": "featured-product",
+      "blocks": {
+        "1651711852b98fc541-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "1651711852b98fc541-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "1651711852b98fc541-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "1651711852b98fc541-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "1651711852b98fc541-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "1651711852b98fc541-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "1651711852b98fc541-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "1651711852b98fc541-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "1651711852b98fc541-0",
+        "1651711852b98fc541-1",
+        "1651711852b98fc541-2",
+        "1651711852b98fc541-3",
+        "1651711852b98fc541-4",
+        "1651711852b98fc541-5",
+        "1651711852b98fc541-6",
+        "1651711852b98fc541-7"
+      ],
+      "settings": {
+        "product": "",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1650503127b4b591a4": {
       "type": "carousel-education",
       "blocks": {
@@ -98,6 +170,7 @@
   },
   "order": [
     "main",
+    "1651711852cdf63075",
     "1650503127b4b591a4",
     "1650503547e06baae5"
   ]
