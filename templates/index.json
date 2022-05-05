@@ -51,6 +51,7 @@
     "16517719953345c3cc": {
       "type": "featured-product",
       "settings": {
+        "image": "shopify:\/\/shop_images\/featured-product.png",
         "product": "sample-product-alpha",
         "heading": "<p>The <em>only kit<\/em> you need. <\/p>",
         "heading_highlight": "circle",
