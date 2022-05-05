@@ -50,9 +50,41 @@
     },
     "16517719953345c3cc": {
       "type": "featured-product",
+      "blocks": {
+        "5db11ac2-eca7-447a-b5a6-ff51422762da": {
+          "type": "marker",
+          "settings": {
+            "title": "Polution Defense"
+          }
+        },
+        "683969a5-2847-450d-bfe0-18a88fbcaa0d": {
+          "type": "marker",
+          "settings": {
+            "title": ""
+          }
+        },
+        "f645e044-5240-4e1a-907c-711830cb95aa": {
+          "type": "marker",
+          "settings": {
+            "title": ""
+          }
+        },
+        "f324e3ea-3b51-4912-a6ca-c3f541436b83": {
+          "type": "marker",
+          "settings": {
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "5db11ac2-eca7-447a-b5a6-ff51422762da",
+        "683969a5-2847-450d-bfe0-18a88fbcaa0d",
+        "f645e044-5240-4e1a-907c-711830cb95aa",
+        "f324e3ea-3b51-4912-a6ca-c3f541436b83"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/featured-product.png",
         "product": "sample-product-alpha",
+        "image": "shopify:\/\/shop_images\/featured-product.png",
         "heading": "<p>The <em>only kit<\/em> you need. <\/p>",
         "heading_highlight": "circle",
         "message": "<p>Nulla in dolor pretium, mollis lectus in, elementum dolor. Suspendisse sed dignissim diam. Donec porta scelerisque turpis in suscipit. Fusce lectus nisi, egestas non pretium eget, scelerisque nec felis. Nulla lacinia integer.<\/p>",
