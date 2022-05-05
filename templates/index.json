@@ -89,7 +89,7 @@
         "heading_highlight": "circle",
         "message": "<p>Nulla in dolor pretium, mollis lectus in, elementum dolor. Suspendisse sed dignissim diam.<\/p>",
         "aside_heading": "Stage",
-        "aside_subheading": "Defense Barrier",
+        "aside_subheading": "{{ section.settings.product.title }}",
         "aside_message": "<p>Phasellus quis felis eros. In egestas ut odio sed accumsan. Etiam tempus laoreet felis, pharetra finibus nunc luctus sit dui.<\/p>",
         "anchor_id": "",
         "colour_theme": "light"
