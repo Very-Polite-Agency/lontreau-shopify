@@ -85,7 +85,7 @@
       "settings": {
         "product": "sample-product-alpha",
         "image": "shopify:\/\/shop_images\/featured-product.png",
-        "heading": "<p>The <em>only kit<\/em> you need. <\/p>",
+        "heading": "<p>The <em>only kit<\/em> <\/p><p>you need. <\/p>",
         "heading_highlight": "circle",
         "message": "<p>Nulla in dolor pretium, mollis lectus in, elementum dolor. Suspendisse sed dignissim diam.<\/p>",
         "aside_heading": "Stage",
