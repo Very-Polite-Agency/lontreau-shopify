@@ -76,6 +76,11 @@
       grid-template-columns: 1fr 1fr 1fr;
     }
 
+    &--cards-feature {
+      grid-template-columns: 1fr 1fr;
+      column-gap: var(--bs-gutter-width);
+    }
+
   } // min width md
 
   @include breakpoint(lg) {
@@ -96,6 +101,12 @@
 
   } // min width xl
 
-  @include breakpoint(xxl) {} // min width xxl
+  @include breakpoint(xxl) {
+
+    &--cards-feature {
+      // grid-template-columns: 1fr 1fr 1fr;
+    }
+
+  } // min width xxl
 
 }

@@ -3,8 +3,8 @@
   &__cards {
 
     &-content {
-      background: rgba(var(--theme-colour-black),0.1);
-      color: rgba(var(--theme-colour-black),1);
+      background: rgba(var(--theme-colour-asphalt), 1);
+      color: rgba(var(--theme-colour-black), 1);
       font-family: var(--theme-font-family--sans-serif--primary);
       padding: 40px 30px 50px;
       font-style: normal;
@@ -14,8 +14,15 @@
       letter-spacing: 0.07em;
       text-transform: uppercase;
       a {
-        color: rgba(var(--theme-colour-grass),1);
-        border-bottom: 1px solid rgba(var(--theme-colour-grass),1);
+        color: rgba(var(--theme-colour-grass), 1);
+        border-bottom: 1px solid rgba(var(--theme-colour-grass), 1);
+        display: inline;
+        text-decoration: none;
+        &:focus,
+        &:hover {
+          border-bottom: 1px solid rgba(var(--theme-colour-grass), 0);
+          text-decoration: none;
+        }
       }
     }
 
