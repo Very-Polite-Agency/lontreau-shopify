@@ -13,7 +13,8 @@
         "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--large_2x_dbdb0c77-33c7-4bdf-9573-d7b5a903ee67.png",
         "parallax": false,
         "anchor_id": "test-anchor-id",
-        "height": "large"
+        "height": "large",
+        "curved_arrow_enable": false
       }
     },
     "16505837988dc9d01f": {
@@ -45,7 +46,8 @@
         "cta_link": "",
         "parallax": false,
         "anchor_id": "",
-        "height": "large"
+        "height": "large",
+        "curved_arrow_enable": true
       }
     },
     "16517719953345c3cc": {
@@ -108,7 +110,8 @@
         "image": "shopify:\/\/shop_images\/LONTREAU--home-page--goal-setting-ingredients_2x_9f4f4844-6146-4bd1-ba65-1290d90818fb.png",
         "parallax": false,
         "anchor_id": "",
-        "height": "auto"
+        "height": "auto",
+        "curved_arrow_enable": false
       }
     },
     "1650584831258bfc23": {
