@@ -57,8 +57,8 @@
         "aside_heading": "Stage",
         "aside_subheading": "Defense Barrier",
         "aside_message": "<p>Phasellus quis felis eros. In egestas ut odio sed accumsan. Etiam tempus laoreet felis, pharetra finibus nunc luctus sit dui.<\/p>",
-        "cta_title": "Shop the Full Kit",
-        "cta_link": "shopify:\/\/pages\/our-skin",
+        "cta_title": "",
+        "cta_link": "",
         "anchor_id": "",
         "colour_theme": "light"
       }
