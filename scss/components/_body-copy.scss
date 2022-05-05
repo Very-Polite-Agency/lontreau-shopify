@@ -81,10 +81,29 @@
       margin-bottom: 28px;
     }
 
+    &--1,
+    &--regular {
+      font-size: 16px;
+    }
+
   } // min width lg
 
-  @include breakpoint(xl) {} // min width xl
+  @include breakpoint(xl) {
 
-  @include breakpoint(xxl) {} // min width xxl
+    &--1,
+    &--regular {
+      font-size: 18px;
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    &--1,
+    &--regular {
+      font-size: 20px;
+    }
+
+  } // min width xxl
 
 }

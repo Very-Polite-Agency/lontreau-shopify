@@ -42,8 +42,9 @@
       &::after {
         background: rgba(var(--theme-colour-grass),1);
         height: 10px;
-        bottom: 5px;
-        left: 5px;
+        bottom: -3px;
+        left: -2%;
+        width: 104%;
       }
     }
   }
@@ -73,7 +74,7 @@
       em, i {
         &::after {
           height: 12px;
-          bottom: 5px;
+          bottom: -3px;
         }
       }
     }
@@ -88,7 +89,7 @@
       em, i {
         &::after {
           height: 14px;
-          bottom: 5px;
+          bottom: -3px;
         }
       }
     }

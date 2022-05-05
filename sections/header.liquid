@@ -4,7 +4,7 @@
 {% assign menu_main = section.settings.menu_main | default: false %}
 
 <div class="{{ section_name }}__main">
-  {% render 'bs-container' %}
+  {% render 'bs-container', container: 'container-fluid' %}
     <div class="{{ section_name }}__layout">
 
       <div class="{{ section_name }}__brand">

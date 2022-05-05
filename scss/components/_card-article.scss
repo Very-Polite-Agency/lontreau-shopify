@@ -45,7 +45,7 @@
       }
     }
     & + .card-article__content {
-      margin-top: 15px;
+      margin-top: 20px;
     }
   }
 
@@ -108,7 +108,7 @@
         height: 300px;
       }
       & + .card-article__content {
-        margin-top: 20px;
+        margin-top: 24px;
       }
     }
 
@@ -165,7 +165,7 @@
 
     &__featured-image {
       & + .card-article__content {
-        margin-top: 22px;
+        margin-top: 26px;
       }
     }
 
@@ -206,7 +206,7 @@
 
     &__featured-image {
       & + .card-article__content {
-        margin-top: 24px;
+        margin-top: 28px;
       }
     }
 
@@ -226,7 +226,7 @@
             }
           }
           &__excerpt {
-            font-size: 19px;
+            font-size: 21px;
           }
           &__title {
             font-size: 42px;
