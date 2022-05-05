@@ -1,3 +1,10 @@
+:root {
+
+  --theme-full-width-feature-curved-arrow-height: 80px;
+  --theme-full-width-feature-curved-arrow-height--lg: 120px;
+
+}
+
 .full-width-feature {
 
   position: relative;
@@ -16,6 +23,31 @@
   &__message {
     & + .full-width-feature__cta {
       margin-top: 22px;
+    }
+  }
+
+  &__curved-arrow {
+    color: rgba(var(--theme-colour-grass), 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    svg {
+      fill: currentColor;
+    }
+    &-icon {
+      height: var(--theme-full-width-feature-curved-arrow-height);
+      bottom: calc( -0.3333 * var(--theme-full-width-feature-curved-arrow-height));
+      position: relative;
+      width: auto;
+      img, svg {
+        display: block;
+        height: 100%;
+        width: auto;
+      }
     }
   }
 
@@ -91,6 +123,13 @@
     &__cta {
       &-button {
         max-width: 350px;
+      }
+    }
+
+    &__curved-arrow {
+      &-icon {
+        height: var(--theme-full-width-feature-curved-arrow-height--lg);
+        bottom: calc( -0.3333 * var(--theme-full-width-feature-curved-arrow-height--lg));
       }
     }
 
