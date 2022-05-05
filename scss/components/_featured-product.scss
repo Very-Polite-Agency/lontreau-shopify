@@ -66,6 +66,29 @@
   &__media {
     width: 80%;
     margin: 0 auto;
+    a {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: auto;
+      position: relative;
+    }
+    &-cta {
+      transition: opacity var(--theme-transition-duration);
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-cta-button {
+      width: 80%;
+      margin: auto;
+    }
     & + .featured-product__aside {
       margin-top: 36px;
     }
@@ -159,6 +182,16 @@
     }
 
     &__media {
+      a {
+        &:hover {
+          .featured-product__media-cta {
+            opacity: 1;
+          }
+          img {
+            opacity: 0.3333;
+          }
+        }
+      }
       & + .featured-product__aside {
         margin-top: 0;
       }

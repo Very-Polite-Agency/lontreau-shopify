@@ -1,8 +1,10 @@
 {% assign section_name = 'full-width-feature' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
-{% assign cta_title = section.settings.cta_title | default: '' %}
+{% assign cta = false %}
 {% assign cta_link = section.settings.cta_link | default: '' %}
+{% assign cta_title = section.settings.cta_title | default: '' %}
+{% assign curved_arrow_enable = section.settings.curved_arrow_enable | default: false %}
 {% assign heading = section.settings.heading | default: '' %}
 {% assign height = section.settings.height | default: 'auto' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: false %}
@@ -14,6 +16,10 @@
 
 {% if section.settings.anchor_id != blank %}
   {% assign section_id = section.settings.anchor_id %}
+{% endif %}
+
+{% if cta_link != blank and cta_title != blank %}
+  {% assign cta = true %}
 {% endif %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-text-theme="{{ text_theme }}">
@@ -57,6 +63,10 @@
 
     {% render 'bs-container', state: 'closed' %}
   </div>
+
+  {% if curved_arrow_enable %}
+    <div class="{{ section_name }}__curved-arrow">{% render 'svg', type: 'icon.arrow-curved-path' %}</div>
+  {% endif %}
 
 </div>
 
@@ -154,9 +164,14 @@
       ],
       "default": "auto",
       "id": "height"
+    },
+    {
+      "label": "Enable Curved Arrow",
+      "type": "checkbox",
+      "default": false,
+      "id": "curved_arrow_enable"
     }
   ],
-  "blocks": [],
   "presets": [
     {
       "name": "Full Width Feature"
