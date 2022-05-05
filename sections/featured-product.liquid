@@ -1,12 +1,90 @@
 {% assign section_name = 'featured-product' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign aside_heading = section.settings.aside_heading | default: '' %}
+{% assign aside_message = section.settings.aside_message | default: '' %}
+{% assign aside_subheading = section.settings.aside_subheading | default: '' %}
+{% assign cta = false %}
+{% assign cta_link = section.settings.cta_link | default: '' %}
+{% assign cta_title = section.settings.cta_title | default: '' %}
+{% assign heading = section.settings.heading | default: '' %}
+{% assign heading_highlight = section.settings.heading_highlight | default: '' %}
+{% assign image = section.settings.image | default: false %}
+{% assign markers = section.blocks | where: 'type', 'marker' | default: false %}
+{% assign message = section.settings.message | default: '' %}
+
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
+
+  {% if markers %}
+    <div class="{{ section_name }}__markers">
+      {% for block in markers %}
+
+        {% assign title = block.settings.title | default: '' %}
+
+        {% if title != blank %}
+          <div class="{{ section_name }}__markers-item">{{ title }}</div>
+        {% endif %}
+
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% render 'bs-container' %}
+    <div class="{{ section_name }}__layout">
+
+      {% if heading != blank or message != blank %}
+        <div class="{{ section_name }}__main">
+          {%
+            render 'heading-highlight',
+            classes: 'cards-feature__heading intro__heading heading--2',
+            heading: heading,
+            style: heading_highlight,
+            tag: 'h2'
+          %}
+          {% if message != blank %}
+            <div class="{{ section_name }}__message intro__message body-copy--large">{{ message }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if image %}
+        <div class="{{ section_name }}__media">
+          {%
+            render 'lazyload-image',
+            alt_text: heading,
+            image: image,
+          %}
+        </div>
+      {% endif %}
+
+      {% if aside_heading != blank or aside_message != blank or aside_subheading %}
+        <div class="{{ section_name }}__aside">
+          <div class="{{ section_name }}__aside-icon">{% render 'svg', type: 'icon.arrrow' %}</div>
+          {% if aside_heading %}<strong class="{{ section_name }}__aside-heading">{{ aside_heading }}</strong>{% endif %}
+          {% if aside_subheading %}<strong class="{{ section_name }}__aside-subheading">{{ aside_subheading }}</strong>{% endif %}
+          {% if aside_message %}<div class="{{ section_name }}__aside-message">{{ aside_message }}</div>{% endif %}
+        </div>
+      {% endif %}
+
+    </div>
+  {% render 'bs-container', state: 'closed' %}
+</div>
+
 {% schema %}
 {
   "name": "Featured Product",
   "tag": "section",
   "class": "section section--featured-product",
   "settings": [
+    {
+      "content": "Media",
+      "type": "header"
+    },
+    {
+      "label": "Image",
+      "type": "image_picker",
+      "id": "image"
+    },
     {
       "content": "Content",
       "type": "header"
@@ -66,15 +144,6 @@
       "label": "Link",
       "type": "url",
       "id": "cta_link"
-    },
-    {
-      "content": "Media",
-      "type": "header"
-    },
-    {
-      "label": "Image",
-      "type": "image_picker",
-      "id": "image"
     },
     {
       "content": "Settings",
