@@ -24,10 +24,31 @@
           "settings": {
             "title": "Pollution Defense"
           }
+        },
+        "2edb7b91-b086-4a13-a2f9-d303f8b228d2": {
+          "type": "marker",
+          "settings": {
+            "title": "Tone + Texture"
+          }
+        },
+        "c79c1f73-c593-4bcb-9fd3-9a2a1b82d792": {
+          "type": "marker",
+          "settings": {
+            "title": ""
+          }
+        },
+        "46ba11cf-b2a7-4e55-b23b-acd0f9f5f7a1": {
+          "type": "marker",
+          "settings": {
+            "title": ""
+          }
         }
       },
       "block_order": [
-        "efb1f771-3d38-4605-b0c8-1f312ff656c6"
+        "efb1f771-3d38-4605-b0c8-1f312ff656c6",
+        "2edb7b91-b086-4a13-a2f9-d303f8b228d2",
+        "c79c1f73-c593-4bcb-9fd3-9a2a1b82d792",
+        "46ba11cf-b2a7-4e55-b23b-acd0f9f5f7a1"
       ],
       "settings": {
         "heading": "",
