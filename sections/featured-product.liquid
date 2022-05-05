@@ -4,14 +4,14 @@
 {% assign aside_heading = section.settings.aside_heading | default: '' %}
 {% assign aside_message = section.settings.aside_message | default: '' %}
 {% assign aside_subheading = section.settings.aside_subheading | default: '' %}
-{% assign cta = false %}
-{% assign cta_link = section.settings.cta_link | default: '' %}
-{% assign cta_title = section.settings.cta_title | default: '' %}
 {% assign heading = section.settings.heading | default: '' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: '' %}
 {% assign image = section.settings.image | default: false %}
 {% assign markers = section.blocks | where: 'type', 'marker' | default: false %}
 {% assign message = section.settings.message | default: '' %}
+{% assign product = section.settings.product | default: false %}
+
+{% render 'tools--debug-this', item: product.metafields %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
 
