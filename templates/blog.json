@@ -4,7 +4,7 @@
       "type": "main-blog",
       "settings": {
         "hero_heading": "<p>Blog<\/p>",
-        "hero_heading_highlight": "standard",
+        "hero_heading_highlight": "circle",
         "hero_image": "shopify:\/\/shop_images\/LONTREAU--blog-featured-image-01.png"
       }
     }
