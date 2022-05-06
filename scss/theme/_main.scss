@@ -5,6 +5,10 @@ main {
     padding-bottom: 65px;
   }
 
+  &.template--product {
+    padding-top: var(--theme-header-height);
+  }
+
   @include breakpoint(sm) {} // min width sm
 
   @include breakpoint(md) {} // min width md
@@ -14,6 +18,10 @@ main {
     &.template--article,
     &.template--blog {
       padding-bottom: 95px;
+    }
+
+    &.template--product {
+      padding-top: var(--theme-header-height--lg);
     }
 
   } // min width lg
