@@ -24,6 +24,12 @@
     column-gap: 0;
   }
 
+  &--collection-product-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--bs-gutter-width);
+    row-gap: var(--bs-gutter-width);
+  }
+
   &--blog {
     column-gap: var(--bs-gutter-width);
     width: 100%;
@@ -89,11 +95,14 @@
       row-gap: 75px;
     }
 
+    &--collection-product-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
   } // min width lg
 
   @include breakpoint(xl) {
 
-    &--collection-product-grid,
     &--flex,
     &--grid {
       row-gap: 65px;
@@ -101,12 +110,6 @@
 
   } // min width xl
 
-  @include breakpoint(xxl) {
-
-    &--cards-feature {
-      // grid-template-columns: 1fr 1fr 1fr;
-    }
-
-  } // min width xxl
+  @include breakpoint(xxl) {} // min width xxl
 
 }

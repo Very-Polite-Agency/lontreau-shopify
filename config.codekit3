@@ -1123,6 +1123,17 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/js\/add-to-cart.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/add-to-cart.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
     "\/js\/main.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -2750,12 +2761,12 @@
       "oAP" : "\/sections\/main-cart-items.liquid",
       "oF" : 0
     },
-    "\/sections\/main-collection-banner.liquid" : {
+    "\/sections\/main-collection-hero.liquid" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/sections\/main-collection-banner.liquid",
+      "oAP" : "\/sections\/main-collection-hero.liquid",
       "oF" : 0
     },
     "\/sections\/main-collection-product-grid.liquid" : {

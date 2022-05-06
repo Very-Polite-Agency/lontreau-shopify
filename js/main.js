@@ -1,5 +1,4 @@
 // @codekit-prepend quiet "../node_modules/validator/validator.min.js";
-// @codekit-prepend quiet "../node_modules/axios/dist/axios.min.js";
 // @codekit-prepend quiet "../node_modules/@glidejs/glide/dist/glide.min.js";
 // @codekit-prepend quiet "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
