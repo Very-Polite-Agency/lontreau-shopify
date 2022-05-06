@@ -2,7 +2,8 @@
 
     Accepts:
     - classes: {String} Any combination of words
-    - product: {Object} Product Liquid object
+    - product: {Object} Product Liquid object,
+    - style: {String} Display option for a switch case
 
     Usage:
     {% render 'price', classes: '',  product: product %}
@@ -14,13 +15,14 @@
   {% assign available = product.available %}
   {% assign price = product.price %}
   {% assign price_compare = product.compare_at_price %}
+  {% assign style = style | default: '' %}
 
   <div class="price">
+    <span class="price__value">{{ price | money_without_currency }}</span>
     {% if price_compare %}
-      <span class="price__value">{{ price_compare | divided_by: 100  | floor }}</span>
+      <span class="price__value sale-price">{{ price_compare | money_without_currency }}</span>
     {% endif %}
-    <span class="price__value {% if price_compare %}sale-price{% endif %}">{{ price | divided_by: 100  | floor }}</span>
-    <span class="price__currency">{{ shop.currency }}</span>
+    {% comment %} <span class="price__currency">{{ shop.currency }}</span> {% endcomment %}
   </div>
 
 {% endif %}

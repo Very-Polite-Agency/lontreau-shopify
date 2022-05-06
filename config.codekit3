@@ -33,6 +33,17 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/assets\/add-to-cart.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/add-to-cart.min.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
     "\/assets\/base.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1832,6 +1843,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/scss\/components\/_badge.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/_badge.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/scss\/components\/_body-copy.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1887,6 +1913,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/_card-article.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/components\/_card-product.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/_card-product.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -2217,6 +2258,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/_pagination.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/components\/_price.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/_price.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -2903,6 +2959,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/snippets\/aos-attributes.liquid",
+      "oF" : 0
+    },
+    "\/snippets\/badge.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/badge.liquid",
       "oF" : 0
     },
     "\/snippets\/bs-container.liquid" : {

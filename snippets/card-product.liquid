@@ -22,13 +22,16 @@
     {% assign snippet_classes = snippet_classes | prepend: ' ' | prepend: classes %}
   {% endif %}
 
+  {% assign available = product.available | default: false %}
   {% assign featured_image = product.featured_image | default: false %}
+  {% assign price = product.price %}
+  {% assign price_compare = product.compare_at_price %}
+  {% assign selected_variant = product.selected_or_first_available_variant | default: false %}
   {% assign title = product.title | default: '' %}
   {% assign type = product.type | default: '' %}
   {% assign url = product.url | default: '' %}
-  {% assign selected_variant = product.selected_or_first_available_variant | default: false %}
 
-  <article class="{{ snippet_classes }} {{ snippet_name }}--{{ style }} product" id="{{ snippet_id }}" data-published-at="{{ product.published_at | date: "%Y-%m-%d %H:%M:%S" }}">
+  <article class="{{ snippet_classes }} {{ snippet_name }}--{{ style }} product" id="{{ snippet_id }}" data-published-at="{{ product.published_at | date: "%Y-%m-%d %H:%M:%S" }}" {% unless available %}data-unavailable{% endunless %}>
 
     {% case style %}
 
@@ -41,14 +44,19 @@
               image: featured_image,
             %}
           </a>
+          {% if price_compare %}
+            {% render 'badge', type: 'sale' %}
+          {% endif %}
         </div>
         <div class="{{ snippet_name }}__info">
           <strong class="{{ snippet_name }}__title caption--2">{{ title }}</strong>
           <span class="{{ snippet_name }}__price caption--2">{% render 'price', product: product %}</strong>
-          {% if selected_variant %}
-            <button class="{{ snippet_name }}__button button--tertiary js--add-to-cart" type="button" data-variant-id="{{ selected_variant.id }}" data-quantity="1">Add to Cart</button>
-          {% endif %}
         </div>
+        {% if selected_variant %}
+          <button class="{{ snippet_name }}__button button--tertiary js--add-to-cart" type="button" data-variant-id="{{ selected_variant.id }}" data-quantity="1">
+            <span class="button__title">{% if available %}Add to Cart{% else %}Unavailable{% endif %}</span>
+          </button>
+        {% endif %}
 
       {% when 'contact-form' %}
 

@@ -41,7 +41,7 @@
 
     if ( variantID ) {
       axios( config ).then(function (response) {
-        console.log(response);
+        notify( response.data.items );
       })
       .catch(function (error) {
         console.log(error);
@@ -53,4 +53,12 @@
 
   });
 });
+
+function notify( $products = [] ) {
+  if ( $products ) {
+    $products.forEach( product => {
+      alert( `${product.title} added to cart!` );
+    });
+  }
+}
 

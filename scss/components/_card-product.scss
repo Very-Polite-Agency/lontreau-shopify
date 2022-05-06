@@ -1,0 +1,50 @@
+.card-product {
+
+  .badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__featured-image {
+    position: relative;
+  }
+
+  &__price {
+    font-family: var(--theme-font-family--sans-serif--primary);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+
+  &__title {
+    font-family: var(--theme-font-family--serif--primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.23;
+    letter-spacing: -0.01em;
+    flex: 1;
+  }
+
+  &--collection-product-grid {
+    border: 1px solid rgba(var(--theme-colour-black), 1);
+    .card-product {
+      &__info {
+        padding: 10px 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+    }
+  }
+
+  &[data-unavailable] {
+    opacity: 0.1;
+    cursor: no-drop;
+    pointer-events: none;
+  }
+
+}

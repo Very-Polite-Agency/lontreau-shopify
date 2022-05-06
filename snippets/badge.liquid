@@ -1,0 +1,8 @@
+{%- if type and type != blank -%}
+  <div class="badge" data-type="{{ type }}">
+    {% case type %}
+      {% when 'sale' %}
+        <div class="badge__title">Sale</div>
+    {% endcase %}
+  </div>
+{% endif %}
