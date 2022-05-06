@@ -2,10 +2,24 @@
   "sections": {
     "main": {
       "type": "main-product",
-      "settings": {}
+      "settings": {
+      }
+    },
+    "165179579849f0b545": {
+      "type": "carousel-education",
+      "settings": {
+        "content_type": "minimal",
+        "alignment": "center",
+        "heading": "<p>We have <em>high standards<\/em><\/p>",
+        "heading_highlight": "circle",
+        "message": "",
+        "anchor_id": "",
+        "colour_theme": "light"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "165179579849f0b545"
   ]
 }
