@@ -22,14 +22,34 @@
 // });
 
 ( document.querySelectorAll('.js--add-to-cart') || [] ).forEach( button => {
-  trigger.addEventListener('click', event => {
+  button.addEventListener('click', event => {
 
     event.preventDefault();
 
-    let variantID = button.dataset.variantId || false;
-    let quantity = button.dataset.quantity || 1;
+    let variantID = parseInt(button.dataset.variantId) || false;
+    let quantity = parseInt(button.dataset.quantity) || 1;
+    let config = {
+      method: 'post',
+      url: window.Shopify.routes.root + 'cart/add.js',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      data: {
+        'items': [{ 'id': variantID, 'quantity': quantity }]
+      }
+    };
 
-    console.lgo({ variantID, quantity });
+    if ( variantID ) {
+      axios( config ).then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
+      .then(function () {});
+    }
+
+    console.log({ variantID, quantity });
 
   });
 });
