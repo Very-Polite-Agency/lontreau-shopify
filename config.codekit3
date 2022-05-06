@@ -3137,6 +3137,14 @@
       "oAP" : "\/snippets\/share-this.liquid",
       "oF" : 0
     },
+    "\/snippets\/sort-option-name.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/sort-option-name.liquid",
+      "oF" : 0
+    },
     "\/snippets\/svg.liquid" : {
       "cB" : 0,
       "ft" : 8192,

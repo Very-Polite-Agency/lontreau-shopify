@@ -1,10 +1,12 @@
 main {
 
   &.template--article,
-  &.template--blog {
+  &.template--blog,
+  &.template--collection {
     padding-bottom: 65px;
   }
 
+  &.template--collection,
   &.template--product {
     padding-top: var(--theme-header-height);
   }
@@ -16,10 +18,12 @@ main {
   @include breakpoint(lg) {
 
     &.template--article,
-    &.template--blog {
+    &.template--blog,
+    &.template--collection {
       padding-bottom: 95px;
     }
 
+    &.template--collection,
     &.template--product {
       padding-top: var(--theme-header-height--lg);
     }

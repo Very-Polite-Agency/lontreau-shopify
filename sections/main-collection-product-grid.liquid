@@ -14,6 +14,15 @@
 
       <div class="{{ section_name }}__main">
         {% render 'bs-container', state: 'open' %}
+          <div class="{{ section_name }}__sort-filter">
+            <label class="{{ section_name }}__sort-filter-label caption--1">Sort by</label>
+            <select class="{{ section_name }}__sort-filter-options select--1" id="sort-by">
+              {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
+              {% for option in collection.sort_options %}
+                <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>{% render 'sort-option-name', option_value: option.value %}</option>
+              {% endfor %}
+            </select>
+          </div>
           <div class="{{ section_name }}__listing listing--{{ section_name }}">
             {%- for product in collection.products -%}
               {% render 'card-product', product: product, style: section_name %}

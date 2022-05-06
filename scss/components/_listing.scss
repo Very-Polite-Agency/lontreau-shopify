@@ -25,7 +25,7 @@
   }
 
   &--collection-product-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: var(--bs-gutter-width);
     row-gap: var(--bs-gutter-width);
   }
@@ -74,7 +74,13 @@
     }
   }
 
-  @include breakpoint(sm) {} // min width sm
+  @include breakpoint(sm) {
+
+    &--collection-product-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+  } // min width sm
 
   @include breakpoint(md) {
 

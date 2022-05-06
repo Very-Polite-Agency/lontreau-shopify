@@ -1,12 +1,24 @@
 .badge {
 
+  font-family: var(--theme-font-family--sans-serif--primary);
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  min-width: 65px;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.07em;
 
-  [data-type="sale"] {
+  &__title {
+    margin-top: 2px;
+  }
+
+  &[data-type="sale"] {
     background: rgba(var(--theme-colour-grass), 1);
-    color: rgba(var(--theme-colour-white), 1);
+    color: rgba(var(--theme-colour-black), 1);
   }
 
 }
