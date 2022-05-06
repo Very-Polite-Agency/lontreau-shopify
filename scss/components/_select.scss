@@ -1,0 +1,16 @@
+.select {
+
+  transition:
+    background var(--theme-transition-duration),
+    border var(--theme-transition-duration),
+    color var(--theme-transition-duration),
+    opacity var(--theme-transition-duration);
+  min-height: 46px;
+
+  &--primary {
+    @extend .select;
+    border: 1px solid rgba(var(--theme-colour-black), 1);
+  }
+
+
+}
