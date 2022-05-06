@@ -2,10 +2,60 @@
   "sections": {
     "main": {
       "type": "main-product",
-      "settings": {}
+      "settings": {
+      }
+    },
+    "165179579849f0b545": {
+      "type": "carousel-education",
+      "settings": {
+        "content_type": "minimal",
+        "alignment": "center",
+        "heading": "<p>We have <em>high standards<\/em><\/p>",
+        "heading_highlight": "circle",
+        "message": "",
+        "anchor_id": "",
+        "colour_theme": "light"
+      }
+    },
+    "1651797713ccbee475": {
+      "type": "fifty-fifty-feature",
+      "settings": {
+        "title": "",
+        "heading": "<p>We <em>know<\/em> skin<\/p>",
+        "heading_highlight": "standard",
+        "message": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.<\/p>",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--wide_2x_e6a66d64-eb95-41cf-84aa-c093104a5d1f.png",
+        "hide_image_mobile": false,
+        "anchor_id": "",
+        "style": "wide",
+        "layout": "image-right",
+        "colour_theme": "grey"
+      }
+    },
+    "1651797643f6f520ba": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "",
+        "heading": "<p>Defy the elements,<\/p><p><em>Defy expectations<\/em><\/p>",
+        "heading_highlight": "circle",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/LONTREAU--our-philosophy-page--FF2_2x_4a5a006e-5845-4b50-a211-a91e4c276d4e.png",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "auto",
+        "curved_arrow_enable": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "165179579849f0b545",
+    "1651797713ccbee475",
+    "1651797643f6f520ba"
   ]
 }
