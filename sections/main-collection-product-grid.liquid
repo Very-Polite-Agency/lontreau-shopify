@@ -14,18 +14,18 @@
     {%- if collection.products.size == 0 -%}
 
        <div class="{{ section_name }}__hero">
-        {% render 'bs-container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+        {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
           <div class="{{ section_name }}__hero-content">
             <h1 class="{{ section_name }}__title heading--1">{{ title }}</h1>
             <div class="{{ section_name }}__description body-copy--1">It looks like there are currently no products in this collection!</div>
           </div>
-        {% render 'bs-container', state: 'closed' %}
+        {% render 'layout--container', state: 'closed' %}
        </div>
 
     {%- else -%}
 
       <div class="{{ section_name }}__hero">
-        {% render 'bs-container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+        {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
           <div class="{{ section_name }}__hero-layout">
 
             <div class="{{ section_name }}__hero-content">
@@ -46,17 +46,17 @@
             </div>
 
           </div>
-        {% render 'bs-container', state: 'closed' %}
+        {% render 'layout--container', state: 'closed' %}
       </div>
 
       <div class="{{ section_name }}__main">
-        {% render 'bs-container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+        {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
           <div class="{{ section_name }}__listing listing--{{ section_name }}">
             {%- for product in collection.products -%}
               {% render 'card-product', product: product, style: section_name %}
             {%- endfor -%}
           </div>
-        {% render 'bs-container', state: 'closed' %}
+        {% render 'layout--container', state: 'closed' %}
       </div>
 
       {%- if paginate.pages > 1 -%}
@@ -103,20 +103,14 @@
       "label": "Products per Page",
       "type": "select",
       "options": [
-        { "value": "3", "label": "3" },
-        { "value": "9", "label": "9" },
+        { "value": "4", "label": "4" },
         { "value": "12", "label": "12" },
-        { "value": "18", "label": "18" },
+        { "value": "16", "label": "16" },
+        { "value": "20", "label": "20" },
         { "value": "24", "label": "24" }
       ],
-      "default": "9",
+      "default": "4",
       "id": "products_per_page"
-    },
-    {
-      "label": "Show second image on hover",
-      "type": "checkbox",
-      "default": false,
-      "id": "show_secondary_image"
     }
   ]
 }
