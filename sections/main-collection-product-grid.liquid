@@ -1,62 +1,25 @@
 {%- assign section_name = 'collection-product-grid' -%}
 {%- assign section_id = section_name | append: '--' | append: section.id -%}
 
-{% if section.settings.anchor_id != blank %}
-  {% assign section_id = section.settings.anchor_id %}
-{% endif %}
-
-{% assign title = collection.title | defualt: '' %}
-{% assign description = collection.description | defualt: '' %}
-
 <div class="{{ section_name }}" id="{{ section_id }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
 
     {%- if collection.products.size == 0 -%}
-
-       <div class="{{ section_name }}__hero">
-        {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
-          <div class="{{ section_name }}__hero-content">
-            <h1 class="{{ section_name }}__title heading--1">{{ title }}</h1>
-            <div class="{{ section_name }}__description body-copy--1">It looks like there are currently no products in this collection!</div>
-          </div>
-        {% render 'layout--container', state: 'closed' %}
-       </div>
-
+      <div class="{{ section_name }}__main">
+        {% render 'bs-container', state: 'open' %}
+          <h2 class="{{ section_name }}__heading">It looks like there are no products that match the criteria!</h2>
+        {% render 'bs-container', state: 'closed' %}
+      </div>
     {%- else -%}
 
-      <div class="{{ section_name }}__hero">
-        {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
-          <div class="{{ section_name }}__hero-layout">
-
-            <div class="{{ section_name }}__hero-content">
-              <h1 class="{{ section_name }}__title heading--1">{{ title }}</h1>
-              {% if description != blank and false %}
-                <div class="{{ section_name }}__description body-copy--1">{{ description }}</div>
-              {% endif %}
-            </div>
-
-            <div class="{{ section_name }}__sort-filter">
-              <label class="{{ section_name }}__sort-filter-label caption--1">Sort by</label>
-              <select class="{{ section_name }}__sort-filter-options select--1" id="sort-by">
-                {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
-                {% for option in collection.sort_options %}
-                  <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>{% render 'sort-option-name', option_value: option.value %}</option>
-                {% endfor %}
-              </select>
-            </div>
-
-          </div>
-        {% render 'layout--container', state: 'closed' %}
-      </div>
-
       <div class="{{ section_name }}__main">
-        {% render 'layout--container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+        {% render 'bs-container', state: 'open' %}
           <div class="{{ section_name }}__listing listing--{{ section_name }}">
             {%- for product in collection.products -%}
               {% render 'card-product', product: product, style: section_name %}
             {%- endfor -%}
           </div>
-        {% render 'layout--container', state: 'closed' %}
+        {% render 'bs-container', state: 'closed' %}
       </div>
 
       {%- if paginate.pages > 1 -%}
