@@ -16,10 +16,28 @@
         "anchor_id": "",
         "colour_theme": "light"
       }
+    },
+    "1651797643f6f520ba": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "",
+        "heading": "<p>Defy the elements,<\/p><p><em>Defy expectations<\/em><\/p>",
+        "heading_highlight": "circle",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/LONTREAU--our-philosophy-page--FF2_2x_4a5a006e-5845-4b50-a211-a91e4c276d4e.png",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "auto",
+        "curved_arrow_enable": false
+      }
     }
   },
   "order": [
     "main",
-    "165179579849f0b545"
+    "165179579849f0b545",
+    "1651797643f6f520ba"
   ]
 }
