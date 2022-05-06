@@ -90,7 +90,7 @@ const Gliders = (() => {
 
       switch ( style ) {
 
-        case 'carousel-education-detailed':
+        case 'carousel-education-detailed': {
           options = gliderOptions({
             autoplay: 0,
             breakpoints: {
@@ -136,7 +136,8 @@ const Gliders = (() => {
             peek: 0,
           });
           break;
-        case 'carousel-education-minimal':
+        }
+        case 'carousel-education-minimal': {
           options = gliderOptions({
             breakpoints: {
               9999: {
@@ -200,6 +201,14 @@ const Gliders = (() => {
             peek: 0,
           });
           break;
+        }
+        case 'product-gallery': {
+          options = gliderOptions({
+            breakpoints: {},
+            gap: 32,
+          });
+          break;
+        }
       }
 
       if ( gap ) {
