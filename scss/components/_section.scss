@@ -31,6 +31,12 @@
     }
   }
 
+  &--collection-hero {
+    & + .section--collection-product-grid {
+      margin-top: var(--bs-container-fluid-padding);
+    }
+  }
+
   [data-colour-theme-grey],
   [data-colour-theme-light] {
     color: rgba(var(--theme-colour-black), 1);

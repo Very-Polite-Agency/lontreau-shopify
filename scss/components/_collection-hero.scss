@@ -1,0 +1,69 @@
+.collection-hero {
+
+  &__image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/2;
+    @supports not (aspect-ratio: auto) {
+      height: 300px;
+    }
+  }
+
+  &__main {
+    position: relative;
+  }
+
+  @include breakpoint(sm) {
+
+    &__image {
+      @supports not (aspect-ratio: auto) {
+        height: 350px;
+      }
+    }
+
+  } // min width sm
+
+  @include breakpoint(md) {
+
+    &__image {
+      @supports not (aspect-ratio: auto) {
+        height: 400px;
+      }
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {
+
+    &__image {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      @supports not (aspect-ratio: auto) {
+        height: 400px;
+      }
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {
+
+    &__image {
+      @supports not (aspect-ratio: auto) {
+        height: 500px;
+      }
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    &__image {
+      @supports not (aspect-ratio: auto) {
+        height: 600px;
+      }
+    }
+
+  } // min width xxl
+
+}

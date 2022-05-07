@@ -9,7 +9,7 @@
       text-align: center;
     }
     & + .collection-product-grid__listing {
-      margin-top: var(--bs-gutter-width);
+      margin-top: var(--bs-container-fluid-padding);
     }
   }
 

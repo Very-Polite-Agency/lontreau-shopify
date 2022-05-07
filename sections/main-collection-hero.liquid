@@ -13,7 +13,9 @@
   {% render 'bs-container', state: 'open' %}
     <div class="{{ section_name }}__main">
       {% if collection_image_show and image %}
-        {% render 'lazyload-image', background: true, classes: 'collection-hero__image', image: image %}
+        <div class="{{ section_name }}__image">
+          {% render 'lazyload-image', background: true, image: image %}
+        </div>
       {% endif %}
       <div class="{{ section_name }}__layout">
         {% if collection_featured_product_show and featured_product %}
