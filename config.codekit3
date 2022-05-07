@@ -621,6 +621,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/LONTREAU--icon.select-arrow.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/LONTREAU--icon.select-arrow.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/main.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1988,6 +1998,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/_collapsible.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/components\/_collection-product-grid.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/_collection-product-grid.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,

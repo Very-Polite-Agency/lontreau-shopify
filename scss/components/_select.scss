@@ -5,12 +5,30 @@
     border var(--theme-transition-duration),
     color var(--theme-transition-duration),
     opacity var(--theme-transition-duration);
+  font-family: var(--theme-font-family--serif--primary);
   min-height: 46px;
+  width: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0 18px;
+
 
   &--primary {
     @extend .select;
     border: 1px solid rgba(var(--theme-colour-black), 1);
+    appearance: none;
+    background: transparent;
+    background-image: url('./LONTREAU--icon.select-arrow.svg');
+    background-repeat: no-repeat;
+    background-position-x: calc( 100% - 18px );
+    background-position-y: calc( (100% - 3px) * 0.5 );
+    background-size: auto 6px;
   }
-
 
 }
