@@ -5,7 +5,7 @@
     width: 100%;
     justify-content: flex-start;
     align-items: center;
-    &-options {
+    select {
       text-align: center;
     }
     & + .collection-product-grid__listing {
@@ -21,9 +21,9 @@
 
     &__sort-filter {
       justify-content: flex-end;
-      &-options {
+      select {
+        width: calc( (100% - (3 * var(--bs-gutter-width))) * 0.25 );
         text-align: left;
-        width: 25%;
       }
     }
 

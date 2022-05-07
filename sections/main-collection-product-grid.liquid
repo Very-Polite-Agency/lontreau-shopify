@@ -18,7 +18,7 @@
             <select class="{{ section_name }}__sort-filter-options select--primary" id="sort-by">
               {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
               {% for option in collection.sort_options %}
-                <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>{% render 'sort-option-name', option_value: option.value %}</option>
+                <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>{%- render 'sort-option-name', option_value: option.value -%}</option>
               {% endfor %}
             </select>
           </div>
