@@ -2,11 +2,17 @@
   "sections": {
     "hero": {
       "type": "main-collection-hero",
-      "settings": {}
+      "settings": {
+        "collection_description_show": true,
+        "collection_image_show": true,
+        "collection_featured_product_show": true
+      }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "settings": {}
+      "settings": {
+        "products_per_page": "12"
+      }
     }
   },
   "order": [
