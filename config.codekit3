@@ -2849,6 +2849,14 @@
       "oAP" : "\/sections\/main-cart-footer.liquid",
       "oF" : 0
     },
+    "\/sections\/main-cart-items--LEGACY.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/main-cart-items--LEGACY.liquid",
+      "oF" : 0
+    },
     "\/sections\/main-cart-items.liquid" : {
       "cB" : 0,
       "ft" : 8192,
