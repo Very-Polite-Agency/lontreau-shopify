@@ -1,0 +1,12 @@
+.line-item {
+
+  &__image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    @supports not (aspect-ratio: auto) {
+      height: 100px;
+	  }
+  }
+
+}

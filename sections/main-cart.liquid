@@ -25,63 +25,76 @@
 
     {% else %}
 
-      <form class="{{ section__name }}__summary" action="{{ routes.cart_url }}" method="post" id="cart">
+      <form class="{{ section__name }}__main" action="{{ routes.cart_url }}" method="post" id="cart">
         <div class="row row--inner">
 
-        <div class="col-12 col-lg-7">
+          <div class="col-12 col-lg-7">
 
-          <div class="{{ section__name }}__line-items">
-            {%- for item in cart.items -%}
-              <div class="{{ section__name }}__line-item line-item">
+            <div class="{{ section__name }}__line-items">
+              {%- for item in cart.items -%}
+                <div class="{{ section__name }}__line-item line-item">
 
-                <div class="line-item__image">
-                  {% render 'lazyload-image', image: item.image %}
-                </div>
-
-                <div class="line-item__info">
-                  <strong class="line-item__title">{{ item.variant.product.title }}</strong>
-                  <div class="line-item__variant">{{ item.variant.title }}</div>
-                  <div class="line-item__price">{{ item.original_price }}</div>
-                </div>
-
-                <div class="line-item__quantity">
-                  <div class="stepper">
-                    <button class="stepper__button button--minus" name="minus" type="button">–</button>
-                    <input class=""
-                      type="number"
-                      name="updates[]"
-                      value="{{ item.quantity }}"
-                      min="0"
-                      id="quantity-{{ item.index | plus: 1 }}"
-                      data-index="{{ item.index | plus: 1 }}"
-                    >
-                    <button class="stepper__button button--plus" name="plus" type="button">+</button>
+                  <div class="line-item__image">
+                    <a href="{{ item.url }}" target="_self" title="{{ item.variant.product.title }}">
+                      {% render 'lazyload-image', background: true, image: item.image %}
+                    </a>
                   </div>
+
+                  <div class="line-item__info">
+                    <strong class="line-item__title body-copy--alt">
+                      <a href="{{ item.url }}" target="_self" title="{{ item.variant.product.title }}">{{ item.variant.product.title }}</a>
+                    </strong>
+                    {% unless "Default Title" == item.variant.title %}
+                      <div class="line-item__variant body-copy--alt-small">{{ item.variant.title }}</div>
+                    {% endunless %}
+                    <div class="line-item__price body-copy--1">${{ item.original_price | money_without_currency }}</div>
+                  </div>
+
+                  <div class="line-item__quantity">
+
+                    <div class="line-item__total body-copy--1 d-lg-none">${{ item.original_line_price | money_without_currency }}</div>
+
+                    <div class="stepper">
+                      <button class="stepper__button button--minus" name="minus" type="button">–</button>
+                      <input class=""
+                        type="number"
+                        name="updates[]"
+                        value="{{ item.quantity }}"
+                        min="0"
+                        id="quantity-{{ item.index | plus: 1 }}"
+                        data-index="{{ item.index | plus: 1 }}"
+                      >
+                      <button class="stepper__button button--plus" name="plus" type="button">+</button>
+                    </div>
+                  </div>
+
                 </div>
-
-              </div>
-            {%- endfor -%}
-          </div>
-
-          <div class="{{ section__name }}__line-items-cta">
-            <button type="submit" class="button--secondary">Update Bag</button>
-          </div>
-
-        </div>
-
-        <div class="col-12 col-lg-5">
-
-
-          <button type="submit" class="button--secondary" name="checkout">Checkout</button>
-
-          {%- if additional_checkout_buttons -%}
-            <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
-              {{ content_for_additional_checkout_buttons }}
+              {%- endfor -%}
             </div>
-          {%- endif -%}
+
+            <div class="{{ section__name }}__line-items-cta">
+              <button type="submit" class="button--secondary">Update Bag</button>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-lg-5">
+
+            <div class="{{ section__name }}__summary">
+
+              <button type="submit" class="button--secondary" name="checkout">Checkout</button>
+
+              {%- if additional_checkout_buttons -%}
+                <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
+                  {{ content_for_additional_checkout_buttons }}
+                </div>
+              {%- endif -%}
+
+            </div>
+
+          </div>
 
         </div>
-
       </form>
 
     {% endif %}
