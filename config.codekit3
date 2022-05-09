@@ -2841,28 +2841,12 @@
       "oAP" : "\/sections\/main-blog.liquid",
       "oF" : 0
     },
-    "\/sections\/main-cart-footer.liquid" : {
+    "\/sections\/main-cart.liquid" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/sections\/main-cart-footer.liquid",
-      "oF" : 0
-    },
-    "\/sections\/main-cart-items--LEGACY.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/main-cart-items--LEGACY.liquid",
-      "oF" : 0
-    },
-    "\/sections\/main-cart-items.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/main-cart-items.liquid",
+      "oAP" : "\/sections\/main-cart.liquid",
       "oF" : 0
     },
     "\/sections\/main-collection-hero.liquid" : {
