@@ -6,7 +6,9 @@
     "main": {
       "type": "main-cart",
       "settings": {
-        "hero_heading": "Shopping Bag"
+        "hero_heading": "Shopping Bag",
+        "empty_heading": "It looks like your bag is empty.",
+        "empty_message": "<p>Let's fix that. <a href=\"\/collections\/base-collection\" title=\"Base Collection\">Shop our<\/a> latest collection.<\/p>"
       }
     }
   }
