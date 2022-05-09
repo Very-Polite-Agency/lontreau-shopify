@@ -3,6 +3,10 @@
 
 {% assign hero_heading = section.settings.hero_heading | default: 'Cart' %}
 
+{% comment %} <div id="remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
+  <a href="{{ item.url_to_remove }}" class="button button--tertiary">Remove</a>
+</div> {% endcomment %}
+
 <div class="{{ section__name }}__hero">
   {% render 'bs-container', state: 'open' %}
     <h1>{{ hero_heading }}</h1>
@@ -22,36 +26,61 @@
     {% else %}
 
       <form class="{{ section__name }}__summary" action="{{ routes.cart_url }}" method="post" id="cart">
+        <div class="row row--inner">
 
-        {%- for item in cart.items -%}
+        <div class="col-12 col-lg-7">
 
-          <div class="stepper">
-            <button class="" name="minus" type="button">–</button>
-            <input class=""
-              type="number"
-              name="updates[]"
-              value="{{ item.quantity }}"
-              min="0"
-              id="quantity-{{ item.index | plus: 1 }}"
-              data-index="{{ item.index | plus: 1 }}"
-            >
-            <button class="" name="plus" type="button">+</button>
+          <div class="{{ section__name }}__line-items">
+            {%- for item in cart.items -%}
+              <div class="{{ section__name }}__line-item line-item">
+
+                <div class="line-item__image">
+                  {% render 'lazyload-image', image: item.image %}
+                </div>
+
+                <div class="line-item__info">
+                  <strong class="line-item__title">{{ item.variant.product.title }}</strong>
+                  <div class="line-item__variant">{{ item.variant.title }}</div>
+                  <div class="line-item__price">{{ item.original_price }}</div>
+                </div>
+
+                <div class="line-item__quantity">
+                  <div class="stepper">
+                    <button class="stepper__button button--minus" name="minus" type="button">–</button>
+                    <input class=""
+                      type="number"
+                      name="updates[]"
+                      value="{{ item.quantity }}"
+                      min="0"
+                      id="quantity-{{ item.index | plus: 1 }}"
+                      data-index="{{ item.index | plus: 1 }}"
+                    >
+                    <button class="stepper__button button--plus" name="plus" type="button">+</button>
+                  </div>
+                </div>
+
+              </div>
+            {%- endfor -%}
           </div>
 
-          <div id="remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
-            <a href="{{ item.url_to_remove }}" class="button button--tertiary">Remove</a>
+          <div class="{{ section__name }}__line-items-cta">
+            <button type="submit" class="button--secondary">Update Bag</button>
           </div>
 
-        {%- endfor -%}
+        </div>
 
-        <button type="submit" class="button--secondary">Update</button>
-        <button type="submit" class="button--secondary" name="checkout">Checkout</button>
+        <div class="col-12 col-lg-5">
 
-        {%- if additional_checkout_buttons -%}
-          <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
-            {{ content_for_additional_checkout_buttons }}
-          </div>
-        {%- endif -%}
+
+          <button type="submit" class="button--secondary" name="checkout">Checkout</button>
+
+          {%- if additional_checkout_buttons -%}
+            <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
+              {{ content_for_additional_checkout_buttons }}
+            </div>
+          {%- endif -%}
+
+        </div>
 
       </form>
 
