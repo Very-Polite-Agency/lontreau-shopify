@@ -1,21 +1,11 @@
 {
   "sections": {
-<<<<<<< HEAD
 		"main": {
 			"settings": {},
 			"type": "full-width-feature"
 		}
 	},
-	"order": ["main"]
-=======
-    "main": {
-      "type": "full-width-feature",
-      "settings": {
-      }
-    }
-  },
   "order": [
     "main"
   ]
->>>>>>> 2442d888e7498a17136d15ceaa13409ff55aafd4
 }
