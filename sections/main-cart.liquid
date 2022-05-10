@@ -98,16 +98,19 @@
           <div class="col-12 col-lg-5">
 
             <div class="{{ section_name }}__summary">
-              <strong class="heading--1">Total</strong>
-              <p>Shipping & Taxes<br>Calculated at Checkout</p>
-              {%- if additional_checkout_buttons -%}
+              <strong class="heading--2">Total</strong>
+              <div class="{{ section_name }}__price-notes">
+                <p>Shipping & Taxes<br>Calculated at Checkout</p>
+              </div>
+              <div class="{{ section_name }}__total-price"> ${{ cart.original_total_price | money_without_currency }}</div>
+              {% comment %} {%- if additional_checkout_buttons -%}
                 <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
                   {{ content_for_additional_checkout_buttons }}
                 </div>
-              {%- endif -%}
+              {%- endif -%} {% endcomment %}
             </div>
 
-            <button type="submit" class="{{ section_name }}__checkout-button button--primary" name="checkout">Checkout</button>
+            <button type="submit" class="{{ section_name }}__checkout-button button--primary" name="checkout">Checkout • ${{ cart.original_total_price | money_without_currency }}</button>
 
           </div>
 
