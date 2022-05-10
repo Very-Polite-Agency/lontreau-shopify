@@ -4,7 +4,8 @@
       "type": "hero",
       "settings": {
         "heading": "<p><em>Endurance<\/em> Skincare<\/p>",
-        "heading_highlight": "circle"
+        "heading_highlight": "circle",
+        "image": "shopify:\/\/shop_images\/hero.png"
       }
     },
     "1649371027bf029c73": {
