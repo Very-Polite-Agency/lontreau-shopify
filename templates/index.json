@@ -110,7 +110,7 @@
         "image": "shopify:\/\/shop_images\/LONTREAU--home-page--goal-setting-ingredients_2x_9f4f4844-6146-4bd1-ba65-1290d90818fb.png",
         "parallax": false,
         "anchor_id": "",
-        "height": "auto",
+        "height": "large",
         "curved_arrow_enable": false
       }
     },
