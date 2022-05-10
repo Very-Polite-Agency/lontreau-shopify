@@ -42,14 +42,13 @@
     if ( variantID ) {
       axios( config ).then(function (response) {
         notify( response.data.items );
+        updateCartItemsTotal();
       })
       .catch(function (error) {
         console.log(error);
       })
       .then(function () {});
     }
-
-    console.log({ variantID, quantity });
 
   });
 });
@@ -60,5 +59,30 @@ function notify( $products = [] ) {
       alert( `${product.title} added to cart!` );
     });
   }
+}
+
+function getCartItemsCount( $products = [] ) {
+  let config = {
+    method: 'get',
+    url: window.Shopify.routes.root + 'cart.js',
+  };
+  axios( config ).then(function (response) {
+    updateCartItemsCount( response.data.item_count );
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+  .then(function () {});
+}
+
+function updateCartItemsCount( $count = 0 ) {
+  ( document.querySelectorAll('.js--cart-items-total') || [] ).forEach( item => {
+    item.innerHTML = `(${$count})`;
+    if ( $count > 0 ) {
+      item.classList.add('has-items');
+    } else {
+      item.classList.remove('has-items');
+    }
+  });
 }
 
