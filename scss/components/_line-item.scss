@@ -13,7 +13,7 @@
 
   &__image {
     position: relative;
-    width: calc( (100% - var(--bs-gutter-width)) * 0.3333 );
+    width: 92px;
     aspect-ratio: 1/1;
     margin-right: auto;
     a {
@@ -28,12 +28,13 @@
       }
     }
     @supports not (aspect-ratio: auto) {
-      height: 100px;
+      height: 92px;
 	  }
   }
 
   &__info {
-    width: calc( (100% - var(--bs-gutter-width)) * 0.6666 );
+    flex: 1;
+    padding: 0 var(--bs-gutter-width);
   }
 
   &__label {
@@ -53,7 +54,8 @@
     display: inline-flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: calc( (100% - var(--bs-gutter-width)) * 0.6666 );
+    width: 100%;
+    padding-left: calc( 92px + var(--bs-gutter-width) );
   }
 
   &__title {
@@ -72,10 +74,6 @@
     }
   }
 
-  &__total {
-    display: none;
-  }
-
   &__total-price {
     font-size: 18px;
     padding-top: 6px;
@@ -87,19 +85,19 @@
 
   @include breakpoint(sm) {} // min width sm
 
-  @include breakpoint(md) {} // min width md
-
-  @include breakpoint(lg) {
+  @include breakpoint(md) {
 
     flex-flow: row nowrap;
     align-items: center;
 
-    &__image {
-      width: 90px;
+    &__total,
+    &__quantity {
+      width: 20%;
+      padding: 0;
     }
 
-    &__info {
-      padding: 0 var(--bs-gutter-width);
+    &__image {
+      width: 90px;
     }
 
     &__label {
@@ -119,12 +117,57 @@
 
     &__total {
       display: block;
+      text-align: right;
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {
+
+    &__image {
+      width: 90px;
+    }
+
+    &__price {
+      font-size: 16px;
+    }
+
+    &__title {
+      font-size: 20px;
     }
 
   } // min width lg
 
-  @include breakpoint(xl) {} // min width xl
+  @include breakpoint(xl) {
 
-  @include breakpoint(xxl) {} // min width xxl
+    &__image {
+      width: 100px;
+    }
+
+    &__price {
+      font-size: 18px;
+    }
+
+    &__title {
+      font-size: 22px;
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    &__image {
+      width: 110px;
+    }
+
+    &__price {
+      font-size: 20px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+  } // min width xxl
 
 }

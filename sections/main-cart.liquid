@@ -9,7 +9,7 @@
 
 <div class="{{ section_name }}__hero">
   {% render 'bs-container', state: 'open' %}
-    <h1>{{ hero_heading }}</h1>
+    <h1 class="heading--2">{{ hero_heading }}</h1>
   {% render 'bs-container', state: 'closed' %}
 </div>
 
@@ -30,7 +30,14 @@
 
           <div class="col-12 col-lg-7">
 
+            <div class="{{ section_name }}__legend">
+              <div class="{{ section_name }}__legend-item product">Product</div>
+              <div class="{{ section_name }}__legend-item quantity">Quantity</div>
+              <div class="{{ section_name }}__legend-item total">Total</div>
+            </div>
+
             <div class="{{ section_name }}__line-items">
+
               {%- for item in cart.items -%}
                 <div class="{{ section_name }}__line-item line-item">
 
@@ -52,7 +59,7 @@
 
                   <div class="line-item__quantity">
 
-                    <div class="line-item__total body-copy--1 d-lg-none">
+                    <div class="line-item__total body-copy--1 d-md-none">
                       <label class="line-item__label body-copy--alt">Total</label>
                       <div class="line-item__total-price body-copy--1">${{ item.original_line_price | money_without_currency }}</div>
                     </div>
@@ -85,7 +92,7 @@
 
                   </div>
 
-                  <div class="line-item__total body-copy--1">${{ item.original_line_price | money_without_currency }}</div>
+                  <div class="line-item__total body-copy--1 d-none d-md-block">${{ item.original_line_price | money_without_currency }}</div>
 
                 </div>
               {%- endfor -%}
@@ -115,7 +122,9 @@
               {%- endif -%} {% endcomment %}
             </div>
 
-            <button type="submit" class="{{ section_name }}__checkout-button button--primary" name="checkout">Checkout • ${{ cart.original_total_price | money_without_currency }}</button>
+            <div class="{{ section_name }}__summary-cta">
+              <button class="{{ section_name }}__checkout-button button--primary" name="checkout" type="submit">Checkout • ${{ cart.original_total_price | money_without_currency }}</button>
+            </div>
 
           </div>
 

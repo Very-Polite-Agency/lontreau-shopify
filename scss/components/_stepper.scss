@@ -17,6 +17,11 @@
 
   button,
   input {
+    transition:
+      background var(--theme-transition-duration),
+      border var(--theme-transition-duration),
+      color var(--theme-transition-duration),
+      opacity var(--theme-transition-duration);
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
@@ -30,7 +35,7 @@
     display: block;
   }
 
-   button {
+  button {
     color: rgba(var(--theme-colour-black), 1);
     display: inline-flex;
     justify-content: center;
@@ -49,7 +54,7 @@
       color: rgba(var(--theme-colour-black), 1);
     }
     &:hover {
-      background: rgba(var(--theme-colour-black), 1);
+      background: rgba(var(--theme-colour-grass), 1);
       color: rgba(var(--theme-colour-white), 1);
     }
     &[disabled]{
@@ -64,6 +69,7 @@
     flex-basis: auto;
     text-align: center;
     -moz-appearance: textfield;
+    letter-spacing: 0.07em;
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
       -webkit-appearance: none;
@@ -81,5 +87,45 @@
       width: 12px;
     }
   }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    font-size: 16px;
+
+    button,
+    input {
+      height: 40px;
+      width: 40px;
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {
+
+    font-size: 18px;
+
+    button,
+    input {
+      height: 42px;
+      width: 42px;
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    font-size: 20px;
+
+    button,
+    input {
+      height: 44px;
+      width: 44px;
+    }
+
+  } // min width xxl
 
 }

@@ -6,15 +6,37 @@
     max-width: none;
   }
 
-  &__checkout-button {
-    margin-top: var(--bs-gutter-width);
+  &__hero {
+    text-align: center;
+    padding: 25px 0 50px;
+  }
+
+  &__legend {
+    color: rgba(var(--theme-colour-black), 0.6);
+    font-family: var(--theme-font-family--sans-serif--primary);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    .quantity,
+    .total {
+      display: none;
+    }
+    .product {
+      flex: 1;
+    }
   }
 
   &__line-items {
     border-top: 1px solid rgba(var(--theme-colour-black), 0.25);
     border-bottom: 1px solid rgba(var(--theme-colour-black), 0.25);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 0;
     &-cta {
       padding-top: 30px;
       display: flex;
@@ -38,6 +60,9 @@
       justify-content: space-between;
       padding: 20px 0 5px;
       align-items: baseline;
+    }
+    &-cta {
+      margin-top: var(--bs-gutter-width);
     }
     &-currency {
       font-style: italic;
@@ -73,29 +98,46 @@
 
   @include breakpoint(sm) {} // min width sm
 
-  @include breakpoint(md) {} // min width md
+  @include breakpoint(md) {
+
+    &__legend {
+      .quantity,
+      .total {
+        display: block;
+        width: 20%;
+      }
+      .total {
+        text-align: right;
+      }
+    }
+
+  } // min width md
 
   @include breakpoint(lg) {
 
-    &__total,
-    &__quantity {
-      width: 20%;
-      background: red;
+    &__summary,
+    &__summary-cta {
+      margin-left: 30px;
+    }
+
+    &__hero {
+      padding: 50px 0 80px;
     }
 
     &__line-items {
+      padding: 30px 0;
       &-cta {
         justify-content: flex-end;
         padding-top: var(--bs-gutter-width);
       }
     }
 
-    &__quantity {
-      background: green;
-    }
-
     &__summary {
       margin-top: 0;
+      padding: 20px;
+      &-cost {
+        padding: 20px 0 5px;
+      }
     }
 
     &__update-cart-button {
@@ -104,8 +146,28 @@
 
   } // min width lg
 
-  @include breakpoint(xl) {} // min width xl
+  @include breakpoint(xl) {
 
-  @include breakpoint(xxl) {} // min width xxl
+    &__hero {
+      padding: 60px 0 90px;
+    }
+
+    &__line-items {
+      padding: 40px 0;
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    &__hero {
+      padding: 70px 0 100px;
+    }
+
+    &__line-items {
+      padding: 50px 0;
+    }
+
+  } // min width xxl
 
 }
