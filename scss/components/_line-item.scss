@@ -1,12 +1,71 @@
 .line-item {
 
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-flow: row wrap;
+
+  a {
+    transition: opacity var(--theme-transition-duration);
+    opacity: 1;
+  }
+
   &__image {
     position: relative;
-    width: 100%;
+    width: calc( (100% - var(--bs-gutter-width)) * 0.3333 );
     aspect-ratio: 1/1;
+    margin-right: auto;
+    a {
+      border: 1px solid rgba(var(--theme-colour-black), 1);
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      &:focus,
+      &:hover {
+        opacity: 0.3333;
+      }
+    }
     @supports not (aspect-ratio: auto) {
       height: 100px;
 	  }
+  }
+
+  &__info {
+    width: calc( (100% - var(--bs-gutter-width)) * 0.6666 );
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__quantity {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: calc( (100% - var(--bs-gutter-width)) * 0.6666 );
+    background: rgba(var(--theme-colour-black), 0.25);
+  }
+
+  &__title {
+    a {
+      color: inherit;
+      text-decoration: none;
+      &:focus,
+      &:hover {
+        opacity: 0.3333;
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+    & + .line-item__price {
+      margin-top: 18px;
+    }
+  }
+
+  & + .line-item {
+    margin-top: 40px;
   }
 
 }

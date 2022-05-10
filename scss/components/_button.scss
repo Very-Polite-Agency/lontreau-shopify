@@ -29,13 +29,6 @@
     display: block;
   }
 
-  svg {
-    display: block;
-    height: 100%;
-    width: auto;
-    fill: currentColor;
-  }
-
   &__icon,
   &__title {
     display: block;
@@ -45,15 +38,23 @@
     transition:
       opacity var(--theme-transition-duration),
       transform var(--theme-transition-duration);
+    svg {
+      display: block;
+      height: 100%;
+      width: auto;
+      fill: currentColor;
+    }
   }
 
   &--collapsible,
+  &--outlined,
   &--primary,
   &--secondary,
   &--tertiary {
     @extend .button;
   }
 
+  &--outlined,
   &--secondary,
   &--tertiary {
     border-width: 2px;
@@ -105,6 +106,18 @@
       .button__icon-plus {
         opacity: 1;
       }
+    }
+  }
+
+  &--outlined {
+    background: transparent;
+    border-color: rgba(var(--theme-colour-black), 1);
+    color: rgba(var(--theme-colour-black), 1);
+    &:focus,
+    &:hover {
+      background: rgba(var(--theme-colour-black), 1);
+      border-color: rgba(var(--theme-colour-black), 1);
+      color: rgba(var(--theme-colour-white),1);
     }
   }
 

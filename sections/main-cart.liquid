@@ -7,32 +7,32 @@
   <a href="{{ item.url_to_remove }}" class="button button--tertiary">Remove</a>
 </div> {% endcomment %}
 
-<div class="{{ section__name }}__hero">
+<div class="{{ section_name }}__hero">
   {% render 'bs-container', state: 'open' %}
     <h1>{{ hero_heading }}</h1>
   {% render 'bs-container', state: 'closed' %}
 </div>
 
-<div class="{{ section__name }}__body">
+<div class="{{ section_name }}__body">
   {% render 'bs-container', state: 'open' %}
 
     {% if cart == empty %}
 
-      <div class="{{ section__name }}__empty">
+      <div class="{{ section_name }}__empty">
         <h2>It looks like your bag is empty.</h2>
         <p>Let's fix that. Shop our latest collection here.</p>
       </div>
 
     {% else %}
 
-      <form class="{{ section__name }}__main" action="{{ routes.cart_url }}" method="post" id="cart">
+      <form class="{{ section_name }}__main" action="{{ routes.cart_url }}" method="post" id="cart">
         <div class="row row--inner">
 
           <div class="col-12 col-lg-7">
 
-            <div class="{{ section__name }}__line-items">
+            <div class="{{ section_name }}__line-items">
               {%- for item in cart.items -%}
-                <div class="{{ section__name }}__line-item line-item">
+                <div class="{{ section_name }}__line-item line-item">
 
                   <div class="line-item__image">
                     <a href="{{ item.url }}" target="_self" title="{{ item.variant.product.title }}">
@@ -52,45 +52,62 @@
 
                   <div class="line-item__quantity">
 
-                    <div class="line-item__total body-copy--1 d-lg-none">${{ item.original_line_price | money_without_currency }}</div>
-
-                    <div class="stepper">
-                      <button class="stepper__button button--minus" name="minus" type="button">–</button>
-                      <input class=""
-                        type="number"
-                        name="updates[]"
-                        value="{{ item.quantity }}"
-                        min="0"
-                        id="quantity-{{ item.index | plus: 1 }}"
-                        data-index="{{ item.index | plus: 1 }}"
-                      >
-                      <button class="stepper__button button--plus" name="plus" type="button">+</button>
+                    <div class="line-item__total body-copy--1 d-lg-none">
+                      <label class="line-item__label body-copy--alt">Total</label>
+                      <div class="line-item__price body-copy--1">${{ item.original_line_price | money_without_currency }}</div>
                     </div>
+
+                    <div class="line-item__quantity-controls">
+                      <label class="line-item__label body-copy--alt">Quantity</label>
+                      <div class="line-item__stepper stepper">
+                        <button
+                          class="stepper__button button--decrease decrease js--line-item-quantity-update"
+                          name="decrease"
+                          type="button"
+                          data-target-id="line-item-quantity--{{ item.index | plus: 1 }}"
+                        ><span class="button__icon">{% render 'svg', type: 'icon.minus' %}</span></button>
+                        <input class=""
+                          type="number"
+                          name="updates[]"
+                          value="{{ item.quantity }}"
+                          min="0"
+                          id="line-item-quantity--{{ item.index | plus: 1 }}"
+                          data-index="{{ item.index | plus: 1 }}"
+                        >
+                        <button
+                          class="stepper__button button--increase increase js--line-item-quantity-update"
+                          name="increase"
+                          type="button"
+                          data-target-id="line-item-quantity--{{ item.index | plus: 1 }}"
+                        ><span class="button__icon">{% render 'svg', type: 'icon.plus' %}</span></button>
+                      </div>
+                    </div>
+
                   </div>
 
                 </div>
               {%- endfor -%}
             </div>
 
-            <div class="{{ section__name }}__line-items-cta">
-              <button type="submit" class="button--secondary">Update Bag</button>
+            <div class="{{ section_name }}__line-items-cta">
+              <button type="submit" class="{{ section_name }}__update-cart-button button--outlined">Update Bag</button>
             </div>
 
           </div>
 
           <div class="col-12 col-lg-5">
 
-            <div class="{{ section__name }}__summary">
-
-              <button type="submit" class="button--secondary" name="checkout">Checkout</button>
-
+            <div class="{{ section_name }}__summary">
+              <strong class="heading--1">Total</strong>
+              <p>Shipping & Taxes<br>Calculated at Checkout</p>
               {%- if additional_checkout_buttons -%}
                 <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
                   {{ content_for_additional_checkout_buttons }}
                 </div>
               {%- endif -%}
-
             </div>
+
+            <button type="submit" class="{{ section_name }}__checkout-button button--primary" name="checkout">Checkout</button>
 
           </div>
 
