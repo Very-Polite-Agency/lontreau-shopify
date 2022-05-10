@@ -1,0 +1,80 @@
+{% assign section_name = 'hero' %}
+{% assign section_id = section_name | append: '--' | append: section.id %}
+
+{% assign heading = section.settings.heading | default: '' %}
+{% assign heading_highlight = section.settings.heading_highlight | default: false %}
+{% assign image = section.settings.image | default: false %}
+
+<div class="{{ section_name }}" id="{{ section_id }}">
+
+  <div class="{{ section_name }}__media">
+    {%
+      render 'lazyload-image',
+      background: true,
+      classes: 'full-width-feature__background-image',
+      image: image,
+      preload: true,
+      responsive: true,
+      duration: 500,
+    %}
+  </div>
+
+  <div class="{{ section_name }}__main">
+    {% render 'bs-container', state: 'open' %}
+
+      {%
+        render 'heading-highlight',
+        classes: 'hero__heading intro__heading heading--2',
+        heading: heading,
+        style: heading_highlight,
+        tag: 'h2'
+      %}
+
+    {% render 'bs-container', state: 'closed' %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hero",
+  "tag": "section",
+  "class": "section section--hero",
+  "settings": [
+    {
+      "content": "Content",
+      "type": "header"
+    },
+    {
+      "label": "Heading",
+      "type": "richtext",
+      "id": "heading"
+    },
+    {
+      "label": "Heading Highlight",
+      "type": "select",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "stroke", "label": "Stroke" },
+        { "value": "circle", "label": "Circle" }
+      ],
+      "default": "standard",
+      "id": "heading_highlight"
+    },
+    {
+      "content": "Media",
+      "type": "header"
+    },
+    {
+      "label": "Image",
+      "type": "image_picker",
+      "id": "image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero"
+    }
+  ],
+  "templates": [ "index" ]
+}
+{% endschema %}

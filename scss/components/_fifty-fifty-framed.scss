@@ -138,11 +138,17 @@
 
     &[data-layout-image-left] {
       .fifty-fifty-framed {
+        &__content {
+          margin-left: auto;
+          padding-right: 10%;
+        }
         &__image {
           margin-right: auto;
         }
         &__vr {
           left: calc(46% - 32px);
+          transform: rotate(-90deg);
+          transform-origin: bottom left;
         }
       }
     }

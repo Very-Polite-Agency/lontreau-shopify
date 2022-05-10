@@ -48,15 +48,25 @@
 
   [data-colour-theme-light] {
     background: rgba(var(--theme-colour-white), 1);
+    .button {
+      background: rgba(var(--theme-colour-grass), 1);
+      border: 2px solid rgba(var(--theme-colour-grass), 1);
+      border-radius: 2px;
+      color: rgba(var(--theme-colour-black), 1);
+      &:hover {
+        background: rgba(var(--theme-colour-forrest), 1);
+        color: rgba(var(--theme-colour-grass), 1);
+      }
+    }
   }
 
   [data-colour-theme-dark] {
     background: rgba(var(--theme-colour-forrest), 1);
     color: rgba(var(--theme-colour-white), 1);
     .button {
-      border: 2px solid rgba(var(--theme-colour-white),1);
+      border: 2px solid rgba(var(--theme-colour-white), 1);
       border-radius: 2px;
-      color: rgba(var(--theme-colour-white),1);
+      color: rgba(var(--theme-colour-white), 1);
       &:hover {
         opacity: var(--theme-transition-opacity);
       }
