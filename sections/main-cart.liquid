@@ -47,14 +47,14 @@
                     {% unless "Default Title" == item.variant.title %}
                       <div class="line-item__variant body-copy--alt-small">{{ item.variant.title }}</div>
                     {% endunless %}
-                    <div class="line-item__price body-copy--1">${{ item.original_price | money_without_currency }}</div>
+                    <div class="line-item__price body-copy--1">${{ item.original_price | money_without_currency }} ea.</div>
                   </div>
 
                   <div class="line-item__quantity">
 
                     <div class="line-item__total body-copy--1 d-lg-none">
                       <label class="line-item__label body-copy--alt">Total</label>
-                      <div class="line-item__price body-copy--1">${{ item.original_line_price | money_without_currency }}</div>
+                      <div class="line-item__total-price body-copy--1">${{ item.original_line_price | money_without_currency }}</div>
                     </div>
 
                     <div class="line-item__quantity-controls">
@@ -85,6 +85,8 @@
 
                   </div>
 
+                  <div class="line-item__total body-copy--1">${{ item.original_line_price | money_without_currency }}</div>
+
                 </div>
               {%- endfor -%}
             </div>
@@ -98,11 +100,14 @@
           <div class="col-12 col-lg-5">
 
             <div class="{{ section_name }}__summary">
-              <strong class="{{ section_name }}__summary-heading heading--2">Total</strong>
-              <div class="{{ section_name }}__price-notes">
+              <strong class="{{ section_name }}__summary-heading">Total</strong>
+              <div class="{{ section_name }}__summary-notes">
                 <p>Shipping & Taxes<br>Calculated at Checkout</p>
               </div>
-              <div class="{{ section_name }}__total-price"> ${{ cart.original_total_price | money_without_currency }}</div>
+              <div class="{{ section_name }}__summary-cost">
+                <div class="{{ section_name }}__summary-currency">{{ shop.currency }}</div>
+                <div class="{{ section_name }}__summary-price">${{ cart.original_total_price | money_without_currency }}</div>
+              </div>
               {% comment %} {%- if additional_checkout_buttons -%}
                 <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
                   {{ content_for_additional_checkout_buttons }}

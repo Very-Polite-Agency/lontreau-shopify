@@ -21,29 +21,53 @@
     }
   }
 
-  &__price-notes {
-    color: rgba(var(--theme-colour-black), 1);
-    font-family: var(--theme-font-family--sans-serif--primary);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.23;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    opacity: 0.8;
-    text-align: right;
-    padding-bottom: 18px;
-    padding-top: 18px;
-    border-bottom: 1px solid rgba(var(--theme-colour-black), 1);
-  }
-
   &__summary {
+    &-currency,
+    &-heading,
+    &-price {
+      font-family: var(--theme-font-family--serif--primary);
+      font-weight: 400;
+      line-height: 1;
+    }
     background: rgba(var(--theme-colour-black), 0.05);
     color: rgba(var(--theme-colour-black), 1);
     padding: 15px;
     margin-top: 40px;
+    &-cost {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0 5px;
+      align-items: baseline;
+    }
+    &-currency {
+      font-style: italic;
+      font-size: 18px;
+    }
     &-heading {
       font-style: italic;
+      font-size: 24px;
+      letter-spacing: -0.02em;
+    }
+    &-notes {
+      color: rgba(var(--theme-colour-black), 1);
+      font-family: var(--theme-font-family--sans-serif--primary);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 1.23;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      opacity: 0.8;
+      text-align: right;
+      padding-bottom: 18px;
+      padding-top: 18px;
+      border-bottom: 1px solid rgba(var(--theme-colour-black), 1);
+    }
+    &-price {
+      font-style: normal;
+      font-size: 32px;
+      text-align: right;
+      letter-spacing: -0.02em;
     }
   }
 
@@ -53,10 +77,21 @@
 
   @include breakpoint(lg) {
 
+    &__total,
+    &__quantity {
+      width: 20%;
+      background: red;
+    }
+
     &__line-items {
       &-cta {
         justify-content: flex-end;
+        padding-top: var(--bs-gutter-width);
       }
+    }
+
+    &__quantity {
+      background: green;
     }
 
     &__summary {

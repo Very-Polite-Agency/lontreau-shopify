@@ -98,6 +98,7 @@
   @include breakpoint(lg) {
 
     .navigation {
+      display: inline-flex;
       margin-left: auto;
       &__item {
         & + .navigation__item {
