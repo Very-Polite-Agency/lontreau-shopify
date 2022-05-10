@@ -30,7 +30,7 @@
         "hide_image_mobile": false,
         "anchor_id": "",
         "style": "standard",
-        "layout": "image-right",
+        "layout": "image-left",
         "colour_theme": "light"
       }
     },
