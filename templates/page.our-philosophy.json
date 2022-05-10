@@ -13,7 +13,8 @@
         "image": "shopify:\/\/shop_images\/LONTREAU--our-philosophy-page--FF_2x_7733757c-23af-4724-a7e1-54ceb5b5668b.png",
         "parallax": false,
         "anchor_id": "",
-        "height": "auto"
+        "height": "auto",
+        "curved_arrow_enable": false
       }
     },
     "16505006587b6a34d3": {
@@ -46,7 +47,21 @@
         "image": "shopify:\/\/shop_images\/LONTREAU--our-philosophy-page--FF2_2x_4a5a006e-5845-4b50-a211-a91e4c276d4e.png",
         "parallax": false,
         "anchor_id": "",
-        "height": "large"
+        "height": "large",
+        "curved_arrow_enable": false
+      }
+    },
+    "165222409282ad276d": {
+      "type": "fifty-fifty-framed",
+      "settings": {
+        "heading": "<p><em>Nex-level<\/em> <\/p><p>standards<\/p>",
+        "heading_highlight": "circle",
+        "message": "<p>We don’t believe in junk miles when we train, and we carry that same ethos into our brand: every ingredient and every element of packaging is here for a reason. Learn more about what makes our formulations unique.<\/p>",
+        "cta_title": "Learn More",
+        "cta_link": "shopify:\/\/pages\/our-ingredients",
+        "anchor_id": "",
+        "layout": "image-right",
+        "colour_theme": "light"
       }
     },
     "16506645476d2fc333": {
@@ -155,6 +170,7 @@
     "main",
     "16505006587b6a34d3",
     "16505007220d454290",
+    "165222409282ad276d",
     "16506645476d2fc333",
     "16505007247ed3495b",
     "1650500945f5b63511"
