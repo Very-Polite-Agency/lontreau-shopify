@@ -34,14 +34,15 @@
       font-style: normal;
       font-weight: 700;
       font-size: 20px;
-      line-height: 0.85;
+      line-height: 1;
       letter-spacing: 0.05em;
       text-transform: uppercase;
-      padding: 12px 28px;
+      padding: 14px 28px 10px;
     }
     &-photo {
       width: 100%;
       order: 1;
+      background: rgba(var(--theme-colour-asphalt), 1); // FIX THIS
     }
   }
 
@@ -68,7 +69,6 @@
       }
       &-job-title {
         font-size: 20px;
-        padding: 12px 28px;
       }
       &-photo {
         width: 38%;

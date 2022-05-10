@@ -53,9 +53,8 @@
       color: rgba(var(--theme-colour-white), 1);
     }
     &[disabled]{
-      color: rgba(var(--theme-colour-black), 0.05);
+      color: rgba(var(--theme-colour-black), 0.25);
       background: transparent;
-      cursor: no-drop;
       pointer-events: none;
     }
   }

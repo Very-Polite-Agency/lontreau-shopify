@@ -14,7 +14,14 @@
       </div>
 
       {% if menu_main %}
-        {% render 'navigation', classes: 'header__main-menu d-none d-lg-inline-flex', menu_handle: menu_main %}
+        <nav class="{{ section_name }}__navigation navigation">
+          {% for link in linklists[menu_main].links %}
+            {% render 'navigation-item', link: link %}
+          {% endfor %}
+           <div class="navigation__item">
+            <a class="navigation__link" href="/cart" title="Cart">Cart</a>
+          </div>
+        </nav>
       {% endif %}
 
       <button class="{{ section_name }}__button button d-inline-flex d-lg-none" type="button">

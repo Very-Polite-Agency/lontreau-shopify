@@ -31,6 +31,10 @@
     letter-spacing: 0.07em;
     text-transform: uppercase;
     opacity: 0.8;
+    text-align: right;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    border-bottom: 1px solid rgba(var(--theme-colour-black), 1);
   }
 
   &__summary {
@@ -38,6 +42,9 @@
     color: rgba(var(--theme-colour-black), 1);
     padding: 15px;
     margin-top: 40px;
+    &-heading {
+      font-style: italic;
+    }
   }
 
   @include breakpoint(sm) {} // min width sm

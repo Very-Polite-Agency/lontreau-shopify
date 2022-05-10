@@ -71,6 +71,10 @@
     padding: 60px 0;
   }
 
+  [data-section-padding-lg] {
+    padding: 80px 0;
+  }
+
   [data-text-alignment-center] {
     text-align: center;
   }
@@ -118,7 +122,11 @@
     }
 
     [data-section-padding] {
-      padding: 75px 0;
+      padding: 80px 0;
+    }
+
+    [data-section-padding-lg] {
+      padding: 110px 0;
     }
 
   } // min width lg
@@ -134,7 +142,11 @@
     }
 
     [data-section-padding] {
-      padding: 90px 0;
+      padding: 100px 0;
+    }
+
+    [data-section-padding-lg] {
+      padding: 130px 0;
     }
 
   } // min width xxl

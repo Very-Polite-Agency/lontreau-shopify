@@ -3188,6 +3188,14 @@
       "oAP" : "\/snippets\/lazyload-image.liquid",
       "oF" : 0
     },
+    "\/snippets\/navigation-item.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/navigation-item.liquid",
+      "oF" : 0
+    },
     "\/snippets\/navigation.liquid" : {
       "cB" : 0,
       "ft" : 8192,
