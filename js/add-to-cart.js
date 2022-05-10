@@ -42,7 +42,7 @@
     if ( variantID ) {
       axios( config ).then(function (response) {
         notify( response.data.items );
-        updateCartItemsTotal();
+        updateCartItemsCount();
       })
       .catch(function (error) {
         console.log(error);
@@ -61,13 +61,14 @@ function notify( $products = [] ) {
   }
 }
 
-function getCartItemsCount( $products = [] ) {
+function getCartItemsCount() {
   let config = {
     method: 'get',
     url: window.Shopify.routes.root + 'cart.js',
   };
   axios( config ).then(function (response) {
-    updateCartItemsCount( response.data.item_count );
+    console.log( response );
+    printCartItemsCount( response.data.item_count );
   })
   .catch(function (error) {
     console.log(error);
@@ -75,7 +76,7 @@ function getCartItemsCount( $products = [] ) {
   .then(function () {});
 }
 
-function updateCartItemsCount( $count = 0 ) {
+function printCartItemsCount( $count = 0 ) {
   ( document.querySelectorAll('.js--cart-items-total') || [] ).forEach( item => {
     item.innerHTML = `(${$count})`;
     if ( $count > 0 ) {
@@ -84,5 +85,9 @@ function updateCartItemsCount( $count = 0 ) {
       item.classList.remove('has-items');
     }
   });
+}
+
+function updateCartItemsCount() {
+  getCartItemsCount();
 }
 
