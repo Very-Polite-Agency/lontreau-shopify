@@ -8,23 +8,6 @@
         "image": "shopify:\/\/shop_images\/hero.png"
       }
     },
-    "1649371027bf029c73": {
-      "type": "full-width-feature",
-      "settings": {
-        "text_theme": "light",
-        "title": "",
-        "heading": "",
-        "heading_highlight": "standard",
-        "message": "",
-        "cta_title": "",
-        "cta_link": "",
-        "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--large_2x_dbdb0c77-33c7-4bdf-9573-d7b5a903ee67.png",
-        "parallax": false,
-        "anchor_id": "test-anchor-id",
-        "height": "large",
-        "curved_arrow_enable": false
-      }
-    },
     "16505837988dc9d01f": {
       "type": "fifty-fifty-feature",
       "settings": {
@@ -132,14 +115,13 @@
         "cta_link": "shopify:\/\/pages\/our-standards",
         "image": "shopify:\/\/shop_images\/LONTREAU--home-page--our-standards_3x_da93550b-b929-4897-af79-8584dd57212c.png",
         "anchor_id": "",
-        "layout": "image-left",
+        "layout": "image-right",
         "colour_theme": "dark"
       }
     }
   },
   "order": [
     "16522252885ba23f45",
-    "1649371027bf029c73",
     "16505837988dc9d01f",
     "1649358548eba2154c",
     "16517719953345c3cc",
