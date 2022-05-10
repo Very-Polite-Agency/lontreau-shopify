@@ -1,5 +1,12 @@
 {
   "sections": {
+    "16522252885ba23f45": {
+      "type": "hero",
+      "settings": {
+        "heading": "",
+        "heading_highlight": "standard"
+      }
+    },
     "1649371027bf029c73": {
       "type": "full-width-feature",
       "settings": {
@@ -130,6 +137,7 @@
     }
   },
   "order": [
+    "16522252885ba23f45",
     "1649371027bf029c73",
     "16505837988dc9d01f",
     "1649358548eba2154c",
