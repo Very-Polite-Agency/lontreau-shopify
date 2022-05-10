@@ -20,6 +20,23 @@
   <div class="{{ section_name }}__main">
     {% render 'bs-container', state: 'open' %}
 
+      {% capture aos %}
+        {% render 'aos-attributes',
+          transition: 'fade-up',
+          aos_offset: 100,
+          delay: 150,
+          duration: 1500,
+          easing: 'ease-in-out',
+          mirror: 'false',
+          once: 'true',
+          anchor: 'top-center',
+        %}
+      {% endcapture %}
+
+      <div class="{{ section_name }}__brand" {{ aos }}>
+        {% render 'svg', type: 'brand.logo.large' %}
+      </div>
+
       {%
         render 'heading-highlight',
         classes: 'hero__heading intro__heading heading--2',
@@ -30,6 +47,7 @@
 
     {% render 'bs-container', state: 'closed' %}
   </div>
+
 </div>
 
 {% schema %}

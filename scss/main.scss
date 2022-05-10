@@ -138,6 +138,8 @@
   --theme-transition-duration: 280ms;
   --theme-transition-opacity: 0.3333;
 
+  --theme-aos-travel: 12px;
+
 }
 
 //////////////////////////////////////////////////////////
@@ -155,6 +157,7 @@
 
 @import './components/accordion-education.scss';
 @import './components/accordion-with-image.scss';
+@import './components/aos.scss';
 @import './components/badge.scss';
 @import './components/body-copy.scss';
 @import './components/button.scss';

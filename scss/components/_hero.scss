@@ -1,16 +1,32 @@
 .hero {
 
-  min-height: 100%;
   min-height: 100vh;
+  height: 100vh;
   position: relative;
 
+  &__brand {
+    color: rgba(var(--theme-colour-white), 1);
+    svg {
+      display: block;
+      height: auto;
+      width: 100%;
+      fill: currentColor;
+    }
+    & + .hero__heading {
+      margin-top: 30px;
+    }
+  }
+
   &__main {
+    color: rgba(var(--theme-colour-white), 1);
     position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
+    text-align: center;
   }
 
   &__media {
@@ -19,6 +35,43 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 0;
   }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    &__brand {
+      width: 66.6666%;
+      margin: 0 auto;
+      & + .hero__heading {
+        margin-top: 40px;
+      }
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {
+
+    &__brand {
+      & + .hero__heading {
+        margin-top: 50px;
+      }
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    &__brand {
+      & + .hero__heading {
+        margin-top: 60px;
+      }
+    }
+
+  } // min width xxl
 
 }
