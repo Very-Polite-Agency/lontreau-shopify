@@ -62,6 +62,16 @@
 
   @include breakpoint(sm) {
 
+    &__featured-product {
+      &-info,
+      &-intro {
+        padding: var(--bs-gutter-width) 32px;
+      }
+      &-intro {
+        padding-right: 35%;
+      }
+    }
+
     &__image {
       @supports not (aspect-ratio: auto) {
         height: 350px;
