@@ -1,6 +1,7 @@
 {%- assign section_name = 'collection-hero' -%}
 {%- assign section_id = section_name | append: '--' | append: section.id -%}
 
+{%- assign collection_featured_product_show = section.settings.collection_featured_product_show | default: false -%}
 {%- assign collection_image_show = section.settings.collection_image_show | default: false -%}
 {%- assign collection_description_show = section.settings.collection_description_show | default: false -%}
 
@@ -8,33 +9,39 @@
 {%- assign image = collection.image | default: false -%}
 {%- assign title = collection.title | default: '' -%}
 
-{% assign featured_product_enable = collection.metafields.collection.featured_product_enable | default: false %}
-{% assign featured_product_image = collection.metafields.collection.featured_product_image | default: false %}
-{% assign featured_product_description = collection.metafields.collection.featured_product_description | default: '' %}
-{% assign featured_product_heading = collection.metafields.collection.featured_product_heading | default: '' %}
-{% assign featured_product = collection.metafields.collection.featured_product | default: false %}
-
 <div class="{{ section_name }}" id="{{ section_id }}">
-  {% render 'bs-container', state: 'open' %}
 
-    {% if featured_product_enable and featured_product %}
-      <div class="{{ section_name }}__featured-product">
-        {% if featured_product_image %}
-          <div class="{{ section_name }}__featured-product-image">
-            {% render 'lazyload-image', background: true, image: featured_product_image %}
+  {% if collection_image_show and image %}
+    <div class="{{ section_name }}__media">
+      {% render 'lazyload-image', background: true, image: image %}
+    </div>
+  {% endif %}
+
+   {% render 'bs-container', state: 'open' %}
+    <div class="{{ section_name }}__main">
+      {% if collection_image_show and image %}
+        <div class="{{ section_name }}__image">
+          {% render 'lazyload-image', background: true, image: image %}
+        </div>
+      {% endif %}
+      <div class="{{ section_name }}__layout">
+        {% if collection_featured_product_show and featured_product %}
+          <div class="{{ section_name }}__featured-product">
+
           </div>
         {% endif %}
-        <div class="{{ section_name }}__featured-product-main">
-          {% if featured_product_heading %}
-            <div class="{{ section_name }}__heading heading--2 highlight--circl">{{ featured_product_heading }}</div>
+        <div class="{{ section_name }}__info">
+          <h1 class="{{ section_name }}__title">{{ title }}</h1>
+          {% if collection_description_show and description %}
+            <div class="{{ section_name }}__description">{{ description }}</div>
           {% endif %}
         </div>
       </div>
-    {% else %}
-
-    {% endif %}
+    </div>
 
   {% render 'bs-container', state: 'closed' %}
+</div>
+
 </div>
 
 {% schema %}

@@ -2954,6 +2954,14 @@
       "oAP" : "\/sections\/main-cart.liquid",
       "oF" : 0
     },
+    "\/sections\/main-collection-hero--legacy.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/main-collection-hero--legacy.liquid",
+      "oF" : 0
+    },
     "\/sections\/main-collection-hero.liquid" : {
       "cB" : 0,
       "ft" : 8192,
