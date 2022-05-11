@@ -134,9 +134,16 @@
       }
     }
 
+    &__image {
+      aspect-ratio: 2.5/1;
+    }
+
     &__title {
       text-align: left;
-      margin-bottom: -20px;
+      margin-bottom: calc(-111px + var(--bs-container-fluid-padding));
+      width: 75%;
+      position: relative;
+      z-index: 1;
     }
 
   } // min width lg
@@ -169,6 +176,10 @@
       }
     }
 
+    &__title {
+      margin-bottom: calc(-111px + var(--bs-container-fluid-padding));
+    }
+
   } // min width xl
 
   @include breakpoint(xxl) {
@@ -197,6 +208,10 @@
       &-message {
         font-size: 16px;
       }
+    }
+
+    &__title {
+      margin-bottom: calc(-123px + var(--bs-container-fluid-padding));
     }
 
   } // min width xxl
