@@ -3154,6 +3154,14 @@
       "oAP" : "\/snippets\/cart-notification.liquid",
       "oF" : 0
     },
+    "\/snippets\/debug-this.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/debug-this.liquid",
+      "oF" : 0
+    },
     "\/snippets\/email-signup-banner-background-mobile.liquid" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3352,14 +3360,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/snippets\/theme--preload-fonts.liquid",
-      "oF" : 0
-    },
-    "\/snippets\/tools--debug-this.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/snippets\/tools--debug-this.liquid",
       "oF" : 0
     },
     "\/templates\/404.json" : {

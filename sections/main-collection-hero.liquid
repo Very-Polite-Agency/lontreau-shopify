@@ -12,7 +12,7 @@
 {% assign featured_product_image = collection.metafields.collection.featured_product_image | default: false %}
 {% assign featured_product_description = collection.metafields.collection.featured_product_description | default: '' %}
 {% assign featured_product_heading = collection.metafields.collection.featured_product_heading | default: '' %}
-{% assign featured_product = collection.metafields.collection.featured_product | default: false %}
+{% assign featured_product = collection.metafields.collection.featured_product.value | default: false %}
 
 <div class="{{ section_name }}" id="{{ section_id }}">
   {% render 'bs-container', state: 'open' %}
@@ -25,9 +25,21 @@
           </div>
         {% endif %}
         <div class="{{ section_name }}__featured-product-main">
-          {% if featured_product_heading %}
-            <div class="{{ section_name }}__heading heading--2 highlight--circl">{{ featured_product_heading }}</div>
-          {% endif %}
+          <div class="{{ section_name }}__featured-product-intro">
+            {% if featured_product_heading %}
+              <div class="{{ section_name }}__featured-product-heading heading--2 highlight--circle">{{ featured_product_heading }}</div>
+            {% endif %}
+            {% if featured_product_description %}
+              <div class="{{ section_name }}__featured-product-message body-copy--1">{{ featured_product_description }}</div>
+            {% endif %}
+          </div>
+          <div class="{{ section_name }}__featured-product-info">
+            <strong class="{{ section_name }}__featured-product-title caption--2">{{ featured_product.title }}</strong>
+            <span class="{{ section_name }}__featured-product-price caption--2">{% render 'price', product: featured_product %}</strong>
+          </div>
+          <button class="{{ snippet_name }}__button button--tertiary js--add-to-cart" type="button" data-variant-id="{{ featured_product.selected_or_first_available_variant.id }}" data-quantity="1">
+            <span class="button__title">Add to Cart</span>
+          </button>
         </div>
       </div>
     {% else %}
