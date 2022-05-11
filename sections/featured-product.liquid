@@ -35,7 +35,20 @@
       <div class="{{ section_name }}__layout">
 
         {% if heading != blank or message != blank %}
-          <div class="{{ section_name }}__main">
+          {% capture aos %}
+            {%
+              render 'aos-attributes',
+              anchor: section_id,
+              anchor_placement: 'top-bottom',
+              delay: 250,
+              duration: 1000,
+              easing: 'ease-in-out',
+              offset: 0,
+              once: 'true',
+              transition: 'fade-left',
+            %}
+          {% endcapture %}
+          <div class="{{ section_name }}__main" {{ aos }}>
             {%
               render 'heading-highlight',
               classes: 'cards-feature__heading intro__heading heading--2',
@@ -50,7 +63,20 @@
         {% endif %}
 
         {% if image %}
-          <div class="{{ section_name }}__media">
+          {% capture aos %}
+            {%
+              render 'aos-attributes',
+              anchor: section_id,
+              anchor_placement: 'top-bottom',
+              delay: 500,
+              duration: 550,
+              easing: 'ease-in-out',
+              offset: 0,
+              once: 'true',
+              transition: 'fade-up',
+            %}
+          {% endcapture %}
+          <div class="{{ section_name }}__media" {{ aos }}>
             <a href="{{ product_link }}" target="_self" title="{{ product_title }}">
               {%
                 render 'lazyload-image',
@@ -65,7 +91,20 @@
         {% endif %}
 
         {% if aside_heading != blank or aside_message != blank or aside_subheading %}
-          <div class="{{ section_name }}__aside">
+          {% capture aos %}
+            {%
+              render 'aos-attributes',
+              anchor: section_id,
+              anchor_placement: 'top-bottom',
+              delay: 250,
+              duration: 1000,
+              easing: 'ease-in-out',
+              offset: 0,
+              once: 'true',
+              transition: 'fade-right',
+            %}
+          {% endcapture %}
+          <div class="{{ section_name }}__aside" {{ aos }}>
             {% if product_icon %}
               <div class="{{ section_name }}__aside-icon">
                 {%
