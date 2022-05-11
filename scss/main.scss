@@ -152,16 +152,31 @@
 @import '../node_modules/aos/dist/aos';
 
 //////////////////////////////////////////////////////////
-////  Component
+////  Components
+//////////////////////////////////////////////////////////
+
+@import './components/body-copy.scss';
+@import './components/button.scss';
+@import './components/caption.scss';
+@import './components/field.scss';
+@import './components/form.scss';
+@import './components/heading.scss';
+@import './components/highlight.scss';
+@import './components/input.scss';
+@import './components/label.scss';
+@import './components/link.scss';
+@import './components/select.scss';
+@import './components/textarea.scss';
+@import './components/title.scss';
+
+//////////////////////////////////////////////////////////
+////  Layouts
 //////////////////////////////////////////////////////////
 
 @import './components/accordion-education.scss';
 @import './components/accordion-with-image.scss';
 @import './components/aos.scss';
 @import './components/badge.scss';
-@import './components/body-copy.scss';
-@import './components/button.scss';
-@import './components/caption.scss';
 @import './components/card-article.scss';
 @import './components/card-product.scss';
 @import './components/card.scss';
@@ -172,34 +187,24 @@
 @import './components/collection-product-grid.scss';
 @import './components/contact-form.scss';
 @import './components/featured-product.scss';
-@import './components/field.scss';
 @import './components/fifty-fifty-feature.scss';
 @import './components/fifty-fifty-framed.scss';
 @import './components/figure.scss';
-@import './components/form.scss';
 @import './components/full-width-feature.scss';
 @import './components/glide.scss';
-@import './components/heading.scss';
 @import './components/hero.scss';
-@import './components/highlight.scss';
-@import './components/input.scss';
-@import './components/label.scss';
 @import './components/lazyload.scss';
 @import './components/line-item.scss';
-@import './components/link.scss';
 @import './components/listing.scss';
 @import './components/navigation.scss';
 @import './components/pagination.scss';
 @import './components/price.scss';
 @import './components/rte.scss';
 @import './components/section.scss';
-@import './components/select.scss';
 @import './components/share-this.scss';
 @import './components/stepper.scss';
 @import './components/tags.scss';
-@import './components/textarea.scss';
 @import './components/the-team.scss';
-@import './components/title.scss';
 
 //////////////////////////////////////////////////////////
 ////  Theme
