@@ -1,6 +1,7 @@
 {% assign section_name = 'hero' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign cta_title = section.settings.cta_title | default: '' %}
 {% assign heading = section.settings.heading | default: '' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: false %}
 {% assign image = section.settings.image | default: false %}
@@ -21,15 +22,15 @@
     {% render 'bs-container', state: 'open' %}
 
       {% capture aos %}
-        {% render 'aos-attributes',
-          transition: 'fade-up',
-          aos_offset: 100,
+        {%
+          render 'aos-attributes',
+          anchor_placement: 'top-center',
           delay: 150,
           duration: 1500,
           easing: 'ease-in-out',
-          mirror: 'false',
+          offset: 100,
           once: 'true',
-          anchor: 'top-center',
+          transition: 'fade-up',
         %}
       {% endcapture %}
 
@@ -47,6 +48,13 @@
 
     {% render 'bs-container', state: 'closed' %}
   </div>
+
+  {% if cta_title %}
+    <div class="{{ section_name }}__cta">
+      <div class="{{ section_name }}__cta-title">{{ cta_title }}</div>
+      <div class="{{ section_name }}__cta-icon">{% render 'svg', type: 'icon.arrow-dotted' %}</div>
+    </div>
+  {% endif %}
 
 </div>
 

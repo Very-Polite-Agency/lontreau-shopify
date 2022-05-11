@@ -1,3 +1,15 @@
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-12px);
+  }
+  60% {
+    transform: translateY(-6px);
+  }
+}
+
 .hero {
 
   min-height: 100vh;
@@ -14,6 +26,39 @@
     }
     & + .hero__heading {
       margin-top: 30px;
+    }
+  }
+
+  &__cta {
+    color: rgba(var(--theme-colour-grass),1);
+    font-family: var(--theme-font-family--sans-serif--primary);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    &-title {
+      & + .hero__cta-icon {
+        margin-top: 20px;
+      }
+    }
+    &-icon {
+      animation: bounce 1.2s infinite;
+      width: 50px;
+      margin: auto;
+      height: auto;
+      svg {
+        display: block;
+        height: auto;
+        width: 100%;
+        fill: currentColor;
+      }
     }
   }
 

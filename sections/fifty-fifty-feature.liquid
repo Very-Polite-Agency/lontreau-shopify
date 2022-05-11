@@ -1,6 +1,8 @@
 {% assign section_name = 'fifty-fifty-feature' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign aos_transition_content = 'fade-right' %}
+{% assign aos_transition_image = 'fade-left' %}
 {% assign colour_theme = section.settings.colour_theme | default: 'light' %}
 {% assign cta_title = section.settings.cta_title | default: false %}
 {% assign cta_link = section.settings.cta_link | default: false %}
@@ -15,6 +17,11 @@
 
 {% if section.settings.anchor_id != blank %}
   {% assign section_id = section.settings.anchor_id %}
+{% endif %}
+
+{% if 'image-left' == layout %}
+  {% assign aos_transition_content = 'fade-left' %}
+  {% assign aos_transition_image = 'fade-right' %}
 {% endif %}
 
 <div
@@ -34,7 +41,22 @@
       <div class="{{ section_name }}__layout">
 
       {% if heading != blank or message != blank or title != blank %}
-        <div class="{{ section_name }}__content">
+
+        {% capture aos %}
+          {%
+            render 'aos-attributes',
+            anchor: section_id,
+            anchor_placement: 'top-bottom',
+            delay: 150,
+            duration: 1500,
+            easing: 'ease-in-out',
+            offset: 0,
+            once: 'true',
+            transition: aos_transition_content,
+          %}
+        {% endcapture %}
+
+        <div class="{{ section_name }}__content" {{ aos }}>
 
           {% if title != blank %}
             <strong class="{{ section_name }}__title title--1">{{ title }}</strong>
@@ -60,7 +82,22 @@
       {% endif %}
 
       {% if image %}
-        <div class="{{ section_name }}__image {% if hide_image_mobile %}d-none d-lg-block{% endif %}">
+
+        {% capture aos %}
+          {%
+            render 'aos-attributes',
+            anchor: section_id,
+            anchor_placement: 'top-bottom',
+            delay: 0,
+            duration: 1500,
+            easing: 'ease-in-out',
+            offset: 0,
+            once: 'true',
+            transition: aos_transition_image,
+          %}
+        {% endcapture %}
+
+        <div class="{{ section_name }}__image {% if hide_image_mobile %}d-none d-lg-block{% endif %}" {{ aos }}>
           {% render 'lazyload-image', image: image %}
         </div>
       {% endif %}

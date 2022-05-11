@@ -1,6 +1,7 @@
 {% assign section_name = 'full-width-feature' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign aos_delay = 250 %}
 {% assign cta = false %}
 {% assign cta_link = section.settings.cta_link | default: '' %}
 {% assign cta_title = section.settings.cta_title | default: '' %}
@@ -46,15 +47,56 @@
       {% endif %}
 
       {% if heading != blank %}
-        <div class="{{ section_name }}__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</div>
+        {% capture aos %}
+          {%
+            render 'aos-attributes',
+            anchor: section_id,
+            anchor_placement: 'top-bottom',
+            delay: aos_delay,
+            duration: 750,
+            easing: 'ease-in-out',
+            offset: 0,
+            once: 'true',
+            transition: 'fade-down',
+          %}
+        {% endcapture %}
+        {% assign aos_delay = aos_delay | plus: 300 %}
+        <div class="{{ section_name }}__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}" {{ aos }}>{{ heading }}</div>
       {% endif %}
 
       {% if message != blank %}
-        <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
+        {% capture aos %}
+          {%
+            render 'aos-attributes',
+            anchor: section_id,
+            anchor_placement: 'top-bottom',
+            delay: aos_delay,
+            duration: 750,
+            easing: 'ease-in-out',
+            offset: 0,
+            once: 'true',
+            transition: 'fade-left',
+          %}
+        {% endcapture %}
+        {% assign aos_delay = aos_delay | plus: 250 %}
+        <div class="{{ section_name }}__message body-copy--regular" {{ aos }}>{{ message }}</div>
       {% endif %}
 
       {% if cta_title != blank and cta_link != blank %}
-        <div class="{{ section_name }}__cta">
+        {% capture aos %}
+          {%
+            render 'aos-attributes',
+            anchor: section_id,
+            anchor_placement: 'top-bottom',
+            delay: aos_delay,
+            duration: 750,
+            easing: 'ease-in-out',
+            offset: 0,
+            once: 'true',
+            transition: 'fade-up',
+          %}
+        {% endcapture %}
+        <div class="{{ section_name }}__cta" {{ aos }}>
           <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
             <span class="button__title">{{ cta_title }}</span>
           </a>
