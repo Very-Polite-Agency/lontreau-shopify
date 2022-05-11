@@ -56,14 +56,17 @@
   &__image {
     position: relative;
     width: 100%;
-    aspect-ratio: 3/2;
+    aspect-ratio: 2/1;
     @supports not (aspect-ratio: auto) {
       height: 300px;
     }
+    & + .collection-hero__title {
+      margin-top: 20px;
+    }
   }
 
-  &__main {
-    position: relative;
+  &__title {
+    text-align: center;
   }
 
   @include breakpoint(sm) {
@@ -131,13 +134,9 @@
       }
     }
 
-    &__image {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16/9;
-      @supports not (aspect-ratio: auto) {
-        height: 400px;
-      }
+    &__title {
+      text-align: left;
+      margin-bottom: -20px;
     }
 
   } // min width lg
@@ -170,12 +169,6 @@
       }
     }
 
-    &__image {
-      @supports not (aspect-ratio: auto) {
-        height: 500px;
-      }
-    }
-
   } // min width xl
 
   @include breakpoint(xxl) {
@@ -203,12 +196,6 @@
       }
       &-message {
         font-size: 16px;
-      }
-    }
-
-    &__image {
-      @supports not (aspect-ratio: auto) {
-        height: 600px;
       }
     }
 

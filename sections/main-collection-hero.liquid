@@ -48,6 +48,9 @@
           {% render 'lazyload-image', background: true, image: image %}
         </div>
       {% endif %}
+      {% if title %}
+        <h1 class="{{ section_name }}__title heading--2">{{ title }}</h1>
+      {% endif %}
     {% endif %}
 
   {% render 'bs-container', state: 'closed' %}
