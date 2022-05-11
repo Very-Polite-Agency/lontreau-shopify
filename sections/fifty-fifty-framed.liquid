@@ -2,6 +2,7 @@
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
 {% assign colour_theme = section.settings.colour_theme | default: 'light' %}
+{% assign cta_style = 'button--primary' %}
 {% assign cta_title = section.settings.cta_title | default: false %}
 {% assign cta_link = section.settings.cta_link | default: false %}
 {% assign heading = section.settings.heading | default: '' %}
@@ -17,6 +18,10 @@
 {% assign columns = 'col-12 col-lg-6' %}
 {% if 'image-left' == layout %}
   {% assign columns = 'col-12 col-lg-6 offset-lg-6' %}
+{% endif %}
+
+{% if 'dark' == colour_theme %}
+  {% assign cta_style = 'button--outlined-light' %}
 {% endif %}
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-colour-theme-{{ colour_theme }} data-layout-{{ layout }} data-layout="{{ layout }}">
@@ -41,7 +46,7 @@
             {% endif %}
             {% if cta_title and cta_link %}
               <div class="{{ section_name }}__cta intro__cta">
-                <a class="{{ section_name }}__cta-button button" href="{{ cta_link }}" title="{{ cta_title }}">
+                <a class="{{ section_name }}__cta-button {{ cta_style }}" href="{{ cta_link }}" title="{{ cta_title }}">
                   <span class="button__title">{{ cta_title }}</span>
                 </a>
               </div>
