@@ -92,6 +92,26 @@
 
   @include breakpoint(lg) {
 
+    &__featured-product {
+      border: 1px solid rgba(var(--theme-colour-black), 0);
+      &-heading {
+        font-size: 40px;
+      }
+      &-image {
+        aspect-ratio: 2/1;
+        @supports not (aspect-ratio: auto) {
+          height: 350px;
+        }
+      }
+      &-main {
+        position: absolute;
+        top: 50%;
+        transform: translate3d( 72px, -50%, 0);
+        width: 50%;
+        background: rgba(var(--theme-colour-white), 1);
+      }
+    }
+
     &__image {
       position: relative;
       width: 100%;

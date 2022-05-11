@@ -43,7 +43,11 @@
         </div>
       </div>
     {% else %}
-
+      {% if image %}
+        <div class="{{ section_name }}__image">
+          {% render 'lazyload-image', background: true, image: image %}
+        </div>
+      {% endif %}
     {% endif %}
 
   {% render 'bs-container', state: 'closed' %}
