@@ -14,24 +14,32 @@
   {% assign title = link.title | default: '' %}
   {% assign type = link.type | default: '' %}
   {% assign url = link.url | default: '' %}
-  {% assign levels = link.levels | default: 1 %}
+  {% assign levels = link.levels | default: 0 %}
 
-  <div class="navigation__item {% if levels > 1 %}has-links{% endif %}">
+  <div class="navigation__item {% if levels > 0 %}has-links{% endif %}" data-link-levels="{{ link.levels }}">
 
     <a class="navigation__link{% if active %} active{% endif %}" href="{{ url }}" title="{{ title }}">{{ title }}</a>
 
-    <div class="navigation__sub-navigation sub-navigation">
-      <div class="sub-navigation__main">
-        {% for sub_link in link.links %}
-          <div class="sub-navigation__item">
-            <a class="sub-navigation__link" href="{{ sub_link.url }}">{{ sub_link.title }}</a>
-          </div>
-          {% for sub_sub_link in sub_link.links %}
-            {% comment %} <div class="sub-sub-navigation__item"><a href="{{ sub_sub_link.url }}">{{ sub_sub_link.title }}</a></div> {% endcomment %}
+    {% if levels > 0 %}
+      <div class="navigation__sub-navigation sub-navigation">
+        <div class="sub-navigation__main">
+          {% for sub_link in link.links %}
+
+            {% if sub_link.type == 'page_link' %}
+              {% assign featured_image = sub_link.object.metafields.page.featured_image | default: false %}
+              {% render 'debug-this', item: featured_image %}
+            {% endif %}
+
+            <div class="sub-navigation__item">
+              <a class="sub-navigation__link{% if sub_link.active %} active{% endif %}" href="{{ sub_link.url }}">{{ sub_link.title }}</a>
+            </div>
+            {% for sub_sub_link in sub_link.links %}
+              {% comment %} <div class="sub-sub-navigation__item"><a href="{{ sub_sub_link.url }}">{{ sub_sub_link.title }}</a></div> {% endcomment %}
+            {% endfor %}
           {% endfor %}
-        {% endfor %}
+        </div>
       </div>
-    </div>
+    {% endif %}
 
   </div>
 

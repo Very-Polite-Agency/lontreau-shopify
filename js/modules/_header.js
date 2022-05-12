@@ -14,17 +14,16 @@ const Header = (() => {
 
   const abc = () => {
 
-    ( document.querySelectorAll('.navigation__item.has-links') || [] ).forEach( item => {
+    let headerNavigation = document.querySelector('.header__navigation') || false;
+    let headerNavigationOffset = headerNavigation.getBoundingClientRect() || {};
+    let headerNavigationOffsetLeft = headerNavigationOffset.left || 0;
+    let headerSubnavigation = headerNavigation.querySelectorAll('.sub-navigation__main') || [];
 
-      let abc = item.querySelector('.sub-navigation__main') || false;
-      let offset = item.getBoundingClientRect() || {};
-      let offsetLeft = offset.left || 0;
-
-      if ( abc && offsetLeft ) {
-        abc.style.left = offsetLeft + 'px';
-      }
-
-    });
+    if ( headerNavigationOffsetLeft ) {
+      headerSubnavigation.forEach( item => {
+        item.style.left = headerNavigationOffsetLeft + 'px';
+      });
+    }
 
   };
 
