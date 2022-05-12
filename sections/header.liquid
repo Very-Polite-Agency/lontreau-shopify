@@ -12,13 +12,10 @@
   </div>
 
   {% if menu_main %}
-    <nav class="{{ section_name }}__navigation navigation">
+    <nav class="{{ section_name }}__navigation navigation navigation--header">
       {% for link in linklists[menu_main].links %}
         {% render 'navigation-item', link: link %}
       {% endfor %}
-       <div class="navigation__item">
-        <a class="navigation__link" href="/cart" title="Cart">Cart<span class="js--cart-items-total">({{ cart.item_count }})</span></a>
-      </div>
     </nav>
   {% endif %}
 
@@ -53,4 +50,3 @@
 	  "blocks": []
   }
 {% endschema %}
-

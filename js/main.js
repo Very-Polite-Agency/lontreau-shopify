@@ -6,6 +6,7 @@
 // @codekit-prepend "./modules/_breakpoints.js";
 // @codekit-prepend "./modules/_forms.js";
 // @codekit-prepend "./modules/_gliders.js";
+// @codekit-prepend "./modules/_header.js";
 // @codekit-prepend "./modules/_instagramFeed.js";
 // @codekit-prepend "./modules/_mobileMenu.js";
 // @codekit-prepend "./modules/_modals";
@@ -22,6 +23,7 @@
 let credits = new Credits();
 let forms = new Forms();
 let gliders = new Gliders();
+let header = new Header();
 let instagramFeed = new InstagramFeed();
 let mobileMenu = new MobileMenu();
 let sections = new Sections();
@@ -32,6 +34,7 @@ let tools = new Tools();
 Theme.init([
   forms,
   gliders,
+  header,
   instagramFeed,
   mobileMenu,
   sections,

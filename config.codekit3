@@ -1243,6 +1243,17 @@
       "sC" : 3,
       "tS" : 1
     },
+    "\/js\/modules\/_header.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/_header.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
     "\/js\/modules\/_instagramFeed.js" : {
       "bF" : 0,
       "ft" : 64,

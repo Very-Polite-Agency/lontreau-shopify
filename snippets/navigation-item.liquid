@@ -10,13 +10,29 @@
 
 {%- if link and link != blank -%}
 
-    {% assign active = link.active | default: false %}
-    {% assign title = link.title | default: '' %}
-    {% assign type = link.type | default: '' %}
-    {% assign url = link.url | default: '' %}
+  {% assign active = link.active | default: false %}
+  {% assign title = link.title | default: '' %}
+  {% assign type = link.type | default: '' %}
+  {% assign url = link.url | default: '' %}
+  {% assign levels = link.levels | default: 1 %}
 
-    <div class="navigation__item">
-      <a class="navigation__link{% if active %} active{% endif %}" href="{{ url }}" title="{{ title }}">{{ title }}</a>
+  <div class="navigation__item {% if levels > 1 %}has-links{% endif %}">
+
+    <a class="navigation__link{% if active %} active{% endif %}" href="{{ url }}" title="{{ title }}">{{ title }}</a>
+
+    <div class="navigation__sub-navigation sub-navigation">
+      <div class="sub-navigation__main">
+        {% for sub_link in link.links %}
+          <div class="sub-navigation__item">
+            <a class="sub-navigation__link" href="{{ sub_link.url }}">{{ sub_link.title }}</a>
+          </div>
+          {% for sub_sub_link in sub_link.links %}
+            {% comment %} <div class="sub-sub-navigation__item"><a href="{{ sub_sub_link.url }}">{{ sub_sub_link.title }}</a></div> {% endcomment %}
+          {% endfor %}
+        {% endfor %}
+      </div>
     </div>
+
+  </div>
 
 {%- endif -%}

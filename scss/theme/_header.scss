@@ -6,6 +6,7 @@
   position: fixed;
   width: 100%;
   z-index: 25;
+  padding: 0 var(--bs-container-fluid-padding);
 
   svg {
     fill: currentColor;
@@ -25,43 +26,15 @@
 
   .navigation {
     display: none;
-    &__item {
-      display: inline-flex;
-      & + .navigation__item {
-        margin-left: 60px;
-      }
-    }
-    &__link {
-      &::after {
-        transition: opacity var(--theme-transition-duration);
-        display: block;
-        content: '';
-        width: 100%;
-        position: absolute;
-        z-index: -1;
-        background: url('./LONTREAU--highlight--stroke.svg');
-        background-repeat: no-repeat;
-        background-position: center left;
-        background-size: 100% auto;
-        height: 10px;
-        bottom: -4px;
-        left: -2%;
-        width: 108%;
-        opacity: 0;
-      }
-      &.active,
-      &:hover {
-        color: inherit;
-        &::after {
-          opacity: 1;
-        }
-      }
-    }
   }
 
   &__brand {
     color: rgba(var(--theme-colour-grass),1);
+    left: var(--bs-container-fluid-padding);
+    position: absolute;
+    top: 50%;
     height: 40px;
+    margin-top: -20px;
     a, img, svg {
       color: inherit;
       display: block;
@@ -75,6 +48,11 @@
         opacity: var(--theme-transition-opacity);
       }
     }
+  }
+
+  &__button {
+    right: var(--bs-container-fluid-padding);
+    position: absolute;
   }
 
   &__layout {
@@ -97,16 +75,72 @@
 
   @include breakpoint(lg) {
 
+    .has-links {
+      &:hover {
+        .sub-navigation {
+          opacity: 1;
+          pointer-events: all;
+        }
+      }
+    }
+
     .navigation {
-      display: inline-flex;
-      margin-left: auto;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
       &__item {
+        height: var(--theme-header-height--lg);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         & + .navigation__item {
-          margin-left: 50px;
+          margin-left: 40px;
         }
       }
       &__link {
         font-size: 24px;
+        &::after {
+          transition: opacity var(--theme-transition-duration);
+          display: block;
+          content: '';
+          width: 100%;
+          position: absolute;
+          z-index: -1;
+          background: url('./LONTREAU--highlight--stroke.svg');
+          background-repeat: no-repeat;
+          background-position: center left;
+          background-size: 100% auto;
+          height: 10px;
+          bottom: -4px;
+          left: -2%;
+          width: 108%;
+          opacity: 0;
+        }
+        &.active,
+        &:hover {
+          color: inherit;
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .sub-navigation {
+      background: rgba(var(--theme-colour-forrest-dark), 1);
+      color: rgba(var(--theme-colour-white), 1);
+      position: absolute;
+      top: var(--theme-header-height--lg);
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      pointer-events: none;
+      &__link {
+        color: inherit;
+      }
+      &__main {
+        position: relative;
       }
     }
 
@@ -115,11 +149,6 @@
   @include breakpoint(xl) {
 
     .navigation {
-      &__item {
-        & + .navigation__item {
-          margin-left: 65px;
-        }
-      }
       &__link {
         font-size: 26px;
       }
@@ -130,11 +159,6 @@
   @include breakpoint(xxl) {
 
     .navigation {
-      &__item {
-        & + .navigation__item {
-          margin-left: 80px;
-        }
-      }
       &__link {
         font-size: 28px;
       }
