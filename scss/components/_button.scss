@@ -40,14 +40,16 @@
   }
 
   &--collapsible,
-  &--outlined,
+  &--outlined-light,
+  &--outlined-dark,
   &--primary,
   &--secondary,
   &--tertiary {
     @extend .button;
   }
 
-  &--outlined,
+  &--outlined-light,
+  &--outlined-dark,
   &--primary,
   &--secondary,
   &--tertiary {
@@ -60,7 +62,8 @@
     text-transform: uppercase;
   }
 
-  &--outlined,
+  &--outlined-light,
+  &--outlined-dark,
   &--secondary,
   &--tertiary {
     border-width: 2px;
@@ -115,8 +118,7 @@
     }
   }
 
-  &--outlined {
-    background: transparent;
+  &--outlined-dark {
     border-color: rgba(var(--theme-colour-black), 1);
     color: rgba(var(--theme-colour-black), 1);
     &:focus,
@@ -124,6 +126,17 @@
       background: rgba(var(--theme-colour-black), 1);
       border-color: rgba(var(--theme-colour-black), 1);
       color: rgba(var(--theme-colour-white),1);
+    }
+  }
+
+  &--outlined-light {
+    border-color: rgba(var(--theme-colour-white), 1);
+    color: rgba(var(--theme-colour-white), 1);
+    &:focus,
+    &:hover {
+      background: rgba(var(--theme-colour-white), 1);
+      border-color: rgba(var(--theme-colour-white), 1);
+      color: rgba(var(--theme-colour-black),1);
     }
   }
 

@@ -4,32 +4,28 @@
 {% assign menu_main = section.settings.menu_main | default: false %}
 
 <div class="{{ section_name }}__main">
-  {% render 'bs-container', container: 'container-fluid' %}
-    <div class="{{ section_name }}__layout">
 
-      <div class="{{ section_name }}__brand">
-        <a href="/" target="_self" title="Home">
-          {% render 'svg', type: 'brand.logo.circle' %}
-        </a>
+  <div class="{{ section_name }}__brand">
+    <a href="/" target="_self" title="Home">
+      {% render 'svg', type: 'brand.logo.circle' %}
+    </a>
+  </div>
+
+  {% if menu_main %}
+    <nav class="{{ section_name }}__navigation navigation">
+      {% for link in linklists[menu_main].links %}
+        {% render 'navigation-item', link: link %}
+      {% endfor %}
+       <div class="navigation__item">
+        <a class="navigation__link" href="/cart" title="Cart">Cart<span class="js--cart-items-total">({{ cart.item_count }})</span></a>
       </div>
+    </nav>
+  {% endif %}
 
-      {% if menu_main %}
-        <nav class="{{ section_name }}__navigation navigation">
-          {% for link in linklists[menu_main].links %}
-            {% render 'navigation-item', link: link %}
-          {% endfor %}
-           <div class="navigation__item">
-            <a class="navigation__link" href="/cart" title="Cart">Cart<span class="js--cart-items-total">({{ cart.item_count }})</span></a>
-          </div>
-        </nav>
-      {% endif %}
+  <button class="{{ section_name }}__button button d-inline-flex d-lg-none" type="button">
+    <span class="button__title">Menu</span>
+  </button>
 
-      <button class="{{ section_name }}__button button d-inline-flex d-lg-none" type="button">
-        <span class="button__title">Menu</span>
-      </button>
-
-    </div>
-  {% render 'bs-container', state: 'closed' %}
 </div>
 
 {% stylesheet %}

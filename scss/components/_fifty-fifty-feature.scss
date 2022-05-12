@@ -38,6 +38,12 @@
     flex-flow: column;
   }
 
+  &__title {
+    & + .fifty-fifty-feature__message {
+      margin-top: 15px;
+    }
+  }
+
   &[data-style="wide"] {
     padding-bottom: 0;
     .fifty-fifty-feature__content {
