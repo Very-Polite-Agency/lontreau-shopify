@@ -7,6 +7,8 @@ const Header = (() => {
   let debug = false;
   let info = { name : 'Header', version : '1.0' };
   let throttled = false;
+  let timeout;
+  let timeoutValue = 100000;
 
   //////////////////////////////////////////////////////////
   ////  ABC
@@ -14,14 +16,20 @@ const Header = (() => {
 
   const abc = () => {
 
-    let headerNavigation = document.querySelector('.header__navigation') || false;
+    let headerNavigation = document.querySelector('.header__main-navigation') || false;
+    let headerNavigationWidth = headerNavigation.offsetWidth || 0;
     let headerNavigationOffset = headerNavigation.getBoundingClientRect() || {};
     let headerNavigationOffsetLeft = headerNavigationOffset.left || 0;
-    let headerSubnavigation = headerNavigation.querySelectorAll('.sub-navigation__main') || [];
+    let headerSubnavigationMain = headerNavigation.querySelectorAll('.sub-navigation__main') || [];
+    let headerSubnavigationMedia = headerNavigation.querySelectorAll('.sub-navigation__media') || [];
 
     if ( headerNavigationOffsetLeft ) {
-      headerSubnavigation.forEach( item => {
+      headerSubnavigationMain.forEach( item => {
         item.style.left = headerNavigationOffsetLeft + 'px';
+      });
+      headerSubnavigationMedia.forEach( item => {
+        item.style.left = headerNavigationOffsetLeft + 'px';
+        item.style.width = headerNavigationWidth + 'px';
       });
     }
 
@@ -33,15 +41,38 @@ const Header = (() => {
 
   const hover = () => {
 
-    ( document.querySelectorAll('.sub-navigation') || [] ).forEach( subnav => {
-      subnav.addEventListener('mouseenter', event => {
-        console.log( event );
+    let links = ( document.querySelectorAll('.header .navigation__item.has-links') || [] );
+
+    links.forEach( item => {
+      item.addEventListener('mouseenter', event => {
+        clearTimeout(timeout);
+        links.forEach( item => { item.classList.remove('sub-navigation-active'); });
+        item.classList.add('sub-navigation-active');
+        item.closest('.header').classList.add('sub-navigation-active');
       });
     });
 
-    ( document.querySelectorAll('.sub-navigation') || [] ).forEach( subnav => {
-      subnav.addEventListener('mouseleave', event => {
-        console.log( event );
+    links.forEach( item => {
+      item.addEventListener('mouseleave', event => {
+        timeout = setTimeout(function(){
+          item.classList.remove('sub-navigation-active');
+          item.closest('.header').classList.remove('sub-navigation-active');
+        }, timeoutValue);
+      });
+    });
+
+    ( document.querySelectorAll('.header .sub-navigation__link') || [] ).forEach( item => {
+      item.addEventListener('mouseenter', event => {
+
+        let image = item.dataset.featuredImage || false;
+        let element = item.closest('.sub-navigation').querySelector('.sub-navigation__background-image') || false;
+
+        console.log({ item, image, element })
+
+        if ( image ) {
+          element.dataset.bg = image;
+        }
+
       });
     });
 

@@ -37,7 +37,13 @@
             <strong class="{{ section_name }}__featured-product-title caption--2">{{ featured_product.title }}</strong>
             <span class="{{ section_name }}__featured-product-price caption--2">{% render 'price', product: featured_product %}</strong>
           </div>
-          <button class="{{ snippet_name }}__button button--tertiary js--add-to-cart" type="button" data-variant-id="{{ featured_product.selected_or_first_available_variant.id }}" data-quantity="1">
+          <button
+            class="{{ snippet_name }}__button button--tertiary js--add-to-cart"
+            type="button"
+            data-variant-id="{{ featured_product.selected_or_first_available_variant.id }}"
+            data-quantity="1"
+            data-featured-image="{{ featured_product.featured_image | image_url: width: 200 }}"
+          >
             <span class="button__title">Add to Cart</span>
           </button>
         </div>
@@ -47,9 +53,6 @@
         <div class="{{ section_name }}__image">
           {% render 'lazyload-image', background: true, image: image %}
         </div>
-      {% endif %}
-      {% if title %}
-        <h1 class="{{ section_name }}__title heading--2">{{ title }}</h1>
       {% endif %}
     {% endif %}
 

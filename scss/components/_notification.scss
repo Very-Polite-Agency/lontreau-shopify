@@ -1,0 +1,41 @@
+:root {
+  --theme-notification-width: 280px;
+}
+
+.notification {
+
+  border: 1px solid rgba(var(--theme-colour-black), 1);
+  position: fixed;
+  top: calc( var(--theme-header-height--lg) + var(--bs-container-fluid-padding) );
+  right: var(--bs-container-fluid-padding);
+  width: var(--theme-notification-width);
+  background: white;
+  color: black;
+  transform: translate3d( calc(var(--theme-notification-width) + var(--bs-container-fluid-padding)), 0, 0 );
+
+  &__layout {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+  }
+
+  &__media {
+    border: 1px solid rgba(var(--theme-colour-black), 1);
+    width: 75px;
+    height: 75px;
+    position: relative;
+  }
+
+  &.active {
+    transition: transform 500ms 1000ms;
+    transform: translate3d( 0, 0, 0 );
+  }
+
+  &.hidden {
+    transition: transform 5000ms;
+    transform: translate3d( calc(var(--theme-notification-width) + var(--bs-container-fluid-padding)), 0, 0 );
+  }
+
+}

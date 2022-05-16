@@ -60,9 +60,6 @@
     @supports not (aspect-ratio: auto) {
       height: 300px;
     }
-    & + .collection-hero__title {
-      margin-top: 20px;
-    }
   }
 
   &__title {

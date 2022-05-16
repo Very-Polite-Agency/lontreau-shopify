@@ -1,6 +1,8 @@
 {%- assign section_name = 'collection-product-grid' -%}
 {%- assign section_id = section_name | append: '--' | append: section.id -%}
 
+{%- assign title = collection.title | default: '' -%}
+
 <div class="{{ section_name }}" id="{{ section_id }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
 
@@ -15,6 +17,9 @@
       <div class="{{ section_name }}__main">
         {% render 'bs-container', state: 'open' %}
           <div class="{{ section_name }}__sort-filter">
+            {% if title %}
+              <h1 class="{{ section_name }}__title heading--2">{{ title }}</h1>
+            {% endif %}
             <select class="{{ section_name }}__sort-filter-options select--primary" id="sort-by">
               {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
               {% for option in collection.sort_options %}

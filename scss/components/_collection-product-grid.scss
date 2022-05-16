@@ -5,12 +5,19 @@
     width: 100%;
     justify-content: flex-start;
     align-items: center;
+    flex-flow: row wrap;
     select {
       text-align: center;
     }
     & + .collection-product-grid__listing {
       margin-top: var(--bs-container-fluid-padding);
     }
+  }
+
+  &__title {
+    margin-bottom: var(--bs-container-fluid-padding);
+    width: 100%;
+    text-align: center;
   }
 
   @include breakpoint(sm) {} // min width sm
@@ -25,6 +32,14 @@
         width: calc( (100% - (3 * var(--bs-gutter-width))) * 0.25 );
         text-align: left;
       }
+    }
+
+    &__title {
+      margin-bottom: 0;
+      margin-right: auto;
+      width: auto;
+      text-align: left;
+      flex: 1;
     }
 
   } // min width lg

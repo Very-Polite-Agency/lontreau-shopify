@@ -64,6 +64,7 @@
 
   &:hover,
   &.hover-active,
+  &.sub-navigation-active,
   .scroll-position--scrolled & {
     background: rgba(var(--theme-colour-white),1);
     color: rgba(var(--theme-colour-black),1);
@@ -75,21 +76,15 @@
 
   @include breakpoint(lg) {
 
-    .has-links {
-      .sub-navigation__main {
-        padding: 20px;
-      }
-      &:hover {
-        .sub-navigation {
-          opacity: 1;
-          pointer-events: all;
-        }
+    .sub-navigation-active {
+      .sub-navigation {
+        opacity: 1;
+        pointer-events: all;
       }
     }
 
     .navigation {
       display: inline-flex;
-      border: 1px solid red;
       width: auto;
       justify-content: center;
       align-items: center;
@@ -99,7 +94,7 @@
         align-items: center;
         justify-content: center;
         & + .navigation__item {
-          margin-left: 40px;
+          margin-left: 50px;
         }
       }
       &__link {
@@ -129,9 +124,16 @@
           }
         }
       }
+      &--cart {
+        position: absolute;
+        right: var(--bs-container-fluid-padding);
+      }
     }
 
     .sub-navigation {
+      transition:
+        opacity var(--theme-transition-duration),
+        top var(--theme-transition-duration);
       background: rgba(var(--theme-colour-forrest-dark), 1);
       color: rgba(var(--theme-colour-white), 1);
       position: absolute;
@@ -141,12 +143,22 @@
       opacity: 0;
       pointer-events: none;
       &__item {
-        & + .sub-navigation__item {
-          margin-top: 15px;
+        &.has-links:hover {
+          .sub-sub-navigation {
+            transform: translate3d( 100%, 0, -10px );
+            opacity: 1;
+            pointer-events: all;
+          }
         }
       }
       &__link {
+        display: block;
+        font-size: 22px;
         color: inherit;
+        position: static;
+        padding: 10px 28px;
+        display: block;
+        line-height: 1.2;
         &.active,
         &:hover {
           color: rgba(var(--theme-colour-grass), 1);
@@ -155,6 +167,49 @@
       &__main {
         background: rgba(var(--theme-colour-forrest), 1);
         position: relative;
+        //z-index: 5;
+        padding: 20px 0;
+        margin-left: -28px;
+        transform-style: preserve-3d;
+      }
+      &__media {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(var(--theme-colour-forrest-dark), 1);
+      }
+    }
+
+    .sub-sub-navigation {
+      transition:
+        opacity var(--theme-transition-duration),
+        transform var(--theme-transition-duration);
+      background: rgba(var(--theme-colour-forrest-dark), 0.66);
+      background: rgba(var(--theme-colour-forrest), 0.66);
+      position: absolute;
+      transform: translate3d( 0, 0, -10px );
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: -5;
+      opacity: 0;
+      pointer-events: none;
+      width: 100%;
+      padding: 20px 0;
+      &__item {}
+      &__link {
+        display: block;
+        color: rgba(var(--theme-colour-white), 1);
+        text-decoration: none;
+        font-size: 16px;
+        padding: 5px 20px;
+        line-height: 1.2;
+        &.active,
+        &:hover {
+          color: rgba(var(--theme-colour-grass), 1);
+        }
       }
     }
 
@@ -163,6 +218,11 @@
   @include breakpoint(xl) {
 
     .navigation {
+      &__item {
+        & + .navigation__item {
+          margin-left: 65px;
+        }
+      }
       &__link {
         font-size: 26px;
       }
@@ -173,6 +233,11 @@
   @include breakpoint(xxl) {
 
     .navigation {
+      &__item {
+        & + .navigation__item {
+          margin-left: 80px;
+        }
+      }
       &__link {
         font-size: 28px;
       }

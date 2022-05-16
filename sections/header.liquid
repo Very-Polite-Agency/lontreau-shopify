@@ -12,12 +12,25 @@
   </div>
 
   {% if menu_main %}
-    <nav class="{{ section_name }}__navigation navigation navigation--header">
+    <nav class="{{ section_name }}__main-navigation navigation navigation--main">
       {% for link in linklists[menu_main].links %}
         {% render 'navigation-item', link: link %}
       {% endfor %}
     </nav>
   {% endif %}
+
+  <nav class="{{ section_name }}__cart-navigation navigation navigation--cart">
+    <div class="navigation__item">
+      {% assign link_active = false %}
+      {% if template == 'cart' %}
+        {% assign link_active = true %}
+      {% endif %}
+      <a class="navigation__link" href="/cart" title="Cart">
+        <span>{% render 'svg', type: 'icon.cart' %}</span>
+        <span>({{ cart.item_count }})</span>
+      </a>
+    </div>
+  </nav>
 
   <button class="{{ section_name }}__button button d-lg-none" type="button">
     <span class="button__title">Menu</span>

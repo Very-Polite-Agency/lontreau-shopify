@@ -22,20 +22,36 @@
 
     {% if levels > 0 %}
       <div class="navigation__sub-navigation sub-navigation">
+        <div class="sub-navigation__media">
+          <div class="sub-navigation__background-image lazyload lazyload-item lazyload-item--image lazyload-item--background"></div>
+        </div>
         <div class="sub-navigation__main">
           {% for sub_link in link.links %}
 
+            {% assign featured_image = false %}
             {% if sub_link.type == 'page_link' %}
-              {% assign featured_image = sub_link.object.metafields.page.featured_image | default: false %}
-              {% render 'debug-this', item: featured_image %}
+              {% assign featured_image = sub_link.object.metafields.page.featured_image.value | default: false %}
             {% endif %}
 
-            <div class="sub-navigation__item">
-              <a class="sub-navigation__link{% if sub_link.active %} active{% endif %}" href="{{ sub_link.url }}">{{ sub_link.title }}</a>
+            <div class="sub-navigation__item {% if sub_link.links.size > 0 %}has-links{% endif %}">
+
+              <a
+                class="sub-navigation__link{% if sub_link.active %} active{% endif %}"
+                href="{{ sub_link.url }}"
+                data-featured-image="{% if featured_image %}{{ featured_image | image_url }}{% endif %}"
+              >{{ sub_link.title }}</a>
+
+              {% if sub_link.links.size > 0 %}
+                <div class="navigation__sub-sub-navigation sub-sub-navigation">
+                  {% for sub_sub_link in sub_link.links %}
+                    <div class="sub-sub-navigation__item">
+                      <a class="sub-sub-navigation__link{% if sub_sub_link.active %} active{% endif %}" href="{{ sub_sub_link.url }}">{{ sub_sub_link.title }}</a>
+                    </div>
+                  {% endfor %}
+                </div>
+              {% endif %}
+
             </div>
-            {% for sub_sub_link in sub_link.links %}
-              {% comment %} <div class="sub-sub-navigation__item"><a href="{{ sub_sub_link.url }}">{{ sub_sub_link.title }}</a></div> {% endcomment %}
-            {% endfor %}
           {% endfor %}
         </div>
       </div>

@@ -79,6 +79,11 @@
 
     {% section 'footer' %}
 
+    {% comment %} {% case template %}
+      {% when 'collection', 'product' %}
+        {% render 'notification-add-to-cart' %}
+    {% endcase %} {% endcomment %}
+
     {% comment %}
       ## Do we need this
       {%- if settings.predictive_search_enabled -%}
