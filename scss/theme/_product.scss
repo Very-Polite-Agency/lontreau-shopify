@@ -23,9 +23,8 @@
   }
 
   &__gallery {
-    border: 1px solid rgba(var(--theme-colour-black), 1);
-    &.with-swipper {
-      border: none;
+    &-main {
+       border: 1px solid rgba(var(--theme-colour-black), 1);
     }
   }
 

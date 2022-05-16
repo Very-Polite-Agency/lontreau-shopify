@@ -7,45 +7,54 @@
     {%- assign is_swipper = true -%}
   {% endif %}
 
-  <div class="{{ snippet_name }}__gallery{% if is_swipper %} with-swipper{% endif %}>
 
-    {% if product.images.size > 0 %}
-      {% if is_swipper %}<div class="swiper swiper-main">{% endif %}
-        {% if is_swipper %}<div class="swiper-wrapper">{% endif %}
+  {% if product.images.size > 0 %}
 
-          {% for image in product.images %}
-            {% if is_swipper %}<div class="swiper-slide">{% endif %}
-              <div class="{{ snippet_name }}__gallery-item">
-                {%
-                  render 'lazyload-image',
-                  alt_text: product.title,
-                  image: image,
-                %}
-              </div>
-            {% if is_swipper %}</div>{% endif %}
-          {% endfor %}
+    <div class="{{ snippet_name }}__gallery{% if is_swipper %} with-swipper{% endif %}">
 
+      <div class="{{ snippet_name }}__gallery-main">
+        {% if is_swipper %}<div class="swiper swiper-main">{% endif %}
+          {% if is_swipper %}<div class="swiper-wrapper">{% endif %}
+
+            {% for image in product.images %}
+              {% if is_swipper %}<div class="swiper-slide">{% endif %}
+                <div class="{{ snippet_name }}__gallery-main-item">
+                  {%
+                    render 'lazyload-image',
+                    alt_text: product.title,
+                    image: image,
+                  %}
+                </div>
+              {% if is_swipper %}</div>{% endif %}
+            {% endfor %}
+
+          {% if is_swipper %}</div>{% endif %}
         {% if is_swipper %}</div>{% endif %}
-      {% if is_swipper %}</div>{% endif %}
-    {% endif %}
-
-    {% if is_swipper %}
-      <div class="swiper swiper-thumbs">
-        <div class="swiper-wrapper">
-          {% for image in product.images %}
-            <div class="swiper-slide">
-              {%
-                render 'lazyload-image',
-                alt_text: product.title,
-                image: image,
-              %}
-            </div>
-          {% endfor %}
-        </div>
       </div>
-    {% endif %}
 
-  </div>
+      {% if is_swipper %}
+        <div class="{{ snippet_name }}__gallery-thumbs">
+          <div class="swiper swiper-thumbs">
+            <div class="swiper-wrapper">
+              {% for image in product.images %}
+                <div class="swiper-slide">
+                  <div class="{{ snippet_name }}__gallery-thumbs-item">
+                    {%
+                      render 'lazyload-image',
+                      alt_text: product.title,
+                      image: image,
+                    %}
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+    </div>
+
+  {% endif %}
 
 {% endif %}
 {% comment %}
