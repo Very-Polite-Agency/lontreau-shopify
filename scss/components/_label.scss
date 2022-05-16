@@ -17,10 +17,18 @@
     }
   }
 
+  &--1,
   &--primary {
     @extend .label;
     font-size: 20px;
     line-height: 1.23;
+  }
+
+  &--2,
+  &--secondary {
+    @extend .label;
+    font-size: 12px;
+    line-height: 1;
   }
 
 }

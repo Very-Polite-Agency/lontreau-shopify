@@ -66,4 +66,12 @@
     }
   }
 
+  &__title {
+    font-size: 24px;
+  }
+
+  &__type {
+    color: rgba(var(--theme-colour-grass), 1);
+  }
+
 }

@@ -13,11 +13,12 @@
 {%- if product and product != blank -%}
 
   {% assign available = product.available %}
+  {% assign classes = classes | default: '' %}
   {% assign price = product.price %}
   {% assign price_compare = product.compare_at_price %}
   {% assign style = style | default: '' %}
 
-  <div class="price">
+  <div class="{% if classes %}{{ classes }} {% endif %}price">
     <span class="price__value">{{ price | money_without_currency }}</span>
     {% if price_compare %}
       <span class="price__value sale-price">{{ price_compare | money_without_currency }}</span>
