@@ -3,36 +3,45 @@
   {%- assign snippet_name = 'product' -%}
 
     {% if product.images.size > 0 %}
-      <div class="{{ snippet_name }}__gallery col-12 col-lg-6 order-lg-1">
-        {% if gallery %}<div class="glide js--glider" id="{{ gallery_id }}" data-glide-style="{{ gallery_style }}">{% endif %}
-          {% if gallery %}<div class="glide__track" data-glide-el="track">{% endif %}
-            {% if gallery %}<ul class="glide__slides">{% endif %}
+      {% if gallery %}<div class="swiper">{% endif %}
+        {% if gallery %}<div class="swiper-wrapper">{% endif %}
 
-              {% for image in product.images %}
-                {% if gallery %}<li class="glide__slide">{% endif %}
-                  <div class="product__image">
-                    {%
-                      render 'lazyload-image',
-                      alt_text: product.title,
-                      image: image,
-                    %}
-                  </div>
-                {% if gallery %}</li>{% endif %}
-              {% endfor %}
+          {% for image in product.images %}
+            {% if gallery %}<div class="swiper-slide">{% endif %}
+              <div class="product__images-item">
+                {%
+                  render 'lazyload-image',
+                  alt_text: product.title,
+                  image: image,
+                %}
+              </div>
+            {% if gallery %}</div>{% endif %}
+          {% endfor %}
 
-            {% if gallery %}</ul>{% endif %}
-          {% if gallery %}</div>{% endif %}
-
-          {% if gallery %}
-            <div class="glide__bullets" data-glide-el="controls[nav]">
-              {% for image in product.images %}
-                <button class="glide__bullet" data-glide-dir="={{ forloop.index0 }}"></button>
-              {% endfor %}
-            </div>
-          {% endif %}
-
+        {% if gallery %}</div>{% endif %}
       {% if gallery %}</div>{% endif %}
-      </div>
     {% endif %}
 
 {% endif %}
+{% comment %}
+
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div> {% endcomment %}

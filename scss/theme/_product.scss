@@ -1,5 +1,6 @@
 .product {
 
+
   .stepper {
     &__button,
     &__input {
@@ -10,6 +11,7 @@
   }
 
   &__actions {
+    margin-top: calc( 2 * var(--bs-container-fluid-padding) );
     button {
       width: 100%;
       & + button {
@@ -19,6 +21,10 @@
     & + .product__info {
       margin-top: var(--bs-container-fluid-padding);
     }
+  }
+
+  &__images {
+    border: 1px solid rgba(var(--theme-colour-black),1);
   }
 
   &__quantity {

@@ -27,16 +27,11 @@
             {% render 'price', product: product %}
           </div>
           <div class="{{ section_name }}__images">
-            {% if featued_image %}
-              <div class="{{ section_name }}__images-item">
-                {% render 'lazyload-image', image: featued_image %}
-              </div>
-            {% endif %}
+            {% render 'product-gallery', product: product %}
           </div>
         </div>
 
         <div class="col-12 col-lg-6">
-          {% render 'price', product: product %}
           {% render 'product-actions', classes: '', product: product %}
           {% render 'product-info', product: product %}
         </div>
