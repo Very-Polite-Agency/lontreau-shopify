@@ -1,7 +1,7 @@
 // @codekit-prepend quiet "../node_modules/validator/validator.min.js";
 // @codekit-prepend quiet "../node_modules/@glidejs/glide/dist/glide.min.js";
 // @codekit-prepend quiet "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
-// @codekit-prepend quiet "..y/node_modules/swiper/swiper-bundle.min.js";
+// @codekit-prepend quiet "../node_modules/swiper/swiper-bundle.min.js";
 
 // @codekit-prepend "./modules/_credits.js";
 // @codekit-prepend "./modules/_breakpoints.js";
@@ -51,7 +51,15 @@ AOS.init({
   easing: 'ease-in-out',      // default easing for AOS animations
 });
 
-const swiper = new Swiper('.swiper', {
-  speed: 400,
-  spaceBetween: 100,
+var swiperThumbs = new Swiper(".swiper-thumbs", {
+  autoHeight: false,
+  spaceBetween: 20,
+})
+
+var swiper = new Swiper(".swiper", {
+  autoHeight: true,
+  spaceBetween: 20,
+  thumbs: {
+    swiper: swiperThumbs
+  }
 });

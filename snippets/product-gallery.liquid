@@ -8,7 +8,7 @@
   {% endif %}
 
     {% if product.images.size > 0 %}
-      {% if is_swipper %}<div class="swiper">{% endif %}
+      {% if is_swipper %}<div class="swiper swiper-main">{% endif %}
         {% if is_swipper %}<div class="swiper-wrapper">{% endif %}
 
           {% for image in product.images %}
@@ -26,6 +26,23 @@
         {% if is_swipper %}</div>{% endif %}
       {% if is_swipper %}</div>{% endif %}
     {% endif %}
+
+    {% if is_swipper %}
+      <div class="swiper swiper-thumbs">
+        <div class="swiper-wrapper">
+          {% for image in product.images %}
+            <div class="swiper-slide">
+              {%
+                render 'lazyload-image',
+                alt_text: product.title,
+                image: image,
+              %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
 
 {% endif %}
 {% comment %}
