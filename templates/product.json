@@ -23,6 +23,18 @@
         "303bd46e-98ba-4903-a6b4-48c75aca8962": {
           "type": "minimal",
           "settings": {
+            "title": "Sustainable"
+          }
+        },
+        "6a1789b0-e878-44ef-bd68-4c86cd4faabb": {
+          "type": "minimal",
+          "settings": {
+            "title": "Alcohol Free"
+          }
+        },
+        "97b9e10f-d0e8-49a9-9af1-90bf0fb4f8f3": {
+          "type": "minimal",
+          "settings": {
             "title": ""
           }
         }
@@ -30,7 +42,9 @@
       "block_order": [
         "327057bd-4d48-41b5-94ea-784c83f206d6",
         "aca824eb-74ef-4789-9863-96c1624c04f2",
-        "303bd46e-98ba-4903-a6b4-48c75aca8962"
+        "303bd46e-98ba-4903-a6b4-48c75aca8962",
+        "6a1789b0-e878-44ef-bd68-4c86cd4faabb",
+        "97b9e10f-d0e8-49a9-9af1-90bf0fb4f8f3"
       ],
       "settings": {
         "content_type": "minimal",
