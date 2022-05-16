@@ -7,6 +7,31 @@
     },
     "165179579849f0b545": {
       "type": "carousel-education",
+      "blocks": {
+        "327057bd-4d48-41b5-94ea-784c83f206d6": {
+          "type": "minimal",
+          "settings": {
+            "title": "Paraben Free"
+          }
+        },
+        "aca824eb-74ef-4789-9863-96c1624c04f2": {
+          "type": "minimal",
+          "settings": {
+            "title": "Vegan"
+          }
+        },
+        "303bd46e-98ba-4903-a6b4-48c75aca8962": {
+          "type": "minimal",
+          "settings": {
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "327057bd-4d48-41b5-94ea-784c83f206d6",
+        "aca824eb-74ef-4789-9863-96c1624c04f2",
+        "303bd46e-98ba-4903-a6b4-48c75aca8962"
+      ],
       "settings": {
         "content_type": "minimal",
         "alignment": "center",
