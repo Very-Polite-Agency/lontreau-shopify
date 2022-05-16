@@ -2,12 +2,17 @@
 
   {%- assign snippet_name = 'product' -%}
 
+  {%- assign is_swipper = false -%}
+  {% if product.images.size > 1 %}
+    {%- assign is_swipper = true -%}
+  {% endif %}
+
     {% if product.images.size > 0 %}
-      {% if gallery %}<div class="swiper">{% endif %}
-        {% if gallery %}<div class="swiper-wrapper">{% endif %}
+      {% if is_swipper %}<div class="swiper">{% endif %}
+        {% if is_swipper %}<div class="swiper-wrapper">{% endif %}
 
           {% for image in product.images %}
-            {% if gallery %}<div class="swiper-slide">{% endif %}
+            {% if is_swipper %}<div class="swiper-slide">{% endif %}
               <div class="product__images-item">
                 {%
                   render 'lazyload-image',
@@ -15,11 +20,11 @@
                   image: image,
                 %}
               </div>
-            {% if gallery %}</div>{% endif %}
+            {% if is_swipper %}</div>{% endif %}
           {% endfor %}
 
-        {% if gallery %}</div>{% endif %}
-      {% if gallery %}</div>{% endif %}
+        {% if is_swipper %}</div>{% endif %}
+      {% if is_swipper %}</div>{% endif %}
     {% endif %}
 
 {% endif %}
