@@ -29,13 +29,12 @@
             {% endfor %}
 
           {% if is_swipper %}</div>{% endif %}
-
-          {% if is_swipper %}
-            <div class="swiper-pagination"></div>
-          {% endif %}
-
         {% if is_swipper %}</div>{% endif %}
       </div>
+
+      {% if is_swipper %}
+        <div class="{{ snippet_name }}__gallery-main-pagination"></div>
+      {% endif %}
 
       {% if is_swipper %}
         <div class="{{ snippet_name }}__gallery-thumbs">

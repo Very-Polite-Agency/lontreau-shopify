@@ -66,6 +66,10 @@ var swiperThumbs = new Swiper(".swiper-thumbs", {
 var swiper = new Swiper(".swiper-main", {
   autoHeight: true,
   loop: true,
+  pagination: {
+    clickable: true,
+    el: ".product__gallery-main-pagination"
+  },
   slidesPerView: 1,
   spaceBetween: 20,
   thumbs: {

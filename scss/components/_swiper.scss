@@ -1,0 +1,19 @@
+.swiper {
+
+  &-pagination {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-bullet {
+      background: rgba(var(--theme-colour-black),0.05);
+      &-active {
+        background: rgba(var(--theme-colour-grass),1);
+      }
+    }
+
+  }
+
+}

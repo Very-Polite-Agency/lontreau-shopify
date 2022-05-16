@@ -9,6 +9,13 @@
     }
   }
 
+  .swiper {
+    &-pagination {
+      top: unset;
+      bottom: unset;
+    }
+  }
+
   &__actions {
     margin-top: calc( 2 * var(--bs-container-fluid-padding) );
     button {
