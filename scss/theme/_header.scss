@@ -76,6 +76,12 @@
 
   @include breakpoint(lg) {
 
+    &__brand {
+      top: 50%;
+      height: 40px;
+      margin-top: -20px;
+    }
+
     .sub-navigation-active {
       .sub-navigation {
         opacity: 1;

@@ -8,9 +8,9 @@
     align-items: center;
 
     &-bullet {
-      background: rgba(var(--theme-colour-black),0.05);
+      background: rgba(var(--theme-colour-black), 0.185);
       &-active {
-        background: rgba(var(--theme-colour-grass),1);
+        background: rgba(var(--theme-colour-grass), 1);
       }
     }
 

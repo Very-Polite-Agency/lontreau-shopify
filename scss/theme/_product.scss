@@ -32,7 +32,17 @@
 
   &__gallery {
     &-main {
-       border: 1px solid rgba(var(--theme-colour-black), 1);
+      border: 1px solid rgba(var(--theme-colour-black), 1);
+    }
+    &-thumbs {
+      margin-top: var(--bs-container-fluid-padding);
+      .swiper-slide {
+        border: 1px solid rgba(var(--theme-colour-black), 1);
+        opacity: 0.25;
+        &.swiper-slide-thumb-active {
+          opacity: 1;
+        }
+      }
     }
   }
 

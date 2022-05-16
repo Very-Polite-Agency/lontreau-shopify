@@ -58,9 +58,17 @@ AOS.init({
 
 var swiperThumbs = new Swiper(".swiper-thumbs", {
   autoHeight: false,
+  breakpoints: {
+    992: {
+      spaceBetween: 10
+    },
+    1400: {
+      spaceBetween: 16
+    }
+  },
   loop: false,
   slidesPerView: 5,
-  spaceBetween: 16
+  spaceBetween: 8
 })
 
 var swiper = new Swiper(".swiper-main", {
