@@ -1,6 +1,5 @@
 .product {
 
-
   .stepper {
     &__button,
     &__input {
@@ -20,6 +19,13 @@
     }
     & + .product__info {
       margin-top: var(--bs-container-fluid-padding);
+    }
+  }
+
+  &__gallery {
+    border: 1px solid rgba(var(--theme-colour-black), 1);
+    &.with-swipper {
+      border: none;
     }
   }
 

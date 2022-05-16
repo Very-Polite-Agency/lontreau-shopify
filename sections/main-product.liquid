@@ -26,9 +26,7 @@
             </div>
             {% render 'price', product: product %}
           </div>
-          <div class="{{ section_name }}__images">
-            {% render 'product-gallery', product: product %}
-          </div>
+          {% render 'product-gallery', product: product %}
         </div>
 
         <div class="col-12 col-lg-6">

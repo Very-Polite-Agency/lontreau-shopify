@@ -7,13 +7,15 @@
     {%- assign is_swipper = true -%}
   {% endif %}
 
+  <div class="{{ snippet_name }}__gallery{% if is_swipper %} with-swipper{% endif %}>
+
     {% if product.images.size > 0 %}
       {% if is_swipper %}<div class="swiper swiper-main">{% endif %}
         {% if is_swipper %}<div class="swiper-wrapper">{% endif %}
 
           {% for image in product.images %}
             {% if is_swipper %}<div class="swiper-slide">{% endif %}
-              <div class="product__images-item">
+              <div class="{{ snippet_name }}__gallery-item">
                 {%
                   render 'lazyload-image',
                   alt_text: product.title,
@@ -43,6 +45,7 @@
       </div>
     {% endif %}
 
+  </div>
 
 {% endif %}
 {% comment %}

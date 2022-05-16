@@ -51,13 +51,22 @@ AOS.init({
   easing: 'ease-in-out',      // default easing for AOS animations
 });
 
+// const swiper = document.querySelector('.swiper').swiper;
+//
+// // Now you can use all slider methods like
+// swiper.slideNext();
+
 var swiperThumbs = new Swiper(".swiper-thumbs", {
   autoHeight: false,
-  spaceBetween: 20,
+  loop: false,
+  slidesPerView: 5,
+  spaceBetween: 16
 })
 
-var swiper = new Swiper(".swiper", {
+var swiper = new Swiper(".swiper-main", {
   autoHeight: true,
+  loop: true,
+  slidesPerView: 1,
   spaceBetween: 20,
   thumbs: {
     swiper: swiperThumbs
