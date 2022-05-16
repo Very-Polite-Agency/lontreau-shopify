@@ -24,7 +24,7 @@
 ( document.querySelectorAll('.js--add-to-cart') || [] ).forEach( button => {
   button.addEventListener('click', event => {
     event.preventDefault();
-    //addProductToCartFromButton( button );
+    addProductToCartFromButton( button );
   });
 });
 
@@ -70,8 +70,9 @@ function createNotificationMarkup( $product = {} ) {
 function notify( $products = [] ) {
   if ( $products ) {
     $products.forEach( product => {
-      let markup = createNotificationMarkup( product );
-      insertNotificationMarkupIntoBody( markup );
+      // let markup = createNotificationMarkup( product );
+      // insertNotificationMarkupIntoBody( markup );
+      alert(`${product.title} Added to Cart!`);
     });
   }
 };
@@ -125,9 +126,7 @@ function addProductToCartFromButton( $button = false ) {
   .catch(function (error) {
     console.log(error);
   })
-  .then(function () {
-
-  });
+  .then(function () {});
 
 };
 

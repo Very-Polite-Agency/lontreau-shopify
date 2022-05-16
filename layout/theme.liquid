@@ -92,6 +92,10 @@
     {% endcomment %}
 
     <script src="{{ 'main.min.js' | asset_url }}" defer></script>
+    {% case template %}
+      {% when 'collection', 'product' %}
+        <script src="{{ 'add-to-cart.min.js' | asset_url }}" defer></script>
+    {% endcase %}
 
   </body>
 </html>

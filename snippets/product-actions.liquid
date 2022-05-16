@@ -1,0 +1,53 @@
+{%- if product and product != blank -%}
+
+  {%- assign snippet_name = 'product' -%}
+
+  {% assign available = product.available | default: false %}
+  {% assign featured_image = product.featured_image | default: false %}
+  {% assign selected_variant = product.selected_or_first_available_variant | default: false %}
+
+  <div class="{{ snippet_name }}__actions">
+
+    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+    <div class="{{ snippet_name }}__quantity">
+      <label class="{{ snippet_name }}__quantity-label body-copy--alt">Quantity</label>
+      <div class="{{ snippet_name }}__quantity-stepper stepper">
+        <button
+          class="stepper__button button--decrease decrease js--line-item-quantity-update js--stepper-quantity-update"
+          name="decrease"
+          type="button"
+          data-target-id="{{ snippet_name }}-quantity"
+        ><span class="button__icon">{% render 'svg', type: 'icon.minus' %}</span></button>
+        <input class="stepper__input" type="number" name="quantity" min="1" value="1" id="{{ snippet_name }}-quantity">
+        <button
+          class="stepper__button button--increase increase js--line-item-quantity-update js--stepper-quantity-update"
+          name="increase"
+          type="button"
+          data-target-id="{{ snippet_name }}-quantity"
+        ><span class="button__icon">{% render 'svg', type: 'icon.plus' %}</span></button>
+      </div>
+    </div>
+
+    <button
+      class="{{ snippet_name }}__button button--tertiary js--add-to-cart"
+      type="button"
+      data-variant-id="{{ selected_variant.id }}"
+      data-quantity="1"
+      data-featured-image="{{ featured_image | image_url: width: 200 }}"
+      {% unless available %}disabled{% endunless %}
+    >
+      <span class="button__title">{% if available %}Add to Cart{% else %}Unavailable{% endif %}</span>
+    </button>
+
+    <button
+      class="{{ snippet_name }}__button button--outlined-dark"
+      type="submit"
+      {% unless available %}disabled{% endunless %}
+    >
+      <span class="button__title">{% if available %}Buy Now{% else %}Unavailable{% endif %}</span>
+    </button>
+
+  </div>
+
+{% endif %}

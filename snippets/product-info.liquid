@@ -1,0 +1,78 @@
+{%- if product and product != blank -%}
+
+  {%- assign snippet_name = 'product' -%}
+
+  {% assign description = product.description | default: '' %}
+  {% assign ingredients = product.metafields.info.ingredients | default: '' %}
+  {% assign standards = product.metafields.info.standards | default: '' %}
+  {% assign usage = product.metafields.info.usage | default: '' %}
+
+  <div class="{{ snippet_name }}__info">
+
+    {% if description != blank %}
+      {% assign accordion_id = 'product-info-accordion--description' %}
+      <div class="{{ snippet_name }}__info-item collapsible">
+        <button class="button--collapsible collapsible__trigger heading--4" type="button" data-bs-toggle="collapse" data-bs-target="#{{ accordion_id }}" aria-expanded="true" aria-controls="{{ accordion_id }}">
+          <span class="button__title">Description</span>
+          <span class="button__icon">
+            <span class="button__icon-plus">{% render 'svg', type: 'icon.plus' %}</span>
+            <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
+          </span>
+        </button>
+        <div class="collapsible__main collapse show" id="{{ accordion_id }}" style="">
+          <div class="collapsible__content body-copy--regular">{{ description }}</div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if ingredients != blank %}
+      {% assign accordion_id = 'product-info-accordion--ingredients' %}
+      <div class="{{ snippet_name }}__info-item collapsible">
+        <button class="button--collapsible collapsible__trigger heading--4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ accordion_id }}" aria-expanded="false" aria-controls="{{ accordion_id }}">
+          <span class="button__title">Ingredients</span>
+          <span class="button__icon">
+            <span class="button__icon-plus">{% render 'svg', type: 'icon.plus' %}</span>
+            <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
+          </span>
+        </button>
+        <div class="collapsible__main collapse" id="{{ accordion_id }}" style="">
+          <div class="collapsible__content body-copy--regular">{{ ingredients }}</div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if usage != blank %}
+      {% assign accordion_id = 'product-info-accordion--usage' %}
+      <div class="{{ snippet_name }}__info-item collapsible">
+        <button class="button--collapsible collapsible__trigger heading--4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ accordion_id }}" aria-expanded="false" aria-controls="{{ accordion_id }}">
+          <span class="button__title">How to Use</span>
+          <span class="button__icon">
+            <span class="button__icon-plus">{% render 'svg', type: 'icon.plus' %}</span>
+            <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
+          </span>
+        </button>
+        <div class="collapsible__main collapse" id="{{ accordion_id }}" style="">
+          <div class="collapsible__content body-copy--regular">{{ usage }}</div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if standards != blank %}
+      {% assign accordion_id = 'product-info-accordion--standards' %}
+      <div class="{{ snippet_name }}__info-item collapsible">
+        <button class="button--collapsible collapsible__trigger heading--4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ accordion_id }}" aria-expanded="false" aria-controls="{{ accordion_id }}">
+          <span class="button__title">Standards</span>
+          <span class="button__icon">
+            <span class="button__icon-plus">{% render 'svg', type: 'icon.plus' %}</span>
+            <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
+          </span>
+        </button>
+        <div class="collapsible__main collapse" id="{{ accordion_id }}" style="">
+          <div class="collapsible__content body-copy--regular">{{ standards }}</div>
+        </div>
+      </div>
+    {% endif %}
+
+  </div>
+
+{% endif %}

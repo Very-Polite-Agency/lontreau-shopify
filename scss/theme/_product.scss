@@ -1,0 +1,40 @@
+.product {
+
+  .stepper {
+    &__button,
+    &__input {
+      height: 50px;
+      width: 50px;
+      font-size: 20px;
+    }
+  }
+
+  &__actions {
+    button {
+      width: 100%;
+      & + button {
+        margin-top: 16px;
+      }
+    }
+    & + .product__info {
+      margin-top: var(--bs-container-fluid-padding);
+    }
+  }
+
+  &__quantity {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    &-label {
+      text-transform: uppercase;
+    }
+    &-stepper {
+
+    }
+    & + .product__button {
+      margin-top: var(--bs-container-fluid-padding);
+    }
+  }
+
+}
