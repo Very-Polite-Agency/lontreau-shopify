@@ -1,9 +1,13 @@
 {%- assign section_name = 'product' -%}
 {%- assign section_id = section_name | append: '--' | append: section.id -%}
 
+{% assign description = product.description | default: '' %}
 {% assign gallery = false %}
 {% assign gallery_id = 'product-gallery--' | append: section.id %}
 {% assign gallery_style = 'product-gallery' %}
+{% assign ingredients = product.metafields.info.ingredients | default: '' %}
+{% assign standards = product.metafields.info.standards | default: '' %}
+{% assign usage = product.metafields.info.usage | default: '' %}
 
 {% if product.images.size > 1 %}
   {% assign gallery = true %}
@@ -53,6 +57,69 @@
       {% if gallery %}</div>{% endif %}
       </div>
     {% endif %}
+
+    <div class="{{ section_name }}__info">
+      {% if description != blank %}
+        {% assign accordion_id = 'product-info-accordion--description' %}
+        <div class="{{ section_name }}__info-item collapsible">
+          <button class="button--collapsible collapsible__trigger heading--4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ accordion_id }}" aria-expanded="false" aria-controls="{{ accordion_id }}">
+            <span class="button__title">Description</span>
+            <span class="button__icon">
+              <span class="button__icon-plus">{% render 'svg', type: 'icon.plus' %}</span>
+              <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
+            </span>
+          </button>
+          <div class="collapsible__main collapse" id="{{ accordion_id }}" style="">
+            <div class="collapsible__content body-copy--regular">{{ description }}</div>
+          </div>
+        </div>
+      {% endif %}
+      {% if ingredients != blank %}
+        {% assign accordion_id = 'product-info-accordion--ingredients' %}
+        <div class="{{ section_name }}__info-item collapsible">
+          <button class="button--collapsible collapsible__trigger heading--4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ accordion_id }}" aria-expanded="false" aria-controls="{{ accordion_id }}">
+            <span class="button__title">Ingredients</span>
+            <span class="button__icon">
+              <span class="button__icon-plus">{% render 'svg', type: 'icon.plus' %}</span>
+              <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
+            </span>
+          </button>
+          <div class="collapsible__main collapse" id="{{ accordion_id }}" style="">
+            <div class="collapsible__content body-copy--regular">{{ ingredients }}</div>
+          </div>
+        </div>
+      {% endif %}
+      {% if usage != blank %}
+        {% assign accordion_id = 'product-info-accordion--usage' %}
+        <div class="{{ section_name }}__info-item collapsible">
+          <button class="button--collapsible collapsible__trigger heading--4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ accordion_id }}" aria-expanded="false" aria-controls="{{ accordion_id }}">
+            <span class="button__title">How to Use</span>
+            <span class="button__icon">
+              <span class="button__icon-plus">{% render 'svg', type: 'icon.plus' %}</span>
+              <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
+            </span>
+          </button>
+          <div class="collapsible__main collapse" id="{{ accordion_id }}" style="">
+            <div class="collapsible__content body-copy--regular">{{ usage }}</div>
+          </div>
+        </div>
+      {% endif %}
+      {% if standards != blank %}
+        {% assign accordion_id = 'product-info-accordion--standards' %}
+        <div class="{{ section_name }}__info-item collapsible">
+          <button class="button--collapsible collapsible__trigger heading--4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ accordion_id }}" aria-expanded="false" aria-controls="{{ accordion_id }}">
+            <span class="button__title">Standards</span>
+            <span class="button__icon">
+              <span class="button__icon-plus">{% render 'svg', type: 'icon.plus' %}</span>
+              <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
+            </span>
+          </button>
+          <div class="collapsible__main collapse" id="{{ accordion_id }}" style="">
+            <div class="collapsible__content body-copy--regular">{{ standards }}</div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
 
     </div>
   {% render 'bs-container', state: 'closed' %}
