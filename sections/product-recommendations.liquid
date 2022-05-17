@@ -14,7 +14,7 @@
 <div class="{{ section_name }}" id="{{ section_id }}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=6" data-colour-theme-{{ colour_theme }} data-section-padding>
   {%- if recommendations.performed and recommendations.products_count > 0 -%}
 
-    <div class="{{ section_name }}__intro" data-text-alignment-left>
+    <div class="{{ section_name }}__intro intro" data-text-alignment-left>
       {% render 'bs-container', state: 'open' %}
         {%
           render 'heading-highlight',
@@ -26,7 +26,7 @@
       {% render 'bs-container', state: 'closed' %}
     </div>
 
-    <div class="{{ section_name }}__main">
+    <div class="{{ section_name }}__main main{% if is_glider %} with-glider{% endif %}">
       {% if is_glider %}<div class="glide js--glider" id="{{ glider_id }}" data-glide-style="{{ section_name }}">{% endif %}
         {% if is_glider %}<div class="glide__track" data-glide-el="track">{% endif %}
           {% if is_glider %}<ul class="glide__slides">{% endif %}
