@@ -9,6 +9,9 @@
 
     &-bullet {
       background: rgba(var(--theme-colour-black), 0.185);
+      &:hover {
+        background: rgba(var(--theme-colour-grass), 0.6666);
+      }
       &-active {
         background: rgba(var(--theme-colour-grass), 1);
       }
