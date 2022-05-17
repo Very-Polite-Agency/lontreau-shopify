@@ -66,12 +66,14 @@
     const url = productRecommendationsSection.dataset.url;
 
     fetch(url)
-      .then(response => response.text())
+      .then(response => {
+        response.text()
+        console.log( response );
+      })
       .then(text => {
         const html = document.createElement('div');
         html.innerHTML = text;
         const recommendations = html.querySelector('.product-recommendations');
-
         if (recommendations && recommendations.innerHTML.trim().length) {
           productRecommendationsSection.innerHTML = recommendations.innerHTML;
         }

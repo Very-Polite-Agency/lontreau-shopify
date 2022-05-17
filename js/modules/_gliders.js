@@ -273,10 +273,17 @@ const Gliders = (() => {
           let glide = new Glide( '#' + glider.id, $options );
           let eventsToWatch = [ 'build.after', 'run.after' ]; // recently removed 'run'
 
-          glide.on( 'mount.after', function( e ) {
+          glide.on( 'mount.after', function(event) {
+
             glider.glider = glide;
             glider.active = true;
             gliders[$id] = glider;
+
+            setTimeout( () => {
+              console.log( 'mounted', glide )
+              glide.update();
+            }, 250 );
+
           });
 
           glide.on( eventsToWatch, function() {
