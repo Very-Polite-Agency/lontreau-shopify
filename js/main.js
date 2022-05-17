@@ -43,6 +43,7 @@ Theme.init([
   sections,
   scrolling,
   sizing,
+  stepper,
   credits,
 ]);
 

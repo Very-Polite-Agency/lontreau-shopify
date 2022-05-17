@@ -20,7 +20,7 @@
   {%- assign style = style | default: '' -%}
   {%- assign symbol = symbol | default: false -%}
 
-  <div class="{% if classes -%}{{ classes }} {%- endif -%}price {%- if symbol -%}with-currency-symbol{%- endif -%}">
+  <div class="{% if classes -%}{{ classes }} {%- endif -%}price {%- if symbol -%} with-currency-symbol{%- endif -%}">
     <span class="price__value">
       <span class="price__currency-symbol">{{- currency.symbol -}}</span>
       {{- price | money_without_currency -}}

@@ -15,6 +15,8 @@ const Stepper = (() => {
     ( document.querySelectorAll('.js--update-stepper-input') || [] ).forEach( button => {
       button.addEventListener('click', event => {
 
+        console.log( 'onClickUpdateStepperInput clicked!', button );
+
         let stepper = button.closest('.stepper') || false;
         let stepperInput = stepper.querySelector('.stepper__input') || false;
 
