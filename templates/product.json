@@ -5,6 +5,11 @@
       "settings": {
       }
     },
+    "1652808272ab3b42c7": {
+      "type": "product-recommendations",
+      "settings": {
+      }
+    },
     "1651797713ccbee475": {
       "type": "fifty-fifty-feature",
       "settings": {
@@ -93,6 +98,7 @@
   },
   "order": [
     "main",
+    "1652808272ab3b42c7",
     "1651797713ccbee475",
     "165179579849f0b545",
     "1651797643f6f520ba"
