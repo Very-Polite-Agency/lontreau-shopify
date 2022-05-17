@@ -88,4 +88,30 @@
     color: rgba(var(--theme-colour-grass), 1);
   }
 
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    &__details {
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &__title {
+      font-size: 52px;
+    }
+
+    &__type {
+      width: 16px;
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
 }
