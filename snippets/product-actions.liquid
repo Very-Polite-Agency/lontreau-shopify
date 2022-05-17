@@ -14,14 +14,14 @@
       <label class="{{ snippet_name }}__quantity-label body-copy--alt">Quantity</label>
       <div class="{{ snippet_name }}__quantity-stepper stepper">
         <button
-          class="stepper__button button--decrease decrease js--line-item-quantity-update js--stepper-quantity-update"
+          class="stepper__button button--decrease decrease js--line-item-quantity-update js--update-stepper-input"
           name="decrease"
           type="button"
           data-target-id="{{ snippet_name }}-quantity"
         ><span class="button__icon">{% render 'svg', type: 'icon.minus' %}</span></button>
         <input class="stepper__input" type="number" name="quantity" min="1" value="1" id="{{ snippet_name }}-quantity">
         <button
-          class="stepper__button button--increase increase js--line-item-quantity-update js--stepper-quantity-update"
+          class="stepper__button button--increase increase js--line-item-quantity-update js--update-stepper-input"
           name="increase"
           type="button"
           data-target-id="{{ snippet_name }}-quantity"

@@ -14,6 +14,7 @@
 // @codekit-prepend "./modules/_scrolling.js";
 // @codekit-prepend "./modules/_sections.js";
 // @codekit-prepend "./modules/_sizing.js";
+// @codekit-prepend "./modules/_stepper.js";
 // @codekit-prepend "./modules/_theme.js";
 // @codekit-prepend "./modules/_tools.js";
 
@@ -30,6 +31,7 @@ let mobileMenu = new MobileMenu();
 let sections = new Sections();
 let scrolling = new Scrolling();
 let sizing = new Sizing();
+let stepper = new Stepper();
 let tools = new Tools();
 
 Theme.init([
