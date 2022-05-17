@@ -52,9 +52,17 @@
 
   observer.observe(productRecommendationsSection);
 {% endjavascript %}
+
 {% schema %}
   {
     "name": "Product recommendations",
-    "settings": []
+    "class": "section section--product-recommendations",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Product recommendations"
+      }
+    ],
+    "templates": [ "product" ]
   }
 {% endschema %}
