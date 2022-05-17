@@ -30,6 +30,14 @@
     }
   }
 
+  &__details {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
   &__gallery {
     &-main {
       border: 1px solid rgba(var(--theme-colour-black), 1);
@@ -48,6 +56,11 @@
 
   &__images {
     border: 1px solid rgba(var(--theme-colour-black),1);
+  }
+
+  &__price {
+    font-size: 14px;
+    color: red;
   }
 
   &__quantity {

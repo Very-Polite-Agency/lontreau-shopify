@@ -20,10 +20,8 @@
 
         <div class="col-12 col-lg-6">
           <div class="{{ section_name }}__details d-none-lg">
-            <div class="{{ section_name }}__title">
-              <h1 class="{{ section_name }}__title heading--2">{{ product.title }}</h1>
-              <strong class="{{ section_name }}__type label--2">{{ product.type }}</strong>
-            </div>
+            <h1 class="{{ section_name }}__title heading--2">{{ product.title }}</h1>
+            <strong class="{{ section_name }}__type label--2">{{ product.type }}</strong>
             {% render 'price', classes: 'product__price' product: product %}
           </div>
           {% render 'product-gallery', product: product %}
