@@ -5,6 +5,8 @@
 {% assign gallery = false %}
 {% assign gallery_id = 'product-gallery--' | append: section.id %}
 {% assign gallery_style = 'product-gallery' %}
+{% assign product_title = product.title | default: '' %}
+{% assign product_type = product.type | default: '' %}
 
 {% if product.images.size > 1 %}
   {% assign gallery = true %}
@@ -20,17 +22,17 @@
 
         <div class="col-12 col-lg-6">
           <div class="{{ section_name }}__details d-lg-none">
-            <h1 class="{{ section_name }}__title heading--2">{{ product.title }}</h1>
+            <h1 class="{{ section_name }}__title heading--2">{{ product_title }}</h1>
             {% render 'price', classes: 'product__price body-copy--regular', product: product, symbol: true %}
-            <strong class="{{ section_name }}__type label--2">{{ product.type }}</strong>
+            {% if product_type != blank %}<strong class="{{ section_name }}__type label--2">{{ product_type }}</strong>{% endif %}
           </div>
           {% render 'product-gallery', product: product %}
         </div>
 
         <div class="col-12 col-lg-6">
           <div class="{{ section_name }}__details d-none d-lg-flex">
-            <h2 class="{{ section_name }}__title heading--2">{{ product.title }}</h2>
-            <strong class="{{ section_name }}__type label--2">{{ product.type }}</strong>
+            <h2 class="{{ section_name }}__title heading--2">{{ product_title }}</h2>
+            {% if product_type != blank %}<strong class="{{ section_name }}__type label--2">{{ product_type }}</strong>{% endif %}
             {% render 'price', classes: 'product__price body-copy--regular', product: product, symbol: true %}
           </div>
           {% render 'product-actions', classes: '', product: product %}
