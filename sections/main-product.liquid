@@ -21,7 +21,7 @@
         <div class="col-12 col-lg-6">
           <div class="{{ section_name }}__details d-lg-none">
             <h1 class="{{ section_name }}__title heading--2">{{ product.title }}</h1>
-            {% render 'price', classes: 'product__price' product: product %}
+            {% render 'price', classes: 'product__price body-copy--regular' product: product %}
             <strong class="{{ section_name }}__type label--2">{{ product.type }}</strong>
           </div>
           {% render 'product-gallery', product: product %}
@@ -31,7 +31,7 @@
           <div class="{{ section_name }}__details d-none d-lg-flex">
             <h2 class="{{ section_name }}__title heading--2">{{ product.title }}</h2>
             <strong class="{{ section_name }}__type label--2">{{ product.type }}</strong>
-            {% render 'price', classes: 'product__price' product: product %}
+            {% render 'price', classes: 'product__price body-copy--regular' product: product %}
           </div>
           {% render 'product-actions', classes: '', product: product %}
           {% render 'product-info', product: product %}

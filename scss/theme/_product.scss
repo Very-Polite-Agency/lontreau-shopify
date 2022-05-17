@@ -101,17 +101,34 @@
     }
 
     &__title {
-      font-size: 52px;
-    }
-
-    &__type {
-      width: 16px;
+      font-size: 48px;
+      & + .product__type {
+        margin-top: 8px;
+      }
     }
 
   } // min width lg
 
-  @include breakpoint(xl) {} // min width xl
+  @include breakpoint(xl) {
 
-  @include breakpoint(xxl) {} // min width xxl
+    &__title {
+      font-size: 52px;
+      & + .product__type {
+        margin-top: 10px;
+      }
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    &__title {
+      font-size: 56px;
+      & + .product__type {
+        margin-top: 12px;
+      }
+    }
+
+  } // min width xxl
 
 }
