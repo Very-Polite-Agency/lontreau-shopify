@@ -8,6 +8,9 @@
     "1652808272ab3b42c7": {
       "type": "product-recommendations",
       "settings": {
+        "heading": "<p>You may <em>also<\/em> like<\/p>",
+        "heading_highlight": "circle",
+        "colour_theme": "dark"
       }
     },
     "1651797713ccbee475": {
