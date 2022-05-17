@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  &.sticky-footer {
+    display: flex;
+    flex-direction: column;
+    main {
+      flex: 1 0 auto;
+    }
+    footer {
+      flex-shrink: 0;
+    }
+  }
+}
