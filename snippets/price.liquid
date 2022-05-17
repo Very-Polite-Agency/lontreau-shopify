@@ -1,29 +1,36 @@
-{% comment %}
+{%- comment -%}
 
     Accepts:
     - classes: {String} Any combination of words
     - product: {Object} Product Liquid object,
     - style: {String} Display option for a switch case
+    - symbol: {Boolean} Conditionally show the currency symbol
 
     Usage:
-    {% render 'price', classes: '',  product: product %}
+    {%- render 'price', classes: '',  product: product -%}
 
-{% endcomment %}
+{%- endcomment -%}
 
 {%- if product and product != blank -%}
 
-  {% assign available = product.available %}
-  {% assign classes = classes | default: '' %}
-  {% assign price = product.price %}
-  {% assign price_compare = product.compare_at_price %}
-  {% assign style = style | default: '' %}
+  {%- assign available = product.available -%}
+  {%- assign classes = classes | default: '' -%}
+  {%- assign price = product.price -%}
+  {%- assign price_compare = product.compare_at_price -%}
+  {%- assign style = style | default: '' -%}
+  {%- assign symbol = symbol | default: false -%}
 
-  <div class="{% if classes %}{{ classes }} {% endif %}price">
-    <span class="price__value">{{ price | money_without_currency }}</span>
-    {% if price_compare %}
-      <span class="price__value sale-price">{{ price_compare | money_without_currency }}</span>
-    {% endif %}
-    {% comment %} <span class="price__currency">{{ shop.currency }}</span> {% endcomment %}
+  <div class="{% if classes -%}{{ classes }} {%- endif -%}price {%- if symbol -%}with-currency-symbol{%- endif -%}">
+    <span class="price__value">
+      <span class="price__currency-symbol">{{- currency.symbol -}}</span>
+      {{- price | money_without_currency -}}
+    </span>
+    {%- if price_compare -%}
+      <span class="price__value sale-price">
+        <span class="price__currency-symbol">{{- currency.symbol -}}</span>
+        {{- price_compare | money_without_currency -}}
+      </span>
+    {%- endif -%}
   </div>
 
-{% endif %}
+{%- endif -%}
