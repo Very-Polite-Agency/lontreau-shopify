@@ -5,6 +5,23 @@
       "settings": {
       }
     },
+    "1651797713ccbee475": {
+      "type": "fifty-fifty-feature",
+      "settings": {
+        "title": "",
+        "heading": "<p>We <em>know<\/em> skin<\/p>",
+        "heading_highlight": "standard",
+        "message": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.<\/p>",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--wide_2x_e6a66d64-eb95-41cf-84aa-c093104a5d1f.png",
+        "hide_image_mobile": true,
+        "anchor_id": "",
+        "style": "wide",
+        "layout": "image-right",
+        "colour_theme": "grey"
+      }
+    },
     "165179579849f0b545": {
       "type": "carousel-education",
       "blocks": {
@@ -56,23 +73,6 @@
         "colour_theme": "light"
       }
     },
-    "1651797713ccbee475": {
-      "type": "fifty-fifty-feature",
-      "settings": {
-        "title": "",
-        "heading": "<p>We <em>know<\/em> skin<\/p>",
-        "heading_highlight": "standard",
-        "message": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.<\/p>",
-        "cta_title": "",
-        "cta_link": "",
-        "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--wide_2x_e6a66d64-eb95-41cf-84aa-c093104a5d1f.png",
-        "hide_image_mobile": false,
-        "anchor_id": "",
-        "style": "wide",
-        "layout": "image-right",
-        "colour_theme": "grey"
-      }
-    },
     "1651797643f6f520ba": {
       "type": "full-width-feature",
       "settings": {
@@ -93,8 +93,8 @@
   },
   "order": [
     "main",
-    "165179579849f0b545",
     "1651797713ccbee475",
+    "165179579849f0b545",
     "1651797643f6f520ba"
   ]
 }
