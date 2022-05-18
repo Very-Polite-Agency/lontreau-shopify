@@ -29,7 +29,10 @@
           data-bs-target="#{{ collapse_id }}"
           aria-expanded="false"
           aria-controls="{{ collapse_id }}"
-        >{{ title }}</button>
+        >
+        <span class="button__title">{{ title }}</span>
+        <span class="button__icon">{% render 'svg', type: 'icon.chevron' %}</span>
+      </button>
         <div class="sub-navigation__collapse-main collapsible__main collapse" id="{{ collapse_id }}">
           <div class="sub-navigation__collapse-content collapsible__content">
             {%- for sub_link in link.links -%}

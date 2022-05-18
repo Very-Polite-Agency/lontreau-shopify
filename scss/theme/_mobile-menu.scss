@@ -23,7 +23,6 @@
       font-family: var(--theme-font-family--serif--primary);
       font-style: normal;
       font-weight: 400;
-      font-size: 24px;
       line-height: 1;
       letter-spacing: -0.02em;
       &.active,
@@ -37,24 +36,34 @@
   .collapsible {
     &__content {
       padding: 0 0 0 20px;
-      margin: 0 0 0 20px;
+      margin: 10px 0px 10px 20px;
       border-left: 1px solid rgba(var(--theme-colour-grass), 1);
+    }
+    &__trigger {
+      color: rgba(var(--theme-colour-white), 1);
+      font-size: 24px;
     }
   }
 
   .navigation {
     &__item {
       & + .navigation__item {
-        margin-top: 18px;
+        margin-top: 20px;
       }
+    }
+    &__link {
+      font-size: 24px;
     }
   }
 
   .sub-navigation {
     &__item {
       & + .sub-navigation__item {
-        margin-top: 18px;
+        margin-top: 20px;
       }
+    }
+    &__link {
+      font-size: 20px;
     }
   }
 
