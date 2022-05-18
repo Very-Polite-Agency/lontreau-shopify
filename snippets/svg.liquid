@@ -1,4 +1,12 @@
-{% assign type = type | default: false %}
+{%- comment -%}
+
+    Accepts:
+    - type: {String} SVG name
+
+    Usage:
+    {%- render 'svg', type: 'brand.logo.circle' -%}
+
+{%- endcomment -%}
 
 {% case type %}
 
