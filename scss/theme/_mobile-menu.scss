@@ -11,6 +11,37 @@
   top: 0;
   left: 0;
   transform: translate3d(0, -100%, 0);
+  z-index: 20;
+  padding-top: var(--theme-header-height);
+
+  .navigation {
+    width: 100%;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__link {
+      font-family: var(--theme-font-family--serif--primary);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1px;
+      letter-spacing: -0.02em;
+      &.active,
+      &:hover {
+        color: rgba(var(--theme-colour-grass), 1);
+        width: 100%;
+      }
+      & + .navigation__link {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__footer,
+  &__main,
+  &__shopping {
+    padding: var(--bs-container-fluid-padding);
+  }
 
   .mobile-menu--active & {
     transform: translate3d(0, 0, 0);

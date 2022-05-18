@@ -65,12 +65,12 @@
   }
 
   &__main {
+    height: var(--theme-header-height);
     width: 100%;
     padding: 0 var(--bs-container-fluid-padding);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90px;
   }
 
   &:hover,
@@ -263,7 +263,7 @@
     }
 
     &__main {
-      height: auto;
+      height: var(--theme-header-height--lg);
     }
 
   } // min width lg
