@@ -70,6 +70,13 @@
       & + .navigation__item {
         margin-top: 20px;
       }
+      &.cart {
+        .link {
+          &__icon {
+            margin-left: 5px;
+          }
+        }
+      }
     }
     &__link {
       font-size: 24px;
