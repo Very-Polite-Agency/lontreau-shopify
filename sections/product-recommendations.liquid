@@ -40,6 +40,7 @@
 
   document.addEventListener('DOMContentLoaded', function() {
     recommendedProducts();
+    initializeGlider();
   },false);
 
   // alternatively, if you don't want to use a polyfil
@@ -66,7 +67,7 @@
 
   function renderGliderMarkup( products = [] ) {
     return `
-      <div class="glide js--glider" id="glide--recommended-products" data-glide-style="recommended-products">
+      <div class="glide" id="glide--recommended-products" data-glide-style="recommended-products">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             ${products.map(product =>
@@ -82,19 +83,107 @@
   }
 
   function renderProductMarkup( product = {} ) {
-    console.log( product );
+
+    let featuredImage = {
+      small: imgURLFilter(product.featured_image, 'icon'),
+      large: imgURLFilter(product.featured_image, 'large')
+    };
+    let handle = product.handle;
+    let title = product.title;
+    let price = product.price;
+
     return `
       <article class="card-product card-product--${sectionName} product">
         <div class="card-product__featured-image product__featured-image">
-          <a class="card-product__featured-image-link lazyloaded" href="/products/${product.handle}" title="${product.title}" target="_self">
-            <img class="lazyload-item lazyload-item--image lazypreload lazyload-item--inline inline lazyautosizes lazyload" src="${imgURLFilter(product.featured_image, 'icon')}" data-src="${imgURLFilter(product.featured_image, 'large')}" alt="${product.title}" />
+          <a class="card-product__featured-image-link lazyloaded" href="/products/${handle}" title="${title}" target="_self">
+            <img class="lazyload-item lazyload-item--image lazypreload lazyload-item--inline inline lazyautosizes lazyload" src="${featuredImage.small}" data-src="${featuredImage.large}" alt="${title}" />
           </a>
         </div>
         <div class="card-product__info">
-          <strong class="card-product__title caption--2">${product.title}</strong>
-          <span class="card-product__price caption--2">${product.price}</span>
+          <strong class="card-product__title caption--2">${title}</strong>
+          <span class="card-product__price caption--2">${price}</span>
         </div>
       </article>`;
+  }
+
+  function initializeGlider() {
+
+    console.log('initializeGlider initialized');
+
+    let glideElementID = 'glide--recommended-products';
+
+    let recommendedProductsGlide = new Glide( `#${glideElementID}`, {
+      animationTimingFunc: 'ease-in-out',
+      animationDuration: 280,
+      autoplay: 3200,
+      breakpoints: {
+        1199: {
+          // up to 1200
+          focusAt: 'center',
+          gap: 42,
+          peek: 0,
+          perView: 6,
+        },
+        991: {
+          // up to 992
+          focusAt: 'center',
+          gap: 32,
+          peek: 0,
+          perView: 5,
+        },
+        767: {
+          // up to 768
+          focusAt: 'center',
+          gap: 32,
+          peek: { before: 55, after: 55 },
+          perView: 4,
+        },
+        575: {
+          // up to 576
+          focusAt: 'center',
+          gap: 32,
+          peek: { before: 35, after: 35 },
+          perView: 3,
+        },
+        400: {
+          // up to 576
+          focusAt: 'center',
+          gap: 32,
+          peek: { before: 15, after: 15 },
+          perView: 1,
+        },
+      },
+      gap: 32,
+      peek: 0,
+      hoverpause: true,
+      type: 'carousel',
+      rewind: true,
+      throttle: 50
+    });
+
+    recommendedProductsGlide.on( 'mount.after', function(event) {
+      setTimeout( function() {
+        console.log( 'mounted', recommendedProductsGlide )
+        recommendedProductsGlide.update();
+      }, 250 );
+    });
+
+//     ( document.querySelectorAll(`[data-target="#${glideElementID}"].next`) || [] ).forEach( button => {
+//       button.addEventListener('click', function () {
+//         recommendedProductsGlide.go('>');
+//       });
+//     });
+//
+//     ( document.querySelectorAll(`[data-target="#${glideElementID}"].prev`) || [] ).forEach( button => {
+//       button.addEventListener('click', function () {
+//         recommendedProductsGlide.go('<');
+//       });
+//     });
+
+    recommendedProductsGlide.mount();
+
+    console.log('initializeGlider finished');
+
   }
 
 </script>

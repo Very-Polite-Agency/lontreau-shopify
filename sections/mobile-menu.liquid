@@ -1,15 +1,9 @@
-{% assign section_name = 'header' %}
+{% assign section_name = 'mobile-menu' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
 {% assign menu_main = section.settings.menu_main | default: false %}
 
 <div class="{{ section_name }}__main">
-
-  <div class="{{ section_name }}__brand">
-    <a href="/" target="_self" title="Home">
-      {% render 'svg', type: 'brand.logo.circle' %}
-    </a>
-  </div>
 
   {% if menu_main %}
     <nav class="{{ section_name }}__main-navigation navigation navigation--main">
@@ -32,11 +26,6 @@
     </div>
   </nav>
 
-  <button class="{{ section_name }}__button button d-lg-none js--toggle-mobile-menu" type="button">
-    <span class="button__title">Menu</span>
-    <span class="button__icon">{% render 'svg', type: 'icon.plus' %}</span>
-  </button>
-
 </div>
 
 {% stylesheet %}
@@ -47,9 +36,9 @@
 
 {% schema %}
   {
-    "name": "Header",
-    "tag": "header",
-    "class": "header",
+    "name": "Mobile Menu",
+    "tag": "section",
+    "class": "section mobile-menu",
     "settings": [
       {
         "content": "Navigation",
