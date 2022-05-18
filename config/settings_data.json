@@ -24,6 +24,13 @@
           "menu_extra": "lontreau-journey",
           "menu_policies": "policies"
         }
+      },
+      "mobile-menu": {
+        "type": "mobile-menu",
+        "settings": {
+          "menu_shopping": "mobile-menu-shopping",
+          "menu_main": "mobile-menu"
+        }
       }
     },
     "content_for_index": [
