@@ -46,15 +46,27 @@
       margin: 0;
       line-height: 1;
       min-height: 0;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row nowrap;
       &-icon {
-        height: 15px;
+        transform: rotate(90deg);
+        color: rgba(var(--theme-colour-grass), 1);
+        height: 13px;
         width: auto;
+      }
+      &.collapsed {
+        .collapsible__trigger-icon {
+          transform: rotate(0deg);
+        }
       }
     }
   }
 
   .navigation {
     &__item {
+      width: 100%;
       & + .navigation__item {
         margin-top: 20px;
       }

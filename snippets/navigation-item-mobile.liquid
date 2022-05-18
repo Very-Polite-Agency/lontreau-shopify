@@ -23,7 +23,7 @@
       {% assign collapse_id = 'sub-navigation-collapsible--' | append: index | append: title | handleize %}
       <div class="navigation__sub-navigation sub-navigation collapsible">
         <button
-          class="sub-navigation__collapse-trigger button--collapsible collapsible__trigger body-copy--large"
+          class="sub-navigation__collapse-trigger button--collapsible collapsible__trigger body-copy--large collapsed"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#{{ collapse_id }}"
