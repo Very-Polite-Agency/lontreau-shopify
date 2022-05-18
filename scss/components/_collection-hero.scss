@@ -46,7 +46,7 @@
       font-family: var(--theme-font-family--serif--primary);
       font-style: normal;
       font-weight: 400;
-      font-size: 13px;
+      font-size: 16px;
       line-height: 1.23;
       letter-spacing: -0.01em;
       flex: 1;
@@ -99,6 +99,10 @@
   @include breakpoint(lg) {
 
     &__featured-product {
+      &-message,
+      &-title {
+        font-size: 15px;
+      }
       &-heading {
         font-size: 36px;
       }
@@ -126,9 +130,6 @@
         transform: translate3d( 72px, -50%, 0);
         max-width: 380px;
       }
-      &-message {
-        font-size: 12px;
-      }
     }
 
     &__image {
@@ -148,6 +149,10 @@
   @include breakpoint(xl) {
 
     &__featured-product {
+      &-message,
+      &-title {
+        font-size: 16px;
+      }
       &-heading {
         font-size: 38px;
         & + .collection-hero__featured-product-message {
@@ -168,9 +173,6 @@
       &-main {
         max-width: 400px;
       }
-      &-message {
-        font-size: 14px;
-      }
     }
 
     &__title {
@@ -182,6 +184,10 @@
   @include breakpoint(xxl) {
 
     &__featured-product {
+      &-message,
+      &-title {
+        font-size: 17px;
+      }
       &-heading {
         font-size: 40px;
         & + .collection-hero__featured-product-message {
@@ -201,9 +207,6 @@
       }
       &-main {
         max-width: 420px;
-      }
-      &-message {
-        font-size: 16px;
       }
     }
 

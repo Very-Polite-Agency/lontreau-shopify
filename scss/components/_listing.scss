@@ -102,7 +102,7 @@
     }
 
     &--collection-product-grid {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
     }
 
   } // min width lg
@@ -112,6 +112,10 @@
     &--flex,
     &--grid {
       row-gap: 65px;
+    }
+
+    &--collection-product-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
   } // min width xl

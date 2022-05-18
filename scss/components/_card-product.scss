@@ -30,20 +30,20 @@
     padding-right: var(--bs-gutter-width);
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.23;
     letter-spacing: -0.01em;
     flex: 1;
   }
 
   &--collection-product-grid {
-
     .card-product {
       &__info {
         padding: 10px 12px;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        min-height: 56px;
       }
     }
   }
@@ -53,5 +53,39 @@
     cursor: no-drop;
     pointer-events: none;
   }
+
+  @include breakpoint(sm) {
+
+    &__title {
+      font-size: 14px;
+    }
+
+  } // min width sm
+
+  @include breakpoint(md) {
+
+    &__title {
+      font-size: 16px;
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {} // min width lg
+
+  @include breakpoint(xl) {
+
+    &__title {
+      font-size: 15px;
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    &__title {
+      font-size: 16px;
+    }
+
+  } // min width xxl
 
 }
