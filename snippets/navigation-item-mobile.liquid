@@ -1,10 +1,11 @@
 {%- comment -%}
 
     Accepts:
+    - inkdex: {Int} current loop index
     - link: {Object} Link object
 
     Usage:
-    {%- render 'navigation-item-mobile', link: link -%}
+    {%- render 'navigation-item-mobile', index: forloop.index, link: link -%}
 
 {%- endcomment -%}
 
@@ -16,46 +17,40 @@
   {%- assign url = link.url | default: '' -%}
   {%- assign levels = link.levels | default: 0 -%}
 
-  <div class="navigation__item{%- if levels > 0 -%} has-links{%- endif -%}" data-link-levels="{{ link.levels }}">
+  <div class="navigation__item{%- if levels > 0 -%} has-links{%- endif -%}" data-link-levels="{{ levels }}">
 
-    <a class="navigation__link{%- if active -%} active{%- endif -%}" href="{{ url }}" title="{{ title }}">{{ title }}</a>
+    {% if levels > 0 %}
+      {% assign collapse_id = 'sub-navigation-collapsible--' | append: index | append: title | handleize %}
+      <div class="navigation__sub-navigation sub-navigation collapsible">
+        <button
+          class="sub-navigation__collapse-trigger button--collapsible collapsible__trigger"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#{{ collapse_id }}"
+          aria-expanded="false"
+          aria-controls="{{ collapse_id }}"
+        >{{ title }}</button>
+        <div class="sub-navigation__collapse-main collapsible__main collapse" id="{{ collapse_id }}">
+          <div class="sub-navigation__collapse-content collapsible__content">
+            {%- for sub_link in link.links -%}
 
-    {%- if levels > 0 -%}
-      <div class="navigation__sub-navigation sub-navigation">
-        <div class="sub-navigation__media">
-          <div class="sub-navigation__background-image lazyload lazyload-item lazyload-item--image lazyload-item--background"></div>
-        </div>
-        <div class="sub-navigation__main">
-          {%- for sub_link in link.links -%}
+              {%- assign sub_active = sub_link.active | default: false -%}
+              {%- assign sub_title = sub_link.title | default: '' -%}
+              {%- assign sub_type = sub_link.type | default: '' -%}
+              {%- assign sub_url = sub_link.url | default: '' -%}
+              {%- assign sub_links = sub_link.links | default: 0 -%}
+              {%- assign sub_levels = sub_link.levels | default: 0 -%}
 
-            {%- assign featured_image = false -%}
-            {%- if sub_link.type == 'page_link' -%}
-              {%- assign featured_image = sub_link.object.metafields.page.featured_image.value | default: false -%}
-            {%- endif -%}
-
-            <div class="sub-navigation__item {%- if sub_link.links.size > 0 -%}has-links{%- endif -%}">
-
-              <a
-                class="sub-navigation__link{%- if sub_link.active -%} active{%- endif -%}"
-                href="{{ sub_link.url }}"
-                data-featured-image="{%- if featured_image -%}{{ featured_image | image_url }}{%- endif -%}"
-              >{{ sub_link.title }}</a>
-
-              {%- if sub_link.links.size > 0 -%}
-                <div class="navigation__sub-sub-navigation sub-sub-navigation">
-                  {%- for sub_sub_link in sub_link.links -%}
-                    <div class="sub-sub-navigation__item">
-                      <a class="sub-sub-navigation__link{%- if sub_sub_link.active -%} active{%- endif -%}" href="{{ sub_sub_link.url }}">{{ sub_sub_link.title }}</a>
-                    </div>
-                  {%- endfor -%}
-                </div>
-              {%- endif -%}
-
-            </div>
-          {%- endfor -%}
+              <div class="sub-navigation__item">
+                <a class="sub-navigation__link{%- if sub_active -%} active{%- endif -%}" href="{{ sub_url }}" title="{{ sub_title }}">{{ sub_title }}</a>
+              </div>
+            {%- endfor -%}
+          </div>
         </div>
       </div>
-    {%- endif -%}
+    {% else %}
+       <a class="navigation__link{%- if active -%} active{%- endif -%}" href="{{ url }}" title="{{ title }}">{{ title }}</a>
+    {% endif %}
 
   </div>
 

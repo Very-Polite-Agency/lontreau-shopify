@@ -8,7 +8,7 @@
   {% if menu_shopping %}
     <nav class="{{ section_name }}__main-navigation navigation navigation--main">
       {% for link in linklists[menu_shopping].links %}
-        {% render 'navigation-item-mobile', link: link %}
+        {% render 'navigation-item-mobile', index: forloop.index, link: link %}
       {% endfor %}
     </nav>
   {% endif %}
@@ -18,7 +18,7 @@
   {% if menu_main %}
     <nav class="{{ section_name }}__main-navigation navigation navigation--main">
       {% for link in linklists[menu_main].links %}
-        {% render 'navigation-item-mobile', link: link %}
+        {% render 'navigation-item-mobile', index: forloop.index, link: link %}
       {% endfor %}
       <div class="navigation__item">
         <a class="navigation__link link" href="/cart" title="Cart">
