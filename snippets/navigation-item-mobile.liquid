@@ -1,7 +1,7 @@
 {%- comment -%}
 
     Accepts:
-    - inkdex: {Int} current loop index
+    - inkdex: {Int} Loop index
     - link: {Object} Link object
 
     Usage:
@@ -17,13 +17,13 @@
   {%- assign url = link.url | default: '' -%}
   {%- assign levels = link.levels | default: 0 -%}
 
-  <div class="navigation__item{%- if levels > 0 -%} has-links{%- endif -%}" data-link-levels="{{ levels }}">
+  <div class="navigation__item{% if levels > 0 %} has-links{% endif %}" data-link-levels="{{ levels }}">
 
     {% if levels > 0 %}
       {% assign collapse_id = 'sub-navigation-collapsible--' | append: index | append: title | handleize %}
       <div class="navigation__sub-navigation sub-navigation collapsible">
         <button
-          class="sub-navigation__collapse-trigger button--collapsible collapsible__trigger"
+          class="sub-navigation__collapse-trigger button--collapsible collapsible__trigger body-copy--large"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#{{ collapse_id }}"
@@ -42,14 +42,14 @@
               {%- assign sub_levels = sub_link.levels | default: 0 -%}
 
               <div class="sub-navigation__item">
-                <a class="sub-navigation__link{%- if sub_active -%} active{%- endif -%}" href="{{ sub_url }}" title="{{ sub_title }}">{{ sub_title }}</a>
+                <a class="sub-navigation__link{% if sub_active %} active{% endif %}" href="{{ sub_url }}" title="{{ sub_title }}">{{ sub_title }}</a>
               </div>
             {%- endfor -%}
           </div>
         </div>
       </div>
     {% else %}
-       <a class="navigation__link{%- if active -%} active{%- endif -%}" href="{{ url }}" title="{{ title }}">{{ title }}</a>
+       <a class="navigation__link{% if active %} active{% endif %}" href="{{ url }}" title="{{ title }}">{{ title }}</a>
     {% endif %}
 
   </div>
