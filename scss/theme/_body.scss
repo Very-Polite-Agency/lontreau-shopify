@@ -19,4 +19,7 @@ body {
       flex-shrink: 0;
     }
   }
+  &.mobile-menu--active {
+    overflow: hidden;
+  }
 }

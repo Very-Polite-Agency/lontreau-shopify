@@ -81,7 +81,7 @@ const Scrolling = (() => {
 
   const init = ( $options = false ) => {
 
-    if ( debug ) console.log( `${info.name}.init() Started` );
+    if ( debug ) console.log( `${info.name}.init() v.${info.version} Started` );
 
     setScrollStateClassesByScrollPosition( scrollPosition.current );
     tools.setHeaderHeightTotalCSSVariable();

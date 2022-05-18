@@ -65,8 +65,10 @@ const Modals = (() => {
   //////////////////////////////////////////////////////////
 
   const init = () => {
+    if ( debug ) console.log( `${info.name}.init() v.${info.version} Started` );
     onClickOpenModal();
     onClickCloseModal();
+    if ( debug ) console.log( `${info.name}.init() Finished` );
   };
 
   //////////////////////////////////////////////////////////

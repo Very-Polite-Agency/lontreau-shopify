@@ -16,14 +16,7 @@ const Theme = (() => {
   const init = ( $modules = [] ) => {
 
     if ( debug ) console.log( `${info.name}.init() v.${info.version} Started` );
-      $modules.forEach(( module ) => {
-        module.init();
-      });
-    if ( debug ) {
-      console.log( '================================================' );
-      console.log( 'Theme Updated ::', currentTime.toLocaleString('en-US') );
-      console.log( '================================================' );
-    }
+      $modules.forEach(( module ) => { module.init(); });
     if ( debug ) console.log( `${info.name}.init() Finished` );
 
   };

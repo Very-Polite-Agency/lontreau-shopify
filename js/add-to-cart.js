@@ -77,21 +77,6 @@ function notify( $products = [] ) {
   }
 };
 
-function getCartItemsCount() {
-  let config = {
-    method: 'get',
-    url: window.Shopify.routes.root + 'cart.js'
-  };
-  axios( config ).then(function (response) {
-    console.log( response );
-    printCartItemsCount( response.data.item_count );
-  })
-  .catch(function (error) {
-    console.log(error);
-  })
-  .then(function () {});
-};
-
 function printCartItemsCount( $count = 0 ) {
   ( document.querySelectorAll('.js--cart-items-total') || [] ).forEach( item => {
     item.innerHTML = `(${$count})`;
@@ -104,7 +89,17 @@ function printCartItemsCount( $count = 0 ) {
 };
 
 function updateCartItemsCount() {
-  getCartItemsCount();
+  let config = {
+    method: 'get',
+    url: window.Shopify.routes.root + 'cart.js'
+  };
+  axios( config ).then(function (response) {
+    printCartItemsCount( response.data.item_count );
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+  .then(function () {});
 };
 
 function addProductToCartFromButton( $button = false ) {

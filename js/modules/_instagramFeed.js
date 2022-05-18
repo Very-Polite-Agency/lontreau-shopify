@@ -149,9 +149,9 @@ const InstagramFeed = (() => {
   //////////////////////////////////////////////////////////
 
   const init = () => {
-    if ( debug ) console.log( '[ InstagramFeed.init() ] Start' );
+    if ( debug ) console.log( `${info.name}.init() v.${info.version} Started` );
     main();
-    if ( debug ) console.log( '[ InstagramFeed.init() ] End' );
+    if ( debug ) console.log( `${info.name}.init() Finished` );
   };
 
   //////////////////////////////////////////////////////////

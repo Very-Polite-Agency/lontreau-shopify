@@ -430,7 +430,7 @@ const Gliders = (() => {
 
   const init = () => {
 
-    if ( debug ) console.log( `${info.name}.init() Started` );
+    if ( debug ) console.log( `${info.name}.init() v.${info.version} Started` );
 
     setGliders();
     initGliders();
