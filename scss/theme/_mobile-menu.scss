@@ -36,12 +36,20 @@
   .collapsible {
     &__content {
       padding: 0 0 0 20px;
-      margin: 10px 0px 10px 20px;
+      margin: 20px 0px 0px 20px;
       border-left: 1px solid rgba(var(--theme-colour-grass), 1);
     }
     &__trigger {
       color: rgba(var(--theme-colour-white), 1);
       font-size: 24px;
+      padding: 0;
+      margin: 0;
+      line-height: 1;
+      min-height: 0;
+      &-icon {
+        height: 15px;
+        width: auto;
+      }
     }
   }
 
