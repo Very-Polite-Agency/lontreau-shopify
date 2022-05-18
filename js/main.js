@@ -2,7 +2,6 @@
 // @codekit-prepend quiet "../node_modules/@glidejs/glide/dist/glide.min.js";
 // @codekit-prepend quiet "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 // @codekit-prepend quiet "../node_modules/swiper/swiper-bundle.min.js";
-// @codekit-prepend quiet "../node_modules/@shopify/theme-images/dist/images.es5.js";
 
 // @codekit-prepend "./modules/_credits.js";
 // @codekit-prepend "./modules/_breakpoints.js";

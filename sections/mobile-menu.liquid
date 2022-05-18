@@ -2,30 +2,36 @@
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
 {% assign menu_main = section.settings.menu_main | default: false %}
+{% assign menu_shopping = section.settings.menu_shopping | default: false %}
+
+<div class="{{ section_name }}__shopping">
+  {% if menu_shopping %}
+    <nav class="{{ section_name }}__main-navigation navigation navigation--main">
+      {% for link in linklists[menu_shopping].links %}
+        {% render 'navigation-item', link: link %}
+      {% endfor %}
+    </nav>
+  {% endif %}
+</div>
 
 <div class="{{ section_name }}__main">
-
   {% if menu_main %}
     <nav class="{{ section_name }}__main-navigation navigation navigation--main">
       {% for link in linklists[menu_main].links %}
         {% render 'navigation-item', link: link %}
       {% endfor %}
+      <div class="navigation__item">
+        <a class="navigation__link link" href="/cart" title="Cart">
+          <span class="link__title">{% render 'svg', type: 'icon.cart' %}</span>
+          <span class="link__icon">({{ cart.item_count }})</span>
+        </a>
+      </div>
     </nav>
   {% endif %}
+</div>
 
-  <nav class="{{ section_name }}__cart-navigation navigation navigation--cart">
-    <div class="navigation__item">
-      {% assign link_active = false %}
-      {% if template == 'cart' %}
-        {% assign link_active = true %}
-      {% endif %}
-      <a class="navigation__link link" href="/cart" title="Cart">
-        <span class="link__title">{% render 'svg', type: 'icon.cart' %}</span>
-        <span class="link__icon">({{ cart.item_count }})</span>
-      </a>
-    </div>
-  </nav>
-
+<div class="{{ section_name }}__footer">
+  <p>Sed ac rutrum turpis, id posuere justo. Nullam finibus egestas neque eget luctus. Etiam vel dapibus erat.</p>
 </div>
 
 {% stylesheet %}
@@ -43,6 +49,11 @@
       {
         "content": "Navigation",
         "type": "header"
+      },
+      {
+        "label": "Shopping Menu",
+        "type": "link_list",
+        "id": "menu_shopping"
       },
       {
         "label": "Main Menu",
