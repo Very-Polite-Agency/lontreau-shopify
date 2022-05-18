@@ -1353,6 +1353,14 @@
       "sC" : 3,
       "tS" : 1
     },
+    "\/js\/untitled file" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/js\/untitled file",
+      "oF" : 0
+    },
     "\/js\/vendors.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -3108,6 +3116,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/predictive-search.liquid",
+      "oF" : 0
+    },
+    "\/sections\/product-recommendations--LEGACY.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/product-recommendations--LEGACY.liquid",
       "oF" : 0
     },
     "\/sections\/product-recommendations.liquid" : {

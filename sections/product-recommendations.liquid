@@ -1,6 +1,7 @@
 {%- assign section_name = 'product-recommendations' -%}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign limit = 6 %}
 {% assign colour_theme = section.settings.colour_theme | default: 'light' %}
 {% assign glider_id = section_id | append: '--glider' %}
 {% assign heading = section.settings.heading | default: '' %}
@@ -11,83 +12,92 @@
   {% assign is_glider = true %}
 {% endif %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=6" data-colour-theme-{{ colour_theme }} data-section-padding>
-  {%- if recommendations.performed and recommendations.products_count > 0 -%}
+<div class="{{ section_name }}" id="{{ section_id }}" data-colour-theme-{{ colour_theme }} data-section-padding>
 
-    <div class="{{ section_name }}__intro intro" data-text-alignment-left>
-      {% render 'bs-container', state: 'open' %}
-        {%
-          render 'heading-highlight',
-          classes: 'product-recommendations__heading intro__heading heading--2',
-          heading: heading,
-          style: heading_highlight,
-          tag: 'h2'
-        %}
-      {% render 'bs-container', state: 'closed' %}
-    </div>
+  <div class="{{ section_name }}__intro intro" data-text-alignment-left>
+    {% render 'bs-container', state: 'open' %}
+      {%
+        render 'heading-highlight',
+        classes: 'product-recommendations__heading intro__heading heading--2',
+        heading: heading,
+        style: heading_highlight,
+        tag: 'h2'
+      %}
+    {% render 'bs-container', state: 'closed' %}
+  </div>
 
-    <div class="{{ section_name }}__main main{% if is_glider %} with-glider{% endif %}">
-      {% if is_glider %}<div class="glide js--glider" id="{{ glider_id }}" data-glide-style="{{ section_name }}">{% endif %}
-        {% if is_glider %}<div class="glide__track" data-glide-el="track">{% endif %}
-          {% if is_glider %}<ul class="glide__slides">{% endif %}
+  <div class="{{ section_name }}__main main{% if is_glider %} with-glider{% endif %}" id="{{ section_name }}__main"></div>
 
-            {%- for product in recommendations.products -%}
-              {% if is_glider %}<li class="glide__slide">{% endif %}
-                <div class="{{ section_name }}__item">
-                  {% render 'card-product', product: product, style: section_name %}
-                </div>
-              {% if is_glider %}</li>{% endif %}
-            {%- endfor -%}
-
-          {% if is_glider %}</ul>{% endif %}
-        {% if is_glider %}</div>{% endif %}
-      {% if is_glider %}</div>{% endif %}
-    </div>
-
-    {% if is_glider %}
-      <div class="glide__controls--technical">
-        <button class="glide__button button prev" data-target="#{{ glider_id }}">
-          <span class="button__icon">{% render 'svg', type: 'icon.arrow' %}</span>
-        </button>
-        <button class="glide__button button next" data-target="#{{ glider_id }}">
-          <span class="button__icon">{% render 'svg', type: 'icon.arrow' %}</span>
-        </button>
-      </div>
-    {% endif %}
-
-  {%- endif -%}
 </div>
-{% javascript %}
-  const handleIntersection = (entries, observer) => {
-    if (!entries[0].isIntersecting) return;
 
-    observer.unobserve(productRecommendationsSection);
+<script>
 
-    const url = productRecommendationsSection.dataset.url;
+  let sectionName = {{ section_name | json }};
+  let html, is_glider;
+  let productID = {{ product.id | json }};
+  let limit = {{ limit | json }};
+  let container = document.getElementById(`${sectionName}__main`) || false;
 
-    fetch(url)
-      .then(response => {
-        response.text()
-        console.log( response );
+  document.addEventListener('DOMContentLoaded', function() {
+    recommendedProducts();
+  },false);
+
+  // alternatively, if you don't want to use a polyfil
+  function imgURLFilter(src, size) {
+    // remove any current image size then add the new image size
+    return src
+      .replace(/_(pico|icon|thumb|small|compact|medium|large|grande|original|1024x1024|2048x2048|master)+\./g, '.')
+      .replace(/\.jpg|\.png|\.gif|\.jpeg/g, function(match) {
+        return '_'+size+match;
       })
-      .then(text => {
-        const html = document.createElement('div');
-        html.innerHTML = text;
-        const recommendations = html.querySelector('.product-recommendations');
-        if (recommendations && recommendations.innerHTML.trim().length) {
-          productRecommendationsSection.innerHTML = recommendations.innerHTML;
+    ;
+  }
+
+  function recommendedProducts() {
+    fetch(window.Shopify.routes.root + `recommendations/products.json?product_id=${productID}&limit=${limit}`)
+      .then(response => response.json())
+      .then(({ products }) => {
+        if (products.length > 0) {
+          container.innerHTML = renderGliderMarkup(products);
         }
-      })
-      .catch(e => {
-        console.error(e);
-      });
-  };
+      }
+    );
+  }
 
-  const productRecommendationsSection = document.querySelector('.product-recommendations');
-  const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
+  function renderGliderMarkup( products = [] ) {
+    return `
+      <div class="glide js--glider" id="glide--recommended-products" data-glide-style="recommended-products">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            ${products.map(product =>
+              `<li class="glide__slide">
+                <div class="${sectionName}__item">
+                  ${renderProductMarkup(product)}
+                </div>
+              </li>`
+            ).join('')}
+          </ul>
+        </div>
+      </div>`;
+  }
 
-  observer.observe(productRecommendationsSection);
-{% endjavascript %}
+  function renderProductMarkup( product = {} ) {
+    console.log( product );
+    return `
+      <article class="card-product card-product--${sectionName} product">
+        <div class="card-product__featured-image product__featured-image">
+          <a class="card-product__featured-image-link lazyloaded" href="/products/${product.handle}" title="${product.title}" target="_self">
+            <img class="lazyload-item lazyload-item--image lazypreload lazyload-item--inline inline lazyautosizes lazyload" src="${imgURLFilter(product.featured_image, 'icon')}" data-src="${imgURLFilter(product.featured_image, 'large')}" alt="${product.title}" />
+          </a>
+        </div>
+        <div class="card-product__info">
+          <strong class="card-product__title caption--2">${product.title}</strong>
+          <span class="card-product__price caption--2">${product.price}</span>
+        </div>
+      </article>`;
+  }
+
+</script>
 
 {% schema %}
   {
