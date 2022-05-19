@@ -1,6 +1,8 @@
 {% assign section_name = 'featured-product' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign aos_delay = 300 %}
+{% assign aos_id = section_id | append: '--aos' %}
 {% assign aside_heading = section.settings.aside_heading | default: '' %}
 {% assign aside_message = section.settings.aside_message | default: '' %}
 {% assign aside_subheading = section.settings.aside_subheading | default: '' %}
@@ -32,13 +34,13 @@
     {% endif %}
 
     {% render 'bs-container' %}
-      <div class="{{ section_name }}__layout">
+      <div class="{{ section_name }}__layout" id="{{ aos_id }}">
 
         {% if heading != blank or message != blank %}
           {% capture aos %}
             {%
               render 'aos-attributes',
-              anchor: section_id,
+              anchor: aos_id,
               anchor_placement: 'top-bottom',
               delay: 250,
               duration: 1000,
@@ -48,6 +50,7 @@
               transition: 'fade-left',
             %}
           {% endcapture %}
+          {% assign aos_delay = aos_delay | plus: 300 %}
           <div class="{{ section_name }}__main" {{ aos }}>
             {%
               render 'heading-highlight',
@@ -66,7 +69,7 @@
           {% capture aos %}
             {%
               render 'aos-attributes',
-              anchor: section_id,
+              anchor: aos_id,
               anchor_placement: 'top-bottom',
               delay: 500,
               duration: 550,
@@ -76,6 +79,7 @@
               transition: 'fade-up',
             %}
           {% endcapture %}
+          {% assign aos_delay = aos_delay | plus: 300 %}
           <div class="{{ section_name }}__media" {{ aos }}>
             <a href="{{ product_link }}" target="_self" title="{{ product_title }}">
               {%
@@ -94,7 +98,7 @@
           {% capture aos %}
             {%
               render 'aos-attributes',
-              anchor: section_id,
+              anchor: aos_id,
               anchor_placement: 'top-bottom',
               delay: 250,
               duration: 1000,
@@ -104,6 +108,7 @@
               transition: 'fade-right',
             %}
           {% endcapture %}
+          {% assign aos_delay = aos_delay | plus: 300 %}
           <div class="{{ section_name }}__aside" {{ aos }}>
             {% if product_icon %}
               <div class="{{ section_name }}__aside-icon">
