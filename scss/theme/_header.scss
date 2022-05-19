@@ -184,7 +184,6 @@
         background: pink;
         position: relative;
         padding: 20px 0;
-        margin-left: -28px;
         transform-style: preserve-3d;
         z-index: 1;
       }
@@ -200,6 +199,7 @@
         width: 100%;
         margin: auto;
         border: 1px solid red;
+        position: relative;
       }
     }
 

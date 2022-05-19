@@ -28,41 +28,49 @@
         </div>
           <div class="sub-navigation__main">
 
-          {% for sub_link in link.links %}
-            {%- assign sub_active = sub_link.active | default: false -%}
-            {%- assign sub_title = sub_link.title | default: '' -%}
-            {%- assign sub_type = sub_link.type | default: '' -%}
-            {%- assign sub_url = sub_link.url | default: '' -%}
-            {%- assign sub_links = sub_link.links | default: 0 -%}
-            {%- assign sub_levels = sub_link.levels | default: 0 -%}
-            {%- assign sub_featured_image = false -%}
+            {% for sub_link in link.links %}
+              {%- assign sub_active = sub_link.active | default: false -%}
+              {%- assign sub_title = sub_link.title | default: '' -%}
+              {%- assign sub_type = sub_link.type | default: '' -%}
+              {%- assign sub_url = sub_link.url | default: '' -%}
+              {%- assign sub_links = sub_link.links | default: 0 -%}
+              {%- assign sub_levels = sub_link.levels | default: 0 -%}
+              {%- assign sub_featured_image = false -%}
 
-            {%- assign sub_sub_nav_id = 'sub-sub-navigation--' | append: sub_title | handleize | append: '--' | append: forloop.index -%}
-            {%- if sub_type == 'page_link' -%}
-              {%- assign sub_featured_image = sub_link.object.metafields.page.featured_image.value | default: false -%}
-            {%- endif %}
+              {%- assign sub_sub_nav_id = 'sub-sub-navigation--' | append: sub_title | handleize | append: '--' | append: forloop.index -%}
+              {%- if sub_type == 'page_link' -%}
+                {%- assign sub_featured_image = sub_link.object.metafields.page.featured_image.value | default: false -%}
+              {%- endif %}
 
-            <div class="sub-navigation__item{% if sub_links.size > 0 %} has-links{% endif %}" {% if sub_links.size > 0 %}data-sub-sub-nav-id="{{ sub_sub_nav_id }}"{% endif %}>
-              <a
-                class="sub-navigation__link{% if sub_active %} active{% endif %}"
-                href="{{ sub_url }}"
-                data-featured-image="{% if sub_featured_image %}{{ sub_featured_image | image_url }}{% endif %}"
-              >{{ sub_title }}</a>
-            </div>
-
-            {% if sub_links.size > 0 %}
-              <div class="sub-sub-navigation" id="{{ sub_sub_nav_id }}">
-                {% for sub_sub_link in sub_link.links %}
-                  <div class="sub-sub-navigation__item">
-                    <a class="sub-sub-navigation__link{% if sub_sub_link.active %} active{% endif %}" href="{{ sub_sub_link.url }}">{{ sub_sub_link.title }}</a>
-                  </div>
-                {% endfor %}
+              <div class="sub-navigation__item{% if sub_links.size > 0 %} has-links{% endif %}" {% if sub_links.size > 0 %}data-sub-sub-nav-id="{{ sub_sub_nav_id }}"{% endif %}>
+                <a
+                  class="sub-navigation__link{% if sub_active %} active{% endif %}"
+                  href="{{ sub_url }}"
+                  data-featured-image="{% if sub_featured_image %}{{ sub_featured_image | image_url }}{% endif %}"
+                >{{ sub_title }}</a>
               </div>
-            {% endif %}
+            {% endfor %}
 
-          {% endfor %}
+          </div>
 
-        </div>
+          {% if levels > 1 %}
+            {% for sub_link in link.links %}
+
+              {%- assign sub_title = sub_link.title | default: '' -%}
+              {%- assign sub_sub_links = sub_link.links | default: 0 -%}
+              {%- assign sub_sub_nav_id = 'sub-sub-navigation--' | append: sub_title | handleize | append: '--' | append: forloop.index -%}
+
+              {% if sub_sub_links.size > 0 %}
+                <div class="sub-sub-navigation" id="{{ sub_sub_nav_id }}">
+                  {% for sub_sub_link in sub_sub_links %}
+                    <a href="{{ sub_sub_link.url }}">{{ sub_sub_link.title }}</a>
+                  {% endfor %}
+                </div>
+              {% endif %}
+
+            {% endfor %}
+          {% endif %}
+
         </div>
       </div>
     {% endif %}
