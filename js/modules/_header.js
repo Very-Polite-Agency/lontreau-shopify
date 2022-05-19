@@ -9,7 +9,7 @@ const Header = (() => {
   let throttled = false;
   let timeout;
   let subTimeout;
-  let timeoutValue = 100000;
+  let timeoutValue = 10000000;
 
   //////////////////////////////////////////////////////////
   ////  ABC
@@ -17,21 +17,27 @@ const Header = (() => {
 
   const abc = () => {
 
-    let headerNavigation = document.querySelector('.header__main-navigation') || false;
-    let headerNavigationWidth = headerNavigation.offsetWidth || 0;
-    let headerNavigationOffset = headerNavigation.getBoundingClientRect() || {};
-    let headerNavigationOffsetLeft = headerNavigationOffset.left || 0;
-    let headerSubnavigationMain = headerNavigation.querySelectorAll('.sub-navigation__main') || [];
-    let headerSubnavigationMedia = headerNavigation.querySelectorAll('.sub-navigation__media') || [];
+    // let headerNavigationWidth = mainNavigation.offsetWidth || 0;
+    // let headerNavigationOffset = mainNavigation.getBoundingClientRect() || {};
+    // let headerNavigationOffsetLeft = mainNavigation.left || 0;
 
-    if ( headerNavigationOffsetLeft ) {
-      headerSubnavigationMain.forEach( item => {
-        item.style.left = headerNavigationOffsetLeft + 'px';
-      });
-      headerSubnavigationMedia.forEach( item => {
-        item.style.left = headerNavigationOffsetLeft + 'px';
-        item.style.width = headerNavigationWidth + 'px';
-      });
+    let navigation = {
+      element: document.querySelector('.header__main-navigation') || false,
+    };
+    let subnaviation = {
+      main: navigation.element.querySelectorAll('.sub-navigation__main') || [],
+      media: navigation.element.querySelectorAll('.sub-navigation__media') || [],
+      wrapper: navigation.element.querySelectorAll('.sub-navigation__wrapper') || []
+    };
+
+    if ( navigation.element ) {
+      navigation.width = navigation.element.offsetWidth || 0;
+      navigation.offsetLeft = navigation.element.getBoundingClientRect().left || 0;
+      if ( navigation.width && subnaviation.wrapper ) {
+        subnaviation.wrapper.forEach( wrapper => {
+          wrapper.style.width = navigation.width + 'px';
+        });
+      }
     }
 
   };

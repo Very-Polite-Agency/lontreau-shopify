@@ -22,10 +22,11 @@
 
     {% if levels > 0 %}
       <div class="sub-navigation">
-        <div class="sub-navigation__media">
+        <div class="sub-navigation__wrapper">
+          <div class="sub-navigation__media">
           <div class="sub-navigation__background-image lazyload lazyload-item lazyload-item--image lazyload-item--background"></div>
         </div>
-        <div class="sub-navigation__main">
+          <div class="sub-navigation__main">
 
           {% for sub_link in link.links %}
             {%- assign sub_active = sub_link.active | default: false -%}
@@ -61,6 +62,7 @@
 
           {% endfor %}
 
+        </div>
         </div>
       </div>
     {% endif %}
