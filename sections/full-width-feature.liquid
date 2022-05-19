@@ -50,13 +50,14 @@
             anchor: aos_id,
             anchor_placement: 'top-bottom',
             delay: aos_delay,
-            duration: 250,
+            duration: 750,
             easing: 'ease-in-out',
             offset: 0,
             once: 'true',
             transition: 'fade-in',
           %}
         {% endcapture %}
+        {% assign aos_delay = aos_delay | plus: 300 %}
         <strong class="{{ section_name }}__title title--1" {{ aos }}>{{ title }}</strong>
       {% endif %}
 
@@ -92,7 +93,7 @@
             transition: 'fade-left',
           %}
         {% endcapture %}
-        {% assign aos_delay = aos_delay | plus: 250 %}
+        {% assign aos_delay = aos_delay | plus: 300 %}
         <div class="{{ section_name }}__message body-copy--regular" {{ aos }}>{{ message }}</div>
       {% endif %}
 
@@ -110,6 +111,7 @@
             transition: 'fade-up',
           %}
         {% endcapture %}
+        {% assign aos_delay = aos_delay | plus: 300 %}
         <div class="{{ section_name }}__cta" {{ aos }}>
           <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
             <span class="button__title">{{ cta_title }}</span>
