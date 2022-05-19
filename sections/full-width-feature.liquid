@@ -44,7 +44,20 @@
     {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
 
       {% if title != blank %}
-        <strong class="{{ section_name }}__title title--1">{{ title }}</strong>
+         {% capture aos %}
+          {%
+            render 'aos-attributes',
+            anchor: aos_id,
+            anchor_placement: 'top-bottom',
+            delay: aos_delay,
+            duration: 250,
+            easing: 'ease-in-out',
+            offset: 0,
+            once: 'true',
+            transition: 'fade-in',
+          %}
+        {% endcapture %}
+        <strong class="{{ section_name }}__title title--1" {{ aos }}>{{ title }}</strong>
       {% endif %}
 
       {% if heading != blank %}
