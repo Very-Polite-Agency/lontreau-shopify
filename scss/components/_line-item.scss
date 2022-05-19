@@ -90,6 +90,14 @@
     flex-flow: row nowrap;
     align-items: center;
 
+    .stepper {
+      button,
+      input {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
     &__total,
     &__quantity {
       width: 20%;
@@ -116,6 +124,7 @@
     }
 
     &__total {
+      font-size: 24px;
       display: block;
       text-align: right;
     }
@@ -124,15 +133,27 @@
 
   @include breakpoint(lg) {
 
+    .stepper {
+      button,
+      input {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
     &__image {
       width: 90px;
     }
 
     &__price {
-      font-size: 16px;
+      font-size: 14px;
     }
 
     &__title {
+      font-size: 20px;
+    }
+
+    &__total {
       font-size: 20px;
     }
 
@@ -140,15 +161,27 @@
 
   @include breakpoint(xl) {
 
+    .stepper {
+      button,
+      input {
+        width: 38px;
+        height: 38px;
+      }
+    }
+
     &__image {
       width: 100px;
     }
 
     &__price {
-      font-size: 18px;
+      font-size: 15px;
     }
 
     &__title {
+      font-size: 22px;
+    }
+
+    &__total {
       font-size: 22px;
     }
 
@@ -156,15 +189,27 @@
 
   @include breakpoint(xxl) {
 
+    .stepper {
+      button,
+      input {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
     &__image {
       width: 110px;
     }
 
     &__price {
-      font-size: 20px;
+      font-size: 16px;
     }
 
     &__title {
+      font-size: 24px;
+    }
+
+    &__total {
       font-size: 24px;
     }
 

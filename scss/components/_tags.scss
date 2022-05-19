@@ -10,15 +10,10 @@
   line-height: 1.12;
   letter-spacing: .07em;
   text-transform: uppercase;
-  a {
-    color: inherit;
-    text-decoration: none;
-    &:focus,
-    &:hover {
-      opacity: 0.3333;
-    }
-  }
   &__item {
+    &.label {
+      min-width: 46px;
+    }
     & + .tags__item {
       margin-left: 18px;
     }
@@ -28,5 +23,13 @@
     width: 100%;
     justify-content: flex-start;
     align-items: center;
+  }
+  &__link {
+    color: rgba(var(--theme-colour-black), 1);
+    text-decoration: none;
+    border-bottom: 1px solid inherit;
+    &:hover {
+      border-bottom: 1px solid transparent;
+    }
   }
 }

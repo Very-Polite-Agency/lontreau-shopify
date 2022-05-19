@@ -148,6 +148,13 @@
         position: absolute;
         right: var(--bs-container-fluid-padding);
       }
+      &--cart {
+        a:hover {
+          &::after {
+            opacity: 0;
+          }
+        }
+      }
     }
 
     .sub-navigation {

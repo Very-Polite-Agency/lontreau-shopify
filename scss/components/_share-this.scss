@@ -33,6 +33,7 @@
     &.label {
       height: auto;
       width: auto;
+      min-width: 46px;
       & + .share-this__item {
         // margin-left: 0px;
       }
