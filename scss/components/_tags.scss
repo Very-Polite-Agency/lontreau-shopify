@@ -27,8 +27,9 @@
   &__link {
     color: rgba(var(--theme-colour-black), 1);
     text-decoration: none;
-    border-bottom: 1px solid inherit;
+    border-bottom: 1px solid rgba(var(--theme-colour-black), 1);
     &:hover {
+      color: inherit;
       border-bottom: 1px solid transparent;
     }
   }
