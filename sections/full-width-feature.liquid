@@ -2,6 +2,7 @@
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
 {% assign aos_delay = 250 %}
+{% assign aos_id = section_id | append: '--aos' %}
 {% assign cta = false %}
 {% assign cta_link = section.settings.cta_link | default: '' %}
 {% assign cta_title = section.settings.cta_title | default: '' %}
@@ -39,7 +40,7 @@
     {% if parallax %}</div>{% endif %}
   </div>
 
-  <div class="{{ section_name }}__main">
+  <div class="{{ section_name }}__main" id="{{ aos_id }}">
     {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
 
       {% if title != blank %}
@@ -50,7 +51,7 @@
         {% capture aos %}
           {%
             render 'aos-attributes',
-            anchor: section_id,
+            anchor: aos_id,
             anchor_placement: 'top-bottom',
             delay: aos_delay,
             duration: 750,
@@ -68,7 +69,7 @@
         {% capture aos %}
           {%
             render 'aos-attributes',
-            anchor: section_id,
+            anchor: aos_id,
             anchor_placement: 'top-bottom',
             delay: aos_delay,
             duration: 750,
@@ -86,7 +87,7 @@
         {% capture aos %}
           {%
             render 'aos-attributes',
-            anchor: section_id,
+            anchor: aos_id,
             anchor_placement: 'top-bottom',
             delay: aos_delay,
             duration: 750,
