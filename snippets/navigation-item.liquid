@@ -28,21 +28,29 @@
         <div class="sub-navigation__main">
           {% for sub_link in link.links %}
 
-            {% assign featured_image = false %}
-            {% if sub_link.type == 'page_link' %}
-              {% assign featured_image = sub_link.object.metafields.page.featured_image.value | default: false %}
-            {% endif %}
+            {%- assign sub_active = sub_link.active | default: false -%}
+            {%- assign sub_title = sub_link.title | default: '' -%}
+            {%- assign sub_type = sub_link.type | default: '' -%}
+            {%- assign sub_url = sub_link.url | default: '' -%}
+            {%- assign sub_links = sub_link.links | default: 0 -%}
+            {%- assign sub_levels = sub_link.levels | default: 0 -%}
+            {%- assign sub_featured_image = false -%}
 
-            <div class="sub-navigation__item {% if sub_link.links.size > 0 %}has-links{% endif %}">
+            {%- assign sub_sub_nav_id = 'sub-sub-navigation--' | append: sub_title | handleize | append: '--' | append: forloop.index -%}
+            {%- if sub_type == 'page_link' -%}
+              {%- assign sub_featured_image = sub_link.object.metafields.page.featured_image.value | default: false -%}
+            {%- endif %}
+
+            <div class="sub-navigation__item {% if sub_link.links.size > 0 %}has-links{% endif %}" data-sub-sub-nav-id="{{ sub_sub_nav_id }}">
 
               <a
-                class="sub-navigation__link{% if sub_link.active %} active{% endif %}"
-                href="{{ sub_link.url }}"
-                data-featured-image="{% if featured_image %}{{ featured_image | image_url }}{% endif %}"
-              >{{ sub_link.title }}</a>
+                class="sub-navigation__link{% if sub_active %} active{% endif %}"
+                href="{{ sub_url }}"
+                data-featured-image="{% if sub_featured_image %}{{ sub_featured_image | image_url }}{% endif %}"
+              >{{ sub_title }}</a>
 
-              {% if sub_link.links.size > 0 %}
-                <div class="navigation__sub-sub-navigation sub-sub-navigation">
+              {% if sub_links.size > 0 %}
+                <div class="navigation__sub-sub-navigation sub-sub-navigation" id="{{ sub_sub_nav_id }}">
                   {% for sub_sub_link in sub_link.links %}
                     <div class="sub-sub-navigation__item">
                       <a class="sub-sub-navigation__link{% if sub_sub_link.active %} active{% endif %}" href="{{ sub_sub_link.url }}">{{ sub_sub_link.title }}</a>
