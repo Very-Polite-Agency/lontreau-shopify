@@ -8,6 +8,7 @@ const Header = (() => {
   let info = { name : 'Header', version : '1.0' };
   let throttled = false;
   let timeout;
+  let subTimeout;
   let timeoutValue = 100000;
 
   //////////////////////////////////////////////////////////
@@ -67,14 +68,33 @@ const Header = (() => {
         let image = item.dataset.featuredImage || false;
         let element = item.closest('.sub-navigation').querySelector('.sub-navigation__background-image') || false;
 
-        console.log({ item, image, element })
-
         if ( image ) {
           element.dataset.bg = image;
         }
 
       });
     });
+
+  };
+
+  //////////////////////////////////////////////////////////
+  ////  Subnavigation Hover
+  //////////////////////////////////////////////////////////
+
+  const hoverSubNavigation = () => {
+
+    let links = ( document.querySelectorAll('.header .sub-navigation__item.has-links') || [] );
+
+    links.forEach( item => {
+      item.addEventListener('mouseenter', event => {
+        clearTimeout(subTimeout);
+        links.forEach( item => { item.classList.remove('sub-sub-navigation-active'); });
+        item.classList.add('sub-sub-navigation-active');
+        let subSubNavigationID = item.dataset.subSubNavId || '';
+        let subSubNavigation = document.getElementById('subSubNavigationID');
+      });
+    });
+
 
   };
 
