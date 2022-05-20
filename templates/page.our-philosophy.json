@@ -65,20 +65,6 @@
         "colour_theme": "dark"
       }
     },
-    "16506645476d2fc333": {
-      "type": "fifty-fifty-framed",
-      "settings": {
-        "heading": "<p><em>Next-level <\/em><\/p><p>standards<\/p>",
-        "heading_highlight": "circle",
-        "message": "<p>We don’t believe in junk miles when we train, and we carry that same ethos into our brand: every ingredient and every element of packaging is here for a reason. Learn more about what makes our formulations unique.<\/p>",
-        "cta_title": "Learn More",
-        "cta_link": "shopify:\/\/pages\/demo",
-        "image": "shopify:\/\/shop_images\/LONTREAU--our-philosophy-page--FFF_3x_117566c7-bb93-45cb-be53-63e5c1d6a219.png",
-        "anchor_id": "",
-        "layout": "image-right",
-        "colour_theme": "dark"
-      }
-    },
     "16505007247ed3495b": {
       "type": "accordion-with-image",
       "blocks": {
@@ -172,7 +158,6 @@
     "16505006587b6a34d3",
     "16505007220d454290",
     "165222409282ad276d",
-    "16506645476d2fc333",
     "16505007247ed3495b",
     "1650500945f5b63511"
   ]
