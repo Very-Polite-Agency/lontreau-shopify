@@ -159,7 +159,7 @@
           "type": "detailed",
           "settings": {
             "title": "Synergistic",
-            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is not only better for your skin barrier, but also for the planet. <\/p>",
+            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is not only better for your skin barrier, but also for the planet.<\/p>",
             "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
           }
         },
@@ -199,7 +199,7 @@
         "alignment": "left",
         "heading": "<p><em>The Needs<\/em> of an Athlete<\/p>",
         "heading_highlight": "circle",
-        "message": "<p>Aenean egestas id mauris fermentum efficitur. Quisque non nisi tristique, bibendum turpis ac, varius mauris. Nulla iaculis vestibulum ex, vel consequat dolor volutpat eget. Curabitur tempor nisl augue, rutrum ultrices neque consequat ac.<\/p>",
+        "message": "",
         "anchor_id": "",
         "colour_theme": "dark"
       }
