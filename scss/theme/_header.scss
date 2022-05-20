@@ -95,6 +95,9 @@
 
     .navigation {
       display: block;
+      &--cart {
+        display: none;
+      }
     }
 
     .navigation__link,
