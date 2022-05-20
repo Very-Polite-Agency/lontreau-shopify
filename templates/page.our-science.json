@@ -20,10 +20,11 @@
     "16530857024b1a9513": {
       "type": "fifty-fifty-feature",
       "settings": {
+        "html": "",
         "title": "",
         "heading": "",
         "heading_highlight": "standard",
-        "message": "",
+        "message": "<p><\/p><p><\/p><p><\/p>",
         "cta_title": "",
         "cta_link": "",
         "hide_image_mobile": false,
