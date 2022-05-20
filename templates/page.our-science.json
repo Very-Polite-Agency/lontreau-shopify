@@ -17,6 +17,20 @@
         "curved_arrow_enable": false
       }
     },
+    "1653088721bafa576d": {
+      "type": "fifty-fifty-custom-content",
+      "settings": {
+        "heading": "<p><em>Efficacy<\/em> is our goal<\/p>",
+        "heading_highlight": "circle",
+        "content": "Lontreau is dedicated to creating products that are backed by science and tailored to your needs. We use clinically tested ingredients in efficacious doses, so you get the most out of every drop. We don’t believe in junk miles when we train, and that’s true of our skincare too.\n<ul>\n<li>Vegetal Glycogen<\/li>\n<li>Squalane<\/li>\n<li>Vegan Collagen<\/li>\n<li>Kakadu Plum Extract<\/li>\n<li>Dragon fruit Extract<\/li>\n<\/ul>",
+        "cta_title": "",
+        "cta_link": "",
+        "hide_image_mobile": false,
+        "anchor_id": "",
+        "layout": "image-right",
+        "colour_theme": "light"
+      }
+    },
     "16530857024b1a9513": {
       "type": "fifty-fifty-feature",
       "settings": {
@@ -162,6 +176,7 @@
   },
   "order": [
     "main",
+    "1653088721bafa576d",
     "16530857024b1a9513",
     "1651711852cdf63075",
     "1650503127b4b591a4",
