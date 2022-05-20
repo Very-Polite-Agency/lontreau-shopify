@@ -2993,6 +2993,14 @@
       "oAP" : "\/sections\/featured-product.liquid",
       "oF" : 0
     },
+    "\/sections\/fifty-fifty-custom-content.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/fifty-fifty-custom-content.liquid",
+      "oF" : 0
+    },
     "\/sections\/fifty-fifty-feature.liquid" : {
       "cB" : 0,
       "ft" : 8192,

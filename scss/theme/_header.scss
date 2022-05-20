@@ -102,6 +102,7 @@
     .sub-sub-navigation__link {
       font-family: var(--theme-font-family--serif--primary);
       font-size: 24px;
+      padding: 0 28px;
     }
 
     .navigation__list,
@@ -109,6 +110,11 @@
     .sub-sub-navigation__list {
       display: inline-flex;
       width: auto;
+    }
+
+    .sub-navigation__list,
+    .sub-sub-navigation__list {
+      display: none;
     }
 
     .navigation__list {
