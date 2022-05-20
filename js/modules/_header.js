@@ -9,7 +9,7 @@ const Header = (() => {
   let throttled = false;
   let timeout;
   let subTimeout;
-  let timeoutValue = 10000000;
+  let timeoutValue = 1000;
 
   //////////////////////////////////////////////////////////
   ////  ABC
@@ -51,21 +51,23 @@ const Header = (() => {
     let links = ( document.querySelectorAll('.header .navigation__item.has-links') || [] );
 
     links.forEach( item => {
+
+      // ---------------------------------------- Mouse Enter
       item.addEventListener('mouseenter', event => {
         clearTimeout(timeout);
         links.forEach( item => { item.classList.remove('sub-navigation-active'); });
         item.classList.add('sub-navigation-active');
         item.closest('.header').classList.add('sub-navigation-active');
       });
-    });
 
-    links.forEach( item => {
+      // ---------------------------------------- Mouse Leave
       item.addEventListener('mouseleave', event => {
         timeout = setTimeout(function(){
           item.classList.remove('sub-navigation-active');
           item.closest('.header').classList.remove('sub-navigation-active');
         }, timeoutValue);
       });
+
     });
 
     ( document.querySelectorAll('.header .sub-navigation__link') || [] ).forEach( item => {
@@ -90,17 +92,46 @@ const Header = (() => {
   const hoverSubNavigation = () => {
 
     let links = ( document.querySelectorAll('.header .sub-navigation__item.has-links') || [] );
+    let subSubNavs = ( document.querySelectorAll('.header .sub-sub-navigation.active') || [] );
 
     links.forEach( item => {
+      // ---------------------------------------- Mouse Enter
       item.addEventListener('mouseenter', event => {
         clearTimeout(subTimeout);
         links.forEach( item => { item.classList.remove('sub-sub-navigation-active'); });
         item.classList.add('sub-sub-navigation-active');
         let subSubNavigationID = item.dataset.subSubNavId || '';
-        let subSubNavigation = document.getElementById('subSubNavigationID');
+        let subSubNavigation = document.getElementById( subSubNavigationID );
+        subSubNavigation.classList.add('active');
+      });
+      // ---------------------------------------- Mouse Leave
+      item.addEventListener('mouseleave', event => {
+        subTimeout = setTimeout(function(){
+          item.classList.remove('sub-navigation-active');
+          let subSubNavigationID = item.dataset.subSubNavId || '';
+          let subSubNavigation = document.getElementById( subSubNavigationID );
+          subSubNavigation.classList.remove('active');
+        }, timeoutValue);
       });
     });
 
+    subSubNavs.forEach( subSubNav => {
+      // ---------------------------------------- Mouse Enter
+      subSubNav.addEventListener('mouseenter', event => {
+        console.log('subSubNavs mouseover');
+        clearTimeout(subTimeout);
+        subSubNavs.forEach( subSubNav => { subSubNav.classList.remove('actve'); });
+        subSubNav.classList.add('actve');
+      });
+      // ---------------------------------------- Mouse Leave
+      subSubNav.addEventListener('mouseleave', event => {
+        console.log('subSubNavs mouseout');
+        clearTimeout(subTimeout);
+        subTimeout = setTimeout(function(){
+          subSubNav.classList.remove('active');
+        }, timeoutValue);
+      });
+    });
 
   };
 
@@ -114,6 +145,7 @@ const Header = (() => {
 
     abc();
     hover();
+    hoverSubNavigation();
 
     // ---------------------------------------- On resize, execute functions
     window.addEventListener( 'resize', function(e) {
