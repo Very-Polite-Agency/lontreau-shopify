@@ -23,9 +23,9 @@
         "title": "",
         "heading": "<p>We <em>know<\/em> skin<\/p>",
         "heading_highlight": "standard",
-        "message": "<p>Lontreau is founded by the co-owner of renowned medical aesthetic and cosmetic surgery clinic, 8 West Clinic. With over 10 years in the business of skin, Lontreau products have been developed to support the common concerns of clients, while being uniquely tailored to athletes. The team behind Lontreau is passionate about sport and use their own experience to create products that can benefit everyone from athletes to movement enthusiasts. Learn more about Lontreau here (hyperlink to About Lontreau). <\/p>",
+        "message": "<p>Lontreau is founded by the co-founder of renowned medical aesthetic and cosmetic surgery clinic, 8 West Clinic. With over 10 years in the business of skin, Lontreau products have been developed to support the common concerns of clients, while being uniquely tailored to athletes. The team behind Lontreau is passionate about sport and use their own experience to develop products that can benefit everyone from athletes to movement enthusiasts.<\/p>",
         "cta_title": "Learn More",
-        "cta_link": "shopify:\/\/pages\/about",
+        "cta_link": "shopify:\/\/pages\/our-ingredients",
         "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--wide_2x_e6a66d64-eb95-41cf-84aa-c093104a5d1f.png",
         "hide_image_mobile": true,
         "anchor_id": "",
@@ -55,24 +55,10 @@
       "type": "fifty-fifty-framed",
       "settings": {
         "heading": "<p><em>Nex-level<\/em> <\/p><p>standards<\/p>",
-        "heading_highlight": "circle",
+        "heading_highlight": "stroke",
         "message": "<p>We don’t believe in junk miles when we train, and we carry that same ethos into our brand: every ingredient and every element of packaging is here for a reason. Learn more about what makes our formulations unique.<\/p>",
         "cta_title": "Learn More",
-        "cta_link": "shopify:\/\/pages\/our-ingredients",
-        "image": "shopify:\/\/shop_images\/LONTREAU--our-philosophy-page--FFF_3x_117566c7-bb93-45cb-be53-63e5c1d6a219.png",
-        "anchor_id": "",
-        "layout": "image-left",
-        "colour_theme": "light"
-      }
-    },
-    "16506645476d2fc333": {
-      "type": "fifty-fifty-framed",
-      "settings": {
-        "heading": "<p><em>Next-level <\/em><\/p><p>standards<\/p>",
-        "heading_highlight": "circle",
-        "message": "<p>We don’t believe in junk miles when we train, and we carry that same ethos into our brand: every ingredient and every element of packaging is here for a reason. Learn more about what makes our formulations unique.<\/p>",
-        "cta_title": "Learn More",
-        "cta_link": "shopify:\/\/pages\/demo",
+        "cta_link": "shopify:\/\/pages\/our-standards",
         "image": "shopify:\/\/shop_images\/LONTREAU--our-philosophy-page--FFF_3x_117566c7-bb93-45cb-be53-63e5c1d6a219.png",
         "anchor_id": "",
         "layout": "image-right",
@@ -85,29 +71,29 @@
         "c2801b35-348d-405e-b2cd-80122c3e0953": {
           "type": "accordion",
           "settings": {
-            "title": "Inspired Storytelling",
-            "message": "<p>Nunc bibendum felis turpis, quis porttitor nibh cursus ac. Nullam vulputate pretium neque sed molestie. Phasellus accumsan laoreet lacinia. Etiam in nibh non dolor commodo venenatis. Ut rutrum magna dolor, vel porta velit porta ultrices. Aenean ac dui faucibus dolor commodo ornare eget non sem. Etiam tincidunt mi a justo ornare tempor. Aenean leo ex, rhoncus sed bibendum vitae, ultricies sit amet mi. Maecenas imperdiet, tortor nec venenatis viverra, ante augue sodales purus, et tristique purus velit ut tellus. Nunc at ligula ultrices dolor faucibus rhoncus. Vestibulum mattis lobortis massa efficitur porta.<\/p><p>Sed nec elit a nibh porttitor dictum. Morbi posuere enim et erat sagittis, ac sagittis eros vulputate. Integer lacinia elit ultricies imperdiet porta. Etiam sit amet pellentesque turpis, id rhoncus velit. Phasellus eget turpis lacinia, suscipit tortor tincidunt, interdum nisl. Suspendisse ut metus dolor. Sed ultricies nisi quam, nec volutpat ipsum tempus ut. Donec ac tellus auctor, tincidunt elit id, pretium urna. Nunc pulvinar lectus sit amet vulputate dictum. Vivamus id luctus enim, quis luctus justo. Vestibulum laoreet vestibulum rhoncus. Nam in fermentum orci.<\/p>"
+            "title": "Inspire through storytelling",
+            "message": "<p>We want to inspire you, the Lontreau community, with stories from every day and professional athletes that are doing (and have done) exceptional things.<\/p>"
           }
         },
         "fa7f05c1-9898-44dc-bf5d-3848cbe8c4b5": {
           "type": "accordion",
           "settings": {
-            "title": "Build Our Community",
-            "message": "<p>Donec molestie, nulla sit amet iaculis semper, dui felis hendrerit arcu, non ornare velit ipsum nec magna. Fusce cursus arcu sed dolor lacinia tincidunt. Phasellus consequat mi quis fermentum porttitor. In quis porttitor tellus. Sed mi odio, semper eu pretium id, dictum id dolor. Proin venenatis sem nec dui maximus, sit amet dapibus massa eleifend. Integer urna dolor, cursus vel laoreet id, malesuada sed sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis facilisis, tortor pulvinar hendrerit pharetra, erat mauris suscipit purus, nec euismod turpis dolor at dui. Vestibulum lorem arcu, euismod in viverra pulvinar, pharetra sed eros. Curabitur vel metus vestibulum, porttitor eros eget, mollis purus. Duis sagittis, diam sed iaculis gravida, orci odio faucibus nisl, eu elementum nulla ex eu velit. Nam ante sapien, suscipit consectetur est ac, commodo dictum arcu.<\/p><p>Sed at erat nec nibh finibus euismod. Fusce volutpat tortor vitae elementum gravida. Nam sagittis augue sit amet nisl cursus consectetur. Praesent a tellus non lacus luctus iaculis. Sed nec ligula ultricies, laoreet urna at, tincidunt quam. Quisque sed pharetra ipsum. Suspendisse nibh nisi, aliquam id ex quis, convallis maximus ipsum. Nulla in enim ac nisl vestibulum interdum id a odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce pharetra ipsum ut velit tempus commodo.<\/p>"
+            "title": "Build up our community",
+            "message": "<p>Lontreau is for everyone from movement enthusiasts to professional athletes. We want to pro-vide a positive environment and community to connect and inspire.<\/p>"
           }
         },
         "bf250405-d4af-42e4-94dc-fdb31c4fb18d": {
           "type": "accordion",
           "settings": {
-            "title": "Respect the Earth",
-            "message": "<p>Donec molestie, nulla sit amet iaculis semper, dui felis hendrerit arcu, non ornare velit ipsum nec magna. Fusce cursus arcu sed dolor lacinia tincidunt. Phasellus consequat mi quis fermentum porttitor. In quis porttitor tellus. Sed mi odio, semper eu pretium id, dictum id dolor. Proin venenatis sem nec dui maximus, sit amet dapibus massa eleifend. Integer urna dolor, cursus vel laoreet id, malesuada sed sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis facilisis, tortor pulvinar hendrerit pharetra, erat mauris suscipit purus, nec euismod turpis dolor at dui. Vestibulum lorem arcu, euismod in viverra pulvinar, pharetra sed eros. Curabitur vel metus vestibulum, porttitor eros eget, mollis purus. Duis sagittis, diam sed iaculis gravida, orci odio faucibus nisl, eu elementum nulla ex eu velit. Nam ante sapien, suscipit consectetur est ac, commodo dictum arcu.<\/p>"
+            "title": "Respect the earth",
+            "message": "<p>Our community benefits from the outdoors, so we want to show our respect. Lontreau is dedi-cated to reaching Plastic Negative and creating sustainable initiatives for our future.<\/p>"
           }
         },
         "cb328457-8097-4190-bf9a-36c97a493ee0": {
           "type": "accordion",
           "settings": {
-            "title": "Effort Over Perfection",
-            "message": "<p>Vestibulum eget neque vel justo pellentesque maximus. Integer eu mi ac mi placerat volutpat. Nullam lectus mi, volutpat id ligula in, scelerisque luctus nunc. Nulla dictum ipsum eu tristique cursus. Maecenas iaculis, magna in rutrum congue, ipsum massa interdum sem, id cursus nunc leo vitae lacus. In sed elit lacinia lorem blandit lobortis. Aenean finibus, tortor ac consectetur sagittis, dui sem semper nulla, eget volutpat magna lacus ac sapien. Maecenas sit amet mauris quis turpis congue egestas eu sit amet tortor. Duis vitae lorem viverra, mollis nisl quis, volutpat lectus. Nunc posuere placerat magna, non ullamcorper velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p><p>Nunc bibendum felis turpis, quis porttitor nibh cursus ac. Nullam vulputate pretium neque sed molestie. Phasellus accumsan laoreet lacinia. Etiam in nibh non dolor commodo venenatis. Ut rutrum magna dolor, vel porta velit porta ultrices. Aenean ac dui faucibus dolor commodo ornare eget non sem. Etiam tincidunt mi a justo ornare tempor. Aenean leo ex, rhoncus sed bibendum vitae, ultricies sit amet mi. Maecenas imperdiet, tortor nec venenatis viverra, ante augue sodales purus, et tristique purus velit ut tellus. Nunc at ligula ultrices dolor faucibus rhoncus. Vestibulum mattis lobortis massa efficitur porta.<\/p><p>Sed nec elit a nibh porttitor dictum. Morbi posuere enim et erat sagittis, ac sagittis eros vulputate. Integer lacinia elit ultricies imperdiet porta. Etiam sit amet pellentesque turpis, id rhoncus velit. Phasellus eget turpis lacinia, suscipit tortor tincidunt, interdum nisl. Suspendisse ut metus dolor. Sed ultricies nisi quam, nec volutpat ipsum tempus ut. Donec ac tellus auctor, tincidunt elit id, pretium urna. Nunc pulvinar lectus sit amet vulputate dictum. Vivamus id luctus enim, quis luctus justo. Vestibulum laoreet vestibulum rhoncus. Nam in fermentum orci.<\/p>"
+            "title": "Prioritize effort over perfection",
+            "message": "<p>We are passionate about the journey as opposed to the goals at the finish line. We don’t use language that speak to perfection and focus on health.<\/p>"
           }
         }
       },
@@ -132,21 +118,21 @@
         "89d1e872-6efc-4271-bbb5-2f99102edb50": {
           "type": "minimal",
           "settings": {
-            "title": "",
+            "title": "EWG Verified Logo",
             "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-01.png"
           }
         },
         "53ae3dc4-5f6c-4206-9090-002bdcef471b": {
           "type": "minimal",
           "settings": {
-            "title": "",
+            "title": "Certified Plastic Neutral Logo",
             "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-03.png"
           }
         },
         "fcee7258-7fa1-4865-8a1d-c2c79d11e4fd": {
           "type": "minimal",
           "settings": {
-            "title": "",
+            "title": "Certified Logo Sport Logo",
             "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-02.png"
           }
         }
@@ -172,7 +158,6 @@
     "16505006587b6a34d3",
     "16505007220d454290",
     "165222409282ad276d",
-    "16506645476d2fc333",
     "16505007247ed3495b",
     "1650500945f5b63511"
   ]

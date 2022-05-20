@@ -13,7 +13,8 @@
         "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--auto_3x_98697aff-9d23-4586-afb8-b51f94b5ea8d.png",
         "parallax": false,
         "anchor_id": "",
-        "height": "auto"
+        "height": "auto",
+        "curved_arrow_enable": false
       }
     },
     "1650479051fa4e9bc1": {
@@ -23,12 +24,13 @@
         "title": "",
         "heading": "<p>Skin + <em>The Elements<\/em><\/p>",
         "heading_highlight": "circle",
-        "message": "<p>As athletes, our passions can take us from early morning swims to mid-day runs in the sun and long bike rides fighting against wind and exhaust. We do it all because we love it — but an athlete’s skin is exposed to a wide range of environmental stressors like sun, cold, wind, pollution and chemicals. At Lontreau, we use the latest science and research to create unique formulations designed specifically to help protect and restore an athlete’s skin.<\/p>",
+        "message": "<p>As athletes, our passions can take us from early morning swims to mid-day runs in the sun and long bike rides fighting against wind and exhaust. We do it all because we love it — but an athlete’s skin is exposed to a wide range of environmental stressors like sun, cold, wind, pollution and chemicals. At Lontreau, we use the latest science and research to create unique formulations designed specifically to help protect and restore an athlete’s skin.<br\/><\/p>",
         "cta_title": "",
         "cta_link": "",
         "parallax": false,
         "anchor_id": "",
-        "height": "auto"
+        "height": "auto",
+        "curved_arrow_enable": false
       }
     },
     "165048835013ce33c0": {
@@ -38,31 +40,29 @@
           "type": "accordion",
           "settings": {
             "title": "The Skin Barrier",
-            "message": "<p>The skin barrier is the first line of defense for your skin. It’s responsible for defending against all the environmental stressors our skin endures, including pollution, UV light, blue light and infection. When our skin barrier is impaired, it can lead to several common skin issues like hyperpigmentation, sensitivity, premature aging, dryness and breakouts. <\/p><p>Instead of addressing these separate concerns with individual products, the best solution is to find products that focus on healing and balancing the skin barrier. An overconsumption of skincare products not only compromises the skin barrier but results in excessive packaging waste. That’s why we create ingredient-dense formulas that address the root cause, use 100% recyclable packaging, and participate in the Plastic Neutral program to reduce waste and eliminate junk miles. <\/p>",
-            "cta_title": "Shop Now",
-            "cta_link": "shopify:\/\/pages\/about",
-            "image": "shopify:\/\/shop_images\/Stocksy_comp_4001947--tall.jpg",
-            "image_figure": "Fig A.",
-            "image_caption": "a Healthy Skin barrier protects against pollution, infection and locks in moisture"
+            "message": "<p>The skin barrier is the first line of defense for your skin. It’s responsible for defending against all the environmental stressors our skin endures, including pollution, UV light, blue light and infection. When our skin barrier is impaired, it can lead to several common skin issues like hyperpigmentation, sensitivity, premature aging, dryness and breakouts.<br\/><br\/>Instead of addressing these separate concerns with individual products, the best solution is to find products that focus on healing and balancing the skin barrier (Hyperlink to Overnight Recovery Serum). An overconsumption of skincare products not only compromises the skin barrier but results in an excessive packaging waste. That’s why we create ingredient-dense formulas that address the root cause, use 100 percent recyclable packaging, and participate in the Plastic Neutral program to reduce waste and eliminate junk miles.<\/p>",
+            "cta_title": "",
+            "cta_link": "",
+            "image_figure": "",
+            "image_caption": ""
           }
         },
         "87c8a20b-3d74-4969-a82c-36d250ab8a93": {
           "type": "accordion",
           "settings": {
             "title": "UV, Infrared and Heat Induced Damage",
-            "message": "<p>Aenean a pretium ligula. Duis et tortor mi. Fusce lectus ligula, vulputate vitae eleifend nec, pellentesque varius velit. Aenean laoreet mauris ac tellus commodo, non cursus nisl lacinia. Mauris sagittis tincidunt pellentesque. Fusce tempor bibendum luctus. Donec a tellus id urna imperdiet luctus in at ex. In ac nunc at sem fringilla dignissim sit amet nec felis. Donec eu vehicula ante, quis egestas ligula. <\/p><p>Vestibulum eget ex faucibus, ornare est vitae, gravida justo. Morbi augue erat, mollis ut dignissim eu, semper et nibh. Sed semper fringilla efficitur. Cras volutpat dapibus nibh, sit amet porta dui ornare iaculis. Duis blandit metus nunc, et eleifend sem rhoncus quis.<\/p>",
+            "message": "<p>For many years, sun-induced aging was strictly attributed to ultraviolet rays (UV), but infrared (IR) rays and the heat they generate also contribute to the loss of skin firmness and elasticity, and lead to the appearance of premature wrinkles. Infrared aging also underlines thermal aging (heat-induced aging) which expediates the effects of premature aging.<br\/><br\/>Think of all those long days on road bikes with your face battling the heat from hot cement and the sun. Our curated kit of skin health solutions is strategically formulated to provide global management of infrared and heat induced aging in addition to boosting the efficacy of your sunscreen with UV protection boosters. Our thoughtful selection of science-based ingredients, such as Knot Grass Extract (Hyperlink to Defense Barrier) provide a breakthrough in treating photoaging and infrared & heat-induced skin damage.<\/p>",
             "cta_title": "",
             "cta_link": "",
-            "image": "shopify:\/\/shop_images\/Stocksy_comp_3986710--tall.jpg",
-            "image_figure": "Fig. B",
-            "image_caption": "That’s why we create ingredient-dense That’s why we create ingredient-dense"
+            "image_figure": "",
+            "image_caption": ""
           }
         },
         "cae49aa7-a0fe-428a-9124-de23fdf4f607": {
           "type": "accordion",
           "settings": {
             "title": "Pollution and Bluelight (HEV) Damage",
-            "message": "<p>Donec ultrices nisl feugiat, pulvinar augue et, semper turpis. Sed ullamcorper risus eget leo consectetur, at tristique metus pellentesque. Pellentesque at pharetra ligula, vitae consequat sem. Vestibulum metus lacus, bibendum quis risus at, mattis pellentesque libero. <\/p><p>Praesent sed purus libero. Nullam quis sodales nulla. Quisque hendrerit sem velit, vitae tincidunt eros accumsan sed. Maecenas eu consectetur nisl. Quisque bibendum orci sed diam rhoncus sagittis vel ac orci. Nulla tincidunt urna ac dui cursus eleifend. Suspendisse enim turpis, pulvinar nec lectus vitae, placerat posuere enim. Praesent pharetra faucibus sem, at venenatis quam blandit vel. Nam ornare finibus nulla quis feugiat. Nulla euismod libero eget porttitor consectetur. Curabitur sed malesuada dui.<\/p><p>Pellentesque tempor mollis ex, non tempus diam ornare nec. Nam scelerisque diam non euismod tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla eget libero eget lorem lobortis placerat volutpat at ex. Donec felis urna, bibendum non molestie vitae, hendrerit et nibh. In hac habitasse platea dictumst. Donec suscipit, augue vitae luctus commodo, quam tortor porttitor tellus, consequat ultrices dolor sem eu diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ut consequat mi, ut eleifend velit. Suspendisse vel congue sapien. Donec condimentum sapien in magna rutrum, nec rutrum elit lobortis. Quisque erat turpis, lobortis vitae justo ac, egestas ullamcorper magna.<\/p><p>Etiam aliquet lacinia elit, id fringilla ipsum interdum non. Nullam consectetur risus neque, quis posuere ante luctus nec. Pellentesque fringilla metus ac laoreet sagittis. Vivamus mattis ut lorem a pulvinar. Quisque semper enim vel lectus condimentum pulvinar. Nam tempor et mi a pellentesque. Nulla vitae lobortis velit.<\/p>",
+            "message": "<p>Particulate matter and urban dust are a real concern for athletes. When we ride our bikes or run outside, this pollution comes into direct contact with our skin. Aside from leaving the surface of your skin feeling dirty, some chemicals attached to pollution particles can penetrate through the skin’s layers and cause oxidative stress, which can weaken the skin’s barrier, trigger inflammation and lead to collagen degeneration.<br\/><br\/>As if exposure to pollution and UV rays wasn’t bad enough, our skin has another enemy: high-energy visible (HEV) light. Also referred to as blue light, HEV light is primarily from the sun, but is also emitted by your smartphone, tablet and computer screen. Blue light exposure causes skin pigmentation, which is sometimes more pronounced hyperpigmentation than even UVB irradiation. Research has shown how destructive HEV light is for your skin because, like pollution particles, it can induce oxidative stress. To defend against blue light and pollution, we develop formulations that strengthen the skin’s recovery response and provide a second source of defense (Hyperlink to Defense Barrier).<\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
@@ -73,36 +73,33 @@
           "type": "accordion",
           "settings": {
             "title": "Oxidative Stress & Free Radicals",
-            "message": "<p>Vivamus ullamcorper id tellus at tristique. Nulla facilisis ultricies elit, tempor iaculis lacus iaculis nec. Duis cursus, sapien at tincidunt ullamcorper, dui orci luctus neque, non volutpat neque sapien id massa. Etiam bibendum tortor quam, at porta orci dignissim et. Vestibulum purus purus, porttitor in odio vestibulum, vehicula scelerisque elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec molestie leo eget orci imperdiet porta. Nulla sollicitudin interdum sapien nec gravida. Vestibulum pharetra elementum ipsum. Vestibulum egestas dolor vel odio volutpat sagittis. Duis molestie dui sit amet luctus lacinia. Aenean laoreet tempus magna sed egestas. Quisque ullamcorper porta molestie. Proin ut volutpat dolor. Sed eu mi metus.<\/p><p>Duis at nulla justo. Cras consequat dui a velit dictum rhoncus. Mauris hendrerit vitae nibh at tristique. Praesent dui urna, ultricies at nulla ac, bibendum blandit arcu. Curabitur cursus nunc enim, cursus elementum diam posuere pulvinar. Donec faucibus, elit sit amet blandit tincidunt, lorem dui consequat tortor, ut finibus massa odio sit amet leo. Phasellus accumsan maximus laoreet. Phasellus nec dui mi. Proin lobortis purus orci, non rhoncus justo pulvinar vel. Vivamus lobortis sed lacus sit amet suscipit. Etiam hendrerit eget augue vitae pulvinar.<\/p>",
+            "message": "<p>Free radicals are unstable molecules that have either gained or lost an electron due to the action of external factors (UV, radiation, pollutants, etc.), and are an inevitable factor in the tissular aging process.<\/p><p>Daily environmental stressors when we ride, train and compete induce an excessive production of free radicals, which can overwhelm cellular antioxidant defenses, cause cellular stress and lead to the breakdown of skin matrix components like collagen and hyaluronic acid. Antioxidants are very generous and can give up an electron without becoming unstable - a perfect antidote to free radicals. At Lontreau, we go the extra mile with our formulations, using a variety of clinically proven antioxidants (Hyperlink to Vitamin C Oil) to improve the skin’s antioxidant defenses.<\/p>",
             "cta_title": "",
             "cta_link": "",
-            "image": "shopify:\/\/shop_images\/Stocksy_comp_4000427--tall.jpg",
-            "image_figure": "Fig. C",
-            "image_caption": "Duis at nulla justo. Cras consequat dui a velit dictum rhoncus."
+            "image_figure": "",
+            "image_caption": ""
           }
         },
         "f43e9bc2-8651-4b27-9859-d754a55614d7": {
           "type": "accordion",
           "settings": {
             "title": "TEWL, Dehydration & NMF",
-            "message": "<p>Duis at nulla justo. Cras consequat dui a velit dictum rhoncus. Mauris hendrerit vitae nibh at tristique. Praesent dui urna, ultricies at nulla ac, bibendum blandit arcu. Curabitur cursus nunc enim, cursus elementum diam posuere pulvinar. Donec faucibus, elit sit amet blandit tincidunt, lorem dui consequat tortor, ut finibus massa odio sit amet leo. Phasellus accumsan maximus laoreet. Phasellus nec dui mi. Proin lobortis purus orci, non rhoncus justo pulvinar vel. Vivamus lobortis sed lacus sit amet suscipit. Etiam hendrerit eget augue vitae pulvinar.<\/p><p>Maecenas nec risus tempor, cursus erat nec, tempor sem. Fusce molestie metus quis tincidunt pretium. Sed sit amet magna sed libero venenatis hendrerit. Donec lobortis maximus mi vel dapibus. Nam et aliquet nunc. Morbi faucibus non purus quis auctor. Ut dui metus, bibendum quis imperdiet id, viverra a augue. Nam rhoncus eget magna ac scelerisque. Donec non libero velit. Aenean placerat ornare sagittis. Aliquam interdum nunc metus, at pharetra tortor dapibus dapibus.<\/p><p>Nulla rutrum eu nisl ut facilisis. Suspendisse at erat vitae ipsum dapibus aliquam. Vivamus vehicula nulla dignissim congue feugiat. Cras ultrices felis mauris, ac cursus tellus facilisis nec. Duis rhoncus pulvinar lacus eu consectetur. Donec orci nibh, fermentum vel dolor ut, mattis sollicitudin elit. <\/p><p>Phasellus libero urna, tristique sed risus at, accumsan gravida dolor. Duis egestas felis a nulla condimentum, vel placerat ante pharetra. Fusce sagittis a erat eu aliquam. Quisque eu leo commodo lacus fermentum accumsan.<\/p>",
+            "message": "<p>Although Transepidermal Water Loss (TEWL) is a naturally occurring physiological process, there are certain things that can exacerbate it. Any sort of trauma to the skin, such as a sunburn or a case of eczema, can negatively impact TEWL levels in the body. Elements such as metabolism and sweat gland function can also play a role. External factors like drying skin care products and low-humidity climates can raise TEWL levels, creating dryness and even dehydration. Dehydration is the result of the rate of water loss in the skin outpacing its ability to replace it, and unlike dryness, needs more stringent levels of treatment - both internally and topically.<\/p><p>When dehydrated, the skin can feel uncomfortably tight. Dehydration can also lead to premature aging through the appearance of fine lines, wrinkles and dullness. The Lontreau approach ensures we use ingredients that hydrate the skin, by improving the skin barrier and drawing water deep into the skin. To combat high levels of TEWL and an imbalanced barrier, we use hydrating ingredients that seal the moisture in. Rather than using heavy oils, waxes and butters, our combination of lightweight nourishing moisturizers and hydrating molecules gives us a unique approach to skin health and hydration (Hyperlink to Endurance Hydration).<\/p>",
             "cta_title": "",
             "cta_link": "",
-            "image": "shopify:\/\/shop_images\/Stocksy_comp_2003470--tall.jpg",
-            "image_figure": "Fig. D",
-            "image_caption": "Suspendisse at erat vitae ipsum dapibus aliquam. Vivamus vehicula nulla dignissim congue feugiat."
+            "image_figure": "",
+            "image_caption": ""
           }
         },
         "5fed777e-16b1-4ae1-ab2e-3d62855d8696": {
           "type": "accordion",
           "settings": {
             "title": "Microbiota & Skin Dysbiosis",
-            "message": "<p>Nulla rutrum eu nisl ut facilisis. Suspendisse at erat vitae ipsum dapibus aliquam. Vivamus vehicula nulla dignissim congue feugiat. Cras ultrices felis mauris, ac cursus tellus facilisis nec. Duis rhoncus pulvinar lacus eu consectetur. Donec orci nibh, fermentum vel dolor ut, mattis sollicitudin elit. Phasellus libero urna, tristique sed risus at, accumsan gravida dolor. Duis egestas felis a nulla condimentum, vel placerat ante pharetra. Fusce sagittis a erat eu aliquam. Quisque eu leo commodo lacus fermentum accumsan.<\/p><p>Nullam congue, ligula vel ullamcorper posuere, eros massa porta sapien, in fermentum ligula erat sed purus. Suspendisse ornare tincidunt augue sit amet sodales. Vestibulum a lectus pharetra, rutrum elit ac, dictum sapien. Etiam scelerisque leo egestas hendrerit aliquet. Curabitur tincidunt tellus ut neque posuere aliquet. Morbi congue erat eu hendrerit auctor. Fusce et tincidunt neque. Donec posuere libero vel metus elementum, sit amet volutpat magna sagittis. Nullam elementum venenatis purus eu ullamcorper. Proin faucibus quis ante non dignissim. Ut et ante a velit bibendum viverra. Vivamus scelerisque, risus interdum eleifend finibus, ex risus suscipit dui, in porttitor mi nisl et ante. Vestibulum neque tellus, eleifend nec ultrices a, iaculis non dolor. Donec placerat, erat nec pretium dignissim, justo massa consequat urna, at molestie tellus mauris a mauris. In sit amet ipsum at quam mattis blandit sed ac augue.<\/p>",
+            "message": "<p>Each of us have a unique microbiota composition that writes the code for our skin’s immunity and barrier function. As is true with gut health, microbiota biodiversity is essential to skin health as well. A balanced microbiota is dependent on factors like genetics, lifestyle and diet. As athletes, we pressure our skin in intense conditions caused by temperature fluctuations, pH imbalances from chemicals and pollution and UV exposure.<\/p><p>To create balance and ensure a healthy environment for beneficial resident microorganisms, the skin requires natural healers like hydration, nutrients, pH and antimicrobial peptides. An imbalance in the microbiota is called skin dysbiosis, which leads to an onslaught of common skin health concerns like dullness, dryness, acne, inflammation and premature aging. Our formulations help balance the microbiota to deliver hydration and radiance, along with preserving and reinforcing the skin’s barrier.<\/p>",
             "cta_title": "",
             "cta_link": "",
-            "image": "shopify:\/\/shop_images\/Stocksy_comp_3986691--tall.jpg",
-            "image_figure": "Fig E.",
-            "image_caption": "Environmental stressors like sun, cold, wind, pollution and chemicals"
+            "image_figure": "",
+            "image_caption": ""
           }
         }
       },
@@ -134,15 +131,17 @@
         "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--large_2x_dbdb0c77-33c7-4bdf-9573-d7b5a903ee67.png",
         "parallax": false,
         "anchor_id": "",
-        "height": "large"
+        "height": "large",
+        "curved_arrow_enable": false
       }
     },
     "1650498006237fa6fb": {
       "type": "fifty-fifty-feature",
       "settings": {
+        "title": "",
         "heading": "",
         "heading_highlight": "standard",
-        "message": "<p>Athletes expect a lot of their bodies — but what about their skin?  From the chlorine of a pool to the pollution from road cycling or the extreme cold of skiing, our skin is constantly up against the elements. That’s why we create ingredient-rich formulations that are designed specifically for an athlete’s skin. We thoughtfully select our ingredients to create efficacious formulas that work as hard as you do.<\/p>",
+        "message": "<p>Athletes expect a lot of their bodies - but what about their skin? From the chlorine of a pool to the pollution from road cycling or the extreme cold of skiing, our skin is constantly up against the elements. That’s why we create ingredient-rich formulations that are designed specifically for an athlete’s skin. We thoughtfully select our ingredients to create efficacious formulas that work as hard as you do.<\/p>",
         "cta_title": "Learn more about Our Ingredients",
         "cta_link": "shopify:\/\/pages\/our-ingredients",
         "image": "shopify:\/\/shop_images\/LONTREAU--our-skin-page--FF_3x_1fcaf6c9-ad9c-466f-9995-3bd2d7dd8a32.png",
@@ -160,7 +159,7 @@
           "type": "detailed",
           "settings": {
             "title": "Synergistic",
-            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is not only better for your skin barrier, but also for the planet. <\/p>",
+            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is not only better for your skin barrier, but also for the planet.<\/p>",
             "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
           }
         },
@@ -179,28 +178,19 @@
             "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine and sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>",
             "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
           }
-        },
-        "51559e9d-5ff2-4707-b2cd-29ca2e61d229": {
-          "type": "detailed",
-          "settings": {
-            "title": "Something Else",
-            "description": "<p>Sed finibus risus quis ipsum ultricies pharetra. Maecenas rutrum dui eu est imperdiet condimentum. Nunc ultrices tempor dui vitae ornare. Ut rutrum dolor a aliquam vulputate.<\/p>",
-            "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
-          }
         }
       },
       "block_order": [
         "0be36e13-37b8-4585-bd57-fb626debe9e8",
         "e98410e9-a551-42d8-aa2c-df3ff9da1c4b",
-        "c616d856-9b6c-4a8f-a9d9-85f9409c7d3d",
-        "51559e9d-5ff2-4707-b2cd-29ca2e61d229"
+        "c616d856-9b6c-4a8f-a9d9-85f9409c7d3d"
       ],
       "settings": {
         "content_type": "detailed",
         "alignment": "left",
         "heading": "<p><em>The Needs<\/em> of an Athlete<\/p>",
         "heading_highlight": "circle",
-        "message": "<p>Aenean egestas id mauris fermentum efficitur. Quisque non nisi tristique, bibendum turpis ac, varius mauris. Nulla iaculis vestibulum ex, vel consequat dolor volutpat eget. Curabitur tempor nisl augue, rutrum ultrices neque consequat ac.<\/p>",
+        "message": "",
         "anchor_id": "",
         "colour_theme": "dark"
       }
