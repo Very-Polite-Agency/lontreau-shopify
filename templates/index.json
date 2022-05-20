@@ -81,7 +81,7 @@
         "image": "shopify:\/\/shop_images\/featured-product.png",
         "heading": "<p>The <em>only kit<\/em> <\/p><p>you need. <\/p>",
         "heading_highlight": "circle",
-        "message": "<p>Nulla in dolor pretium, mollis lectus in, elementum dolor. Suspendisse sed dignissim diam.<\/p>",
+        "message": "",
         "aside_heading": "Stage",
         "aside_subheading": "{{ section.settings.product.title }}",
         "aside_message": "<p>Phasellus quis felis eros. In egestas ut odio sed accumsan. Etiam tempus laoreet felis, pharetra finibus nunc luctus sit dui.<\/p>",
