@@ -102,10 +102,18 @@
             "title": "Clinical & Efficacious",
             "message": "<p>We choose clinically backed ingredients and use them at efficacious levels to get the most for your skin. Our Global Antioxidant Serum contains a clinically efficacious dose of Elixir IRTM, a flavonoid rich knotgrass extract that protects the dermis fibres from infrared damage.<\/p>"
           }
+        },
+        "b8ff2d76-b993-45d7-84bd-bce334ff57cd": {
+          "type": "accordion",
+          "settings": {
+            "title": "Real Change Enhancers",
+            "message": "<p>Some skincare brands use ingredients that are designed to create an immediate, but temporary benefit to the skin. The problem with this approach is it teaches your skin to be lazy without the benefit of a health improving function. We use ingredients that support your journey to skin health. This long-term approach improves the overall look of skin and improves barrier function over time, and we know you value that hard work takes time.<\/p>"
+          }
         }
       },
       "block_order": [
-        "225dbe0d-96b3-44a1-b15c-cbd3d2a836cd"
+        "225dbe0d-96b3-44a1-b15c-cbd3d2a836cd",
+        "b8ff2d76-b993-45d7-84bd-bce334ff57cd"
       ],
       "settings": {
         "heading": "<p><em>Ingredient<\/em> Selection Playbook<\/p>",
