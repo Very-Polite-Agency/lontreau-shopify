@@ -95,6 +95,18 @@
     },
     "16530923159e4e9e0b": {
       "type": "accordion-with-image",
+      "blocks": {
+        "225dbe0d-96b3-44a1-b15c-cbd3d2a836cd": {
+          "type": "accordion",
+          "settings": {
+            "title": "Clinical & Efficacious",
+            "message": "<p>We choose clinically backed ingredients and use them at efficacious levels to get the most for your skin. Our Global Antioxidant Serum contains a clinically efficacious dose of Elixir IRTM, a flavonoid rich knotgrass extract that protects the dermis fibres from infrared damage.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "225dbe0d-96b3-44a1-b15c-cbd3d2a836cd"
+      ],
       "settings": {
         "heading": "<p><em>Ingredient<\/em> Selection Playbook<\/p>",
         "heading_highlight": "standard",
