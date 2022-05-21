@@ -13,7 +13,8 @@
         "image": "shopify:\/\/shop_images\/LONTREA--our-ingredients-page--FFH_2x_14fb1913-f14b-4d7d-965a-58bfc37735e5.png",
         "parallax": false,
         "anchor_id": "",
-        "height": "auto"
+        "height": "auto",
+        "curved_arrow_enable": false
       }
     },
     "16505022401e5283d2": {
@@ -31,32 +32,56 @@
           "type": "detailed",
           "settings": {
             "title": "Phytomolecules",
-            "description": "<p>Active plant compounds are a natural team player for our skin. Phytomolecules work with our skin cells to support everything from the stimulation of collagen to the production of antibacterial properties. <\/p>",
+            "description": "<p>Active plant compounds are a natural team player for our skin. Phytomolecules work with our skin cells to support everything from the stimulation of collagen to the production of antibacterial properties.<\/p>",
             "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-03.png"
+          }
+        },
+        "48c86b9c-b445-4dd6-8696-d8dd8e9022be": {
+          "type": "detailed",
+          "settings": {
+            "title": "Vitamins",
+            "description": "<p>For our bodies, these powerful micronutrients support optimal function, and they do the same for our skin. Vitamins are the heavy lifters in any regenerative skincare routine, they help in supporting the healthy function of our skin barrier and cellular response.<\/p>"
           }
         },
         "f8894a1d-d745-4004-a6a8-ec4b00beac80": {
           "type": "detailed",
           "settings": {
-            "title": "Vitamins",
-            "description": "<p>For our bodies, these powerful micronutrients support optimal function, and they do the same for our skin. Vitamins are the heavy lifters in any regenerative skincare routine, they help in supporting the healthy function of our skin barrier and cellular response. <\/p>",
+            "title": "Botanicals",
+            "description": "<p>Extracted from flowers, herbs, nuts, seeds, roots and berries, botanicals infuse skincare with the powerful antimicrobial, antioxidant-rich and hydrating benefits of nature to replenish skin health.<\/p>",
             "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-01.png"
           }
         },
         "a26ee92c-7f0f-4722-bfa9-f99e7068472f": {
           "type": "detailed",
           "settings": {
-            "title": "Another One",
-            "description": "<p>Mauris bibendum volutpat aliquet. Sed ultricies sapien vel fermentum aliquet. Sed rutrum orci dignissim, sollicitudin lectus egestas, placerat nibh. Nullam quis placerat nisi.<\/p>",
+            "title": "Amino Acids",
+            "description": "<p>Amino acids are essential to the function of the body and that’s true of the skin as well. They offer powerful support by promoting cellular repair, amplifying hydration, reducing inflammation and providing antioxidant protection.<\/p>",
             "image": "shopify:\/\/shop_images\/LONTREAU--accordion-with-image--image_3x_a53858f8-5a2e-459c-8541-a6bcbeadd8fc.png"
+          }
+        },
+        "154709d1-26dd-492a-953b-61d044e4029d": {
+          "type": "detailed",
+          "settings": {
+            "title": "Oleosomes",
+            "description": "<p>Oleosomes are rich in Essential Fatty Acids to draw hydration deep into the skin. We believe that using the right ingredients is the most important factor in restoring the Natural Moisturising Factor (NMF) and Oleosomes are key to keeping skin hydrated.<\/p>"
+          }
+        },
+        "6d673b68-3d9f-4165-be96-ac2a1f169b6e": {
+          "type": "detailed",
+          "settings": {
+            "title": "Dermal Delivery Accelerators",
+            "description": "<p>The best ingredients in the world do little if they sit on the surface of the skin. Our products are specially formulated to be delivered deep in the skin where the work is done.<\/p>"
           }
         }
       },
       "block_order": [
         "16719436-cba9-4706-8898-79bcb2257fc6",
         "b7f7458e-60ef-407c-a177-e41dd106f08a",
+        "48c86b9c-b445-4dd6-8696-d8dd8e9022be",
         "f8894a1d-d745-4004-a6a8-ec4b00beac80",
-        "a26ee92c-7f0f-4722-bfa9-f99e7068472f"
+        "a26ee92c-7f0f-4722-bfa9-f99e7068472f",
+        "154709d1-26dd-492a-953b-61d044e4029d",
+        "6d673b68-3d9f-4165-be96-ac2a1f169b6e"
       ],
       "settings": {
         "content_type": "detailed",
@@ -65,7 +90,7 @@
         "heading_highlight": "circle",
         "message": "",
         "anchor_id": "",
-        "style": "light"
+        "colour_theme": "light"
       }
     },
     "1650502975c52b05c2": {
@@ -80,7 +105,8 @@
         "cta_link": "",
         "parallax": false,
         "anchor_id": "",
-        "height": "auto"
+        "height": "auto",
+        "curved_arrow_enable": false
       }
     },
     "16505026180b60acc4": {
