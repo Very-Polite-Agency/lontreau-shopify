@@ -147,10 +147,18 @@
             "title": "Clean",
             "message": "<p>We challenged ourselves to use the highest standards when it comes to clean. The average woman uses 12 personal products daily and is exposed to hundreds of chemicals - none of which are required to be tested for safety. We challenged ourselves to make products that are beyond clean. We avoid over 2,700 specific ingredients and types of ingredients that are used in mainstream beauty products.<\/p>"
           }
+        },
+        "87c459d0-97c0-47c3-87b7-a2010f289ab3": {
+          "type": "accordion",
+          "settings": {
+            "title": "EWG Certified",
+            "message": "<p>Our products are EWG Certified which means we don’t use any chemicals of concern.<\/p>"
+          }
         }
       },
       "block_order": [
-        "e5eb65bb-8893-4a50-8639-1cfe46037ac5"
+        "e5eb65bb-8893-4a50-8639-1cfe46037ac5",
+        "87c459d0-97c0-47c3-87b7-a2010f289ab3"
       ],
       "settings": {
         "heading": "<p><em>Formulation<\/em> Playbook<\/p>",
