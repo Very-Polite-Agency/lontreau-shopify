@@ -13,7 +13,8 @@
         "image": "shopify:\/\/shop_images\/LONTREAU--about-page--hero_2x_e636d79b-1883-48c7-8caa-f85754400c43.png",
         "parallax": false,
         "anchor_id": "",
-        "height": "auto"
+        "height": "auto",
+        "curved_arrow_enable": false
       }
     },
     "1650406820d7117f5d": {
@@ -21,14 +22,15 @@
       "settings": {
         "text_theme": "light",
         "title": "Our Mission",
-        "heading": "<p>Create regenerative <\/p><p>skincare products that<em> <\/em><\/p><p><em>work as hard<\/em> as you do.<\/p>",
+        "heading": "<p>Create regenerative <\/p><p>skincare products <em>that work<\/em><\/p><p><em>as hard<\/em> as you do.<\/p>",
         "heading_highlight": "stroke",
         "message": "",
         "cta_title": "",
         "cta_link": "",
         "parallax": false,
         "anchor_id": "",
-        "height": "large"
+        "height": "large",
+        "curved_arrow_enable": false
       }
     },
     "16504147450799a25f": {
