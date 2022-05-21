@@ -138,82 +138,14 @@
         "colour_theme": "grey"
       }
     },
-    "16530857024b1a9513": {
-      "type": "fifty-fifty-feature",
+    "16530920171175be38": {
+      "type": "accordion-with-image",
       "settings": {
-        "title": "",
-        "heading": "",
-        "heading_highlight": "standard",
-        "message": "<p><\/p><p><\/p><p><\/p>",
-        "cta_title": "",
-        "cta_link": "",
-        "hide_image_mobile": false,
-        "anchor_id": "",
-        "style": "standard",
-        "layout": "image-right",
-        "colour_theme": "light"
-      }
-    },
-    "1651711852cdf63075": {
-      "type": "featured-product",
-      "blocks": {
-        "efb1f771-3d38-4605-b0c8-1f312ff656c6": {
-          "type": "marker",
-          "settings": {
-            "title": "Pollution Defense"
-          }
-        },
-        "2edb7b91-b086-4a13-a2f9-d303f8b228d2": {
-          "type": "marker",
-          "settings": {
-            "title": "Tone + Texture"
-          }
-        },
-        "c79c1f73-c593-4bcb-9fd3-9a2a1b82d792": {
-          "type": "marker",
-          "settings": {
-            "title": "Moisture Barrier"
-          }
-        },
-        "46ba11cf-b2a7-4e55-b23b-acd0f9f5f7a1": {
-          "type": "marker",
-          "settings": {
-            "title": "Rapid Radiance"
-          }
-        }
-      },
-      "block_order": [
-        "efb1f771-3d38-4605-b0c8-1f312ff656c6",
-        "2edb7b91-b086-4a13-a2f9-d303f8b228d2",
-        "c79c1f73-c593-4bcb-9fd3-9a2a1b82d792",
-        "46ba11cf-b2a7-4e55-b23b-acd0f9f5f7a1"
-      ],
-      "settings": {
-        "product": "",
-        "heading": "<p>The <em>only kit<\/em> you need.<\/p>",
-        "heading_highlight": "circle",
-        "message": "<p>Nulla in dolor pretium, mollis lectus in, elementum dolor. Suspendisse sed dignissim diam. Donec porta scelerisque turpis in suscipit. Fusce lectus nisi, egestas non pretium eget, scelerisque nec felis. Nulla lacinia integer.<\/p>",
-        "aside_heading": "",
-        "aside_subheading": "",
-        "aside_message": "<p>The Lontreau product line is made up of ingredients that work as hard as you do.<\/p>",
-        "anchor_id": "",
-        "colour_theme": "light"
-      }
-    },
-    "1650503547e06baae5": {
-      "type": "full-width-feature",
-      "settings": {
-        "text_theme": "light",
-        "title": "",
         "heading": "<p><em>Formulation<\/em> Playbook<\/p>",
         "heading_highlight": "standard",
-        "message": "<p>Lontreau formulations include a synergistic blend of clinically proven ingredients specifically designed for the needs of athletes. <\/p>",
-        "cta_title": "",
-        "cta_link": "",
-        "parallax": false,
+        "message": "<p>Lontreau formulations include a synergistic blend of clinically proven ingredients specifically designed for the needs of athletes.<\/p>",
         "anchor_id": "",
-        "height": "auto",
-        "curved_arrow_enable": false
+        "layout": "image-right"
       }
     }
   },
@@ -221,8 +153,6 @@
     "main",
     "1653088721bafa576d",
     "1650503127b4b591a4",
-    "16530857024b1a9513",
-    "1651711852cdf63075",
-    "1650503547e06baae5"
+    "16530920171175be38"
   ]
 }
