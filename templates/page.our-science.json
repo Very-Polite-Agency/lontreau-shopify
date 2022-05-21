@@ -161,12 +161,28 @@
             "title": "On-the-Go Formulas",
             "message": "<p>We know you’re busy, that’s why our formulations are designed so you can just pump, emulsify, apply and go. The products in our Core Kit can be pumped directly into the palm of your hand, emulsified together, and applied all at once to simplify your endurance skincare routine.<\/p>"
           }
+        },
+        "ea60d7e6-04d8-47c8-bf67-713654f3192c": {
+          "type": "accordion",
+          "settings": {
+            "title": "Synergistic Blends",
+            "message": "<p>We err on the side of quality over quantity - just like with our training programs. That right combination of Zone2, with the right dose of high intensity and a few sprints for good measure. Our formulations include synergistic blends of ingredient dense, clinically proven ingredients specifically designed for the needs of athletes.<\/p>"
+          }
+        },
+        "89009f3a-a52a-4149-8f3a-8891abb9f234": {
+          "type": "accordion",
+          "settings": {
+            "title": "Workhorse Formulas",
+            "message": "<p>All Lontreau products are designed to have primary benefits (antioxidant, protection, etc.) and secondary benefits (hydration, healthy aging, etc), as opposed to single-ingredient, multi-step programs. That’s part of our commitment to reduce the number of products you need for an endurance skincare routine.<\/p>"
+          }
         }
       },
       "block_order": [
         "e5eb65bb-8893-4a50-8639-1cfe46037ac5",
         "87c459d0-97c0-47c3-87b7-a2010f289ab3",
-        "b85c1912-f7cf-45e6-a2da-2224807536ce"
+        "b85c1912-f7cf-45e6-a2da-2224807536ce",
+        "ea60d7e6-04d8-47c8-bf67-713654f3192c",
+        "89009f3a-a52a-4149-8f3a-8891abb9f234"
       ],
       "settings": {
         "heading": "<p><em>Formulation<\/em> Playbook<\/p>",
