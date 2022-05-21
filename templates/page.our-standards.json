@@ -13,7 +13,8 @@
         "image": "shopify:\/\/shop_images\/full-width-feature-01.png",
         "parallax": false,
         "anchor_id": "",
-        "height": "auto"
+        "height": "auto",
+        "curved_arrow_enable": false
       }
     },
     "1651706615bd39644c": {
@@ -41,10 +42,10 @@
         "0e464fce-edaa-427b-90ad-e390c3d89341"
       ],
       "settings": {
-        "title": "Our Journey to sustainable",
+        "title": "Our journey to sustainable",
         "heading": "",
         "heading_highlight": "standard",
-        "message": "<p>As athletes, we enjoy the benefits of our environment with every run, ski and ride. We choose better quality gear from ethical manufacturers, drink from reusable containers and tread lightly when we train. We do this because we’re all trying to make positive changes for a more sustainable future. We acknowledge getting better is a journey, here’s what Lontreau is doing to get there. <\/p>",
+        "message": "<p>As athletes, we enjoy the benefits of our environment with every run, ski and ride. We choose better quality gear from ethical manufacturers, drink from reusable containers and tread lightly when we train. We do this because we’re all trying to make positive changes for a more sustainable future. We acknowledge getting better is a journey, here’s what Lontreau is doing to get there.<\/p>",
         "cta_title": "",
         "cta_link": "",
         "anchor_id": ""
@@ -136,7 +137,8 @@
         "image": "shopify:\/\/shop_images\/LONTREAU--home-page--goal-setting-ingredients_2x_9f4f4844-6146-4bd1-ba65-1290d90818fb.png",
         "parallax": false,
         "anchor_id": "",
-        "height": "auto"
+        "height": "auto",
+        "curved_arrow_enable": false
       }
     }
   },
