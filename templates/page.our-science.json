@@ -154,11 +154,19 @@
             "title": "EWG Certified",
             "message": "<p>Our products are EWG Certified which means we don’t use any chemicals of concern.<\/p>"
           }
+        },
+        "b85c1912-f7cf-45e6-a2da-2224807536ce": {
+          "type": "accordion",
+          "settings": {
+            "title": "On-the-Go Formulas",
+            "message": "<p>We know you’re busy, that’s why our formulations are designed so you can just pump, emulsify, apply and go. The products in our Core Kit can be pumped directly into the palm of your hand, emulsified together, and applied all at once to simplify your endurance skincare routine.<\/p>"
+          }
         }
       },
       "block_order": [
         "e5eb65bb-8893-4a50-8639-1cfe46037ac5",
-        "87c459d0-97c0-47c3-87b7-a2010f289ab3"
+        "87c459d0-97c0-47c3-87b7-a2010f289ab3",
+        "b85c1912-f7cf-45e6-a2da-2224807536ce"
       ],
       "settings": {
         "heading": "<p><em>Formulation<\/em> Playbook<\/p>",
