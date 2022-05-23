@@ -190,7 +190,9 @@
         "message": "<p>Lontreau formulations include a synergistic blend of clinically proven ingredients specifically designed for the needs of athletes.<\/p>",
         "image": "shopify:\/\/shop_images\/LONTREAU--our-standards-page--FF_2x_516619bd-13e6-402f-8c17-9f75b2ff5464.png",
         "anchor_id": "",
-        "layout": "image-left"
+        "style": "standard",
+        "layout": "image-right",
+        "colour_theme": "light"
       }
     }
   },
