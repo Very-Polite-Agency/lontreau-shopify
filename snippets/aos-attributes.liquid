@@ -26,6 +26,24 @@
     transition: 'fade-up',
   %}
 
+  OR using Shopify's capture...
+
+  {% capture aos_attrs %}
+    {%
+      render 'aos-attributes',
+      anchor: 'some-unique-element-id-without-the-hash',
+      anchor_placement: 'top-bottom',
+      delay: 150,
+      duration: 1500,
+      easing: 'ease-in-out',
+      offset: 0,
+      once: 'true',
+      transition: 'fade-in,
+    %}
+  {% endcapture %}
+
+  <div class="my-div" {{ aos_attrs }}>Content to be animated</div>
+
 {% endcomment %}
 
 {% comment %} ## Default Values ## {% endcomment %}
