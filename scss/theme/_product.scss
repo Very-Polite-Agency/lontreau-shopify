@@ -1,5 +1,14 @@
 .product {
 
+  .collapsible {
+    &__content {
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 1.23;
+      letter-spacing: 0.07em;
+    }
+  }
+
   .section {
     &--product {
       margin-bottom: 80px;
@@ -105,6 +114,12 @@
 
   @include breakpoint(sm) {
 
+    .collapsible {
+      &__content {
+        font-size: 16px;
+      }
+    }
+
     &__price {
       font-size: 20px;
     }
@@ -121,6 +136,12 @@
 
   @include breakpoint(md) {
 
+    .collapsible {
+      &__content {
+        font-size: 16px;
+      }
+    }
+
     &__price {
       font-size: 24px;
     }
@@ -136,6 +157,12 @@
   } // min width md
 
   @include breakpoint(lg) {
+
+    .collapsible {
+      &__content {
+        font-size: 16px;
+      }
+    }
 
     &__price,
     &__title {
@@ -182,6 +209,12 @@
 
   @include breakpoint(xl) {
 
+    .collapsible {
+      &__content {
+        font-size: 17px;
+      }
+    }
+
     &__title {
       font-size: 50px;
       & + .product__type {
@@ -196,6 +229,12 @@
   } // min width xl
 
   @include breakpoint(xxl) {
+
+    .collapsible {
+      &__content {
+        font-size: 18px;
+      }
+    }
 
     &__title {
       font-size: 54px;
