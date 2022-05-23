@@ -2,6 +2,7 @@
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
 {% assign accordions = section.blocks | where: 'type', 'accordion' | default: false %}
+{% assign colour_theme = section.settings.colour_theme | default: 'light' %}
 {% assign heading = section.settings.heading | default: '' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: 'standard' %}
 {% assign image = section.settings.image | default: false %}
@@ -21,8 +22,23 @@
   data-style-{{ style }}
   data-section-padding
 >
-  <div class="{{ section_name }}__main">
+
+  {% if 'technical' == style %}
+    {% if heading != blank or message != blank %}
+      <div class="{{ section_name }}__intro intro">
+        {% if heading != blank %}
+          <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
+        {% endif %}
+        {% if message != blank %}
+          <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endif %}
+
+  <div class="{{ section_name }}__main main">
     {% render 'bs-container' %}
+
       <div class="{{ section_name }}__layout">
 
         {% if image %}
@@ -34,13 +50,14 @@
         {% if heading != blank or message != blank or accordions %}
           <div class="{{ section_name }}__content">
 
-            {% if heading != blank %}
-              <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
-            {% endif %}
-
-            {% if message != blank %}
-              <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
-            {% endif %}
+            {% unless 'technical' == style %}
+              {% if heading != blank %}
+                <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
+              {% endif %}
+              {% if message != blank %}
+                <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
+              {% endif %}
+            {% endunless %}
 
             {% if accordions %}
               <div class="{{ section_name }}__accordion">

@@ -65,7 +65,7 @@
       justify-content: space-between;
     }
 
-    &[data-layout="image-right"] {
+    &[data-layout-image-right]{
       .accordion-with-image__content {
         order: 1;
       }
@@ -75,7 +75,7 @@
       }
     }
 
-    &[data-layout="image-left"] {
+    &[data-layout-image-left] {
       .accordion-with-image__content {
         order: 2;
       }
