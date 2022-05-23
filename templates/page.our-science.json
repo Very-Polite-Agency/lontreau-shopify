@@ -28,8 +28,8 @@
         "image": "shopify:\/\/shop_images\/fifty-fifty-custom-content.png",
         "hide_image_mobile": false,
         "anchor_id": "",
-        "layout": "image-right",
-        "colour_theme": "light"
+        "layout": "image-left",
+        "colour_theme": "grey"
       }
     },
     "1650503127b4b591a4": {
