@@ -28,7 +28,7 @@
         "image": "shopify:\/\/shop_images\/fifty-fifty-custom-content.png",
         "hide_image_mobile": false,
         "anchor_id": "",
-        "layout": "image-left",
+        "layout": "image-right",
         "colour_theme": "light"
       }
     },
