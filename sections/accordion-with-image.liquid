@@ -7,12 +7,20 @@
 {% assign image = section.settings.image | default: false %}
 {% assign layout = section.settings.layout | default: 'image-right' %}
 {% assign message = section.settings.message | default: '' %}
+{% assign style = section.settings.style | default: 'standard' %}
 
 {% if section.settings.anchor_id != blank %}
   {% assign section_id = section.settings.anchor_id %}
 {% endif %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-section-height="{{ height }}" data-layout="{{ layout }}" data-section-padding>
+<div
+  class="{{ section_name }}"
+  id="{{ section_id }}"
+  data-colour-theme-{{ colour_theme }}
+  data-layout-{{ layout }}
+  data-style-{{ style }}
+  data-section-padding
+>
   <div class="{{ section_name }}__main">
     {% render 'bs-container' %}
       <div class="{{ section_name }}__layout">
@@ -138,18 +146,34 @@
       "id": "anchor_id"
     },
     {
+      "label": "Style",
+      "type": "select",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "technical", "label": "Technical" }
+      ],
+      "default": "standard",
+      "id": "style"
+    },
+    {
       "label": "Layout",
       "type": "select",
       "options": [
-        {
-          "value": "image-right", "label": "Image Right"
-        },
-        {
-          "value": "image-left", "label": "Image Left"
-        }
+        { "value": "image-right", "label": "Image Right" },
+        { "value": "image-left", "label": "Image Left" }
       ],
-      "default": "image-right",
+      "default": "image-left",
       "id": "layout"
+    },
+    {
+      "label": "Colour Theme",
+      "type": "select",
+      "options": [
+        { "value": "light", "label": "Light" },
+        { "value": "dark", "label": "Dark" }
+      ],
+      "default": "light",
+      "id": "colour_theme"
     }
   ],
   "blocks": [
