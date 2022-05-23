@@ -191,7 +191,7 @@
         "image": "shopify:\/\/shop_images\/LONTREAU--our-standards-page--FF_2x_516619bd-13e6-402f-8c17-9f75b2ff5464.png",
         "anchor_id": "",
         "style": "technical",
-        "layout": "image-right",
+        "layout": "image-left",
         "colour_theme": "dark"
       }
     }
