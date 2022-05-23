@@ -88,7 +88,7 @@
             ${products.map(product =>
               `<li class="glide__slide">
                 <div class="${sectionName}__item">
-                  ${renderProductMarkup(product)}
+                  ${renderProductCardMarkup(product)}
                 </div>
               </li>`
             ).join('')}
@@ -98,7 +98,7 @@
     `;
   };
 
-  function renderProductMarkup( product = {} ) {
+  function renderProductCardMarkup( product = {} ) {
 
     let featuredImage = {
       small: imgURLFilter(product.featured_image, 'icon'),
@@ -115,7 +115,9 @@
           </a>
         </div>
         <div class="card-product__info">
-          <strong class="card-product__title caption--2">${title}</strong>
+          <strong class="card-product__title caption--2">
+            <a class="card-product__title-link" href="/products/${handle}" title="${title}" target="_self">${title}</a>
+          </strong>
           <div class="card-product__price caption--2">${renderProductPrice(product)}</div>
         </div>
       </article>
@@ -149,16 +151,23 @@
           focusAt: 'center',
           gap: 32,
           peek: { before: 64, after: 64 },
-          perView: 5,
+          perView: 4,
         },
-        991: {
-          // up to 768
+        1399: {
+          // up to 992
           focusAt: 'center',
           gap: 32,
           peek: { before: 64, after: 64 },
           perView: 3,
         },
-        575: {
+        991: {
+          // up to 992
+          focusAt: 'center',
+          gap: 32,
+          peek: { before: 64, after: 64 },
+          perView: 2,
+        },
+        767: {
           // up to 576
           focusAt: 'center',
           gap: 32,

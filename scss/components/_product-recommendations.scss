@@ -1,12 +1,48 @@
 .product-recommendations {
 
+  .card-product {
+    background: rgba(var(--theme-colour-white), 1);
+    color: rgba(var(--theme-colour-black), 1);
+    &__info {
+      border: 1px solid rgba(var(--theme-colour-black), 1);
+      border-top: none;
+      padding: 16px;
+    }
+    &__price {
+      margin-top: 8px;
+    }
+    &__title {
+      font-size: 16px;
+      &-link {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+
   &__main {
     padding-bottom: 65px;
   }
 
-  @include breakpoint(sm) {} // min width sm
+  @include breakpoint(sm) {
+
+    .card-product {
+      &__info {}
+      &__title {
+        font-size: 17px;
+      }
+    }
+
+  } // min width sm
 
   @include breakpoint(md) {
+
+    .card-product {
+      &__info {}
+      &__title {
+        font-size: 18px;
+      }
+    }
 
     &__main {
       padding-bottom: 45px;
@@ -14,10 +50,37 @@
 
   } // min width md
 
-  @include breakpoint(lg) {} // min width lg
+  @include breakpoint(lg) {
 
-  @include breakpoint(xl) {} // min width xl
+    .card-product {
+      &__info {}
+      &__title {
+        font-size: 16px;
+      }
+    }
 
-  @include breakpoint(xxl) {} // min width xxl
+  } // min width lg
+
+  @include breakpoint(xl) {
+
+    .card-product {
+      &__info {}
+      &__title {
+        font-size: 18px;
+      }
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    .card-product {
+      &__info {}
+      &__title {
+        font-size: 20px;
+      }
+    }
+
+  } // min width xxl
 
 }
