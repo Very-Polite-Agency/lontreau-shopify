@@ -10,7 +10,7 @@
       "settings": {
         "heading": "<p>You may <em>also<\/em> like<\/p>",
         "heading_highlight": "circle",
-        "colour_theme": "dark"
+        "product_limit": 6
       }
     },
     "1651797713ccbee475": {
