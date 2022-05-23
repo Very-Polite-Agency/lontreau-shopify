@@ -19,7 +19,15 @@
 
 // ---------------------------------------- Dark
 [data-colour-theme-dark] {
+  .accordion-with-image {
+    &__content {
+      border-color: rgba(var(--theme-colour-white), 1);
+    }
+  }
   .collapsible {
+    &__content {
+      border-top-color: rgba(var(--theme-colour-white), 1);
+    }
     &__trigger {
       color: rgba(var(--theme-colour-white), 1);
     }
@@ -48,7 +56,15 @@
 
 // ---------------------------------------- Light
 [data-colour-theme-light] {
+  .accordion-with-image {
+    &__content {
+      border-color: rgba(var(--theme-colour-black), 1);
+    }
+  }
   .collapsible {
+    &__content {
+      border-top-color: rgba(var(--theme-colour-black), 1);
+    }
     &__trigger {
       color: rgba(var(--theme-colour-black), 1);
     }
