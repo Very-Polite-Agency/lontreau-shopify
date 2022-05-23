@@ -196,23 +196,23 @@
   font-weight: normal;
   font-size: 12px * $font-size-modifier;
 
-  @include breakpoints(sm) {} // min width sm
+  @include breakpoint(sm) {} // min width sm
 
-  @include breakpoints(md) {} // min width md
+  @include breakpoint(md) {} // min width md
 
-  @include breakpoints(lg) {
+  @include breakpoint(lg) {
 
     font-size: 11px * $font-size-modifier;
 
   } // min width lg
 
-  @include breakpoints(xl) {
+  @include breakpoint(xl) {
 
     font-size: 12px * $font-size-modifier;
 
   } // min width xl
 
-  @include breakpoints(xxl) {
+  @include breakpoint(xxl) {
 
     font-size: 13px * $font-size-modifier;
 
@@ -225,23 +225,23 @@
 
   min-height: var(--theme-field-min-height);
 
-  @include breakpoints(sm) {
+  @include breakpoint(sm) {
     min-height: var(--theme-field-min-height--sm);
   } // min width sm
 
-  @include breakpoints(md) {
+  @include breakpoint(md) {
     min-height: var(--theme-field-min-height--md);
   } // min width md
 
-  @include breakpoints(lg) {
+  @include breakpoint(lg) {
     min-height: var(--theme-field-min-height--lg);
   } // min width lg
 
-  @include breakpoints(xl) {
+  @include breakpoint(xl) {
     min-height: var(--theme-field-min-height--xl);
   } // min width xl
 
-  @include breakpoints(xxl) {
+  @include breakpoint(xxl) {
     min-height: var(--theme-field-min-height--xxl);
   } // min width xxl
 

@@ -139,45 +139,6 @@
     }
   }
 
-  &[data-colour-theme-grey],
-  &[data-colour-theme-light] {
-    .glide {
-      &__controls--technical {
-        border-top-color: rgba(var(--theme-colour-grass),1);
-        .button {
-          border-color: rgba(var(--theme-colour-grass),1);
-          border-bottom: none;
-          color: rgba(var(--theme-colour-grass),1);
-          background: transparent;
-          &:hover {
-            background: rgba(var(--theme-colour-grass),1);
-            color: rgba(var(--theme-colour-white),1);
-          }
-        }
-      }
-    }
-  }
-
-  &[data-colour-theme-dark] {
-    .glide {
-      &__controls--technical {
-        background: rgba(var(--theme-colour-forrest-dark),0.4);
-        border-top: none;
-        .button {
-          background: rgba(var(--theme-colour-grass),1);
-          color: rgba(var(--theme-colour-forrest),1);
-          border: none;
-          &.prev {
-            background: rgba(var(--theme-colour-grass),0.7);
-          }
-          &:hover {
-            background: rgba(var(--theme-colour-white),1);
-          }
-        }
-      }
-    }
-  }
-
   @include breakpoint(sm) {
 
     &__image {

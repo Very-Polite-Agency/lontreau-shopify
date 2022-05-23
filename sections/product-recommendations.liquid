@@ -1,8 +1,7 @@
-{%- assign section_name = 'product-recommendations' -%}
+{% assign section_name = 'product-recommendations' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
-{% assign limit = 6 %}
-{% assign colour_theme = section.settings.colour_theme | default: 'light' %}
+{% assign product_limit = section.settings.product_limit | default: 6 %}
 {% assign glider_id = section_id | append: '--glider' %}
 {% assign heading = section.settings.heading | default: '' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: false %}
@@ -12,7 +11,7 @@
   {% assign is_glider = true %}
 {% endif %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-colour-theme-{{ colour_theme }} data-section-padding>
+<div class="{{ section_name }}" id="{{ section_id }}" data-colour-theme-dark data-section-padding>
 
   <div class="{{ section_name }}__intro intro" data-text-alignment-left>
     {% render 'bs-container', state: 'open' %}
@@ -26,18 +25,18 @@
     {% render 'bs-container', state: 'closed' %}
   </div>
 
-  <div class="{{ section_name }}__products main{% if is_glider %} with-glider{% endif %}" id="{{ section_name }}__products"></div>
+  <div class="{{ section_name }}__main main" id="{{ section_name }}__main" data-product-limit="{{ product_limit }}">
+    <!-- Inject Ajax Recommended Products Here -->
+  </div>
 
-  {% if is_glider %}
-    <div class="{{ section_name }}__products-glider-controls glide__controls--technical">
-      <button class="glide__button button prev" data-target="#{{ glider_id }}">
-        <span class="button__icon">{% render 'svg', type: 'icon.arrow' %}</span>
-      </button>
-      <button class="glide__button button next" data-target="#{{ glider_id }}">
-        <span class="button__icon">{% render 'svg', type: 'icon.arrow' %}</span>
-      </button>
-    </div>
-  {% endif %}
+  <div class="{{ section_name }}__glider-controls glide__controls--technical">
+    <button class="glide__button button prev" data-target="#{{ glider_id }}">
+      <span class="button__icon">{% render 'svg', type: 'icon.arrow' %}</span>
+    </button>
+    <button class="glide__button button next" data-target="#{{ glider_id }}">
+      <span class="button__icon">{% render 'svg', type: 'icon.arrow' %}</span>
+    </button>
+  </div>
 
 </div>
 
@@ -46,7 +45,7 @@
   let sectionName = {{ section_name | json }};
   let html, is_glider;
   let productID = {{ product.id | json }};
-  let limit = {{ limit | json }};
+  let limit = {{ product_limit | json }};
   let recommendedGlider = {
     interval: null,
     id: {{ glider_id | json }},
@@ -54,9 +53,7 @@
   };
 
   document.addEventListener('DOMContentLoaded', function() {
-    console.log( 'recommendedGlider ::', recommendedGlider );
     recommendedProducts();
-    // initializeGlider();
   }, false);
 
   // alternatively, if you don't want to use a polyfil
@@ -76,7 +73,7 @@
       .then(({ products }) => {
         console.log( 'recommendedProducts ::', products );
         if (products.length > 0) {
-          document.getElementById(`${sectionName}__products`).innerHTML = renderGliderMarkup(products);
+          document.getElementById(`${sectionName}__main`).innerHTML = renderGliderMarkup(products);
           initializeGlider();
         }
       }
@@ -97,7 +94,8 @@
             ).join('')}
           </ul>
         </div>
-      </div>`;
+      </div>
+    `;
   };
 
   function renderProductMarkup( product = {} ) {
@@ -108,7 +106,6 @@
     };
     let handle = product.handle;
     let title = product.title;
-    let price = product.price;
 
     return `
       <article class="card-product card-product--${sectionName} product">
@@ -119,63 +116,63 @@
         </div>
         <div class="card-product__info">
           <strong class="card-product__title caption--2">${title}</strong>
-          <span class="card-product__price caption--2">${price}</span>
+          <div class="card-product__price caption--2">${renderProductPrice(product)}</div>
         </div>
-      </article>`;
+      </article>
+    `;
+
+  };
+
+  function renderProductPrice( product = {} ) {
+
+    let price = product.price || 0;
+    let price_compare = product.compare_at_price || 0;
+
+    return `
+      <div class="price${ price_compare ? ' with-sale-price' : '' }">
+        <span class="price__value"><span class="price__currency-symbol">$</span>${(price/100).toFixed(2)}</span>
+        <span class="price__value sale-price"><span class="price__currency-symbol">$</span>${(price_compare/100).toFixed(2)}</span>
+      </div>
+    `;
+
   };
 
   function initializeGlider() {
 
-    console.log('initializeGlider :: Initialized');
-
     recommendedGlider.glider = new Glide( `#${recommendedGlider.id}`, {
-          animationTimingFunc: 'ease-in-out',
-          animationDuration: 280,
-          autoplay: 3200,
-          breakpoints: {
-            1199: {
-              // up to 1200
-              focusAt: 'center',
-              gap: 42,
-              peek: 0,
-              perView: 6,
-            },
-            991: {
-              // up to 992
-              focusAt: 'center',
-              gap: 32,
-              peek: 0,
-              perView: 5,
-            },
-            767: {
-              // up to 768
-              focusAt: 'center',
-              gap: 32,
-              peek: { before: 55, after: 55 },
-              perView: 4,
-            },
-            575: {
-              // up to 576
-              focusAt: 'center',
-              gap: 32,
-              peek: { before: 35, after: 35 },
-              perView: 3,
-            },
-            400: {
-              // up to 576
-              focusAt: 'center',
-              gap: 32,
-              peek: { before: 15, after: 15 },
-              perView: 1,
-            },
-          },
+      animationTimingFunc: 'ease-in-out',
+      animationDuration: 280,
+      autoplay: 3200,
+      breakpoints: {
+        9999: {
+          // up to 1200
+          focusAt: 'center',
           gap: 32,
-          peek: 0,
-          hoverpause: true,
-          type: 'carousel',
-          rewind: true,
-          throttle: 50
-        });
+          peek: { before: 64, after: 64 },
+          perView: 5,
+        },
+        991: {
+          // up to 768
+          focusAt: 'center',
+          gap: 32,
+          peek: { before: 64, after: 64 },
+          perView: 3,
+        },
+        575: {
+          // up to 576
+          focusAt: 'center',
+          gap: 32,
+          peek: { before: 64, after: 64 },
+          perView: 1,
+        },
+      },
+      gap: 32,
+      peek: 0,
+      hoverpause: true,
+      type: 'carousel',
+      rewind: true,
+      throttle: 50
+    });
 
     recommendedGlider.glider.on( 'mount.after', function(event) {
           setTimeout( function() {
@@ -196,8 +193,6 @@
     });
 
     recommendedGlider.glider.mount();
-
-    console.log('initializeGlider :: Finished');
 
   };
 
@@ -320,15 +315,13 @@
         "type": "header"
       },
       {
-        "label": "Colour Theme",
-        "type": "select",
-        "options": [
-          { "value": "light", "label": "Light" },
-          { "value": "grey", "label": "Grey" },
-          { "value": "dark", "label": "Dark" }
-        ],
-        "default": "light",
-        "id": "colour_theme"
+        "label": "Max number of recommended products",
+        "type": "range",
+        "min": 3,
+        "max": 9,
+        "step": 1,
+        "default": 4,
+        "id": "product_limit"
       }
     ],
     "presets": [

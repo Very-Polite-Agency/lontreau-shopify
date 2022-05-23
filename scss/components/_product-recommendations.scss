@@ -1,0 +1,23 @@
+.product-recommendations {
+
+  &__main {
+    padding-bottom: 65px;
+  }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {
+
+    &__main {
+      padding-bottom: 45px;
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {} // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
+}
