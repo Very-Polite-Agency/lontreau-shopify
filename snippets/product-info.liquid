@@ -19,7 +19,7 @@
             <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
           </span>
         </button>
-        <div class="collapsible__main collapse show" id="{{ accordion_id }}" style="">
+        <div class="collapsible__main collapse show" id="{{ accordion_id }}">
           <div class="collapsible__content body-copy--alt">{{ description }}</div>
         </div>
       </div>
@@ -35,8 +35,8 @@
             <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
           </span>
         </button>
-        <div class="collapsible__main collapse" id="{{ accordion_id }}" style="">
-          <div class="collapsible__content body-copy--regular">{{ ingredients }}</div>
+        <div class="collapsible__main collapse" id="{{ accordion_id }}">
+          <div class="collapsible__content body-copy--alt">{{ ingredients }}</div>
         </div>
       </div>
     {% endif %}
@@ -51,8 +51,8 @@
             <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
           </span>
         </button>
-        <div class="collapsible__main collapse" id="{{ accordion_id }}" style="">
-          <div class="collapsible__content body-copy--regular">{{ usage }}</div>
+        <div class="collapsible__main collapse" id="{{ accordion_id }}">
+          <div class="collapsible__content body-copy--alt">{{ usage }}</div>
         </div>
       </div>
     {% endif %}
@@ -67,8 +67,8 @@
             <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
           </span>
         </button>
-        <div class="collapsible__main collapse" id="{{ accordion_id }}" style="">
-          <div class="collapsible__content body-copy--regular">{{ standards }}</div>
+        <div class="collapsible__main collapse" id="{{ accordion_id }}">
+          <div class="collapsible__content body-copy--alt">{{ standards }}</div>
         </div>
       </div>
     {% endif %}

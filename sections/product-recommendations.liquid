@@ -26,7 +26,18 @@
     {% render 'bs-container', state: 'closed' %}
   </div>
 
-  <div class="{{ section_name }}__main main{% if is_glider %} with-glider{% endif %}" id="{{ section_name }}__main"></div>
+  <div class="{{ section_name }}__products main{% if is_glider %} with-glider{% endif %}" id="{{ section_name }}__products"></div>
+
+  {% if is_glider %}
+    <div class="{{ section_name }}__products-glider-controls glide__controls--technical">
+      <button class="glide__button button prev" data-target="#{{ glider_id }}">
+        <span class="button__icon">{% render 'svg', type: 'icon.arrow' %}</span>
+      </button>
+      <button class="glide__button button next" data-target="#{{ glider_id }}">
+        <span class="button__icon">{% render 'svg', type: 'icon.arrow' %}</span>
+      </button>
+    </div>
+  {% endif %}
 
 </div>
 
@@ -36,12 +47,17 @@
   let html, is_glider;
   let productID = {{ product.id | json }};
   let limit = {{ limit | json }};
-  let container = document.getElementById(`${sectionName}__main`) || false;
+  let recommendedGlider = {
+    interval: null,
+    id: {{ glider_id | json }},
+    glider: {}
+  };
 
   document.addEventListener('DOMContentLoaded', function() {
+    console.log( 'recommendedGlider ::', recommendedGlider );
     recommendedProducts();
-    initializeGlider();
-  },false);
+    // initializeGlider();
+  }, false);
 
   // alternatively, if you don't want to use a polyfil
   function imgURLFilter(src, size) {
@@ -52,22 +68,24 @@
         return '_'+size+match;
       })
     ;
-  }
+  };
 
   function recommendedProducts() {
     fetch(window.Shopify.routes.root + `recommendations/products.json?product_id=${productID}&limit=${limit}`)
       .then(response => response.json())
       .then(({ products }) => {
+        console.log( 'recommendedProducts ::', products );
         if (products.length > 0) {
-          container.innerHTML = renderGliderMarkup(products);
+          document.getElementById(`${sectionName}__products`).innerHTML = renderGliderMarkup(products);
+          initializeGlider();
         }
       }
     );
-  }
+  };
 
   function renderGliderMarkup( products = [] ) {
     return `
-      <div class="glide" id="glide--recommended-products" data-glide-style="recommended-products">
+      <div class="glide" id="${recommendedGlider.id}" data-glide-style="recommended-products">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             ${products.map(product =>
@@ -80,7 +98,7 @@
           </ul>
         </div>
       </div>`;
-  }
+  };
 
   function renderProductMarkup( product = {} ) {
 
@@ -104,87 +122,171 @@
           <span class="card-product__price caption--2">${price}</span>
         </div>
       </article>`;
-  }
+  };
 
   function initializeGlider() {
 
-    console.log('initializeGlider initialized');
+    console.log('initializeGlider :: Initialized');
 
-    let glideElementID = 'glide--recommended-products';
-
-    let recommendedProductsGlide = new Glide( `#${glideElementID}`, {
-      animationTimingFunc: 'ease-in-out',
-      animationDuration: 280,
-      autoplay: 3200,
-      breakpoints: {
-        1199: {
-          // up to 1200
-          focusAt: 'center',
-          gap: 42,
-          peek: 0,
-          perView: 6,
-        },
-        991: {
-          // up to 992
-          focusAt: 'center',
+    recommendedGlider.glider = new Glide( `#${recommendedGlider.id}`, {
+          animationTimingFunc: 'ease-in-out',
+          animationDuration: 280,
+          autoplay: 3200,
+          breakpoints: {
+            1199: {
+              // up to 1200
+              focusAt: 'center',
+              gap: 42,
+              peek: 0,
+              perView: 6,
+            },
+            991: {
+              // up to 992
+              focusAt: 'center',
+              gap: 32,
+              peek: 0,
+              perView: 5,
+            },
+            767: {
+              // up to 768
+              focusAt: 'center',
+              gap: 32,
+              peek: { before: 55, after: 55 },
+              perView: 4,
+            },
+            575: {
+              // up to 576
+              focusAt: 'center',
+              gap: 32,
+              peek: { before: 35, after: 35 },
+              perView: 3,
+            },
+            400: {
+              // up to 576
+              focusAt: 'center',
+              gap: 32,
+              peek: { before: 15, after: 15 },
+              perView: 1,
+            },
+          },
           gap: 32,
           peek: 0,
-          perView: 5,
-        },
-        767: {
-          // up to 768
-          focusAt: 'center',
-          gap: 32,
-          peek: { before: 55, after: 55 },
-          perView: 4,
-        },
-        575: {
-          // up to 576
-          focusAt: 'center',
-          gap: 32,
-          peek: { before: 35, after: 35 },
-          perView: 3,
-        },
-        400: {
-          // up to 576
-          focusAt: 'center',
-          gap: 32,
-          peek: { before: 15, after: 15 },
-          perView: 1,
-        },
-      },
-      gap: 32,
-      peek: 0,
-      hoverpause: true,
-      type: 'carousel',
-      rewind: true,
-      throttle: 50
+          hoverpause: true,
+          type: 'carousel',
+          rewind: true,
+          throttle: 50
+        });
+
+    recommendedGlider.glider.on( 'mount.after', function(event) {
+          setTimeout( function() {
+            recommendedGlider.glider.update();
+          }, 250 );
+        });
+
+    ( document.querySelectorAll(`[data-target="#${recommendedGlider.id}"].next`) || [] ).forEach( button => {
+      button.addEventListener('click', function () {
+        recommendedGlider.glider.go('>');
+      });
     });
 
-    recommendedProductsGlide.on( 'mount.after', function(event) {
-      setTimeout( function() {
-        console.log( 'mounted', recommendedProductsGlide )
-        recommendedProductsGlide.update();
-      }, 250 );
+    ( document.querySelectorAll(`[data-target="#${recommendedGlider.id}"].prev`) || [] ).forEach( button => {
+      button.addEventListener('click', function () {
+        recommendedGlider.glider.go('<');
+      });
     });
 
-//     ( document.querySelectorAll(`[data-target="#${glideElementID}"].next`) || [] ).forEach( button => {
-//       button.addEventListener('click', function () {
-//         recommendedProductsGlide.go('>');
-//       });
-//     });
-//
-//     ( document.querySelectorAll(`[data-target="#${glideElementID}"].prev`) || [] ).forEach( button => {
-//       button.addEventListener('click', function () {
-//         recommendedProductsGlide.go('<');
-//       });
-//     });
+    recommendedGlider.glider.mount();
 
-    recommendedProductsGlide.mount();
+    console.log('initializeGlider :: Finished');
 
-    console.log('initializeGlider finished');
+  };
 
-  }
+  function initializeGliderWithInterval() {
+
+    console.log('initializeGliderWithInterval :: Initialized');
+
+    recommendedGlider.interval = setInterval( function() {
+
+      if ( document.getElementById(recommendedGlider.id) ) {
+
+        clearInterval(recommendedGlider.interval);
+
+        recommendedGlider.glider = new Glide( `#${recommendedGlider.id}`, {
+          animationTimingFunc: 'ease-in-out',
+          animationDuration: 280,
+          autoplay: 3200,
+          breakpoints: {
+            1199: {
+              // up to 1200
+              focusAt: 'center',
+              gap: 42,
+              peek: 0,
+              perView: 6,
+            },
+            991: {
+              // up to 992
+              focusAt: 'center',
+              gap: 32,
+              peek: 0,
+              perView: 5,
+            },
+            767: {
+              // up to 768
+              focusAt: 'center',
+              gap: 32,
+              peek: { before: 55, after: 55 },
+              perView: 4,
+            },
+            575: {
+              // up to 576
+              focusAt: 'center',
+              gap: 32,
+              peek: { before: 35, after: 35 },
+              perView: 3,
+            },
+            400: {
+              // up to 576
+              focusAt: 'center',
+              gap: 32,
+              peek: { before: 15, after: 15 },
+              perView: 1,
+            },
+          },
+          gap: 32,
+          peek: 0,
+          hoverpause: true,
+          type: 'carousel',
+          rewind: true,
+          throttle: 50
+        });
+
+        recommendedGlider.glider.on( 'mount.after', function(event) {
+          setTimeout( function() {
+            recommendedGlider.glider.update();
+          }, 250 );
+        });
+
+        ( document.querySelectorAll(`[data-target="#${recommendedGlider.id}"].next`) || [] ).forEach( button => {
+          button.addEventListener('click', function () {
+            recommendedGlider.glider.go('>');
+          });
+        });
+
+        ( document.querySelectorAll(`[data-target="#${recommendedGlider.id}"].prev`) || [] ).forEach( button => {
+          button.addEventListener('click', function () {
+            recommendedGlider.glider.go('<');
+          });
+        });
+
+        recommendedGlider.glider.mount();
+
+      }
+
+    }, 100);
+
+    console.log('initializeGliderWithInterval :: Finished');
+
+  };
 
 </script>
 

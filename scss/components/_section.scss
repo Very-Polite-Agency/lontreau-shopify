@@ -34,9 +34,7 @@
 
   &--full-width-feature {
     overflow: initial;
-    .full-width-feature__main {
-      overflow: hidden;
-    }
+    .full-width-feature__main {}
   }
 
   &--collection-hero {

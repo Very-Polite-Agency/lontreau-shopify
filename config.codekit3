@@ -1375,6 +1375,17 @@
       "sC" : 3,
       "tS" : 1
     },
+    "\/js\/recommended-products.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/recommended-products.min.js",
+      "oF" : 2,
+      "sC" : 3,
+      "tS" : 1
+    },
     "\/js\/vendors.js" : {
       "bF" : 0,
       "ft" : 64,

@@ -1,0 +1,35 @@
+//////////////////////////////////////////////////////////
+////  Recommended Products
+//////////////////////////////////////////////////////////
+
+const RecommendedProducts = (() => {
+
+  let debug = false;
+  let info = { name : 'RecommendedProducts', version : '1.0' };
+
+  let tools = new Tools();
+  let breakpoints = new Breakpoints();
+  let throttled = false;
+
+  //////////////////////////////////////////////////////////
+  ////  Init
+  //////////////////////////////////////////////////////////
+
+  const init = ( $options = false ) => {
+    if ( debug ) console.log( `${info.name}.init() v.${info.version} Started` );
+
+
+    if ( debug ) console.log( `${info.name}.init() Finished` );
+  };
+
+  //////////////////////////////////////////////////////////
+  ////  Returned
+  //////////////////////////////////////////////////////////
+
+  return {
+    debug,
+    info,
+    init,
+  };
+
+});

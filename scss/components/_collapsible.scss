@@ -2,6 +2,17 @@
 
   &__content {
     padding: 0 0 var(--bs-gutter-width) 0;
+    ol, p, ul {
+      a {
+        display: inline;
+        color: rgba(var(--theme-colour-grass),1);
+        text-decoration: none;
+        border: none;
+        &:hover {
+          color: rgba(var(--theme-colour-black),1);
+        }
+      }
+    }
   }
 
   &__trigger {

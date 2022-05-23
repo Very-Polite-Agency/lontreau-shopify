@@ -72,9 +72,7 @@
   <body class="{% render 'theme--classes' %} sticky-footer">
 
     {% section 'announcements' %}
-
     {% section 'mobile-menu' %}
-
     {% section 'header' %}
 
     <main class="{% render 'theme--classes' %} content-for-layout focus-none" role="main" tabindex="-1">
@@ -82,11 +80,6 @@
     </main>
 
     {% section 'footer' %}
-
-    {% comment %} {% case template %}
-      {% when 'collection', 'product' %}
-        {% render 'notification-add-to-cart' %}
-    {% endcase %} {% endcomment %}
 
     {% comment %}
       ## Do we need this
@@ -100,6 +93,8 @@
     {% case template %}
       {% when 'collection', 'product' %}
         <script src="{{ 'add-to-cart.min.js' | asset_url }}" defer></script>
+      {% when 'product' %}
+        <script src="{{ 'recommended-products.min.js' | asset_url }}" defer></script>
     {% endcase %}
 
   </body>
