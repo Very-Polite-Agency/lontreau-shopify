@@ -174,15 +174,16 @@
       &__item {
         &:hover {
           .sub-sub-navigation {
-            display: block;
+            display: flex;
           }
         }
       }
       &__list {
-        // display: inline-flex;
-        // flex-flow: column;
-        // justify-content: flex-start;
-        // align-items: flex-start;
+        display: inline-flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
       }
       &__wrapper {
         display: block;
@@ -196,12 +197,10 @@
       position: absolute;
       top: 0;
       display: none;
-      &__list {
-        display: flex;
-        flex-flow: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-      }
+      width: 200%;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: flex-start;
     }
 
   } // min width lg

@@ -23,6 +23,8 @@
           <div class="navigation__item">
             <a class="navigation__link" href="{{ nav_url }}">{{ nav_title }}</a>
             {% if link.links.size > 0 %}
+
+              {% comment %} Sub Navigation {% endcomment %}
               <div class="sub-navigation">
                 <div class="sub-navigation__wrapper">
                   <div class="sub-navigation__list">
@@ -35,21 +37,23 @@
                     <div class="sub-navigation__item">
                       <a class="sub-navigation__link" href="{{ sub_nav_url }}">{{ sub_nav_title }}</a>
                       {% if sub_link.links.size > 0 %}
+
+                        {% comment %} Sub Sub Navigation {% endcomment %}
                         <div class="sub-sub-navigation">
-                          <div class="sub-sub-navigation__list">
-                            {% for sub_sub_link in sub_link.links %}
+                          {% for sub_sub_link in sub_link.links %}
 
-                              {% assign sub_sub_nav_active = sub_sub_link.active | default: false %}
-                              {% assign sub_sub_nav_title = sub_sub_link.title | default: '' %}
-                              {% assign sub_sub_nav_url = sub_sub_link.url | default: '' %}
+                            {% assign sub_sub_nav_active = sub_sub_link.active | default: false %}
+                            {% assign sub_sub_nav_title = sub_sub_link.title | default: '' %}
+                            {% assign sub_sub_nav_url = sub_sub_link.url | default: '' %}
 
-                              <div class="sub-sub-navigation__item">
-                                <a class="sub-navigation__link" href="{{ sub_sub_nav_url }}">{{ sub_sub_nav_title }}</a>
-                              </div>
+                            <div class="sub-sub-navigation__item">
+                              <a class="sub-navigation__link" href="{{ sub_sub_nav_url }}">{{ sub_sub_nav_title }}</a>
+                            </div>
 
-                            {% endfor %}
-                          </div>
+                          {% endfor %}
                         </div>
+
+
                       {% endif %}
                     </div>
 

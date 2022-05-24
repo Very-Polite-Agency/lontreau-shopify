@@ -86,7 +86,6 @@
     color: rgba(var(--theme-colour-white),1);
   }
 
-
   @include breakpoint(sm) {} // min width sm
 
   @include breakpoint(md) {} // min width md
