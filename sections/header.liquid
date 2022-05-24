@@ -12,7 +12,7 @@
   </div>
 
   {% if menu_main %}
-    <nav class="{{ section_name }}__main-navigation navigation navigation--main">
+    <nav class="{{ section_name }}__main-navigation navigation navigation--main" id="{{ section_name }}__navigation">
       <div class="navigation__list">
         {% for link in linklists[menu_main].links %}
 
@@ -23,33 +23,39 @@
           <div class="navigation__item">
             <a class="navigation__link" href="{{ nav_url }}">{{ nav_title }}</a>
             {% if link.links.size > 0 %}
-              <div class="sub-navigation__list">
-                {% for sub_link in link.links %}
+              <div class="sub-navigation">
+                <div class="sub-navigation__wrapper">
+                  <div class="sub-navigation__list">
+                  {% for sub_link in link.links %}
 
-                  {% assign sub_nav_active = sub_link.active | default: false %}
-                  {% assign sub_nav_title = sub_link.title | default: '' %}
-                  {% assign sub_nav_url = sub_link.url | default: '' %}
+                    {% assign sub_nav_active = sub_link.active | default: false %}
+                    {% assign sub_nav_title = sub_link.title | default: '' %}
+                    {% assign sub_nav_url = sub_link.url | default: '' %}
 
-                  <div class="sub-navigation__item">
-                    <a class="sub-navigation__link" href="{{ sub_nav_url }}">{{ sub_nav_title }}</a>
-                    {% if sub_link.links.size > 0 %}
-                      <div class="sub-sub-navigation__list">
-                        {% for sub_sub_link in sub_link.links %}
+                    <div class="sub-navigation__item">
+                      <a class="sub-navigation__link" href="{{ sub_nav_url }}">{{ sub_nav_title }}</a>
+                      {% if sub_link.links.size > 0 %}
+                        <div class="sub-sub-navigation">
+                          <div class="sub-sub-navigation__list">
+                            {% for sub_sub_link in sub_link.links %}
 
-                          {% assign sub_sub_nav_active = sub_sub_link.active | default: false %}
-                          {% assign sub_sub_nav_title = sub_sub_link.title | default: '' %}
-                          {% assign sub_sub_nav_url = sub_sub_link.url | default: '' %}
+                              {% assign sub_sub_nav_active = sub_sub_link.active | default: false %}
+                              {% assign sub_sub_nav_title = sub_sub_link.title | default: '' %}
+                              {% assign sub_sub_nav_url = sub_sub_link.url | default: '' %}
 
-                          <div class="sub-sub-navigation__item">
-                            <a class="sub-navigation__link" href="{{ sub_sub_nav_url }}">{{ sub_sub_nav_title }}</a>
+                              <div class="sub-sub-navigation__item">
+                                <a class="sub-navigation__link" href="{{ sub_sub_nav_url }}">{{ sub_sub_nav_title }}</a>
+                              </div>
+
+                            {% endfor %}
                           </div>
+                        </div>
+                      {% endif %}
+                    </div>
 
-                        {% endfor %}
-                      </div>
-                    {% endif %}
-                  </div>
-
-                {% endfor %}
+                  {% endfor %}
+                </div>
+                </div>
               </div>
             {% endif %}
           </div>
@@ -59,7 +65,7 @@
     </nav>
   {% endif %}
 
-  <nav class="{{ section_name }}__cart-navigation navigation navigation--cart">
+  <nav class="{{ section_name }}__cart-navigation d-none">
     <div class="navigation__item cart">
       <a class="navigation__link link" href="/cart" title="Cart">
         <span class="link__icon">{% render 'svg', type: 'icon.cart' %}</span>

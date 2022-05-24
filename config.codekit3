@@ -281,6 +281,17 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/assets\/main.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/main.min.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
     "\/assets\/media-gallery.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -552,6 +563,17 @@
       "sC" : 3,
       "tS" : 1
     },
+    "\/assets\/vendors.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/vendors.min.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
     "\/assets\/video-section.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -675,6 +697,17 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/assets\/_gliders.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/js\/modules\/_header--LEGACY.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/_header--LEGACY.min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 1

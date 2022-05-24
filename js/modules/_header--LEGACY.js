@@ -15,25 +15,27 @@ const Header = (() => {
   ////  ABC
   //////////////////////////////////////////////////////////
 
-  const setSubnavigationWidthFromNavigationWidth = () => {
+  const abc = () => {
 
     // let headerNavigationWidth = mainNavigation.offsetWidth || 0;
     // let headerNavigationOffset = mainNavigation.getBoundingClientRect() || {};
     // let headerNavigationOffsetLeft = mainNavigation.left || 0;
 
-    let navigation = document.getElementById('header__navigation') || false;
-    let subNaviation = {
-      main: navigation.querySelectorAll('.sub-navigation') || [],
-      list: navigation.querySelectorAll('.sub-navigation__list') || [],
-      wrapper: navigation.querySelectorAll('.sub-navigation__wrapper') || [],
+    let navigation = {
+      element: document.querySelector('.header__main-navigation') || false,
+    };
+    let subnaviation = {
+      main: navigation.element.querySelectorAll('.sub-navigation__main') || [],
+      media: navigation.element.querySelectorAll('.sub-navigation__media') || [],
+      wrapper: navigation.element.querySelectorAll('.sub-navigation__wrapper') || []
     };
 
-    if ( navigation ) {
-      navigation.width = navigation.offsetWidth || 0;
-      navigation.offsetLeft = navigation.getBoundingClientRect().left || 0;
-      if ( navigation && subNaviation.wrapper ) {
-        subNaviation.wrapper.forEach( element => {
-          element.style.width = navigation.width + 'px';
+    if ( navigation.element ) {
+      navigation.width = navigation.element.offsetWidth || 0;
+      navigation.offsetLeft = navigation.element.getBoundingClientRect().left || 0;
+      if ( navigation.width && subnaviation.wrapper ) {
+        subnaviation.wrapper.forEach( wrapper => {
+          wrapper.style.width = navigation.width + 'px';
         });
       }
     }
@@ -141,14 +143,16 @@ const Header = (() => {
 
     if ( debug ) console.log( `${info.name}.init() v.${info.version} Started` );
 
-    setSubnavigationWidthFromNavigationWidth();
+    abc();
+    hover();
+    hoverSubNavigation();
 
     // ---------------------------------------- On resize, execute functions
     window.addEventListener( 'resize', function(e) {
       if ( !throttled ) {
         window.requestAnimationFrame(function() {
 
-          setSubnavigationWidthFromNavigationWidth();
+          abc();
           throttled = false;
 
         });

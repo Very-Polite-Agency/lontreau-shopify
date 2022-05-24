@@ -79,6 +79,11 @@
   .scroll-position--scrolled & {
     background: rgba(var(--theme-colour-white),1);
     color: rgba(var(--theme-colour-black),1);
+    .navigation {
+      &__link {
+        color: rgba(var(--theme-colour-black),1);
+      }
+    }
   }
 
   .mobile-menu--active & {
@@ -92,13 +97,6 @@
   @include breakpoint(md) {} // min width md
 
   @include breakpoint(lg) {
-
-    .navigation {
-      display: block;
-      &--cart {
-        display: none;
-      }
-    }
 
     .navigation__link,
     .sub-navigation__link,
@@ -115,21 +113,95 @@
       width: auto;
     }
 
-    .sub-navigation__list,
-    .sub-sub-navigation__list {
+    .sub-navigation,
+    .sub-sub-navigation {
       display: none;
     }
 
-    .navigation__list {
-
+    // ---------------------------------------- Navigation
+    .navigation {
+      display: block;
+      &__link {
+        display: inline-flex;
+        height: var(--theme-header-height);
+        color: rgba(var(--theme-colour-white), 1);
+        align-items: center;
+        justify-items: center;
+        &:after {
+          transition: opacity var(--theme-transition-duration);
+          display: block;
+          content: '';
+          position: absolute;
+          z-index: -1;
+          background: url('./LONTREAU--highlight--stroke.svg');
+          background-repeat: no-repeat;
+          background-position: center left;
+          background-size: 100% auto;
+          height: 10px;
+          bottom: -4px;
+          left: calc( 28px + 1% );
+          width: calc( 102% - (28px * 2));
+          opacity: 0;
+        }
+        &:active,
+        &:hover {
+          color: rgba(var(--theme-colour-black), 1);
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+      &__item {
+        &:hover {
+          .sub-navigation {
+            display: flex;
+          }
+        }
+      }
     }
 
-    .sub-navigation__list {
-
+    // ---------------------------------------- Sub-navigation
+    .sub-navigation {
+      background: rgba(var(--theme-colour-forrest-dark), 1);
+      top: var(--theme-header-height);
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      border: 1px solid red;
+      &__item {
+        &:hover {
+          .sub-sub-navigation {
+            display: block;
+          }
+        }
+      }
+      &__list {
+        // display: inline-flex;
+        // flex-flow: column;
+        // justify-content: flex-start;
+        // align-items: flex-start;
+      }
+      &__wrapper {
+        display: block;
+        width: 500px;
+        margin: auto;
+      }
     }
 
-    .sub-sub-navigation__list {
-
+    // ---------------------------------------- Sub-sub-navigation
+    .sub-sub-navigation {
+      position: absolute;
+      top: 0;
+      display: none;
+      &__list {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
     }
 
   } // min width lg
