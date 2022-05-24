@@ -1,0 +1,35 @@
+.add-to-cart-notification {
+
+  transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: fixed;
+  width: 400px;
+  background: white;
+  right: 0;
+  border: black;
+  top: calc(var(--theme-header-height) + 32px);
+  transform: translate3d( 400px, 0, 0 );
+  border: 1px solid rgba(var(--theme-colour-black), 1);
+
+  &__button {
+    &-close {
+      height: 18px;
+      width: 18px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__layout {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+  }
+
+  &.active {
+    transform: translate3d( -32px, 0, 0 );
+  }
+
+}

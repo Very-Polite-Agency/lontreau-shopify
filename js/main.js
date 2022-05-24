@@ -2,6 +2,8 @@
 // @codekit-prepend quiet "../node_modules/@glidejs/glide/dist/glide.min.js";
 // @codekit-prepend quiet "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 // @codekit-prepend quiet "../node_modules/swiper/swiper-bundle.min.js";
+// @codekit-prepend quiet "../node_modules/notyf/notyf.min.js";
+// @codekit-prepend quiet "../node_modules/notyf/notyf.min.js";
 
 // @codekit-prepend "./modules/_credits.js";
 // @codekit-prepend "./modules/_breakpoints.js";
@@ -15,7 +17,6 @@
 // @codekit-prepend "./modules/_sections.js";
 // @codekit-prepend "./modules/_sizing.js";
 // @codekit-prepend "./modules/_stepper.js";
-// @codekit-prepend "./modules/_theme.js";
 // @codekit-prepend "./modules/_tools.js";
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -34,7 +35,7 @@ let sizing = new Sizing();
 let stepper = new Stepper();
 let tools = new Tools();
 
-Theme.init([
+[
   forms,
   gliders,
   header,
@@ -45,7 +46,7 @@ Theme.init([
   sizing,
   stepper,
   credits,
-]);
+].forEach(( module ) => { module.init(); });
 
 AOS.init({
   offset: 150,                // offset (in px) from the original trigger point
@@ -53,11 +54,6 @@ AOS.init({
   duration: 550,              // values from 0 to 3000, with step 50ms
   easing: 'ease-in-out',      // default easing for AOS animations
 });
-
-// const swiper = document.querySelector('.swiper').swiper;
-//
-// // Now you can use all slider methods like
-// swiper.slideNext();
 
 var swiperThumbs = new Swiper(".swiper-thumbs", {
   autoHeight: false,
@@ -87,3 +83,139 @@ var swiper = new Swiper(".swiper-main", {
     swiper: swiperThumbs
   }
 });
+
+let notificationsObj = {};
+let nofiticationsArr = [];
+
+( document.querySelectorAll('.js--add-to-cart') || [] ).forEach( button => {
+  button.addEventListener('click', event => {
+    event.preventDefault();
+    addProductToCartFromButton( button );
+  });
+});
+
+function addProductToCartFromButton( $button = false ) {
+
+  let variantID = parseInt( $button.dataset.variantId ) || 123456;
+  let quantity = parseInt( $button.dataset.quantity ) || 1;
+  let image = $button.dataset.featuredImage || '';
+  let config = {
+    method: 'post',
+    url: window.Shopify.routes.root + 'cart/add.js',
+    headers: { 'Content-Type': 'application/json' },
+    data: { 'items': [{ 'id': variantID, 'quantity': quantity }] }
+  };
+
+  axios( config ).then(function (response) {
+    notifyUser( response.data.items );
+    updateCartItemsCount();
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+  .then(function () {});
+
+};
+
+function notifyUser( $products = [] ) {
+  if ( $products ) {
+    $products.forEach( (product, index) => {
+
+
+
+      let n = new Noty({
+        callbacks: {
+          beforeShow: function() {},
+          onShow: function() {},
+          afterShow: function() {},
+          onClose: function() {},
+          afterClose: function() {},
+          onHover: function() {},
+          onTemplate: function() {
+            this.barDom.innerHTML = '<div class="my-custom-template noty_body">' + product.product_title + '<div>';
+          }
+        },
+        layout: 'topRight',
+        text: product.product_title,
+        theme: 'mint',
+        timeout: '4000',
+        type: 'success',
+      }).show();
+
+      nofiticationsArr.push(n);
+
+      console.log( 'notifyUser ::', { product, index, nofiticationsArr });
+
+
+      // document.getElementById(`add-to-cart-notification`).innerHTML = renderNotificationMarkup( product );
+      // setTimeout(function(){
+      //   document.getElementById(`add-to-cart-notification`).classList.add('active');
+      //   setTimeout(function(){
+      //     // document.getElementById(`add-to-cart-notification`).classList.remove('active');
+      //   }, 4500);
+      // }, 500);
+
+
+    });
+  }
+};
+
+function renderNotificationMarkup( $product = {} ) {
+
+  let version = '1.1';
+  let blockName = 'add-to-cart-notification';
+  let variantID = $product.hasOwnProperty('variant_id') ? $product.variant_id : 123456789;
+  let image = $product.hasOwnProperty('featured_image') ? $product.featured_image.url : '';
+  let productTitle = $product.hasOwnProperty('product_title') ? $product.product_title : 'Defense Barrier';
+
+
+//       let imageSrc = product.featured_image.url || ''
+//       let image = new Image();
+//
+//       image.addEventListener('load', function() {
+//         console.log('loaded');
+//         showNotification( product );
+//       });
+//
+//       image.src = imageSrc;
+
+
+  return `
+    <div class="${blockName}__layout">
+      <div class="${blockName}__media">
+        <div class="${blockName}__background-image lazyload lazyload-item lazyload-item--image lazyload-item--background" data-bg="${image}"></div>
+      </div>
+      <div class="${blockName}__content">
+        <div class="${blockName}__message label--primary">Added to Cart!</div>
+        <div class="${blockName}__product-title body-copy--regular">${productTitle}</div>
+      </div>
+      <button class="${blockName}__button-close button--close" type="button">x</button>
+    </div>
+  `;
+
+};
+
+function printCartItemsCount( $count = 0 ) {
+  ( document.querySelectorAll('.js--cart-items-total') || [] ).forEach( item => {
+    item.innerHTML = `(${$count})`;
+    if ( $count > 0 ) {
+      item.classList.add('has-items');
+    } else {
+      item.classList.remove('has-items');
+    }
+  });
+};
+
+function updateCartItemsCount() {
+  let config = {
+    method: 'get',
+    url: window.Shopify.routes.root + 'cart.js'
+  };
+  axios( config ).then(function (response) {
+    printCartItemsCount( response.data.item_count );
+  })
+  .catch(function (error) {
+    console.log(error);
+  })
+  .then(function () {});
+};

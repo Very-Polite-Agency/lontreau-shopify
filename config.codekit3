@@ -1364,17 +1364,6 @@
       "sC" : 3,
       "tS" : 1
     },
-    "\/js\/modules\/_theme.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/assets\/_theme.min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 1
-    },
     "\/js\/modules\/_tools.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -1936,6 +1925,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/_accordion-with-image.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/components\/_add-to-cart-notification.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/_add-to-cart-notification.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,

@@ -150,6 +150,7 @@
 @import '../node_modules/@glidejs/glide/dist/css/glide.core.min';
 // @import '../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
 @import '../node_modules/aos/dist/aos';
+@import '../node_modules/notyf/notyf.min';
 
 //////////////////////////////////////////////////////////
 ////  Components
@@ -176,6 +177,7 @@
 
 @import './components/accordion-education.scss';
 @import './components/accordion-with-image.scss';
+@import './components/add-to-cart-notification';
 @import './components/aos.scss';
 @import './components/badge.scss';
 @import './components/card-article.scss';

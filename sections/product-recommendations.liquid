@@ -56,17 +56,6 @@
     recommendedProducts();
   }, false);
 
-  // alternatively, if you don't want to use a polyfil
-  function imgURLFilter(src, size) {
-    // remove any current image size then add the new image size
-    return src
-      .replace(/_(pico|icon|thumb|small|compact|medium|large|grande|original|1024x1024|2048x2048|master)+\./g, '.')
-      .replace(/\.jpg|\.png|\.gif|\.jpeg/g, function(match) {
-        return '_'+size+match;
-      })
-    ;
-  };
-
   function recommendedProducts() {
     fetch(window.Shopify.routes.root + `recommendations/products.json?product_id=${productID}&limit=${limit}`)
       .then(response => response.json())
@@ -101,8 +90,8 @@
   function renderProductCardMarkup( product = {} ) {
 
     let featuredImage = {
-      small: imgURLFilter(product.featured_image, 'icon'),
-      large: imgURLFilter(product.featured_image, 'large')
+      small: Theme.imgURLFilter(product.featured_image, 'icon'),
+      large: Theme.imgURLFilter(product.featured_image, 'large')
     };
     let handle = product.handle;
     let title = product.title;

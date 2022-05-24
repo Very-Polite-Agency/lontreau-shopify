@@ -47,6 +47,20 @@
   		<meta name="robots" content="noindex, nofollow">
     {% endif %}
 
+    <script>
+      var Theme = Theme || {};
+      Theme.product = {{ product | json }} || {};
+      Theme.collection = {{ collection | json }} || {};
+      Theme.imgURLFilter = function(src, size) {
+        return src
+          .replace(/_(pico|icon|thumb|small|compact|medium|large|grande|original|1024x1024|2048x2048|master)+\./g, '.')
+          .replace(/\.jpg|\.png|\.gif|\.jpeg/g, function(match) {
+            return '_'+size+match;
+          })
+        ;
+      };
+    </script>
+
     <script src="{{ 'vendors.min.js' | asset_url }}" async></script>
 
     {{ content_for_header }}
@@ -92,6 +106,7 @@
 
     {% case template %}
       {% when 'collection', 'product' %}
+        <section class="add-to-cart-notification" id="add-to-cart-notification"></section>
         <script src="{{ 'add-to-cart.min.js' | asset_url }}" defer></script>
       {% when 'product' %}
         <script src="{{ 'recommended-products.min.js' | asset_url }}" defer></script>
