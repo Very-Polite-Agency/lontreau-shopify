@@ -1,0 +1,88 @@
+.notyf {
+  &__confirmation-message {
+    color: rgba(var(--theme-colour-grass), 1);
+    font-size: 16px;
+  }
+  &__content {
+    padding: 0 0 0 15px;
+    flex: 1;
+  }
+  &__dismiss {
+    width: 18px;
+    height: 18px;
+    top: -9px;
+    right: -9px;
+    margin: 0;
+    padding: 0;
+    &-btn {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      outline: none;
+      border: 1px solid rgba(var(--theme-colour-black), 1);
+      border-radius: 100%;
+      background: rgba(var(--theme-colour-white), 1);
+      color: rgba(var(--theme-colour-black), 1);
+      opacity: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:after{
+        display: block;
+        content: "\00d7";
+        left: unset;
+        top: unset;
+        color: black;
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        background: none;
+        transform: rotate(0deg);
+        border-radius: 0;
+        position: relative;
+        font-weight: 300;
+        margin-top: -1px;
+      }
+      &:before {
+        display: none;
+      }
+      &:hover {
+        border: 1px solid rgba(var(--theme-colour-black), 1);
+        background: rgba(var(--theme-colour-black), 1);
+        color: rgba(var(--theme-colour-white), 1);
+        opacity: 1;
+        &:after{
+          color: rgba(var(--theme-colour-white), 1);;
+        }
+      }
+    }
+  }
+  &__layout {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+  }
+  &__media {
+    border: 1px solid rgba(var(--theme-colour-black), 1);
+    width: 62px;
+    height: 62px;
+    position: relative;
+  }
+  &__product-title {
+    color: rgba(var(--theme-colour-black), 1);
+    font-size: 16px;
+  }
+  &__toast {
+    background: rgba(var(--theme-colour-white), 1);
+    border: 1px solid rgba(var(--theme-colour-black), 1);
+    padding: 0;
+    max-width: 330px;
+    min-width: 300px;
+    overflow: visible;
+  }
+  &__wrapper {
+    padding: 0 !important;
+  }
+}

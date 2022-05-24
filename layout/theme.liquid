@@ -107,7 +107,6 @@
     {% case template %}
       {% when 'collection', 'product' %}
         <section class="add-to-cart-notification" id="add-to-cart-notification"></section>
-        <script src="{{ 'add-to-cart.min.js' | asset_url }}" defer></script>
       {% when 'product' %}
         <script src="{{ 'recommended-products.min.js' | asset_url }}" defer></script>
     {% endcase %}

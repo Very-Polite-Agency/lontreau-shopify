@@ -3,7 +3,6 @@
 // @codekit-prepend quiet "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 // @codekit-prepend quiet "../node_modules/swiper/swiper-bundle.min.js";
 // @codekit-prepend quiet "../node_modules/notyf/notyf.min.js";
-// @codekit-prepend quiet "../node_modules/notyf/notyf.min.js";
 
 // @codekit-prepend "./modules/_credits.js";
 // @codekit-prepend "./modules/_breakpoints.js";
@@ -117,35 +116,64 @@ function addProductToCartFromButton( $button = false ) {
 
 };
 
+function abc() {
+  return `
+    <h1>TESTING</h1>
+  `;
+}
+
 function notifyUser( $products = [] ) {
   if ( $products ) {
     $products.forEach( (product, index) => {
 
-
-
-      let n = new Noty({
-        callbacks: {
-          beforeShow: function() {},
-          onShow: function() {},
-          afterShow: function() {},
-          onClose: function() {},
-          afterClose: function() {},
-          onHover: function() {},
-          onTemplate: function() {
-            this.barDom.innerHTML = '<div class="my-custom-template noty_body">' + product.product_title + '<div>';
-          }
+      let notyf = new Notyf({
+        dismissible: true,
+        duration: 4200,
+        position: {
+          x: 'right',
+          y: 'top',
         },
-        layout: 'topRight',
-        text: product.product_title,
-        theme: 'mint',
-        timeout: '4000',
-        type: 'success',
-      }).show();
+        types: [
+          {
+            type: 'info',
+            background: 'transparent',
+            icon: false
+          }
+        ]
+      });
 
-      nofiticationsArr.push(n);
+      notyf.open({
+        type: 'info',
+        message: renderNotificationMarkup( product )
+      });
+
+      // notyf.success(`${product.product_title} Added to cart!`);
+
+
+//       let n = new Notyf({
+//         callbacks: {
+//           beforeShow: function() {},
+//           onShow: function() {},
+//           afterShow: function() {},
+//           onClose: function() {},
+//           afterClose: function() {},
+//           onHover: function() {},
+//           onTemplate: function() {
+//             this.barDom.innerHTML = '<div class="my-custom-template noty_body">' + product.product_title + '<div>';
+//           }
+//         },
+//         layout: 'topRight',
+//         text: product.product_title,
+//         theme: 'mint',
+//         timeout: '4000',
+//         type: 'success',
+//       });
+//
+//       n.show();
+
+      // nofiticationsArr.push(n);
 
       console.log( 'notifyUser ::', { product, index, nofiticationsArr });
-
 
       // document.getElementById(`add-to-cart-notification`).innerHTML = renderNotificationMarkup( product );
       // setTimeout(function(){
@@ -163,22 +191,9 @@ function notifyUser( $products = [] ) {
 function renderNotificationMarkup( $product = {} ) {
 
   let version = '1.1';
-  let blockName = 'add-to-cart-notification';
-  let variantID = $product.hasOwnProperty('variant_id') ? $product.variant_id : 123456789;
+  let blockName = 'notyf';
   let image = $product.hasOwnProperty('featured_image') ? $product.featured_image.url : '';
   let productTitle = $product.hasOwnProperty('product_title') ? $product.product_title : 'Defense Barrier';
-
-
-//       let imageSrc = product.featured_image.url || ''
-//       let image = new Image();
-//
-//       image.addEventListener('load', function() {
-//         console.log('loaded');
-//         showNotification( product );
-//       });
-//
-//       image.src = imageSrc;
-
 
   return `
     <div class="${blockName}__layout">
@@ -186,10 +201,9 @@ function renderNotificationMarkup( $product = {} ) {
         <div class="${blockName}__background-image lazyload lazyload-item lazyload-item--image lazyload-item--background" data-bg="${image}"></div>
       </div>
       <div class="${blockName}__content">
-        <div class="${blockName}__message label--primary">Added to Cart!</div>
+        <div class="${blockName}__confirmation-message label--primary">Added to Cart!</div>
         <div class="${blockName}__product-title body-copy--regular">${productTitle}</div>
       </div>
-      <button class="${blockName}__button-close button--close" type="button">x</button>
     </div>
   `;
 

@@ -12,13 +12,12 @@
     "axios": "^0.27.2",
     "bootstrap": "^5.1.3",
     "lazysizes": "^5.3.2",
+    "noty": "^3.2.0-beta-deprecated",
     "notyf": "^3.10.0",
     "swiper": "^8.1.5",
     "validator": "^13.7.0"
   },
-  "optionalDependencies": {},
   "license": "UNLICENSED",
-  "devDependencies": {},
   "author": "",
   "name": "codekit-project"
 }
