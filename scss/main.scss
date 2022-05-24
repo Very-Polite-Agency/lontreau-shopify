@@ -107,7 +107,7 @@
   --theme-container--xl: #{ map-get( $container-max-widths, 'xl' ) };
   --theme-container--xxl: #{ map-get( $container-max-widths, 'xxl' ) };
 
-  // ---------------------------------------- Header
+  // ---------------------------------------- Header | Height
   --theme-header-height: #{ map-get( $theme-header-heights, 'base' ) };
   --theme-header-height--sm: #{ map-get( $theme-header-heights, 'sm' ) };
   --theme-header-height--md: #{ map-get( $theme-header-heights, 'md' ) };
@@ -115,7 +115,15 @@
   --theme-header-height--xl: #{ map-get( $theme-header-heights, 'xl' ) };
   --theme-header-height--xxl: #{ map-get( $theme-header-heights, 'xxl' ) };
 
-    // ---------------------------------------- Header
+  // ---------------------------------------- Header | Sub-navigation Width
+  --theme-header-sub-navigation-width: #{ map-get( $theme-header-sub-navigation-widths, 'base' ) };
+  --theme-header-sub-navigation-width--sm: #{ map-get( $theme-header-sub-navigation-widths, 'sm' ) };
+  --theme-header-sub-navigation-width--md: #{ map-get( $theme-header-sub-navigation-widths, 'md' ) };
+  --theme-header-sub-navigation-width--lg: #{ map-get( $theme-header-sub-navigation-widths, 'lg' ) };
+  --theme-header-sub-navigation-width--xl: #{ map-get( $theme-header-sub-navigation-widths, 'xl' ) };
+  --theme-header-sub-navigation-width--xxl: #{ map-get( $theme-header-sub-navigation-widths, 'xxl' ) };
+
+    // ---------------------------------------- Hero
   --theme-hero-height: #{ map-get( $theme-hero-heights, 'base' ) };
   --theme-hero-height--sm: #{ map-get( $theme-hero-heights, 'sm' ) };
   --theme-hero-height--md: #{ map-get( $theme-hero-heights, 'md' ) };

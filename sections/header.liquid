@@ -40,6 +40,7 @@
                   <div class="sub-navigation__list">
                   {% for sub_link in link.links %}
 
+                    {% assign featured_image = false %}
                     {% assign sub_nav_active = sub_link.active | default: false %}
                     {% assign sub_nav_title = sub_link.title | default: '' %}
                     {% assign sub_nav_url = sub_link.url | default: '' %}
@@ -48,7 +49,14 @@
                       {% assign sub_nav_has_links = true %}
                     {% endif %}
 
-                    <div class="sub-navigation__item{% if sub_nav_has_links %} has-links{% endif %}">
+                    {% case sub_link.type %}
+                      {% when 'collection_link' %}
+                        {% assign featured_image = sub_link.object.value.image| default: '' %}
+                      {% when 'page_link' %}
+                        {% assign featured_image = sub_link.object.value.metafields.featured.image | default: '' %}
+                    {% endcase %}
+
+                    <div class="sub-navigation__item{% if sub_nav_has_links %} has-links{% endif %}" data-featured-image="{{ featured_image }}">
                       <a class="sub-navigation__link link{% if sub_nav_active %} active{% endif %}" href="{{ sub_nav_url }}">
                         <span class="link__title">{{ sub_nav_title }}</span>
                         {% if sub_nav_has_links %}

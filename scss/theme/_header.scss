@@ -192,11 +192,10 @@
         width: 100%;
       }
       &__background {
-        width: calc(100% - 275px);
+        width: calc(100% - var(--theme-header-sub-navigation-width--lg));
         height: 100%;
         top: 0;
-        right: 0;
-        border: 1px solid yellow;
+        left: var(--theme-header-sub-navigation-width--lg);
       }
       &__item {
         display: block;
@@ -227,13 +226,13 @@
         align-items: flex-start;
         position: relative;
         padding: 28px 0;
-        width: 275px;
+        width: var(--theme-header-sub-navigation-width--lg);
       }
       &__wrapper {
+        position: relative;
         display: block;
         width: 500px;
         margin: auto;
-        border: 1px solid red;
       }
     }
 

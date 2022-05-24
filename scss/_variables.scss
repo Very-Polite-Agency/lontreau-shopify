@@ -119,6 +119,16 @@ $theme-header-heights: (
   'xxl': 100px
 );
 
+// ---------------------------------------- Header Height
+$theme-header-sub-navigation-widths: (
+  'base': 'auto',
+  'sm': 'auto',
+  'md': 'auto',
+  'lg': 275px,
+  'xl': 275px,
+  'xxl': 275px
+);
+
 $theme-hero-heights: (
   'base': 100vh,
   'sm': 66vh,
