@@ -55,6 +55,11 @@ AOS.init({
   once: true,
 });
 
+window.addEventListener('load', (event) => {
+  console.log('page is fully loaded');
+  AOS.refresh();
+});
+
 var swiperThumbs = new Swiper(".swiper-thumbs", {
   autoHeight: false,
   breakpoints: {
