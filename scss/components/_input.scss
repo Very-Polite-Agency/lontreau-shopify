@@ -23,6 +23,8 @@
   font-size: 20px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+  -webkit-appearance: none;
+  border-radius: 0;
 
   &--primary {
     @extend .input;
