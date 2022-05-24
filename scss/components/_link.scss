@@ -15,4 +15,26 @@
   line-height: 1;
   text-decoration: none;
   background: transparent;
+
+  span {
+    display: block;
+  }
+
+  svg {
+
+  }
+
+  &__icon {
+    transition:
+      color var(--theme-transition-duration),
+      opacity var(--theme-transition-duration),
+      transform var(--theme-transition-duration);
+    svg {
+      display: block;
+      height: 100%;
+      width: auto;
+      fill: currentColor;
+    }
+  }
+
 }

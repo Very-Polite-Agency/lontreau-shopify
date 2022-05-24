@@ -45,7 +45,9 @@
                     <div class="sub-navigation__item{% if sub_nav_has_links %} has-links{% endif %}">
                       <a class="sub-navigation__link link{% if sub_nav_active %} active{% endif %}" href="{{ sub_nav_url }}">
                         <span class="link__title">{{ sub_nav_title }}</span>
-                        <span class="link__icon">{% render 'svg', type: 'icon.arrow-dotted' %}</span>
+                        {% if sub_nav_has_links %}
+                          <span class="link__icon">{% render 'svg', type: 'icon.arrow-dotted' %}</span>
+                        {% endif %}
                       </a>
                       {% if sub_nav_has_links %}
 
