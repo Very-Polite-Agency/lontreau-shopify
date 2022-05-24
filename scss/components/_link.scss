@@ -26,7 +26,6 @@
 
   &__icon {
     transition:
-      color var(--theme-transition-duration),
       opacity var(--theme-transition-duration),
       transform var(--theme-transition-duration);
     svg {
