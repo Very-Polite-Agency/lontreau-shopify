@@ -61,7 +61,7 @@
 {% if anchor != blank %}
   {%- assign html = html | append: ' data-aos-anchor="#' | append: anchor | append: '"' -%}
 {% endif %}
-{%- assign html = html | append: ' data-aos-anchor-placement="' | append: anchor | append: '"' -%}
+{%- assign html = html | append: ' data-aos-anchor-placement="' | append: anchor_placement | append: '"' -%}
 {%- assign html = html | append: ' data-aos-delay="' | append: delay | append: '"' -%}
 {%- assign html = html | append: ' data-aos-duration="' | append: duration | append: '"' -%}
 {%- assign html = html | append: ' data-aos-easing="' | append: easing | append: '"' -%}
