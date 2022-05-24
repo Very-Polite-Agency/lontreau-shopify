@@ -107,7 +107,7 @@
           "type": "accordion",
           "settings": {
             "title": "Real Change Enhancers",
-            "message": "<p>Some skincare brands use ingredients that are designed to create an immediate, but temporary benefit to the skin. The problem with this approach is it teaches your skin to be lazy without the benefit of a health improving function. We use ingredients that support your journey to skin health. This long-term approach improves the overall look of skin and improves barrier function over time, and we know you value that hard work takes time.<\/p>"
+            "message": "<p>Some skincare brands use ingredients that are designed to create an immediate, but temporary benefit to the skin. The problem with this approach is it teaches your skin to be lazy without the benefit of a health improving function. We use ingredients that support your journey to skin health. This long-term approach improves the overall look of skin and improves barrier function over time. Just like training, hard work take time, but the results are worth it.<\/p>"
           }
         },
         "3fbad6b9-b1ce-4273-9eb8-9a82c90faf84": {
@@ -136,7 +136,9 @@
         "heading_highlight": "standard",
         "message": "<p>All Lontreau products include powerful ingredients that are clinically proven to support regenerative signals and healthy barrier function. <\/p>",
         "anchor_id": "",
-        "layout": "image-right"
+        "style": "standard",
+        "layout": "image-right",
+        "colour_theme": "light"
       }
     },
     "16505026180b60acc4": {
@@ -146,14 +148,14 @@
           "type": "accordion",
           "settings": {
             "title": "Clean Journey",
-            "message": "<p>We challenged ourselves to make products that are beyond clean and formulate according to the Credo Beauty “Clean” beauty standard, which to date, is the strictest of the industry. We avoid over 2,700 specific ingredients and types of ingredients that are used in mainstream beauty products, but that Credo prohibits due to safety and\/or sustainability reasons.<\/p>"
+            "message": "<p>We challenged ourselves to make products that are beyond clean and formulated according to the Credo Beauty “Clean” beauty standard, which to date, is the strictest of the industry. We avoid over 2,700 specific ingredients and types of ingredients that are used in mainstream beauty products, but that Credo prohibits due to safety and\/or sustainability reasons.<\/p>"
           }
         },
         "bf9e63e3-5c88-410c-b734-2a96218f5e45": {
           "type": "accordion",
           "settings": {
             "title": "EWG Certification",
-            "message": "<p>We challenged ourselves to make products that are beyond clean. We avoid over 2,700 specific ingredients and types of ingredients that are used in mainstream beauty products. Our products are EWG VERIFIED™, which recognizes that we meet EWG’s strictest standards for your health.<\/p>"
+            "message": "<p>Our products are EWG VERIFIED™, which recognizes that we meet EWG’s strictest standards for your health.<\/p>"
           }
         },
         "03c98591-44e2-478a-a9f7-bbcd5ea6b5c5": {
@@ -183,7 +185,9 @@
         "message": "",
         "image": "shopify:\/\/shop_images\/LONTREA--our-ingredients-page--AWI_2x_93193cce-6e83-46cc-95b3-6aaec2e5c659.png",
         "anchor_id": "",
-        "layout": "image-left"
+        "style": "standard",
+        "layout": "image-left",
+        "colour_theme": "light"
       }
     }
   },
