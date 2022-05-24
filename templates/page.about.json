@@ -42,7 +42,7 @@
             "photo": "shopify:\/\/shop_images\/LONTREAU--about-page--team-member--AB_2x_2a29895b-d98f-4658-93e3-02c8bc372ed5.png",
             "title": "Angie Buonassisi",
             "job_title": "Founder, Athlete, Entrepreneur",
-            "bio": "<p>Angie is a dedicated athlete that is trying to balance sport, activities with her young children and work. Like most modern women trying to find balance in a demanding world, she doesn’t have time for a complicated skincare routine. She was inspired to develop a line of products that support the extreme conditions of an athlete’s lifestyle — from pollution to the elements. As the co-owner of the 8 West Clinic, she sees the concerns and needs of thousands of patients. Beyond creating a skincare brand that meets the unique needs of an athlete’s skin, she also is passionate about creating a community that is inspired by the support and strength of female athletes. As of 2022, she is in her 6th and final year on the Board of Directors for Cycling BC.<\/p>"
+            "bio": "<p>Angie is a dedicated athlete trying to balance sport, activities with her young children and work. Like most modern women trying to find balance in a demanding world, she doesn’t have time for a complicated skincare routine. She was inspired to develop a line of products that support the extreme conditions of an athlete’s lifestyle — from pollution to the elements. As the co-owner of the 8 West Clinic, she sees the concerns and needs of thousands of patients. Beyond creating a skincare brand that meets the unique needs of an athlete’s skin, she is also passionate about creating a community that is inspired by the support and strength of female athletes. As of 2022, she is in her 6th and final year on the Board of Directors for Cycling BC.<\/p>"
           }
         }
       },
@@ -52,7 +52,7 @@
       "settings": {
         "heading": "<p>Who <em>we are<\/em><\/p>",
         "heading_highlight": "stroke",
-        "message": "<p>Cras aliquam malesuada arcu, sagittis imperdiet felis blandit vitae. Donec eleifend sit amet risus ut pulvinar. Mauris placerat, ante vitae molestie pulvinar, odio est finibus elit, vitae sodales sem ligula sollicitudin nunc.<\/p>",
+        "message": "<p>The team behind Lontreau is passionate about sport and use their own experience to develop products that can benefit everyone.<\/p><p><\/p>",
         "anchor_id": ""
       }
     },
@@ -100,7 +100,9 @@
         "message": "",
         "image": "shopify:\/\/shop_images\/LONTREAU--accordion-with-image--image_3x_a53858f8-5a2e-459c-8541-a6bcbeadd8fc.png",
         "anchor_id": "",
-        "layout": "image-left"
+        "style": "standard",
+        "layout": "image-left",
+        "colour_theme": "light"
       }
     }
   },
