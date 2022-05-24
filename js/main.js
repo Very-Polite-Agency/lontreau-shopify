@@ -47,19 +47,6 @@ let tools = new Tools();
   credits,
 ].forEach(( module ) => { module.init(); });
 
-AOS.init({
-  offset: 150,                // offset (in px) from the original trigger point
-  delay: 0,                   // values from 0 to 3000, with step 50ms
-  duration: 550,              // values from 0 to 3000, with step 50ms
-  easing: 'ease-in-out',      // default easing for AOS animations
-  once: true,
-});
-
-window.addEventListener('load', (event) => {
-  console.log('page is fully loaded');
-  AOS.refresh();
-});
-
 var swiperThumbs = new Swiper(".swiper-thumbs", {
   autoHeight: false,
   breakpoints: {
@@ -234,3 +221,16 @@ function updateCartItemsCount() {
   })
   .then(function () {});
 };
+
+AOS.init({
+  offset: 150,                // offset (in px) from the original trigger point
+  delay: 0,                   // values from 0 to 3000, with step 50ms
+  duration: 550,              // values from 0 to 3000, with step 50ms
+  easing: 'ease-in-out',      // default easing for AOS animations
+  once: true,
+});
+
+window.addEventListener('load', (event) => {
+  console.log('page is fully loaded');
+  AOS.refresh();
+});
