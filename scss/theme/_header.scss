@@ -178,6 +178,14 @@
       position: fixed;
       left: 0;
       width: 100%;
+      .link {
+        justify-content: space-between;
+        align-items: center;
+        &__icon {
+          transform: rotate(45deg);
+          opacity: 0.33;
+        }
+      }
       &__item,
       &__link {
         display: block;
@@ -187,6 +195,14 @@
         &.active {
           .sub-sub-navigation {
             display: flex;
+          }
+        }
+      }
+      &__link {
+        &.active,
+        &:hover {
+          .link__icon {
+            opacity: 1;
           }
         }
       }
