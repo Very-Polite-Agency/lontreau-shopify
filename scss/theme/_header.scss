@@ -116,6 +116,13 @@
     .sub-navigation,
     .sub-sub-navigation {
       display: none;
+      &__link {
+        color: rgba(var(--theme-colour-white),1);
+        &:hover,
+        &.active {
+          color: rgba(var(--theme-colour-grass),1);
+        }
+      }
     }
 
     // ---------------------------------------- Navigation
@@ -170,7 +177,6 @@
       position: fixed;
       left: 0;
       width: 100%;
-      border: 1px solid red;
       &__item {
         width: 100%;
         &.active {
@@ -180,11 +186,13 @@
         }
       }
       &__list {
+        background: rgba(var(--theme-colour-forrest),1);
         display: inline-flex;
         flex-flow: column;
         justify-content: flex-start;
         align-items: flex-start;
         position: relative;
+        padding: 28px 0;
       }
       &__wrapper {
         display: block;
@@ -195,6 +203,7 @@
 
     // ---------------------------------------- Sub-sub-navigation
     .sub-sub-navigation {
+      background: rgba(var(--theme-colour-forrest),0.75);
       position: absolute;
       top: 0;
       display: none;
@@ -203,6 +212,11 @@
       justify-content: flex-start;
       align-items: flex-start;
       left: 100%;
+      padding: 28px 0;
+      height: 100%;
+      &__link {
+        font-size: 18px;
+      }
     }
 
   } // min width lg

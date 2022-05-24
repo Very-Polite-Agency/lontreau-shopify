@@ -7,9 +7,11 @@ const Header = (() => {
   let debug = false;
   let info = { name : 'Header', version : '1.0' };
   let throttled = false;
-  let timeout;
-  let subTimeout;
-  let timeoutValue = 1000;
+  let timeout = {
+    navigation: null,
+    subNavigation: null,
+    duration: 750
+  };
 
   //////////////////////////////////////////////////////////
   ////  ABC
@@ -94,15 +96,15 @@ const Header = (() => {
     links.forEach( link => {
       // ---------------------------------------- Mouse Enter
       link.addEventListener('mouseenter', event => {
-        clearTimeout(timeout);
+        clearTimeout(timeout.navigation);
         links.forEach( link => link.classList.remove('active') );
         link.classList.add('active');
       });
       // ---------------------------------------- Mouse Leave
       link.addEventListener('mouseleave', event => {
-        timeout = setTimeout(function(){
+        timeout.navigation = setTimeout(function(){
           link.classList.remove('active');
-        }, timeoutValue);
+        }, timeout.duration);
       });
     });
 
@@ -119,15 +121,15 @@ const Header = (() => {
     links.forEach( link => {
       // ---------------------------------------- Mouse Enter
       link.addEventListener('mouseenter', event => {
-        clearTimeout(subTimeout);
+        clearTimeout(timeout.subNavigation);
         links.forEach( link => link.classList.remove('active') );
         link.classList.add('active');
       });
       // ---------------------------------------- Mouse Leave
       link.addEventListener('mouseleave', event => {
-        subTimeout = setTimeout(function(){
+        timeout.subNavigation = setTimeout(function(){
           link.classList.remove('active');
-        }, timeoutValue);
+        }, timeout.duration);
       });
     });
 
