@@ -116,11 +116,6 @@ function addProductToCartFromButton( $button = false ) {
 
 };
 
-function abc() {
-  return `
-    <h1>TESTING</h1>
-  `;
-}
 
 function notifyUser( $products = [] ) {
   if ( $products ) {
@@ -128,7 +123,7 @@ function notifyUser( $products = [] ) {
 
       let notyf = new Notyf({
         dismissible: true,
-        duration: 4200,
+        duration: 0,
         position: {
           x: 'right',
           y: 'top',

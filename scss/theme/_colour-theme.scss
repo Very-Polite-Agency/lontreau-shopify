@@ -72,21 +72,5 @@
       border-top-color: rgba(var(--theme-colour-black), 1);
     }
   }
-  .glide {
-    &__controls--technical {
-      background: rgba(var(--theme-colour-forrest-dark),0.4);
-      border-top: none;
-      .button {
-        background: rgba(var(--theme-colour-grass),1);
-        color: rgba(var(--theme-colour-forrest),1);
-        border: none;
-        &.prev {
-          background: rgba(var(--theme-colour-grass),0.7);
-        }
-        &:hover {
-          background: rgba(var(--theme-colour-white),1);
-        }
-      }
-    }
-  }
+  .glide {}
 }

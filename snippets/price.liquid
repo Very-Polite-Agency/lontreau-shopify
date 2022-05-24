@@ -4,7 +4,7 @@
     - classes: {String} Any combination of words
     - product: {Object} Product Liquid object,
     - style: {String} Display option for a switch case
-    - symbol: {Boolean} Conditionally show the currency symbol
+    - show_symbol: {Boolean} Conditionally show the currency symbol
 
     Usage:
     {%- render 'price', classes: '',  product: product -%}
@@ -18,16 +18,17 @@
   {%- assign price = product.price -%}
   {%- assign price_compare = product.compare_at_price -%}
   {%- assign style = style | default: '' -%}
-  {%- assign symbol = symbol | default: false -%}
+  {%- assign show_symbol = show_symbol | default: false -%}
+  {%- assign symbol = shop.currency.symbol | default: '$' -%}
 
-  <div class="{% if classes %}{{ classes }} {% endif %}price {% if symbol %} with-currency-symbol{% endif %}">
+  <div class="{% if classes %}{{ classes }} {% endif %}price {% if show_symbol %} with-currency-symbol{% endif %}">
     <span class="price__value">
-      <span class="price__currency-symbol">{{- currency.symbol -}}</span>
+      <span class="price__currency-symbol">{{- symbol -}}</span>
       {{- price | money_without_currency -}}
     </span>
     {%- if price_compare -%}
       <span class="price__value sale-price">
-        <span class="price__currency-symbol">{{- currency.symbol -}}</span>
+        <span class="price__currency-symbol">{{- symbol -}}</span>
         {{- price_compare | money_without_currency -}}
       </span>
     {%- endif -%}

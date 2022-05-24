@@ -35,7 +35,7 @@
           </div>
           <div class="{{ section_name }}__featured-product-info">
             <strong class="{{ section_name }}__featured-product-title caption--2">{{ featured_product.title }}</strong>
-            <span class="{{ section_name }}__featured-product-price caption--2">{% render 'price', product: featured_product %}</strong>
+            <span class="{{ section_name }}__featured-product-price caption--2">{% render 'price', product: featured_product, show_symbol: true %}</strong>
           </div>
           <button
             class="{{ snippet_name }}__button button--tertiary js--add-to-cart"

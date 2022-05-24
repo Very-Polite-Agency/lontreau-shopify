@@ -50,7 +50,7 @@
         </div>
         <div class="{{ snippet_name }}__info">
           <strong class="{{ snippet_name }}__title caption--2">{{ title }}</strong>
-          <span class="{{ snippet_name }}__price caption--2">{% render 'price', product: product %}</strong>
+          <span class="{{ snippet_name }}__price caption--2">{% render 'price', product: product, show_symbol: true %}</strong>
         </div>
         {% if selected_variant %}
           <button
