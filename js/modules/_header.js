@@ -90,43 +90,19 @@ const Header = (() => {
   const hoverSubNavigation = () => {
 
     let links = ( document.querySelectorAll('.header .sub-navigation__item.has-links') || [] );
-    let subSubNavs = ( document.querySelectorAll('.header .sub-sub-navigation.active') || [] );
+    let subSubNavs = ( document.querySelectorAll('.header .sub-sub-navigation') || [] );
 
-    links.forEach( item => {
+    links.forEach( link => {
       // ---------------------------------------- Mouse Enter
-      item.addEventListener('mouseenter', event => {
+      link.addEventListener('mouseenter', event => {
         clearTimeout(subTimeout);
-        links.forEach( item => { item.classList.remove('sub-sub-navigation-active'); });
-        item.classList.add('sub-sub-navigation-active');
-        let subSubNavigationID = item.dataset.subSubNavId || '';
-        let subSubNavigation = document.getElementById( subSubNavigationID );
-        subSubNavigation.classList.add('active');
+        links.forEach( link => link.classList.remove('active') );
+        link.classList.add('active');
       });
       // ---------------------------------------- Mouse Leave
-      item.addEventListener('mouseleave', event => {
+      link.addEventListener('mouseleave', event => {
         subTimeout = setTimeout(function(){
-          item.classList.remove('sub-navigation-active');
-          let subSubNavigationID = item.dataset.subSubNavId || '';
-          let subSubNavigation = document.getElementById( subSubNavigationID );
-          subSubNavigation.classList.remove('active');
-        }, timeoutValue);
-      });
-    });
-
-    subSubNavs.forEach( subSubNav => {
-      // ---------------------------------------- Mouse Enter
-      subSubNav.addEventListener('mouseenter', event => {
-        console.log('subSubNavs mouseover');
-        clearTimeout(subTimeout);
-        subSubNavs.forEach( subSubNav => { subSubNav.classList.remove('actve'); });
-        subSubNav.classList.add('actve');
-      });
-      // ---------------------------------------- Mouse Leave
-      subSubNav.addEventListener('mouseleave', event => {
-        console.log('subSubNavs mouseout');
-        clearTimeout(subTimeout);
-        subTimeout = setTimeout(function(){
-          subSubNav.classList.remove('active');
+          link.classList.remove('active');
         }, timeoutValue);
       });
     });
@@ -142,6 +118,7 @@ const Header = (() => {
     if ( debug ) console.log( `${info.name}.init() v.${info.version} Started` );
 
     setSubnavigationWidthFromNavigationWidth();
+    hoverSubNavigation();
 
     // ---------------------------------------- On resize, execute functions
     window.addEventListener( 'resize', function(e) {

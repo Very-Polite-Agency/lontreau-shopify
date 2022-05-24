@@ -172,7 +172,8 @@
       width: 100%;
       border: 1px solid red;
       &__item {
-        &:hover {
+        width: 100%;
+        &.active {
           .sub-sub-navigation {
             display: flex;
           }
@@ -201,6 +202,7 @@
       flex-flow: column;
       justify-content: flex-start;
       align-items: flex-start;
+      left: 100%;
     }
 
   } // min width lg

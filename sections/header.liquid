@@ -33,10 +33,15 @@
                     {% assign sub_nav_active = sub_link.active | default: false %}
                     {% assign sub_nav_title = sub_link.title | default: '' %}
                     {% assign sub_nav_url = sub_link.url | default: '' %}
+                    {% assign sub_nav_has_links = false %}
+                    {% if sub_link.links.size > 0 %}
+                      {% assign sub_nav_has_links = true %}
+                    {% endif %}
 
-                    <div class="sub-navigation__item">
+                    <div class="sub-navigation__item{% if sub_nav_has_links %} has-links{% endif %}">
                       <a class="sub-navigation__link" href="{{ sub_nav_url }}">{{ sub_nav_title }}</a>
-                      {% if sub_link.links.size > 0 %}
+                      {% if sub_nav_has_links %}
+
 
                         {% comment %} Sub Sub Navigation {% endcomment %}
                         <div class="sub-sub-navigation">
