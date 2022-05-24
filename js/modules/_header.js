@@ -10,7 +10,7 @@ const Header = (() => {
   let timeout = {
     navigation: null,
     subNavigation: null,
-    duration: 750
+    duration: 500
   };
 
   //////////////////////////////////////////////////////////
