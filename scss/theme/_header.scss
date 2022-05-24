@@ -152,7 +152,7 @@
         }
       }
       &__item {
-        &:hover {
+        &.active {
           .sub-navigation {
             display: flex;
           }

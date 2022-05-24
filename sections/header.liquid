@@ -19,10 +19,14 @@
           {% assign nav_active = link.active | default: false %}
           {% assign nav_title = link.title | default: '' %}
           {% assign nav_url = link.url | default: '' %}
+          {% assign nav_has_links = false %}
+          {% if link.links.size > 0 %}
+            {% assign nav_has_links = true %}
+          {% endif %}
 
-          <div class="navigation__item">
+          <div class="navigation__item{% if nav_has_links %} has-links{% endif %}">
             <a class="navigation__link" href="{{ nav_url }}">{{ nav_title }}</a>
-            {% if link.links.size > 0 %}
+            {% if nav_has_links %}
 
               {% comment %} Sub Navigation {% endcomment %}
               <div class="sub-navigation">

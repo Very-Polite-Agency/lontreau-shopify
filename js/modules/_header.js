@@ -84,13 +84,37 @@ const Header = (() => {
   };
 
   //////////////////////////////////////////////////////////
-  ////  Subnavigation Hover
+  ////  Navigation Hover
+  //////////////////////////////////////////////////////////
+
+  const hoverNavigation = () => {
+
+    let links = ( document.querySelectorAll('.header .navigation__item.has-links') || [] );
+
+    links.forEach( link => {
+      // ---------------------------------------- Mouse Enter
+      link.addEventListener('mouseenter', event => {
+        clearTimeout(timeout);
+        links.forEach( link => link.classList.remove('active') );
+        link.classList.add('active');
+      });
+      // ---------------------------------------- Mouse Leave
+      link.addEventListener('mouseleave', event => {
+        timeout = setTimeout(function(){
+          link.classList.remove('active');
+        }, timeoutValue);
+      });
+    });
+
+  };
+
+  //////////////////////////////////////////////////////////
+  ////  Sub-navigation Hover
   //////////////////////////////////////////////////////////
 
   const hoverSubNavigation = () => {
 
     let links = ( document.querySelectorAll('.header .sub-navigation__item.has-links') || [] );
-    let subSubNavs = ( document.querySelectorAll('.header .sub-sub-navigation') || [] );
 
     links.forEach( link => {
       // ---------------------------------------- Mouse Enter
@@ -118,16 +142,15 @@ const Header = (() => {
     if ( debug ) console.log( `${info.name}.init() v.${info.version} Started` );
 
     setSubnavigationWidthFromNavigationWidth();
+    hoverNavigation();
     hoverSubNavigation();
 
     // ---------------------------------------- On resize, execute functions
     window.addEventListener( 'resize', function(e) {
       if ( !throttled ) {
         window.requestAnimationFrame(function() {
-
           setSubnavigationWidthFromNavigationWidth();
           throttled = false;
-
         });
         throttled = true;
       }
