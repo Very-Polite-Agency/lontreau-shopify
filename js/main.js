@@ -34,7 +34,7 @@ let sizing = new Sizing();
 let stepper = new Stepper();
 let tools = new Tools();
 
-[
+let modules = [
   forms,
   gliders,
   header,
@@ -45,7 +45,9 @@ let tools = new Tools();
   sizing,
   stepper,
   credits,
-].forEach(( module ) => { module.init(); });
+];
+
+modules.forEach(( module ) => { module.init(); });
 
 var swiperThumbs = new Swiper(".swiper-thumbs", {
   autoHeight: false,
