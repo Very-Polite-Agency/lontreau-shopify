@@ -47,7 +47,7 @@ let modules = [
   credits,
 ];
 
-modules.forEach(( module ) => { module.init(); });
+modules.forEach( module => module.init() );
 
 var swiperThumbs = new Swiper(".swiper-thumbs", {
   autoHeight: false,
