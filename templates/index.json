@@ -82,9 +82,9 @@
         "heading": "<p>The <em>only kit<\/em> <\/p><p>you need. <\/p>",
         "heading_highlight": "circle",
         "message": "",
-        "aside_heading": "Stage",
+        "aside_heading": "Global Antioxidant Serum",
         "aside_subheading": "{{ section.settings.product.title }}",
-        "aside_message": "<p>Phasellus quis felis eros. In egestas ut odio sed accumsan. Etiam tempus laoreet felis, pharetra finibus nunc luctus sit dui.<\/p>",
+        "aside_message": "<p>Game Changer is a high-performance hydrating serum with 9 forms of antioxidants to offer broad spectrum protection against a wide range of free-radicals, UV, IR, Blue Light and environmental stresses. <\/p>",
         "anchor_id": "",
         "colour_theme": "light"
       }
@@ -96,7 +96,7 @@
         "title": "",
         "heading": "<p><em>Goal-setting<\/em> ingredients<\/p>",
         "heading_highlight": "stroke",
-        "message": "<p>We create science-driven and efficacious formulas that use synergistic ingredients to protect your skin from the elements of sport and everyday life. We believe skin health is a journey, and our goal is to create a powerful set of products that encourage women to move intentionally and confidently.<\/p>",
+        "message": "<p>We create science-driven and efficacious formulas that use synergistic ingredients to protect your skin from the elements, endurance sports and everyday life. We believe skin health is a journey, and our goal is to create a powerful set of products that encourage women to move intentionally and confidently.<\/p>",
         "cta_title": "Learn More",
         "cta_link": "shopify:\/\/pages\/our-science",
         "image": "shopify:\/\/shop_images\/LONTREAU--home-page--goal-setting-ingredients_2x_9f4f4844-6146-4bd1-ba65-1290d90818fb.png",
