@@ -40,7 +40,7 @@
           "type": "accordion",
           "settings": {
             "title": "The Skin Barrier",
-            "message": "<p>The skin barrier is your first line of defense. It’s responsible for defending against all the environmental stressors our skin endures, including pollution, UV light, blue light and infection. When our skin barrier is impaired, it can lead to several common skin issues like hyperpigmentation, sensitivity, premature aging, dryness and breakouts.<br\/><br\/>Instead of addressing these separate concerns with individual products, the best solution is to find products that focus on healing and balancing the skin barrier (Hyperlink to Overnight Recovery Serum). An overconsumption of skincare products not only compromises the skin barrier but also results in excessive packaging waste. That’s why we create ingredient-dense formulas that address the root cause, use 100% recyclable packaging, and participate in the Plastic Neutral program to reduce waste and eliminate junk miles.<\/p>",
+            "message": "<p>The skin barrier is your first line of defense. It’s responsible for defending against all the environmental stressors our skin endures, including pollution, UV light, blue light and infection. When our skin barrier is impaired, it can lead to several common skin issues like hyperpigmentation, sensitivity, premature aging, dryness and breakouts.<br\/><br\/>Instead of addressing these separate concerns with individual products, the best solution is to find products that focus on <a href=\"\/products\/sample-product-bravo\" title=\"Sample Product Bravo\">healing and balancing<\/a> the skin barrier (Hyperlink to Overnight Recovery Serum). An overconsumption of skincare products not only compromises the skin barrier but also results in excessive packaging waste. That’s why we create ingredient-dense formulas that address the root cause, use 100% recyclable packaging, and participate in the Plastic Neutral program to reduce waste and eliminate junk miles.<\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
@@ -175,7 +175,7 @@
           "type": "detailed",
           "settings": {
             "title": "Prevention",
-            "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine and sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>",
+            "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine to sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>",
             "image": "shopify:\/\/shop_images\/Group_135_3x_7212363e-91b3-4671-a1b8-0740bbc72f8f.png"
           }
         }
