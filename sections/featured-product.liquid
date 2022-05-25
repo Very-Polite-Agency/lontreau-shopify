@@ -12,7 +12,7 @@
 {% assign markers = section.blocks | where: 'type', 'marker' | default: false %}
 {% assign message = section.settings.message | default: '' %}
 {% assign product = section.settings.product | default: false %}
-{% assign product_icon = product.metafields.product.icon | default: false %}
+{% assign product_icon = product.metafields.featured.icon | default: false %}
 {% assign product_link = product.url | default: '' %}
 {% assign product_title = product.title | default: '' %}
 
