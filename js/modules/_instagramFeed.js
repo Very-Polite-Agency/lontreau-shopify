@@ -129,7 +129,7 @@ const InstagramFeed = (() => {
   //////////////////////////////////////////////////////////
 
   const renderFeedMarkup = ( media = [] ) => {
-    console.log( 'renderFeedMarkup', { media } );
+    console.log( 'renderFeedMarkup', media );
     return `
       <div class="glide" id="${instagramGlider.id}" data-glide-style="${blockName}">
         <div class="glide__track" data-glide-el="track">
@@ -149,14 +149,16 @@ const InstagramFeed = (() => {
 
   function renderFeedCardMarkup( item = {} ) {
 
+    console.log( 'renderFeedCardMarkup() :: ', item )
+
     let { id = '', media_type = '', media_url = '', permalink = '' } = item;
     let template = '';
 
-    if ( "CAROUSEL_ALBUM" == media_type || "IMAGE"  == media_type ) {
+    if ( "CAROUSEL_ALBUM" == media_type || "IMAGE" == media_type ) {
       template = `
         <li class="glide__slide">
           <div class="${blockName}__item" id="${id}">
-            <a class="${blockName}__item-link" href="${permalink}" title="${title}" target="_blank">
+            <a class="${blockName}__item-link" href="${permalink}" target="_blank">
               <div class="${blockName}__item-image lazyload-item lazyload-item--image lazypreload lazyload-item--inline lazyload" data-bg="${media_url}"></div>
             </a>
           </div>
