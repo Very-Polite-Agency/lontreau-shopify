@@ -124,7 +124,9 @@
       "type": "instagram-feed",
       "settings": {
         "heading": "<p>Intagram <em>Feed<\/em><\/p>",
-        "heading_highlight": "stroke"
+        "heading_highlight": "stroke",
+        "feed_account": "verypoliteagency",
+        "feed_limit": 7
       }
     }
   },
