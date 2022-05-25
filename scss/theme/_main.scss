@@ -13,6 +13,10 @@ main {
     padding-top: var(--theme-header-height);
   }
 
+  &.page--default {
+    padding-top: calc( 0.5 * var(--theme-header-height));
+  }
+
   @include breakpoint(sm) {} // min width sm
 
   @include breakpoint(md) {} // min width md
@@ -30,6 +34,10 @@ main {
     &.template--collection,
     &.template--product {
       padding-top: var(--theme-header-height--lg);
+    }
+
+    &.page--default {
+      padding-top: calc( 0.5 * var(--theme-header-height--lg));
     }
 
   } // min width lg
