@@ -1,8 +1,29 @@
-<div>
-  <h1 class="main-page-title page-title h0 heading--2">
-    {{ page.title | escape }}
-  </h1>
-  <div class="rte">
-    {{ page.content }}
+{% assign section_name = 'default-page' %}
+{% assign section_id = section_name | append: '--' | append: section.id %}
+
+<div class="{{ section_name }}" id="{{ section_id }}">
+  <div class="{{ section_name }}__main">
+    {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
+
+      <h1 class="heading--2">{{ page.title | escape }}</h1>
+      <div class="body-copy--regular">{{ page.content }}</div>
+
+    {% render 'bs-container', state: 'closed' %}
   </div>
 </div>
+
+{% schema %}
+{
+  "name": "Default Page",
+  "tag": "section",
+  "class": "section section--default-page",
+  "limit": 1,
+  "settings": [],
+  "presets": [
+    {
+      "name": "Default Page"
+    }
+  ],
+  "templates": [ "page" ]
+}
+{% endschema %}
