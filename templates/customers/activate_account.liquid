@@ -1,4 +1,4 @@
-{{ 'customer.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'customer.css' | asset_url | stylesheet_tag }} {% endcomment %}
 
 <div class="customer activate">
   <svg style="display: none">
@@ -39,7 +39,7 @@
       </ul>
     {%- endif -%}
 
-    <div class="field">     
+    <div class="field">
       <input
         type="password"
         name="customer[password]"
@@ -64,7 +64,7 @@
       {%- endif -%}
     </div>
 
-    <div class="field">     
+    <div class="field">
       <input
         type="password"
         name="customer[password_confirmation]"

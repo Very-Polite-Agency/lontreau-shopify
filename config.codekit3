@@ -2376,14 +2376,6 @@
       "oAP" : "\/sections\/accordion-with-image.liquid",
       "oF" : 0
     },
-    "\/sections\/announcements.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/announcements.liquid",
-      "oF" : 0
-    },
     "\/sections\/apps.liquid" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2406,38 +2398,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/carousel-education.liquid",
-      "oF" : 0
-    },
-    "\/sections\/cart-icon-bubble.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/cart-icon-bubble.liquid",
-      "oF" : 0
-    },
-    "\/sections\/cart-live-region-text.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/cart-live-region-text.liquid",
-      "oF" : 0
-    },
-    "\/sections\/cart-notification-button.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/cart-notification-button.liquid",
-      "oF" : 0
-    },
-    "\/sections\/cart-notification-product.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/cart-notification-product.liquid",
       "oF" : 0
     },
     "\/sections\/collection-list.liquid" : {
@@ -2790,14 +2750,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/snippets\/card-product.liquid",
-      "oF" : 0
-    },
-    "\/snippets\/cart-notification.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/snippets\/cart-notification.liquid",
       "oF" : 0
     },
     "\/snippets\/debug-this.liquid" : {

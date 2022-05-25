@@ -1,4 +1,4 @@
-{{ 'customer.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'customer.css' | asset_url | stylesheet_tag }} {% endcomment %}
 
 <div class="customer login">
   <h1 id="recover" tabindex="-1">
@@ -81,7 +81,7 @@
         {{ form.errors | default_errors }}
       {%- endif -%}
 
-      <div class="field">        
+      <div class="field">
         <input
           type="email"
           name="customer[email]"
@@ -100,7 +100,7 @@
       </div>
 
       {%- if form.password_needed -%}
-        <div class="field">          
+        <div class="field">
           <input
             type="password"
             value=""
@@ -129,10 +129,10 @@
       <a href="{{ routes.account_register_url }}">
         {{ 'customer.login_page.create_account' | t }}
       </a>
-      
+
     {%- endform -%}
   </div>
-  
+
   {%- if shop.checkout.guest_login -%}
     <div>
       <hr>
