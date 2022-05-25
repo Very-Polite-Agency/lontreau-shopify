@@ -1,11 +1,9 @@
 {%- assign section_name = 'cart' -%}
 {%- assign section_id = section_name | append: '--' | append: section.id -%}
 
+{% assign empty_heading = section.settings.empty_heading | default: 'Your cart is empty.' %}
+{% assign empty_message = section.settings.empty_message | default: '' %}
 {% assign hero_heading = section.settings.hero_heading | default: 'Cart' %}
-
-{% comment %} <div id="remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
-  <a href="{{ item.url_to_remove }}" class="button button--tertiary">Remove</a>
-</div> {% endcomment %}
 
 <div class="{{ section_name }}__hero">
   {% render 'bs-container', state: 'open' %}
@@ -18,9 +16,13 @@
 
     {% if cart == empty %}
 
-      <div class="{{ section_name }}__empty">
-        <h2 class="heading--3">It looks like your bag is empty.</h2>
-        <div class="body-copy--regular"><p>Let's fix that. Shop our latest collection here.</p></div>
+      <div class="{{ section_name }}__empty" data-text-alignment-center>
+        {% if empty_heading != blank %}
+          <h2 class="heading--3">{{ empty_heading }}</h2>
+        {% endif %}
+        {% if empty_message != blank %}
+          <div class="body-copy--regular">{{ empty_message }}</div>
+        {% endif %}
       </div>
 
     {% else %}
