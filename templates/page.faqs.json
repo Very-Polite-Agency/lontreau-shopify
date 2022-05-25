@@ -26,6 +26,34 @@
     },
     "165349882530b74a17": {
       "type": "accordion-education",
+      "blocks": {
+        "c3609a73-7a73-4f96-92f9-9516bcc2800c": {
+          "type": "accordion",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit?",
+            "message": "<p>MEssage<\/p>",
+            "cta_title": "",
+            "cta_link": "",
+            "image_figure": "",
+            "image_caption": ""
+          }
+        },
+        "423878c7-1a61-4f0e-be06-1100bc2fbd7d": {
+          "type": "accordion",
+          "settings": {
+            "title": "Sed diam nonummy nibh euismod tincidunt ut laoreet?",
+            "message": "",
+            "cta_title": "",
+            "cta_link": "",
+            "image_figure": "",
+            "image_caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "c3609a73-7a73-4f96-92f9-9516bcc2800c",
+        "423878c7-1a61-4f0e-be06-1100bc2fbd7d"
+      ],
       "settings": {
         "heading": "<p>Shipping<\/p>",
         "heading_highlight": "standard",
