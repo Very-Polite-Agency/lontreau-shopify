@@ -3,73 +3,27 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
       }
     },
-    "16498716862814dedf": {
+    "1653501819fd66e3ae": {
       "type": "full-width-feature",
       "settings": {
+        "text_theme": "light",
         "title": "Demo Title",
-        "message": "",
-        "highlight": "standard",
+        "heading": "<p>Demo <em>Page<\/em><\/p>",
+        "heading_highlight": "standard",
+        "message": "<p>Suspendisse consectetur congue nibh, at accumsan elit volutpat nec. Sed eu risus ut nibh molestie feugiat a eget ante. In vehicula turpis et lacus luctus, sit amet vehicula dui laoreet.<\/p>",
+        "cta_title": "",
+        "cta_link": "",
         "parallax": false,
-        "height": "auto"
-      }
-    },
-    "1649871763aafb85aa": {
-      "type": "full-width-feature",
-      "settings": {
-        "title": "Demo Title Two",
-        "message": "",
-        "highlight": "standard",
-        "image": "shopify:\/\/shop_images\/LONTREAU--full-width-feature--placeholder--large_2x_dbdb0c77-33c7-4bdf-9573-d7b5a903ee67.png",
-        "parallax": false,
-        "height": "large"
-      }
-    },
-    "1649883002eb1dc7b4": {
-      "type": "rich-text",
-      "blocks": {
-        "1649883002fa0992ca-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "1649883002fa0992ca-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "1649883002fa0992ca-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "1649883002fa0992ca-0",
-        "1649883002fa0992ca-1",
-        "1649883002fa0992ca-2"
-      ],
-      "settings": {
-        "color_scheme": "accent-2",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "anchor_id": "",
+        "height": "large",
+        "curved_arrow_enable": false
       }
     }
   },
   "order": [
     "main",
-    "16498716862814dedf",
-    "1649871763aafb85aa",
-    "1649883002eb1dc7b4"
+    "1653501819fd66e3ae"
   ]
 }
