@@ -6,7 +6,7 @@
 {% assign heading = section.settings.heading | default: '' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: false %}
 
-<div class="{{ section_name }}" id="{{ section_id }}">
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
   {% render 'bs-container', state: 'open', container: 'container-fluid' %}
 
     <div class="{{ section_name }}__intro intro">

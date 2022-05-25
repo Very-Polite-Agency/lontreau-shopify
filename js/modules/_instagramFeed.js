@@ -35,38 +35,38 @@ const InstagramFeed = (() => {
     instagramGlider.glider = new Glide( `#${instagramGlider.id}`, {
       animationTimingFunc: 'ease-in-out',
       animationDuration: 280,
-      autoplay: 3200,
+      autoplay: 3500,
       breakpoints: {
         9999: {
           // up to 1200
-          focusAt: 'center',
-          gap: 32,
-          peek: { before: 64, after: 64 },
+          focusAt: 0,
+          gap: 20,
+          peek: { before: 0, after: 64 },
           perView: 4,
         },
         1399: {
           // up to 992
-          focusAt: 'center',
-          gap: 32,
-          peek: { before: 64, after: 64 },
+          focusAt: 0,
+          gap: 20,
+          peek: { before: 0, after: 64 },
           perView: 3,
         },
         991: {
           // up to 992
-          focusAt: 'center',
-          gap: 32,
-          peek: { before: 64, after: 64 },
+          focusAt: 0,
+          gap: 20,
+          peek: { before: 0, after: 64 },
           perView: 2,
         },
         767: {
           // up to 576
-          focusAt: 'center',
-          gap: 32,
-          peek: { before: 64, after: 64 },
-          perView: 1,
+          focusAt: 0,
+          gap: 20,
+          peek: { before: 0, after: 64 },
+          perView: 2,
         },
       },
-      gap: 32,
+      gap: 20,
       peek: 0,
       hoverpause: true,
       type: 'carousel',
@@ -131,8 +131,8 @@ const InstagramFeed = (() => {
       template = `
         <li class="glide__slide">
           <div class="${blockName}__item" id="${id}" data-count="${instagramGlider.count}">
-            <a class="${blockName}__item-link" href="${permalink}" target="_blank">
-              <div class="${blockName}__item-image lazyload-item lazyload-item--image lazypreload lazyload-item--inline lazyload" data-bg="${media_url}"></div>
+            <a class="${blockName}__item-link link" href="${permalink}" target="_blank">
+              <div class="${blockName}__item-image lazyload-item lazyload-item--image lazypreload lazyload-item--background lazyload" data-bg="${media_url}"></div>
             </a>
           </div>
         </li>
