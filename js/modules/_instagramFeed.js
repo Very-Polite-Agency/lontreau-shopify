@@ -15,17 +15,48 @@ const InstagramFeed = (() => {
   let blockElement = 'instagram-feed';
   let feeds = {};
 
+  let placeholderData = [
+    {
+      title: 'abc-01',
+      image_src: 'https://images.pexels.com/photos/2662792/pexels-photo-2662792.jpeg'
+    },
+    {
+      title: 'abc-02',
+      image_src: 'https://images.pexels.com/photos/2363814/pexels-photo-2363814.jpeg'
+    },
+    {
+      title: 'abc-03',
+      image_src: 'https://images.pexels.com/photos/4352247/pexels-photo-4352247.jpeg'
+    },
+    {
+      title: 'abc-04',
+      image_src: 'https://images.pexels.com/photos/7932264/pexels-photo-7932264.jpeg'
+    },
+    {
+      title: 'abc-05',
+      image_src: 'https://images.pexels.com/photos/4256211/pexels-photo-4256211.jpeg'
+    }
+  ];
+
   //////////////////////////////////////////////////////////
-  ////  Print Media
+  ////  Initialize Glider
   //////////////////////////////////////////////////////////
 
   const initializeGlider = () => {
     console.log( 'initializeGlider', {} );
   };
 
-  const renderFeedMarkup = ( $media ) => {
+  //////////////////////////////////////////////////////////
+  ////  Render Markup
+  //////////////////////////////////////////////////////////
+
+  const renderFeedMarkup = ( $media = [] ) => {
     console.log( 'renderFeedMarkup', $media );
   };
+
+  //////////////////////////////////////////////////////////
+  ////  Print Media
+  //////////////////////////////////////////////////////////
 
   const printMedia = ( $media = [], $account = '' ) => {
 
@@ -45,7 +76,7 @@ const InstagramFeed = (() => {
   ////  Get Media
   //////////////////////////////////////////////////////////
 
-  const getMedia = ( $account, $token ) => {
+  const getMedia = ( $account = 'not-set', $token = 'not-set' ) => {
 
     let getURL = 'https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink&access_token=' + $token;
 
@@ -63,7 +94,8 @@ const InstagramFeed = (() => {
 
       tools.setLocalStorage( `very-polite-instagram-feed--${$account}`, JSON.stringify(localData) );
 
-      printMedia( json.data, $account );
+      // printMedia( json.data, $account );
+      printMedia( placeholderData, $account );
 
     })
     .catch(err => console.log( 'getMedia( $account, $token ) Error', err ));
@@ -77,12 +109,15 @@ const InstagramFeed = (() => {
   const getToken = ( $account ) => {
 
     fetch( 'https://very-polite-instagram-feed.herokuapp.com/token?userAccount=' + $account )
-    .then(res => res.json())
-    .then(json => {
-      if ( debug ) console.log('getToken( $account ) fired!', json );
+    .then( res => {
+      if ( debug ) console.log('getToken( $account ) :: Response', res );
+      res.json();
+    })
+    .then( json => {
+      if ( debug ) console.log('getToken( $account ) :: JSON', json );
       getMedia( $account, json.token );
     })
-    .catch(err => console.log(err));
+    .catch( err => console.log(err) );
 
   };
 
@@ -125,8 +160,11 @@ const InstagramFeed = (() => {
         if ( minutesDifference > 30 ) {
           getToken( account );
         } else {
+
           if ( debug ) console.log( 'localStorage fired!' );
-          printMedia( feedData.data, account );
+          //printMedia( feedData.data, account );
+          printMedia( placeholderData, account );
+
         }
 
       } else {
@@ -143,7 +181,10 @@ const InstagramFeed = (() => {
 
   const init = () => {
     if ( debug ) console.log( '[ InstagramFeed.init() ] Start' );
-    main();
+    //main();
+
+    printMedia( placeholderData, 'studiodhome' );
+
     if ( debug ) console.log( '[ InstagramFeed.init() ] End' );
   };
 

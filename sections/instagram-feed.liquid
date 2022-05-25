@@ -6,7 +6,11 @@
 
 <div class="{{ section_name }}" id="{{ section_id }}">
 
-  <div class="{{ section_name }}__main js--instagram-feed" data-instagram-feed-account-name="verypoliteagency">
+  <div class="{{ section_name }}__intro intro">
+    <h1 class="heading--2">{{ heading }}</h1>
+  </div>
+
+  <div class="{{ section_name }}__main main js--instagram-feed" data-instagram-feed-account-name="studiodhome">
 
     {% comment %} $html .= '<div class="{{ section_name }}__item" data-count="' . $i + 1 . '" data-index="' . $i . '">';
       $html .= '<a class="{{ section_name }}__link link" href="" title="studio D Instagram Post" target="_blank">';
@@ -17,9 +21,7 @@
 
   </div>
 
-  <div class="{{ section_name }}__cta">
-
-  </div>
+  <div class="{{ section_name }}__cta"></div>
 
 </div>
 
