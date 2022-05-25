@@ -102,7 +102,7 @@ const InstagramFeed = (() => {
   //////////////////////////////////////////////////////////
 
   const renderFeedMarkup = ( media = [] ) => {
-    console.log( 'renderFeedMarkup', media );
+    if ( debug ) console.log( 'renderFeedMarkup ::', media );
     return `
       <div class="glide" id="${instagramGlider.id}" data-glide-style="${blockName}">
         <div class="glide__track" data-glide-el="track">
@@ -122,6 +122,7 @@ const InstagramFeed = (() => {
 
   function renderFeedCardMarkup( item = {} ) {
 
+    if ( debug ) console.log( 'renderFeedCardMarkup ::', item );
     let { id = '', media_type = '', media_url = '', permalink = '' } = item;
     let template = '';
 
