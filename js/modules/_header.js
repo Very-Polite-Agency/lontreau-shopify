@@ -43,49 +43,6 @@ const Header = (() => {
   };
 
   //////////////////////////////////////////////////////////
-  ////  Hover
-  //////////////////////////////////////////////////////////
-
-  const hover = () => {
-
-    let links = ( document.querySelectorAll('.header .navigation__item.has-links') || [] );
-
-    links.forEach( item => {
-
-      // ---------------------------------------- Mouse Enter
-      item.addEventListener('mouseenter', event => {
-        clearTimeout(timeout);
-        links.forEach( item => { item.classList.remove('sub-navigation-active'); });
-        item.classList.add('sub-navigation-active');
-        item.closest('.header').classList.add('sub-navigation-active');
-      });
-
-      // ---------------------------------------- Mouse Leave
-      item.addEventListener('mouseleave', event => {
-        timeout = setTimeout(function(){
-          item.classList.remove('sub-navigation-active');
-          item.closest('.header').classList.remove('sub-navigation-active');
-        }, timeoutValue);
-      });
-
-    });
-
-    ( document.querySelectorAll('.header .sub-navigation__link') || [] ).forEach( item => {
-      item.addEventListener('mouseenter', event => {
-
-        let image = item.dataset.featuredImage || false;
-        let element = item.closest('.sub-navigation').querySelector('.sub-navigation__background-image') || false;
-
-        if ( image ) {
-          element.dataset.bg = image;
-        }
-
-      });
-    });
-
-  };
-
-  //////////////////////////////////////////////////////////
   ////  Navigation Hover
   //////////////////////////////////////////////////////////
 
@@ -143,7 +100,7 @@ const Header = (() => {
         if ( link.classList.contains('has-links') ) {
           timeout.subNavigation = setTimeout(function(){
             link.classList.remove('active');
-          }, timeout.duration);
+          }, timeout.duration - 250 );
         }
       });
 
