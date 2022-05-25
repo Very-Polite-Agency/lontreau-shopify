@@ -18,13 +18,12 @@ const InstagramFeed = (() => {
 
   let targetElementElement = '.js--instagram-feed';
   let blockName = 'instagram-feed';
-  let feedLimit = 3;
   let feeds = {};
   let instagramGlider = {
     interval: null,
     id: blockName,
     glider: {},
-    count: 0,
+    count: 0
   };
 
   //////////////////////////////////////////////////////////
@@ -101,14 +100,15 @@ const InstagramFeed = (() => {
   ////  Render Feed Markup
   //////////////////////////////////////////////////////////
 
-  const renderFeedMarkup = ( media = [] ) => {
+  const renderFeedMarkup = ( account = '', media = [] ) => {
     if ( debug ) console.log( 'renderFeedMarkup ::', media );
+    instagramGlider.count = 0;
     return `
       <div class="glide" id="${instagramGlider.id}" data-glide-style="${blockName}">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             ${media.map( item =>
-              `${renderFeedCardMarkup( item )}`
+              `${renderFeedCardMarkup( account, item )}`
             ).join('')}
           </ul>
         </div>
@@ -120,13 +120,13 @@ const InstagramFeed = (() => {
   ////  Render Feed Card Markup
   //////////////////////////////////////////////////////////
 
-  function renderFeedCardMarkup( item = {} ) {
+  function renderFeedCardMarkup( account = '', item = {} ) {
 
     if ( debug ) console.log( 'renderFeedCardMarkup ::', item );
     let { id = '', media_type = '', media_url = '', permalink = '' } = item;
     let template = '';
 
-    if ( ( "CAROUSEL_ALBUM" == media_type || "IMAGE" == media_type ) && instagramGlider.count < feedLimit ) {
+    if ( ( "CAROUSEL_ALBUM" == media_type || "IMAGE" == media_type ) && instagramGlider.count < feeds[account].limit ) {
       template = `
         <li class="glide__slide">
           <div class="${blockName}__item" id="${id}" data-count="${instagramGlider.count}">
@@ -147,14 +147,13 @@ const InstagramFeed = (() => {
   ////  Print Media
   //////////////////////////////////////////////////////////
 
-  const printMedia = ( media = [], account = '' ) => {
+  const printMedia = ( account = '', media = [] ) => {
 
     if ( debug ) console.log( 'printMedia() :: Initialized', { media, account } );
 
     if ( media.length && account ) {
       ( document.querySelectorAll(`[data-instagram-feed-account='${account}']`) || [] ).forEach( element => {
-        feedLimit = element.dataset.instagramFeedLimit || feedLimit;
-        element.innerHTML = renderFeedMarkup( media );
+        element.innerHTML = renderFeedMarkup( account, media );
         initializeGlider();
       });
     }
@@ -184,9 +183,7 @@ const InstagramFeed = (() => {
       };
 
       tools.setLocalStorage( `very-polite-instagram-feed--${$account}`, JSON.stringify(localData) );
-
-      printMedia( json.data, $account );
-      //printMedia( placeholderData, $account );
+      printMedia( $account, json.data );
 
     })
     .catch(err => console.log( 'getMedia( $account, $token ) Error', err ));
@@ -217,19 +214,13 @@ const InstagramFeed = (() => {
   //////////////////////////////////////////////////////////
 
   const getFeeds = () => {
-
-    let elements = document.getElementsByClassName('js--instagram-feed');
-
-    for ( let i = 0; i < elements.length; i++ ) {
-      let limit = parseInt( elements[i].getAttribute('data-instagram-feed-post-limit') ) || 6;
-      let account = elements[i].getAttribute('data-instagram-feed-account-name') || false;
-      if ( account && limit ) {
-        feeds[account] = { element: elements[i], limit: limit };
-      }
-    }
-
-    if ( debug ) console.log( 'getFeeds() complete', feeds );
-
+    ( document.querySelectorAll(`[data-instagram-feed-account='${account}']`) || [] ).forEach( element => {
+       let limit = parseInt( element.dataset.instagramFeedLimit ) || 6;
+       let account = element.dataset.instagramFeedAccount || false;
+       if ( account && limit ) {
+        feeds[account] = { account, element, limit };
+       }
+    });
   };
 
   //////////////////////////////////////////////////////////
@@ -251,7 +242,7 @@ const InstagramFeed = (() => {
         if ( minutesDifference > 30 ) {
           getToken( account );
         } else {
-          printMedia( feedData.data, account );
+          printMedia( account, feedData.data );
         }
 
       } else {
@@ -278,7 +269,8 @@ const InstagramFeed = (() => {
 
   return {
     info,
-    init
+    init,
+    feeds
   };
 
 });
