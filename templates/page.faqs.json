@@ -63,6 +63,17 @@
         "b277ddac-81e5-43d2-831f-a8a8f6e56bcf": {
           "type": "accordion",
           "settings": {
+            "title": "Tronl tincidunt ipsum dolor sit amet, consectetuer adipiscing elit?",
+            "message": "",
+            "cta_title": "",
+            "cta_link": "",
+            "image_figure": "",
+            "image_caption": ""
+          }
+        },
+        "512a344c-b953-4908-a2e8-32742e477159": {
+          "type": "accordion",
+          "settings": {
             "title": "",
             "message": "",
             "cta_title": "",
@@ -76,7 +87,8 @@
         "c3609a73-7a73-4f96-92f9-9516bcc2800c",
         "423878c7-1a61-4f0e-be06-1100bc2fbd7d",
         "6ca22b28-2152-46a4-9e8c-cc3d117acb93",
-        "b277ddac-81e5-43d2-831f-a8a8f6e56bcf"
+        "b277ddac-81e5-43d2-831f-a8a8f6e56bcf",
+        "512a344c-b953-4908-a2e8-32742e477159"
       ],
       "settings": {
         "heading": "<p>Shipping<\/p>",
