@@ -101,7 +101,7 @@ const InstagramFeed = (() => {
   //////////////////////////////////////////////////////////
 
   const renderFeedMarkup = ( account = '', media = [] ) => {
-    if ( debug ) console.log( 'renderFeedMarkup ::', media );
+    if ( debug ) console.log( 'renderFeedMarkup ::', { account, media } );
     instagramGlider.count = 0;
     return `
       <div class="glide" id="${instagramGlider.id}" data-glide-style="${blockName}">
@@ -122,7 +122,8 @@ const InstagramFeed = (() => {
 
   function renderFeedCardMarkup( account = '', item = {} ) {
 
-    if ( debug ) console.log( 'renderFeedCardMarkup ::', item );
+    if ( debug ) console.log( 'renderFeedCardMarkup ::', { account, item } );
+
     let { id = '', media_type = '', media_url = '', permalink = '' } = item;
     let template = '';
 
@@ -149,7 +150,7 @@ const InstagramFeed = (() => {
 
   const printMedia = ( account = '', media = [] ) => {
 
-    if ( debug ) console.log( 'printMedia() :: Initialized', { media, account } );
+    if ( debug ) console.log( 'printMedia ::', { account, media } );
 
     if ( media.length && account ) {
       ( document.querySelectorAll(`[data-instagram-feed-account='${account}']`) || [] ).forEach( element => {
@@ -158,7 +159,7 @@ const InstagramFeed = (() => {
       });
     }
 
-    if ( debug ) console.log( 'printMedia() :: Complete' );
+    if ( debug ) console.log( 'printMedia :: Complete' );
 
   };
 
@@ -166,9 +167,9 @@ const InstagramFeed = (() => {
   ////  Get Media
   //////////////////////////////////////////////////////////
 
-  const getMedia = ( $account = 'not-set', $token = 'not-set' ) => {
+  const getMedia = ( account = 'not-set', token = 'not-set' ) => {
 
-    let getURL = 'https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink&access_token=' + $token;
+    let getURL = `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink&access_token=${token}`;
 
     fetch( getURL )
     .then(res => res.json())
@@ -177,13 +178,13 @@ const InstagramFeed = (() => {
       if ( debug ) console.log('getMedia:', json );
 
       let localData = {
-        account: $account,
+        account: account,
         date: Date.now(),
         data: json.data
       };
 
-      tools.setLocalStorage( `very-polite-instagram-feed--${$account}`, JSON.stringify(localData) );
-      printMedia( $account, json.data );
+      tools.setLocalStorage( `very-polite-instagram-feed--${account}`, JSON.stringify(localData) );
+      printMedia( account, json.data );
 
     })
     .catch(err => console.log( 'getMedia( $account, $token ) Error', err ));
@@ -194,16 +195,16 @@ const InstagramFeed = (() => {
   ////  Get Token
   //////////////////////////////////////////////////////////
 
-  const getToken = ( $account ) => {
+  const getToken = ( account ) => {
 
-    fetch( 'https://very-polite-instagram-feed.herokuapp.com/token?userAccount=' + $account )
+    fetch( `https://very-polite-instagram-feed.herokuapp.com/token?userAccount=${account}` )
     .then( res => {
       if ( debug ) console.log('getToken( $account ) :: Response', res );
       res.json();
     })
     .then( json => {
       if ( debug ) console.log('getToken( $account ) :: JSON', json );
-      getMedia( $account, json.token );
+      getMedia( account, json.token );
     })
     .catch( err => console.log(err) );
 
@@ -214,7 +215,7 @@ const InstagramFeed = (() => {
   //////////////////////////////////////////////////////////
 
   const getFeeds = () => {
-    ( document.querySelectorAll(`[data-instagram-feed-account]`) || [] ).forEach( element => {
+    ( document.querySelectorAll('.js--instagram-feed') || [] ).forEach( element => {
        let limit = parseInt( element.dataset.instagramFeedLimit ) || 6;
        let account = element.dataset.instagramFeedAccount || false;
        if ( account && limit ) {

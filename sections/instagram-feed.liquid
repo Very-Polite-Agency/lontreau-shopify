@@ -7,21 +7,23 @@
 {% assign heading_highlight = section.settings.heading_highlight | default: false %}
 
 <div class="{{ section_name }}" id="{{ section_id }}">
+  {% render 'bs-container', state: 'open', container: 'container-fluid' %}
 
-  <div class="{{ section_name }}__intro intro">
-    <h1 class="heading--2">{{ heading }}</h1>
-  </div>
+    <div class="{{ section_name }}__intro intro">
+      <div class="{{ section_name }}__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</div>
+    </div>
 
-  <div
-    class="{{ section_name }}__main main js--instagram-feed"
-    data-instagram-feed-account="{{ feed_account }}"
-    data-instagram-feed-limit="{{ feed_limit }}"
-  >
-    <!-- Inject Instagram Feed Here... -->
-  </div>
+    <div
+      class="{{ section_name }}__main main js--instagram-feed"
+      data-instagram-feed-account="{{ feed_account }}"
+      data-instagram-feed-limit="{{ feed_limit }}"
+    >
+      <!-- Inject Instagram Feed Here... -->
+    </div>
 
-  <div class="{{ section_name }}__cta"></div>
+    <div class="{{ section_name }}__cta"></div>
 
+  {% render 'bs-container', state: 'closed' %}
 </div>
 
 {% schema %}
