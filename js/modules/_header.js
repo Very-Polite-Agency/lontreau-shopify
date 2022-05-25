@@ -10,7 +10,7 @@ const Header = (() => {
   let timeout = {
     navigation: null,
     subNavigation: null,
-    duration: 500
+    duration: 400
   };
 
   //////////////////////////////////////////////////////////
@@ -18,10 +18,6 @@ const Header = (() => {
   //////////////////////////////////////////////////////////
 
   const setSubnavigationWidthFromNavigationWidth = () => {
-
-    // let headerNavigationWidth = mainNavigation.offsetWidth || 0;
-    // let headerNavigationOffset = mainNavigation.getBoundingClientRect() || {};
-    // let headerNavigationOffsetLeft = mainNavigation.left || 0;
 
     let navigation = document.getElementById('header__navigation') || false;
     let subNaviation = {
@@ -100,7 +96,7 @@ const Header = (() => {
         if ( link.classList.contains('has-links') ) {
           timeout.subNavigation = setTimeout(function(){
             link.classList.remove('active');
-          }, timeout.duration - 250 );
+          }, timeout.duration * 0.5 );
         }
       });
 
