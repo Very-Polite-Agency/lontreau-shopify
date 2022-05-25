@@ -169,9 +169,11 @@ const InstagramFeed = (() => {
 
   const getMedia = ( account = 'not-set', token = 'not-set' ) => {
 
-    let getURL = `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink&access_token=${token}`;
+    let fetchURL = `https://graph.instagram.com/me/media?fields=id,media_type,media_url,permalink&access_token=${token}`;
 
-    fetch( getURL )
+    console.log( 'getMedia ::', { fetchURL } );
+
+    fetch( fetchURL )
     .then(res => res.json())
     .then(json => {
 
@@ -197,7 +199,11 @@ const InstagramFeed = (() => {
 
   const getToken = ( account ) => {
 
-    fetch( `https://very-polite-instagram-feed.herokuapp.com/token?userAccount=${account}` )
+    let fetchURL = `https://very-polite-instagram-feed.herokuapp.com/token?userAccount=${account}`;
+
+    console.log( 'getToken ::', { fetchURL } );
+
+    fetch( fetchURL )
     .then( res => {
       if ( debug ) console.log('getToken( $account ) :: Response', res );
       res.json();
