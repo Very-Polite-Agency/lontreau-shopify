@@ -701,17 +701,6 @@
       "sC" : 3,
       "tS" : 1
     },
-    "\/js\/modules\/_header--LEGACY.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/assets\/_header--LEGACY.min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 1
-    },
     "\/js\/modules\/_header.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -2416,44 +2405,12 @@
       "oAP" : "\/sections\/contact-form.liquid",
       "oF" : 0
     },
-    "\/sections\/custom-liquid.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/custom-liquid.liquid",
-      "oF" : 0
-    },
-    "\/sections\/email-signup-banner.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/email-signup-banner.liquid",
-      "oF" : 0
-    },
     "\/sections\/feature-carousel.liquid" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/feature-carousel.liquid",
-      "oF" : 0
-    },
-    "\/sections\/featured-blog.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/featured-blog.liquid",
-      "oF" : 0
-    },
-    "\/sections\/featured-collection.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/featured-collection.liquid",
       "oF" : 0
     },
     "\/sections\/featured-product.liquid" : {
@@ -2550,14 +2507,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/main-cart.liquid",
-      "oF" : 0
-    },
-    "\/sections\/main-collection-hero--legacy.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/main-collection-hero--legacy.liquid",
       "oF" : 0
     },
     "\/sections\/main-collection-hero.liquid" : {
