@@ -1,18 +1,8 @@
 <div>
-  <h1 class="heading--2">MAIN-PAGE.LIQUID</h1>
-  <h1 class="main-page-title page-title h0">
+  <h1 class="main-page-title page-title h0 heading--2">
     {{ page.title | escape }}
   </h1>
   <div class="rte">
     {{ page.content }}
   </div>
 </div>
-
-{% schema %}
-{
-  "name": "t:sections.main-page.name",
-  "tag": "section",
-  "class": "section",
-  "settings": []
-}
-{% endschema %}
