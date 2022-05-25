@@ -4,11 +4,6 @@
     "social_link_instagram": "https:\/\/www.instagram.com\/",
     "social_link_twitter": "https:\/\/twitter.com\/",
     "sections": {
-      "announcements": {
-        "type": "announcements",
-        "settings": {
-        }
-      },
       "header": {
         "type": "header",
         "settings": {
