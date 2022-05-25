@@ -120,7 +120,6 @@ const Header = (() => {
   const hoverSubNavigation = () => {
 
     let links = ( document.querySelectorAll('.header .sub-navigation__item.has-links') || [] );
-    let image, backgroundElement;
 
     links.forEach( link => {
 
@@ -129,9 +128,9 @@ const Header = (() => {
 
         clearTimeout(timeout.subNavigation);
 
-        image = link.dataset.featuredImage || false;
-        backgroundElement = link.closest('.sub-navigation').querySelector('.sub-navigation__background') || false;
-        backgroundElement.dataset.bg = backgroundElement && image ? image : '';
+        let image = link.dataset.featuredImage || '';
+        let backgroundElement = link.closest('.sub-navigation').querySelector('.sub-navigation__background') || false;
+        backgroundElement.dataset.bg = ( backgroundElement && image ) ? image : '';
 
         links.forEach( link => link.classList.remove('active') );
         link.classList.add('active');
