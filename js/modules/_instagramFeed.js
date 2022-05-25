@@ -174,8 +174,8 @@ const InstagramFeed = (() => {
     console.log( 'getMedia ::', { fetchURL } );
 
     fetch( fetchURL )
-    .then(res => res.json())
-    .then(json => {
+    .then( res => res.json())
+    .then( json => {
 
       if ( debug ) console.log('getMedia:', json );
 
@@ -204,10 +204,7 @@ const InstagramFeed = (() => {
     console.log( 'getToken ::', { fetchURL } );
 
     fetch( fetchURL )
-    .then( res => {
-      if ( debug ) console.log('getToken( $account ) :: Response', res );
-      res.json();
-    })
+    .then( res => res.json() )
     .then( json => {
       if ( debug ) console.log('getToken( $account ) :: JSON', json );
       getMedia( account, json.token );
@@ -224,6 +221,7 @@ const InstagramFeed = (() => {
     ( document.querySelectorAll('.js--instagram-feed') || [] ).forEach( element => {
        let limit = parseInt( element.dataset.instagramFeedLimit ) || 6;
        let account = element.dataset.instagramFeedAccount || false;
+       console.log( 'getFeeds ::', { account, limit } );
        if ( account && limit ) {
         feeds[account] = { account, element, limit };
        }
