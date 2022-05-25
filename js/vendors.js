@@ -1,8 +1,6 @@
 // @codekit-prepend quiet "../node_modules/lazysizes/lazysizes.min.js";
 // @codekit-prepend quiet "../node_modules/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js";
 // @codekit-prepend quiet "../node_modules/lazysizes/plugins/attrchange/ls.attrchange.min.js";
-// @codekit-prepend quiet "../node_modules/aos/dist/aos.js";
-// @codekit-prepend quiet "../node_modules/axios/dist/axios.min.js";
 
 window.lazySizesConfig = window.lazySizesConfig || {};
 window.lazySizesConfig.lazyClass = 'lazyload';

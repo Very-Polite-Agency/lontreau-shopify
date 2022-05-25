@@ -1,3 +1,5 @@
+// @codekit-prepend quiet "../node_modules/aos/dist/aos.js";
+// @codekit-prepend quiet "../node_modules/axios/dist/axios.min.js";
 // @codekit-prepend quiet "../node_modules/validator/validator.min.js";
 // @codekit-prepend quiet "../node_modules/@glidejs/glide/dist/glide.min.js";
 // @codekit-prepend quiet "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -229,10 +231,7 @@ AOS.init({
   delay: 0,                   // values from 0 to 3000, with step 50ms
   duration: 550,              // values from 0 to 3000, with step 50ms
   easing: 'ease-in-out',      // default easing for AOS animations
-  once: true,
+  startEvent: 'load'          // waits for window load event
 });
 
-window.addEventListener('load', (event) => {
-  console.log('page is fully loaded');
-  AOS.refresh();
-});
+console.log('updated 6.9');
