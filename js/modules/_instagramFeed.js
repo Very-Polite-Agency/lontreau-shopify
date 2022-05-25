@@ -127,12 +127,13 @@ const InstagramFeed = (() => {
   ////  Render Feed Markup
   //////////////////////////////////////////////////////////
 
-  const renderFeedMarkup = ( $media = [] ) => {
+  const renderFeedMarkup = ( media = [] ) => {
+    console.log( 'renderFeedMarkup', { media } );
     return `
       <div class="glide" id="${instagramGlider.id}" data-glide-style="${blockName}">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
-            ${$media.map( item =>
+            ${media.map( item =>
               `<li class="glide__slide">
                 ${renderFeedCardMarkup( item )}
               </li>`
@@ -167,13 +168,13 @@ const InstagramFeed = (() => {
   ////  Print Media
   //////////////////////////////////////////////////////////
 
-  const printMedia = ( $media = [], $account = '' ) => {
+  const printMedia = ( media = [], account = '' ) => {
 
-    if ( debug ) console.log( 'printMedia() :: Initialized' );
+    if ( debug ) console.log( 'printMedia() :: Initialized', { media, account } );
 
-    if ( $media.length && $account ) {
-      ( document.querySelectorAll(`[data-instagram-feed-account-name='${$account}']`) || [] ).forEach( element => {
-        element.innerHTML = renderFeedMarkup( $media );
+    if ( media.length && account ) {
+      ( document.querySelectorAll(`[data-instagram-feed-account-name='${account}']`) || [] ).forEach( element => {
+        element.innerHTML = renderFeedMarkup( media );
         initializeGlider();
       });
     }
