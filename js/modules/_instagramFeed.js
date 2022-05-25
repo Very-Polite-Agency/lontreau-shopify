@@ -22,7 +22,8 @@ const InstagramFeed = (() => {
   let instagramGlider = {
     interval: null,
     id: blockName,
-    glider: {}
+    glider: {},
+    count: 0,
   };
 
   let placeholderData = [
@@ -134,9 +135,7 @@ const InstagramFeed = (() => {
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             ${media.map( item =>
-              `<li class="glide__slide">
-                ${renderFeedCardMarkup( item )}
-              </li>`
+              `${renderFeedCardMarkup( item )}`
             ).join('')}
           </ul>
         </div>
@@ -150,17 +149,23 @@ const InstagramFeed = (() => {
 
   function renderFeedCardMarkup( item = {} ) {
 
-    let image_src = item.image_src;
-    let title = item.title;
-    let url = item.url;
+    let { id = '', media_type = '', media_url = '', permalink = '' } = item;
+    let template = '';
 
-    return `
-      <div class="${blockName}__item">
-        <a class="${blockName}__item-link" href="${url}" title="${title}" target="_blank">
-          <div class="${blockName}__item-image lazyload-item lazyload-item--image lazypreload lazyload-item--inline lazyload" data-bg="${image_src}"></div>
-        </a>
-      </div>
-    `;
+    if ( "CAROUSEL_ALBUM" == media_type || "IMAGE"  == media_type ) {
+      template = `
+        <li class="glide__slide">
+          <div class="${blockName}__item" id="${id}">
+            <a class="${blockName}__item-link" href="${permalink}" title="${title}" target="_blank">
+              <div class="${blockName}__item-image lazyload-item lazyload-item--image lazypreload lazyload-item--inline lazyload" data-bg="${media_url}"></div>
+            </a>
+          </div>
+        </li>
+      `;
+      instagramGlider.count++;
+    }
+
+    return template;
 
   };
 
@@ -175,6 +180,7 @@ const InstagramFeed = (() => {
     if ( media.length && account ) {
       ( document.querySelectorAll(`[data-instagram-feed-account-name='${account}']`) || [] ).forEach( element => {
         element.innerHTML = renderFeedMarkup( media );
+        console.log( 'instagramGlider.count', instagramGlider.count );
         initializeGlider();
       });
     }
