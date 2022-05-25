@@ -23,7 +23,13 @@
       <!-- Inject Instagram Feed Here... -->
     </div>
 
-    <div class="{{ section_name }}__cta"></div>
+    <div class="{{ section_name }}__cta">
+      <span class="{{ section_name }}__cta-tagline">On the move</span>
+      <span class="{{ section_name }}__cta-stroke"></span>
+      <span class="{{ section_name }}__cta-account"><a href="https://www.instagram.com/{{ feed_account }}" target="_blank">@{{ feed_account }}</a></span>
+      <span class="{{ section_name }}__cta-stroke"></span>
+      <span class="{{ section_name }}__cta-icon">{% render 'svg', 'icon.arrow-dotted-large' %}</span>
+    </div>
 
   {% render 'bs-container', state: 'closed' %}
 </div>
@@ -54,6 +60,11 @@
       ],
       "default": "standard",
       "id": "heading_highlight"
+    },
+    {
+      "label": "Tagline",
+      "type": "text",
+      "id": "tagline"
     },
     {
       "content": "Settings",
