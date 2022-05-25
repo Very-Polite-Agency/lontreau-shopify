@@ -1,5 +1,22 @@
 {
   "sections": {
+    "164988306417b0ac41": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "dark",
+        "title": "",
+        "heading": "<p>FAQs<\/p>",
+        "heading_highlight": "standard",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/full-width-feature-01.png",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "auto",
+        "curved_arrow_enable": false
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -7,19 +24,19 @@
         "padding_bottom": 28
       }
     },
-    "164988306417b0ac41": {
-      "type": "full-width-feature",
+    "165349882530b74a17": {
+      "type": "accordion-education",
       "settings": {
-        "title": "FAQs",
+        "heading": "<p>Shipping<\/p>",
+        "heading_highlight": "standard",
         "message": "",
-        "highlight": "standard",
-        "parallax": false,
-        "height": "auto"
+        "anchor_id": ""
       }
     }
   },
   "order": [
+    "164988306417b0ac41",
     "main",
-    "164988306417b0ac41"
+    "165349882530b74a17"
   ]
 }
