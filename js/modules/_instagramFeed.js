@@ -18,6 +18,7 @@ const InstagramFeed = (() => {
 
   let targetElementElement = '.js--instagram-feed';
   let blockName = 'instagram-feed';
+  let feedLimit = 3;
   let feeds = {};
   let instagramGlider = {
     interval: null,
@@ -25,34 +26,6 @@ const InstagramFeed = (() => {
     glider: {},
     count: 0,
   };
-
-  let placeholderData = [
-    {
-      image_src: 'https://images.pexels.com/photos/2662792/pexels-photo-2662792.jpeg',
-      title: 'abc-01',
-      url: 'https://www.bbc.com/news/world'
-    },
-    {
-      image_src: 'https://images.pexels.com/photos/2363814/pexels-photo-2363814.jpeg',
-      title: 'abc-02',
-      url: 'https://www.nike.com/ca/'
-    },
-    {
-      image_src: 'https://images.pexels.com/photos/4352247/pexels-photo-4352247.jpeg',
-      title: 'abc-03',
-      url: 'https://www.adidas.ca/'
-    },
-    {
-      image_src: 'https://images.pexels.com/photos/7932264/pexels-photo-7932264.jpeg',
-      title: 'abc-04',
-      url: 'https://www.awwwards.com/'
-    },
-    {
-      image_src: 'https://images.pexels.com/photos/4256211/pexels-photo-4256211.jpeg',
-      title: 'abc-05',
-      url: 'https://www.lipsum.com/'
-    }
-  ];
 
   //////////////////////////////////////////////////////////
   ////  Initialize Glider
@@ -149,15 +122,13 @@ const InstagramFeed = (() => {
 
   function renderFeedCardMarkup( item = {} ) {
 
-    console.log( 'renderFeedCardMarkup() :: ', item )
-
     let { id = '', media_type = '', media_url = '', permalink = '' } = item;
     let template = '';
 
-    if ( "CAROUSEL_ALBUM" == media_type || "IMAGE" == media_type ) {
+    if ( ( "CAROUSEL_ALBUM" == media_type || "IMAGE" == media_type ) && instagramGlider.count < feedLimit ) {
       template = `
         <li class="glide__slide">
-          <div class="${blockName}__item" id="${id}">
+          <div class="${blockName}__item" id="${id}" data-count="${instagramGlider.count}">
             <a class="${blockName}__item-link" href="${permalink}" target="_blank">
               <div class="${blockName}__item-image lazyload-item lazyload-item--image lazypreload lazyload-item--inline lazyload" data-bg="${media_url}"></div>
             </a>
@@ -180,9 +151,9 @@ const InstagramFeed = (() => {
     if ( debug ) console.log( 'printMedia() :: Initialized', { media, account } );
 
     if ( media.length && account ) {
-      ( document.querySelectorAll(`[data-instagram-feed-account-name='${account}']`) || [] ).forEach( element => {
+      ( document.querySelectorAll(`[data-instagram-feed-account='${account}']`) || [] ).forEach( element => {
+        feedLimit = element.dataset.instagramFeedLimit || feedLimit;
         element.innerHTML = renderFeedMarkup( media );
-        console.log( 'instagramGlider.count', instagramGlider.count );
         initializeGlider();
       });
     }
@@ -279,11 +250,7 @@ const InstagramFeed = (() => {
         if ( minutesDifference > 30 ) {
           getToken( account );
         } else {
-
-          if ( debug ) console.log( 'localStorage fired!' );
           printMedia( feedData.data, account );
-          //printMedia( placeholderData, account );
-
         }
 
       } else {
@@ -301,9 +268,6 @@ const InstagramFeed = (() => {
   const init = () => {
     if ( debug ) console.log( '[ InstagramFeed.init() ] Start' );
     main();
-
-    // printMedia( placeholderData, 'studiodhome' );
-
     if ( debug ) console.log( '[ InstagramFeed.init() ] End' );
   };
 

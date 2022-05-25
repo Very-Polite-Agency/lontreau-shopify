@@ -1,6 +1,8 @@
 {% assign section_name = 'instagram-feed' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign feed_account = section.settings.feed_account | default: 'verypoliteagency' %}
+{% assign feed_limit = section.settings.feed_limit | default: 5 %}
 {% assign heading = section.settings.heading | default: '' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: false %}
 
@@ -10,15 +12,12 @@
     <h1 class="heading--2">{{ heading }}</h1>
   </div>
 
-  <div class="{{ section_name }}__main main js--instagram-feed" data-instagram-feed-account-name="verypoliteagency">
-
-    {% comment %} $html .= '<div class="{{ section_name }}__item" data-count="' . $i + 1 . '" data-index="' . $i . '">';
-      $html .= '<a class="{{ section_name }}__link link" href="" title="studio D Instagram Post" target="_blank">';
-        $html .= '<img class="{{ section_name }}__placeholder" width="200" height="200" src="' . $this->get_theme_directory('assets') . '/img/placeholder/STUDIO--placeholder--square.svg" alt="studio D Instagram Post" />';
-        $html .= '<div class="{{ section_name }}__image lazyload-item lazyload-item--image lazyload-item--background"></div>';
-      $html .= '</a>';
-    $html .= '</div>'; {% endcomment %}
-
+  <div
+    class="{{ section_name }}__main main js--instagram-feed"
+    data-instagram-feed-account="{{ feed_account }}"
+    data-instagram-feed-limit="{{ feed_limit }}"
+  >
+    <!-- Inject Instagram Feed Here... -->
   </div>
 
   <div class="{{ section_name }}__cta"></div>
@@ -51,6 +50,27 @@
       ],
       "default": "standard",
       "id": "heading_highlight"
+    },
+    {
+      "content": "Settings",
+      "type": "header"
+    },
+    {
+      "label": "Account",
+      "info": "Name of instagram account",
+      "type": "text",
+      "default": "verypoliteagency",
+      "id": "feed_account"
+    }
+    {
+      "label": "Feed limit",
+      "info": "Maximum number of images to show",
+      "type": "range",
+      "min": 3,
+      "max": 9,
+      "step": 1,
+      "default": 5,
+      "id": "feed_limit"
     }
   ],
   "presets": [
