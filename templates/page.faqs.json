@@ -42,7 +42,7 @@
           "type": "accordion",
           "settings": {
             "title": "Sed diam nonummy nibh euismod tincidunt ut laoreet?",
-            "message": "",
+            "message": "<p>In accumsan, eros sit amet molestie congue, nunc felis semper ante, eu euismod odio turpis ac neque. Mauris sed risus sed nunc pellentesque sollicitudin. Donec erat ipsum, porttitor sed nibh nec, pulvinar efficitur sapien. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer a maximus nisi. In hac habitasse platea dictumst. Aenean sit amet pretium velit, sit amet suscipit ligula.<\/p><p>Sed cursus ante ligula, in fermentum odio tristique non. Pellentesque mi velit, convallis nec placerat vel, luctus vitae tellus. Quisque orci nibh, egestas eu maximus eu, gravida vitae quam. Cras iaculis, sem sed cursus posuere, enim lorem pulvinar metus, quis pharetra sem justo at velit. In vitae tempor libero, ac mollis velit. Fusce malesuada, ante non efficitur porta, lacus lacus pharetra nisl, sed sodales est eros quis eros. Morbi semper sem sit amet fermentum dapibus. Nam sollicitudin in est eget bibendum. Etiam a porttitor sem. Nulla tempus lacus eget tortor molestie auctor. Cras tincidunt pretium rhoncus. Nunc egestas nulla ac pellentesque tempus. Maecenas sit amet eros vestibulum, luctus erat non, mollis ante. Praesent sit amet fermentum est. In commodo varius eros vel fringilla. Sed quis viverra eros, quis vehicula quam.<\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
@@ -53,7 +53,7 @@
           "type": "accordion",
           "settings": {
             "title": "Consectetuer diam nonummy nibh euismod tincidunt ut laoreet?",
-            "message": "",
+            "message": "<p>Duis nec orci turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim accumsan eros, luctus sollicitudin elit bibendum imperdiet. Vestibulum sit amet purus sit amet orci egestas posuere. Proin in arcu neque. Sed ultrices quam id consectetur accumsan. Aenean nec magna vel lorem auctor tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum vulputate laoreet risus, quis vestibulum metus molestie non. Etiam malesuada vel ex eu consequat.<\/p><p>Nullam molestie eros quam, sed volutpat arcu tempus et. Aenean tincidunt dapibus iaculis. Suspendisse condimentum magna leo, vitae volutpat mauris ultricies in. Fusce ac porta dolor. Vestibulum varius, quam nec molestie molestie, ipsum tellus consectetur ex, sit amet sagittis magna ex eget nisi. Nam eu augue maximus metus venenatis maximus eget at tortor. Cras congue nec risus at facilisis. Sed sit amet pretium erat, eu commodo nunc. Aenean tempus malesuada gravida. Donec commodo augue et mattis ultricies. Sed congue ipsum nibh, vel congue lorem tempus eget. Proin efficitur velit lectus, non fringilla metus luctus vitae.<\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
