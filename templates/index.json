@@ -123,10 +123,10 @@
     "16535101150c7e3d32": {
       "type": "instagram-feed",
       "settings": {
-        "heading": "<p>Intagram <em>Feed<\/em><\/p>",
+        "heading": "",
         "heading_highlight": "stroke",
         "feed_account": "verypoliteagency",
-        "feed_limit": 7
+        "feed_limit": 4
       }
     }
   },
