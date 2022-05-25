@@ -1,5 +1,63 @@
 .instagram-feed {
 
+  padding-top: 20px;
+
+  &__cta {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+    &-account,
+    &-tagline {
+      color: rgba(var(--theme-colour-black),1);
+      font-family: var(--theme-font-family--sans-serif--primary);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+    &-account {
+      &-link {
+        color: inherit;
+        &:hover {
+          color: rgba(var(--theme-colour-grass), 1);
+        }
+      }
+    }
+    &-button {
+      color: rgba(var(--theme-colour-grass),1);
+      height: 36px;
+      width: auto;
+      min-height: unset;
+      img, svg {
+        display: block;
+        width: auto;
+        height: 100%;
+        fill: currentColor;
+      }
+      &:hover {
+        color: rgba(var(--theme-colour-black),1);
+      }
+    }
+    &-stroke {
+      flex: 1;
+      height: 2px;
+      background: rgba(var(--theme-colour-grass),1);
+      margin: 0 24px;
+      &.small {
+        width: 50px;
+        flex: unset;
+        display: none;
+      }
+    }
+    &-tagline {
+      display: none;
+    }
+  }
+
   &__item {
     width: 100%;
     position: relative;
@@ -26,5 +84,36 @@
     width: calc(100% + var(--bs-container-fluid-padding));
     position: relative;
   }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {
+
+    &__cta {
+      &-stroke {
+        &.small {
+          display: block;
+        }
+      }
+      &-tagline {
+        display: block;
+      }
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {
+
+    padding-top: 80px;
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {
+
+    padding-top: 100px;
+
+  } // min width xxl
 
 }

@@ -5,8 +5,9 @@
 {% assign feed_limit = section.settings.feed_limit | default: 5 %}
 {% assign heading = section.settings.heading | default: '' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: false %}
+{% assign tagline = section.settings.tagline | default: 'On the go' %}
 
-<div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
+<div class="{{ section_name }}" id="{{ section_id }}"">
   {% render 'bs-container', state: 'open', container: 'container-fluid' %}
 
     {% if heading != blank %}
@@ -24,11 +25,13 @@
     </div>
 
     <div class="{{ section_name }}__cta">
-      <span class="{{ section_name }}__cta-tagline">On the move</span>
+      <span class="{{ section_name }}__cta-tagline">{{ tagline }}</span>
+      <span class="{{ section_name }}__cta-stroke small"></span>
+      <span class="{{ section_name }}__cta-account">
+        <a class="{{ section_name }}__cta-account-link link" href="https://www.instagram.com/{{ feed_account }}" target="_blank">@{{ feed_account }}</a>
+      </span>
       <span class="{{ section_name }}__cta-stroke"></span>
-      <span class="{{ section_name }}__cta-account"><a href="https://www.instagram.com/{{ feed_account }}" target="_blank">@{{ feed_account }}</a></span>
-      <span class="{{ section_name }}__cta-stroke"></span>
-      <span class="{{ section_name }}__cta-icon">{% render 'svg', 'icon.arrow-dotted-large' %}</span>
+      <button class="{{ section_name }}__cta-button button next" type="button" data-target="#instagram-feed">{% render 'svg', type: 'icon.arrow-dotted-large' %}</button>
     </div>
 
   {% render 'bs-container', state: 'closed' %}
