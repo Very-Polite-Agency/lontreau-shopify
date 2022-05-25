@@ -9,6 +9,11 @@
   &__featured-image {
     border: 1px solid rgba(var(--theme-colour-black), 1);
     position: relative;
+    &-link {
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
 
   &__info {

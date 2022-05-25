@@ -37,7 +37,7 @@
 
       {% when 'collection-product-grid', 'product-recommendations' %}
         <div class="{{ snippet_name }}__featured-image product__featured-image">
-          <a class="{{ snippet_name }}__featured-image-link" href="{{ url }}" title="{{ title }}" target="_self">
+          <a class="{{ snippet_name }}__featured-image-link link" href="{{ url }}" title="{{ title }}" target="_self">
             {%
               render 'lazyload-image',
               alt_text: title,
@@ -71,7 +71,7 @@
         {% endif %}
 
         <div class="{{ snippet_name }}__featured-image product__featured-image">
-          <a class="{{ snippet_name }}__featured-image-link" href="{{ url }}" title="{{ title }}" target="_self">
+          <a class="{{ snippet_name }}__featured-image-link link" href="{{ url }}" title="{{ title }}" target="_self">
             {%
               render 'lazyload-image',
               alt_text: title,
@@ -88,7 +88,7 @@
       {% when 'fifty-fifty' %}
 
         <div class="{{ snippet_name }}__featured-image product__featured-image">
-          <a class="{{ snippet_name }}__featured-image-link" href="{{ url }}" title="{{ title }}" target="_self">
+          <a class="{{ snippet_name }}__featured-image-link link" href="{{ url }}" title="{{ title }}" target="_self">
             {%
               render 'lazyload-image',
               alt_text: title,
