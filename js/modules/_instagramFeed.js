@@ -214,7 +214,7 @@ const InstagramFeed = (() => {
   //////////////////////////////////////////////////////////
 
   const getFeeds = () => {
-    ( document.querySelectorAll(`[data-instagram-feed-account='${account}']`) || [] ).forEach( element => {
+    ( document.querySelectorAll(`[data-instagram-feed-account]`) || [] ).forEach( element => {
        let limit = parseInt( element.dataset.instagramFeedLimit ) || 6;
        let account = element.dataset.instagramFeedAccount || false;
        if ( account && limit ) {
