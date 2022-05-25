@@ -119,29 +119,32 @@ const Header = (() => {
 
   const hoverSubNavigation = () => {
 
-    let links = ( document.querySelectorAll('.header .sub-navigation__item.has-links') || [] );
+    let links = ( document.querySelectorAll('.header .sub-navigation__item') || [] );
 
     links.forEach( link => {
 
       // ---------------------------------------- Mouse Enter
       link.addEventListener('mouseenter', event => {
 
-        clearTimeout(timeout.subNavigation);
+        if ( link.classList.contains('has-links') ) {
+          clearTimeout(timeout.subNavigation);
+          links.forEach( link => link.classList.remove('active') );
+          link.classList.add('active');
+        }
 
         let image = link.dataset.featuredImage || '';
         let backgroundElement = link.closest('.sub-navigation').querySelector('.sub-navigation__background') || false;
         backgroundElement.dataset.bg = ( backgroundElement && image ) ? image : '';
 
-        links.forEach( link => link.classList.remove('active') );
-        link.classList.add('active');
-
       });
 
       // ---------------------------------------- Mouse Leave
       link.addEventListener('mouseleave', event => {
-        timeout.subNavigation = setTimeout(function(){
-          link.classList.remove('active');
-        }, timeout.duration);
+        if ( link.classList.contains('has-links') ) {
+          timeout.subNavigation = setTimeout(function(){
+            link.classList.remove('active');
+          }, timeout.duration);
+        }
       });
 
     });
