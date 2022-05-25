@@ -1,7 +1,7 @@
 {% assign section_name = 'default-page' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
-<div class="{{ section_name }}" id="{{ section_id }}">
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
   <div class="{{ section_name }}__main">
     {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
 
