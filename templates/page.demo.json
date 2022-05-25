@@ -9,7 +9,7 @@
       "type": "full-width-feature",
       "settings": {
         "text_theme": "light",
-        "title": "",
+        "title": "Demo Title",
         "heading": "<p>Demo <em>Page<\/em><\/p>",
         "heading_highlight": "standard",
         "message": "<p>Suspendisse consectetur congue nibh, at accumsan elit volutpat nec. Sed eu risus ut nibh molestie feugiat a eget ante. In vehicula turpis et lacus luctus, sit amet vehicula dui laoreet.<\/p>",
@@ -17,7 +17,7 @@
         "cta_link": "",
         "parallax": false,
         "anchor_id": "",
-        "height": "auto",
+        "height": "large",
         "curved_arrow_enable": false
       }
     }
