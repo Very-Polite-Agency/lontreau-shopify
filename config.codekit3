@@ -2632,28 +2632,12 @@
       "oAP" : "\/sections\/mobile-menu.liquid",
       "oF" : 0
     },
-    "\/sections\/newsletter.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/newsletter.liquid",
-      "oF" : 0
-    },
     "\/sections\/page.liquid" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/page.liquid",
-      "oF" : 0
-    },
-    "\/sections\/pickup-availability.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/pickup-availability.liquid",
       "oF" : 0
     },
     "\/sections\/predictive-search.liquid" : {
@@ -2670,14 +2654,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/product-recommendations.liquid",
-      "oF" : 0
-    },
-    "\/sections\/rich-text.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/rich-text.liquid",
       "oF" : 0
     },
     "\/sections\/the-team.liquid" : {
