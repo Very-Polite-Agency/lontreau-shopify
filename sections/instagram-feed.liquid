@@ -1,0 +1,95 @@
+{% assign section_name = 'instagram-feed' %}
+{% assign section_id = section_name | append: '--' | append: section.id %}
+
+{% assign heading = section.settings.heading | default: '' %}
+{% assign heading_highlight = section.settings.heading_highlight | default: false %}
+
+<div class="{{ section_name }}" id="{{ section_id }}">
+
+  <div class="{{ section_name }}__media">
+    {%
+      render 'lazyload-image',
+      background: true,
+      classes: 'hero__background-image',
+      image: image,
+      duration: 500,
+    %}
+  </div>
+
+  <div class="{{ section_name }}__main">
+    {% render 'bs-container', state: 'open' %}
+
+      {% capture aos %}
+        {%
+          render 'aos-attributes',
+          anchor: section_id,
+          anchor_placement: 'top-center',
+          delay: 150,
+          duration: 1500,
+          easing: 'ease-in-out',
+          offset: 100,
+          once: 'true',
+          transition: 'fade-up',
+        %}
+      {% endcapture %}
+
+      <div class="{{ section_name }}__brand" {{ aos }}>
+        {% render 'svg', type: 'brand.logo.large' %}
+      </div>
+
+      {%
+        render 'heading-highlight',
+        classes: 'hero__heading intro__heading heading--2',
+        heading: heading,
+        style: heading_highlight,
+        tag: 'h2'
+      %}
+
+    {% render 'bs-container', state: 'closed' %}
+  </div>
+
+  {% if cta_title %}
+    <div class="{{ section_name }}__cta">
+      <div class="{{ section_name }}__cta-title">{{ cta_title }}</div>
+      <div class="{{ section_name }}__cta-icon">{% render 'svg', type: 'icon.arrow-dotted' %}</div>
+    </div>
+  {% endif %}
+
+</div>
+
+{% schema %}
+{
+  "name": "Instagram Feed",
+  "tag": "section",
+  "class": "section section--instagram-feed",
+  "limit": 1,
+  "settings": [
+    {
+      "content": "Content",
+      "type": "header"
+    },
+    {
+      "label": "Heading",
+      "type": "richtext",
+      "id": "heading"
+    },
+    {
+      "label": "Heading Highlight",
+      "type": "select",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "stroke", "label": "Stroke" },
+        { "value": "circle", "label": "Circle" }
+      ],
+      "default": "standard",
+      "id": "heading_highlight"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero"
+    }
+  ],
+  "templates": [ "index" ]
+}
+{% endschema %}

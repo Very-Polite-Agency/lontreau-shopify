@@ -2477,6 +2477,14 @@
       "oAP" : "\/sections\/hero.liquid",
       "oF" : 0
     },
+    "\/sections\/instagram-feed.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/instagram-feed.liquid",
+      "oF" : 0
+    },
     "\/sections\/main-404.liquid" : {
       "cB" : 0,
       "ft" : 8192,
