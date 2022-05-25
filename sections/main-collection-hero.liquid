@@ -34,7 +34,9 @@
             {% endif %}
           </div>
           <div class="{{ section_name }}__featured-product-info">
-            <strong class="{{ section_name }}__featured-product-title caption--2">{{ featured_product.title }}</strong>
+            <strong class="{{ section_name }}__featured-product-title caption--2">
+              <a href="{{ featured_product.url }}" target="_self" title="{{ featured_product.title }}<">{{ featured_product.title }}</a>
+            </strong>
             <span class="{{ section_name }}__featured-product-price caption--2">{% render 'price', product: featured_product, show_symbol: true %}</strong>
           </div>
           <button

@@ -101,25 +101,33 @@
       right: var(--bs-container-fluid-padding);
       &__link {
         color: rgba(var(--theme-colour-white), 1);
+        &:hover {
+          opacity: 0.3333;
+        }
         &-icon {
-          height: 20px;
+          height: 28px;
           width: auto;
+          svg {
+            display: block;
+            height: 100%;
+            width: auto;
+          }
+        }
+        &-title {
+          font-family: var(--theme-font-family--sans-serif--primary);
+          font-size: 20px;
+          margin-left: 8px;
+          margin-top: 5px;
         }
       }
     }
 
-    .cart__link,
     .navigation__link,
     .sub-navigation__link,
     .sub-sub-navigation__link {
       font-family: var(--theme-font-family--serif--primary);
       font-size: 24px;
       text-decoration: none;
-    }
-
-    .navigation__link,
-    .sub-navigation__link,
-    .sub-sub-navigation__link {
       padding: 0 28px;
     }
 
