@@ -146,10 +146,11 @@
           background-position: center left;
           background-size: 100% auto;
           height: 10px;
-          bottom: -4px;
           left: calc( 28px + 1% );
           width: calc( 102% - (28px * 2));
           opacity: 0;
+          top: 50%;
+          transform: translate3d( 0, 10px, 0);
         }
         &:active,
         &:hover {

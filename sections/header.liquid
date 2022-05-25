@@ -97,13 +97,11 @@
     </nav>
   {% endif %}
 
-  <nav class="{{ section_name }}__cart-navigation d-none">
-    <div class="navigation__item cart">
-      <a class="navigation__link link" href="/cart" title="Cart">
-        <span class="link__icon">{% render 'svg', type: 'icon.cart' %}</span>
-        <span class="link__title js--cart-items-total">({{ cart.item_count }})</span>
-      </a>
-    </div>
+  <nav class="{{ section_name }}__cart">
+    <a class="{{ section_name }}__cart-link link" href="/cart" title="Cart">
+      <span class="link__icon">{% render 'svg', type: 'icon.cart' %}</span>
+      <span class="link__title js--cart-items-total">({{ cart.item_count }})</span>
+    </a>
   </nav>
 
   <button class="{{ section_name }}__button button d-lg-none js--mobile-menu-trigger" type="button">
