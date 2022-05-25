@@ -35,7 +35,7 @@
           </div>
           <div class="{{ section_name }}__featured-product-info">
             <strong class="{{ section_name }}__featured-product-title caption--2">
-              <a href="{{ featured_product.url }}" target="_self" title="{{ featured_product.title }}<">{{ featured_product.title }}</a>
+              <a class="{{ section_name }}__featured-product-title-link link" href="{{ featured_product.url }}" target="_self" title="{{ featured_product.title }}<">{{ featured_product.title }}</a>
             </strong>
             <span class="{{ section_name }}__featured-product-price caption--2">{% render 'price', product: featured_product, show_symbol: true %}</strong>
           </div>

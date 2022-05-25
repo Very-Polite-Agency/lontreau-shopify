@@ -35,7 +35,7 @@
 
     {% case style %}
 
-      {% when 'collection-product-grid', 'product-recommendations' %}
+      {% when 'collection-product-grid' %}
         <div class="{{ snippet_name }}__featured-image product__featured-image">
           <a class="{{ snippet_name }}__featured-image-link link" href="{{ url }}" title="{{ title }}" target="_self">
             {%
@@ -49,7 +49,9 @@
           {% endif %}
         </div>
         <div class="{{ snippet_name }}__info">
-          <strong class="{{ snippet_name }}__title caption--2">{{ title }}</strong>
+          <strong class="{{ snippet_name }}__title caption--2">
+            <a class="{{ snippet_name }}__title-link link" href="{{ url }}" title="{{ title }}" target="_self">{{ title }}</a>
+          </strong>
           <span class="{{ snippet_name }}__price caption--2">{% render 'price', product: product, show_symbol: true %}</strong>
         </div>
         {% if selected_variant %}
