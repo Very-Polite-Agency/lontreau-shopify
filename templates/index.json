@@ -119,6 +119,13 @@
         "layout": "image-right",
         "colour_theme": "dark"
       }
+    },
+    "16535101150c7e3d32": {
+      "type": "instagram-feed",
+      "settings": {
+        "heading": "<p>Intagram <em>Feed<\/em><\/p>",
+        "heading_highlight": "stroke"
+      }
     }
   },
   "order": [
@@ -127,6 +134,7 @@
     "1649358548eba2154c",
     "16517719953345c3cc",
     "164936493171d7e74a",
-    "1650584831258bfc23"
+    "1650584831258bfc23",
+    "16535101150c7e3d32"
   ]
 }
