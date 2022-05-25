@@ -16,12 +16,12 @@
 
     {% if cart == empty %}
 
-      <div class="{{ section_name }}__empty" data-text-alignment-center>
+      <div class="{{ section_name }}__empty">
         {% if empty_heading != blank %}
-          <h2 class="heading--3">{{ empty_heading }}</h2>
+          <h2 class="{{ section_name }}__empty-heading heading--3">{{ empty_heading }}</h2>
         {% endif %}
         {% if empty_message != blank %}
-          <div class="body-copy--regular">{{ empty_message }}</div>
+          <div class="{{ section_name }}__empty-message body-copy--regular">{{ empty_message }}</div>
         {% endif %}
       </div>
 

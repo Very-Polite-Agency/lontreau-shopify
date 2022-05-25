@@ -6,6 +6,15 @@
     max-width: none;
   }
 
+  &__empty {
+    text-align: center;
+    &-heading {
+      & + .cart__empty-message {
+        margin-top: 10px;
+      }
+    }
+  }
+
   &__hero {
     text-align: center;
     padding: 25px 0 50px;
