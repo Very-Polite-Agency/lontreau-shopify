@@ -234,19 +234,24 @@ const InstagramFeed = (() => {
 
     for ( const account in feeds ) {
 
-      if ( tools.getLocalStorageValueByKey(`very-polite-instagram-feed--${account}`)) {
+      console.log( 'main ::', account );
+
+      if ( tools.getLocalStorageValueByKey(`very-polite-instagram-feed--${account}`) ) {
 
         let feedData = JSON.parse( tools.getLocalStorageValueByKey(`very-polite-instagram-feed--${account}`) );
         let millisecondsDifference = Date.now() - feedData.date;
         let minutesDifference = ( millisecondsDifference / 60000 ).toFixed(2);
 
         if ( minutesDifference > 30 ) {
+          console.log( 'GREATER than 30 minutes since last check, get new token' );
           getToken( account );
         } else {
+          console.log( 'LESS than 30 minutes since last check, print from local storage' );
           printMedia( account, feedData.data );
         }
 
       } else {
+        console.log( 'Local storage does not exist, get token and then print media.' );
         getToken( account );
       }
 
