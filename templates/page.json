@@ -4,9 +4,26 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "16535024027ae5e79d": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "",
+        "heading": "<p>Defy the elements,<\/p><p><em>Defy expectations<\/em><\/p>",
+        "heading_highlight": "standard",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "auto",
+        "curved_arrow_enable": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16535024027ae5e79d"
   ]
 }
