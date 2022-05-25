@@ -38,33 +38,33 @@ const InstagramFeed = (() => {
       autoplay: 3500,
       breakpoints: {
         9999: {
-          // up to 1200
+          // up to 10000
+          focusAt: 0,
+          gap: 20,
+          peek: { before: 0, after: 64 },
+          perView: 5,
+        },
+        1399: {
+          // up to 1400
           focusAt: 0,
           gap: 20,
           peek: { before: 0, after: 64 },
           perView: 4,
-        },
-        1399: {
-          // up to 992
-          focusAt: 0,
-          gap: 20,
-          peek: { before: 0, after: 64 },
-          perView: 3,
         },
         991: {
           // up to 992
           focusAt: 0,
           gap: 20,
           peek: { before: 0, after: 64 },
-          perView: 2,
+          perView: 3,
         },
         767: {
-          // up to 576
+          // up to 768
           focusAt: 0,
           gap: 20,
           peek: { before: 0, after: 64 },
           perView: 2,
-        },
+        }
       },
       gap: 20,
       peek: 0,
