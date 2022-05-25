@@ -44,6 +44,17 @@
       flex-flow: column;
       padding: var(--bs-gutter-width) 0 calc(2*var(--bs-gutter-width));
     }
+    &-message {
+      p a {
+        border: none;
+        display: inline;
+        color: rgba(var(--theme-colour-grass), 1);
+        text-decoration: none;
+        &:hover {
+          color: inherit;
+        }
+      }
+    }
   }
 
   @include breakpoint(sm) {
