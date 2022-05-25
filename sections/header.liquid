@@ -49,11 +49,13 @@
                       {% assign sub_nav_has_links = true %}
                     {% endif %}
 
+                    {% render 'debug-this', item: sub_link.object %}
+
                     {% case sub_link.type %}
                       {% when 'collection_link' %}
-                        {% assign featured_image = sub_link.object.value.image| default: '' %}
+                        {% assign featured_image = sub_link.object.image| default: '' %}
                       {% when 'page_link' %}
-                        {% assign featured_image = sub_link.object.value.metafields.featured.image | default: '' %}
+                        {% assign featured_image = sub_link.object.metafields.featured.image | default: '' %}
                     {% endcase %}
 
                     <div class="sub-navigation__item{% if sub_nav_has_links %} has-links{% endif %}" data-featured-image="{{ featured_image }}">
