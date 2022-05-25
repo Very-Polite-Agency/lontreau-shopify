@@ -6,45 +6,38 @@
 
 const InstagramFeed = (() => {
 
-  let debug = false;
+  let debug = true;
   let info = { name : 'Instagram Feed', version : '1.0' };
 
   let tools = new Tools();
 
   let targetElementElement = '.js--instagram-feed';
+  let blockElement = 'instagram-feed';
   let feeds = {};
 
   //////////////////////////////////////////////////////////
   ////  Print Media
   //////////////////////////////////////////////////////////
 
+  const initializeGlider = () => {
+    console.log( 'initializeGlider', {} );
+  };
+
+  const renderFeedMarkup = ( $media ) => {
+    console.log( 'renderFeedMarkup', $media );
+  };
+
   const printMedia = ( $media = [], $account = '' ) => {
 
-    if ( debug ) console.log( '[ printMedia() ] Start' );
+    if ( debug ) console.log( 'printMedia() :: Initialized' );
 
     if ( $media.length && $account ) {
-
-      let elements = document.querySelectorAll(`[data-instagram-feed-account-name='${$account}']`);
-
-      for ( let i = 0; i < elements.length; i++ ) {
-        let count = 1;
-        for ( let j = 0; j < $media.length; j++ ) {
-          let item = $media[j];
-          if ( debug ) console.log(item);
-          let isImage = ('IMAGE' == item.media_type) ? true : false;
-          let notAboveLimit = (count <= feeds[$account].limit ) ? true : false;
-          if ( notAboveLimit && isImage ) {
-            elements[i].querySelector(`[data-count='${count}'] .instagram-feed__link`).setAttribute( 'href', item.permalink );
-            elements[i].querySelector(`[data-count='${count}'] .instagram-feed__image`).setAttribute( 'data-bg', item.media_url );
-            elements[i].querySelector(`[data-count='${count}'] .instagram-feed__image`).classList.add( 'lazyload', 'lazypreload' );
-            count++;
-          }
-        }
-      }
-
+      ( document.querySelectorAll(`[data-instagram-feed-account-name='${$account}']`) || [] ).forEach( element => {
+        element.innerHTML = renderFeedMarkup(products);
+      });
     }
 
-    if ( debug ) console.log( '[ printMedia() ] End' );
+    if ( debug ) console.log( 'printMedia() :: Complete' );
 
   };
 
@@ -149,9 +142,9 @@ const InstagramFeed = (() => {
   //////////////////////////////////////////////////////////
 
   const init = () => {
-    if ( debug ) console.log( `${info.name}.init() v.${info.version} Started` );
+    if ( debug ) console.log( '[ InstagramFeed.init() ] Start' );
     main();
-    if ( debug ) console.log( `${info.name}.init() Finished` );
+    if ( debug ) console.log( '[ InstagramFeed.init() ] End' );
   };
 
   //////////////////////////////////////////////////////////

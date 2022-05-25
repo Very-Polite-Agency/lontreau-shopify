@@ -5,12 +5,22 @@
 {% assign heading_highlight = section.settings.heading_highlight | default: false %}
 
 <div class="{{ section_name }}" id="{{ section_id }}">
-  <div class="{{ section_name }}__main">
+
+  <div class="{{ section_name }}__main js--instagram-feed" data-instagram-feed-account-name="verypoliteagency">
+
+    {% comment %} $html .= '<div class="{{ section_name }}__item" data-count="' . $i + 1 . '" data-index="' . $i . '">';
+      $html .= '<a class="{{ section_name }}__link link" href="" title="studio D Instagram Post" target="_blank">';
+        $html .= '<img class="{{ section_name }}__placeholder" width="200" height="200" src="' . $this->get_theme_directory('assets') . '/img/placeholder/STUDIO--placeholder--square.svg" alt="studio D Instagram Post" />';
+        $html .= '<div class="{{ section_name }}__image lazyload-item lazyload-item--image lazyload-item--background"></div>';
+      $html .= '</a>';
+    $html .= '</div>'; {% endcomment %}
 
   </div>
+
   <div class="{{ section_name }}__cta">
 
   </div>
+
 </div>
 
 {% schema %}
