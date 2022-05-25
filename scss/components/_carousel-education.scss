@@ -20,6 +20,10 @@
     }
   }
 
+  &__image {
+    border: 1px solid rgba(var(--theme-colour-black),0.3333);
+  }
+
   &__heading {
     & + .carousel-education__message {
       margin-top: 22px;

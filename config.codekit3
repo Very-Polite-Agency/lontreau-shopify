@@ -2680,28 +2680,12 @@
       "oAP" : "\/sections\/rich-text.liquid",
       "oF" : 0
     },
-    "\/sections\/slideshow.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/slideshow.liquid",
-      "oF" : 0
-    },
     "\/sections\/the-team.liquid" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/sections\/the-team.liquid",
-      "oF" : 0
-    },
-    "\/sections\/video.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/video.liquid",
       "oF" : 0
     },
     "\/snippets\/aos-attributes.liquid" : {
