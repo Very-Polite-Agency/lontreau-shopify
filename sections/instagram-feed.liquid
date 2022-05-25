@@ -9,9 +9,11 @@
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
   {% render 'bs-container', state: 'open', container: 'container-fluid' %}
 
-    <div class="{{ section_name }}__intro intro">
-      <div class="{{ section_name }}__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</div>
-    </div>
+    {% if heading != blank %}
+      <div class="{{ section_name }}__intro intro">
+        <div class="{{ section_name }}__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</div>
+      </div>
+    {% endif %}
 
     <div
       class="{{ section_name }}__main main js--instagram-feed"
