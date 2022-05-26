@@ -47,6 +47,7 @@
         },
         "67c6586e-baf9-4b9e-a127-e574a031532d": {
           "type": "team_member",
+          "disabled": true,
           "settings": {
             "photo": "shopify:\/\/shop_images\/Screen_Shot_2022-05-25_at_6.09.45_PM.png",
             "title": "Angie Buonassisi",
