@@ -96,14 +96,20 @@
           "type": "minimal",
           "settings": {
             "title": "Alcohol Free",
-            "image": "shopify:\/\/shop_images\/our-standards-11_3x_00ad60ce-4caa-41da-8c52-507018efdd4c.png"
+            "image": "shopify:\/\/shop_images\/our-standards-17_3x_eb7c837e-53d8-4411-b4c6-5a243414c60a.png"
           }
         },
         "e8e79490-1416-4712-a553-46b03a7aaa92": {
           "type": "minimal",
           "settings": {
             "title": "Cruelty-Free",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--minimal--image-01.png"
+            "image": "shopify:\/\/shop_images\/our-standards-11_3x_00ad60ce-4caa-41da-8c52-507018efdd4c.png"
+          }
+        },
+        "df62e874-728b-488b-8712-17cf21407dfb": {
+          "type": "minimal",
+          "settings": {
+            "title": "f"
           }
         }
       },
@@ -112,7 +118,8 @@
         "bf906307-7ce2-4df8-82d5-87f5206290d7",
         "405a91c6-dc52-49de-b5f1-0d7d134e9c9a",
         "59374510-d779-47cc-b2c4-4830d0cd0bb2",
-        "e8e79490-1416-4712-a553-46b03a7aaa92"
+        "e8e79490-1416-4712-a553-46b03a7aaa92",
+        "df62e874-728b-488b-8712-17cf21407dfb"
       ],
       "settings": {
         "content_type": "minimal",
