@@ -21,32 +21,34 @@
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
 
   <div class="{{ section_name }}__intro intro">
-    {% if heading != blank %}
-      {% capture aos %}
-        {%
-          render 'aos-attributes',
-          anchor: section_id,
-          anchor_placement: 'top-center',
-          delay: 500,
-          offset: -175,
-          transition: 'fade-down',
-        %}
-      {% endcapture %}
-      <div class="{{ section_name }}__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}" {{ aos }}>{{ heading }}</div>
-    {% endif %}
-    {% if message != blank %}
-      {% capture aos %}
-        {%
-          render 'aos-attributes',
-          anchor: section_id,
-          anchor_placement: 'top-center',
-          delay: 750,
-          offset: -175,
-          transition: 'fade-left',
-        %}
-      {% endcapture %}
-      <div class="{{ section_name }}__message body-copy--regular" {{ aos }}>{{ message }}</div>
-    {% endif %}
+    {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
+      {% if heading != blank %}
+        {% capture aos %}
+          {%
+            render 'aos-attributes',
+            anchor: section_id,
+            anchor_placement: 'top-center',
+            delay: 500,
+            offset: -175,
+            transition: 'fade-down',
+          %}
+        {% endcapture %}
+        <div class="{{ section_name }}__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}" {{ aos }}>{{ heading }}</div>
+      {% endif %}
+      {% if message != blank %}
+        {% capture aos %}
+          {%
+            render 'aos-attributes',
+            anchor: section_id,
+            anchor_placement: 'top-center',
+            delay: 750,
+            offset: -175,
+            transition: 'fade-left',
+          %}
+        {% endcapture %}
+        <div class="{{ section_name }}__message body-copy--regular" {{ aos }}>{{ message }}</div>
+      {% endif %}
+    {% render 'bs-container', state: 'closed' %}
   </div>
 
   <div class="{{ section_name }}__main main">
