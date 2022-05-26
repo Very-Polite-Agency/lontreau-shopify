@@ -4,6 +4,8 @@
 {% assign aos_id = section_id | append: '--aos' %}
 {% assign aos_transition_content = 'fade-right' %}
 {% assign aos_transition_image = 'fade-in' %}
+{% assign aos_delay = 500 %}
+{% assign aos_delay_increment = 250 %}
 
 {% assign colour_theme = section.settings.colour_theme | default: 'light' %}
 {% assign cta_style = 'button--primary' %}
@@ -38,10 +40,11 @@
           render 'aos-attributes',
           anchor: aos_id,
           anchor_placement: 'top-bottom',
-          delay: 250,
+          delay: aos_delay,
           transition: aos_transition_image,
         %}
       {% endcapture %}
+      {% assign aos_delay = aos_delay | plus : aos_delay_increment %}
       <div class="{{ section_name }}__image" {{ aos }}>
         {% render 'lazyload-image', background: true, image: image %}
       </div>
@@ -58,10 +61,11 @@
                   render 'aos-attributes',
                   anchor: aos_id,
                   anchor_placement: 'top-bottom',
-                  delay: 500,
+                  delay: aos_delay,
                   transition: 'fade-left',
                 %}
               {% endcapture %}
+              {% assign aos_delay = aos_delay | plus : aos_delay_increment %}
               <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}" {{ aos }}>{{ heading }}</h2>
             {% endif %}
             {% if message != blank %}
@@ -70,10 +74,11 @@
                   render 'aos-attributes',
                   anchor: aos_id,
                   anchor_placement: 'top-bottom',
-                  delay: 750,
+                  delay: aos_delay,
                   transition: 'fade-left',
                 %}
               {% endcapture %}
+              {% assign aos_delay = aos_delay | plus : aos_delay_increment %}
               <div class="{{ section_name }}__message intro__message body-copy--regular" {{ aos }}>{{ message }}</div>
             {% endif %}
             {% if cta_title and cta_link %}
@@ -82,10 +87,11 @@
                   render 'aos-attributes',
                   anchor: aos_id,
                   anchor_placement: 'top-bottom',
-                  delay: 1000,
+                  delay: aos_delay,
                   transition: 'fade-left',
                 %}
               {% endcapture %}
+              {% assign aos_delay = aos_delay | plus : aos_delay_increment %}
               <div class="{{ section_name }}__cta intro__cta" {{ aos }}>
                 <a class="{{ section_name }}__cta-button {{ cta_style }}" href="{{ cta_link }}" title="{{ cta_title }}">
                   <span class="button__title">{{ cta_title }}</span>
