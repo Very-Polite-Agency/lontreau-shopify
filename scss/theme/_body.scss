@@ -9,6 +9,7 @@ html {
 }
 
 body {
+
   // overflow-x: hidden;
   &.sticky-footer {
     display: flex;
@@ -20,7 +21,21 @@ body {
       flex-shrink: 0;
     }
   }
+
   &.mobile-menu--active {
     overflow: hidden;
   }
+
+  &.template--cart,
+  &.template--collection,
+  &.template--product {
+    .header {
+      .cart__link,
+      .navigation__link {
+        color: rgba(var(--theme-colour-black),1);
+      }
+    }
+  }
+
+
 }
