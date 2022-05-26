@@ -19,7 +19,9 @@
     {% render 'bs-container', state: 'open' %}
       <div class="{{ section_name }}__listing listing--{{ section_name }}">
         {%- for collection in collections -%}
-          {% render 'card-collection', collection: collection, style: section_name %}
+          <div class="{{ section_name }}__listing-item">
+            {% render 'card-collection', collection: collection, style: section_name %}
+          </div>
         {%- endfor -%}
       </div>
     {% render 'bs-container', state: 'closed' %}

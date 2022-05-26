@@ -1,0 +1,33 @@
+.list-collections {
+
+  &__listing {
+
+  }
+
+  &__listing-item {
+    & + .list-collections__listing-item {
+      margin-top: 40px;
+    }
+  }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    &__listing {
+
+    }
+
+    &__listing-item {
+
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
+}
