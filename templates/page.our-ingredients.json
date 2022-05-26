@@ -25,7 +25,7 @@
           "settings": {
             "title": "Antioxidants",
             "description": "<p>Antioxidants are all-stars. By neutralizing free radicals, they defend the skin’s barrier from pollution, improve the skin’s natural repair response and support sunscreen to keep you protected.<\/p>",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-02.png"
+            "image": "shopify:\/\/shop_images\/Infredients-34_3x_584fac7a-83aa-432d-a6b5-6082d9c6e322.png"
           }
         },
         "b7f7458e-60ef-407c-a177-e41dd106f08a": {
@@ -33,14 +33,15 @@
           "settings": {
             "title": "Phytomolecules",
             "description": "<p>Active plant compounds are a natural team player for our skin. Phytomolecules work with our skin cells to support everything from the stimulation of collagen to the production of antibacterial properties.<\/p>",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-03.png"
+            "image": "shopify:\/\/shop_images\/Infredients-33_3x_a19a12b6-1b95-4c89-8b83-3a5699776067.png"
           }
         },
         "48c86b9c-b445-4dd6-8696-d8dd8e9022be": {
           "type": "detailed",
           "settings": {
             "title": "Vitamins",
-            "description": "<p>For our bodies, these powerful micronutrients support optimal function, and they do the same for our skin. Vitamins are the heavy lifters in any regenerative skincare routine, they help in supporting the healthy function of our skin barrier and cellular response.<\/p>"
+            "description": "<p>For our bodies, these powerful micronutrients support optimal function, and they do the same for our skin. Vitamins are the heavy lifters in any regenerative skincare routine, they help in supporting the healthy function of our skin barrier and cellular response.<\/p>",
+            "image": "shopify:\/\/shop_images\/Infredients-36_3x_b079d0a5-544f-405b-b2f5-bba4785af281.png"
           }
         },
         "f8894a1d-d745-4004-a6a8-ec4b00beac80": {
@@ -48,7 +49,7 @@
           "settings": {
             "title": "Botanicals",
             "description": "<p>Extracted from flowers, herbs, nuts, seeds, roots and berries, botanicals infuse skincare with the powerful antimicrobial, antioxidant-rich and hydrating benefits of nature to replenish skin health.<\/p>",
-            "image": "shopify:\/\/shop_images\/LONTREAU--educational-carousel--detailed--image-01.png"
+            "image": "shopify:\/\/shop_images\/Infredients-31_3x_48b053b7-a275-46a0-8fda-14c2d402aeb9.png"
           }
         },
         "a26ee92c-7f0f-4722-bfa9-f99e7068472f": {
@@ -56,21 +57,23 @@
           "settings": {
             "title": "Amino Acids",
             "description": "<p>Amino acids are essential to the function of the body and that’s true of the skin as well. They offer powerful support by promoting cellular repair, amplifying hydration, reducing inflammation and providing antioxidant protection.<\/p>",
-            "image": "shopify:\/\/shop_images\/LONTREAU--accordion-with-image--image_3x_a53858f8-5a2e-459c-8541-a6bcbeadd8fc.png"
+            "image": "shopify:\/\/shop_images\/Infredients-32_3x_7a738520-b38f-4b40-8a18-bfca80e7ab4a.png"
           }
         },
         "154709d1-26dd-492a-953b-61d044e4029d": {
           "type": "detailed",
           "settings": {
             "title": "Oleosomes",
-            "description": "<p>Oleosomes are rich in Essential Fatty Acids to draw hydration deep into the skin. We believe that using the right ingredients is the most important tool in restoring the Natural Moisturising Factor (NMF) and Oleosomes are key to keeping skin hydrated.<\/p>"
+            "description": "<p>Oleosomes are rich in Essential Fatty Acids to draw hydration deep into the skin. We believe that using the right ingredients is the most important tool in restoring the Natural Moisturising Factor (NMF) and Oleosomes are key to keeping skin hydrated.<\/p>",
+            "image": "shopify:\/\/shop_images\/Infredients-37_3x_721b9c08-b6a3-4f1a-ac04-b49080051d4f.png"
           }
         },
         "6d673b68-3d9f-4165-be96-ac2a1f169b6e": {
           "type": "detailed",
           "settings": {
             "title": "Dermal Delivery Accelerators",
-            "description": "<p>The best ingredients in the world do little if they sit on the surface of the skin. Our products are specially formulated to be delivered deep in the skin where the work is done.<\/p>"
+            "description": "<p>The best ingredients in the world do little if they sit on the surface of the skin. Our products are specially formulated to be delivered deep in the skin where the work is done.<\/p>",
+            "image": "shopify:\/\/shop_images\/Infredients-35_3x_72ffba47-837a-4466-8237-00af79bde4dc.png"
           }
         }
       },
