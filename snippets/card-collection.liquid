@@ -15,36 +15,106 @@
   {% assign snippet_classes = snippet_name %}
   {% assign snippet_id = snippet_name | append: '--' | append: collection.id -%}
   {% assign style = style | default: 'default' %}
+  {% assign index = index | default: 1 %}
+  {% assign index_remainder = index | modulo: 2 %}
+  {% assign odd = true %}
 
   {% if classes and classes != empty %}
     {% assign snippet_classes = snippet_classes | prepend: ' ' | prepend: classes %}
   {% endif %}
+
+  {% assign aos_id = snippet_id | append: '--aos' %}
+  {% assign aos_transition_content = 'fade-right' %}
+  {% assign aos_transition_image = 'fade-left' %}
+  {% assign aos_delay = 250 %}
+  {% assign aos_delay_increment = 250 %}
+
+  {% if index_remainder == 0 %}
+    {% assign odd = false %}
+  {% endif %}
+
+  {% unless odd %}
+    {% assign aos_transition_content = 'fade-left' %}
+    {% assign aos_transition_image = 'fade-right' %}
+  {% endunless %}
 
   {% assign desciption = collection.description | default: '' %}
   {% assign image = collection.image | default: false %}
   {% assign title = collection.title | default: '' %}
   {% assign url = collection.url | default: '' %}
 
-  <article class="{{ snippet_classes }} {{ snippet_name }}--{{ style }} collection{% unless image %} no-image{% endif %}" id="{{ snippet_id }}" data-published-at="{{ collection.published_at | date: "%Y-%m-%d %H:%M:%S" }}">
-    <div class="{{ snippet_name }}__layout">
+  <article class="{{ snippet_classes }} {{ snippet_name }}--{{ style }} collection{% unless image %} no-image{% endunless %}" id="{{ snippet_id }}" data-published-at="{{ collection.published_at | date: "%Y-%m-%d %H:%M:%S" }}">
+    <div class="{{ snippet_name }}__layout" id="{{ aos_id }}">
 
       {% if image %}
-        <div class="{{ snippet_name }}__media">
-          {% render 'lazyload-image', background: true, image: image %}
+        {% capture aos %}
+          {%
+            render 'aos-attributes',
+            anchor: aos_id,
+            anchor_placement: 'top-center',
+            delay: 500,
+            offset: -175,
+            transition: 'fade-up',
+          %}
+        {% endcapture %}
+        <div class="{{ snippet_name }}__media" {{ aos }}>
+          <a class="{{ snippet_name }}__media-link link" href="{{ url }}" title="{{ title }}">
+            {% render 'lazyload-image', background: true, image: image %}
+          </a>
         </div>
       {% endif %}
 
       {% if title != blank or desciption != blank %}
         <div class="{{ snippet_name }}__content">
           {% if title != blank %}
-            <h2 class="{{ snippet_name }}__heading heading--2">{{ title }}</h2>
+            {% capture aos %}
+              {%
+                render 'aos-attributes',
+                anchor: aos_id,
+                anchor_placement: 'top-center',
+                delay: aos_delay,
+                offset: -175,
+                transition: aos_transition_image,
+              %}
+            {% endcapture %}
+            {% assign aos_delay = aos_delay | plus : aos_delay_increment %}
+            <h2 class="{{ snippet_name }}__heading heading--2" {{ aos }}>{{ title }}</h2>
           {% endif %}
           {% if desciption != blank %}
-            <div class="{{ snippet_name }}__description body-copy--regular">{% if image %}{{ desciption | truncate: 175 }}{% else %}{{ desciption }}{% endif %}</div>
+            {% capture aos %}
+              {%
+                render 'aos-attributes',
+                anchor: aos_id,
+                anchor_placement: 'top-center',
+                delay: aos_delay,
+                offset: -175,
+                transition: aos_transition_image,
+              %}
+            {% endcapture %}
+            {% assign aos_delay = aos_delay | plus : aos_delay_increment %}
+            <div class="{{ snippet_name }}__description body-copy--regular" {{ aos }}>{% if image %}{{ desciption | truncate: 175 }}{% else %}{{ desciption }}{% endif %}</div>
           {% endif %}
-          <a class="{{ snippet_name }}__cta-button button--primary" href="{{ url }}" title="{{ title }}">
-            <span class="button__title">Shop Now</span>
-          </a>
+
+          {% if title != blank and url != blank %}
+            {% capture aos %}
+              {%
+                render 'aos-attributes',
+                anchor: aos_id,
+                anchor_placement: 'top-center',
+                delay: aos_delay,
+                offset: -200,
+                transition: 'fade-up',
+              %}
+            {% endcapture %}
+            {% assign aos_delay = aos_delay | plus : aos_delay_increment %}
+
+            <div class="{{ snippet_name }}__cta" {{ aos }}>
+            <a class="{{ snippet_name }}__cta-button button--primary" href="{{ url }}" title="{{ title }}">
+              <span class="button__title">Shop Now</span>
+            </a>
+          </div>
+          {% endif %}
+
         </div>
       {% endif %}
 

@@ -1,6 +1,10 @@
 {%- assign section_name = 'list-collections' -%}
 {%- assign section_id = section_name | append: '--' | append: section.id -%}
 
+{% assign heading = section.settings.heading | default: '' %}
+{% assign heading_highlight = section.settings.heading_highlight | default: false %}
+{% assign message = section.settings.message | default: false %}
+
 {%- liquid
   case section.settings.sort
     when 'products_high' or 'products_low'
@@ -14,16 +18,47 @@
   endif
 -%}
 
-<div class="{{ section_name }}" id="{{ section_id }}">
-  <div class="{{ section_name }}__main">
+<div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
+
+  <div class="{{ section_name }}__intro intro">
+    {% if heading != blank %}
+      {% capture aos %}
+        {%
+          render 'aos-attributes',
+          anchor: section_id,
+          anchor_placement: 'top-center',
+          delay: 500,
+          offset: -175,
+          transition: 'fade-down',
+        %}
+      {% endcapture %}
+      <div class="{{ section_name }}__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}" {{ aos }}>{{ heading }}</div>
+    {% endif %}
+    {% if message != blank %}
+      {% capture aos %}
+        {%
+          render 'aos-attributes',
+          anchor: section_id,
+          anchor_placement: 'top-center',
+          delay: 750,
+          offset: -175,
+          transition: 'fade-left',
+        %}
+      {% endcapture %}
+      <div class="{{ section_name }}__message body-copy--regular" {{ aos }}>{{ message }}</div>
+    {% endif %}
+  </div>
+
+  <div class="{{ section_name }}__main main">
     {% render 'bs-container', state: 'open' %}
       <div class="{{ section_name }}__listing listing--{{ section_name }}">
         {%- for collection in collections -%}
-          {% render 'card-collection', collection: collection, style: section_name %}
+          {% render 'card-collection', collection: collection, index: forloop.index, style: section_name %}
         {%- endfor -%}
       </div>
     {% render 'bs-container', state: 'closed' %}
   </div>
+
 </div>
 
 {% schema %}
@@ -33,10 +68,33 @@
   "tag": "section",
   "settings": [
     {
-      "type": "text",
-      "id": "title",
-      "label": "t:sections.main-list-collections.settings.title.label",
-      "default": "Collections"
+      "content": "Content",
+      "type": "header"
+    },
+    {
+      "label": "Heading",
+      "type": "richtext",
+      "id": "heading"
+    },
+    {
+      "label": "Heading Highlight",
+      "type": "select",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "stroke", "label": "Stroke" },
+        { "value": "circle", "label": "Circle" }
+      ],
+      "default": "standard",
+      "id": "heading_highlight"
+    },
+    {
+      "label": "Message",
+      "type": "richtext",
+      "id": "message"
+    },
+    {
+      "content": "Settings",
+      "type": "header"
     },
     {
       "type": "select",
@@ -69,27 +127,6 @@
       ],
       "default": "alphabetical",
       "label": "t:sections.main-list-collections.settings.sort.label"
-    },
-    {
-      "type": "select",
-      "id": "image_ratio",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.main-list-collections.settings.image_ratio.options__1.label"
-        },
-        {
-          "value": "portrait",
-          "label": "t:sections.main-list-collections.settings.image_ratio.options__2.label"
-        },
-        {
-          "value": "square",
-          "label": "t:sections.main-list-collections.settings.image_ratio.options__3.label"
-        }
-      ],
-      "default": "adapt",
-      "label": "t:sections.main-list-collections.settings.image_ratio.label",
-      "info": "t:sections.main-list-collections.settings.image_ratio.info"
     }
   ]
 }

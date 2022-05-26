@@ -1,7 +1,20 @@
 .card-collection {
 
+  &__heading,
+  &__description {
+    & + .card-collection__cta {
+      margin-top: 28px;
+    }
+  }
+
   &__content {
     flex: 1;
+  }
+
+  &__heading {
+    & + .card-collection__description {
+      margin-top: 20px;
+    }
   }
 
   &__item {
@@ -24,6 +37,18 @@
     @supports not (aspect-ratio: auto) {
       height: 300px;
     }
+    &-link {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: block;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    & + .card-collection__content {
+      margin-top: var(--bs-container-fluid-padding);
+    }
   }
 
   @include breakpoint(sm) {} // min width sm
@@ -40,6 +65,9 @@
       width: 60%;
       @supports not (aspect-ratio: auto) {
         height: 300px;
+      }
+      & + .card-collection__content {
+        margin-top: 0;
       }
     }
 

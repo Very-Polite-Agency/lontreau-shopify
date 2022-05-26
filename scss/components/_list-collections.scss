@@ -2,17 +2,17 @@
 
   .card-collection {
     & + .card-collection {
-       margin-top: 40px;
+       margin-top: 64px;
     }
   }
 
   &__listing {
     .card-collection {
-      &:nth-child(even) {
-        border: 1px solid red;
-      }
       &:nth-child(odd) {
-        border: 1px solid blue;
+        //border: 1px solid pink;
+      }
+      &:nth-child(even) {
+        //border: 1px solid yellow;
       }
       &.no-image {
         text-align: center;
@@ -24,10 +24,65 @@
 
   @include breakpoint(md) {} // min width md
 
-  @include breakpoint(lg) {} // min width lg
+  @include breakpoint(lg) {
 
-  @include breakpoint(xl) {} // min width xl
+    .card-collection {
+      &__heading {
+        font-size: 40px;
+      }
+      & + .card-collection {
+         margin-top: 84px;
+      }
+    }
 
-  @include breakpoint(xxl) {} // min width xxl
+    &__listing {
+      .card-collection {
+        &:nth-child(odd) {
+          .card-collection__content {
+            padding-left: 7.5%;
+          }
+        }
+        &:nth-child(even) {
+          .card-collection__content {
+            order: 1;
+            padding-right: 7.5%;
+          }
+          .card-collection__media {
+            order: 2;
+          }
+        }
+        &.no-image {
+          .card-collection__content {
+            padding: 0 10%;
+          }
+          text-align: center;
+        }
+      }
+    }
+
+  } // min width lg
+
+  @include breakpoint(xl) {
+
+    .card-collection {
+      &__heading {
+        font-size: 46px;
+      }
+    }
+
+  } // min width xl
+
+  @include breakpoint(xxl) {
+
+    .card-collection {
+      &__heading {
+        font-size: 52px;
+      }
+      & + .card-collection {
+         margin-top: 104px;
+      }
+    }
+
+  } // min width xxl
 
 }
