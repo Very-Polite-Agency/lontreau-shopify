@@ -9,7 +9,7 @@
       "type": "product-recommendations",
       "settings": {
         "heading": "<p>You may <em>also<\/em> like<\/p>",
-        "heading_highlight": "circle",
+        "heading_highlight": "stroke",
         "product_limit": 6
       }
     },
