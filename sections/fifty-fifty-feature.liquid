@@ -1,8 +1,10 @@
 {% assign section_name = 'fifty-fifty-feature' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign aos_id = section_id | append: '--aos' %}
 {% assign aos_transition_content = 'fade-right' %}
 {% assign aos_transition_image = 'fade-left' %}
+
 {% assign colour_theme = section.settings.colour_theme | default: 'light' %}
 {% assign cta_title = section.settings.cta_title | default: false %}
 {% assign cta_link = section.settings.cta_link | default: false %}
@@ -38,14 +40,14 @@
   <div class="{{ section_name }}__main">
     {% unless style == 'wide' %}{% render 'bs-container' %}{% endunless %}
 
-      <div class="{{ section_name }}__layout">
+      <div class="{{ section_name }}__layout" id="{{ aos_id }}">
 
       {% if heading != blank or message != blank or title != blank %}
 
         {% capture aos %}
           {%
             render 'aos-attributes',
-            anchor: section_id,
+            anchor: aos_id,
             anchor_placement: 'top-bottom',
             delay: 150,
             duration: 1500,
@@ -86,7 +88,7 @@
         {% capture aos %}
           {%
             render 'aos-attributes',
-            anchor: section_id,
+            anchor: aos_id,
             anchor_placement: 'top-bottom',
             delay: 0,
             duration: 1500,
