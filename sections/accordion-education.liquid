@@ -1,6 +1,10 @@
 {% assign section_name = 'accordion-education' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign aos_id = section_id | append: '--aos' %}
+{% assign aos_delay = 250 %}
+{% assign aos_delay_increment = 250 %}
+
 {% assign accordions = section.blocks | where: 'type', 'accordion' | default: false %}
 {% assign heading = section.settings.heading | default: '' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: 'standard' %}
@@ -12,92 +16,124 @@
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
 
-  {% if heading != blank or message != blank %}
-    <div class="{{ section_name }}__intro intro">
-      {% render 'bs-container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
-        {% if heading != blank %}
-          <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
-        {% endif %}
-        {% if message != blank %}
-          <div class="{{ section_name }}__message intro__message body-copy--regular">{{ message }}</div>
-        {% endif %}
-      {% render 'bs-container', state: 'closed' %}
-    </div>
-  {% endif %}
+  <div id="{{ aos_id }}">
+    {% if heading != blank or message != blank %}
+      <div class="{{ section_name }}__intro intro">
+        {% render 'bs-container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+          {% if heading != blank %}
+            {% capture aos %}
+              {%
+                render 'aos-attributes',
+                anchor: aos_id,
+                anchor_placement: 'top-bottom',
+                delay: aos_delay,
+                transition: 'fade-left',
+              %}
+            {% endcapture %}
+            {% assign aos_delay = aos_delay | plus : aos_delay_increment %}
+            <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}" {{ aos }}>{{ heading }}</h2>
+          {% endif %}
+          {% if message != blank %}
+            {% capture aos %}
+              {%
+                render 'aos-attributes',
+                anchor: aos_id,
+                anchor_placement: 'top-bottom',
+                delay: aos_delay,
+                transition: 'fade-left',
+              %}
+            {% endcapture %}
+            {% assign aos_delay = aos_delay | plus : aos_delay_increment %}
+            <div class="{{ section_name }}__message intro__message body-copy--regular" {{ aos }}>{{ message }}</div>
+          {% endif %}
+        {% render 'bs-container', state: 'closed' %}
+      </div>
+    {% endif %}
 
-  {% if accordions %}
-    <div class="{{ section_name }}__main main">
-      {% render 'bs-container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+    {% if accordions %}
+      {% capture aos %}
+        {%
+          render 'aos-attributes',
+          anchor: aos_id,
+          anchor_placement: 'top-bottom',
+          delay: aos_delay,
+          transition: 'fade-left',
+        %}
+      {% endcapture %}
+      {% assign aos_delay = aos_delay | plus : aos_delay_increment %}
+      <div class="{{ section_name }}__main main" {{ aos }}>
+        {% render 'bs-container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
 
-        {% for block in accordions %}
+          {% for block in accordions %}
 
-          {% assign cta_link = block.settings.cta_link | default: false %}
-          {% assign cta_title = block.settings.cta_title | default: false %}
-          {% assign image = block.settings.image | default: false %}
-          {% assign image_caption = block.settings.image_caption | default: false %}
-          {% assign image_figure = block.settings.image_figure | default: false %}
-          {% assign item_id = section_name | append: '__item--' | append: block.id %}
-          {% assign message = block.settings.message | default: false %}
-          {% assign title = block.settings.title | default: false %}
+            {% assign cta_link = block.settings.cta_link | default: false %}
+            {% assign cta_title = block.settings.cta_title | default: false %}
+            {% assign image = block.settings.image | default: false %}
+            {% assign image_caption = block.settings.image_caption | default: false %}
+            {% assign image_figure = block.settings.image_figure | default: false %}
+            {% assign item_id = section_name | append: '__item--' | append: block.id %}
+            {% assign message = block.settings.message | default: false %}
+            {% assign title = block.settings.title | default: false %}
 
-          {% if title and message %}
-            <div class="{{ section_name }}__item collapsible">
+            {% if title and message %}
+              <div class="{{ section_name }}__item collapsible">
 
-              <button
-                {% comment %} ##BUG Investigate sizing {% endcomment %}
-                class="{{ section_name }}__item-trigger button--collapsible collapsible__trigger body-copy--large{% unless forloop.first %} collapsed{% endunless %}"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#{{ item_id }}"
-                aria-expanded="false"
-                aria-controls="{{ item_id }}"
-              >
-                <span class="collapsible__trigger-title button__title">{{ title }}</span>
-                <span class="collapsible__trigger-icon button__icon">
-                  <span class="button__icon-plus">{% render 'svg', type: 'icon.plus' %}</span>
-                  <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
-                </span>
-              </button>
+                <button
+                  {% comment %} ##BUG Investigate sizing {% endcomment %}
+                  class="{{ section_name }}__item-trigger button--collapsible collapsible__trigger body-copy--large{% unless forloop.first %} collapsed{% endunless %}"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#{{ item_id }}"
+                  aria-expanded="false"
+                  aria-controls="{{ item_id }}"
+                >
+                  <span class="collapsible__trigger-title button__title">{{ title }}</span>
+                  <span class="collapsible__trigger-icon button__icon">
+                    <span class="button__icon-plus">{% render 'svg', type: 'icon.plus' %}</span>
+                    <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
+                  </span>
+                </button>
 
-              <div class="{{ section_name }}__item-main collapsible__main collapse {% if forloop.first %}show{% endif %}" id="{{ item_id }}">
-                <div class="{{ section_name }}__item-layout">
-                  <div class="{{ section_name }}__item-content">
-                    <div class="{{ section_name }}__item-message body-copy--regular">{{ message }}</div>
-                    {% if cta_link and cta_title %}
-                      <div class="{{ section_name }}__item-cta">
-                        <a class="{{ section_name }}__item-cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
-                          <span class="button__title">{{ cta_title }}</span>
-                        </a>
-                      </div>
-                    {% endif %}
-                  </div>
-                  {% if image %}
-                    <div class="{{ section_name }}__item-image">
-                      {%
-                        render 'lazyload-image',
-                        alt_text: title,
-                        image: image,
-                        duration: 300,
-                      %}
-                      {% if image_figure or image_caption %}
-                        <div class="{{ section_name }}__item-image-details">
-                          {% if image_figure %}<span class="{{ section_name }}__item-image-figure figure--1">{{ image_figure }}</span>{% endif %}
-                          {% if image_caption %}<span class="{{ section_name }}__item-image-caption caption--1">{{ image_caption }}</span>{% endif %}
+                <div class="{{ section_name }}__item-main collapsible__main collapse {% if forloop.first %}show{% endif %}" id="{{ item_id }}">
+                  <div class="{{ section_name }}__item-layout">
+                    <div class="{{ section_name }}__item-content">
+                      <div class="{{ section_name }}__item-message body-copy--regular">{{ message }}</div>
+                      {% if cta_link and cta_title %}
+                        <div class="{{ section_name }}__item-cta">
+                          <a class="{{ section_name }}__item-cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
+                            <span class="button__title">{{ cta_title }}</span>
+                          </a>
                         </div>
                       {% endif %}
                     </div>
-                  {% endif %}
+                    {% if image %}
+                      <div class="{{ section_name }}__item-image">
+                        {%
+                          render 'lazyload-image',
+                          alt_text: title,
+                          image: image,
+                          duration: 300,
+                        %}
+                        {% if image_figure or image_caption %}
+                          <div class="{{ section_name }}__item-image-details">
+                            {% if image_figure %}<span class="{{ section_name }}__item-image-figure figure--1">{{ image_figure }}</span>{% endif %}
+                            {% if image_caption %}<span class="{{ section_name }}__item-image-caption caption--1">{{ image_caption }}</span>{% endif %}
+                          </div>
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                  </div>
                 </div>
+
               </div>
+            {% endif %}
 
-            </div>
-          {% endif %}
+          {% endfor %}
 
-        {% endfor %}
-
-      {% render 'bs-container', state: 'closed' %}
-    </div>
-  {% endif %}
+        {% render 'bs-container', state: 'closed' %}
+      </div>
+    {% endif %}
+  </div>
 
 </div>
 

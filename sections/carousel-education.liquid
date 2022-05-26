@@ -26,7 +26,7 @@
 <div class="{{ section_name }}" id="{{ section_id }}" data-content-type="{{ content_type }}" data-colour-theme-{{ colour_theme }} {% if is_glider %}data-is-glider{% endif %} data-section-padding>
 
   {% if heading != blank or message != blank %}
-    <div class="{{ section_name }}__intro intro" data-text-alignment-{{ alignment }}>
+    <div class="{{ section_name }}__intro intro" id="{{ aos_id }}" data-text-alignment-{{ alignment }}>
       {% render 'bs-container', state: 'open' %}
         {% if heading != blank %}
           {% capture aos %}

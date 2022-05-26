@@ -1,6 +1,10 @@
 {% assign section_name = 'accordion-with-image' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign aos_id = section_id | append: '--aos' %}
+{% assign aos_delay = 250 %}
+{% assign aos_delay_increment = 250 %}
+
 {% assign accordions = section.blocks | where: 'type', 'accordion' | default: false %}
 {% assign colour_theme = section.settings.colour_theme | default: 'light' %}
 {% assign heading = section.settings.heading | default: '' %}
@@ -23,28 +27,56 @@
   data-section-padding
 >
 
-  {% if 'technical' == style %}
-    {% if heading != blank or message != blank %}
-      <div class="{{ section_name }}__intro intro" data-text-alignment-center>
-        {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
-          {% if heading != blank %}
-            <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
-          {% endif %}
-          {% if message != blank %}
-            <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
-          {% endif %}
-        {% render 'bs-container', state: 'closed' %}
-      </div>
+  <div id="{{ aos_id }}">
+    {% if 'technical' == style %}
+      {% if heading != blank or message != blank %}
+        <div class="{{ section_name }}__intro intro" data-text-alignment-center>
+          {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
+            {% if heading != blank %}
+              {% capture aos %}
+                {%
+                  render 'aos-attributes',
+                  anchor: aos_id,
+                  anchor_placement: 'top-bottom',
+                  delay: 250,
+                  transition: 'fade-left',
+                %}
+              {% endcapture %}
+              <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}" {{ aos }}>{{ heading }}</h2>
+            {% endif %}
+            {% if message != blank %}
+              {% capture aos %}
+                {%
+                  render 'aos-attributes',
+                  anchor: aos_id,
+                  anchor_placement: 'top-bottom',
+                  delay: 500,
+                  transition: 'fade-left',
+                %}
+              {% endcapture %}
+              <div class="{{ section_name }}__message body-copy--regular" {{ aos }}>{{ message }}</div>
+            {% endif %}
+          {% render 'bs-container', state: 'closed' %}
+        </div>
+      {% endif %}
     {% endif %}
-  {% endif %}
 
-  <div class="{{ section_name }}__main main">
+    <div class="{{ section_name }}__main main">
     {% render 'bs-container' %}
 
       <div class="{{ section_name }}__layout">
 
         {% if image %}
-          <div class="{{ section_name }}__image {% if hide_image_mobile %}d-none d-lg-block{% endif %}">
+          {% capture aos %}
+            {%
+              render 'aos-attributes',
+              anchor: aos_id,
+              anchor_placement: 'top-bottom',
+              delay: 750,
+              transition: 'fade-up',
+            %}
+          {% endcapture %}
+          <div class="{{ section_name }}__image {% if hide_image_mobile %}d-none d-lg-block{% endif %}" {{ aos }}>
             {% render 'lazyload-image', image: image %}
           </div>
         {% endif %}
@@ -54,15 +86,42 @@
 
             {% unless 'technical' == style %}
               {% if heading != blank %}
-                <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}">{{ heading }}</h2>
+                {% capture aos %}
+                  {%
+                    render 'aos-attributes',
+                    anchor: aos_id,
+                    anchor_placement: 'top-bottom',
+                    delay: 250,
+                    transition: 'fade-left',
+                  %}
+                {% endcapture %}
+                <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}" {{ aos }}>{{ heading }}</h2>
               {% endif %}
               {% if message != blank %}
-                <div class="{{ section_name }}__message body-copy--regular">{{ message }}</div>
+                {% capture aos %}
+                  {%
+                    render 'aos-attributes',
+                    anchor: aos_id,
+                    anchor_placement: 'top-bottom',
+                    delay: 500,
+                    transition: 'fade-left',
+                  %}
+                {% endcapture %}
+                <div class="{{ section_name }}__message body-copy--regular" {{ aos }}>{{ message }}</div>
               {% endif %}
             {% endunless %}
 
             {% if accordions %}
-              <div class="{{ section_name }}__accordion">
+              {% capture aos %}
+                {%
+                  render 'aos-attributes',
+                  anchor: aos_id,
+                  anchor_placement: 'top-bottom',
+                  delay: 1000,
+                  transition: 'fade-up',
+                %}
+              {% endcapture %}
+              <div class="{{ section_name }}__accordion" {{ aos }}>
                 {% for block in accordions %}
 
                   {% assign item_id = section_name | append: '__item--' | append: block.id %}
@@ -105,6 +164,8 @@
       </div>
     {% render 'bs-container', state: 'closed' %}
   </div>
+  </div>
+
 </div>
 
 {% stylesheet %}
