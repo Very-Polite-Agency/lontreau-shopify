@@ -25,7 +25,7 @@
   {% assign title = collection.title | default: '' %}
   {% assign url = collection.url | default: '' %}
 
-  <article class="{{ snippet_classes }} {{ snippet_name }}--{{ style }} collection" id="{{ snippet_id }}" data-published-at="{{ collection.published_at | date: "%Y-%m-%d %H:%M:%S" }}">
+  <article class="{{ snippet_classes }} {{ snippet_name }}--{{ style }} collection{% unless image %} no-image{% endif %}" id="{{ snippet_id }}" data-published-at="{{ collection.published_at | date: "%Y-%m-%d %H:%M:%S" }}">
     <div class="{{ snippet_name }}__layout">
 
       {% if image %}
@@ -37,11 +37,14 @@
       {% if title != blank or desciption != blank %}
         <div class="{{ snippet_name }}__content">
           {% if title != blank %}
-            <h2 class="heading--2">{{ title }}</h2>
+            <h2 class="{{ snippet_name }}__heading heading--2">{{ title }}</h2>
           {% endif %}
           {% if desciption != blank %}
-            <div class="body-copy--regular">{{ desciption }}</div>
+            <div class="{{ snippet_name }}__description body-copy--regular">{% if image %}{{ desciption | truncate: 175 }}{% else %}{{ desciption }}{% endif %}</div>
           {% endif %}
+          <a class="{{ snippet_name }}__cta-button button--primary" href="{{ url }}" title="{{ title }}">
+            <span class="button__title">Shop Now</span>
+          </a>
         </div>
       {% endif %}
 

@@ -1,12 +1,22 @@
 .list-collections {
 
-  &__listing {
-
+  .card-collection {
+    & + .card-collection {
+       margin-top: 40px;
+    }
   }
 
-  &__listing-item {
-    & + .list-collections__listing-item {
-      margin-top: 40px;
+  &__listing {
+    .card-collection {
+      &:nth-child(even) {
+        border: 1px solid red;
+      }
+      &:nth-child(odd) {
+        border: 1px solid blue;
+      }
+      &.no-image {
+        text-align: center;
+      }
     }
   }
 
@@ -14,17 +24,7 @@
 
   @include breakpoint(md) {} // min width md
 
-  @include breakpoint(lg) {
-
-    &__listing {
-
-    }
-
-    &__listing-item {
-
-    }
-
-  } // min width lg
+  @include breakpoint(lg) {} // min width lg
 
   @include breakpoint(xl) {} // min width xl
 
