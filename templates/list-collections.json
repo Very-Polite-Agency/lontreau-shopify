@@ -3,9 +3,10 @@
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "title": "Collections",
-        "sort": "alphabetical",
-        "image_ratio": "square"
+        "heading": "<p>Lontreau Collections<\/p>",
+        "heading_highlight": "standard",
+        "message": "",
+        "sort": "alphabetical"
       }
     }
   },
