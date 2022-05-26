@@ -135,9 +135,10 @@
         "heading": "<p><em>Ingredient<\/em> Selection Playbook<\/p>",
         "heading_highlight": "standard",
         "message": "<p>All Lontreau products include powerful ingredients that are clinically proven to support regenerative signals and healthy barrier function. <\/p>",
+        "image": "shopify:\/\/shop_images\/LONTREAU--our-skin-page--FF_3x_1fcaf6c9-ad9c-466f-9995-3bd2d7dd8a32.png",
         "anchor_id": "",
         "style": "technical",
-        "layout": "image-right",
+        "layout": "image-left",
         "colour_theme": "dark"
       }
     },
