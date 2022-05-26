@@ -1,5 +1,11 @@
 .the-team {
 
+  .collapsible {
+    &__content {
+      padding: 0;
+    }
+  }
+
   &__heading {
     text-align: center;
     & + .the-team__item {
@@ -13,12 +19,6 @@
     &-bio {
       border-top: 1px solid rgba(var(--theme-colour-black), 1);
       padding: 25px 28px;
-    }
-    &-body {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-flow: row wrap;
     }
     &-details {
       width: 100%;
@@ -39,10 +39,19 @@
       text-transform: uppercase;
       padding: 14px 28px 10px;
     }
+    &-layout {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-flow: row wrap;
+    }
     &-photo {
       width: 100%;
       order: 1;
       background: rgba(var(--theme-colour-asphalt), 1); // FIX THIS
+    }
+    & + .the-team__item  {
+      border-top: 0;
     }
   }
 
@@ -53,9 +62,6 @@
     &__item {
       &-bio {
         padding: 25px 28px;
-      }
-      &-body {
-        flex-flow: row nowrap;
       }
       &-details {
         border-right: 1px solid rgba(var(--theme-colour-black), 1);
@@ -69,6 +75,9 @@
       }
       &-job-title {
         font-size: 20px;
+      }
+      &-layout {
+        flex-flow: row nowrap;
       }
       &-photo {
         width: 38%;

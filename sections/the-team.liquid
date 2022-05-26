@@ -43,28 +43,52 @@
           {% assign photo = block.settings.photo | default: false %}
 
           {% if name and bio %}
-            <div class="{{ section_name }}__item">
+            <div class="{{ section_name }}__item{% if is_collapsible %} collapsible{% endif %}">
+
               <div class="{{ section_name }}__item-header">
-                <strong class="{{ section_name }}__item-name body-copy--xl">{{ name }}</strong>
-              </div>
-              <div class="{{ section_name }}__item-body">
-                {% if job_title or bio %}
-                  <div class="{{ section_name }}__item-details">
-                    {% if job_title %}<div class="{{ section_name }}__item-job-title">{{ job_title }}</div>{% endif %}
-                    {% if bio %}<div class="{{ section_name }}__item-bio body-copy--regular">{{ bio }}</div>{% endif %}
-                  </div>
+                {% if is_collapsible %}
+                  <button
+                    class="{{ section_name }}__item-trigger button--collapsible collapsible__trigger body-copy--xl{% unless forloop.first %} collapsed{% endunless %}"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#{{ item_id }}"
+                    aria-expanded="false"
+                    aria-controls="{{ item_id }}"
+                  >
+                    <span class="button__title">{{ name }}</span>
+                    <span class="button__icon">
+                      <span class="button__icon-plus">{% render 'svg', type: 'icon.plus' %}</span>
+                      <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
+                    </span>
+                  </button>
+                {% else %}
+                  <strong class="{{ section_name }}__item-name body-copy--xl">{{ name }}</strong>
                 {% endif %}
-                {% if photo %}
-                  <div class="{{ section_name }}__item-photo">
-                    {%
-                      render 'lazyload-image',
-                      alt_text: name,
-                      image: photo,
-                      duration: 300,
-                    %}
-                  </div>
-                {% endif %}
               </div>
+
+              <div class="{{ section_name }}__item-body {% if is_collapsible %}collapsible__main collapse {% if forloop.first %}show{% endif %}{% endif %}" id="{{ item_id }}">
+                {% if is_collapsible %}<div class="collapsible__content">{% endif %}
+                  <div class="{{ section_name }}__item-layout">
+                    {% if job_title or bio %}
+                      <div class="{{ section_name }}__item-details">
+                        {% if job_title %}<div class="{{ section_name }}__item-job-title">{{ job_title }}</div>{% endif %}
+                        {% if bio %}<div class="{{ section_name }}__item-bio body-copy--regular">{{ bio }}</div>{% endif %}
+                      </div>
+                    {% endif %}
+                    {% if photo %}
+                      <div class="{{ section_name }}__item-photo">
+                        {%
+                          render 'lazyload-image',
+                          alt_text: name,
+                          image: photo,
+                          duration: 300,
+                        %}
+                      </div>
+                    {% endif %}
+                  </div>
+                {% if is_collapsible %}</div>{% endif %}
+              </div>
+
             </div>
           {% endif %}
 
