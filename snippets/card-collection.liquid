@@ -22,11 +22,30 @@
 
   {% assign desciption = collection.description | default: '' %}
   {% assign image = collection.image | default: false %}
-  {% assign title = collection.title | default: false %}
+  {% assign title = collection.title | default: '' %}
+  {% assign url = collection.url | default: '' %}
 
   <article class="{{ snippet_classes }} {{ snippet_name }}--{{ style }} collection" id="{{ snippet_id }}" data-published-at="{{ collection.published_at | date: "%Y-%m-%d %H:%M:%S" }}">
-    <h2 class="heading--2">{{ title }}</h2>
-    <div class="body-copy--regular">{{ desciption }}</div>
+    <div class="{{ snippet_name }}__layout">
+
+      {% if image %}
+        <div class="{{ snippet_name }}__media">
+          {% render 'lazyload-image', background: true, image: image %}
+        </div>
+      {% endif %}
+
+      {% if title != blank or desciption != blank %}
+        <div class="{{ snippet_name }}__content">
+          {% if title != blank %}
+            <h2 class="heading--2">{{ title }}</h2>
+          {% endif %}
+          {% if desciption != blank %}
+            <div class="body-copy--regular">{{ desciption }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+    </div>
   </article>
 
 {% endif %}
