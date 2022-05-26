@@ -9,6 +9,7 @@ main {
 
   &.template--cart,
   &.template--collection,
+  &.template--list-collections,
   &.template--product {
     padding-top: var(--theme-header-height);
   }
@@ -32,6 +33,7 @@ main {
 
     &.template--cart,
     &.template--collection,
+    &.template--list-collections,
     &.template--product {
       padding-top: var(--theme-header-height--lg);
     }

@@ -1,6 +1,7 @@
 {%- assign section_name = 'list-collections' -%}
 {%- assign section_id = section_name | append: '--' | append: section.id -%}
 
+{% assign alignment = section.settings.alignment | default: 'center' %}
 {% assign heading = section.settings.heading | default: '' %}
 {% assign heading_highlight = section.settings.heading_highlight | default: false %}
 {% assign message = section.settings.message | default: false %}
@@ -20,7 +21,7 @@
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
 
-  <div class="{{ section_name }}__intro intro">
+  <div class="{{ section_name }}__intro intro" data-text-alignment-{{ alignment }}>
     {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
       {% if heading != blank %}
         {% capture aos %}
@@ -72,6 +73,17 @@
     {
       "content": "Content",
       "type": "header"
+    },
+    {
+      "label": "Alignment",
+      "type": "select",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center",
+      "id": "alignment"
     },
     {
       "label": "Heading",
