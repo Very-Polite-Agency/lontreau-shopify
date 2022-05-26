@@ -3,7 +3,7 @@
 
 {% assign menu_main = section.settings.menu_main | default: false %}
 
-<div class="{{ section_name }}__main">
+<div class="{{ section_name }}__main"{% if template.name == blank %} data-colour-theme-dark{% endif %}>
 
   <div class="{{ section_name }}__brand">
     <a href="/" target="_self" title="Home">

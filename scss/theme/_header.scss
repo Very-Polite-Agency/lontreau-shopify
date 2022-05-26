@@ -73,6 +73,13 @@
     align-items: center;
   }
 
+  [data-colour-theme-dark] {
+    .cart__link,
+    .navigation__link {
+      color: rgba(var(--theme-colour-black),1);
+    }
+  }
+
   &:hover,
   &.hover-active,
   &.sub-navigation-active,
