@@ -5,7 +5,7 @@
 {% assign hero_heading_highlight = section.settings.hero_heading_highlight | default: false %}
 {% assign hero_image = section.settings.hero_image | default: false %}
 
-{%- paginate blog.articles by 3 -%}
+{%- paginate blog.articles by section.settings.articles_per_page -%}
 
   {% if hero_heading != blank or hero_image %}
     <div class="{{ section_name }}__hero">
@@ -97,6 +97,23 @@
       "label": "Image",
       "type": "image_picker",
       "id": "hero_image"
+    },
+    {
+      "content": "Settings",
+      "type": "header"
+    },
+    {
+      "label": "Articles per Page",
+      "type": "select",
+      "options": [
+        { "value": "3", "label": "3" },
+        { "value": "12", "label": "12" },
+        { "value": "15", "label": "15" },
+        { "value": "18", "label": "18" },
+        { "value": "24", "label": "24" }
+      ],
+      "default": "3",
+      "id": "articles_per_page"
     }
   ]
 }
