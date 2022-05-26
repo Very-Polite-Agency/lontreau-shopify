@@ -15,6 +15,11 @@
       }
     }
   }
+  .collapsible {
+    &__trigger {
+      color: rgba(var(--theme-colour-black),1);
+    }
+  }
 }
 
 // ---------------------------------------- Dark
@@ -72,5 +77,4 @@
       border-top-color: rgba(var(--theme-colour-black), 1);
     }
   }
-  .glide {}
 }

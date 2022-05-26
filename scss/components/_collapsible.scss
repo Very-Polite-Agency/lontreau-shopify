@@ -19,7 +19,10 @@
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    &-title {}
+    text-align: left;
+    &-title {
+      padding-right: var(--bs-gutter-width);
+    }
     &-icon {
       transition:
         color var(--theme-transition-duration),

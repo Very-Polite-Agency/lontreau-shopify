@@ -99,13 +99,13 @@
     return `
       <article class="card-product card-product--${sectionName} product">
         <div class="card-product__featured-image product__featured-image">
-          <a class="card-product__featured-image-link lazyloaded" href="/products/${handle}" title="${title}" target="_self">
+          <a class="card-product__featured-image-link link" href="/products/${handle}" title="${title}" target="_self">
             <img class="lazyload-item lazyload-item--image lazypreload lazyload-item--inline inline lazyautosizes lazyload" src="${featuredImage.small}" data-src="${featuredImage.large}" alt="${title}" />
           </a>
         </div>
         <div class="card-product__info">
           <strong class="card-product__title caption--2">
-            <a class="card-product__title-link" href="/products/${handle}" title="${title}" target="_self">${title}</a>
+            <a class="card-product__title-link link" href="/products/${handle}" title="${title}" target="_self">${title}</a>
           </strong>
           <div class="card-product__price caption--2">${renderProductPrice(product)}</div>
         </div>

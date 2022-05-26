@@ -10,6 +10,7 @@
     border: 1px solid rgba(var(--theme-colour-black), 1);
     position: relative;
     &-link {
+      width: 100%;
       &:hover {
         opacity: 0.5;
       }

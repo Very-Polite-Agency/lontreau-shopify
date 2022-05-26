@@ -22,7 +22,7 @@
   --bs-gutter-x: #{ $grid-gutter-width };
 
   // ---------------------------------------- Container Fluid Padding
-  --bs-container-fluid-padding: 32px;
+  --bs-container-fluid-padding: 28px;
 
   // ---------------------------------------- Container Breakpoints
   --bs-container-breakpoint--sm: #{ map-get( $grid-breakpoints, sm ) };
@@ -217,6 +217,7 @@
 @import './components/rte.scss';
 @import './components/section.scss';
 @import './components/share-this.scss';
+@import './components/shopify-policy.scss';
 @import './components/stepper.scss';
 @import './components/swiper.scss';
 @import './components/tags.scss';

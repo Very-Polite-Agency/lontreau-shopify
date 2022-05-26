@@ -1,7 +1,63 @@
 .rte {
 
+  font-family: var(--theme-font-family--serif--primary);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--theme-font-family--serif--primary);
+    margin-bottom: 22px;
+  }
+
+  h1 {
+    font-size: 37px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 31px;
+  }
+
+  ol, p, ul {
+    margin-bottom: 22px;
+  }
+
+  ol, ul {
+    padding-left: 22px;
+  }
+
   p {
     position: relative;
+  }
+
+  p, li {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    font-style: inherit;
+    a {
+      transition: border 280ms;
+      border-bottom-width: var(--theme-border-width);
+      border-bottom-color: inherit;
+      border-bottom-style: solid;
+      color: inherit;
+      display: inline-block;
+      width: auto;
+      text-decoration: none;
+      outline: none;
+      &:focus,
+      &:hover {
+        border-bottom-color: transparent;
+        text-decoration: none;
+        outline: none;
+      }
+    }
   }
 
   img {
@@ -13,6 +69,18 @@
 
   @include breakpoint(sm) {
 
+    h1 {
+      font-size: 44px;
+    }
+
+    h2 {
+      font-size: 41px;
+    }
+
+    h3, h4, h5, h6 {
+      font-size: 38px;
+    }
+
     img {
       width: 100%;
       left: unset;
@@ -20,12 +88,43 @@
 
   } // min width sm
 
-  @include breakpoint(md) {} // min width md
+  @include breakpoint(md) {
 
-  @include breakpoint(lg) {} // min width lg
+    h1 {
+      font-size: 48px;
+    }
+
+    h2 {
+      font-size: 45px;
+    }
+
+    h3, h4, h5, h6 {
+      font-size: 42px;
+    }
+
+  } // min width md
+
+  @include breakpoint(lg) {
+
+    h1, h2, h3, h4, h5, h6,
+    ol, p, ul {
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 52px;
+    }
+
+  } // min width lg
 
   @include breakpoint(xl) {} // min width xl
 
-  @include breakpoint(xxl) {} // min width xxl
+  @include breakpoint(xxl) {
+
+    h1 {
+      font-size: 62px;
+    }
+
+  } // min width xxl
 
 }

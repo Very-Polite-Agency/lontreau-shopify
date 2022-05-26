@@ -1,0 +1,30 @@
+.shopify-policy {
+
+  @import './rte.scss';
+
+  &__container {
+    width: calc( 100% - (2 * var(--bs-container-fluid-padding)) );
+    max-width: 960px;
+    margin: 0 auto;
+    padding: calc(var(--theme-header-height) + 30px) 0 60px;
+  }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {
+
+    padding: calc(var(--theme-header-height) + 40px) 0 80px;
+
+  } // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {
+
+    padding: calc(var(--theme-header-height) + 50px) 0 100px;
+
+  } // min width xxl
+
+}
