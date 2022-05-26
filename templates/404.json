@@ -6,7 +6,7 @@
         "heading": "<p>Looks like there’s <em>nothing<\/em> here.<\/p>",
         "heading_highlight": "stroke",
         "cta_title": "Back to Home",
-        "cta_link": "shopify:\/\/collections\/frontpage",
+        "cta_link": "\/",
         "colour_theme": "dark"
       }
     }
