@@ -1,4 +1,4 @@
-{%- assign section_name = 'list-collection' -%}
+{%- assign section_name = 'list-collections' -%}
 {%- assign section_id = section_name | append: '--' | append: section.id -%}
 
 {%- liquid
@@ -15,7 +15,6 @@
 -%}
 
 <div class="{{ section_name }}" id="{{ section_id }}">
-
   <div class="{{ section_name }}__main">
     {% render 'bs-container', state: 'open' %}
       <div class="{{ section_name }}__listing listing--{{ section_name }}">
@@ -23,15 +22,15 @@
           {% render 'card-collection', collection: collection, style: section_name %}
         {%- endfor -%}
       </div>
-    {% render 'bs-container', state: 'open' %}
+    {% render 'bs-container', state: 'closed' %}
   </div>
-
 </div>
 
 {% schema %}
 {
-  "name": "t:sections.main-list-collections.name",
-  "class": "section",
+  "name": "List Collections",
+  "class": "section section--list-collections",
+  "tag": "section",
   "settings": [
     {
       "type": "text",
