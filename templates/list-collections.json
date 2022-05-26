@@ -3,9 +3,10 @@
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "title": "Collections",
-        "sort": "alphabetical",
-        "image_ratio": "square"
+        "heading": "<p>Lontreau Collections<\/p>",
+        "heading_highlight": "standard",
+        "message": "<p>Morbi vel commodo ligula. Phasellus mauris nunc, scelerisque eu urna vel, volutpat feugiat metus. Sed sem tortor, dapibus ac feugiat non, congue eu elit. Suspendisse tempor purus sit amet rutrum mattis. Nullam sit amet massa eu lectus vestibulum congue. Donec non accumsan mauris. Aliquam euismod non risus at eleifend. Pellentesque tempus tortor at tortor congue, in gravida dolor elementum. Pellentesque id est ac sem fermentum iaculis volutpat at orci.<\/p>",
+        "sort": "alphabetical"
       }
     }
   },
