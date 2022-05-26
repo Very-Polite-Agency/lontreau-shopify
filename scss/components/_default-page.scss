@@ -1,0 +1,19 @@
+.default-page {
+
+  &__heading {
+    & + .default-page__content {
+      margin-top: 32px;
+    }
+  }
+
+  @include breakpoint(sm) {} // min width sm
+
+  @include breakpoint(md) {} // min width md
+
+  @include breakpoint(lg) {} // min width lg
+
+  @include breakpoint(xl) {} // min width xl
+
+  @include breakpoint(xxl) {} // min width xxl
+
+}

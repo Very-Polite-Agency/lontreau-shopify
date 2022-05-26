@@ -4,10 +4,8 @@
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
   <div class="{{ section_name }}__main">
     {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
-
-      <h1 class="heading--2">{{ page.title | escape }}</h1>
-      <div class="body-copy--regular rte">{{ page.content }}</div>
-
+      <h1 class="{{ section_name }}__heading heading--2">{{ page.title | escape }}</h1>
+      <div class="{{ section_name }}__content body-copy--regular rte">{{ page.content }}</div>
     {% render 'bs-container', state: 'closed' %}
   </div>
 </div>
