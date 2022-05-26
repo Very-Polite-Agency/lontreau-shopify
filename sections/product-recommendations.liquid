@@ -173,10 +173,10 @@
     });
 
     recommendedGlider.glider.on( 'mount.after', function(event) {
-          setTimeout( function() {
-            recommendedGlider.glider.update();
-          }, 250 );
-        });
+      setTimeout( function() {
+        recommendedGlider.glider.update();
+      }, 250 );
+    });
 
     ( document.querySelectorAll(`[data-target="#${recommendedGlider.id}"].next`) || [] ).forEach( button => {
       button.addEventListener('click', function () {

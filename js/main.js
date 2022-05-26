@@ -120,7 +120,7 @@ function notifyUser( $products = [] ) {
 
       let notyf = new Notyf({
         dismissible: true,
-        duration: 0,
+        duration: 3500,
         position: {
           x: 'right',
           y: 'top',

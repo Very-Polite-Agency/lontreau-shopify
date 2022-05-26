@@ -40,7 +40,7 @@
             <span class="{{ section_name }}__featured-product-price caption--2">{% render 'price', product: featured_product, show_symbol: true %}</strong>
           </div>
           <button
-            class="{{ snippet_name }}__button button--tertiary js--add-to-cart"
+            class="{{ section_name }}__button button--tertiary js--add-to-cart"
             type="button"
             data-variant-id="{{ featured_product.selected_or_first_available_variant.id }}"
             data-quantity="1"

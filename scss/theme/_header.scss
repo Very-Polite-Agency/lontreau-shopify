@@ -79,6 +79,7 @@
   .scroll-position--scrolled & {
     background: rgba(var(--theme-colour-white),1);
     color: rgba(var(--theme-colour-black),1);
+    box-shadow: 0 0 5px 0 rgba(var(--theme-colour-black),0.1);
     .cart__link,
     .navigation__link {
       color: rgba(var(--theme-colour-black),1);
@@ -96,6 +97,36 @@
 
   @include breakpoint(lg) {
 
+    .navigation__link,
+    .sub-navigation__link,
+    .sub-sub-navigation__link {
+      font-family: var(--theme-font-family--serif--primary);
+      font-size: 24px;
+      text-decoration: none;
+      padding: 0 28px;
+      letter-spacing: 0;
+    }
+
+    .navigation__list,
+    .sub-navigation__list,
+    .sub-sub-navigation__list {
+      display: inline-flex;
+      width: auto;
+    }
+
+    .sub-navigation,
+    .sub-sub-navigation {
+      display: none;
+      &__link {
+        color: rgba(var(--theme-colour-white), 1);
+        &:hover,
+        &.active {
+          color: rgba(var(--theme-colour-grass), 1);
+        }
+      }
+    }
+
+    // ---------------------------------------- Cart
     .cart {
       position: absolute;
       right: var(--bs-container-fluid-padding);
@@ -118,34 +149,6 @@
           font-size: 20px;
           margin-left: 8px;
           margin-top: 5px;
-        }
-      }
-    }
-
-    .navigation__link,
-    .sub-navigation__link,
-    .sub-sub-navigation__link {
-      font-family: var(--theme-font-family--serif--primary);
-      font-size: 24px;
-      text-decoration: none;
-      padding: 0 28px;
-    }
-
-    .navigation__list,
-    .sub-navigation__list,
-    .sub-sub-navigation__list {
-      display: inline-flex;
-      width: auto;
-    }
-
-    .sub-navigation,
-    .sub-sub-navigation {
-      display: none;
-      &__link {
-        color: rgba(var(--theme-colour-white), 1);
-        &:hover,
-        &.active {
-          color: rgba(var(--theme-colour-grass), 1);
         }
       }
     }
@@ -245,13 +248,14 @@
       }
       &__list {
         background: rgba(var(--theme-colour-forrest), 1);
+        width: var(--theme-header-sub-navigation-width--lg);
+        min-height: 265px;
         display: inline-flex;
         flex-flow: column;
         justify-content: flex-start;
         align-items: flex-start;
         position: relative;
         padding: 28px 0;
-        width: var(--theme-header-sub-navigation-width--lg);
       }
       &__wrapper {
         position: relative;
@@ -263,7 +267,8 @@
 
     // ---------------------------------------- Sub-sub-navigation
     .sub-sub-navigation {
-      background: rgba(var(--theme-colour-forrest), 0.75);
+      background: rgba(var(--theme-colour-forrest), 1);
+      background: #0E5533;
       position: absolute;
       top: 0;
       display: none;

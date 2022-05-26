@@ -287,36 +287,20 @@ const Gliders = (() => {
           });
 
           glide.on( eventsToWatch, function() {
-
             setTimeout( () => updateGliderHeight( glider.element ), 100 );
-
-            if ( 'soul' === glider.style ) {
-
-              let activeSlideImage = glider.element.querySelector('.glide__slide--active .soul__item-image') || false;
-              let button = glider.element.querySelector('.glide__button') || false;
-
-              if ( activeSlideImage && button ) {
-                let imageHeight = activeSlideImage.offsetHeight;
-                let buttonHeight = button.offsetHeight;
-                let offset = ( imageHeight - buttonHeight ) / 2;
-                glider.element.querySelectorAll('.glide__button').forEach((button) => {
-                  button.style.top = offset + 'px';
-                });
-              }
-
-            }
-
           });
 
           ( document.querySelectorAll('[data-target="#' + glider.id + '"].next') || [] ).forEach( button => {
             button.addEventListener('click', function () {
               glide.go('>');
+              glide.update();
             });
           });
 
           ( document.querySelectorAll('[data-target="#' + glider.id + '"].prev') || [] ).forEach( button => {
             button.addEventListener('click', function () {
               glide.go('<');
+              glide.update();
             });
           });
 
