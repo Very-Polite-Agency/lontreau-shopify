@@ -13,7 +13,7 @@
 
   {% assign snippet_name = 'card-collection' %}
   {% assign snippet_classes = snippet_name %}
-  {% assign snippet_id = snippet_name | append: '--' | append: product.id -%}
+  {% assign snippet_id = snippet_name | append: '--' | append: collection.id -%}
   {% assign style = style | default: 'default' %}
 
   {% if classes and classes != empty %}
