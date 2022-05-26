@@ -5,7 +5,6 @@
     {% comment %}
 
       ## TODO
-        • Instagram feed
         • GA setup and integration
         • Audit scripts
 
@@ -16,6 +15,7 @@
         • AOS fix for mobile
         • FAQs
         • Customer area check
+        • Instagram Feed
 
     {% endcomment %}
 
@@ -99,7 +99,7 @@
     </script>
   </head>
 
-  <body class="{% render 'theme--classes' %} sticky-footer">
+  <body class="{% render 'theme--classes' %} sticky-footer" data-template="{{ template.name }}">
 
     {% section 'mobile-menu' %}
     {% section 'header' %}

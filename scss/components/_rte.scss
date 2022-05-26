@@ -11,16 +11,20 @@
     margin-bottom: 22px;
   }
 
+  h2, h3, h4, h5, h6 {
+    margin-top: 26px;
+  }
+
   h1 {
     font-size: 37px;
   }
 
   h2 {
-    font-size: 34px;
+    font-size: 30px;
   }
 
   h3, h4, h5, h6 {
-    font-size: 31px;
+    font-size: 26px;
   }
 
   ol, p, ul {
@@ -74,11 +78,11 @@
     }
 
     h2 {
-      font-size: 41px;
+      font-size: 32px;
     }
 
     h3, h4, h5, h6 {
-      font-size: 38px;
+      font-size: 28px;
     }
 
     img {
@@ -95,11 +99,11 @@
     }
 
     h2 {
-      font-size: 45px;
+      font-size: 34px;
     }
 
     h3, h4, h5, h6 {
-      font-size: 42px;
+      font-size: 30px;
     }
 
   } // min width md
@@ -109,6 +113,10 @@
     h1, h2, h3, h4, h5, h6,
     ol, p, ul {
       margin-bottom: 24px;
+    }
+
+    h2, h3, h4, h5, h6 {
+      margin-top: 30px;
     }
 
     h1 {
