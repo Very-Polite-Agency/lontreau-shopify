@@ -86,7 +86,7 @@
           "type": "accordion",
           "settings": {
             "title": "Respect the earth",
-            "message": "<p>Our community spends a lot of time outdoors, so we want to show our respect to the planet we love to explore. Lontreau is dedicated to reaching Plastic Negative and creating sustainable initiatives for our future.<\/p>"
+            "message": "<p>Our community spends a lot of time outdoors, so we want to show our respect to this planet we love to explore. Lontreau is dedicated to reaching Plastic Negative and creating sustainable initiatives for our future.<\/p>"
           }
         },
         "cb328457-8097-4190-bf9a-36c97a493ee0": {
@@ -120,21 +120,21 @@
         "89d1e872-6efc-4271-bbb5-2f99102edb50": {
           "type": "minimal",
           "settings": {
-            "title": "EWG Verified Logo",
+            "title": "",
             "image": "shopify:\/\/shop_images\/Lontreau-certificate1_f42be460-180f-4dde-9d11-ca12d1208c4b.png"
           }
         },
         "53ae3dc4-5f6c-4206-9090-002bdcef471b": {
           "type": "minimal",
           "settings": {
-            "title": "Certified Plastic Neutral Logo",
+            "title": "",
             "image": "shopify:\/\/shop_images\/Lontreau-certificate2_b0b00338-f9f4-4d8b-8c42-cfda44d864fb.png"
           }
         },
         "fcee7258-7fa1-4865-8a1d-c2c79d11e4fd": {
           "type": "minimal",
           "settings": {
-            "title": "Certified Logo Sport Logo",
+            "title": "",
             "image": "shopify:\/\/shop_images\/Lontreau-certificate3_5dae2c89-afd9-49a5-9528-0b6601ab4972.png"
           }
         }
