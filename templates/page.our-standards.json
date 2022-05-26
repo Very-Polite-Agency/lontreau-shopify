@@ -95,7 +95,7 @@
         "59374510-d779-47cc-b2c4-4830d0cd0bb2": {
           "type": "minimal",
           "settings": {
-            "title": "Alcohol Free",
+            "title": "Alcohol-Free",
             "image": "shopify:\/\/shop_images\/our-standards-16_3x_cd0189b0-0bfa-491f-b693-00a110948a54.png"
           }
         },
@@ -109,14 +109,14 @@
         "df62e874-728b-488b-8712-17cf21407dfb": {
           "type": "minimal",
           "settings": {
-            "title": "Responsibly sourced",
+            "title": "Responsibly Sourced",
             "image": "shopify:\/\/shop_images\/our-standards-14_3x_11a11132-03e4-484a-b011-1eeb3bdb19da.png"
           }
         },
         "ae6de2d9-deb0-4954-b283-239912189ccb": {
           "type": "minimal",
           "settings": {
-            "title": "Aluminum Free",
+            "title": "Aluminum-Free",
             "image": "shopify:\/\/shop_images\/our-standards-17_3x_eb7c837e-53d8-4411-b4c6-5a243414c60a.png"
           }
         },
@@ -130,7 +130,7 @@
         "a3a7227d-7cdf-4975-a551-264d22f96210": {
           "type": "minimal",
           "settings": {
-            "title": "Gluten Free",
+            "title": "Gluten-Free",
             "image": "shopify:\/\/shop_images\/our-standards-18_3x_3a0b5683-a52b-4aa4-9d3e-44238435cc5b.png"
           }
         }
