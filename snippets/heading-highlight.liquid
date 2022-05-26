@@ -3,7 +3,8 @@
   {% assign classes = classes | default: 'heading--2' %}
   {% assign style = style | default: 'standard' %}
   {% assign tag = tag | default: 'h2' %}
+  {% assign aos = aos | default: false %}
 
-  <{{ tag }} class="{{ classes }} highlight--{{ style }}">{{ heading }}</{{ tag }}>
+  <{{ tag }} class="{{ classes }} highlight--{{ style }}" {% if aos %}{{ aos }}{% endif %}>{{ heading }}</{{ tag }}>
 
 {%- endif -%}

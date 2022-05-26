@@ -1,6 +1,10 @@
 {% assign section_name = 'cards-feature' %}
 {% assign section_id = section_name | append: '--' | append: section.id %}
 
+{% assign aos_id = section_id | append: '--aos' %}
+{% assign aos_delay = 250 %}
+{% assign aos_delay_increment = 250 %}
+
 {% assign cards = section.blocks | where: 'type', 'card' | default: false %}
 {% assign cta = false %}
 {% assign cta_link = section.settings.cta_link | default: '' %}
@@ -20,71 +24,117 @@
 
 <div class="{{ section_name }}" id="{{ section_id }}" data-section-padding>
 
-  {% if heading != blank or message != blank %}
-    <div class="{{ section_name }}__intro">
-      {% render 'bs-container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
+  <div id="{{ aos_id }}">
+    {% if heading != blank or message != blank %}
+      <div class="{{ section_name }}__intro">
+        {% render 'bs-container', state: 'open', col: 'col-12 col-lg-10 offset-lg-1' %}
 
-        {% if title != blank %}
-          <strong class="{{ section_name }}__title intro__title title--1">{{ title }}</strong>
-        {% endif %}
+          {% if title != blank %}
+            {% capture aos %}
+              {%
+                render 'aos-attributes',
+                anchor: aos_id,
+                anchor_placement: 'top-bottom',
+                delay: aos_delay,
+                transition: 'fade-left',
+              %}
+            {% endcapture %}
+            {% assign aos_delay = aos_delay | plus : aos_delay_increment %}
+            <strong class="{{ section_name }}__title intro__title title--1" {{ aos }}>{{ title }}</strong>
+          {% endif %}
 
-        {%
-          render 'heading-highlight',
-          classes: 'cards-feature__heading intro__heading heading--2',
-          heading: heading,
-          style: heading_highlight,
-          tag: 'h2'
-        %}
+          {% if heading != blank %}
+            {% capture aos %}
+              {%
+                render 'aos-attributes',
+                anchor: aos_id,
+                anchor_placement: 'top-bottom',
+                delay: aos_delay,
+                transition: 'fade-left',
+              %}
+            {% endcapture %}
+            {% assign aos_delay = aos_delay | plus : aos_delay_increment %}
+            {%
+              render 'heading-highlight',
+              aos: aos,
+              classes: 'cards-feature__heading intro__heading heading--2',
+              heading: heading,
+              style: heading_highlight,
+              tag: 'h2'
+            %}
+          {% endif %}
 
-        {% if message != blank %}
-          <div class="{{ section_name }}__message intro__message body-copy--large">{{ message }}</div>
-        {% endif %}
+          {% if message != blank %}
+            {% capture aos %}
+              {%
+                render 'aos-attributes',
+                anchor: aos_id,
+                anchor_placement: 'top-bottom',
+                delay: aos_delay,
+                transition: 'fade-left',
+              %}
+            {% endcapture %}
+            {% assign aos_delay = aos_delay | plus : aos_delay_increment %}
+            <div class="{{ section_name }}__message intro__message body-copy--large" {{ aos }}>{{ message }}</div>
+          {% endif %}
 
-      {% render 'bs-container', state: 'closed' %}
-    </div>
-  {% endif %}
+        {% render 'bs-container', state: 'closed' %}
+      </div>
+    {% endif %}
 
-  {% if cards or cta %}
-    <div class="{{ section_name }}__main">
-      {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
+    {% if cards or cta %}
+      <div class="{{ section_name }}__main">
+        {% render 'bs-container', state: 'open', col: 'col-12 col-lg-8 offset-lg-2' %}
 
-        {% if cards %}
-          <div class="{{ section_name }}__cards listing--{{ section_name }}">
-            {% for block in cards %}
+          {% if cards %}
+            <div class="{{ section_name }}__cards listing--{{ section_name }}">
+              {% for block in cards %}
 
-              {% assign image = block.settings.image | default: false %}
-              {% assign message = block.settings.message | default: '' %}
-              {% assign title = block.settings.title | default: '' %}
+                {% assign image = block.settings.image | default: false %}
+                {% assign message = block.settings.message | default: '' %}
+                {% assign title = block.settings.title | default: '' %}
 
-              {% if title != blank and message != blank %}
-                <div class="{{ section_name }}__cards-item">
-                  {% if image %}
-                    <div class="{{ section_name }}__cards-image">
-                      {% render 'lazyload-image', alt_text: title, image: image %}
+                {% capture aos %}
+                  {%
+                    render 'aos-attributes',
+                    anchor: aos_id,
+                    anchor_placement: 'top-bottom',
+                    delay: aos_delay,
+                    transition: 'fade-up',
+                  %}
+                {% endcapture %}
+                {% assign aos_delay = aos_delay | plus : aos_delay_increment %}
+
+                {% if title != blank and message != blank %}
+                  <div class="{{ section_name }}__cards-item" {{ aos }}>
+                    {% if image %}
+                      <div class="{{ section_name }}__cards-image">
+                        {% render 'lazyload-image', alt_text: title, image: image %}
+                      </div>
+                    {% endif %}
+                    <div class="{{ section_name }}__cards-content">
+                      <strong class="{{ section_name }}__cards-title title--1">{{ title }}</strong>
+                      <div class="{{ section_name }}__cards-message body-copy--alt">{{ message }}</div>
                     </div>
-                  {% endif %}
-                  <div class="{{ section_name }}__cards-content">
-                    <strong class="{{ section_name }}__cards-title title--1">{{ title }}</strong>
-                    <div class="{{ section_name }}__cards-message body-copy--alt">{{ message }}</div>
                   </div>
-                </div>
-              {% endif %}
+                {% endif %}
 
-            {% endfor %}
-          </div>
-        {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
 
-        {% if cta %}
-          <div class="{{ section_name }}__cta">
-            <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
-              <span class="button__title">{{ cta_title }}</span>
-            </a>
-          </div>
-        {% endif %}
+          {% if cta %}
+            <div class="{{ section_name }}__cta">
+              <a class="{{ section_name }}__cta-button button--primary" href="{{ cta_link }}" title="{{ cta_title }}">
+                <span class="button__title">{{ cta_title }}</span>
+              </a>
+            </div>
+          {% endif %}
 
-      {% render 'bs-container', state: 'closed' %}
-    </div>
-  {% endif %}
+        {% render 'bs-container', state: 'closed' %}
+      </div>
+    {% endif %}
+  </div>
 
 </div>
 

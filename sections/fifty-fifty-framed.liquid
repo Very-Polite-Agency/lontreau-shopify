@@ -62,7 +62,7 @@
                   transition: 'fade-left',
                 %}
               {% endcapture %}
-              <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %} {{ aos }}">{{ heading }}</h2>
+              <h2 class="{{ section_name }}__heading intro__heading heading--2 {% if heading_highlight %} highlight--{{ heading_highlight }}{% endif %}" {{ aos }}>{{ heading }}</h2>
             {% endif %}
             {% if message != blank %}
               {% capture aos %}
