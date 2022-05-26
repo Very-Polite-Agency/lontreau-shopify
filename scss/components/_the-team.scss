@@ -4,6 +4,9 @@
     &__content {
       padding: 0;
     }
+    & + .collapsible {
+      border-top: 0;
+    }
   }
 
   &__heading {
@@ -14,19 +17,22 @@
   }
 
   &__item {
-    border: 1px solid rgba(var(--theme-colour-black), 1);
     display: block;
     &-bio {
       border-top: 1px solid rgba(var(--theme-colour-black), 1);
       padding: 25px 28px;
+    }
+    &-body {
+      border: 1px solid rgba(var(--theme-colour-black), 1);
+      border-top: none;
     }
     &-details {
       width: 100%;
       order: 2;
     }
     &-header {
+      border: 1px solid rgba(var(--theme-colour-black), 1);
       background: rgba(var(--theme-colour-asphalt), 1);
-      border-bottom: 1px solid rgba(var(--theme-colour-black), 1);
       padding: 25px 28px;
     }
     &-job-title {
@@ -51,7 +57,9 @@
       background: rgba(var(--theme-colour-asphalt), 1); // FIX THIS
     }
     & + .the-team__item  {
-      border-top: 0;
+      .the-team__item-header {
+        border-top: none;
+      }
     }
   }
 
