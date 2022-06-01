@@ -1,4 +1,4 @@
-/* .customer:not(.account):not(.order) {
+.customer:not(.account):not(.order) {
   margin: 6rem auto 9rem;
   max-width: 33.4rem;
   padding: 0 1.5rem;
@@ -745,4 +745,3 @@ li[data-address] > h2 {
 .addresses form > div:nth-of-type(7) + div[id] {
   margin-top: 1.5rem;
 }
- */
