@@ -21,9 +21,9 @@ const Header = (() => {
 
     let navigation = document.getElementById('header__navigation') || false;
     let subNaviation = {
-      main: navigation.querySelectorAll('.sub-navigation') || [],
-      list: navigation.querySelectorAll('.sub-navigation__list') || [],
-      wrapper: navigation.querySelectorAll('.sub-navigation__wrapper') || [],
+      main: document.querySelectorAll('.header__main-navigation .sub-navigation') || [],
+      list: document.querySelectorAll('.header__main-navigation .sub-navigation__list') || [],
+      wrapper: document.querySelectorAll('.header__main-navigation .sub-navigation__wrapper') || [],
     };
 
     if ( navigation ) {
