@@ -57,6 +57,20 @@
       }
     }
   }
+  .password-main {
+    &__brand {
+      color: rgba(var(--theme-colour-white), 1);
+    }
+  }
+}
+
+// ---------------------------------------- Light
+[data-colour-theme-grey] {
+  .password-main {
+    &__brand {
+      color: rgba(var(--theme-colour-black), 1);
+    }
+  }
 }
 
 // ---------------------------------------- Light
@@ -75,6 +89,11 @@
     }
     & + .collapsible {
       border-top-color: rgba(var(--theme-colour-black), 1);
+    }
+  }
+  .password-main {
+    &__brand {
+      color: rgba(var(--theme-colour-black), 1);
     }
   }
 }
