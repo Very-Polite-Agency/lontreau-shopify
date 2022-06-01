@@ -21,7 +21,7 @@
     }
   }
   .password-main {
-    form {
+    &__form {
       button {
         border-color: rgba(var(--theme-colour-black), 1);
         color: rgba(var(--theme-colour-black), 1);
@@ -75,7 +75,7 @@
     }
   }
   .password-main {
-    form {
+    &__form {
       button {
         border-color: rgba(var(--theme-colour-white), 1);
         color: rgba(var(--theme-colour-white), 1);
