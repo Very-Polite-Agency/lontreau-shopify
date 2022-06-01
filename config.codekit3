@@ -2624,20 +2624,12 @@
       "oAP" : "\/sections\/main-page.liquid",
       "oF" : 0
     },
-    "\/sections\/main-password-footer.liquid" : {
+    "\/sections\/main-password.liquid" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/sections\/main-password-footer.liquid",
-      "oF" : 0
-    },
-    "\/sections\/main-password-header.liquid" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/sections\/main-password-header.liquid",
+      "oAP" : "\/sections\/main-password.liquid",
       "oF" : 0
     },
     "\/sections\/main-product.liquid" : {
