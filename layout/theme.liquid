@@ -85,18 +85,23 @@
 
     {{ 'main.css' | asset_url | stylesheet_tag }}
 
-    {% comment %}
-      ## Do we need this
-      {%- if settings.predictive_search_enabled -%}
-        <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
-      {%- endif -%}
-    {% endcomment %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CELGMY4M0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-    if (Shopify.designMode) {
-      document.documentElement.classList.add('shopify-design-mode');
-    }
+      gtag('config', 'G-8CELGMY4M0');
     </script>
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      if (Shopify.designMode) {
+        document.documentElement.classList.add('shopify-design-mode');
+      }
+    </script>
+
   </head>
 
   <body class="{% render 'theme--classes' %} sticky-footer" data-template="{{ template.name }}">
