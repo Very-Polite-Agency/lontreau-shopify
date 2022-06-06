@@ -9,56 +9,6 @@
         "image": "shopify:\/\/shop_images\/hero.png"
       }
     },
-    "16505837988dc9d01f": {
-      "type": "fifty-fifty-feature",
-      "settings": {
-        "title": "",
-        "heading": "<p>Here to be<\/p><p><em>Hard & Soft<\/em><\/p>",
-        "heading_highlight": "standard",
-        "message": "<p>Lontreau is a skincare brand focused on regenerative formulations. We create ingredient-rich skincare for everyone from endurance athletes to everyday movers.<br\/><\/p>",
-        "cta_title": "",
-        "cta_link": "",
-        "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--default_3x_d3a9c3bb-0e8c-4c6e-a41f-f7dc52d2fc2f.png",
-        "hide_image_mobile": false,
-        "anchor_id": "",
-        "style": "standard",
-        "layout": "image-left",
-        "colour_theme": "light"
-      }
-    },
-    "164936493171d7e74a": {
-      "type": "full-width-feature",
-      "settings": {
-        "text_theme": "dark",
-        "title": "",
-        "heading": "<p><em>Goal-setting<\/em> ingredients<\/p>",
-        "heading_highlight": "stroke",
-        "message": "<p>We create science-driven and efficacious formulas that use synergistic ingredients to protect your skin from the elements and everyday life. We believe skin health is a journey, and our goal is to create a powerful set of products that encourage women to move intentionally and confidently — whatever moves you make.<\/p>",
-        "cta_title": "Learn More",
-        "cta_link": "shopify:\/\/pages\/our-science",
-        "image": "shopify:\/\/shop_images\/LONTREAU--home-page--goal-setting-ingredients_2x_9f4f4844-6146-4bd1-ba65-1290d90818fb.png",
-        "parallax": false,
-        "anchor_id": "custom-anchor-home",
-        "height": "large",
-        "curved_arrow_enable": false
-      }
-    },
-    "1649358548eba2154c": {
-      "type": "full-width-feature",
-      "settings": {
-        "text_theme": "light",
-        "title": "The Lontreau Kit:",
-        "heading": "<p>Designed to move <br\/><em>with you <\/em><\/p>",
-        "heading_highlight": "stroke",
-        "message": "",
-        "cta_title": "",
-        "cta_link": "",
-        "parallax": false,
-        "anchor_id": "",
-        "height": "large",
-        "curved_arrow_enable": true
-      }
-    },
     "16517719953345c3cc": {
       "type": "featured-product",
       "blocks": {
@@ -106,6 +56,57 @@
         "colour_theme": "light"
       }
     },
+    "16505837988dc9d01f": {
+      "type": "fifty-fifty-feature",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading": "<p>Here to be<\/p><p><em>Hard & Soft<\/em><\/p>",
+        "heading_highlight": "standard",
+        "message": "<p>Lontreau is a skincare brand focused on regenerative formulations. We create ingredient-rich skincare for everyone from endurance athletes to everyday movers.<br\/><\/p>",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/LONTREAU--fifty-fifty-feature--placeholder--default_3x_d3a9c3bb-0e8c-4c6e-a41f-f7dc52d2fc2f.png",
+        "hide_image_mobile": false,
+        "anchor_id": "",
+        "style": "standard",
+        "layout": "image-left",
+        "colour_theme": "light"
+      }
+    },
+    "1649358548eba2154c": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "The Lontreau Kit:",
+        "heading": "<p>Designed to move <br\/><em>with you <\/em><\/p>",
+        "heading_highlight": "stroke",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "large",
+        "curved_arrow_enable": true
+      }
+    },
+    "164936493171d7e74a": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "dark",
+        "title": "",
+        "heading": "<p><em>Goal-setting<\/em> ingredients<\/p>",
+        "heading_highlight": "stroke",
+        "message": "<p>We create science-driven and efficacious formulas that use synergistic ingredients to protect your skin from the elements and everyday life. We believe skin health is a journey, and our goal is to create a powerful set of products that encourage women to move intentionally and confidently — whatever moves you make.<\/p>",
+        "cta_title": "Learn More",
+        "cta_link": "shopify:\/\/pages\/our-science",
+        "image": "shopify:\/\/shop_images\/LONTREAU--home-page--goal-setting-ingredients_2x_9f4f4844-6146-4bd1-ba65-1290d90818fb.png",
+        "parallax": false,
+        "anchor_id": "custom-anchor-home",
+        "height": "large",
+        "curved_arrow_enable": false
+      }
+    },
     "1650584831258bfc23": {
       "type": "fifty-fifty-framed",
       "settings": {
@@ -133,10 +134,10 @@
   },
   "order": [
     "16522252885ba23f45",
-    "16505837988dc9d01f",
-    "164936493171d7e74a",
-    "1649358548eba2154c",
     "16517719953345c3cc",
+    "16505837988dc9d01f",
+    "1649358548eba2154c",
+    "164936493171d7e74a",
     "1650584831258bfc23",
     "16535101150c7e3d32"
   ]
