@@ -6,7 +6,7 @@
 
 const InstagramFeed = (() => {
 
-  let debug = true;
+  let debug = false;
   let info = { name : 'Instagram Feed', version : '1.0' };
 
   let vpcreds = {
@@ -221,7 +221,6 @@ const InstagramFeed = (() => {
     ( document.querySelectorAll('.js--instagram-feed') || [] ).forEach( element => {
        let limit = parseInt( element.dataset.instagramFeedLimit ) || 6;
        let account = element.dataset.instagramFeedAccount || false;
-       console.log( 'getFeeds ::', { account, limit } );
        if ( account && limit ) {
         feeds[account] = { account, element, limit };
        }
@@ -238,8 +237,6 @@ const InstagramFeed = (() => {
 
     for ( const account in feeds ) {
 
-      console.log( 'main ::', account );
-
       if ( tools.getLocalStorageValueByKey(`very-polite-instagram-feed--${account}`) ) {
 
         let feedData = JSON.parse( tools.getLocalStorageValueByKey(`very-polite-instagram-feed--${account}`) );
@@ -247,15 +244,12 @@ const InstagramFeed = (() => {
         let minutesDifference = ( millisecondsDifference / 60000 ).toFixed(2);
 
         if ( minutesDifference > 30 ) {
-          console.log( 'GREATER than 30 minutes since last check, get new token' );
           getToken( account );
         } else {
-          console.log( 'LESS than 30 minutes since last check, print from local storage' );
           printMedia( account, feedData.data );
         }
 
       } else {
-        console.log( 'Local storage does not exist, get token and then print media.' );
         getToken( account );
       }
 

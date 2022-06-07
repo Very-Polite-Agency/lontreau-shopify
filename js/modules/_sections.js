@@ -4,7 +4,7 @@
 
 const Sections = (() => {
 
-  let debug = true;
+  let debug = false;
   let info = { name : 'Sections', version : '1.0' };
 
   let tools = new Tools();

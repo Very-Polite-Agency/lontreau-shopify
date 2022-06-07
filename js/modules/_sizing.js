@@ -22,7 +22,6 @@ const Sizing = (() => {
 
   const setMaxContainerLeftOffset = () => {
     let block = document.querySelector( '.container .col-12' ).getBoundingClientRect() || 0;
-    console.log( block );
     if ( block ) tools.setCSSVariable( 'theme-container-max-offset-left', block.left + 'px' );
   };
 

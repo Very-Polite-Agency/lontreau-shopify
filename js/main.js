@@ -24,29 +24,20 @@
 ////  Execute Theme
 //////////////////////////////////////////////////////////////////////////////////////////
 
-let credits = new Credits();
-let forms = new Forms();
-let gliders = new Gliders();
-let header = new Header();
-let instagramFeed = new InstagramFeed();
-let mobileMenu = new MobileMenu();
-let sections = new Sections();
-let scrolling = new Scrolling();
-let sizing = new Sizing();
-let stepper = new Stepper();
+
 let tools = new Tools();
 
 let modules = [
-  forms,
-  gliders,
-  header,
-  instagramFeed,
-  mobileMenu,
-  sections,
-  scrolling,
-  sizing,
-  stepper,
-  credits,
+  new Forms(),
+  new Gliders(),
+  new Header(),
+  new InstagramFeed(),
+  new MobileMenu(),
+  new Sections(),
+  new Scrolling(),
+  new Sizing(),
+  new Stepper(),
+  new Credits(),
 ];
 
 modules.forEach( module => module.init() );
@@ -233,5 +224,3 @@ AOS.init({
   easing: 'ease-in-out',      // default easing for AOS animations
   startEvent: 'load'          // waits for window load event
 });
-
-console.log('updated 6.9');

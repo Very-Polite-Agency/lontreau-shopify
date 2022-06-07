@@ -2,23 +2,6 @@
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
 
-    {% comment %}
-
-      ## TODO
-        • GA setup and integration
-        • Audit scripts
-
-      ## Done
-        • Content check
-        • Header navigation
-        • Move Metafields on Product to ACF (Images as Metafields, Written Content as ACF)
-        • AOS fix for mobile
-        • FAQs
-        • Customer area check
-        • Instagram Feed
-
-    {% endcomment %}
-
     <title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
@@ -50,6 +33,8 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
+    {{ content_for_header }}
+
     <!-- Preload Fonts  -->
     {% render 'theme--preload-fonts', fonts: 'NeueBit-Bold, SelfModern-Italic, SelfModern-Regular' %}
 
@@ -78,8 +63,6 @@
         ;
       };
     </script>
-
-    {{ content_for_header }}
 
     {% render 'theme--css-variables' %}
 
@@ -114,13 +97,6 @@
     </main>
 
     {% section 'footer' %}
-
-    {% comment %}
-      ## Do we need this
-      {%- if settings.predictive_search_enabled -%}
-        <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
-      {%- endif -%}
-    {% endcomment %}
 
     <script src="{{ 'main.min.js' | asset_url }}" defer></script>
 

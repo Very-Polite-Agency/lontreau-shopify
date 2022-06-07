@@ -4,7 +4,7 @@
 
 const Credits = (() => {
 
-  const info = { company : 'studio D', tagline : '"Redefining Design"',  version : '2.0' };
+  const info = { company : 'Lontreau', tagline : '"Endurance Skincare"',  version : '1.0' };
 
   //////////////////////////////////////////////////////////
   ////  Initialize
