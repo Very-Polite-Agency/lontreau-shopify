@@ -17,6 +17,55 @@
         "curved_arrow_enable": false
       }
     },
+    "16530923159e4e9e0b": {
+      "type": "accordion-with-image",
+      "blocks": {
+        "225dbe0d-96b3-44a1-b15c-cbd3d2a836cd": {
+          "type": "accordion",
+          "settings": {
+            "title": "Clinical & Efficacious",
+            "message": "<p>We choose clinically backed ingredients and use them at efficacious levels to get the most for your skin. Our Global Antioxidant Serum contains a clinically efficacious dose of Elixir IRTM, a flavonoid rich knotgrass extract that protects the dermis fibres from infrared damage.<\/p>"
+          }
+        },
+        "b8ff2d76-b993-45d7-84bd-bce334ff57cd": {
+          "type": "accordion",
+          "settings": {
+            "title": "Real Change Enhancers",
+            "message": "<p>Some skincare brands use ingredients that are designed to create an immediate, but temporary benefit to the skin. The problem with this approach is it teaches your skin to be lazy without the benefit of a health improving function. We use ingredients that support your journey to skin health. This long-term approach improves the overall look of skin and improves barrier function over time. Just like training, hard work takes time, but the results are worth it.<\/p>"
+          }
+        },
+        "3fbad6b9-b1ce-4273-9eb8-9a82c90faf84": {
+          "type": "accordion",
+          "settings": {
+            "title": "Sustainable & Responsible",
+            "message": "<p>We created a winning team of ingredients from Canada and around the world that are responsibly sourced and sustainable, like PhytoSpherixTM (recognized as an unrivaled energy source by our skin cells) which is made in Guelph, Ontario. This ingredient uses a water-based, mechanical extraction method with no harsh solvents or chemicals. Our formulations are manufactured with pride in Canada and our packaging is 100% recycled, recyclable or offset with the Repurpose Plastic Neutral Program.<\/p>"
+          }
+        },
+        "60d909e4-9f82-4a44-9fbd-a2950d52b106": {
+          "type": "accordion",
+          "settings": {
+            "title": "Dermal Delivery Accelerators",
+            "message": "<p>Even the best ingredients in the world do little if they sit on the surface of the skin, without penetrating where they are most effective. Our products are specially formulated with a wide array of ingredients clinically proven to improve active ingredient bioavailability. They act as a carrier to help enhance the performance of the active ingredients in our skincare products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "225dbe0d-96b3-44a1-b15c-cbd3d2a836cd",
+        "b8ff2d76-b993-45d7-84bd-bce334ff57cd",
+        "3fbad6b9-b1ce-4273-9eb8-9a82c90faf84",
+        "60d909e4-9f82-4a44-9fbd-a2950d52b106"
+      ],
+      "settings": {
+        "heading": "<p><em>Ingredient<\/em> Selection Playbook<\/p>",
+        "heading_highlight": "standard",
+        "message": "<p>All Lontreau products include powerful ingredients that are clinically proven to support regenerative signals and healthy barrier function. <\/p>",
+        "image": "shopify:\/\/shop_images\/LONTREAU--our-skin-page--FF_3x_1fcaf6c9-ad9c-466f-9995-3bd2d7dd8a32.png",
+        "anchor_id": "",
+        "style": "technical",
+        "layout": "image-left",
+        "colour_theme": "dark"
+      }
+    },
     "16505022401e5283d2": {
       "type": "carousel-education",
       "blocks": {
@@ -96,57 +145,9 @@
         "colour_theme": "light"
       }
     },
-    "16530923159e4e9e0b": {
-      "type": "accordion-with-image",
-      "blocks": {
-        "225dbe0d-96b3-44a1-b15c-cbd3d2a836cd": {
-          "type": "accordion",
-          "settings": {
-            "title": "Clinical & Efficacious",
-            "message": "<p>We choose clinically backed ingredients and use them at efficacious levels to get the most for your skin. Our Global Antioxidant Serum contains a clinically efficacious dose of Elixir IRTM, a flavonoid rich knotgrass extract that protects the dermis fibres from infrared damage.<\/p>"
-          }
-        },
-        "b8ff2d76-b993-45d7-84bd-bce334ff57cd": {
-          "type": "accordion",
-          "settings": {
-            "title": "Real Change Enhancers",
-            "message": "<p>Some skincare brands use ingredients that are designed to create an immediate, but temporary benefit to the skin. The problem with this approach is it teaches your skin to be lazy without the benefit of a health improving function. We use ingredients that support your journey to skin health. This long-term approach improves the overall look of skin and improves barrier function over time. Just like training, hard work takes time, but the results are worth it.<\/p>"
-          }
-        },
-        "3fbad6b9-b1ce-4273-9eb8-9a82c90faf84": {
-          "type": "accordion",
-          "settings": {
-            "title": "Sustainable & Responsible",
-            "message": "<p>We created a winning team of ingredients from Canada and around the world that are responsibly sourced and sustainable, like PhytoSpherixTM (recognized as an unrivaled energy source by our skin cells) which is made in Guelph, Ontario. This ingredient uses a water-based, mechanical extraction method with no harsh solvents or chemicals. Our formulations are manufactured with pride in Canada and our packaging is 100% recycled, recyclable or offset with the Repurpose Plastic Neutral Program.<\/p>"
-          }
-        },
-        "60d909e4-9f82-4a44-9fbd-a2950d52b106": {
-          "type": "accordion",
-          "settings": {
-            "title": "Dermal Delivery Accelerators",
-            "message": "<p>Even the best ingredients in the world do little if they sit on the surface of the skin, without penetrating where they are most effective. Our products are specially formulated with a wide array of ingredients clinically proven to improve active ingredient bioavailability. They act as a carrier to help enhance the performance of the active ingredients in our skincare products.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "225dbe0d-96b3-44a1-b15c-cbd3d2a836cd",
-        "b8ff2d76-b993-45d7-84bd-bce334ff57cd",
-        "3fbad6b9-b1ce-4273-9eb8-9a82c90faf84",
-        "60d909e4-9f82-4a44-9fbd-a2950d52b106"
-      ],
-      "settings": {
-        "heading": "<p><em>Ingredient<\/em> Selection Playbook<\/p>",
-        "heading_highlight": "standard",
-        "message": "<p>All Lontreau products include powerful ingredients that are clinically proven to support regenerative signals and healthy barrier function. <\/p>",
-        "image": "shopify:\/\/shop_images\/LONTREAU--our-skin-page--FF_3x_1fcaf6c9-ad9c-466f-9995-3bd2d7dd8a32.png",
-        "anchor_id": "",
-        "style": "technical",
-        "layout": "image-left",
-        "colour_theme": "dark"
-      }
-    },
     "16505026180b60acc4": {
       "type": "accordion-with-image",
+      "disabled": true,
       "blocks": {
         "6b185076-57ef-4c0d-a214-5b5e1b13f91d": {
           "type": "accordion",
@@ -165,7 +166,7 @@
         "03c98591-44e2-478a-a9f7-bbcd5ea6b5c5": {
           "type": "accordion",
           "settings": {
-            "title": "Repurpose Global Plastic Neutral Program",
+            "title": "Repurpose Global Plastic Negative Program",
             "message": "<p>We avoid plastic whenever possible — our boxes don’t have plastic film for a reason. When we can’t avoid plastic, we offset it through the repurpose program. Just like in our training, we don’t take any shortcuts and have committed to plastic negative not just plastic neutral.<\/p>"
           }
         },
@@ -197,8 +198,8 @@
   },
   "order": [
     "main",
-    "16505022401e5283d2",
     "16530923159e4e9e0b",
+    "16505022401e5283d2",
     "16505026180b60acc4"
   ]
 }
