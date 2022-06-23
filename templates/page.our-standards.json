@@ -158,6 +158,7 @@
     },
     "16505061690b04c31e": {
       "type": "full-width-feature",
+      "disabled": true,
       "settings": {
         "text_theme": "dark",
         "title": "",
