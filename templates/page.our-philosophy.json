@@ -51,6 +51,23 @@
         "curved_arrow_enable": false
       }
     },
+    "16560084252bcbded5": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "dark",
+        "title": "",
+        "heading": "<p><em>No Fuss<\/em> Formulations<\/p>",
+        "heading_highlight": "circle",
+        "message": "<p>Our synergistic formulations are designed to simplify your skincare routine. Every step in the Lontreau Core Kit can be pumped directly into your hand, emulsified and applied all at once. Skip the multi-step routine and focus on the things that move you with Lontreau's science-backed formulas. <\/p>",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/LONTREAU--home-page--goal-setting-ingredients_2x_9f4f4844-6146-4bd1-ba65-1290d90818fb.png",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "auto",
+        "curved_arrow_enable": false
+      }
+    },
     "165222409282ad276d": {
       "type": "fifty-fifty-framed",
       "settings": {
@@ -137,12 +154,21 @@
             "title": "",
             "image": "shopify:\/\/shop_images\/Lontreau-certificate3_5dae2c89-afd9-49a5-9528-0b6601ab4972.png"
           }
+        },
+        "98a94e6f-4f42-4127-a460-4c9010efed65": {
+          "type": "detailed",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "description": ""
+          }
         }
       },
       "block_order": [
         "89d1e872-6efc-4271-bbb5-2f99102edb50",
         "53ae3dc4-5f6c-4206-9090-002bdcef471b",
-        "fcee7258-7fa1-4865-8a1d-c2c79d11e4fd"
+        "fcee7258-7fa1-4865-8a1d-c2c79d11e4fd",
+        "98a94e6f-4f42-4127-a460-4c9010efed65"
       ],
       "settings": {
         "content_type": "minimal",
@@ -159,6 +185,7 @@
     "main",
     "16505006587b6a34d3",
     "16505007220d454290",
+    "16560084252bcbded5",
     "165222409282ad276d",
     "16505007247ed3495b",
     "1650500945f5b63511"
