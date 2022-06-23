@@ -158,7 +158,6 @@
     },
     "16505061690b04c31e": {
       "type": "full-width-feature",
-      "disabled": true,
       "settings": {
         "text_theme": "dark",
         "title": "",
@@ -173,6 +172,55 @@
         "height": "auto",
         "curved_arrow_enable": false
       }
+    },
+    "165600915741a8321a": {
+      "type": "accordion-with-image",
+      "blocks": {
+        "da7173e3-9c06-489c-b7f1-3a12715a4f80": {
+          "type": "accordion",
+          "settings": {
+            "title": "Clean Journey",
+            "message": "<p>We challenged ourselves to make products that are beyond clean and formulated according to the Credo Beauty “Clean” standard, which to date, is the strictest of the industry. We avoid over 2,700 specific ingredients and types of ingredients that are used in mainstream beauty products, but that Credo prohibits due to safety and\/or sustainability reasons.<\/p>"
+          }
+        },
+        "9b642651-7ef0-4b89-bb4f-1e65f2035da8": {
+          "type": "accordion",
+          "settings": {
+            "title": "EWG Certification",
+            "message": "<p>Our products are EWG VERIFIED™, which recognizes that we meet EWG’s strictest standards for your health.<\/p>"
+          }
+        },
+        "41cd3c69-bd54-45d7-bbda-c22e57987f3c": {
+          "type": "accordion",
+          "settings": {
+            "title": "Repurpose Global Plastic Negative Program",
+            "message": "<p>We avoid plastic whenever possible — our boxes don’t have plastic film for a reason. When we can’t avoid plastic, we offset it through the repurpose program. Just like in our training, we don’t take any shortcuts and have committed to plastic negative not just plastic neutral.<\/p>"
+          }
+        },
+        "80dc7059-d234-49a5-b7e6-fc622b99d5d0": {
+          "type": "accordion",
+          "settings": {
+            "title": "1% for the Planet",
+            "message": "<p>1% for the Planet is a global movement inspiring businesses and individuals to support environmental solutions through annual memberships and everyday actions. We donate 1% of revenue to certified charities in the 1% community.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "da7173e3-9c06-489c-b7f1-3a12715a4f80",
+        "9b642651-7ef0-4b89-bb4f-1e65f2035da8",
+        "41cd3c69-bd54-45d7-bbda-c22e57987f3c",
+        "80dc7059-d234-49a5-b7e6-fc622b99d5d0"
+      ],
+      "settings": {
+        "heading": "<p>Our <em>Global<\/em> <\/p><p>Citizenship Goals <\/p>",
+        "heading_highlight": "stroke",
+        "message": "",
+        "image": "shopify:\/\/shop_images\/LONTREA--our-ingredients-page--AWI_2x_93193cce-6e83-46cc-95b3-6aaec2e5c659.png",
+        "anchor_id": "",
+        "style": "standard",
+        "layout": "image-left",
+        "colour_theme": "light"
+      }
     }
   },
   "order": [
@@ -180,6 +228,7 @@
     "1651706615bd39644c",
     "165050592499e00319",
     "165050592780ca364f",
-    "16505061690b04c31e"
+    "16505061690b04c31e",
+    "165600915741a8321a"
   ]
 }
