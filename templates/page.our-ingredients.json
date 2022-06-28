@@ -147,6 +147,7 @@
     },
     "16505026180b60acc4": {
       "type": "accordion-with-image",
+      "disabled": true,
       "blocks": {
         "6b185076-57ef-4c0d-a214-5b5e1b13f91d": {
           "type": "accordion",
