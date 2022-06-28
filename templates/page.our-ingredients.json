@@ -147,7 +147,6 @@
     },
     "16505026180b60acc4": {
       "type": "accordion-with-image",
-      "disabled": true,
       "blocks": {
         "6b185076-57ef-4c0d-a214-5b5e1b13f91d": {
           "type": "accordion",
@@ -188,7 +187,7 @@
         "heading": "<p>Our <em>Global<\/em> <\/p><p>Citizenship Goals <\/p>",
         "heading_highlight": "stroke",
         "message": "",
-        "image": "shopify:\/\/shop_images\/LONTREA--our-ingredients-page--AWI_2x_93193cce-6e83-46cc-95b3-6aaec2e5c659.png",
+        "image": "shopify:\/\/shop_images\/Lontreau_Global-Citizenship.png",
         "anchor_id": "",
         "style": "standard",
         "layout": "image-left",
