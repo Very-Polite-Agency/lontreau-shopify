@@ -111,6 +111,8 @@
     {% endcase %}
 
     
+    {% if formerror != blank %}
+    
     <script>
   (function() {
     var REDIRECT_PATH = '/account';
@@ -127,6 +129,8 @@
     }
   })();
 </script>
+    
+    {% endif %}
     
   </body>
 </html>
