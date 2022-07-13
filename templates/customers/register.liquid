@@ -42,8 +42,15 @@
     {{ 'customer.register.title' | t }}
   </h1>
   {%- form 'create_customer' -%}
-   
-    
+  
+   {%- if form.posted_successfully? -%}
+  
+  <script>
+     window.location = "/account"
+  </script>  
+  
+  {% endif %}
+  
     {%- if form.errors -%}
       <h2 class="form__message" tabindex="-1" autofocus>
         <svg aria-hidden="true" focusable="false" role="presentation">
