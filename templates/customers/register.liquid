@@ -105,7 +105,7 @@
       </label>
     </div>
   
-    <span role="alert" id="emailError" class="form__message" aria-hidden="true">
+    <span role="alert" id="emailError" aria-hidden="true">
         Email can't be blank
     </span>
   
@@ -154,6 +154,23 @@
  
   {%- endform -%}
 </div>
+
+<style>
+
+  #emailError {
+  display: none;
+  font-size: 0.8em;
+}
+
+#emailError.visible {
+  display: block;
+}
+
+input.invalid {
+  border-color: red;
+}
+  
+</style>
 
 <script>
 
