@@ -52,9 +52,9 @@
   
   {%- form 'create_customer' -%}
   
- 
+  {% assign recover_success = form.posted_successfully? %}
   
-   {%- if form.posted_successfully? -%}
+   {%- if recover_success -%}
   
   <input type="hidden" name="return_to" value="/account">
   
