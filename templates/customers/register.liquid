@@ -63,7 +63,7 @@
         id="RegisterForm-FirstName"
         {% if form.first_name %}value="{{ form.first_name }}"{% endif %}
         autocomplete="given-name"
-        placeholder="{{ 'customer.register.first_name' | t }}"
+        placeholder="{{ 'customer.register.first_name' | t }}" required
       >
       <label for="RegisterForm-FirstName">
         {{ 'customer.register.first_name' | t }}
@@ -75,7 +75,7 @@
         class="input--primary"     
         name="customer[last_name]"
         id="RegisterForm-LastName"
-        {% if form.last_name %}value="{{ form.last_name }}"{% endif %}
+        {% if form.last_name %}value="{{ form.last_name }}"{% endif %} required
         autocomplete="family-name"
         placeholder="{{ 'customer.register.last_name' | t }}"
       >
@@ -88,7 +88,7 @@
         type="email"
         name="customer[email]"
         id="RegisterForm-email"
-        class="input--primary"
+        class="input--primary" required
         {% if form.email %} value="{{ form.email }}"{% endif %}
         spellcheck="false"
         autocapitalize="off"
@@ -117,7 +117,7 @@
         type="password"
         name="customer[password]"
         id="RegisterForm-password"
-         class="input--primary"
+         class="input--primary" required
         aria-required="true"
         {% if form.errors contains 'password' %}
           aria-invalid="true"
