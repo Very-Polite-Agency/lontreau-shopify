@@ -295,26 +295,26 @@
   "customer": {
     "account": {
       "title": "Account",
-      "details": "Account details",
-      "view_addresses": "View addresses",
-      "return": "Return to Account details"
+      "details": "Account Details",
+      "view_addresses": "View Addresses",
+      "return": "Return to Account Details"
     },
     "account_fallback": "Account",
     "activate_account": {
-      "title": "Activate account",
+      "title": "Activate Account",
       "subtext": "Create your password to activate your account.",
       "password": "Password",
-      "password_confirm": "Confirm password",
-      "submit": "Activate account",
-      "cancel": "Decline invitation"
+      "password_confirm": "Confirm Password",
+      "submit": "Activate Account",
+      "cancel": "Decline Invitation"
     },
     "addresses": {
       "title": "Addresses",
       "default": "Default",
-      "add_new": "Add a new address",
-      "edit_address": "Edit address",
-      "first_name": "First name",
-      "last_name": "Last name",
+      "add_new": "Add a New Address",
+      "edit_address": "Edit Address",
+      "first_name": "First Name",
+      "last_name": "Last Name",
       "company": "Company",
       "address1": "Address 1",
       "address2": "Address 2",
@@ -323,27 +323,28 @@
       "province": "Province",
       "zip": "Postal\/ZIP code",
       "phone": "Phone",
-      "set_default": "Set as default address",
-      "add": "Add address",
-      "update": "Update address",
+      "set_default": "Set as Default Address",
+      "add": "Add Address",
+      "update": "Update Address",
       "cancel": "Cancel",
       "edit": "Edit",
       "delete": "Delete",
       "delete_confirm": "Are you sure you wish to delete this address?"
     },
-    "log_in": "Log in",
-    "log_out": "Log out",
+    "log_in": "Log In",
+    "log_out": "Log Out",
     "login_page": {
       "cancel": "Cancel",
-      "create_account": "Create account",
+      "create_account": "Create Account",
       "email": "Email",
-      "forgot_password": "Forgot your password?",
+      "forgot_password": "Forgot your Password?",
       "guest_continue": "Continue",
-      "guest_title": "Continue as a guest",
+      "guest_title": "Continue as a Guest",
       "password": "Password",
       "title": "Login",
       "sign_in": "Sign in",
-      "submit": "Submit"
+      "submit": "Submit",
+      "dont_have_account": "Email or password is incorrect"
     },
     "order": {
       "title": "Order {{ name }}",
@@ -363,42 +364,42 @@
       "quantity": "Quantity",
       "total": "Total",
       "fulfilled_at_html": "Fulfilled {{ date }}",
-      "track_shipment": "Track shipment",
-      "tracking_url": "Tracking link",
+      "track_shipment": "Track Shipment",
+      "tracking_url": "Tracking Link",
       "tracking_company": "Carrier",
-      "tracking_number": "Tracking number",
+      "tracking_number": "Tracking Number",
       "subtotal": "Subtotal",
       "total_duties": "Duties"
     },
     "orders": {
-      "title": "Order history",
+      "title": "Order History",
       "order_number": "Order",
-      "order_number_link": "Order number {{ number }}",
+      "order_number_link": "Order Number {{ number }}",
       "date": "Date",
-      "payment_status": "Payment status",
-      "fulfillment_status": "Fulfillment status",
+      "payment_status": "Payment Status",
+      "fulfillment_status": "Fulfillment Status",
       "total": "Total",
       "none": "You haven't placed any orders yet."
     },
     "recover_password": {
-      "title": "Reset your password",
+      "title": "Reset your Password",
       "subtext": "We will send you an email to reset your password",
       "success": "We've sent you an email with a link to update your password."
     },
     "register": {
-      "title": "Create account",
-      "first_name": "First name",
-      "last_name": "Last name",
+      "title": "Create Account",
+      "first_name": "First Name",
+      "last_name": "Last Name",
       "email": "Email",
       "password": "Password",
       "submit": "Create"
     },
     "reset_password": {
-      "title": "Reset account password",
+      "title": "Reset Account Password",
       "subtext": "Enter a new password for {{ email }}",
       "password": "Password",
-      "password_confirm": "Confirm password",
-      "submit": "Reset password"
+      "password_confirm": "Confirm Password",
+      "submit": "Reset Password"
     }
   },
   "gift_cards": {
