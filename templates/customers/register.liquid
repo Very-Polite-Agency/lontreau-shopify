@@ -41,7 +41,7 @@
   <h1>
     {{ 'customer.register.title' | t }}
   </h1>
-  {%- form 'create_customer', novalidate: 'novalidate', return_to: routes.account_url -%}
+  {%- form 'create_customer', validate: 'validate', return_to: routes.account_url -%}
    
   
        {{ form.errors | default_errors }}
