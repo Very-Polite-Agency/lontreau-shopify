@@ -41,7 +41,7 @@
   <h1>
     {{ 'customer.register.title' | t }}
   </h1>
-  {%- form 'create_customer', novalidate: 'novalidate', return_to: /account -%}
+  {%- form 'create_customer', return_to: /account -%}
    
     
     {%- if form.errors -%}
