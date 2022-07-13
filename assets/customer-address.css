@@ -1,0 +1,384 @@
+/* Addresses */
+.addresses li > button {
+  margin-inline-start: 0.5rem;
+  margin-inline-end: 0.5rem;
+}
+
+html{
+    overflow: hidden auto;
+}
+
+.customer .field:first-of-type {
+    margin-top: 0;
+}
+@media only screen and (min-width: 750px){
+.addresses form>div:nth-of-type(1), .addresses form>div:nth-of-type(2) {
+    box-sizing: border-box;
+    flex-basis: calc(50% - 1rem);
+}
+}
+
+
+@media only screen and (min-width: 750px){
+.addresses form>div:nth-of-type(1) {
+    margin-right: 2rem;
+}
+}
+
+
+
+.customer form {
+  margin-top: 4rem;
+}
+
+.customer .field {
+  margin: 2rem 0 0 0;
+}
+
+.customer .field:first-of-type {
+  margin-top: 0;
+}
+
+/* Customer Table */
+.customer table {
+  table-layout: auto;
+  border-collapse: collapse;
+  border-bottom: 0.01rem solid rgb(var(--color-border));
+  box-shadow: none;
+  width: 100%;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+@media screen and (min-width: 750px) {
+  .customer table {
+    border: none;
+    box-shadow: 0 0 0 0.1rem rgb(var(--color-border));
+  }
+}
+
+.customer tbody {
+  color: rgb(var(--color-foreground))
+}
+
+.customer th,
+.customer td {
+  font-weight: 400;
+  line-height: 1;
+  border: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .customer td {
+    padding-inline-end: 2.2rem;
+  }
+}
+
+.customer tbody td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 750px) {
+  .customer tbody td {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.customer td:empty {
+  display: initial;
+}
+
+@media screen and (min-width: 750px) {
+  .customer th,
+  .customer td:first-of-type {
+    text-align: start;
+    padding-inline-start: 0;
+    padding-inline-end: 2.2rem;
+  }
+
+  .customer thead th,
+  .customer tbody td:first-of-type {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+}
+
+.customer thead th {
+  font-size: 1.2rem;
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 750px) {
+  .customer th:first-of-type,
+  .customer td:first-of-type {
+    padding-inline-start: 2.2rem;
+  }
+}
+
+.customer tbody td:first-of-type {
+  padding-top: 4rem;
+}
+
+@media screen and (min-width: 750px) {
+  .customer tbody td:first-of-type {
+    padding-top: 2.4rem;
+  }
+}
+
+.customer tbody td:last-of-type {
+  padding-bottom: 4rem;
+}
+
+@media screen and (min-width: 750px) {
+  .customer tbody td:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+.customer tbody tr {
+  border-top: 0.01rem solid rgb(var(--color-border));
+}
+
+@media screen and (min-width: 750px) {
+  .customer tbody tr:first-of-type {
+    border-top: none;
+  }
+}
+
+.customer tfoot td:first-of-type,
+.customer tfoot td {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.customer tfoot td:first-of-type {
+  text-align: start;
+}
+
+.customer tfoot tr:first-of-type td {
+  padding-top: 4rem;
+}
+
+@media screen and (min-width: 750px) {
+  .customer tfoot tr:first-of-type td,
+  .customer tfoot tr:first-of-type th {
+    padding-top: 2.4rem;
+  }
+}
+
+.customer tfoot tr:last-of-type td {
+  padding-bottom: 4rem;
+}
+
+@media screen and (min-width: 750px) {
+  .customer tfoot tr:last-of-type td,
+  .customer tfoot tr:last-of-type th {
+    padding-bottom: 2.4rem;
+  }
+}
+
+/* works around colspan phantom border issues */
+.customer thead::after,
+.customer tfoot::before {
+  content: " ";
+  height: 0.1rem;
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  background-color: rgb(var(--color-border));
+}
+
+/* mobile table overrides */
+@media screen and (max-width: 749px) {
+  .customer thead,
+  .customer th,
+  .customer tfoot td:first-of-type {
+    display: none;
+  }
+
+  .customer td {
+    display: flex;
+    text-align: end;
+  }
+
+  .customer td::before {
+    content: attr(data-label);
+    padding-inline-end: 2rem;
+    text-transform: uppercase;
+    flex-grow: 1;
+    text-align: start;
+  }
+
+  .customer td:first-of-type {
+    display: flex;
+    align-items: center;
+  }
+
+  .customer tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+/* Pagination */
+.customer .pagination {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+@media screen and (min-width: 990px) {
+  .customer .pagination {
+    margin-top: 7rem;
+    margin-bottom: 10rem;
+  }
+}
+
+.customer .pagination ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.customer .pagination li {
+  flex: 1 1;
+  max-width: 4rem;
+}
+
+.customer .pagination li:not(:last-child) {
+  margin-inline-end: 1rem;
+}
+
+.customer .pagination li :first-child {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 4rem;
+  width: 100%;
+  padding: 0;
+  text-decoration: none;
+}
+
+.customer .pagination li :first-child .icon {
+  height: 0.6rem;
+}
+
+.customer .pagination li:first-of-type .icon {
+  margin-inline-start: -0.2rem;
+  transform: rotate(90deg);
+}
+
+.customer .pagination li:last-of-type .icon {
+  margin-inline-end: -0.2rem;
+  transform: rotate(-90deg);
+}
+
+.customer .pagination li [aria-current]::after {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 0.01rem;
+  position: absolute;
+  bottom: 0.08rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: currentColor;
+}
+
+.addresses li > button + button,
+.addresses form button + button {
+  margin-top: 0rem;
+}
+
+@media screen and (min-width: 750px) {
+  .addresses li > button:first-of-type {
+    margin-top: 3rem;
+  }
+}
+
+label[for="AddressCountryNew"],
+label[for="AddressProvinceNew"] {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.addresses form {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.addresses form > div {
+  width: 100%;
+  text-align: start;
+}
+
+.addresses ul {
+  list-style: none;
+  padding-inline-start: 0;
+  text-align: center;
+}
+
+li[data-address] {
+  margin-top: 4rem;
+  border: 0.2rem solid rgb(var(--color-border));
+  padding: 3rem;
+}
+
+.addresses [aria-expanded="false"] ~ div[id] {
+  display: none;
+}
+
+.addresses [aria-expanded="true"] ~ div[id] {
+  display: block;
+}
+
+.addresses [aria-expanded="true"] ~ div[id] h2 {
+  margin-top: 4rem;
+  padding-top: 0.83em;
+  border-top: 0.1rem solid rgb(var(--color-border));
+}
+
+.addresses h2 {
+  text-align: start;
+}
+
+li[data-address] > h2 {
+  text-align: center;
+  font-size: calc(var(--font-heading-scale) * 1.8rem);
+  margin: 0;
+}
+
+@media only screen and (min-width: 750px) {
+  li[data-address] > h2 {
+    font-size: calc(var(--font-heading-scale) * 2.2rem);
+  }
+}
+
+.addresses ul p {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 750px) {
+  .addresses form > div:nth-of-type(1) {
+    padding-inline-end: 2rem;
+  }
+
+  .addresses form > div:nth-of-type(2) {
+    margin-top: 0;
+  }
+
+  .addresses form > div:nth-of-type(1),
+  .addresses form > div:nth-of-type(2) {
+    flex-basis: 50%;
+    box-sizing: border-box;
+  }
+}
