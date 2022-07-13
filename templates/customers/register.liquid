@@ -41,7 +41,7 @@
   <h1>
     {{ 'customer.register.title' | t }}
   </h1>
-  {%- form 'create_customer', novalidate: 'novalidate' -%}
+  {%- form 'create_customer', novalidate: 'novalidate', action: '/account' -%}
     
         {% assign formerror = form.errors %}
     
