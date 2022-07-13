@@ -104,11 +104,6 @@
         {{ 'customer.register.email' | t }}
       </label>
     </div>
-  
-    <span role="alert" id="emailError" aria-hidden="true">
-        Email can't be blank
-    </span>
-  
     {%- if form.errors contains 'email' -%}
       <span id="RegisterForm-email-error" class="form__message">
         <svg aria-hidden="true" focusable="false" role="presentation">
@@ -142,7 +137,7 @@
         {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
       </span>
     {%- endif -%}
-    <button class="button btn create-btn" id="submit" type="submit">
+    <button class="button btn create-btn" id="order" type="submit">
       {{ 'customer.register.submit' | t }}
     </button>
     
@@ -155,45 +150,6 @@
   {%- endform -%}
 </div>
 
-<style>
 
-  #emailError {
-  display: none;
-  font-size: 0.8em;
-}
-
-#emailError.visible {
-  display: block;
-}
-
-input.invalid {
-  border-color: red;
-}
-  
-</style>
-
-<script>
-
-  const submit = document.getElementById("submit");
-
-submit.addEventListener("click", validate);
-
-function validate(e) {
-  e.preventDefault();
-
-  const EmailField = document.getElementById("RegisterForm-email");
-  let valid = true;
-
-  if (!firstNameField.value) {
-    const emailError = document.getElementById("emailError");
-    nameError.classList.add("visible");
-    firstNameField.classList.add("invalid");
-    nameError.setAttribute("aria-hidden", false);
-    nameError.setAttribute("aria-invalid", true);
-  }
-  return valid;
-}
-  
-</script>
   
    
