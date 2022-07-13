@@ -41,12 +41,20 @@
   <h1>
     {{ 'customer.register.title' | t }}
   </h1>
-  {%- form 'create_customer' , return_to: routes.account_url -%}
+  {%- form 'create_customer', return_to: routes.account_url -%}
    
-  
+    
+    {%- if form.errors -%}
+      <h2 class="form__message" tabindex="-1" autofocus>
+        <svg aria-hidden="true" focusable="false" role="presentation">
+          <use href="#icon-error" />
+        </svg>
+        {{ 'templates.contact.form.error_heading' | t }}
+      </h2>
+
        {{ form.errors | default_errors }}
     
- 
+    {%- endif -%}
     <div class="field">
       <input
         type="text"
@@ -86,14 +94,24 @@
         autocapitalize="off"
         autocomplete="email"
         aria-required="true"
-        value=""
+        {% if form.errors contains 'email' %}
+          aria-invalid="true"
+          aria-describedby="RegisterForm-email-error"
+        {% endif %}
         placeholder="{{ 'customer.register.email' | t }}"
       >
       <label for="RegisterForm-email">
         {{ 'customer.register.email' | t }}
       </label>
     </div>
-  
+    {%- if form.errors contains 'email' -%}
+      <span id="RegisterForm-email-error" class="form__message">
+        <svg aria-hidden="true" focusable="false" role="presentation">
+          <use href="#icon-error" />
+        </svg>
+        {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
+      </span>
+    {%- endif -%}
     <div class="field">
       <input
         type="password"
@@ -101,14 +119,24 @@
         id="RegisterForm-password"
          class="input--primary" required
         aria-required="true"
-        value=""
+        {% if form.errors contains 'password' %}
+          aria-invalid="true"
+          aria-describedby="RegisterForm-password-error"
+        {% endif %}
         placeholder="{{ 'customer.register.password' | t }}"
       >
       <label for="RegisterForm-password">
         {{ 'customer.register.password' | t }}
       </label>
     </div>
-    
+    {%- if form.errors contains 'password' -%}
+      <span id="RegisterForm-password-error" class="form__message">
+        <svg aria-hidden="true" focusable="false" role="presentation">
+          <use href="#icon-error" />
+        </svg>
+        {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
+      </span>
+    {%- endif -%}
     <button class="button btn create-btn" id="order" type="submit">
       {{ 'customer.register.submit' | t }}
     </button>
