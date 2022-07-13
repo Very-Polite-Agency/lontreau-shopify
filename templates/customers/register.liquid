@@ -147,15 +147,17 @@
             <a href="/account/login" id="customer_login_link">Sign In</a>
      </span>
   
+ 
+  {%- endform -%}
+</div>
   <script>
-  
-      $("#order").click(function(e){
-    e.preventDefault();
-    window.location="/account";
+ $("#create_customer").on("submit",function(e) {
+   e.preventDefault(); // cancel submission
+   window.location.replace("/account");
 });
     
   </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
   
-    
-  {%- endform -%}
-</div>
+   
