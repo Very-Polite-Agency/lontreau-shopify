@@ -24,7 +24,7 @@
           "type": "accordion",
           "settings": {
             "title": "Clinical & Efficacious",
-            "message": "<p>We choose clinically backed ingredients and use them at efficacious levels to get the most for your skin. Our Global Antioxidant Serum contains a clinically efficacious dose of Elixir IRTM, a flavonoid rich knotgrass extract that protects the dermis fibres from infrared damage.<\/p>"
+            "message": "<p>We choose clinically backed ingredients and use them at efficacious levels to get the most for your skin. <a href=\"\/products\/lontreau-game-changer-global-antioxidant-serum\" target=\"_blank\" title=\"Game Changer Global Antioxidant Serum\">Game Changer<\/a>, our Global Antioxidant Serum, contains a clinically efficacious dose of Elixir IRTM, a flavonoid rich Knotgrass extract that protects the dermis fibres from infrared damage.<\/p>"
           }
         },
         "b8ff2d76-b993-45d7-84bd-bce334ff57cd": {
@@ -34,26 +34,26 @@
             "message": "<p>Some skincare brands use ingredients that are designed to create an immediate, but temporary benefit to the skin. The problem with this approach is it teaches your skin to be lazy without the benefit of a health improving function. We use ingredients that support your journey to skin health. This long-term approach improves the overall look of skin and improves barrier function over time. Just like training, hard work takes time, but the results are worth it.<\/p>"
           }
         },
-        "3fbad6b9-b1ce-4273-9eb8-9a82c90faf84": {
-          "type": "accordion",
-          "settings": {
-            "title": "Sustainable & Responsible",
-            "message": "<p>We created a winning team of ingredients from Canada and around the world that are responsibly sourced and sustainable, like PhytoSpherixTM (recognized as an unrivaled energy source by our skin cells) which is made in Guelph, Ontario. This ingredient uses a water-based, mechanical extraction method with no harsh solvents or chemicals. Our formulations are manufactured with pride in Canada and our packaging is 100% recycled, recyclable or offset with the Repurpose Plastic Negative Program.<\/p>"
-          }
-        },
         "60d909e4-9f82-4a44-9fbd-a2950d52b106": {
           "type": "accordion",
           "settings": {
             "title": "Dermal Delivery Accelerators",
             "message": "<p>Even the best ingredients in the world do little if they sit on the surface of the skin without penetrating where they are most effective. Our products are specially formulated with a wide array of ingredients clinically proven to improve active ingredient bioavailability. They act as a carrier to enhance the performance of the active ingredients in our skincare products.<\/p>"
           }
+        },
+        "3fbad6b9-b1ce-4273-9eb8-9a82c90faf84": {
+          "type": "accordion",
+          "settings": {
+            "title": "Sustainable & Responsible",
+            "message": "<p>We created a winning team of ingredients from Canada and around the world that are responsibly sourced and sustainable, like PhytoSpherixTM (recognized as an unrivaled energy source by our skin cells) which is made in Guelph, Ontario. This ingredient uses a water-based, mechanical extraction method with no harsh solvents or chemicals. Our formulations are manufactured with pride in Canada and our packaging is 100% recycled, recyclable or offset with the Repurpose Plastic Negative Program.<\/p>"
+          }
         }
       },
       "block_order": [
         "225dbe0d-96b3-44a1-b15c-cbd3d2a836cd",
         "b8ff2d76-b993-45d7-84bd-bce334ff57cd",
-        "3fbad6b9-b1ce-4273-9eb8-9a82c90faf84",
-        "60d909e4-9f82-4a44-9fbd-a2950d52b106"
+        "60d909e4-9f82-4a44-9fbd-a2950d52b106",
+        "3fbad6b9-b1ce-4273-9eb8-9a82c90faf84"
       ],
       "settings": {
         "heading": "<p><em>Ingredient<\/em> Selection Playbook<\/p>",
