@@ -52,13 +52,11 @@
   
   {%- form 'create_customer' -%}
   
-  <input type="hidden" name="return_to" value="/account">
+ 
   
    {%- if form.posted_successfully? -%}
   
-  <script>
-     window.location = "/account";
-  </script>  
+  <input type="hidden" name="return_to" value="/account">
   
   {% else %}
   
