@@ -51,15 +51,9 @@
   {% endif %}
  
 <form-state>
-  {%- form 'create_customer' -%}
   
-  {% assign recover_success = form.posted_successfully? %}
-  
-   {%- if recover_success -%}
-  
-  <input type="hidden" name="return_to" value="/account">
-  
-  {% else %}
+  {%- form 'create_customer', return_to: routes.account_url -%}
+
   
     {%- if form.errors -%}
       <h2 class="form__message" tabindex="-1" autofocus>
@@ -72,8 +66,7 @@
        {{ form.errors | default_errors }}
     
     {%- endif -%}
-  
-  {% endif %}
+
     <div class="field">
       <input
         type="text"
