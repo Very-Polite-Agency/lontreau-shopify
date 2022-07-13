@@ -1,4 +1,33 @@
-{% comment %} {{ 'customer.css' | asset_url | stylesheet_tag }} {% endcomment %}
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+
+<style>
+
+  .form__message.errors{
+     color: #f05d5d;
+     background-color: #fce2e2 !important; 
+  }
+  
+  .errors ul{
+    background: #ff7272;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .errors ul a{
+     color: #fff;
+  }
+  
+  .errors ul{
+     margin-bottom: 2rem !Important;
+  }
+  
+  #RegisterForm-email-error, #RegisterForm-password-error{
+    display: none;
+  }
+
+
+</style>
 
 <div class="customer register">
   <svg style="display: none">
@@ -20,24 +49,14 @@
         </svg>
         {{ 'templates.contact.form.error_heading' | t }}
       </h2>
-      <ul>
-        {%- for field in form.errors -%}
-          <li>
-            {%- if field == 'form' -%}
-              {{ form.errors.messages[field] }}
-            {%- else -%}
-              <a href="#RegisterForm-{{ field }}">
-                {{ form.errors.translated_fields[field] | capitalize }}
-                {{ form.errors.messages[field] }}
-              </a>
-            {%- endif -%}
-          </li>
-        {%- endfor -%}
-      </ul>
+    
+       {{ form.errors | default_errors }}
+    
     {%- endif -%}
     <div class="field">
       <input
         type="text"
+             class="input--primary"
         name="customer[first_name]"
         id="RegisterForm-FirstName"
         {% if form.first_name %}value="{{ form.first_name }}"{% endif %}
@@ -51,6 +70,7 @@
     <div class="field">
       <input
         type="text"
+        class="input--primary"     
         name="customer[last_name]"
         id="RegisterForm-LastName"
         {% if form.last_name %}value="{{ form.last_name }}"{% endif %}
@@ -66,6 +86,7 @@
         type="email"
         name="customer[email]"
         id="RegisterForm-email"
+        class="input--primary"
         {% if form.email %} value="{{ form.email }}"{% endif %}
         spellcheck="false"
         autocapitalize="off"
@@ -94,6 +115,7 @@
         type="password"
         name="customer[password]"
         id="RegisterForm-password"
+         class="input--primary"
         aria-required="true"
         {% if form.errors contains 'password' %}
           aria-invalid="true"
@@ -113,8 +135,14 @@
         {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
       </span>
     {%- endif -%}
-    <button>
+    <button class="button btn create-btn" type="submit">
       {{ 'customer.register.submit' | t }}
     </button>
+    
+    <span class="form-action-row--helper-item">
+            Returning Customer?
+            <a href="/account/login" id="customer_login_link">Sign In</a>
+     </span>
+    
   {%- endform -%}
 </div>
