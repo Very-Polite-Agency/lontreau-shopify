@@ -50,7 +50,9 @@
   
   {% endif %}
   
-  {%- form 'create_customer', return_to: routes.account_url -%}
+  {%- form 'create_customer' -%}
+  
+  <input type="hidden" name="return_to" value="/account">
   
    {%- if form.posted_successfully? -%}
   
