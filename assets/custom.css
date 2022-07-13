@@ -1,0 +1,571 @@
+
+nav.header__account.ac{
+   position: absolute;
+    right: 100px;
+}  
+   
+nav.header__account.ac img {
+    height: 34px;
+}   
+
+.message--error.account-message
+  color: #f05d5d;
+  background-color: #fce2e2;  
+}
+
+
+ 
+.errors li{
+    color: #f05d5d;
+    background-color: #fce2e2;
+    width: max-content;
+    list-style: none;
+    margin: auto;
+    padding: 2px 10px;
+}
+
+a.link.forg {
+    font-size: 18px;
+}
+
+.edit-btn{
+   margin-bottom: 0px !important;
+}
+
+.address-delete-form{
+   display: block;
+}
+
+.customer.order  table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.customer.order th, .customer.order td {
+  text-align: left;
+  padding: 8px;
+}
+  
+  .customer.order svg{
+     width: 25px;
+     margin-right: 10px;
+  }
+
+.billing-and-shipping{
+  display: flex;
+      width: 100%;
+    margin-top: 20px;
+}
+
+.template--account table, .template--account thead{
+   border: 1px solid #ddd !important;
+}
+
+.customer.order thead{
+   border-bottom: 1px solid #ddd;
+}
+
+.billing-and-shipping div{
+   width: 50%;
+}
+
+.total-order{
+   border-top: 1px solid #dfdada;
+}
+
+.total-order td{
+   font-size: 25px;
+   font-weight: 700;
+}
+
+.customer.order th{
+   font-size: 22px;
+   font-weight: 700;
+}
+
+.order-head{
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.customer.order tr{
+   font-size: 20px;
+}
+
+.template--account main tr, .template--account main th, .customer.order tr, .customer.order th{
+     font-family: "NeueBit", sans-serif;
+}
+
+.template--account h1, .heading-with-add h1, .reset_password h1, .customer.order h1{
+     font-family: "Self Modern", serif;
+}
+
+.orders-addresses h2, #AddressNewHeading, .address-country-head, .address-with-add h2, .reset_password h2,
+.customer.order h2
+{
+   font-family: "Self Modern", serif;
+}
+
+.orders-addresses p, .default-address, .reset_password p, .address-with-add p, .customer.order p{
+   font-family: "NeueBit", sans-serif;
+   font-size: 18px;
+}
+
+.reset_password main{
+   margin: 10rem 6rem 6rem 6rem;
+}
+
+.heading-with-add a{
+   color: #0d6efd !Important;
+}
+
+.heading-with-add{
+  width: 50%;
+}
+
+.address-with-add{
+  display: flex;
+}
+
+.address-country-head{
+   margin-top: 10px;
+   font-size: 16px;
+}
+
+.address-with-add ul{
+   width: 50%;
+   margin-left: 20px;
+}
+
+.checkbox-address{
+   display: flex;
+   margin-top: 10px;
+   margin-right: 10px;
+}
+
+.default-address{
+   display: block !important;
+   margin-left: 10px;
+}
+
+.customer.addresses {
+    max-width: 100% !important;
+}
+
+
+.address-btn{
+   max-width: 170px!important;
+    background-color: #7dc773 !important;
+    border-radius: 2px !important;
+    border: none !important;
+    width: 100%;
+    font-family: NeueBit,sans-serif !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    line-height: .9;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    padding: 13px 10px;
+    min-height: 50px !Important;
+    margin-top: 12px !important;
+    margin-bottom: 28px !important;
+}
+
+li[data-address]{
+    border: 1px solid rgba(128,128,128,.16) !important;
+    box-shadow: 0 1px 4px #8080801c;
+    margin-bottom: 20px;
+    padding: 6px !important;
+}
+  
+  .add-list form{
+     margin-top: 0px !Important
+  }
+
+.addresses .customer form{
+  margin-top: 0rem !important;
+}
+
+.address-btnn{
+   max-width: 120px!important;
+    background-color: #7dc773 !important;
+    border-radius: 2px !important;
+    border: none !important;
+    width: 100%;
+    font-family: NeueBit,sans-serif !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    line-height: .9;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    padding: 13px 10px;
+    min-height: 50px !Important;
+    margin-top: 12px !important;
+}
+
+
+.rest-button{
+   max-width: max-content !important;
+    background-color: #7dc773 !important;
+    border-radius: 2px !important;
+    border: none !important;
+    width: 100%;
+    font-family: NeueBit,sans-serif !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    line-height: .9;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    padding: 13px 10px;
+    min-height: 50px !Important;
+    margin-top: 12px !important;
+    margin-bottom: 28px !important;
+}
+
+.address-btn-new{
+     max-width: max-content!important;
+    background-color: #7dc773 !important;
+    border-radius: 2px !important;
+    border: none !important;
+    width: 100%;
+    font-family: NeueBit,sans-serif !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    line-height: .9;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    padding: 13px 10px;
+    min-height: 50px !Important;
+    margin-top: 12px !important;
+    margin-bottom: 28px !important;
+}
+
+.customer-account-head a, .orders-addresses a, .heading-with-add a{
+    font-family: "NeueBit", sans-serif;
+    font-size: 20px !Important;
+}
+
+#login, #customer_login{
+   text-align: center;
+}
+
+.customer.login.page-width {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center !important;
+}
+   
+.customer.register .field {
+    display: contents;
+}   
+   
+form#customer_login .field{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+   
+.recover .field {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+   
+form#customer_login .field input{
+    width: 40%;
+    padding: 7px;
+}  
+   
+.recover .field input {
+    width: 40%;
+    padding: 7px;
+}  
+   
+button.button.btn {
+    border: 1px solid #000;
+    padding: 10px 30px;
+    min-height: 40px;
+}
+   
+a.link.link--underline.reg.btn {
+    border: 1px solid #000;
+    padding: 10px 30px;
+    min-height: 40px;
+} 
+   
+.customer.register {
+    margin: 70px auto !Important;
+}  
+
+.customer form {
+    margin-top: 1rem !important;
+}
+
+.customer.register h1 {
+    font-size: 32px;
+    text-align: center;
+    font-family: "Self Modern", serif;
+    font-weight: 700;
+}
+   
+form#create_customer {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+}   
+   
+.customer form label {
+    display: none;
+}   
+   
+.customer:not(.account,.order) {
+    margin: 0 auto;
+    max-width: initial;
+    width: 100%;
+}
+   
+.customer.register h1 {
+    font-size: 32px;
+    text-align: center;
+}   
+
+form#create_customer .field input{
+    width: 100%;
+    padding: 7px;
+    font-size: 16px;
+    margin: 5px;
+} 
+
+#customer_login_link, .form-action-row--helper-item{
+  font-family: "Self Modern", serif;
+  font-weight: 700;
+}
+
+.form-action-row--helper-item{
+   margin-top: 10px;
+}
+
+.create-btn{
+    max-width: 170px!important;
+    background-color: #7dc773 !important;
+    border-radius: 2px !important;
+    border: none !important;
+    width: 100%;
+    font-family: NeueBit,sans-serif !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    line-height: .9;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    padding: 13px 10px;
+    min-height: 50px !Important;
+    margin: 0px !Important;
+    margin-top: 20px !important;
+}
+   
+form#create_customer button.button.btn {
+    width: 32%;
+    font-size: 17px;
+}   
+
+
+html {
+    font-size: inherit;
+}
+
+.template--addresses #shopify-section-header,
+.template--account #shopify-section-header,
+.template--login #shopify-section-header,
+ .template--register #shopify-section-header,
+ .template--order #shopify-section-header
+{
+   position: relative
+}
+
+.template--addresses main,
+.template--account main,
+.template--login main,
+.template--order main{
+  margin: 6rem 9rem;
+}
+
+.address-lontreu{
+    float: left;
+    width: 25%;
+    margin-top: 0;
+    padding-left: 40px;
+  display: block;
+}
+
+.orders-lontreu{
+    float: left;
+    width: 75%;
+}
+
+.orders-addresses{
+   
+}
+
+.customer-account-head{
+   text-align: center;
+}
+
+
+.address-customer{
+    float: left;
+    width: 50%;
+    margin-top: 0;
+}
+
+.new-address{
+   float: left;
+    width: 50%;
+    margin-top: 0;
+    padding-left: 40px
+}
+
+
+.customer:not(.account):not(.order) {
+    max-width: 33.4rem;
+    padding: 0 1.5rem;
+    text-align: center;
+  margin: 0 auto;
+}
+
+li[data-address]>h2 {
+    font-size: 16px !important;
+}
+
+li[data-address] {
+    margin-top: 0rem !important;
+    border: none;
+}
+
+.customer .field:first-of-type {
+    margin-top: 0;
+    width: 100%;
+    /* margin-right: 0rem !important; */
+    padding-inline-end: 0rem;
+    margin-bottom: 25px;
+}
+
+.customer:not(.account,.order) {
+    margin: 0 auto;
+    max-width: initial;
+    width: 100%;
+    text-align: center;
+}
+
+
+.customer.addresses h1 {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+
+.customer.addresses a {
+    color: rgba(var(--color-link),var(--alpha-link));
+    text-underline-offset: 0.3rem;
+    text-decoration-thickness: 0.1rem;
+    transition: text-decoration-thickness ease .1s;
+    font-size: 12px;
+}
+
+.customer button {
+    margin: 2rem 0 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 11px 2rem;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    transition: box-shadow var(--duration-short) ease;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #000;
+}
+
+.addresses [aria-expanded=true]~div[id] h2 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    border-top: none !important;
+    text-align: left;
+}
+
+.addresses form>div:nth-of-type(1), .addresses form>div:nth-of-type(2) {
+    flex-basis: 45% !important;
+    box-sizing: border-box;
+}
+
+
+
+.field__input, .customer .field input {
+    flex-grow: 1;
+    text-align: left;
+    padding: 0.5rem;
+    margin: 0px;
+    transition: box-shadow var(--duration-short) ease;
+}
+
+label[for=AddressCountryNew], label[for=AddressProvinceNew] {
+    display: block !important;
+    font-size: 14px !importnant;
+    margin-bottom: 0.6rem;
+    margin-top: 10px !importnant;
+}
+
+
+.text-area, .select {
+    display: flex;
+    position: relative;
+    width: 100%;
+  padding: 0px;
+}
+
+.select__select, .customer select {
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 2rem;
+    margin: var(--inputs-border-width);
+    min-height: calc(var(--inputs-border-width) * 2);
+}
+
+.select .icon-caret, .customer select+svg {
+ display: none;
+}
+
+
+
+.select__select, .customer select {
+    font-size: 16px;
+    width: 100%;
+    height: 3rem;
+    border : 1px solid #767676;
+}
+
+.customer ul {
+    line-height: 1 !important;
+}
+
+.customer h2.form__message {
+    font-size: 16px !important;
+}
+
+form#create_customer svg {
+    height: 25px;
+    width: 25px;
+}
