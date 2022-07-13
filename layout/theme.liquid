@@ -67,6 +67,10 @@
     {% render 'theme--css-variables' %}
 
     {{ 'main.css' | asset_url | stylesheet_tag }}
+    
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
+    
+    {{ 'responsive.css' | asset_url | stylesheet_tag }}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8CELGMY4M0"></script>
