@@ -52,7 +52,7 @@
  
 <form-state>
   
-  {%- form 'create_customer', return_to: routes.account_url -%}
+  {%- form 'create_customer' -%}
 
   
     {%- if form.errors -%}
@@ -75,7 +75,7 @@
         id="RegisterForm-FirstName"
         {% if form.first_name %}value="{{ form.first_name }}"{% endif %}
         autocomplete="given-name"
-        placeholder="{{ 'customer.register.first_name' | t }}" required
+        placeholder="{{ 'customer.register.first_name' | t }}"
       >
       <label for="RegisterForm-FirstName">
         {{ 'customer.register.first_name' | t }}
@@ -87,7 +87,7 @@
         class="input--primary"     
         name="customer[last_name]"
         id="RegisterForm-LastName"
-        {% if form.last_name %}value="{{ form.last_name }}"{% endif %} required
+        {% if form.last_name %}value="{{ form.last_name }}"{% endif %}
         autocomplete="family-name"
         placeholder="{{ 'customer.register.last_name' | t }}"
       >
@@ -100,7 +100,7 @@
         type="email"
         name="customer[email]"
         id="RegisterForm-email"
-        class="input--primary" required
+        class="input--primary"
         {% if form.email %} value="{{ form.email }}"{% endif %}
         spellcheck="false"
         autocapitalize="off"
@@ -129,7 +129,7 @@
         type="password"
         name="customer[password]"
         id="RegisterForm-password"
-         class="input--primary" required
+         class="input--primary"
         aria-required="true"
         {% if form.errors contains 'password' %}
           aria-invalid="true"
