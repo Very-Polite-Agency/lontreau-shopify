@@ -41,6 +41,15 @@
   <h1>
     {{ 'customer.register.title' | t }}
   </h1>
+  
+    {%- if form.posted_successfully? -%}
+  
+  <script>
+     window.location.replace = "/account";
+  </script>  
+  
+  {% endif %}
+  
   {%- form 'create_customer' -%}
   
    {%- if form.posted_successfully? -%}
