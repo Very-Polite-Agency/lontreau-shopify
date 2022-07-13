@@ -49,7 +49,8 @@
   </script>  
   
   {% endif %}
-  
+ 
+<form-state>
   {%- form 'create_customer' -%}
   
   {% assign recover_success = form.posted_successfully? %}
@@ -166,6 +167,7 @@
   
  
   {%- endform -%}
+  </form-state>
 </div>
 
 
