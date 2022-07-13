@@ -50,7 +50,7 @@
   
   {% endif %}
   
-  {%- form 'create_customer' -%}
+  {%- form 'create_customer', return_to: routes.account_url -%}
   
    {%- if form.posted_successfully? -%}
   
