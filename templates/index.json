@@ -74,22 +74,6 @@
         "colour_theme": "light"
       }
     },
-    "1649358548eba2154c": {
-      "type": "full-width-feature",
-      "settings": {
-        "text_theme": "light",
-        "title": "The Lontreau Kit:",
-        "heading": "<p>Designed to move <br\/><em>with you <\/em><\/p>",
-        "heading_highlight": "stroke",
-        "message": "",
-        "cta_title": "",
-        "cta_link": "",
-        "parallax": false,
-        "anchor_id": "",
-        "height": "large",
-        "curved_arrow_enable": true
-      }
-    },
     "164936493171d7e74a": {
       "type": "full-width-feature",
       "settings": {
@@ -105,6 +89,22 @@
         "anchor_id": "custom-anchor-home",
         "height": "large",
         "curved_arrow_enable": false
+      }
+    },
+    "1649358548eba2154c": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "The Lontreau Kit:",
+        "heading": "<p>Designed to move <br\/><em>with you <\/em><\/p>",
+        "heading_highlight": "stroke",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "large",
+        "curved_arrow_enable": true
       }
     },
     "1650584831258bfc23": {
@@ -136,8 +136,8 @@
     "16522252885ba23f45",
     "16517719953345c3cc",
     "16505837988dc9d01f",
-    "1649358548eba2154c",
     "164936493171d7e74a",
+    "1649358548eba2154c",
     "1650584831258bfc23",
     "16535101150c7e3d32"
   ]
