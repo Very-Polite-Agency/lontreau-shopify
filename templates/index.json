@@ -12,6 +12,12 @@
     "16517719953345c3cc": {
       "type": "featured-product",
       "blocks": {
+        "f324e3ea-3b51-4912-a6ca-c3f541436b83": {
+          "type": "marker",
+          "settings": {
+            "title": "Rapid Radiance"
+          }
+        },
         "5db11ac2-eca7-447a-b5a6-ff51422762da": {
           "type": "marker",
           "settings": {
@@ -21,27 +27,21 @@
         "683969a5-2847-450d-bfe0-18a88fbcaa0d": {
           "type": "marker",
           "settings": {
-            "title": "Tone + Texture"
+            "title": "Brighten + Smooth"
           }
         },
         "f645e044-5240-4e1a-907c-711830cb95aa": {
           "type": "marker",
           "settings": {
-            "title": "Moisturize"
-          }
-        },
-        "f324e3ea-3b51-4912-a6ca-c3f541436b83": {
-          "type": "marker",
-          "settings": {
-            "title": "Rapid Radiance"
+            "title": "Hydrate + Energize"
           }
         }
       },
       "block_order": [
+        "f324e3ea-3b51-4912-a6ca-c3f541436b83",
         "5db11ac2-eca7-447a-b5a6-ff51422762da",
         "683969a5-2847-450d-bfe0-18a88fbcaa0d",
-        "f645e044-5240-4e1a-907c-711830cb95aa",
-        "f324e3ea-3b51-4912-a6ca-c3f541436b83"
+        "f645e044-5240-4e1a-907c-711830cb95aa"
       ],
       "settings": {
         "product": "sample-product-alpha",
