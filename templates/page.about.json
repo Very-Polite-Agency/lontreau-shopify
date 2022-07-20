@@ -5,7 +5,7 @@
       "settings": {
         "text_theme": "light",
         "title": "",
-        "heading": "<p>About <em>Lontreau<\/em><\/p>",
+        "heading": "<p>Our <em>Journey<\/em><\/p>",
         "heading_highlight": "standard",
         "message": "",
         "cta_title": "",
@@ -15,6 +15,23 @@
         "anchor_id": "",
         "height": "auto",
         "curved_arrow_enable": false
+      }
+    },
+    "16583384896d670434": {
+      "type": "fifty-fifty-feature",
+      "settings": {
+        "title": "",
+        "heading": "<p>We <em>know<\/em> skin<\/p>",
+        "heading_highlight": "standard",
+        "message": "<p>Lontreau is founded by the co-founder of renowned medical aesthetic and cosmetic surgery clinic, 8 West Clinic. With over 10 years in the business of skin, Lontreau products have been developed to support the common concerns of clients, while being uniquely tailored to athletes. The team behind Lontreau is passionate about sport and use their own experience to develop products that can benefit everyone from everyday movers to all types of athletes.<\/p>",
+        "cta_title": "Shop now",
+        "cta_link": "shopify:\/\/collections\/all",
+        "image": "shopify:\/\/shop_images\/EnduranceHydration-0649_ffbd700e-f8db-43f8-bf40-eadb5a78dab6.jpg",
+        "hide_image_mobile": true,
+        "anchor_id": "",
+        "style": "wide",
+        "layout": "image-right",
+        "colour_theme": "light"
       }
     },
     "1650406820d7117f5d": {
@@ -119,6 +136,7 @@
   },
   "order": [
     "main",
+    "16583384896d670434",
     "1650406820d7117f5d",
     "16504147450799a25f",
     "165040682270d7b672"
