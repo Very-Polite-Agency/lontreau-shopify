@@ -132,6 +132,22 @@
         "layout": "image-left",
         "colour_theme": "light"
       }
+    },
+    "1658347554cc0cab54": {
+      "type": "fifty-fifty-feature",
+      "settings": {
+        "title": "",
+        "heading": "",
+        "heading_highlight": "standard",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "hide_image_mobile": false,
+        "anchor_id": "",
+        "style": "standard",
+        "layout": "image-right",
+        "colour_theme": "light"
+      }
     }
   },
   "order": [
@@ -139,6 +155,7 @@
     "16583384896d670434",
     "1650406820d7117f5d",
     "16504147450799a25f",
-    "165040682270d7b672"
+    "165040682270d7b672",
+    "1658347554cc0cab54"
   ]
 }
