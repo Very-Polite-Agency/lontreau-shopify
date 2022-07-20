@@ -185,6 +185,7 @@
         },
         "9b642651-7ef0-4b89-bb4f-1e65f2035da8": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "title": "EWG Certification",
             "message": "<p>Our products are EWG VERIFIED™, which recognizes that we meet EWG’s strictest standards for your health.<\/p>"
