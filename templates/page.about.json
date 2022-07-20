@@ -27,7 +27,7 @@
         "cta_title": "Shop now",
         "cta_link": "shopify:\/\/collections\/all",
         "image": "shopify:\/\/shop_images\/EnduranceHydration-0649_ffbd700e-f8db-43f8-bf40-eadb5a78dab6.jpg",
-        "hide_image_mobile": true,
+        "hide_image_mobile": false,
         "anchor_id": "",
         "style": "wide",
         "layout": "image-right",
