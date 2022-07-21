@@ -54,6 +54,13 @@
             "title": "Clean",
             "message": "<p>Clean<\/p>"
           }
+        },
+        "e6f383c4-e9b8-4491-b1bd-cc275c02766e": {
+          "type": "accordion",
+          "settings": {
+            "title": "Science",
+            "message": "<p>Science<\/p>"
+          }
         }
       },
       "block_order": [
@@ -61,7 +68,8 @@
         "b8ff2d76-b993-45d7-84bd-bce334ff57cd",
         "60d909e4-9f82-4a44-9fbd-a2950d52b106",
         "3fbad6b9-b1ce-4273-9eb8-9a82c90faf84",
-        "78548b8a-d6fc-46e8-9193-bc6c2439af00"
+        "78548b8a-d6fc-46e8-9193-bc6c2439af00",
+        "e6f383c4-e9b8-4491-b1bd-cc275c02766e"
       ],
       "settings": {
         "heading": "<p><em>Ingredient<\/em> Selection Playbook<\/p>",
