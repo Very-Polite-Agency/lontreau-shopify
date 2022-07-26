@@ -28,7 +28,7 @@
           "type": "accordion",
           "settings": {
             "title": "Shipping & Order Pick Up",
-            "message": "",
+            "message": "<p>test 123<\/p><p><\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
