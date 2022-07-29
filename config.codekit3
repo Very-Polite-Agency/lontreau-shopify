@@ -110,6 +110,30 @@
       "sC" : 3,
       "tS" : 1
     },
+    "\/assets\/custom.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/custom.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/assets\/customer-address.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/customer-address.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/assets\/customer.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -477,6 +501,18 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 1
+    },
+    "\/assets\/responsive.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/responsive.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/assets\/screenshot.png" : {
       "ft" : 32768,
@@ -2666,6 +2702,14 @@
       "oAP" : "\/sections\/instagram-feed.liquid",
       "oF" : 0
     },
+    "\/sections\/judgeme_carousel_section.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/sections\/judgeme_carousel_section.liquid",
+      "oF" : 0
+    },
     "\/sections\/main-404.liquid" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2912,6 +2956,30 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/snippets\/json-ld.liquid",
+      "oF" : 0
+    },
+    "\/snippets\/judgeme_all_reviews.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/judgeme_all_reviews.liquid",
+      "oF" : 0
+    },
+    "\/snippets\/judgeme_core.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/judgeme_core.liquid",
+      "oF" : 0
+    },
+    "\/snippets\/judgeme_widgets.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/judgeme_widgets.liquid",
       "oF" : 0
     },
     "\/snippets\/label.liquid" : {
@@ -3273,6 +3341,14 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/templates\/page.judgeme_all_reviews.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/page.judgeme_all_reviews.liquid",
+      "oF" : 0
     },
     "\/templates\/page.our-ingredients.json" : {
       "ft" : 524288,

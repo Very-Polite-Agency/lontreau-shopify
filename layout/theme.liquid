@@ -67,9 +67,9 @@
     {% render 'theme--css-variables' %}
 
     {{ 'main.css' | asset_url | stylesheet_tag }}
-    
+
     {{ 'custom.css' | asset_url | stylesheet_tag }}
-    
+
     {{ 'responsive.css' | asset_url | stylesheet_tag }}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -91,7 +91,7 @@
 
   </head>
 
-  <body class="{% render 'theme--classes' %} sticky-footer" data-template="{{ template.name }}">
+  <body class="{% render 'theme--classes' %} sticky-footer updated" data-template="{{ template.name }}">
 
     {% section 'mobile-menu' %}
     {% section 'header' %}
@@ -111,6 +111,6 @@
     {% endcase %}
 
 
-    
+
   </body>
 </html>
