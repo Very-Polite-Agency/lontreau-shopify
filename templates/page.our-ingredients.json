@@ -50,6 +50,7 @@
         },
         "78548b8a-d6fc-46e8-9193-bc6c2439af00": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "title": "Clean",
             "message": "<p>Clean<\/p>"
@@ -57,6 +58,7 @@
         },
         "e6f383c4-e9b8-4491-b1bd-cc275c02766e": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "title": "Science",
             "message": "<p>Science<\/p>"
@@ -140,6 +142,14 @@
             "description": "<p>The best ingredients in the world do little if they sit on the surface of the skin. Our products are specially formulated to be delivered deep in the skin where the work is done.<\/p>",
             "image": "shopify:\/\/shop_images\/Infredients-35_3x_72ffba47-837a-4466-8237-00af79bde4dc.png"
           }
+        },
+        "9d7b92f0-c1eb-4113-9702-191d2ed39361": {
+          "type": "detailed",
+          "settings": {
+            "title": "Biomimetic Barrier Formula",
+            "description": "",
+            "image": "shopify:\/\/shop_images\/Biomimetic_Image_1.png"
+          }
         }
       },
       "block_order": [
@@ -149,7 +159,8 @@
         "f8894a1d-d745-4004-a6a8-ec4b00beac80",
         "a26ee92c-7f0f-4722-bfa9-f99e7068472f",
         "154709d1-26dd-492a-953b-61d044e4029d",
-        "6d673b68-3d9f-4165-be96-ac2a1f169b6e"
+        "6d673b68-3d9f-4165-be96-ac2a1f169b6e",
+        "9d7b92f0-c1eb-4113-9702-191d2ed39361"
       ],
       "settings": {
         "content_type": "detailed",
