@@ -147,6 +147,13 @@
             "title": "Formaldehyde Donors Free",
             "image": "shopify:\/\/shop_images\/our-standards-formaldehydedonorsfree.png"
           }
+        },
+        "f344d4f1-0959-4530-860c-14cb7ffd6e51": {
+          "type": "minimal",
+          "settings": {
+            "title": "Silicone Free",
+            "image": "shopify:\/\/shop_images\/our-standards-siliconefree.png"
+          }
         }
       },
       "block_order": [
@@ -160,7 +167,8 @@
         "55691b42-dd06-4b95-97c8-8dcda0b9d52b",
         "a3a7227d-7cdf-4975-a551-264d22f96210",
         "940d8c5c-444a-4bb5-8aed-e72169cc816c",
-        "4016e126-c48b-49a3-9cac-b678f7aee6bc"
+        "4016e126-c48b-49a3-9cac-b678f7aee6bc",
+        "f344d4f1-0959-4530-860c-14cb7ffd6e51"
       ],
       "settings": {
         "content_type": "minimal",
