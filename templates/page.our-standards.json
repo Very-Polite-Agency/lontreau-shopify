@@ -154,6 +154,13 @@
             "title": "Silicone Free",
             "image": "shopify:\/\/shop_images\/our-standards-siliconefree.png"
           }
+        },
+        "413d7327-a042-4df9-bf78-97b17367bf83": {
+          "type": "minimal",
+          "settings": {
+            "title": "Synthetic Fragrance Free",
+            "image": "shopify:\/\/shop_images\/our-standards-syntheticfragrancefree.png"
+          }
         }
       },
       "block_order": [
@@ -168,7 +175,8 @@
         "a3a7227d-7cdf-4975-a551-264d22f96210",
         "940d8c5c-444a-4bb5-8aed-e72169cc816c",
         "4016e126-c48b-49a3-9cac-b678f7aee6bc",
-        "f344d4f1-0959-4530-860c-14cb7ffd6e51"
+        "f344d4f1-0959-4530-860c-14cb7ffd6e51",
+        "413d7327-a042-4df9-bf78-97b17367bf83"
       ],
       "settings": {
         "content_type": "minimal",
