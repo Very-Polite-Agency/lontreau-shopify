@@ -74,7 +74,7 @@
         "55ddd189-8124-4a23-aecd-7bd5fcf975ab": {
           "type": "minimal",
           "settings": {
-            "title": "Paraben Free",
+            "title": "Paraben-Free",
             "image": "shopify:\/\/shop_images\/our-standards-12_3x_5e0ac86b-d3c1-4820-8054-7b4bff68e178.png"
           }
         },
@@ -137,14 +137,14 @@
         "940d8c5c-444a-4bb5-8aed-e72169cc816c": {
           "type": "minimal",
           "settings": {
-            "title": "Mineral Oils Free",
+            "title": "Mineral Oils-Free",
             "image": "shopify:\/\/shop_images\/our-standards-mineraloilsfree_c002443e-a7fe-40eb-9507-0c77db40ed9f.png"
           }
         },
         "4016e126-c48b-49a3-9cac-b678f7aee6bc": {
           "type": "minimal",
           "settings": {
-            "title": "Formaldehyde Donors Free",
+            "title": "Formaldehyde Donors-Free",
             "image": "shopify:\/\/shop_images\/our-standards-formaldehydedonorsfree.png"
           }
         },
