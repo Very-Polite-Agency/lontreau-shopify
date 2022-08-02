@@ -147,7 +147,7 @@
           "type": "detailed",
           "settings": {
             "title": "Biomimetic Barrier Formula",
-            "description": "",
+            "description": "<p>Test<\/p>",
             "image": "shopify:\/\/shop_images\/Biomimetic_Image_1.png"
           }
         }
