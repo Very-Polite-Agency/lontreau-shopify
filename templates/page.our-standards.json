@@ -161,6 +161,13 @@
             "title": "Synthetic Fragrance Free",
             "image": "shopify:\/\/shop_images\/our-standards-syntheticfragrancefree.png"
           }
+        },
+        "cc4d87ec-dcaf-46bc-8d3c-cb256286f50d": {
+          "type": "minimal",
+          "settings": {
+            "title": "Phthalates Free",
+            "image": "shopify:\/\/shop_images\/our-standards-phthalatesfree.png"
+          }
         }
       },
       "block_order": [
@@ -176,7 +183,8 @@
         "940d8c5c-444a-4bb5-8aed-e72169cc816c",
         "4016e126-c48b-49a3-9cac-b678f7aee6bc",
         "f344d4f1-0959-4530-860c-14cb7ffd6e51",
-        "413d7327-a042-4df9-bf78-97b17367bf83"
+        "413d7327-a042-4df9-bf78-97b17367bf83",
+        "cc4d87ec-dcaf-46bc-8d3c-cb256286f50d"
       ],
       "settings": {
         "content_type": "minimal",
