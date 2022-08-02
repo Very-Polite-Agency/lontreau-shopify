@@ -151,21 +151,21 @@
         "f344d4f1-0959-4530-860c-14cb7ffd6e51": {
           "type": "minimal",
           "settings": {
-            "title": "Silicone Free",
+            "title": "Silicone-Free",
             "image": "shopify:\/\/shop_images\/our-standards-siliconefree.png"
           }
         },
         "413d7327-a042-4df9-bf78-97b17367bf83": {
           "type": "minimal",
           "settings": {
-            "title": "Synthetic Fragrance Free",
+            "title": "Synthetic Fragrance-Free",
             "image": "shopify:\/\/shop_images\/our-standards-syntheticfragrancefree.png"
           }
         },
         "cc4d87ec-dcaf-46bc-8d3c-cb256286f50d": {
           "type": "minimal",
           "settings": {
-            "title": "Phthalates Free",
+            "title": "Phthalates-Free",
             "image": "shopify:\/\/shop_images\/our-standards-phthalatesfree.png"
           }
         }
