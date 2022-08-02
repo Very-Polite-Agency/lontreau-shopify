@@ -36,7 +36,7 @@
         "327057bd-4d48-41b5-94ea-784c83f206d6": {
           "type": "minimal",
           "settings": {
-            "title": "Paraben Free"
+            "title": "Paraben-Free"
           }
         },
         "aca824eb-74ef-4789-9863-96c1624c04f2": {
@@ -54,13 +54,67 @@
         "6a1789b0-e878-44ef-bd68-4c86cd4faabb": {
           "type": "minimal",
           "settings": {
-            "title": "Alcohol Free"
+            "title": "Alcohol-Free"
           }
         },
         "97b9e10f-d0e8-49a9-9af1-90bf0fb4f8f3": {
           "type": "minimal",
           "settings": {
-            "title": ""
+            "title": "Cruelty-Free"
+          }
+        },
+        "19cd96d1-7eb4-4d74-bbd3-c4917339f053": {
+          "type": "minimal",
+          "settings": {
+            "title": "Responsibly Sourced"
+          }
+        },
+        "08fd06be-2782-4e46-acc6-566d23c5f472": {
+          "type": "minimal",
+          "settings": {
+            "title": "Aluminum-Free"
+          }
+        },
+        "0d8ae498-d6b4-4d31-aae0-57c226801123": {
+          "type": "minimal",
+          "settings": {
+            "title": "Clean"
+          }
+        },
+        "e1019745-02f3-4732-b5ad-8adc64096d71": {
+          "type": "minimal",
+          "settings": {
+            "title": "Gluten-Free"
+          }
+        },
+        "a3739516-5c3b-4ad3-aa48-4a6f30672d85": {
+          "type": "minimal",
+          "settings": {
+            "title": "Mineral Oils-Free"
+          }
+        },
+        "251406ea-2a5b-4dfb-a245-cbcdf5d363bc": {
+          "type": "minimal",
+          "settings": {
+            "title": "Formaldehyde Donors-Free"
+          }
+        },
+        "96fec912-0885-423a-b9b9-bdbc1f07b7c4": {
+          "type": "minimal",
+          "settings": {
+            "title": "Silicone-Free"
+          }
+        },
+        "d2c74ce3-037e-4454-b91f-a5000137d20a": {
+          "type": "minimal",
+          "settings": {
+            "title": "Synthetic Fragrance-Free"
+          }
+        },
+        "58a870a8-3eab-4cd7-ac5d-47419361df83": {
+          "type": "minimal",
+          "settings": {
+            "title": "Phthalates-Free"
           }
         }
       },
@@ -69,7 +123,16 @@
         "aca824eb-74ef-4789-9863-96c1624c04f2",
         "303bd46e-98ba-4903-a6b4-48c75aca8962",
         "6a1789b0-e878-44ef-bd68-4c86cd4faabb",
-        "97b9e10f-d0e8-49a9-9af1-90bf0fb4f8f3"
+        "97b9e10f-d0e8-49a9-9af1-90bf0fb4f8f3",
+        "19cd96d1-7eb4-4d74-bbd3-c4917339f053",
+        "08fd06be-2782-4e46-acc6-566d23c5f472",
+        "0d8ae498-d6b4-4d31-aae0-57c226801123",
+        "e1019745-02f3-4732-b5ad-8adc64096d71",
+        "a3739516-5c3b-4ad3-aa48-4a6f30672d85",
+        "251406ea-2a5b-4dfb-a245-cbcdf5d363bc",
+        "96fec912-0885-423a-b9b9-bdbc1f07b7c4",
+        "d2c74ce3-037e-4454-b91f-a5000137d20a",
+        "58a870a8-3eab-4cd7-ac5d-47419361df83"
       ],
       "settings": {
         "content_type": "minimal",
