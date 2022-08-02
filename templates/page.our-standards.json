@@ -133,6 +133,13 @@
             "title": "Gluten-Free",
             "image": "shopify:\/\/shop_images\/our-standards-18_3x_3a0b5683-a52b-4aa4-9d3e-44238435cc5b.png"
           }
+        },
+        "940d8c5c-444a-4bb5-8aed-e72169cc816c": {
+          "type": "minimal",
+          "settings": {
+            "title": "Mineral Oils Free",
+            "image": "shopify:\/\/shop_images\/our-standards-mineraloilsfree.png"
+          }
         }
       },
       "block_order": [
@@ -144,7 +151,8 @@
         "df62e874-728b-488b-8712-17cf21407dfb",
         "ae6de2d9-deb0-4954-b283-239912189ccb",
         "55691b42-dd06-4b95-97c8-8dcda0b9d52b",
-        "a3a7227d-7cdf-4975-a551-264d22f96210"
+        "a3a7227d-7cdf-4975-a551-264d22f96210",
+        "940d8c5c-444a-4bb5-8aed-e72169cc816c"
       ],
       "settings": {
         "content_type": "minimal",
