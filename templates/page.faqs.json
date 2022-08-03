@@ -39,7 +39,7 @@
           "type": "accordion",
           "settings": {
             "title": "Order Cancellation",
-            "message": "<p>If your order has not yet been processed, we will be happy (but sad inside) to cancel your order and offer you a refund. <\/p>",
+            "message": "<p>If your order has not yet been shipped, we will be happy (but sad inside) to cancel your order and offer you a refund.  Please email hello@lontreau.com to request cancellation. <\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
