@@ -101,6 +101,17 @@
             "image_figure": "",
             "image_caption": ""
           }
+        },
+        "b173b10b-3cf1-40d3-93ab-9bc34be1bb60": {
+          "type": "accordion",
+          "settings": {
+            "title": "Shelf Life of Lontreau Products",
+            "message": "<p>Lontreau products have a shelf life of 3 years. But, we hope you will use them up long before that time. They are designed to work as hard as you do but you’ve got to put them to work! <\/p>",
+            "cta_title": "",
+            "cta_link": "",
+            "image_figure": "",
+            "image_caption": ""
+          }
         }
       },
       "block_order": [
@@ -110,7 +121,8 @@
         "b277ddac-81e5-43d2-831f-a8a8f6e56bcf",
         "512a344c-b953-4908-a2e8-32742e477159",
         "09ffcfcb-e531-4ce5-8eed-18cf00e3f3e1",
-        "6d869e39-619b-4b1f-a3eb-61ac53f305b8"
+        "6d869e39-619b-4b1f-a3eb-61ac53f305b8",
+        "b173b10b-3cf1-40d3-93ab-9bc34be1bb60"
       ],
       "settings": {
         "heading": "",
