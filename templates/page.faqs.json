@@ -28,7 +28,7 @@
           "type": "accordion",
           "settings": {
             "title": "Shipping",
-            "message": "<p>Lontreau ships products to most countries worldwide. If you live outside of the US or Canada, shipping costs will be calculated at checkout. US and Canadian addresses are eligible for free shipping on orders over $99. <\/p><p>Orders are shipped using Canada Post. Following checkout, you will receive an order confirmation email which will include a tracking number with Canada Post. <\/p><p><\/p>",
+            "message": "<p>Lontreau ships products to most countries worldwide. If you live outside of the US or Canada, shipping costs will be calculated at checkout. US and Canadian addresses are eligible for free shipping on orders over $99. <\/p><p>Orders are shipped using Canada Post. Following checkout, you will receive an order confirmation email which will include a tracking number with Canada Post. <\/p><p>If you entered an incorrect address, please <strong>email us<\/strong> with the correct address before your order is shipped. If the order has already been shipped, we are unable to make changes to the shipping address.<\/p><p><\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
