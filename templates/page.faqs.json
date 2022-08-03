@@ -90,6 +90,17 @@
             "image_figure": "",
             "image_caption": ""
           }
+        },
+        "6d869e39-619b-4b1f-a3eb-61ac53f305b8": {
+          "type": "accordion",
+          "settings": {
+            "title": "Recycling",
+            "message": "<p>All elements of our packaging is recyclable - the shipping box, primary packaging, the containers - please recycle them! We carefully selected airless containers that are free from metal springs which means they are widely accepted in recycling bins. If your products were shipped with packaging peanuts or tissue, both go in the compost! <\/p>",
+            "cta_title": "",
+            "cta_link": "",
+            "image_figure": "",
+            "image_caption": ""
+          }
         }
       },
       "block_order": [
@@ -98,7 +109,8 @@
         "6ca22b28-2152-46a4-9e8c-cc3d117acb93",
         "b277ddac-81e5-43d2-831f-a8a8f6e56bcf",
         "512a344c-b953-4908-a2e8-32742e477159",
-        "09ffcfcb-e531-4ce5-8eed-18cf00e3f3e1"
+        "09ffcfcb-e531-4ce5-8eed-18cf00e3f3e1",
+        "6d869e39-619b-4b1f-a3eb-61ac53f305b8"
       ],
       "settings": {
         "heading": "",
