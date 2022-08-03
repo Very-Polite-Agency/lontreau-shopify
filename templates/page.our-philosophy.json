@@ -46,7 +46,7 @@
         "cta_link": "",
         "parallax": false,
         "anchor_id": "",
-        "height": "large",
+        "height": "auto",
         "curved_arrow_enable": false
       }
     },
