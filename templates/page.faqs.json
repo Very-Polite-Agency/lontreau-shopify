@@ -27,8 +27,8 @@
         "c3609a73-7a73-4f96-92f9-9516bcc2800c": {
           "type": "accordion",
           "settings": {
-            "title": "Shipping & Order Pick Up",
-            "message": "<p>test 123<\/p><p><\/p>",
+            "title": "Shipping",
+            "message": "<p>Lontreau ships products to most countries worldwide. If you live outside of the US or Canada, shipping costs will be calculated at checkout. US and Canadian addresses are eligible for free shipping on orders over $99. <\/p><p>Orders are shipped using Canada Post. Following checkout, you will receive an order confirmation email which will include a tracking number with Canada Post. <\/p><p><\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
