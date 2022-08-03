@@ -81,9 +81,8 @@
         },
         "09ffcfcb-e531-4ce5-8eed-18cf00e3f3e1": {
           "type": "accordion",
-          "disabled": true,
           "settings": {
-            "title": "Are Lontreau products made with sustainable ingredients?",
+            "title": "Sustainability & Recycling",
             "message": "<p>In the process of formulating Lontreau products, careful consideration was given to the raw ingredients selected for our formulations. Whenever possible we selected ingredients from manufacturers committed to sustainable practices. Our formulations incorporate responsibly sourced, natural, renewable ingredients made in Canada. <\/p>",
             "cta_title": "",
             "cta_link": "",
