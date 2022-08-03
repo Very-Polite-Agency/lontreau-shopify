@@ -49,8 +49,8 @@
         "6ca22b28-2152-46a4-9e8c-cc3d117acb93": {
           "type": "accordion",
           "settings": {
-            "title": "Consectetuer diam nonummy nibh euismod tincidunt ut laoreet?",
-            "message": "<p>Duis nec orci turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim accumsan eros, luctus sollicitudin elit bibendum imperdiet. Vestibulum sit amet purus sit amet orci egestas posuere. Proin in arcu neque. Sed ultrices quam id consectetur accumsan. Aenean nec magna vel lorem auctor tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum vulputate laoreet risus, quis vestibulum metus molestie non. Etiam malesuada vel ex eu consequat.<\/p><p>Nullam molestie eros quam, sed volutpat arcu tempus et. Aenean tincidunt dapibus iaculis. Suspendisse condimentum magna leo, vitae volutpat mauris ultricies in. Fusce ac porta dolor. Vestibulum varius, quam nec molestie molestie, ipsum tellus consectetur ex, sit amet sagittis magna ex eget nisi. Nam eu augue maximus metus venenatis maximus eget at tortor. Cras congue nec risus at facilisis. Sed sit amet pretium erat, eu commodo nunc. Aenean tempus malesuada gravida. Donec commodo augue et mattis ultricies. Sed congue ipsum nibh, vel congue lorem tempus eget. Proin efficitur velit lectus, non fringilla metus luctus vitae.<\/p>",
+            "title": "Order Processing Times",
+            "message": "<p>Lontreau processes orders Monday - Friday and we strive to ship orders within 24 hours of purchase. Orders placed on Saturday and Sunday are processed on the next business day. <\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
