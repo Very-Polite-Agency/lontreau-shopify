@@ -61,7 +61,7 @@
           "type": "accordion",
           "settings": {
             "title": "Returns & Refunds",
-            "message": "<p>If you are not satisfied with your Lontreau products, please contact our team at <a href=\"mailto:hello@lontreau.com\"><span style=\"text-decoration:underline\">hello@lontreau.com<\/span><\/a> to request a Return Authorization Number. Returns without an RA# will not be accepted. Please mail product returns to: <\/p><p>Lontreau Customer Service,  Attn: Returns, 408-1788 West Broadway, Vancouver BC V6J 1Y1<\/p><p>Once we receive your returned product, we will issue a refund to the original form of payment. Products may be returned for up to 30 days after the delivery date of the package. <\/p>",
+            "message": "<p>If you are not satisfied with your Lontreau products, please contact our team at <a href=\"mailto:hello@lontreau.com\"><span style=\"text-decoration:underline\">hello@lontreau.com<\/span><\/a> to request a Return Authorization Number. Returns without an RA# will not be accepted. Please mail product returns to: <\/p><p>Lontreau Customer Service,  Attn: Returns, 408-1788 West Broadway, Vancouver BC V6J 1Y1<\/p><p>Once we receive your returned product, we will issue a refund to the original form of payment. Products may be returned for up to 30 days after the delivery date of the package. At this time we do not offer return shipping. <\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
@@ -81,6 +81,7 @@
         },
         "09ffcfcb-e531-4ce5-8eed-18cf00e3f3e1": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "title": "Are Lontreau products made with sustainable ingredients?",
             "message": "<p>In the process of formulating Lontreau products, careful consideration was given to the raw ingredients selected for our formulations. Whenever possible we selected ingredients from manufacturers committed to sustainable practices. Our formulations incorporate responsibly sourced, natural, renewable ingredients made in Canada. <\/p>",
