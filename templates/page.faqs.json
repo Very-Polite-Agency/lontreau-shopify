@@ -111,6 +111,17 @@
             "image_figure": "",
             "image_caption": ""
           }
+        },
+        "3ccfca00-2930-49ca-850a-e2137b90c17f": {
+          "type": "accordion",
+          "settings": {
+            "title": "Clean, Safe, Non-Irritating Ingredients",
+            "message": "<p>Credo is a company we really respect, their standard for clean and sustainable beauty is the highest in the industry, and our goal was to meet or exceed their standards. <\/p><p>We are also in the process of applying for specific certifications from recognized beauty industry leaders and while these applications take time, we see the value in being transparent and committed to high standards. <\/p>",
+            "cta_title": "",
+            "cta_link": "",
+            "image_figure": "",
+            "image_caption": ""
+          }
         }
       },
       "block_order": [
@@ -121,7 +132,8 @@
         "512a344c-b953-4908-a2e8-32742e477159",
         "09ffcfcb-e531-4ce5-8eed-18cf00e3f3e1",
         "6d869e39-619b-4b1f-a3eb-61ac53f305b8",
-        "b173b10b-3cf1-40d3-93ab-9bc34be1bb60"
+        "b173b10b-3cf1-40d3-93ab-9bc34be1bb60",
+        "3ccfca00-2930-49ca-850a-e2137b90c17f"
       ],
       "settings": {
         "heading": "",
