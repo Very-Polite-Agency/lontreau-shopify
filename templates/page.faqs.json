@@ -83,7 +83,7 @@
           "type": "accordion",
           "settings": {
             "title": "Sustainability & Recycling",
-            "message": "<p>In the process of formulating Lontreau products, careful consideration was given to the raw ingredients selected for our formulations. Whenever possible we selected ingredients from manufacturers committed to sustainable practices. Our formulations incorporate responsibly sourced, natural, renewable ingredients made in Canada. <\/p>",
+            "message": "<p>In the process of formulating Lontreau products, careful consideration was given to the raw ingredients selected for our formulations. Whenever possible we selected ingredients from manufacturers committed to sustainable practices. Our formulations incorporate responsibly sourced, natural, renewable ingredients made in Canada. <\/p><p>All parts of our packaging are recyclable - the shipping box, primary packaging, the containers - please recycle them! We carefully selected airless containers that are free from metal springs which means they are widely accepted in recycling bins. If your products were shipped with packaging peanuts or tissue, both go in the compost! <\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
@@ -94,7 +94,7 @@
           "type": "accordion",
           "settings": {
             "title": "Recycling",
-            "message": "<p>All parts of our packaging are recyclable - the shipping box, primary packaging, the containers - please recycle them! We carefully selected airless containers that are free from metal springs which means they are widely accepted in recycling bins. If your products were shipped with packaging peanuts or tissue, both go in the compost! <\/p>",
+            "message": "",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
