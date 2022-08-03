@@ -122,6 +122,17 @@
             "image_figure": "",
             "image_caption": ""
           }
+        },
+        "31e6d9e7-aede-47f9-ae26-0dc7e0268830": {
+          "type": "accordion",
+          "settings": {
+            "title": "How, When, and How Much",
+            "message": "<p>Lontreau products are formulated for use everyday and designed to simplify your skincare routine. <\/p><p>Game Changer, Endurance Hydration and MVP are all considered daytime products. Recovery Hero is designed to work overnight. If you need extra moisture after Recover Hero, apply a layer of Endurance Hydration! <\/p><p>Typically we recommend 1-2 pumps of each product be applied to a clean face. <\/p><p>Remember our products are designed to be efficient - pump all three daytime products into your palm, emulsify and apply! Same goes at nighttime - pump Recovery Hero & Endurance Hydration into your palm, emulsify and apply. <\/p>",
+            "cta_title": "",
+            "cta_link": "",
+            "image_figure": "",
+            "image_caption": ""
+          }
         }
       },
       "block_order": [
@@ -133,7 +144,8 @@
         "09ffcfcb-e531-4ce5-8eed-18cf00e3f3e1",
         "6d869e39-619b-4b1f-a3eb-61ac53f305b8",
         "b173b10b-3cf1-40d3-93ab-9bc34be1bb60",
-        "3ccfca00-2930-49ca-850a-e2137b90c17f"
+        "3ccfca00-2930-49ca-850a-e2137b90c17f",
+        "31e6d9e7-aede-47f9-ae26-0dc7e0268830"
       ],
       "settings": {
         "heading": "",
