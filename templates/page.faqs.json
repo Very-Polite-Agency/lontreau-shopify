@@ -38,8 +38,8 @@
         "423878c7-1a61-4f0e-be06-1100bc2fbd7d": {
           "type": "accordion",
           "settings": {
-            "title": "Sed diam nonummy nibh euismod tincidunt ut laoreet?",
-            "message": "<p>In accumsan, eros sit amet molestie congue, nunc felis semper ante, eu euismod odio turpis ac neque. Mauris sed risus sed nunc pellentesque sollicitudin. Donec erat ipsum, porttitor sed nibh nec, pulvinar efficitur sapien. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer a maximus nisi. In hac habitasse platea dictumst. Aenean sit amet pretium velit, sit amet suscipit ligula.<\/p><p>Sed cursus ante ligula, in fermentum odio tristique non. Pellentesque mi velit, convallis nec placerat vel, luctus vitae tellus. Quisque orci nibh, egestas eu maximus eu, gravida vitae quam. Cras iaculis, sem sed cursus posuere, enim lorem pulvinar metus, quis pharetra sem justo at velit. In vitae tempor libero, ac mollis velit. Fusce malesuada, ante non efficitur porta, lacus lacus pharetra nisl, sed sodales est eros quis eros. Morbi semper sem sit amet fermentum dapibus. Nam sollicitudin in est eget bibendum. Etiam a porttitor sem. Nulla tempus lacus eget tortor molestie auctor. Cras tincidunt pretium rhoncus. Nunc egestas nulla ac pellentesque tempus. Maecenas sit amet eros vestibulum, luctus erat non, mollis ante. Praesent sit amet fermentum est. In commodo varius eros vel fringilla. Sed quis viverra eros, quis vehicula quam.<\/p>",
+            "title": "Order Cancellation",
+            "message": "<p>If your order has not yet been processed, we will be happy (but sad inside) to cancel your order and offer you a refund. <\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
