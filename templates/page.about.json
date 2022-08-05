@@ -201,11 +201,20 @@
             "description": "<p>Our skincare products are rooted in science. We carefully select research-backed ingredients to design high-performing preventative skincare formulations that can stand up to extreme environments and lifestyles.<\/p>",
             "image": "shopify:\/\/shop_images\/needs-athlete-8_3x2_a44c1bfd-f650-4655-af29-e76602f12969.png"
           }
+        },
+        "1400945d-4fd5-443d-9c00-b162385cb925": {
+          "type": "detailed",
+          "settings": {
+            "title": "Preventative",
+            "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine to sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>",
+            "image": "shopify:\/\/shop_images\/needs-athlete-9_3x2_08ec1b15-95a2-460a-ba94-010e9c32e097.png"
+          }
         }
       },
       "block_order": [
         "d7bf6bf4-4606-49e2-a96a-48f277532964",
-        "8273c666-f5bd-4cd3-9142-638540e96910"
+        "8273c666-f5bd-4cd3-9142-638540e96910",
+        "1400945d-4fd5-443d-9c00-b162385cb925"
       ],
       "settings": {
         "content_type": "detailed",
