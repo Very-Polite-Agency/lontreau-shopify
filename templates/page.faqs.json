@@ -61,18 +61,7 @@
           "type": "accordion",
           "settings": {
             "title": "Returns & Refunds",
-            "message": "<p>We have a 30-day return policy, which means you have 30 days after receiving your item to request a return for refund.<br\/><br\/>To be eligible for a return, your item must be in the same condition that you received it, unopened or unused and in its original packaging. You’ll also need your order number or proof of purchase.<br\/><br\/>To start a return, you can contact us at <a href=\"mailto:hello@lontreau.com\">hello@lontreau.com<\/a>. If your return is accepted, we’ll send you a return shipping label, as well as instructions on how and where to send your package. Items sent back to us without first requesting a return will not be accepted. <\/p><p>Once we receive your returned product, we will issue a refund to the original form of payment. Products may be returned for up to 30 days after the delivery date of the package.<\/p>",
-            "cta_title": "",
-            "cta_link": "",
-            "image_figure": "",
-            "image_caption": ""
-          }
-        },
-        "512a344c-b953-4908-a2e8-32742e477159": {
-          "type": "accordion",
-          "settings": {
-            "title": "Sensitive Skin Guarantee",
-            "message": "<p>Lontreau has a 30 day skin sensitivity guarantee. Our products are formulated for all skin types and will not cause any skin reactivity. <\/p><p>If you believe your skin is reacting to your Lontreau products, please email our customer service team at hello@lontreau.com to initiate a return within 30 days of receiving your order. We will ask you to provide additional information on your skin which may include photos. <\/p>",
+            "message": "<p>We have a 30-day return policy. You have 30 days after receiving your item to request a return for refund if you are not satisfied with your Lontreau products. <br\/><br\/>To start a return, you can contact us at <a href=\"mailto:hello@lontreau.com\">hello@lontreau.com<\/a>. Please provide your order number and\/or date of purchase. We’ll send you a return shipping label, as well as instructions on how and where to send your package. Items sent back to us without first requesting a return will not be accepted. <\/p><p>Once we receive your returned product, we will issue a refund to the original form of payment. Products may be returned for up to 30 days after the delivery date of the package.<\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
@@ -133,6 +122,18 @@
             "image_figure": "",
             "image_caption": ""
           }
+        },
+        "512a344c-b953-4908-a2e8-32742e477159": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "title": "Sensitive Skin Guarantee",
+            "message": "<p>Lontreau has a 30 day skin sensitivity guarantee. Our products are formulated for all skin types and will not cause any skin reactivity. <\/p><p>If you believe your skin is reacting to your Lontreau products, please email our customer service team at hello@lontreau.com to initiate a return within 30 days of receiving your order. <\/p>",
+            "cta_title": "",
+            "cta_link": "",
+            "image_figure": "",
+            "image_caption": ""
+          }
         }
       },
       "block_order": [
@@ -140,12 +141,12 @@
         "423878c7-1a61-4f0e-be06-1100bc2fbd7d",
         "6ca22b28-2152-46a4-9e8c-cc3d117acb93",
         "b277ddac-81e5-43d2-831f-a8a8f6e56bcf",
-        "512a344c-b953-4908-a2e8-32742e477159",
         "31e6d9e7-aede-47f9-ae26-0dc7e0268830",
         "09ffcfcb-e531-4ce5-8eed-18cf00e3f3e1",
         "b173b10b-3cf1-40d3-93ab-9bc34be1bb60",
         "6d869e39-619b-4b1f-a3eb-61ac53f305b8",
-        "3ccfca00-2930-49ca-850a-e2137b90c17f"
+        "3ccfca00-2930-49ca-850a-e2137b90c17f",
+        "512a344c-b953-4908-a2e8-32742e477159"
       ],
       "settings": {
         "heading": "",
