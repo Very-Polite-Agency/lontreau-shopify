@@ -51,13 +51,56 @@
         "colour_theme": "light"
       }
     },
+    "1659719470adaa7cac": {
+      "type": "carousel-education",
+      "blocks": {
+        "d7bf6bf4-4606-49e2-a96a-48f277532964": {
+          "type": "detailed",
+          "settings": {
+            "title": "Synergistic",
+            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is  better for your skin barrier, and the planet.<\/p>",
+            "image": "shopify:\/\/shop_images\/needs-athlete-7_3x_5fd6d023-2f8c-4938-b8e3-3fb98e81e800.png"
+          }
+        },
+        "8273c666-f5bd-4cd3-9142-638540e96910": {
+          "type": "detailed",
+          "settings": {
+            "title": "Innovative",
+            "description": "<p>Our skincare products are rooted in science. We carefully select research-backed ingredients to design high-performing preventative skincare formulations that can stand up to extreme environments and lifestyles.<\/p>",
+            "image": "shopify:\/\/shop_images\/needs-athlete-8_3x2_a44c1bfd-f650-4655-af29-e76602f12969.png"
+          }
+        },
+        "1400945d-4fd5-443d-9c00-b162385cb925": {
+          "type": "detailed",
+          "settings": {
+            "title": "Preventative",
+            "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine to sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>",
+            "image": "shopify:\/\/shop_images\/needs-athlete-9_3x2_08ec1b15-95a2-460a-ba94-010e9c32e097.png"
+          }
+        }
+      },
+      "block_order": [
+        "d7bf6bf4-4606-49e2-a96a-48f277532964",
+        "8273c666-f5bd-4cd3-9142-638540e96910",
+        "1400945d-4fd5-443d-9c00-b162385cb925"
+      ],
+      "settings": {
+        "content_type": "detailed",
+        "alignment": "left",
+        "heading": "<p><em>The Needs<\/em> of an Athlete<\/p>",
+        "heading_highlight": "circle",
+        "message": "",
+        "anchor_id": "",
+        "colour_theme": "dark"
+      }
+    },
     "16583384896d670434": {
       "type": "fifty-fifty-feature",
       "settings": {
         "title": "",
         "heading": "<p>We <em>know<\/em> skin<\/p>",
         "heading_highlight": "standard",
-        "message": "<p>Lontreau is founded by the co-founder of renowned medical aesthetic and cosmetic surgery clinic, 8 West Clinic. With over a decade in the business of skin, Lontreau products have been developed to support the common concerns of clients, while being uniquely tailored to the needs of an athlete's skin. The team behind Lontreau is passionate about sport and use their own experience to develop products that can benefit everyone from everyday movers to all types of athletes.<\/p>",
+        "message": "<p>Lontreau is founded by the co-owner of renowned medical aesthetic and cosmetic surgery clinic, 8 West Clinic. With over a decade in the business of skin, Lontreau products have been developed to support the common concerns of clients, while being uniquely tailored to the needs of an athlete's skin. The team behind Lontreau is passionate about sport and use their own experience to develop products that can benefit everyone from everyday movers to all types of athletes.<\/p>",
         "cta_title": "Shop now",
         "cta_link": "shopify:\/\/collections\/all",
         "image": "shopify:\/\/shop_images\/EnduranceHydration-0649_ffbd700e-f8db-43f8-bf40-eadb5a78dab6.jpg",
@@ -182,60 +225,17 @@
         "layout": "image-right",
         "colour_theme": "light"
       }
-    },
-    "1659719470adaa7cac": {
-      "type": "carousel-education",
-      "blocks": {
-        "d7bf6bf4-4606-49e2-a96a-48f277532964": {
-          "type": "detailed",
-          "settings": {
-            "title": "Synergistic",
-            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is  better for your skin barrier, and the planet.<\/p>",
-            "image": "shopify:\/\/shop_images\/needs-athlete-7_3x_5fd6d023-2f8c-4938-b8e3-3fb98e81e800.png"
-          }
-        },
-        "8273c666-f5bd-4cd3-9142-638540e96910": {
-          "type": "detailed",
-          "settings": {
-            "title": "Innovative",
-            "description": "<p>Our skincare products are rooted in science. We carefully select research-backed ingredients to design high-performing preventative skincare formulations that can stand up to extreme environments and lifestyles.<\/p>",
-            "image": "shopify:\/\/shop_images\/needs-athlete-8_3x2_a44c1bfd-f650-4655-af29-e76602f12969.png"
-          }
-        },
-        "1400945d-4fd5-443d-9c00-b162385cb925": {
-          "type": "detailed",
-          "settings": {
-            "title": "Preventative",
-            "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine to sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>",
-            "image": "shopify:\/\/shop_images\/needs-athlete-9_3x2_08ec1b15-95a2-460a-ba94-010e9c32e097.png"
-          }
-        }
-      },
-      "block_order": [
-        "d7bf6bf4-4606-49e2-a96a-48f277532964",
-        "8273c666-f5bd-4cd3-9142-638540e96910",
-        "1400945d-4fd5-443d-9c00-b162385cb925"
-      ],
-      "settings": {
-        "content_type": "detailed",
-        "alignment": "left",
-        "heading": "<p><em>The Needs<\/em> of an Athlete<\/p>",
-        "heading_highlight": "circle",
-        "message": "",
-        "anchor_id": "",
-        "colour_theme": "dark"
-      }
     }
   },
   "order": [
     "main",
     "165971894678d8720c",
     "16597191666b46ebb5",
+    "1659719470adaa7cac",
     "16583384896d670434",
     "1650406820d7117f5d",
     "16504147450799a25f",
     "165040682270d7b672",
-    "1658347554cc0cab54",
-    "1659719470adaa7cac"
+    "1658347554cc0cab54"
   ]
 }
