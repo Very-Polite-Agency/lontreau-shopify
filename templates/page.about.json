@@ -148,6 +148,23 @@
         "layout": "image-right",
         "colour_theme": "light"
       }
+    },
+    "165971894678d8720c": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "",
+        "heading": "<p>Informed by Science <\/p><p><em>Designed to Move<\/em><\/p>",
+        "heading_highlight": "stroke",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/Lontreau_Informed-by-science_91920139-ee56-47cc-a79e-8bae46624744.png",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "large",
+        "curved_arrow_enable": false
+      }
     }
   },
   "order": [
@@ -156,6 +173,7 @@
     "1650406820d7117f5d",
     "16504147450799a25f",
     "165040682270d7b672",
-    "1658347554cc0cab54"
+    "1658347554cc0cab54",
+    "165971894678d8720c"
   ]
 }
