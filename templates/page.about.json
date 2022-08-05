@@ -185,6 +185,27 @@
     },
     "1659719470adaa7cac": {
       "type": "carousel-education",
+      "blocks": {
+        "d7bf6bf4-4606-49e2-a96a-48f277532964": {
+          "type": "detailed",
+          "settings": {
+            "title": "Synergistic",
+            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is  better for your skin barrier, and the planet.<\/p>",
+            "image": "shopify:\/\/shop_images\/needs-athlete-7_3x_5fd6d023-2f8c-4938-b8e3-3fb98e81e800.png"
+          }
+        },
+        "8273c666-f5bd-4cd3-9142-638540e96910": {
+          "type": "detailed",
+          "settings": {
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "d7bf6bf4-4606-49e2-a96a-48f277532964",
+        "8273c666-f5bd-4cd3-9142-638540e96910"
+      ],
       "settings": {
         "content_type": "detailed",
         "alignment": "left",
