@@ -50,7 +50,7 @@
           "type": "accordion",
           "settings": {
             "title": "Order Processing Times",
-            "message": "<p>Lontreau processes orders Monday - Friday and we strive to ship orders within 24 hours of purchase. Orders placed on Saturday and Sunday are processed on the next business day. <\/p>",
+            "message": "<p>Lontreau processes orders Monday - Friday and we strive to ship orders within 24 hours of purchase. Orders placed on Saturday, Sunday or any Candian statutory holidays are processed on the next business day. <\/p>",
             "cta_title": "",
             "cta_link": "",
             "image_figure": "",
