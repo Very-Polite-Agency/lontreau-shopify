@@ -24,7 +24,7 @@
   <div class="{% if classes %}{{ classes }} {% endif %}price {% if show_symbol %} with-currency-symbol{% endif %}">
     <span class="price__value">
       <span class="price__currency-symbol"></span>
-{% if product.price_varies and template == 'collection' %}
+{% if product.price_varies  %}
   {{ product.price_min | money }} to {{ product.price_max | money }}
 {% else %}
      {{- symbol -}} {{- price | money_without_currency -}}
