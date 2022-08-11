@@ -26,6 +26,7 @@
       <span class="price__currency-symbol"></span>
 {% if product.price_varies and template == 'collection' %}
   {{ product.price_min | money }} to {{ product.price_max | money }}
+  
 {% else %}
      {{- symbol -}} {{- price | money_without_currency -}}
     </span>
