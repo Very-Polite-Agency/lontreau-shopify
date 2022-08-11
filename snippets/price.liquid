@@ -20,24 +20,14 @@
   {%- assign style = style | default: '' -%}
   {%- assign show_symbol = show_symbol | default: false -%}
   {%- assign symbol = shop.currency.symbol | default: '$' -%}
-  {% assign current_variant = product.selected_or_first_available_variant %}
 
   <div class="{% if classes %}{{ classes }} {% endif %}price {% if show_symbol %} with-currency-symbol{% endif %}">
     <span class="price__value">
       <span class="price__currency-symbol"></span>
-{% if product.price_varies  %}
+{% if product.price_varies and template == 'collection' %}
   {{ product.price_min | money }} to {{ product.price_max | money }}
-       
 {% else %}
      {{- symbol -}} {{- price | money_without_currency -}}
-      {% endif %}
-  
-{% if current_variant.compare_at_price > current_variant.price and template != 'collection'  %}
-								<p class="product-compare-at-price">
-									{{ current_variant.compare_at_price | money }}
-								</p>
-							
-
     </span>
 {% endif %}
     {%- if price_compare -%}
@@ -49,5 +39,3 @@
   </div>
 
 {%- endif -%}
-
-	
