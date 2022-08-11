@@ -27,18 +27,17 @@
       <span class="price__currency-symbol"></span>
 {% if product.price_varies and template == 'collection' %}
   {{ product.price_min | money }} to {{ product.price_max | money }}
+       
 {% else %}
      {{- symbol -}} {{- price | money_without_currency -}}
-  {% endif %}
+      {% endif %}
   
 {% if current_variant.compare_at_price > current_variant.price and template != 'collection'  %}
 								<p class="product-compare-at-price">
 									{{ current_variant.compare_at_price | money }}
 								</p>
 							
-      
-{% else %}
-     {{- symbol -}} {{- price | money_without_currency -}}
+
     </span>
 {% endif %}
     {%- if price_compare -%}
