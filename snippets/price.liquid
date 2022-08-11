@@ -29,7 +29,7 @@
   {{ product.price_min | money }} to {{ product.price_max | money }}
 {% endif %}
   
-{% if current_variant.compare_at_price > current_variant.price %}
+{% if current_variant.compare_at_price > current_variant.price and template != 'collection'  %}
 								<p class="product-compare-at-price">
 									{{ current_variant.compare_at_price | money }}
 								</p>
