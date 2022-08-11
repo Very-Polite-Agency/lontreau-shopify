@@ -42,7 +42,7 @@
   </select>-->
 <br/>
     <br/>
-    {% if product.variants %}
+    {% if product.selected_variant %}
     	<select name="id" id="ProductSelect-{{ section.id }}" class="product-single__variants">
 							{% for variant in product.variants %}
 								{% if variant.available %}
