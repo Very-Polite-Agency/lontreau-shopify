@@ -62,7 +62,7 @@
       class="{{ snippet_name }}__button button--tertiary js--add-to-cart"
       type="button"
       data-variant-id="{{ selected_variant.id }}"
-      data-quantity="{{ product-quantity }}"
+      data-quantity="1"
       data-featured-image="{{ featured_image | image_url: width: 200 }}"
       {% unless available %}disabled{% endunless %}
     >
