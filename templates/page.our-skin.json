@@ -208,7 +208,8 @@
           "disabled": true,
           "settings": {
             "title": "Efficacious",
-            "description": "<p>We carefuly choose science backed ingredients and use them in efficacious doses to get the maxim effect. YOu don't hae time for junk miles in your training program or in your skin care routine.<\/p>"
+            "description": "<p>We carefuly choose science backed ingredients and use them in efficacious doses to get the maxim effect. YOu don't hae time for junk miles in your training program or in your skin care routine.<\/p>",
+            "image": "shopify:\/\/shop_images\/needsofanathlete_Icon_Efficacious.png"
           }
         },
         "6be74be6-16da-4d3d-b4ac-be6257da7953": {
@@ -216,7 +217,8 @@
           "disabled": true,
           "settings": {
             "title": "Protective",
-            "description": "<p>As athletes our skin our skin is exposed to a variety of conditions and aggressors, such as wind, sun, hot cold, chlorine. At the core of our product line are ingredients that heal and protect the skin barrier. <\/p>"
+            "description": "<p>As athletes our skin our skin is exposed to a variety of conditions and aggressors, such as wind, sun, hot cold, chlorine. At the core of our product line are ingredients that heal and protect the skin barrier. <\/p>",
+            "image": "shopify:\/\/shop_images\/needsofanathlete_Icon_Protective.png"
           }
         },
         "5188145e-1283-43f5-8fa6-49b03db17ee0": {
@@ -224,7 +226,8 @@
           "disabled": true,
           "settings": {
             "title": "Sensitivity Free",
-            "description": "<p>We don't use any harsh ingredients that cause sun sensitivity or skin discomfort.  Your face will not sting when you use our products, even when wind burned or dehydrated<\/p>"
+            "description": "<p>We don't use any harsh ingredients that cause sun sensitivity or skin discomfort.  Your face will not sting when you use our products, even when wind burned or dehydrated<\/p>",
+            "image": "shopify:\/\/shop_images\/needsofanathlete_Icon_Sensitivity.png"
           }
         }
       },
