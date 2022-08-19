@@ -211,9 +211,17 @@
         },
         "6be74be6-16da-4d3d-b4ac-be6257da7953": {
           "type": "detailed",
+          "disabled": true,
           "settings": {
             "title": "Protective",
             "description": "<p>As athletes our skin<\/p>"
+          }
+        },
+        "5188145e-1283-43f5-8fa6-49b03db17ee0": {
+          "type": "detailed",
+          "settings": {
+            "title": "Sensitivity Free",
+            "description": "<p>We don't use any harsh ingredients <\/p>"
           }
         }
       },
@@ -224,7 +232,8 @@
         "c382f5c0-5ba2-4740-b455-a3101ff01f30",
         "369fa702-8a04-4d80-83ee-08c1df6ca429",
         "a99e92c8-367a-44b2-9cca-2e334a520843",
-        "6be74be6-16da-4d3d-b4ac-be6257da7953"
+        "6be74be6-16da-4d3d-b4ac-be6257da7953",
+        "5188145e-1283-43f5-8fa6-49b03db17ee0"
       ],
       "settings": {
         "content_type": "detailed",
