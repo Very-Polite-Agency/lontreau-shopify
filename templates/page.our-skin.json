@@ -191,13 +191,21 @@
             "title": "Biomimetic",
             "description": "<p>Our products integrate nature and science...<\/p>"
           }
+        },
+        "369fa702-8a04-4d80-83ee-08c1df6ca429": {
+          "type": "detailed",
+          "settings": {
+            "title": "Simple",
+            "description": "<p>Our Philosophy<\/p>"
+          }
         }
       },
       "block_order": [
         "0be36e13-37b8-4585-bd57-fb626debe9e8",
         "e98410e9-a551-42d8-aa2c-df3ff9da1c4b",
         "c616d856-9b6c-4a8f-a9d9-85f9409c7d3d",
-        "c382f5c0-5ba2-4740-b455-a3101ff01f30"
+        "c382f5c0-5ba2-4740-b455-a3101ff01f30",
+        "369fa702-8a04-4d80-83ee-08c1df6ca429"
       ],
       "settings": {
         "content_type": "detailed",
