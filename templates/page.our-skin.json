@@ -187,6 +187,7 @@
         },
         "c382f5c0-5ba2-4740-b455-a3101ff01f30": {
           "type": "detailed",
+          "disabled": true,
           "settings": {
             "title": "Biomimetic",
             "description": "<p>Our products integrate nature and science with ingredients that mimic skin structures and biochemicals which enable optimal delivery and results.<\/p>",
@@ -195,6 +196,7 @@
         },
         "369fa702-8a04-4d80-83ee-08c1df6ca429": {
           "type": "detailed",
+          "disabled": true,
           "settings": {
             "title": "Simple",
             "description": "<p>Our philosophy extends to both our packaging and our product line: no complex routines requiring a specific order of products, no fragile or heavy packaging, just what is necessary.<\/p>",
