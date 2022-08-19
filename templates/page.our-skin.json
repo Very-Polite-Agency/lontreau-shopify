@@ -198,6 +198,13 @@
             "title": "Simple",
             "description": "<p>Our Philosophy<\/p>"
           }
+        },
+        "a99e92c8-367a-44b2-9cca-2e334a520843": {
+          "type": "detailed",
+          "settings": {
+            "title": "Efficacious",
+            "description": "<p>We choose...<\/p>"
+          }
         }
       },
       "block_order": [
@@ -205,7 +212,8 @@
         "e98410e9-a551-42d8-aa2c-df3ff9da1c4b",
         "c616d856-9b6c-4a8f-a9d9-85f9409c7d3d",
         "c382f5c0-5ba2-4740-b455-a3101ff01f30",
-        "369fa702-8a04-4d80-83ee-08c1df6ca429"
+        "369fa702-8a04-4d80-83ee-08c1df6ca429",
+        "a99e92c8-367a-44b2-9cca-2e334a520843"
       ],
       "settings": {
         "content_type": "detailed",
