@@ -190,7 +190,8 @@
           "disabled": true,
           "settings": {
             "title": "Biomimetic",
-            "description": "<p>Our products integrate nature and science with ingredients that mimic skin structures and biochemicals which enable optimal delivery and results.<\/p>"
+            "description": "<p>Our products integrate nature and science with ingredients that mimic skin structures and biochemicals which enable optimal delivery and results.<\/p>",
+            "image": "shopify:\/\/shop_images\/needsofanathlete_Icon_Biomimetic.png"
           }
         },
         "369fa702-8a04-4d80-83ee-08c1df6ca429": {
@@ -198,7 +199,8 @@
           "disabled": true,
           "settings": {
             "title": "Simple",
-            "description": "<p>Our philosophy extends to both our packaging and our product line: no complex routines requiring a specific order of products, no fragile or heavy packaging, just what is necessary.<\/p>"
+            "description": "<p>Our philosophy extends to both our packaging and our product line: no complex routines requiring a specific order of products, no fragile or heavy packaging, just what is necessary.<\/p>",
+            "image": "shopify:\/\/shop_images\/needsofanathlete_Icon_Simple.png"
           }
         },
         "a99e92c8-367a-44b2-9cca-2e334a520843": {
