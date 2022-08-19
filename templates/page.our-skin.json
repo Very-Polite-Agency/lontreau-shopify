@@ -219,6 +219,7 @@
         },
         "5188145e-1283-43f5-8fa6-49b03db17ee0": {
           "type": "detailed",
+          "disabled": true,
           "settings": {
             "title": "Sensitivity Free",
             "description": "<p>We don't use any harsh ingredients <\/p>"
