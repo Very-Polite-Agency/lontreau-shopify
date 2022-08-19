@@ -184,12 +184,20 @@
             "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine to sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>",
             "image": "shopify:\/\/shop_images\/needs-athlete-9_3x2_08ec1b15-95a2-460a-ba94-010e9c32e097.png"
           }
+        },
+        "c382f5c0-5ba2-4740-b455-a3101ff01f30": {
+          "type": "detailed",
+          "settings": {
+            "title": "Biomimetic",
+            "description": "<p>Our products integrate nature and science...<\/p>"
+          }
         }
       },
       "block_order": [
         "0be36e13-37b8-4585-bd57-fb626debe9e8",
         "e98410e9-a551-42d8-aa2c-df3ff9da1c4b",
-        "c616d856-9b6c-4a8f-a9d9-85f9409c7d3d"
+        "c616d856-9b6c-4a8f-a9d9-85f9409c7d3d",
+        "c382f5c0-5ba2-4740-b455-a3101ff01f30"
       ],
       "settings": {
         "content_type": "detailed",
