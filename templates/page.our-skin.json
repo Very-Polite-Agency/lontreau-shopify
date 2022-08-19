@@ -187,6 +187,7 @@
         },
         "c382f5c0-5ba2-4740-b455-a3101ff01f30": {
           "type": "detailed",
+          "disabled": true,
           "settings": {
             "title": "Biomimetic",
             "description": "<p>Our products integrate nature and science...<\/p>"
@@ -194,6 +195,7 @@
         },
         "369fa702-8a04-4d80-83ee-08c1df6ca429": {
           "type": "detailed",
+          "disabled": true,
           "settings": {
             "title": "Simple",
             "description": "<p>Our Philosophy<\/p>"
@@ -201,9 +203,17 @@
         },
         "a99e92c8-367a-44b2-9cca-2e334a520843": {
           "type": "detailed",
+          "disabled": true,
           "settings": {
             "title": "Efficacious",
             "description": "<p>We choose...<\/p>"
+          }
+        },
+        "6be74be6-16da-4d3d-b4ac-be6257da7953": {
+          "type": "detailed",
+          "settings": {
+            "title": "Protective",
+            "description": "<p>As athletes our skin<\/p>"
           }
         }
       },
@@ -213,7 +223,8 @@
         "c616d856-9b6c-4a8f-a9d9-85f9409c7d3d",
         "c382f5c0-5ba2-4740-b455-a3101ff01f30",
         "369fa702-8a04-4d80-83ee-08c1df6ca429",
-        "a99e92c8-367a-44b2-9cca-2e334a520843"
+        "a99e92c8-367a-44b2-9cca-2e334a520843",
+        "6be74be6-16da-4d3d-b4ac-be6257da7953"
       ],
       "settings": {
         "content_type": "detailed",
