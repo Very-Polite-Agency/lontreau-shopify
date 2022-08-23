@@ -8,7 +8,7 @@
       "settings": {
         "hero_heading": "Shopping Bag",
         "empty_heading": "It looks like your bag is empty.",
-        "empty_message": "<p>Let's fix that. <a href=\"\/collections\/base-collection\" title=\"Base Collection\">Shop<\/a> our latest collection.<\/p>"
+        "empty_message": "<p>Let's fix that. <a href=\"\/collections\/core-collection\" title=\"Core Collection\">Shop<\/a> our latest collection.<\/p>"
       }
     }
   }

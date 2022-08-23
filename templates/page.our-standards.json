@@ -25,7 +25,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Lontreau_Sustainable-Ingredients.png",
             "title": "Ingredients",
-            "message": "<p>All our ingredient-dense formulations are designed to simplify your skincare routine by supporting  barrier function and reducing the packaging waste caused by product overconsumption. We focus on finding ingredients that are clinically proven to be efficacious, non-GMO, manufactured in Canada and produced from renewable resources. As part of our commitment to clean, we've applied for the prestigious EWG Certification.<\/p>"
+            "message": "<p>All our ingredient-dense formulations are designed to simplify your skincare routine by supporting  barrier function and reducing waste caused by product overconsumption. We focus on finding and selecting ingredients that are clinically proven to be efficacious, natural, responsibly sourced, renewable and, whenever possbile, manufactured in Canada. As part of our commitment to clean, we've carefully avoided over 2,700 ingredients frequently used in mainstream beauty products.<\/p>"
           }
         },
         "0e464fce-edaa-427b-90ad-e390c3d89341": {
@@ -33,7 +33,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Lontreau_Sustainable-Packaging.png",
             "title": "Packaging",
-            "message": "<p>Along with our commitment to reducing packaging waste through synergistic formulations, we've specially designed our packaging to be BPA free, 100% recyclable and Plastic Negative. We aim to continue researching ways to improve sustainability.<\/p>"
+            "message": "<p>Along with our commitment to reducing packaging waste through synergistic formulations (meaning our formulations do more than just one thing), we've specially designed our packaging to be BPA free and 100% recyclable. We are Plastic Negative and we are continuing to focus on improving our environmental footprint.<\/p>"
           }
         }
       },
@@ -74,7 +74,7 @@
         "55ddd189-8124-4a23-aecd-7bd5fcf975ab": {
           "type": "minimal",
           "settings": {
-            "title": "Paraben Free",
+            "title": "Paraben-Free",
             "image": "shopify:\/\/shop_images\/our-standards-12_3x_5e0ac86b-d3c1-4820-8054-7b4bff68e178.png"
           }
         },
@@ -82,14 +82,14 @@
           "type": "minimal",
           "settings": {
             "title": "Vegan",
-            "image": "shopify:\/\/shop_images\/our-standards-10_3x_3c5d1b7d-1db2-41c7-86d1-36d3e390ce0a.png"
+            "image": "shopify:\/\/shop_images\/our-standards-vegan.png"
           }
         },
         "405a91c6-dc52-49de-b5f1-0d7d134e9c9a": {
           "type": "minimal",
           "settings": {
             "title": "Sustainable",
-            "image": "shopify:\/\/shop_images\/our-standards-13_3x_887f99ec-ad91-4bf6-80bc-193f8aa155f5.png"
+            "image": "shopify:\/\/shop_images\/our-standards-sustainable.png"
           }
         },
         "59374510-d779-47cc-b2c4-4830d0cd0bb2": {
@@ -133,6 +133,41 @@
             "title": "Gluten-Free",
             "image": "shopify:\/\/shop_images\/our-standards-18_3x_3a0b5683-a52b-4aa4-9d3e-44238435cc5b.png"
           }
+        },
+        "940d8c5c-444a-4bb5-8aed-e72169cc816c": {
+          "type": "minimal",
+          "settings": {
+            "title": "Mineral Oils-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-mineraloilsfree_c002443e-a7fe-40eb-9507-0c77db40ed9f.png"
+          }
+        },
+        "4016e126-c48b-49a3-9cac-b678f7aee6bc": {
+          "type": "minimal",
+          "settings": {
+            "title": "Formaldehyde Donors-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-formaldehydedonorsfree.png"
+          }
+        },
+        "f344d4f1-0959-4530-860c-14cb7ffd6e51": {
+          "type": "minimal",
+          "settings": {
+            "title": "Silicone-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-siliconefree.png"
+          }
+        },
+        "413d7327-a042-4df9-bf78-97b17367bf83": {
+          "type": "minimal",
+          "settings": {
+            "title": "Synthetic Fragrance-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-syntheticfragrancefree.png"
+          }
+        },
+        "cc4d87ec-dcaf-46bc-8d3c-cb256286f50d": {
+          "type": "minimal",
+          "settings": {
+            "title": "Phthalates-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-phthalatesfree.png"
+          }
         }
       },
       "block_order": [
@@ -144,7 +179,12 @@
         "df62e874-728b-488b-8712-17cf21407dfb",
         "ae6de2d9-deb0-4954-b283-239912189ccb",
         "55691b42-dd06-4b95-97c8-8dcda0b9d52b",
-        "a3a7227d-7cdf-4975-a551-264d22f96210"
+        "a3a7227d-7cdf-4975-a551-264d22f96210",
+        "940d8c5c-444a-4bb5-8aed-e72169cc816c",
+        "4016e126-c48b-49a3-9cac-b678f7aee6bc",
+        "f344d4f1-0959-4530-860c-14cb7ffd6e51",
+        "413d7327-a042-4df9-bf78-97b17367bf83",
+        "cc4d87ec-dcaf-46bc-8d3c-cb256286f50d"
       ],
       "settings": {
         "content_type": "minimal",
@@ -163,7 +203,7 @@
         "title": "",
         "heading": "<p><em>No Fuss<\/em> Formulations<\/p>",
         "heading_highlight": "circle",
-        "message": "<p>Our synergistic formulations are designed to simplify your skincare routine. Every step in the Lontreau Core Kit can be pumped directly into your hand, emulsified and applied all at once. Skip the multi-step routine and focus on the things that move you with Lontreau's science-backed formulas. <\/p>",
+        "message": "<p>Our synergistic formulations are designed to simplify your skincare routine. Every step in the Lontreau <a href=\"https:\/\/lontreau.myshopify.com\/products\/sample-product-alpha\" title=\"https:\/\/lontreau.myshopify.com\/products\/sample-product-alpha\">Core 4 Kit<\/a> can be pumped directly into your hand, emulsified and applied all at once. Skip the multi-step routine and focus on the things that move you with Lontreau's science-backed formulas. <\/p>",
         "cta_title": "",
         "cta_link": "",
         "image": "shopify:\/\/shop_images\/daniel-faro_DTS_Skin_013_e5838c74-c32e-447d-a201-273a93c51c5f.jpg",

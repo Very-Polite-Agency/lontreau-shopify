@@ -24,7 +24,7 @@
         "title": "",
         "heading": "<p>Skin + <em>The Elements<\/em><\/p>",
         "heading_highlight": "circle",
-        "message": "<p>As athletes, our passions can take us from early morning swims to mid-day runs in the sun and long bike rides fighting against wind and exhaust. We do it all because we love it — but an athlete’s skin is exposed to a wide range of environmental stressors like sun, cold, wind, pollution and chemicals. At Lontreau, we use the latest science and research to create unique formulations designed specifically to help protect and restore an athlete’s skin.<br\/><\/p>",
+        "message": "<p>As athletes, our passions take us from early morning swims to mid-day runs in the sun and long bike rides fighting against wind and pollution. We do it all because we love it — but an athlete’s skin is exposed to a wide range of environmental stressors like sun, cold, wind, pollution and chemicals. At Lontreau, we use the latest science and research to create unique formulations designed specifically to help protect and restore an athlete’s skin.<br\/><\/p>",
         "cta_title": "",
         "cta_link": "",
         "parallax": false,
@@ -52,7 +52,7 @@
           "type": "accordion",
           "settings": {
             "title": "UV, Infrared and Heat Induced Damage",
-            "message": "<p>For many years, sun-induced aging was strictly attributed to ultraviolet rays (UV), but infrared (IR) rays and the heat they generate also contribute to the loss of skin firmness and elasticity, and lead to the appearance of premature wrinkles. <br\/><br\/>Think of all those long days on road bikes with your face battling the heat from the sun and hot cement. Our <a href=\"\/products\/sample-product-alpha\" title=\"Core 4\">Core 4<\/a> kit is a curated set of skin health solutions strategically formulated to provide global management of infrared and heat-induced aging in addition to boosting the efficacy of your sunscreen with UV protection boosters. Our thoughtful selection of science-based ingredients, such as Knot Grass Extract found in our <a href=\"\/products\/lontreau-game-changer-global-antioxidant-serum\" title=\"Game Changer Global Antioxidant Serum\">Game Changer Global Antioxidant Serum<\/a> provides a breakthrough in treating photoaging and infrared & heat-induced skin damage.<\/p>",
+            "message": "<p>For many years, sun-induced aging was strictly attributed to ultraviolet rays (UV), but infrared (IR) rays and the heat they generate also contribute to the loss of skin firmness and elasticity, and lead to the appearance of premature wrinkles. <br\/><br\/>Think of all those long days on road bikes with your face battling the heat from the sun and hot cement. Our <a href=\"\/products\/sample-product-alpha\" title=\"Core 4\">Core 4<\/a> kit is a curated set of skin health solutions strategically formulated to provide global management of infrared and heat-induced aging in addition to boosting the efficacy of your sunscreen with UV protection boosters. Our thoughtful selection of science-based ingredients, such as Knotgrass Extract found in our <a href=\"\/products\/lontreau-game-changer-global-antioxidant-serum\" title=\"Game Changer Global Antioxidant Serum\">Game Changer Global Antioxidant Serum<\/a> provides a breakthrough in treating photoaging and infrared & heat-induced skin damage.<\/p>",
             "cta_title": "",
             "cta_link": "",
             "image": "shopify:\/\/shop_images\/Lontreau-our-skin-2.png",
@@ -100,7 +100,7 @@
           "type": "accordion",
           "settings": {
             "title": "Microbiota & Skin Dysbiosis",
-            "message": "<p>Each of us have a unique microbiota composition that writes the code for our skin’s immunity and barrier function. As is true with gut health, microbiota biodiversity is essential to skin health as well. A balanced microbiota is dependent on factors like genetics, lifestyle and diet. As athletes, we pressure our skin in intense conditions caused by temperature fluctuations, pH imbalances from chemicals and pollution and UV exposure.<\/p><p>To create balance and ensure a healthy environment for beneficial resident microorganisms, the skin requires natural healers like hydration, nutrients, pH and antimicrobial peptides. An imbalance in the microbiota is called skin dysbiosis, which leads to an onslaught of common skin health concerns like dullness, dryness, acne, inflammation and premature aging. Our formulations in the <a href=\"\/products\/sample-product-alpha\" title=\"Core 4\">Core 4 <\/a>help balance the microbiota to deliver hydration and radiance, along with preserving and reinforcing the skin’s barrier.<\/p>",
+            "message": "<p>Each of us have a unique microbiota composition that writes the code for our skin’s immunity and barrier function. As is true with gut health, microbiota biodiversity is essential to skin health as well. A balanced microbiota is dependent on factors like genetics, lifestyle and diet. As athletes, we pressure our skin in intense conditions caused by temperature fluctuations, pH imbalances from chemicals and pollution and UV exposure.<\/p><p>To create balance and ensure a healthy environment for beneficial resident microorganisms, the skin requires natural healers like hydration, nutrients, pH and antimicrobial peptides. An imbalance in the microbiota is called skin dysbiosis, which leads to an onslaught of common skin health concerns like dullness, dryness, acne, inflammation and premature aging. Our formulations in the <a href=\"\/products\/sample-product-alpha\" title=\"Core 4\">Core 4 Kit <\/a>help balance the microbiota to deliver hydration and radiance, along with preserving and reinforcing the skin’s barrier.<\/p>",
             "cta_title": "",
             "cta_link": "",
             "image": "shopify:\/\/shop_images\/Lontreau-our-skin-6.png",
@@ -148,7 +148,7 @@
         "heading": "",
         "heading_highlight": "standard",
         "message": "<p>Athletes expect a lot from their bodies - but what about their skin? From the chlorine of a pool to the pollution from road cycling or the extreme cold of skiing, our skin is constantly up against the elements. That’s why we create ingredient-rich formulations that are designed specifically for an athlete’s skin. We thoughtfully select our ingredients to create efficacious formulas that work as hard as you do.<\/p>",
-        "cta_title": "Learn more about Our Ingredients",
+        "cta_title": "Learn More About Our Ingredients",
         "cta_link": "shopify:\/\/pages\/our-ingredients",
         "image": "shopify:\/\/shop_images\/Screen_Shot_2022-06-28_at_11.11.14_AM.png",
         "hide_image_mobile": false,
@@ -180,16 +180,66 @@
         "c616d856-9b6c-4a8f-a9d9-85f9409c7d3d": {
           "type": "detailed",
           "settings": {
-            "title": "Prevention",
+            "title": "Preventive",
             "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine to sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>",
             "image": "shopify:\/\/shop_images\/needs-athlete-9_3x2_08ec1b15-95a2-460a-ba94-010e9c32e097.png"
+          }
+        },
+        "c382f5c0-5ba2-4740-b455-a3101ff01f30": {
+          "type": "detailed",
+          "disabled": true,
+          "settings": {
+            "title": "Biomimetic",
+            "description": "<p>Our products integrate nature and science with ingredients that mimic skin structures and biochemicals which enable optimal delivery and results.<\/p>",
+            "image": "shopify:\/\/shop_images\/needsofanathlete_Icon_Biomimetic.png"
+          }
+        },
+        "369fa702-8a04-4d80-83ee-08c1df6ca429": {
+          "type": "detailed",
+          "disabled": true,
+          "settings": {
+            "title": "Simple",
+            "description": "<p>Our philosophy extends to both our packaging and our product line: no complex routines requiring a specific order of products, no fragile or heavy packaging, just what is necessary.<\/p>",
+            "image": "shopify:\/\/shop_images\/needsofanathlete_Icon_Simple.png"
+          }
+        },
+        "a99e92c8-367a-44b2-9cca-2e334a520843": {
+          "type": "detailed",
+          "disabled": true,
+          "settings": {
+            "title": "Efficacious",
+            "description": "<p>We carefuly choose science backed ingredients and use them in efficacious doses to get the maxim effect. YOu don't hae time for junk miles in your training program or in your skin care routine.<\/p>",
+            "image": "shopify:\/\/shop_images\/needsofanathlete_Icon_Efficacious.png"
+          }
+        },
+        "6be74be6-16da-4d3d-b4ac-be6257da7953": {
+          "type": "detailed",
+          "disabled": true,
+          "settings": {
+            "title": "Protective",
+            "description": "<p>As athletes our skin our skin is exposed to a variety of conditions and aggressors, such as wind, sun, hot cold, chlorine. At the core of our product line are ingredients that heal and protect the skin barrier. <\/p>",
+            "image": "shopify:\/\/shop_images\/needsofanathlete_Icon_Protective.png"
+          }
+        },
+        "5188145e-1283-43f5-8fa6-49b03db17ee0": {
+          "type": "detailed",
+          "disabled": true,
+          "settings": {
+            "title": "Sensitivity Free",
+            "description": "<p>We don't use any harsh ingredients that cause sun sensitivity or skin discomfort.  Your face will not sting when you use our products, even when wind burned or dehydrated<\/p>",
+            "image": "shopify:\/\/shop_images\/needsofanathlete_Icon_Sensitivity.png"
           }
         }
       },
       "block_order": [
         "0be36e13-37b8-4585-bd57-fb626debe9e8",
         "e98410e9-a551-42d8-aa2c-df3ff9da1c4b",
-        "c616d856-9b6c-4a8f-a9d9-85f9409c7d3d"
+        "c616d856-9b6c-4a8f-a9d9-85f9409c7d3d",
+        "c382f5c0-5ba2-4740-b455-a3101ff01f30",
+        "369fa702-8a04-4d80-83ee-08c1df6ca429",
+        "a99e92c8-367a-44b2-9cca-2e334a520843",
+        "6be74be6-16da-4d3d-b4ac-be6257da7953",
+        "5188145e-1283-43f5-8fa6-49b03db17ee0"
       ],
       "settings": {
         "content_type": "detailed",

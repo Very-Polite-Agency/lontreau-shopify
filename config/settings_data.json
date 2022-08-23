@@ -1,8 +1,8 @@
 {
   "current": {
-    "social_link_facebook": "https:\/\/www.facebook.com\/",
-    "social_link_instagram": "https:\/\/www.instagram.com\/",
-    "social_link_twitter": "https:\/\/twitter.com\/",
+    "social_link_facebook": "https:\/\/www.facebook.com\/lontreau",
+    "social_link_instagram": "https:\/\/www.instagram.com\/lontreau\/",
+    "social_link_twitter": "",
     "checkout_logo_image": "shopify:\/\/shop_images\/Lontreau-Logo-Green-01.png",
     "checkout_logo_size": "large",
     "checkout_body_background_color": "#fafafa",
@@ -19,7 +19,7 @@
       "footer": {
         "type": "footer",
         "settings": {
-          "phone": "778-???-????",
+          "phone": "778-743-8263",
           "email": "hello@lontreau.com",
           "menu_main": "main-menu",
           "menu_extra": "lontreau-journey",
@@ -36,6 +36,14 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   }
 }

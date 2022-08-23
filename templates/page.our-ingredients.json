@@ -38,18 +38,19 @@
           "type": "accordion",
           "settings": {
             "title": "Dermal Delivery Accelerators",
-            "message": "<p>Even the best ingredients in the world do little if they sit on the surface of the skin without penetrating where they are most effective. Our products are specially formulated with a wide array of ingredients clinically proven to improve active ingredient bioavailability. They act as a carrier to enhance the performance of the active ingredients in our skincare products.<\/p>"
+            "message": "<p>Even the best ingredients in the world do little if they sit on the surface of the skin without penetrating where they are most effective. <a href=\"\/collections\/all\" target=\"_blank\" title=\"All products\">Our products<\/a> are specially formulated with a wide array of ingredients clinically proven to improve active ingredient bioavailability. They act as a carrier to enhance the performance of the active ingredients in our skincare products.<\/p>"
           }
         },
         "3fbad6b9-b1ce-4273-9eb8-9a82c90faf84": {
           "type": "accordion",
           "settings": {
             "title": "Sustainable & Responsible",
-            "message": "<p>We created a winning team of ingredients from Canada and around the world that are responsibly sourced and sustainable, like the glycogen we use in our Biomimetic Barrier Energizer which we add to <a href=\"\/products\/lontreau-game-changer-global-antioxidant-serum\" title=\"Game Changer Global Antioxidant Serum\">Game Changer<\/a>, <a href=\"\/products\/lontreau-endurance-hydration-energizing-protective-hydrator\" title=\"Endurance Hydration Energizing Protective Hydrator\">Endurance Hydration<\/a> and <a href=\"\/products\/lontreau-recovery-hero-overnight-restorative-treatment\" title=\"Recovery Hero Overnight Restorative Treatment\">Recovery Hero<\/a>. It is recognized as an unrivaled energy source by our skin cells, and is made in Canada. This ingredient uses a water-based, mechanical extraction method with no harsh solvents or chemicals. Our formulations are manufactured with pride in Canada and our packaging is 100% recycled, recyclable or offset with the RePurpose Plastic Negative Program.<\/p>"
+            "message": "<p>We created a winning team of ingredients from Canada and around the world that are responsibly sourced and sustainable.  <a href=\"\/products\/lontreau-game-changer-global-antioxidant-serum\" title=\"Game Changer Global Antioxidant Serum\">Game Changer<\/a>, <a href=\"\/products\/lontreau-endurance-hydration-energizing-protective-hydrator\" title=\"Endurance Hydration Energizing Protective Hydrator\">Endurance Hydration<\/a> and <a href=\"\/products\/lontreau-recovery-hero-overnight-restorative-treatment\" title=\"Recovery Hero Overnight Restorative Treatment\">Recovery Hero<\/a> all incorporate unique ingredients made in Canada. One of our special ingredients uses a water-based, mechanical extraction method with no harsh solvents or chemicals. Our formulations are manufactured with pride in Canada and our packaging is 100% recycled, recyclable or offset with the RePurpose Plastic Negative Program.<\/p>"
           }
         },
         "78548b8a-d6fc-46e8-9193-bc6c2439af00": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "title": "Clean",
             "message": "<p>Clean<\/p>"
@@ -57,6 +58,7 @@
         },
         "e6f383c4-e9b8-4491-b1bd-cc275c02766e": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "title": "Science",
             "message": "<p>Science<\/p>"
@@ -140,6 +142,14 @@
             "description": "<p>The best ingredients in the world do little if they sit on the surface of the skin. Our products are specially formulated to be delivered deep in the skin where the work is done.<\/p>",
             "image": "shopify:\/\/shop_images\/Infredients-35_3x_72ffba47-837a-4466-8237-00af79bde4dc.png"
           }
+        },
+        "9d7b92f0-c1eb-4113-9702-191d2ed39361": {
+          "type": "detailed",
+          "settings": {
+            "title": "Biomimetic Formulations",
+            "description": "<p>Ingredients made from natural products are uniquely selected and blended to mimic the skin's biochemical structure.<\/p>",
+            "image": "shopify:\/\/shop_images\/Biomimetic_Image_1.png"
+          }
         }
       },
       "block_order": [
@@ -149,7 +159,8 @@
         "f8894a1d-d745-4004-a6a8-ec4b00beac80",
         "a26ee92c-7f0f-4722-bfa9-f99e7068472f",
         "154709d1-26dd-492a-953b-61d044e4029d",
-        "6d673b68-3d9f-4165-be96-ac2a1f169b6e"
+        "6d673b68-3d9f-4165-be96-ac2a1f169b6e",
+        "9d7b92f0-c1eb-4113-9702-191d2ed39361"
       ],
       "settings": {
         "content_type": "detailed",

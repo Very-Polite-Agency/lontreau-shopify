@@ -22,7 +22,7 @@
       "settings": {
         "heading": "<p><em>Efficacy<\/em> is our goal<\/p>",
         "heading_highlight": "circle",
-        "content": "<p>Lontreau is dedicated to creating products that are backed by science and tailored to your needs. We use clinically tested ingredients in efficacious doses, so you get the most out of every drop. We don’t believe in junk miles when we train, and that’s true of our skincare too.<\/p>\n<ul>\n<li>Vegetal Glycogen<\/li>\n<li>Squalane<\/li>\n<li>Vegan Collagen<\/li>\n<li>Kakadu Plum Extract<\/li>\n<li>Dragon Fruit Extract<\/li>\n<\/ul>",
+        "content": "<p>Lontreau is dedicated to creating products that are backed by science and tailored to your needs. We use clinically tested ingredients in efficacious doses, so you get the most out of every drop. We don’t believe in junk miles when we train, and that’s true of our skincare too.<br><br>Some of our featured ingredients include:\n<\/p><ul>\n<li>Vegetal Glycogen<\/li>\n<li>Squalane<\/li>\n<li>Vegan Collagen<\/li>\n<li>Kakadu Plum Extract<\/li>\n<li>Dragon Fruit Extract<\/li>\n<\/ul>",
         "cta_title": "Shop Now",
         "cta_link": "shopify:\/\/collections\/all",
         "image": "shopify:\/\/shop_images\/Lontreau-Efficacy.png",
@@ -179,8 +179,8 @@
         "89009f3a-a52a-4149-8f3a-8891abb9f234": {
           "type": "accordion",
           "settings": {
-            "title": "Biomimetic Barrier Energizer",
-            "message": "<p>All Lontreau products are designed to have primary and secondary benefits as opposed to single-ingredient products that just do one thing, requiring you to follow multi-step programs. In doing so, that’s part of our commitment to reduce the number of products you need for an endurance skincare routine.<\/p><p><a href=\"\/products\/lontreau-game-changer-global-antioxidant-serum\" title=\"Game Changer Global Antioxidant Serum\">Game Changer<\/a>, <a href=\"\/products\/lontreau-endurance-hydration-energizing-protective-hydrator\" title=\"Endurance Hydration Energizing Protective Hydrator\">Endurance Hydration<\/a> & <a href=\"\/products\/lontreau-recovery-hero-overnight-restorative-treatment\" title=\"Recovery Hero Overnight Restorative Treatment\">Recovery Hero<\/a> all include our innovative Biomimetic Barrier Energizer as a secondary benefit. We use glycogen to invigorate the skin with a skin-identical blend of amino acids to support hydration and healthy barrier function.<\/p>"
+            "title": "Biomimetic Barrier Formulas",
+            "message": "<p>All Lontreau products are designed to have primary and secondary benefits as opposed to single-ingredient products that just do one thing, requiring you to follow multi-step programs. In doing so, that’s part of our commitment to reduce the number of products you need for an endurance skincare routine.<\/p><p><a href=\"\/products\/lontreau-game-changer-global-antioxidant-serum\" target=\"_blank\" title=\"Game Changer Global Antioxidant Serum\">Game Changer<\/a>, <a href=\"\/products\/lontreau-endurance-hydration-energizing-protective-hydrator\" target=\"_blank\" title=\"Endurance Hydration Energizing Protective Hydrator\">Endurance Hydration,<\/a> <a href=\"\/products\/lontreau-recovery-hero-overnight-restorative-treatment\" target=\"_blank\" title=\"Recovery Hero Overnight Restorative Treatment\">Recovery Hero<\/a> and <a href=\"\/products\/lontreau-most-valuable-player-30-vitamin-c-in-squalane\" target=\"_blank\" title=\"MVP (Most Valuable Player) 30% Vitamin C in Squalane\">MVP<\/a> all include our innovative Biomimetic Barrier Formulations. We use natural ingredients to mimic the skin's biochemical structure. <\/p>"
           }
         }
       },
@@ -194,7 +194,7 @@
       "settings": {
         "heading": "<p><em>Formulation<\/em> Playbook<\/p>",
         "heading_highlight": "standard",
-        "message": "<p>Lontreau formulations include a synergistic blend of clinically proven ingredients specifically designed for the needs of athletes.<\/p>",
+        "message": "<p>Lontreau formulations include a synergistic blend of clinically proven ingredients specifically designed for the needs of athletes and everyday movers.<\/p>",
         "image": "shopify:\/\/shop_images\/Product-1212.jpg",
         "anchor_id": "",
         "style": "standard",

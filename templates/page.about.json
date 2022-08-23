@@ -17,13 +17,90 @@
         "curved_arrow_enable": false
       }
     },
+    "165971894678d8720c": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "",
+        "heading": "<p>Informed by Science <\/p><p><em>Designed to Move<\/em><\/p>",
+        "heading_highlight": "stroke",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/Lontreau_Informed-by-science_91920139-ee56-47cc-a79e-8bae46624744.png",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "large",
+        "curved_arrow_enable": false
+      }
+    },
+    "16597191666b46ebb5": {
+      "type": "fifty-fifty-feature",
+      "settings": {
+        "title": "",
+        "heading": "",
+        "heading_highlight": "standard",
+        "message": "<p>Athletes expect a lot from their bodies - but what about their skin? From the chlorine of a pool to the pollution from road cycling or the extreme cold of skiing, our skin is constantly up against the elements. That’s why we create ingredient-rich formulations that are designed specifically for an athlete’s skin. We thoughtfully select our ingredients to create efficacious formulas that work as hard as you do.<\/p>",
+        "cta_title": "Learn More About Our Ingredients",
+        "cta_link": "shopify:\/\/pages\/our-ingredients",
+        "image": "shopify:\/\/shop_images\/Lontreau_Our-ingredients_0490f3c7-da2b-4d4d-bc0a-1b6c58a52de1.png",
+        "hide_image_mobile": false,
+        "anchor_id": "",
+        "style": "wide",
+        "layout": "image-right",
+        "colour_theme": "light"
+      }
+    },
+    "1659719470adaa7cac": {
+      "type": "carousel-education",
+      "blocks": {
+        "d7bf6bf4-4606-49e2-a96a-48f277532964": {
+          "type": "detailed",
+          "settings": {
+            "title": "Synergistic",
+            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is  better for your skin barrier, and the planet.<\/p>",
+            "image": "shopify:\/\/shop_images\/needs-athlete-7_3x_5fd6d023-2f8c-4938-b8e3-3fb98e81e800.png"
+          }
+        },
+        "8273c666-f5bd-4cd3-9142-638540e96910": {
+          "type": "detailed",
+          "settings": {
+            "title": "Innovative",
+            "description": "<p>Our skincare products are rooted in science. We carefully select research-backed ingredients to design high-performing preventative skincare formulations that can stand up to extreme environments and lifestyles.<\/p>",
+            "image": "shopify:\/\/shop_images\/needs-athlete-8_3x2_a44c1bfd-f650-4655-af29-e76602f12969.png"
+          }
+        },
+        "1400945d-4fd5-443d-9c00-b162385cb925": {
+          "type": "detailed",
+          "settings": {
+            "title": "Preventative",
+            "description": "<p>An athlete’s skin faces a range of environmental stressors on a daily basis, from pollution, heat, cold, wind, sun, chlorine to sweat, that’s why we use clinically proven ingredients to support skin health.<\/p>",
+            "image": "shopify:\/\/shop_images\/needs-athlete-9_3x2_08ec1b15-95a2-460a-ba94-010e9c32e097.png"
+          }
+        }
+      },
+      "block_order": [
+        "d7bf6bf4-4606-49e2-a96a-48f277532964",
+        "8273c666-f5bd-4cd3-9142-638540e96910",
+        "1400945d-4fd5-443d-9c00-b162385cb925"
+      ],
+      "settings": {
+        "content_type": "detailed",
+        "alignment": "left",
+        "heading": "<p><em>The Needs<\/em> of an Athlete<\/p>",
+        "heading_highlight": "circle",
+        "message": "",
+        "anchor_id": "",
+        "colour_theme": "dark"
+      }
+    },
     "16583384896d670434": {
       "type": "fifty-fifty-feature",
       "settings": {
         "title": "",
         "heading": "<p>We <em>know<\/em> skin<\/p>",
         "heading_highlight": "standard",
-        "message": "<p>Lontreau is founded by the co-founder of renowned medical aesthetic and cosmetic surgery clinic, 8 West Clinic. With over 10 years in the business of skin, Lontreau products have been developed to support the common concerns of clients, while being uniquely tailored to athletes. The team behind Lontreau is passionate about sport and use their own experience to develop products that can benefit everyone from everyday movers to all types of athletes.<\/p>",
+        "message": "<p>Lontreau is founded by the co-owner of renowned medical aesthetic and cosmetic surgery clinic, 8 West Clinic. With over a decade in the business of skin, Lontreau products have been developed to support the common concerns of clients, while being uniquely tailored to the needs of an athlete's skin. The team behind Lontreau is passionate about sport and use their own experience to develop products that can benefit everyone from everyday movers to all types of athletes.<\/p>",
         "cta_title": "Shop now",
         "cta_link": "shopify:\/\/collections\/all",
         "image": "shopify:\/\/shop_images\/EnduranceHydration-0649_ffbd700e-f8db-43f8-bf40-eadb5a78dab6.jpg",
@@ -56,10 +133,10 @@
         "67c6586e-baf9-4b9e-a127-e574a031532d": {
           "type": "team_member",
           "settings": {
-            "photo": "shopify:\/\/shop_images\/Screen_Shot_2022-05-25_at_6.09.45_PM.png",
+            "photo": "shopify:\/\/shop_images\/Lontreau-AngieBuonassisi.png",
             "title": "Angie Buonassisi",
-            "job_title": "Decision Maker",
-            "bio": "<p>Angie is a dedicated athlete trying to balance sport, activities with her young children and work. Like most modern women trying to find balance in a demanding world, she doesn’t have time for a complicated skincare routine. She was inspired to develop a line of products that support the extreme conditions of an athlete’s lifestyle — from pollution to the elements. As the co-owner of the 8 West Clinic, she sees the concerns and needs of thousands of patients. Beyond creating a skincare brand that meets the unique needs of an athlete’s skin, she is also passionate about creating a community that is inspired by the support and strength of female athletes. As of 2022, she is in her 6th and final year on the Board of Directors for Cycling BC.<\/p>"
+            "job_title": "Founder & CEO",
+            "bio": "<p>Angie is a dedicated athlete trying to balance sport, activities with her young children and work. Like most modern women trying to find balance in a demanding world, she doesn’t have time for a complicated skincare routine. She was inspired to develop a line of products that support the extreme conditions of an athlete’s lifestyle — from pollution to the elements. As the co-owner of 8 West Clinic, she sees the concerns and needs of thousands of patients. Beyond creating a skincare brand that meets the unique needs of an athlete’s skin, she is also passionate about creating a community that is inspired by the support and strength of female athletes. This year she served her 6th and final year on the Board of Directors for Cycling BC. Angie is also a founding member of Team Velogrit Lontreau, a group of women committed to pushing themselves on the bike, friendship and fun. In 2021 & 2022 the team crafted their own events as part of the Courage 2 Go Further challenge in support of Coast Mental Health. In addition to riding 220km in 2021 and over 5,000 vertical metres in 2022, the team raised $110k for Coast Mental Health, inspiring those around them to set lofty goals! <\/p>"
           }
         },
         "594b8bec-0553-4182-bca7-1755dc6bf452": {
@@ -152,6 +229,9 @@
   },
   "order": [
     "main",
+    "165971894678d8720c",
+    "16597191666b46ebb5",
+    "1659719470adaa7cac",
     "16583384896d670434",
     "1650406820d7117f5d",
     "16504147450799a25f",

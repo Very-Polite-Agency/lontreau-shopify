@@ -21,7 +21,7 @@
         "5db11ac2-eca7-447a-b5a6-ff51422762da": {
           "type": "marker",
           "settings": {
-            "title": "Polution Defense"
+            "title": "Pollution Defense"
           }
         },
         "683969a5-2847-450d-bfe0-18a88fbcaa0d": {
@@ -44,14 +44,14 @@
         "f645e044-5240-4e1a-907c-711830cb95aa"
       ],
       "settings": {
-        "product": "sample-product-alpha",
+        "product": "core4kit",
         "image": "shopify:\/\/shop_images\/Lontreau-The-only-kit-you-need.png",
         "heading": "<p>The <em>only kit<\/em> <\/p><p>you need. <\/p>",
         "heading_highlight": "circle",
         "message": "",
         "aside_heading": "The Core Kit",
         "aside_subheading": "{{ section.settings.product.title }}",
-        "aside_message": "<p>Lontreau's Core 4 Kit is specifically formulated for the athlete and designed to simplify your skincare routine. The Core Kit features products that hydrate, energize and protect the athlete’s skin from environmental stressors. Includes: Endurance Hydration, an energizing protective hydrator, Game Changer, a global antioxidant serum, Recover Hero, an overnight restorative treatment and MVP, a 30% Vitamin C oil in Squalane. <\/p>",
+        "aside_message": "<p>Lontreau's Core 4 Kit is specifically formulated for the athlete and designed to simplify your skincare routine. The Core 4 Kit includes four products that hydrate, energize and protect the athlete’s skin from environmental stressors. Includes: Endurance Hydration, <em>an energizing protective hydrator. <\/em>Game Changer, <em>a global antioxidant serum. <\/em>Recovery Hero, <em>an overnight restorative treatment. <\/em>MVP, <em>a 30% Vitamin C Oil in Squalane. <\/em><\/p>",
         "anchor_id": "",
         "colour_theme": "light"
       }
@@ -81,7 +81,7 @@
         "title": "",
         "heading": "<p><em>Goal-setting<\/em> ingredients<\/p>",
         "heading_highlight": "stroke",
-        "message": "<p>We create science-driven and efficacious formulas that use synergistic ingredients to protect your skin from the elements and everyday life. We believe skin health is a journey, and our goal is to create a powerful set of products that encourage women to move intentionally and confidently — whatever moves you make.<\/p>",
+        "message": "<p>We create science-driven and efficacious formulas that use synergistic ingredients to protect your skin from the elements and everyday life. We believe skin health is a journey, and our goal is to create a powerful set of products that encourage you to move intentionally and confidently — whatever moves you make.<\/p>",
         "cta_title": "Shop Now",
         "cta_link": "shopify:\/\/collections\/all",
         "image": "shopify:\/\/shop_images\/Lontreau_Goal-setting-Ingredients_d5f740f2-1133-4edd-8c47-fddcdd8d1a0c.png",

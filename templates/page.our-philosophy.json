@@ -23,7 +23,7 @@
         "title": "",
         "heading": "<p>We <em>know<\/em> skin<\/p>",
         "heading_highlight": "standard",
-        "message": "<p>Lontreau is founded by the co-founder of renowned medical aesthetic and cosmetic surgery clinic, 8 West Clinic. With over 10 years in the business of skin, Lontreau products have been developed to support the common concerns of clients, while being uniquely tailored to athletes. The team behind Lontreau is passionate about sport and use their own experience to develop products that can benefit everyone from everyday movers to all types of athletes.<\/p>",
+        "message": "<p>Lontreau is founded by the co-founder of renowned medical aesthetic and cosmetic surgery clinic, 8 West Clinic. With over a decade in the business of skin, Lontreau products have been developed to support the common concerns of clients, while being uniquely tailored to athletes. The team behind Lontreau is passionate about sport and use their own experience to develop products that can benefit everyone from everyday movers to all types of athletes.<\/p>",
         "cta_title": "Shop now",
         "cta_link": "shopify:\/\/collections\/all",
         "image": "shopify:\/\/shop_images\/Screen_Shot_2022-06-28_at_11.44.51_AM.png",
@@ -46,7 +46,7 @@
         "cta_link": "",
         "parallax": false,
         "anchor_id": "",
-        "height": "large",
+        "height": "auto",
         "curved_arrow_enable": false
       }
     },
@@ -102,7 +102,7 @@
           "type": "accordion",
           "settings": {
             "title": "Respect the earth",
-            "message": "<p>Our community spends a lot of time outdoors, so we want to show our respect to this planet we love to explore. Lontreau is dedicated to reaching Plastic Negative and creating sustainable initiatives for our future.<\/p>"
+            "message": "<p>Our community spends a lot of time outdoors and we want to show our respect for the planet we love to explore. Lontreau is a member of the 1% for the Planet network, donating 1% of our annual gross sales to environmental non-profits. We are also Plastic Negative which means we remove twice as much plastic from the environment as we produce. We are focused on creating sustainable initiatives for our future.<\/p>"
           }
         },
         "cb328457-8097-4190-bf9a-36c97a493ee0": {
