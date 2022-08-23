@@ -2998,6 +2998,14 @@
       "oAP" : "\/snippets\/lazyload-image.liquid",
       "oF" : 0
     },
+    "\/snippets\/linked-product-options.liquid" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/snippets\/linked-product-options.liquid",
+      "oF" : 0
+    },
     "\/snippets\/navigation-item--LEGACY.liquid" : {
       "cB" : 0,
       "ft" : 8192,
