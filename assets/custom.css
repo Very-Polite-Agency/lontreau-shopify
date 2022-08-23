@@ -576,6 +576,8 @@ form#create_customer svg {
     display: none;
 }
 
-
+.product-recommendations__item span.price__value.sale-price {
+    display: none;
+}
 
 
