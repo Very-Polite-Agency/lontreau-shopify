@@ -174,7 +174,7 @@ const InstagramFeed = (() => {
     console.log( 'getMedia ::', { fetchURL } );
 
     fetch( fetchURL )
-    .then( res => res.json())
+    .then( res => res.json() )
     .then( json => {
 
       if ( debug ) console.log('getMedia:', json );
