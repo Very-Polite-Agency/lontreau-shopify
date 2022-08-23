@@ -187,7 +187,6 @@
         },
         "c382f5c0-5ba2-4740-b455-a3101ff01f30": {
           "type": "detailed",
-          "disabled": true,
           "settings": {
             "title": "Biomimetic",
             "description": "<p>Our products integrate nature and science with ingredients that mimic skin structures and biochemicals which enable optimal delivery and results.<\/p>",
@@ -196,7 +195,6 @@
         },
         "369fa702-8a04-4d80-83ee-08c1df6ca429": {
           "type": "detailed",
-          "disabled": true,
           "settings": {
             "title": "Simple",
             "description": "<p>Our philosophy extends to both our packaging and our product line: no complex routines requiring a specific order of products, no fragile or heavy packaging, just what is necessary.<\/p>",
@@ -205,7 +203,6 @@
         },
         "a99e92c8-367a-44b2-9cca-2e334a520843": {
           "type": "detailed",
-          "disabled": true,
           "settings": {
             "title": "Efficacious",
             "description": "<p>We carefuly choose science backed ingredients and use them in efficacious doses to get the maxim effect. YOu don't hae time for junk miles in your training program or in your skin care routine.<\/p>",
@@ -214,7 +211,6 @@
         },
         "6be74be6-16da-4d3d-b4ac-be6257da7953": {
           "type": "detailed",
-          "disabled": true,
           "settings": {
             "title": "Protective",
             "description": "<p>As athletes our skin our skin is exposed to a variety of conditions and aggressors, such as wind, sun, hot cold, chlorine. At the core of our product line are ingredients that heal and protect the skin barrier. <\/p>",
@@ -223,7 +219,6 @@
         },
         "5188145e-1283-43f5-8fa6-49b03db17ee0": {
           "type": "detailed",
-          "disabled": true,
           "settings": {
             "title": "Sensitivity Free",
             "description": "<p>We don't use any harsh ingredients that cause sun sensitivity or skin discomfort.  Your face will not sting when you use our products, even when wind burned or dehydrated<\/p>",
