@@ -579,5 +579,7 @@ form#create_customer svg {
 .product-recommendations__item span.price__value.sale-price {
     display: none;
 }
-
+.product__details.d-none.d-lg-flex .product-compare-at-price {
+    display: none;
+}
 
