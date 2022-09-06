@@ -4,6 +4,7 @@
 
   <div class="{{ snippet_name }}__details">
     <h1 class="product__title heading--2">{{ product.title }}</h1>
+    {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
     <strong class="product__type title--1">{{ product.type }}</strong>
   </div>
 
