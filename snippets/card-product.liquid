@@ -52,6 +52,7 @@
           <strong class="{{ snippet_name }}__title caption--2">
             <a class="{{ snippet_name }}__title-link link" href="{{ url }}" title="{{ title }}" target="_self">{{ title }}</a>
           </strong>
+          {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
           <span class="{{ snippet_name }}__price caption--2">{% render 'price', product: product, show_symbol: true %}</strong>
         </div>
         {% if selected_variant %}
