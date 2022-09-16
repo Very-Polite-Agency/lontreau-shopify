@@ -39,7 +39,7 @@
                 <div class="my-2">
                      <select name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forlopp.index0 }} selectt">
                         {% for value in option.values %}
-                            <option value="{{ variant.id }}"
+                            <option value="{{ option.id }}"
                             {% if option.selected.value == value %}
                                 selected
                             {% endif %}
