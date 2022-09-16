@@ -1,0 +1,9 @@
+<div class="my-3">
+{% assign product_price = product.selected_or_first_available_variant %}
+<span class="compare-at-price-product">{{ product_price.compare_at_price | money }}</span>
+<span class="regular-price-product">{{ product_price.price | money }}</span>
+
+{% if product_price.price < product_price.compare_at_price %}
+<span>Sale</span>
+{% endif %}
+</div>
