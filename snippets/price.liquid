@@ -10,6 +10,13 @@
     {%- render 'price', classes: '',  product: product -%}
 
 {%- endcomment -%}
+{% liquid 
+if use_variant
+    assign current_variant = product.selected_or_first_available_variant
+  else
+    assign current_variant = product
+  endif
+  %}
 
 {%- if product and product != blank -%}
 
