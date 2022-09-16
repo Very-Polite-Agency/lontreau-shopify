@@ -30,7 +30,7 @@
     </div>
 
 <div class="my-3">
-  {{ shop.url }}
+  {{ product.handle }}
       {% if product.variants.size > 1 %}
     	<select name="id" id="ProductSelect-{{ section.id }} selectt" class="product-single__variants">
 							{% for variant in product.variants %}
@@ -73,7 +73,7 @@
 {% endif %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-var url = {{ shop.url }};
+var url = {{ shop.url }}/products/;
 var value = "";
 $(document).ready(function(){
     $("select").change(function(){
