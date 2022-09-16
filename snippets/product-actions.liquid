@@ -29,28 +29,33 @@
       </div>
     </div>
 
-<div class="my-3">
-    {% unless product.has_only_default_variant %}
-        <div data-url="{{ product.url }}" data-section="{{ section.id }}">
-            {% for option in product.options_with_values %}
-                <label for="Option-{{ section.id }}-{{ forlopp.index0 }}">
-                    {{ option.name }}
-                </label>
-                <div class="my-2">
-                     <select name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forlopp.index0 }}">
-                        {% for value in option.values %}
-                            <option value="{{ value | escape }}
-                            {% if option.selected.value == value %}
-                                selected
-                            {% endif %}
-                            ">{{ value }}</option>
-                        {% endfor %}
-                     </select>
-                </div>
-            {% endfor %}
-        </div>
-    {% endunless %}
-</div>
+   <!-- <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+  {% for variant in product.variants %}
+    {% if variant.available %}
+      <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+        {{ variant.title }}
+      </option>
+    {% else %}
+      <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+    {% endif %}
+  {% endfor %}
+  </select>-->
+<br/>
+    <br/>
+    {% if product.variants.size > 1 %}
+    	<select name="id" id="ProductSelect-{{ section.id }}" class="product-single__variants">
+							{% for variant in product.variants %}
+								{% if variant.available %}
+									<option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} 
+                                      data-sku="{{ variant.sku }}" id="Option-{{ section.id }}-{{ forloop.index0 }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_without_currency }}</option>
+									{% else %}
+									<option disabled="disabled">
+									{{ variant.title }} - {{ 'products.product.sold_out' | t }}
+									</option>
+								{% endif %}
+							{% endfor %}
+						</select>
+    {% endif %}
     <br/>
     <br/>
 
