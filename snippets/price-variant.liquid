@@ -26,6 +26,11 @@
     font-weight: 600;
     font-size: 24px;
 }
+
+  .product-sale-tag{
+    background: #7dc5c4;
+    border-radius: 20px;
+  }
   
 {% endstyle %}
 <div class="my-3">
@@ -34,6 +39,6 @@
 <span class="regular-price-product">{{ product_price.price | money }}</span>
 
 {% if product_price.price < product_price.compare_at_price %}
-<span>Sale</span>
+<span class="product-sale-tag">Sale</span>
 {% endif %}
 </div>
