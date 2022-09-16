@@ -4,7 +4,7 @@
 
   {% assign available = product.available | default: false %}
   {% assign featured_image = product.featured_image | default: false %}
-  {% assign selected_variant = product.selected_or_first_available_variant  %}
+  {% assign selected_variant = product.selected_or_first_available_variant | default: false %}
 
   <div class="{{ snippet_name }}__actions">
 
@@ -29,7 +29,7 @@
       </div>
     </div>
 
-  <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+   <!-- <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
   {% for variant in product.variants %}
     {% if variant.available %}
       <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
@@ -39,11 +39,11 @@
       <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
     {% endif %}
   {% endfor %}
-  </select>
+  </select>-->
 <br/>
     <br/>
     {% if product.variants.size > 1 %}
-    	<select name="id" id="ProductSelect-{{ section.id }}" class="product-single__variants" form="{{ product_form_id }}">
+    	<select name="id" id="ProductSelect-{{ section.id }}" class="product-single__variants">
 							{% for variant in product.variants %}
 								{% if variant.available %}
 									<option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_without_currency }}</option>
