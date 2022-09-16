@@ -585,3 +585,7 @@ form#create_customer svg {
 .product__details p.product-compare-at-price {
     display: none;
 }
+select.product-single__variants {
+    width: 36%;
+    float: right;
+}
