@@ -47,7 +47,7 @@
 							{% for variant in product.variants %}
 								{% if variant.available %}
 									<option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} 
-                                      data-sku="{{ variant.sku }}" id="Option-{{ section.id }}-{{ forloop.index0 }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_without_currency }}</option>
+                                      data-sku="{{ variant.sku }}" id="Option-{{ section.id }}-{{ forloop.index0 }}" value="{{ variant.id }}">{{ variant.title }}</option>
 									{% else %}
 									<option disabled="disabled">
 									{{ variant.title }} - {{ 'products.product.sold_out' | t }}
