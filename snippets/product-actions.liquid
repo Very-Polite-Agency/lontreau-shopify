@@ -81,14 +81,3 @@
   </div>
 
 {% endif %}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-var url = '{{ shop.url }}/products/{{ product.handle }}';
-  console.log(url);
-var value = "";
-$(document).ready(function(){
-    $("select").change(function(){
-        value = $(this).val();
-        window.location.href = url+'?variant='+value;
-    });
-});
