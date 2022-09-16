@@ -75,7 +75,7 @@
 var url = window.location;
 var value = "";
 $(document).ready(function(){
-    $("#selectt").change(function(){
+    $("select").change(function(){
         value = $(this).val();
         window.location.href = url+'?variant='+value;
     });
