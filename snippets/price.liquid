@@ -1,60 +1,93 @@
-{%- comment -%}
+{% comment %}
+    Renders a list of product's price (regular, sale)
 
     Accepts:
-    - classes: {String} Any combination of words
-    - product: {Object} Product Liquid object,
-    - style: {String} Display option for a switch case
-    - show_symbol: {Boolean} Conditionally show the currency symbol
+    - product: {Object} Product Liquid object (optional)
+    - use_variant: {Boolean} Renders selected or first variant price instead of overall product pricing (optional)
+    - show_badges: {Boolean} Renders 'Sale' and 'Sold Out' tags if the product matches the condition (optional)
+    - price_class: {String} Adds a price class to the price element (optional)
 
     Usage:
-    {%- render 'price', classes: '',  product: product -%}
-
-{%- endcomment -%}
-{% liquid 
-if use_variant
-    assign current_variant = product.selected_or_first_available_variant
+    {% render 'price', product: product %}
+{% endcomment %}
+{%- liquid
+  if use_variant
+    assign target = product.selected_or_first_available_variant
   else
-    assign current_variant = product
+    assign target = product
   endif
-  %}
 
-{%- if product and product != blank -%}
+  assign compare_at_price = target.compare_at_price
+  assign price = target.price | default: 1999
+  assign available = target.available | default: false
+  assign money_price = price | money
+  if settings.currency_code_enabled
+    assign money_price = price | money_with_currency
+  endif
 
-  {%- assign available = product.available -%}
-  {%- assign classes = classes | default: '' -%}
-  {%- assign price = product.price -%}
-  {%- assign price_compare = product.compare_at_price -%}
-  {%- assign style = style | default: '' -%}
-  {%- assign show_symbol = show_symbol | default: false -%}
-  {%- assign symbol = shop.currency.symbol | default: '$' -%}
-  {% assign current_variant = product.selected_or_first_available_variant %}
+  if target == product and product.price_varies
+    assign money_price = 'products.product.price.from_price_html' | t: price: money_price
+  endif
+-%}
 
-  <div class="{% if classes %}{{ classes }} {% endif %}price {% if show_symbol %} with-currency-symbol{% endif %}">
-    <span class="price__value">
-      <span class="price__currency-symbol"></span>
-{% if product.price_varies  %}
-  {{ product.price_min | money }} to {{ product.price_max | money }}
-       
-{% else %}
-     {{- symbol -}} {{- price | money_without_currency -}}
-      {% endif %}
-  
-{% if current_variant.compare_at_price > current_variant.price and template != 'collection'  %}
-								<p class="product-compare-at-price">
-									{{ current_variant.compare_at_price | money }}
-								</p>
-							
-
-    </span>
-{% endif %}
-    {%- if price_compare -%}
-      <span class="price__value sale-price">
-        <span class="price__currency-symbol">{{- symbol -}}</span>
-        {{- price_compare | money_without_currency -}}
+<div class="price
+  {%- if price_class %} {{ price_class }}{% endif -%}
+  {%- if available == false %} price--sold-out {% endif -%}
+  {%- if compare_at_price > price %} price--on-sale {% endif -%}
+  {%- if product.price_varies == false and product.compare_at_price_varies %} price--no-compare{% endif -%}
+  {%- if show_badges %} price--show-badge{% endif -%}">
+  <div class="price__container">
+    {%- comment -%}
+      Explanation of description list:
+        - div.price__regular: Displayed when there are no variants on sale
+        - div.price__sale: Displayed when a variant is a sale
+    {%- endcomment -%}
+    <div class="price__regular">
+      <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
+      <span class="price-item price-item--regular">
+        {{ money_price }}
       </span>
-    {%- endif -%}
+    </div>
+    <div class="price__sale">
+      {%- unless product.price_varies == false and product.compare_at_price_varies %}
+        <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
+        <span>
+          <s class="price-item price-item--regular">
+            {% if settings.currency_code_enabled %}
+              {{ compare_at_price | money_with_currency }}
+            {% else %}
+              {{ compare_at_price | money }}
+            {% endif %}
+          </s>
+        </span>
+      {%- endunless -%}
+      <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
+      <span class="price-item price-item--sale price-item--last">
+        {{ money_price }}
+      </span>
+    </div>
+    <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
+      <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
+      <span class="price-item price-item--last">
+        <span>{{- product.selected_or_first_available_variant.unit_price | money -}}</span>
+        <span aria-hidden="true">/</span>
+        <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
+        <span>
+          {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
+            {{- product.selected_or_first_available_variant.unit_price_measurement.reference_value -}}
+          {%- endif -%}
+          {{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}
+        </span>
+      </span>
+    </small>
   </div>
+  {%- if show_badges -%}
+    <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+      {{ 'products.product.on_sale' | t }}
+    </span>
 
-{%- endif -%}
-
-	
+    <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
+      {{ 'products.product.sold_out' | t }}
+    </span>
+  {%- endif -%}
+</div>
