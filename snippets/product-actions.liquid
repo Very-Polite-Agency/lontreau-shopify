@@ -4,7 +4,7 @@
 
   {% assign available = product.available | default: false %}
   {% assign featured_image = product.featured_image | default: false %}
-  {% assign selected_variant = product.selected_or_first_available_variant | default: false %}
+  {% assign selected_variant = product.selected_or_first_available_variant  %}
 
   <div class="{{ snippet_name }}__actions">
 
