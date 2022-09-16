@@ -37,9 +37,9 @@
                     {{ option.name }}
                 </label>
                 <div class="my-2">
-                     <select name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forlopp.index0 }}">
+                     <select name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forlopp.index0 }} selectt">
                         {% for value in option.values %}
-                            <option value="{{ value | escape }}
+                            <option value="{{ variant.id }}"
                             {% if option.selected.value == value %}
                                 selected
                             {% endif %}
@@ -76,3 +76,14 @@
   </div>
 
 {% endif %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+var url = window.location;
+var value = "";
+$(document).ready(function(){
+    $("#selectt").change(function(){
+        value = $(this).val();
+        window.location.href = url+'?variant='+value;
+    });
+});
+</script>
