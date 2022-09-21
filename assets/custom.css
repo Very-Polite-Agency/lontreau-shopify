@@ -597,3 +597,7 @@ select.product-single__variants {
     margin-top: 4%;
     margin-bottom: 4%;
 }
+label.size_variant {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
