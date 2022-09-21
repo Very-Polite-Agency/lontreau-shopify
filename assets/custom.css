@@ -588,6 +588,7 @@ form#create_customer svg {
 select.product-single__variants {
     width: 36%;
     float: right;
+  height:50px;
 }
 .collection-product-grid__main .card-product__info {
     display: block;
