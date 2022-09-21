@@ -589,6 +589,8 @@ select.product-single__variants {
     width: 36%;
     float: right;
   height:50px;
+  background: #fff;
+    border: 2px solid;
 }
 .collection-product-grid__main .card-product__info {
     display: block;
