@@ -602,3 +602,9 @@ label.size_variant {
     font-size: 17px;
     text-transform:uppercase;
 }
+.product__details.d-none.d-lg-flex .sale-price {
+    display: none;
+}
+.product__details.d-none.d-lg-flex .product-sale-tag {
+    display: none;
+}
