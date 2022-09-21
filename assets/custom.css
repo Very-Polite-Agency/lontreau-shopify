@@ -600,4 +600,5 @@ select.product-single__variants {
 label.size_variant {
     margin-bottom: 10px;
     font-size: 17px;
+    text-transform:uppercase;
 }
