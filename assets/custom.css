@@ -611,3 +611,17 @@ label.size_variant {
 .product__details.d-none.d-lg-flex .product-sale-tag {
     display: none;
 }
+.card-product--collection-product-grid .card-product__info {
+    min-height: 145px;
+    position: relative;
+}
+
+
+
+.card-product--collection-product-grid .card-product__info .price.with-currency-symbol {
+    margin-top: 10px;
+}
+.card-product--collection-product-grid .card-product__info .jdgm-widget.jdgm-preview-badge.jdgm--done-setup {
+    position: absolute;
+    top: 70px;
+}
