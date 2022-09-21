@@ -586,7 +586,7 @@ form#create_customer svg {
     display: none;
 }
 select.product-single__variants {
-    width: 36%;
+    width: 28%;
     float: right;
   height:50px;
   background: #fff;
