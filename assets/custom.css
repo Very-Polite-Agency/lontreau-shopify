@@ -591,6 +591,7 @@ select.product-single__variants {
   height:50px;
   background: #fff;
     border: 2px solid;
+  padding-left:15px;
 }
 .collection-product-grid__main .card-product__info {
     display: block;
