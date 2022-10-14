@@ -26,7 +26,7 @@
     <span class="price__value">
       <span class="price__currency-symbol"></span>
 {% if product.price_varies  %}
-  {{ product.price_min | money }} to {{ product.price_max | money }}
+  {{ product.price_min | money }} - {{ product.price_max | money }}
        
 {% else %}
      {{- symbol -}} {{- price | money_without_currency -}}
