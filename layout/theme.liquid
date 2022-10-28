@@ -90,7 +90,28 @@
     </script>
 
     {% render 'judgeme_core' %}
-</head>
+<!-- Global site tag (gtag.js) -  -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11004439049"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11004439049');
+</script>
+
+
+{% if first_time_accessed %}
+<script>
+  gtag('event', 'conversion', {
+    'send_to': 'AW-11004439049/H-o6CN3vs4AYEInUqf8o',
+    'value': {{ checkout.total_price | divided_by: 100.0 }},
+    'currency': '{{ currency }}',
+    'transaction_id': '{{ order_number }}'
+  });
+</script>
+{% endif %}
+  </head>
 
   <body class="{% render 'theme--classes' %} sticky-footer updated" data-template="{{ template.name }}">
 
