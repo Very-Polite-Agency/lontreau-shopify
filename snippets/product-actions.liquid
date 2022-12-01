@@ -45,6 +45,7 @@
     {% if product.variants.size > 1 %}
         <label for="ProductSelect-{{ section.id }}" class="size_variant">SIZE</label>
     	<select name="id" id="ProductSelect-{{ section.id }}" class="product-single__variants">
+          <option name="test" value="test6789" disabled>Select a Size</option>
 							{% for variant in product.variants %}
 								{% if variant.available %}
 									<option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} 

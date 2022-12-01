@@ -2,6 +2,19 @@
 <script>
 var url = '{{ shop.url }}/products/{{ product.handle }}';
   console.log(url);
+  var searchParams = new URLSearchParams(window.location.search)
+var param = searchParams.get('variant');
+   if(param){
+    $("select option[value='test6789']").prop("selected", false);
+      $(".product__button").prop("disabled", false);
+     $(".product__button").css("cursor","pointer");
+      $("button.product__button.button--tertiary.js--add-to-cart .button__title").html('Add to Cart');
+  }else{
+    $("select option[value='test6789']").prop("selected", true);
+    $(".product__button").prop("disabled", true);
+      $(".product__button").css("cursor","not-allowed");
+     $("button.product__button.button--tertiary.js--add-to-cart .button__title").html('Please Pick an Option');
+  }
 var value = "";
 $(document).ready(function(){
     $("select").change(function(){
