@@ -56,15 +56,17 @@
           <span class="{{ snippet_name }}__price caption--2">{% render 'price', product: product, show_symbol: true %}</strong>
         </div>
         {% if selected_variant %}
-          <button
+        <!--  <button
             class="{{ snippet_name }}__button button--tertiary js--add-to-cart"
             type="button"
             data-variant-id="{{ selected_variant.id }}"
             data-quantity="1"
             data-featured-image="{{ featured_image | image_url: width: 200 }}"
-          >
-            <span class="button__title">{% if available %}Add to Cart{% else %}Unavailable{% endif %}</span>
-          </button>
+          >-->
+           <div id="pro_site">
+           <a href="{{ url }}"><span class="button__title">{% if available %}Add to Cart{% else %}Unavailable{% endif %}</span>
+           </a></div>
+       <!--   </button> -->
         {% endif %}
 
       {% when 'contact-form' %}
