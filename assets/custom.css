@@ -626,3 +626,18 @@ label.size_variant {
     position: absolute;
     top: 70px;
 }
+div#pro_site {
+ background: #000;
+padding: 10px;
+}
+
+div#pro_site a {
+color: #fff;
+text-decoration: none;
+align-items: center;
+text-align: center;
+}
+
+div#pro_site:hover {
+background: #7dc773;
+}
