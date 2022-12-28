@@ -24,7 +24,7 @@
         "title": "",
         "heading": "<p>Skin + <em>The Elements<\/em><\/p>",
         "heading_highlight": "circle",
-        "message": "<p>As athletes, our passions take us from early morning swims to mid-day runs in the sun and long bike rides fighting against wind and pollution. We do it all because we love it — but an athlete’s skin is exposed to a wide range of environmental stressors like sun, cold, wind, pollution and chemicals. At Lontreau, we use the latest science and research to create unique formulations designed specifically to help protect and restore an athlete’s skin.<br\/><\/p>",
+        "message": "<p>As athletes, our passions take us from early morning swims to mid-day runs in the sun and long bike rides fighting against wind and pollution. We do it all because we love it — but an athlete’s skin is exposed to a wide range of environmental stressors like sun damage, cold, wind, pollution and chemicals which damages the skin barrier and cuases inflammed skin. At Lontreau, we use the latest science and research to create unique formulations designed specifically to help protect and restore an athlete’s skin barrier.<br\/><\/p>",
         "cta_title": "",
         "cta_link": "",
         "parallax": false,
@@ -40,7 +40,7 @@
           "type": "accordion",
           "settings": {
             "title": "The Skin Barrier",
-            "message": "<p>The skin barrier is your first line of defense. It’s responsible for defending against all the environmental stressors our skin endures, including pollution, UV light, blue light and infection. When our skin barrier is impaired, it can lead to several common skin issues like hyperpigmentation, sensitivity, premature aging, dryness and breakouts.<br\/><br\/>Instead of addressing these separate concerns with individual products, the best solution is to find products like <a href=\"\/products\/lontreau-recovery-hero-overnight-restorative-treatment\" title=\"Recovery Hero Overnight Restorative Treatment\">Recovery Hero<\/a>, an overnight restorative treatment that focuses on healing and balancing the skin barrier. An overconsumption of skincare products not only compromises the skin barrier but also results in excessive packaging waste. That’s why we create ingredient-dense formulas that address the root cause, use 100% recyclable packaging, and participate in the Plastic Negative program to reduce waste and eliminate junk miles.<\/p>",
+            "message": "<p>The skin barrier is your first line of defense. It’s responsible for defending against all the environmental stressors our skin endures, including pollution, UV light, blue light and infection. When our skin barrier is damaged, it can lead to several common skin issues like hyperpigmentation, sensitivity, premature aging, dryness and breakouts.<br\/><br\/>Instead of addressing these separate concerns with individual products, the best solution is to find products like <a href=\"\/products\/lontreau-recovery-hero-overnight-restorative-treatment\" title=\"Recovery Hero Overnight Restorative Treatment\">Recovery Hero<\/a>, an overnight restorative treatment that focuses on healing, balancing and repairing the skin barrier. An overconsumption of skincare products not only compromises and damages the skin barrier but also results in excessive packaging waste. That’s why we create ingredient-dense formulas that address the root cause, use 100% recyclable packaging, and participate in the Plastic Negative program to reduce waste and eliminate junk miles.<\/p>",
             "cta_title": "",
             "cta_link": "",
             "image": "shopify:\/\/shop_images\/Lontreau-our-skin-1.png",
@@ -147,7 +147,7 @@
         "title": "",
         "heading": "",
         "heading_highlight": "standard",
-        "message": "<p>Athletes expect a lot from their bodies - but what about their skin? From the chlorine of a pool to the pollution from road cycling or the extreme cold of skiing, our skin is constantly up against the elements. That’s why we create ingredient-rich formulations that are designed specifically for an athlete’s skin. We thoughtfully select our ingredients to create efficacious formulas that work as hard as you do.<\/p>",
+        "message": "<p>Athletes expect a lot from their bodies - but what about their skin? From the chlorine of a pool to the pollution from road cycling to the damage of the sun or the extreme cold of skiing, our skin barrier is constantly up against the elements. That’s why we create ingredient-rich formulations that are designed specifically for an athlete’s skin. We thoughtfully select our ingredients to create efficacious formulas that work as hard as you do. <\/p>",
         "cta_title": "Learn More About Our Ingredients",
         "cta_link": "shopify:\/\/pages\/our-ingredients",
         "image": "shopify:\/\/shop_images\/Screen_Shot_2022-06-28_at_11.11.14_AM.png",
@@ -165,7 +165,7 @@
           "type": "detailed",
           "settings": {
             "title": "Synergistic",
-            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is  better for your skin barrier, and the planet.<\/p>",
+            "description": "<p>We create synergistic formulas made with endurance ingredients because simplifying your skincare routine is  better for repairing your damaged skin barrier, and the planet.<\/p>",
             "image": "shopify:\/\/shop_images\/needs-athlete-7_3x_5fd6d023-2f8c-4938-b8e3-3fb98e81e800.png"
           }
         },
