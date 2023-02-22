@@ -14,18 +14,11 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   	<meta name="author" content="Very Polite">
   	<meta http-equiv="Expires" content="7" />
+  {% if handle contains 'page-handle-privacy-policy' %}
+<meta name="robots" content="noindex">
+{% endif %}
+
   
-
-   {% if handle contains 'privacy-policy' %}
-<meta name="robots" content="noindex">
-{% endif %}
- {% if handle contains 'page-handle-policies/privacy-policy' %}
-<meta name="robots" content="noindex">
-{% endif %}
-
-   {% if handle contains 'policies/privacy-policy' %}
-<meta name="robots" content="noindex">
-{% endif %}
     <!-- Cannoical URL -->
   	<link rel='canonical' href='{{ canonical_url }}'>
 
