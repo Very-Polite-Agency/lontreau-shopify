@@ -15,12 +15,13 @@
   	<meta name="author" content="Very Polite">
   	<meta http-equiv="Expires" content="7" />
 
-
    {% if handle contains 'privacy-policy' %}
 <meta name="robots" content="noindex">
 {% endif %}
 
-
+{% if handle contains 'terms-of-service' %}
+<meta name="robots" content="noindex">
+{% endif %}
 
     <!-- Cannoical URL -->
   	<link rel='canonical' href='{{ canonical_url }}'>
