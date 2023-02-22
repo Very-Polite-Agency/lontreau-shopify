@@ -14,6 +14,12 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   	<meta name="author" content="Very Polite">
   	<meta http-equiv="Expires" content="7" />
+   {% if template contains 'search' %}
+<meta name="robots" content="noindex">
+{% endif %}
+{% if handle contains 'https://lontreau.com/policies/privacy-policy' %}
+<meta name="robots" content="noindex">
+{% endif %}
 
     <!-- Cannoical URL -->
   	<link rel='canonical' href='{{ canonical_url }}'>
