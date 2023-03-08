@@ -17,6 +17,23 @@
         "curved_arrow_enable": false
       }
     },
+    "16583384896d670434": {
+      "type": "fifty-fifty-feature",
+      "settings": {
+        "title": "",
+        "heading": "<p>We <em>know<\/em> skin<\/p>",
+        "heading_highlight": "standard",
+        "message": "<p>As an endurance athlete, our founder Angie Buonassisi knows first hand how challenging it is to keep skin protected from the elements when training and playing involve daily exposure to sun, wind, cold and chemicals. As the co-founder of renowned medical aesthetics practice 8 West Clinic, she has intimate knowledge of the full spectrum of treatments, from topical products to laser treatments to oral supplementation, for optimizing skin health. The team behind Lontreau is passionate about sport and uses their own experience to develop products that can benefit everyone from everyday movers to competitive athletes.<\/p>",
+        "cta_title": "Shop now",
+        "cta_link": "shopify:\/\/collections\/all",
+        "image": "shopify:\/\/shop_images\/EnduranceHydration-0649_ffbd700e-f8db-43f8-bf40-eadb5a78dab6.jpg",
+        "hide_image_mobile": false,
+        "anchor_id": "",
+        "style": "wide",
+        "layout": "image-right",
+        "colour_theme": "light"
+      }
+    },
     "165971894678d8720c": {
       "type": "full-width-feature",
       "settings": {
@@ -94,20 +111,52 @@
         "colour_theme": "dark"
       }
     },
-    "16583384896d670434": {
-      "type": "fifty-fifty-feature",
+    "165040682270d7b672": {
+      "type": "accordion-with-image",
+      "blocks": {
+        "fbe99967-b9ec-4f4f-9b9f-8a702ef221b9": {
+          "type": "accordion",
+          "settings": {
+            "title": "Inspire through storytelling",
+            "message": "<p>We want to inspire the Lontreau community with stories from everyday movers to professional athletes that are doing (and have done) exceptional things.<\/p>"
+          }
+        },
+        "48745a14-664b-46e6-9851-21ec50104515": {
+          "type": "accordion",
+          "settings": {
+            "title": "Build our community",
+            "message": "<p>Lontreau is for everyone from movement enthusiasts to professional athletes. We want to provide a positive environment and community to connect and inspire.<\/p>"
+          }
+        },
+        "5375ad3e-ffad-4a2c-b28d-cf48fc419309": {
+          "type": "accordion",
+          "settings": {
+            "title": "Respect the earth",
+            "message": "<p>Our community spends a lot of time outdoors and we want to show our respect for the planet we love to explore. Lontreau is a member of the 1% for the Planet network, donating 1% of our annual gross sales to environmental non-profits. We are also Plastic Negative which means we remove twice as much plastic from the environment as we produce. We are focused on creating sustainable initiatives for our future.<\/p>"
+          }
+        },
+        "2cfa670c-1bf3-4e9f-b927-e6268a199368": {
+          "type": "accordion",
+          "settings": {
+            "title": "Prioritize effort over perfection",
+            "message": "<p>We're more passionate about the journey than the goals at the finish line. We don’t use language that speaks to perfection, instead, we like to focus on health.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "fbe99967-b9ec-4f4f-9b9f-8a702ef221b9",
+        "48745a14-664b-46e6-9851-21ec50104515",
+        "5375ad3e-ffad-4a2c-b28d-cf48fc419309",
+        "2cfa670c-1bf3-4e9f-b927-e6268a199368"
+      ],
       "settings": {
-        "title": "",
-        "heading": "<p>We <em>know<\/em> skin<\/p>",
+        "heading": "<p>Our <em>Values<\/em><\/p>",
         "heading_highlight": "standard",
-        "message": "<p>As an endurance athlete, our founder Angie Buonassisi knows first hand how challenging it is to keep skin protected from the elements when training and playing involve daily exposure to sun, wind, cold and chemicals. As the co-founder of renowned medical aesthetics practice 8 West Clinic, she has intimate knowledge of the full spectrum of treatments, from topical products to laser treatments to oral supplementation, for optimizing skin health. The team behind Lontreau is passionate about sport and uses their own experience to develop products that can benefit everyone from everyday movers to competitive athletes.<\/p>",
-        "cta_title": "Shop now",
-        "cta_link": "shopify:\/\/collections\/all",
-        "image": "shopify:\/\/shop_images\/EnduranceHydration-0649_ffbd700e-f8db-43f8-bf40-eadb5a78dab6.jpg",
-        "hide_image_mobile": false,
+        "message": "",
+        "image": "shopify:\/\/shop_images\/Lontreau_Our-Values.png",
         "anchor_id": "",
-        "style": "wide",
-        "layout": "image-right",
+        "style": "standard",
+        "layout": "image-left",
         "colour_theme": "light"
       }
     },
@@ -161,55 +210,6 @@
         "anchor_id": ""
       }
     },
-    "165040682270d7b672": {
-      "type": "accordion-with-image",
-      "blocks": {
-        "fbe99967-b9ec-4f4f-9b9f-8a702ef221b9": {
-          "type": "accordion",
-          "settings": {
-            "title": "Inspire through storytelling",
-            "message": "<p>We want to inspire the Lontreau community with stories from everyday movers to professional athletes that are doing (and have done) exceptional things.<\/p>"
-          }
-        },
-        "48745a14-664b-46e6-9851-21ec50104515": {
-          "type": "accordion",
-          "settings": {
-            "title": "Build our community",
-            "message": "<p>Lontreau is for everyone from movement enthusiasts to professional athletes. We want to provide a positive environment and community to connect and inspire.<\/p>"
-          }
-        },
-        "5375ad3e-ffad-4a2c-b28d-cf48fc419309": {
-          "type": "accordion",
-          "settings": {
-            "title": "Respect the earth",
-            "message": "<p>Our community spends a lot of time outdoors and we want to show our respect for the planet we love to explore. Lontreau is a member of the 1% for the Planet network, donating 1% of our annual gross sales to environmental non-profits. We are also Plastic Negative which means we remove twice as much plastic from the environment as we produce. We are focused on creating sustainable initiatives for our future.<\/p>"
-          }
-        },
-        "2cfa670c-1bf3-4e9f-b927-e6268a199368": {
-          "type": "accordion",
-          "settings": {
-            "title": "Prioritize effort over perfection",
-            "message": "<p>We're more passionate about the journey than the goals at the finish line. We don’t use language that speaks to perfection, instead, we like to focus on health.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "fbe99967-b9ec-4f4f-9b9f-8a702ef221b9",
-        "48745a14-664b-46e6-9851-21ec50104515",
-        "5375ad3e-ffad-4a2c-b28d-cf48fc419309",
-        "2cfa670c-1bf3-4e9f-b927-e6268a199368"
-      ],
-      "settings": {
-        "heading": "<p>Our <em>Values<\/em><\/p>",
-        "heading_highlight": "standard",
-        "message": "",
-        "image": "shopify:\/\/shop_images\/Lontreau_Our-Values.png",
-        "anchor_id": "",
-        "style": "standard",
-        "layout": "image-left",
-        "colour_theme": "light"
-      }
-    },
     "1658347554cc0cab54": {
       "type": "fifty-fifty-feature",
       "disabled": true,
@@ -230,13 +230,13 @@
   },
   "order": [
     "main",
+    "16583384896d670434",
     "165971894678d8720c",
     "16597191666b46ebb5",
     "1659719470adaa7cac",
-    "16583384896d670434",
+    "165040682270d7b672",
     "1650406820d7117f5d",
     "16504147450799a25f",
-    "165040682270d7b672",
     "1658347554cc0cab54"
   ]
 }
