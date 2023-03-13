@@ -227,6 +227,22 @@
         "colour_theme": "light"
       }
     },
+    "a920e314-321f-4802-a1c5-e6563a1e7277": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "A Skin Journey",
+        "heading": "<p>Defy the elements, <\/p><p><em>Defy expectations<\/em><\/p>",
+        "heading_highlight": "stroke",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "auto",
+        "curved_arrow_enable": false
+      }
+    },
     "81d5a585-e206-46cb-8e39-c7594128536d": {
       "type": "accordion-with-image",
       "blocks": {
@@ -271,6 +287,7 @@
     "1650406820d7117f5d",
     "16504147450799a25f",
     "1658347554cc0cab54",
+    "a920e314-321f-4802-a1c5-e6563a1e7277",
     "81d5a585-e206-46cb-8e39-c7594128536d"
   ]
 }
