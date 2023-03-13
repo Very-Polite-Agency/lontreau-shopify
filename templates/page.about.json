@@ -229,7 +229,6 @@
     },
     "81d5a585-e206-46cb-8e39-c7594128536d": {
       "type": "accordion-with-image",
-      "disabled": true,
       "blocks": {
         "fdb5a6d6-39b5-4210-b461-93dfba139f17": {
           "type": "accordion",
@@ -237,10 +236,18 @@
             "title": "Feature: Trend Hunter",
             "message": "<p>Lontreau makes skincare for people on the move. Lontreau's products are clinical grade and mindfully made with responsibly sourced, sustainable and effective ingredients that support people on the move. The Canadian brand sets itself apart in a crowded space with an innovative biomimetic approach to skincare. <a href=\"https:\/\/www.trendhunter.com\/trends\/lontreau\" target=\"_blank\" title=\"https:\/\/www.trendhunter.com\/trends\/lontreau\">Read more...<\/a><\/p>"
           }
+        },
+        "5d5b1be1-06e5-49a6-a162-e68eb6e0dfef": {
+          "type": "accordion",
+          "settings": {
+            "title": "Feature: Global News",
+            "message": "<p>As the world marks International Women's Day, there are calls for greater supports for women in business. As Christa Dao reports, it's women themselves right now who are helping each other overcome challenges many men don't face. See<a href=\"https:\/\/globalnews.ca\/video\/9538254\/international-womens-day-greater-supports-urged-for-female-entrepreneurs\/\" target=\"_blank\" title=\"https:\/\/globalnews.ca\/video\/9538254\/international-womens-day-greater-supports-urged-for-female-entrepreneurs\/\"> full interview <\/a>with Lontreau founder & CEO Angie Buonassisi. <\/p>"
+          }
         }
       },
       "block_order": [
-        "fdb5a6d6-39b5-4210-b461-93dfba139f17"
+        "fdb5a6d6-39b5-4210-b461-93dfba139f17",
+        "5d5b1be1-06e5-49a6-a162-e68eb6e0dfef"
       ],
       "settings": {
         "heading": "<p>Our <em>Features<\/em><\/p>",
