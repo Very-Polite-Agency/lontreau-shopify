@@ -24,7 +24,7 @@
 {% endif %}
 
 {% if request.path contains '/en-us/' %}
- <link href='#'/>
+<link rel="alternate" hreflang="en-us" href="{{ canonical_url }}" />
 {% endif %}
   
     <!-- Cannoical URL -->
