@@ -9,6 +9,7 @@
 {% assign social_link_facebook = settings.social_link_facebook | default: false %}
 {% assign social_link_instagram = settings.social_link_instagram | default: false %}
 {% assign social_link_twitter = settings.social_link_twitter | default: false %}
+{% assign social_link_tiktok = settings.social_link_tiktok | default: false %}
 
 <div class="{{ section_name }}" id="{{ section_id }}">
   {% render 'bs-container', container: 'container-fluid' %}
@@ -50,6 +51,14 @@
               <div class="{{ section_name }}__social-item">
                 <a href="{{ social_link_facebook }}" target="_blank" title="{{ shop.name }} Facebook Acccount">
                   {% render 'svg', type: 'icon.facebook' %}
+                </a>
+              </div>
+            {% endif %}
+
+            {% if social_link_tiktok %}
+              <div class="{{ section_name }}__social-item">
+                <a href="{{ social_link_facebook }}" target="_blank" title="{{ shop.name }} TikTok Acccount">
+                  {% render 'png', type: 'tiktik' %}
                 </a>
               </div>
             {% endif %}
