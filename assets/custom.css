@@ -642,10 +642,4 @@ div#pro_site:hover {
 background: #7dc773;
 }
 
-.footer__contact nav.footer__social .footer__social-item:nth-child(2) a svg {
-    display: none;
-}
 
-.footer__contact nav.footer__social .footer__social-item:nth-child(2) a {
-    position: relative;
-}
