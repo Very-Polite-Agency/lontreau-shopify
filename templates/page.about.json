@@ -250,20 +250,28 @@
           "type": "accordion",
           "settings": {
             "title": "Feature: Trend Hunter",
-            "message": "<p>Lontreau makes skincare for people on the move. Lontreau's products are clinical grade and mindfully made with responsibly sourced, sustainable and effective ingredients that support people on the move. The Canadian brand sets itself apart in a crowded space with an innovative biomimetic approach to skincare. <a href=\"https:\/\/www.trendhunter.com\/trends\/lontreau\" target=\"_blank\" title=\"https:\/\/www.trendhunter.com\/trends\/lontreau\">Read more...<\/a><\/p>"
+            "message": "<p>\"Lontreau makes skincare for people on the move. Lontreau's products are clinical grade and mindfully made with responsibly sourced, sustainable and effective ingredients that support people on the move. The Canadian brand sets itself apart in a crowded space with an innovative biomimetic approach to skincare.\" <a href=\"https:\/\/www.trendhunter.com\/trends\/lontreau\" target=\"_blank\" title=\"https:\/\/www.trendhunter.com\/trends\/lontreau\">Read more...<\/a><\/p>"
           }
         },
         "5d5b1be1-06e5-49a6-a162-e68eb6e0dfef": {
           "type": "accordion",
           "settings": {
             "title": "Feature: Global News",
-            "message": "<p>As the world marks International Women's Day, there are calls for greater supports for women in business. As Christa Dao reports, it's women themselves right now who are helping each other overcome challenges many men don't face. See<a href=\"https:\/\/globalnews.ca\/video\/9538254\/international-womens-day-greater-supports-urged-for-female-entrepreneurs\/\" target=\"_blank\" title=\"https:\/\/globalnews.ca\/video\/9538254\/international-womens-day-greater-supports-urged-for-female-entrepreneurs\/\"> full interview <\/a>with Lontreau founder & CEO Angie Buonassisi. <\/p>"
+            "message": "<p>\"As the world marks International Women's Day, there are calls for greater supports for women in business. As Christa Dao reports, it's women themselves right now who are helping each other overcome challenges many men don't face.\" See<a href=\"https:\/\/globalnews.ca\/video\/9538254\/international-womens-day-greater-supports-urged-for-female-entrepreneurs\/\" target=\"_blank\" title=\"https:\/\/globalnews.ca\/video\/9538254\/international-womens-day-greater-supports-urged-for-female-entrepreneurs\/\"> full interview <\/a>with Lontreau founder & CEO Angie Buonassisi. <\/p>"
+          }
+        },
+        "9e91f18b-7faa-4838-a630-304e80365b11": {
+          "type": "accordion",
+          "settings": {
+            "title": "Feature: InBetween",
+            "message": "<p>\"Spring’s not all fun and games. It can also bring environmental stressors that can take a toll on your skin.<a href=\"https:\/\/lontreau.com\/products\/game-changer-global-antioxidant-serum-1?variant=43479020044538\">Lontreau’s Game Changer Global Antioxidant Serum<\/a>can help you step up your spring self-care game by offering broad-spectrum protection against free radicals, infrared rays, and blue light.\" <a href=\"https:\/\/inbetween.ca\/3-products-to-spring-clean-your-self-care-routine\/\" target=\"_blank\" title=\"https:\/\/inbetween.ca\/3-products-to-spring-clean-your-self-care-routine\/\">Read more...<\/a><\/p>"
           }
         }
       },
       "block_order": [
         "fdb5a6d6-39b5-4210-b461-93dfba139f17",
-        "5d5b1be1-06e5-49a6-a162-e68eb6e0dfef"
+        "5d5b1be1-06e5-49a6-a162-e68eb6e0dfef",
+        "9e91f18b-7faa-4838-a630-304e80365b11"
       ],
       "settings": {
         "heading": "<p>Our <em>Features<\/em><\/p>",
