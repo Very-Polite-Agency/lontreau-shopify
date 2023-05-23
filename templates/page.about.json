@@ -266,12 +266,20 @@
             "title": "Feature: InBetween",
             "message": "<p>\"Spring’s not all fun and games. It can also bring environmental stressors that can take a toll on your skin.<a href=\"https:\/\/lontreau.com\/products\/game-changer-global-antioxidant-serum-1?variant=43479020044538\">Lontreau’s Game Changer Global Antioxidant Serum<\/a>can help you step up your spring self-care game by offering broad-spectrum protection against free radicals, infrared rays, and blue light.\" <a href=\"https:\/\/inbetween.ca\/3-products-to-spring-clean-your-self-care-routine\/\" target=\"_blank\" title=\"https:\/\/inbetween.ca\/3-products-to-spring-clean-your-self-care-routine\/\">Read more...<\/a><\/p>"
           }
+        },
+        "33dfa578-1d2f-4d65-98e9-8df3b6cd5d34": {
+          "type": "accordion",
+          "settings": {
+            "title": "Feature: CTV Morning Show",
+            "message": "<p>Lontreau's Core 4 Kit was featured on the CTV Morning Show \"<a href=\"https:\/\/ottawa.ctvnews.ca\/video?clipId=2692481\" target=\"_blank\" title=\"https:\/\/ottawa.ctvnews.ca\/video?clipId=2692481\">Igniting Summer Beauty Routines<\/a>\" segment.<\/p>"
+          }
         }
       },
       "block_order": [
         "fdb5a6d6-39b5-4210-b461-93dfba139f17",
         "5d5b1be1-06e5-49a6-a162-e68eb6e0dfef",
-        "9e91f18b-7faa-4838-a630-304e80365b11"
+        "9e91f18b-7faa-4838-a630-304e80365b11",
+        "33dfa578-1d2f-4d65-98e9-8df3b6cd5d34"
       ],
       "settings": {
         "heading": "<p>Our <em>Features<\/em><\/p>",
