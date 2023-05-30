@@ -2,6 +2,7 @@
   "sections": {
     "hero": {
       "type": "main-collection-hero",
+      "disabled": true,
       "settings": {
         "collection_description_show": true,
         "collection_image_show": true,
