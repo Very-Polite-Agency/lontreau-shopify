@@ -626,6 +626,13 @@ label.size_variant {
     position: absolute;
     top: 70px;
 }
+
+#card-product--7702205333754 .badge__stars{
+    position: absolute;
+    top: 90px;
+}
+
+
 div#pro_site {
  background: #000;
 padding: 10px;
