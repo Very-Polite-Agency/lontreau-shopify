@@ -10,7 +10,8 @@
     height: 350px;
 }
 
-#card-product--7702205333754.badge__stars{
+#card-product--7702205333754 .badge__stars{
     position: absolute;
-    top: 90px;
+    top: 90px!important;
 }
+
