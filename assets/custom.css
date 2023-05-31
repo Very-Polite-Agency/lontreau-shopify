@@ -627,11 +627,12 @@ label.size_variant {
     top: 70px;
 }
 
+@media(max-width:1300px){
 #card-product--7702205333754 .jdgm--done-setup{
     position: absolute;
     top: 80px;
 }
-
+}
 
 div#pro_site {
  background: #000;
