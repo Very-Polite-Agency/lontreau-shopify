@@ -37,11 +37,11 @@
             {% render 'price-variant', classes: 'product__price body-copy--regular', product: product,  show_symbol: true %}
           </div>
           {% render 'product-actions', classes: '', product: product %}
-         
+          {% render 'product-info', product: product %}
         </div>
 
       </div>
-    {% render 'bs-container', state: 'closed' %}
+    
 
   {%- endform -%}
 </div>
