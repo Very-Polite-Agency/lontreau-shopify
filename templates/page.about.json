@@ -273,13 +273,21 @@
             "title": "Feature: CTV Morning Show",
             "message": "<p>Lontreau's Core 4 Kit was featured on the CTV Morning Show \"<a href=\"https:\/\/ottawa.ctvnews.ca\/video?clipId=2692481\" target=\"_blank\" title=\"https:\/\/ottawa.ctvnews.ca\/video?clipId=2692481\">Igniting Summer Beauty Routines<\/a>\" segment.<\/p>"
           }
+        },
+        "4018e885-5da6-44cf-9279-a6e25d2a2ce7": {
+          "type": "accordion",
+          "settings": {
+            "title": "Feature: Rotten Hearts Club",
+            "message": "<p>\"When it comes to skincare, there are many areas typically targeted - from anti-aging to maintaining softness and hydration. For those who live a more active lifestyle compared to the average person, there are even more factors that can affect your skin. This is where Lontreau comes into play.\" <a href=\"https:\/\/www.rottenheartsclub.com\/stories\/skincare-brand-lontreau-paving-a-new-road-for-active-individuals\" target=\"_blank\" title=\"https:\/\/www.rottenheartsclub.com\/stories\/skincare-brand-lontreau-paving-a-new-road-for-active-individuals\">Read more...<\/a><\/p>"
+          }
         }
       },
       "block_order": [
         "fdb5a6d6-39b5-4210-b461-93dfba139f17",
         "5d5b1be1-06e5-49a6-a162-e68eb6e0dfef",
         "9e91f18b-7faa-4838-a630-304e80365b11",
-        "33dfa578-1d2f-4d65-98e9-8df3b6cd5d34"
+        "33dfa578-1d2f-4d65-98e9-8df3b6cd5d34",
+        "4018e885-5da6-44cf-9279-a6e25d2a2ce7"
       ],
       "settings": {
         "heading": "<p>Our <em>Features<\/em><\/p>",
