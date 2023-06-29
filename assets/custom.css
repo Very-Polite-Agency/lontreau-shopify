@@ -650,4 +650,8 @@ div#pro_site:hover {
 background: #7dc773;
 }
 
+.header .navigation__link, .header .sub-navigation__link, .header .sub-sub-navigation__link {
+    font-size: 25px;
+
+}
 
