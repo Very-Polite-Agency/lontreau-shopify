@@ -659,3 +659,7 @@ background: #7dc773;
 button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 {
     width: 130px!important;
 }
+
+button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
+    font-size:20px;
+}
