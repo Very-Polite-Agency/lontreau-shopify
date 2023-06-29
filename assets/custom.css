@@ -665,6 +665,7 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
     color:black;
 }
 
+@media (min-width: 992px)
 .offset-lg-2 {
     margin-left: 8.66666667%!important;
 }
