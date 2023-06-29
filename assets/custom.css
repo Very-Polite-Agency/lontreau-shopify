@@ -650,8 +650,12 @@ div#pro_site:hover {
 background: #7dc773;
 }
 
+/*updated on 29 June*/
 .header .navigation__link, .header .sub-navigation__link, .header .sub-sub-navigation__link {
     font-size: 25px;
 
 }
 
+button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 {
+    width: 130px;
+}
