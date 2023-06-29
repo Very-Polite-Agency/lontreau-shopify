@@ -669,3 +669,11 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
 .offset-lg-2 {
     margin-left: 8.66666667%!important;
 }
+
+@media (min-width: 992px)
+.col-lg-8 {
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    flex: 0 0 auto;
+    width: 72.666667%;
+}
