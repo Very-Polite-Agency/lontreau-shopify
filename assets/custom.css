@@ -658,6 +658,7 @@ background: #7dc773;
 
 button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 {
     width: 130px!important;
+    text-align:center!important;
 }
 
 button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
@@ -665,7 +666,7 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
     color:black;
 }
 
-@media (min-width: 992px)
+/* @media (min-width: 992px)
 .offset-lg-2 {
     margin-left: 8.66666667%!important;
 }
@@ -676,4 +677,4 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
     -moz-box-flex: 0;
     flex: 0 0 auto;
     width: 72.666667%;
-}
+} */
