@@ -280,6 +280,13 @@
             "title": "Feature: Rotten Hearts Club",
             "message": "<p>\"When it comes to skincare, there are many areas typically targeted - from anti-aging to maintaining softness and hydration. For those who live a more active lifestyle compared to the average person, there are even more factors that can affect your skin. This is where Lontreau comes into play.\" <a href=\"https:\/\/www.rottenheartsclub.com\/stories\/skincare-brand-lontreau-paving-a-new-road-for-active-individuals\" target=\"_blank\" title=\"https:\/\/www.rottenheartsclub.com\/stories\/skincare-brand-lontreau-paving-a-new-road-for-active-individuals\">Read more...<\/a><\/p>"
           }
+        },
+        "53ef7c87-1212-45fc-938f-283651e70d88": {
+          "type": "accordion",
+          "settings": {
+            "title": "Feature: MONTECRISTO",
+            "message": "<p>\"Lontreau was started by Angie Buonassisi, an athlete and one of the co-founders of 8 West Clinic, when she was looking for a simple lineup of clinical-grade products effective enough to work for people with active outdoor lifestyles but clean enough to meet the <a href=\"https:\/\/credobeauty.com\/pages\/the-credo-clean-standard-1\" target=\"_blank\">Credo Clean Standard<\/a>, the strictest benchmark in the beauty industry.\" <a href=\"https:\/\/montecristomagazine.com\/wishlist\/july-2023-wishlist\" target=\"_blank\" title=\"https:\/\/montecristomagazine.com\/wishlist\/july-2023-wishlist\">Read more...<\/a><\/p>"
+          }
         }
       },
       "block_order": [
@@ -287,7 +294,8 @@
         "5d5b1be1-06e5-49a6-a162-e68eb6e0dfef",
         "9e91f18b-7faa-4838-a630-304e80365b11",
         "33dfa578-1d2f-4d65-98e9-8df3b6cd5d34",
-        "4018e885-5da6-44cf-9279-a6e25d2a2ce7"
+        "4018e885-5da6-44cf-9279-a6e25d2a2ce7",
+        "53ef7c87-1212-45fc-938f-283651e70d88"
       ],
       "settings": {
         "heading": "<p>Our <em>Features<\/em><\/p>",
