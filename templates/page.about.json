@@ -287,6 +287,13 @@
             "title": "Feature: MONTECRISTO",
             "message": "<p>\"Lontreau was started by Angie Buonassisi, an athlete and one of the co-founders of 8 West Clinic, when she was looking for a simple lineup of clinical-grade products effective enough to work for people with active outdoor lifestyles but clean enough to meet the <a href=\"https:\/\/credobeauty.com\/pages\/the-credo-clean-standard-1\" target=\"_blank\">Credo Clean Standard<\/a>, the strictest benchmark in the beauty industry.\" <a href=\"https:\/\/montecristomagazine.com\/wishlist\/july-2023-wishlist\" target=\"_blank\" title=\"https:\/\/montecristomagazine.com\/wishlist\/july-2023-wishlist\">Read more...<\/a><\/p>"
           }
+        },
+        "96da2345-4803-46d1-9b31-945a125e8148": {
+          "type": "accordion",
+          "settings": {
+            "title": "Feature: STYLE Canada",
+            "message": "<p><em><strong>\"Lontreau’s Global Antioxidant Serum <\/strong><\/em>is a hydrating serum with nine types of antioxidants to offer broad spectrum protection against a wide range of free-radicals, infrared rays, blue light, and environmental stressors.\" <a href=\"https:\/\/style.ca\/summer-skin-round-up\/\" target=\"_blank\" title=\"https:\/\/style.ca\/summer-skin-round-up\/\">Check it out!<\/a><\/p>"
+          }
         }
       },
       "block_order": [
@@ -295,7 +302,8 @@
         "9e91f18b-7faa-4838-a630-304e80365b11",
         "33dfa578-1d2f-4d65-98e9-8df3b6cd5d34",
         "4018e885-5da6-44cf-9279-a6e25d2a2ce7",
-        "53ef7c87-1212-45fc-938f-283651e70d88"
+        "53ef7c87-1212-45fc-938f-283651e70d88",
+        "96da2345-4803-46d1-9b31-945a125e8148"
       ],
       "settings": {
         "heading": "<p>Our <em>Features<\/em><\/p>",
