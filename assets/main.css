@@ -79,7 +79,10 @@ span.needsclick.go681896951.kl-private-reset-css-Xuajs1 {
 /*Core Collection Product Images height*/
 #shopify-section-template--15914188996858__product-grid .lazyload-item.lazyloaded {
     object-fit: cover;
-    height:300px!important;
 }
 
+@media only screen and (min-width:1025px){
+  #shopify-section-template--15914188996858__product-grid .lazyload-item.lazyloaded{
+  height:300px !important;
+}}
 /*Core Collection Product Images height End*/
