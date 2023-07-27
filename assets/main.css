@@ -88,6 +88,6 @@ span.needsclick.go681896951.kl-private-reset-css-Xuajs1 {
 /*Core Collection Product Images height End*/
 
 .card-product--collection-product-grid .card-product__info .jdgm-widget.jdgm-preview-badge.jdgm--done-setup {
-  position: absolute;
-  top: 90px;
+  position: absolute!important;
+  top: 90px!important;
 }
