@@ -75,3 +75,14 @@ span.needsclick.go681896951.kl-private-reset-css-Xuajs1 {
     bottom:4px;
 }
 /*-----End--------------*/
+
+/*Core Collection Product Images height*/
+#shopify-section-template--15914188996858__product-grid .lazyload-item.lazyloaded {
+    object-fit: cover;
+}
+
+@media only screen and (min-width:1025px){
+  #shopify-section-template--15914188996858__product-grid .lazyload-item.lazyloaded{}
+  height:300px !important;
+}}
+/*Core Collection Product Images height End*/
