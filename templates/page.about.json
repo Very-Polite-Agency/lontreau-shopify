@@ -294,6 +294,13 @@
             "title": "Feature: STYLE Canada",
             "message": "<p><em><strong>\"Lontreau’s Global Antioxidant Serum <\/strong><\/em>is a hydrating serum with nine types of antioxidants to offer broad spectrum protection against a wide range of free-radicals, infrared rays, blue light, and environmental stressors.\" <a href=\"https:\/\/style.ca\/summer-skin-round-up\/\" target=\"_blank\" title=\"https:\/\/style.ca\/summer-skin-round-up\/\">Check it out!<\/a><\/p>"
           }
+        },
+        "14d16af8-ac4a-47e7-a27f-ea6f8c06c977": {
+          "type": "accordion",
+          "settings": {
+            "title": "Feature: BC Business",
+            "message": "<p>“My skincare was making it so that I had to make a choice between, Am I going to go on a run today or am I going to use my skincare routine?\" <\/p><p>Equally frustrated and inspired, Buonassisi decided the only way forward was to develop a line for people like her: the outdoors-loving, classic Pacific Northwest folks who are outside year-round, whether they’re running, swimming, hiking or biking in the summer, and skiing in the winter. <a href=\"https:\/\/www.bcbusiness.ca\/Vancouver-entrepreneur-Angie-Buonassisi-launches-Lontreau-to-serve-skincare-for-athletes\" target=\"_blank\" title=\"Vancouver entrepreneur Angie Buonassisi launches Lontreau to serve skincare for athletes\">Read more...<\/a><\/p>"
+          }
         }
       },
       "block_order": [
@@ -303,7 +310,8 @@
         "33dfa578-1d2f-4d65-98e9-8df3b6cd5d34",
         "4018e885-5da6-44cf-9279-a6e25d2a2ce7",
         "53ef7c87-1212-45fc-938f-283651e70d88",
-        "96da2345-4803-46d1-9b31-945a125e8148"
+        "96da2345-4803-46d1-9b31-945a125e8148",
+        "14d16af8-ac4a-47e7-a27f-ea6f8c06c977"
       ],
       "settings": {
         "heading": "<p>Our <em>Features<\/em><\/p>",
