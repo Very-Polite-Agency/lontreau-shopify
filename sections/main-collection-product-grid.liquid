@@ -33,10 +33,11 @@
             {%- for product in collection.products -%}
               {%- render 'card-product', product: product, style: section_name -%}
             {%- endfor -%}
-            <div class="collection-title">
+
+          </div>
+                    <div class="collection-title">
                 {{ collection.description }}
               </div>
-          </div>
         {% render 'bs-container', state: 'closed' %}
 
       </div>
