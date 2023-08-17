@@ -28,9 +28,7 @@
               {% endfor %}
             </select>
           </div>
-          <div class="collection-title">
-                {{ collection.description }}
-              </div>
+
           <div class="{{ section_name }}__listing listing--{{ section_name }}">
             {%- for product in collection.products -%}
               {%- render 'card-product', product: product, style: section_name -%}
