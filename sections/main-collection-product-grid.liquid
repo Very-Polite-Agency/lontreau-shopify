@@ -36,7 +36,9 @@
           </div>
         {% render 'bs-container', state: 'closed' %}
       </div>
-
+ <div class="collection-title">
+                {{ collection.description }}
+              </div>
       {%- if paginate.pages > 1 -%}
         {% render 'pagination', paginate: paginate, anchor: '' %}
       {%- endif -%}
