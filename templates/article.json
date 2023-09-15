@@ -4,7 +4,7 @@
       "type": "main-article",
       "settings": {
         "cta_title": "Back to Home",
-        "cta_link": "shopify:\/\/collections\/frontpage"
+        "cta_link": "#"
       }
     }
   },
