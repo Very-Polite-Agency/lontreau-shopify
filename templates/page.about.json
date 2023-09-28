@@ -246,6 +246,13 @@
     "81d5a585-e206-46cb-8e39-c7594128536d": {
       "type": "accordion-with-image",
       "blocks": {
+        "3ea30267-58ca-4437-a9f7-b981a37b8f6f": {
+          "type": "accordion",
+          "settings": {
+            "title": "FEATURE: Globe and mail",
+            "message": "<p>Buonassisi wasn’t about to miss a run because of her skin-care routine, so she set out to create a product that offered similar benefits without the retinol. This inspired her four-step skin-care line Lontreau, which she launched this year. <a href=\"https:\/\/www.theglobeandmail.com\/life\/style\/article-outdoor-gear-canadian-brands\/\" target=\"_blank\" title=\"https:\/\/www.theglobeandmail.com\/life\/style\/article-outdoor-gear-canadian-brands\/\">Learn more...<\/a><\/p>"
+          }
+        },
         "fdb5a6d6-39b5-4210-b461-93dfba139f17": {
           "type": "accordion",
           "settings": {
@@ -304,6 +311,7 @@
         }
       },
       "block_order": [
+        "3ea30267-58ca-4437-a9f7-b981a37b8f6f",
         "fdb5a6d6-39b5-4210-b461-93dfba139f17",
         "5d5b1be1-06e5-49a6-a162-e68eb6e0dfef",
         "9e91f18b-7faa-4838-a630-304e80365b11",
