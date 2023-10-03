@@ -701,5 +701,14 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
   left: 11px!important;
   right:auto !important
 }
+.header__brand {
+    position: relative;
+    top: 0px;
+    left: 18px;
+    right: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+  
 }
 
