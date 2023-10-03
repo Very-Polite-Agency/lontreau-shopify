@@ -695,7 +695,8 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
 
 .header__main nav.header__account.ac {
   left: 11px!important;
-  right:auto !important
+  z-index:11;
+  right:auto !important;
 }
 .header__brand {
     position: relative;
