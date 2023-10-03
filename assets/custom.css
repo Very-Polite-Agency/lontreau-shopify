@@ -691,8 +691,6 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
 
 }
 @media screen and (max-width: 991px){
-  
-
 .header__main nav.header__account.ac {
   left: 11px!important;
   z-index:11;
@@ -715,4 +713,11 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
     margin-right: 61px;
 }
 }
+@media screen and (max-width: 484px){
+  .header__button {
+      font-size: 22px !important;
+  }
+}
+
+
 
