@@ -707,7 +707,8 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
     margin: 0 auto;
 }
 .header__button {
-    left: -56% !important;
+    left: 20px !important;
+  width:110px;
   z-index: 0;
 } 
  .header__main nav.header__cart.cart {
