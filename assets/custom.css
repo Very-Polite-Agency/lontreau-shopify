@@ -707,6 +707,7 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
 }
 .header__button {
     left: -56% !important;
+  z-index: 0;
 } 
  .header__main nav.header__cart.cart {
     margin-right: 61px;
