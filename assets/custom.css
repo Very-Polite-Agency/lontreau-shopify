@@ -677,8 +677,11 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
 }
 
 
+
+
+
 @media screen and (min-width: 991px){
-  .navigation__item:first-child a.navigation__link.link {
+  .navigation__list .navigation__item:first-child a.navigation__link.link {
   background: rgba(var(--theme-colour-forrest), 1);
   color: #fff;
   height: 50px;
