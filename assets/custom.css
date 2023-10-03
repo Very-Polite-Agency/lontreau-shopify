@@ -676,3 +676,14 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
     margin-bottom: 0px!important;
 }
 
+
+@media screen and (min-width: 991px){
+  a.navigation__link.link.active {
+  background: rgba(var(--theme-colour-forrest), 1);
+  color: #fff;
+  height: 50px;
+  margin-top: 20px;
+}
+}
+
+
