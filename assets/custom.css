@@ -709,6 +709,8 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
     text-align: center;
     margin: 0 auto;
 }
-  
+.header__button {
+    left: -56% !important;
+} 
 }
 
