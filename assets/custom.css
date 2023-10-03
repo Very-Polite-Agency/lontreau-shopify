@@ -714,7 +714,7 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
 }
 }
 @media screen and (max-width: 484px){
-  .header__button {
+  .header__button span {
       font-size: 22px !important;
   }
 }
