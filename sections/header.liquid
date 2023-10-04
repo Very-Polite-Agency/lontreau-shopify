@@ -97,10 +97,16 @@
     </nav>
   {% endif %}
 
-  <nav class="{{ section_name }}__cart cart gh">
+  <nav class="{{ section_name }}__cart cart ">
     <a class="cart__link link" href="/cart" title="Cart">
       <span class="cart__link-icon ink__icon">{% render 'svg', type: 'icon.cart' %}</span>
       <span class="cart__link-title link__title js--cart-items-total">({{ cart.item_count }})</span>
+    </a>
+  </nav>
+   
+  <nav class="{{ section_name }}__shop shop">
+    <a class="shop__link link" href="/cart" title="Cart">
+      <span class="shop__button">Shop</span>
     </a>
   </nav>
 
