@@ -714,6 +714,13 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
  .header__main nav.header__cart.cart {
     margin-right: 61px;
 }
+nav.header__shop.shop a {
+    background: rgba(var(--theme-colour-forrest), 1);
+    color: #fff;
+    margin-top: 0;
+    box-shadow: 2px 2px 3px 1px #333;
+    padding: 10px 15px;
+}  
 }
 @media screen and (max-width: 484px){
   .header__button span {
