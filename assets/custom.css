@@ -720,6 +720,9 @@ nav.header__shop.shop a {
     margin-top: 0;
     box-shadow: 2px 2px 3px 1px #333;
     padding: 10px 15px;
+  font-family: "Self Modern", serif;
+  position: relative;
+    left: 10px;
 }  
 }
 @media screen and (max-width: 484px){
