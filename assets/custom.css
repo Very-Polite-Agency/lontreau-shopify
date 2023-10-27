@@ -691,6 +691,9 @@ button.needsclick.kl-teaser-Sgsnsr.undefined.kl-private-reset-css-Xuajs1 span{
 .header__main nav.header__shop.shop {
     display: none;
 }
+ .footer__menus-extra .navigation__item, .footer__menus-main .navigation__item {
+    margin: 15px 25px;
+} 
 }
 @media screen and (max-width: 991px){
 .header__main nav.header__account.ac {
