@@ -732,4 +732,11 @@ nav.header__shop.shop a {
 }
 
 
+.footer__menus-extra .navigation__link::after, .footer__menus-main .navigation__link::after {
+    width: 150%;
+    height: 200%;
+    top: -56%;
+    left: -24%;
+}
+
 
