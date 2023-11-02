@@ -253,6 +253,13 @@
             "message": "<p>Buonassisi wasn’t about to miss a run because of her skin-care routine, so she set out to create a product that offered similar benefits without the retinol. This inspired her four-step skin-care line Lontreau, which she launched this year. <a href=\"https:\/\/www.theglobeandmail.com\/life\/style\/article-outdoor-gear-canadian-brands\/\" target=\"_blank\" title=\"https:\/\/www.theglobeandmail.com\/life\/style\/article-outdoor-gear-canadian-brands\/\">Learn more...<\/a><\/p>"
           }
         },
+        "2eb105d9-9e03-4ae7-bf23-6543ee9c131c": {
+          "type": "accordion",
+          "settings": {
+            "title": "Feature: National Post",
+            "message": "<p>\"The founder challenged herself to strive for the ultimate in clean standards, with each product formulated to the<a href=\"https:\/\/credobeauty.com\/pages\/the-credo-clean-standard-1\" target=\"_blank\">Credo Beauty Clean Standard <\/a>— considered by many to be the industry benchmark.\" <a href=\"https:\/\/nationalpost.com\/shopping-essentials\/skincare-brands-to-watch-right-now\" target=\"_blank\" title=\"https:\/\/nationalpost.com\/shopping-essentials\/skincare-brands-to-watch-right-now\">Read More...<\/a><\/p>"
+          }
+        },
         "fdb5a6d6-39b5-4210-b461-93dfba139f17": {
           "type": "accordion",
           "settings": {
@@ -301,25 +308,18 @@
             "title": "Feature: BC Business",
             "message": "<p>“My skincare was making it so that I had to make a choice between, Am I going to go on a run today or am I going to use my skincare routine?\" <\/p><p>Equally frustrated and inspired, Buonassisi decided the only way forward was to develop a line for people like her: the outdoors-loving, classic Pacific Northwest folks who are outside year-round, whether they’re running, swimming, hiking or biking in the summer, and skiing in the winter. <a href=\"https:\/\/www.bcbusiness.ca\/Vancouver-entrepreneur-Angie-Buonassisi-launches-Lontreau-to-serve-skincare-for-athletes\" target=\"_blank\" title=\"Vancouver entrepreneur Angie Buonassisi launches Lontreau to serve skincare for athletes\">Read more...<\/a><\/p>"
           }
-        },
-        "2eb105d9-9e03-4ae7-bf23-6543ee9c131c": {
-          "type": "accordion",
-          "settings": {
-            "title": "Feature: National Post",
-            "message": "<p>\"The founder challenged herself to strive for the ultimate in clean standards, with each product formulated to the<a href=\"https:\/\/credobeauty.com\/pages\/the-credo-clean-standard-1\" target=\"_blank\">Credo Beauty Clean Standard <\/a>— considered by many to be the industry benchmark.\" <a href=\"https:\/\/nationalpost.com\/shopping-essentials\/skincare-brands-to-watch-right-now\" target=\"_blank\" title=\"https:\/\/nationalpost.com\/shopping-essentials\/skincare-brands-to-watch-right-now\">Read More...<\/a><\/p>"
-          }
         }
       },
       "block_order": [
         "3ea30267-58ca-4437-a9f7-b981a37b8f6f",
+        "2eb105d9-9e03-4ae7-bf23-6543ee9c131c",
         "fdb5a6d6-39b5-4210-b461-93dfba139f17",
         "5d5b1be1-06e5-49a6-a162-e68eb6e0dfef",
         "9e91f18b-7faa-4838-a630-304e80365b11",
         "4018e885-5da6-44cf-9279-a6e25d2a2ce7",
         "53ef7c87-1212-45fc-938f-283651e70d88",
         "96da2345-4803-46d1-9b31-945a125e8148",
-        "14d16af8-ac4a-47e7-a27f-ea6f8c06c977",
-        "2eb105d9-9e03-4ae7-bf23-6543ee9c131c"
+        "14d16af8-ac4a-47e7-a27f-ea6f8c06c977"
       ],
       "settings": {
         "heading": "<p>Our <em>Features<\/em><\/p>",
