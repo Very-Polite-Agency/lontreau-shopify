@@ -76,6 +76,7 @@
     },
     "163743ca-7521-4c97-bb61-84cee20767e4": {
       "type": "fifty-fifty-framed",
+      "disabled": true,
       "settings": {
         "heading": "<p>Don't <em>miss out<\/em><\/p>",
         "heading_highlight": "stroke",
