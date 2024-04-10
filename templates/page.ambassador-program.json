@@ -17,7 +17,7 @@
         "cta_title": "APPLY TODAY",
         "cta_link": "https:\/\/lontreau.refersion.com\/affiliate\/registration",
         "hide_image_mobile": false,
-        "anchor_id": "ambassador-link",
+        "anchor_id": "",
         "layout": "image-right",
         "colour_theme": "light"
       }
@@ -31,7 +31,7 @@
         "cta_title": "",
         "cta_link": "",
         "hide_image_mobile": false,
-        "anchor_id": "ambassador-link",
+        "anchor_id": "",
         "layout": "image-right",
         "colour_theme": "light"
       }
