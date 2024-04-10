@@ -744,9 +744,7 @@ nav.header__shop.shop a {
 
 
 /*harsh css 10-april*/
-.page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_7q6kgk .fifty-fifty-custom{
-    padding-top:0px !important;
-}
+
 
 .page--ambassador-program .row .fifty-fifty-custom__layout{
     justify-content: center;
@@ -846,5 +844,13 @@ margin-bottom:10px !important;
     padding-bottom:0px;
 }
 
+.page--ambassador-program #shopify-section-template--17726303240442__main{
+    content:"";
+    background-image:url('https://cdn.shopify.com/s/files/1/0637/7737/4458/files/Lontreau-OurPhilosophy_430x.jpg?v=1661362577');
+    background-size: cover;
+    background-position: center;
+    color:white;
+    text-align:center;
+}
 
 /* end harsh css 10-april*/
