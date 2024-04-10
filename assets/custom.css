@@ -826,20 +826,25 @@ nav.header__shop.shop a {
 }
 }
 
-section#shopify-section-template--17726303240442__fifty_fifty_custom_content_7q6kgk .fifty-fifty-custom__cta{
+.page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_7q6kgk .fifty-fifty-custom__cta{
     margin:0px;
 }
 
-section#shopify-section-template--17726303240442__fifty_fifty_custom_content_7q6kgk .ambassador-link-text {
+.page--ambassador-program section#shopify-section-template--17726303240442__fifty_fifty_custom_content_7q6kgk .ambassador-link-text {
     margin-top:50px;
 margin-bottom:10px !important;
 }
 
-section#shopify-section-template--17726303240442__fifty_fifty_custom_content_7q6kgk .ambassador-link-text a{
+.page--ambassador-program section#shopify-section-template--17726303240442__fifty_fifty_custom_content_7q6kgk .ambassador-link-text a{
     font-size:14px;
     font-weight:bolder;
     text-decoration:none;
     color: rgb(125, 199, 115) !important;
 }
+
+.page--ambassador-program section#shopify-section-template--17726303240442__fifty_fifty_custom_content_RWza8B .fifty-fifty-custom{
+    padding-bottom:0px;
+}
+
 
 /* end harsh css 10-april*/
