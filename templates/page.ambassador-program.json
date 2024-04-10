@@ -10,7 +10,7 @@
       "settings": {
         "heading": "",
         "heading_highlight": "standard",
-        "message": "",
+        "message": "<p>hvhjvb<\/p>",
         "image": "shopify:\/\/shop_images\/Lontreau-Bottles-_0001s_0007_EnduranceHydration-L-FRONT.jpg",
         "anchor_id": "",
         "style": "standard",
@@ -34,11 +34,37 @@
         "height": "auto",
         "curved_arrow_enable": false
       }
+    },
+    "accordion_education_P6ppdK": {
+      "type": "accordion-education",
+      "blocks": {
+        "accordion_Mf8TaQ": {
+          "type": "accordion",
+          "settings": {
+            "title": "",
+            "message": "",
+            "cta_title": "APPLY TODAY",
+            "cta_link": "https:\/\/lontreau.refersion.com\/affiliate\/registration",
+            "image_figure": "",
+            "image_caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_Mf8TaQ"
+      ],
+      "settings": {
+        "heading": "<p>Apply to be a Lontreau Brand Ambassador<\/p>",
+        "heading_highlight": "standard",
+        "message": "<p>We're looking for individuals passionate about optimizing skin and overall health.<\/p>",
+        "anchor_id": ""
+      }
     }
   },
   "order": [
     "main",
     "accordion_with_image_8fGzM3",
-    "16535024027ae5e79d"
+    "16535024027ae5e79d",
+    "accordion_education_P6ppdK"
   ]
 }
