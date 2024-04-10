@@ -13,11 +13,11 @@
       "settings": {
         "heading": "<p>Apply to be a Lontreau Brand Ambassador<\/p>",
         "heading_highlight": "standard",
-        "content": "We're looking for individuals passionate about optimizing skin and overall health.\n<div class=\"ambassador-link\"><a href='https:\/\/lontreau.refersion.com\/affiliate\/registration\"'>APPLICATIONS ARE NOW OPEN<\/a><\/div>",
+        "content": "We're looking for individuals passionate about optimizing skin and overall health.\n<div class=\"ambassador-link-text\"><a href='https:\/\/lontreau.refersion.com\/affiliate\/registration\"'>APPLICATIONS ARE NOW OPEN<\/a><\/div>",
         "cta_title": "APPLY TODAY",
         "cta_link": "https:\/\/lontreau.refersion.com\/affiliate\/registration",
         "hide_image_mobile": false,
-        "anchor_id": "",
+        "anchor_id": "ambassador-link",
         "layout": "image-right",
         "colour_theme": "light"
       }
@@ -31,26 +31,39 @@
         "cta_title": "",
         "cta_link": "",
         "hide_image_mobile": false,
-        "anchor_id": "",
+        "anchor_id": "ambassador-link",
         "layout": "image-right",
         "colour_theme": "light"
       }
     },
-    "16535024027ae5e79d": {
-      "type": "full-width-feature",
+    "fifty_fifty_custom_content_ttxqjg": {
+      "type": "fifty-fifty-custom-content",
       "settings": {
-        "text_theme": "light",
-        "title": "",
-        "heading": "<p>Defy the elements,<\/p><p><em>Defy expectations<\/em><\/p>",
+        "heading": "<p>Ambassador duties<\/p>",
         "heading_highlight": "standard",
-        "message": "",
+        "content": "<span class=\"text\">We request the following from each ambassador:<\/span>\n<ul>\n<li>FOLLOW LONTREAU ON SOCIALS<\/li>\n<li>PROVIDE LONTREAU WITH YOUR CHOICE OF 1 VIDEO OR 3 IMAGES WITH OUR BRAND IN IT EVERY 3 MONTHS (PER TERM)<\/li>\n<li>CREATE LONTREAU CONTENT ON YOUR PERSONAL SOCIAL ACCOUNTS ORGANICALLY<\/li>\n<li>ENGAGE WITH LONTREAU'S CONTENT (IE. LIKING, COMMENTING. REPOSTING, ETC. IN A NATURAL WAY)<\/li>\n<li>SHARE YOUR UNIQUE DISCOUNT CODE WITH YOUR COMMUNITY<\/li>\n<\/ul>",
         "cta_title": "",
         "cta_link": "",
-        "image": "shopify:\/\/shop_images\/LONTREAU--our-philosophy-page--FF_2x_7733757c-23af-4724-a7e1-54ceb5b5668b.png",
-        "parallax": false,
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-06-28_at_10.59.25_AM.png",
+        "hide_image_mobile": false,
         "anchor_id": "",
-        "height": "auto",
-        "curved_arrow_enable": false
+        "layout": "image-left",
+        "colour_theme": "light"
+      }
+    },
+    "fifty_fifty_custom_content_Nitywr": {
+      "type": "fifty-fifty-custom-content",
+      "settings": {
+        "heading": "<p>Ambassador perles<\/p>",
+        "heading_highlight": "standard",
+        "content": "<span class=\"text\">We provide our ambassadors with the following:<\/span>\n<ul>\n<li>ONE FREE CORE KIT PER TERM (3 MONTHS)<\/li>\n<li>10% COMMISSION ON SALES USING YOUR UNIQUE CODE<\/li>\n<li>FIRST ACCESS TO PRODUCT LAUNCHES<\/li>\n<\/ul>",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/Lontreau-Core4-06_8ada9635-45b0-4826-8aac-263110716a1d.jpg",
+        "hide_image_mobile": false,
+        "anchor_id": "",
+        "layout": "image-right",
+        "colour_theme": "light"
       }
     }
   },
@@ -58,6 +71,7 @@
     "main",
     "fifty_fifty_custom_content_7q6kgk",
     "fifty_fifty_custom_content_RWza8B",
-    "16535024027ae5e79d"
+    "fifty_fifty_custom_content_ttxqjg",
+    "fifty_fifty_custom_content_Nitywr"
   ]
 }
