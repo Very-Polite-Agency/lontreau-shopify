@@ -8,7 +8,7 @@
     "fifty_fifty_custom_content_7q6kgk": {
       "type": "fifty-fifty-custom-content",
       "custom_css": [
-        ".ambassador-link a{text-align:center; text-decoration:none;}"
+        ".ambassador-link a {text-align: center; text-decoration: none;}"
       ],
       "settings": {
         "heading": "<p>Apply to be a Lontreau Brand Ambassador<\/p>",
@@ -20,31 +20,6 @@
         "anchor_id": "",
         "layout": "image-right",
         "colour_theme": "light"
-      }
-    },
-    "accordion_education_P6ppdK": {
-      "type": "accordion-education",
-      "blocks": {
-        "accordion_Mf8TaQ": {
-          "type": "accordion",
-          "settings": {
-            "title": "",
-            "message": "",
-            "cta_title": "APPLY TODAY",
-            "cta_link": "https:\/\/lontreau.refersion.com\/affiliate\/registration",
-            "image_figure": "",
-            "image_caption": ""
-          }
-        }
-      },
-      "block_order": [
-        "accordion_Mf8TaQ"
-      ],
-      "settings": {
-        "heading": "<p>Apply to be a Lontreau Brand Ambassador<\/p>",
-        "heading_highlight": "standard",
-        "message": "<p>We're looking for individuals passionate about optimizing skin and overall health.<\/p>",
-        "anchor_id": ""
       }
     },
     "16535024027ae5e79d": {
@@ -68,7 +43,6 @@
   "order": [
     "main",
     "fifty_fifty_custom_content_7q6kgk",
-    "accordion_education_P6ppdK",
     "16535024027ae5e79d"
   ]
 }
