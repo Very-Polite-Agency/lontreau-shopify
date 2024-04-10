@@ -5,6 +5,19 @@
       "settings": {
       }
     },
+    "accordion_with_image_8fGzM3": {
+      "type": "accordion-with-image",
+      "settings": {
+        "heading": "",
+        "heading_highlight": "standard",
+        "message": "",
+        "image": "shopify:\/\/shop_images\/Lontreau-Bottles-_0001s_0007_EnduranceHydration-L-FRONT.jpg",
+        "anchor_id": "",
+        "style": "standard",
+        "layout": "image-left",
+        "colour_theme": "light"
+      }
+    },
     "16535024027ae5e79d": {
       "type": "full-width-feature",
       "settings": {
@@ -25,6 +38,7 @@
   },
   "order": [
     "main",
+    "accordion_with_image_8fGzM3",
     "16535024027ae5e79d"
   ]
 }
