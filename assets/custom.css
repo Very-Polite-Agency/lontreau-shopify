@@ -888,6 +888,27 @@ font-style:italic;
     padding-right:50px !important;
 }
 
+h1.default-page__heading.heading--2::after{
+    content:"";
+    background: rgba(var(--theme-colour-grass), 1);
+    height: 15px!important;
+    display: block;
+    opacity: 0.75;
+    margin-top:-15px;
+    
+}
+
+h1.default-page__heading.heading--2 {
+    position: absolute;
+}
+h1.default-page__heading.heading--2 {
+    width: max-content;
+}
+
+.col-12.col-lg-8.offset-lg-2 {
+    max-width: 320px;
+    margin: 0px auto;
+}
 
 
 /* end harsh css 10-april*/
