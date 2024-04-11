@@ -857,6 +857,8 @@ margin-bottom:10px !important;
     color:white;
     text-align:center;
   height:400px;
+  align-content: center;
+    display: grid;
 }
 .page--ambassador-program #shopify-section-template--17726303240442__main h1{
 font-style:italic;
