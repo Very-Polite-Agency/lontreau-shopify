@@ -875,7 +875,18 @@ font-style:italic;
     font-size: 48px !important;
 }}
 
+.page--ambassador-program .default-page__main .heading--2{
+    font-size:54px !important;
+}
 
+.page--ambassador-program section#shopify-section-template--17726303240442__fifty_fifty_custom_content_7q6kgk .fifty-fifty-custom__content{
+    padding:20px
+}
+
+.page--ambassador-program section#shopify-section-template--17726303240442__fifty_fifty_custom_content_7q6kgk  .fifty-fifty-custom__message{
+    padding-left:50px !important;
+    padding-right:50px !important;
+}
 
 
 
