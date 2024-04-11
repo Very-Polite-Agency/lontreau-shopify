@@ -867,14 +867,7 @@ font-style:italic;
 .heading--2 {
     font-size: 48px !important;
 }}
-@media (min-width: 992px){
-.page--ambassador-program .heading--2 {
-    font-size: 52px !important;
-}}
-@media (min-width: 1400px){
-.page--ambassador-program .heading--2 {
-    font-size: 62px !important;
-}}
+
 
 
 
