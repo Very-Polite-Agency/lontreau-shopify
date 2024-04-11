@@ -13,7 +13,7 @@
       "settings": {
         "heading": "<p>Apply to be a Lontreau Brand Ambassador<\/p>",
         "heading_highlight": "standard",
-        "content": "We're looking for individuals passionate about optimizing skin and overall health.\n<div class=\"ambassador-link-text\"><a href='https:\/\/lontreau.refersion.com\/affiliate\/registration\"'>APPLICATIONS ARE NOW OPEN<\/a><\/div>",
+        "content": "We're looking for individuals passionate about optimizing skin and overall health.\n<div class=\"ambassador-link-text\"><a href=\"https:\/\/lontreau.refersion.com\/affiliate\/registration\" target=\"blank\">APPLICATIONS ARE NOW OPEN<\/a><\/div>",
         "cta_title": "APPLY TODAY",
         "cta_link": "https:\/\/lontreau.refersion.com\/affiliate\/registration",
         "hide_image_mobile": false,
