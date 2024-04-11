@@ -853,4 +853,24 @@ margin-bottom:10px !important;
     text-align:center;
 }
 
+.page--ambassador-program .heading--2 {
+    font-size: 37px;
+}
+@media (min-width: 1400px){
+.page--ambassador-program .heading--2 {
+    font-size: 62px;
+}}
+@media (min-width: 992px){
+.page--ambassador-program .heading--2 {
+    font-size: 52px;
+}}
+@media (min-width: 768px){
+.heading--2 {
+    font-size: 48px;
+}}
+@media (min-width: 576px){
+.heading--2 {
+    font-size: 44px;
+}}
+
 /* end harsh css 10-april*/
