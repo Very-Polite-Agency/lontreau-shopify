@@ -851,9 +851,11 @@ margin-bottom:10px !important;
     background-position: center;
     color:white;
     text-align:center;
-  font-style:italic;
+  
 }
-
+.page--ambassador-program #shopify-section-template--17726303240442__main{
+font-style:italic;
+}
 .page--ambassador-program .heading--2 {
     font-size: 37px;
 }
