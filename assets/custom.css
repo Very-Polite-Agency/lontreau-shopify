@@ -857,23 +857,23 @@ margin-bottom:10px !important;
 font-style:italic;
 }
 .page--ambassador-program .heading--2 {
-    font-size: 37px;
+    font-size: 37px !important;
 }
 @media (min-width: 576px){
 .heading--2 {
-    font-size: 44px;
+    font-size: 44px !important;
 }}
 @media (min-width: 768px){
 .heading--2 {
-    font-size: 48px;
+    font-size: 48px !important;
 }}
 @media (min-width: 992px){
 .page--ambassador-program .heading--2 {
-    font-size: 52px;
+    font-size: 52px !important;
 }}
 @media (min-width: 1400px){
 .page--ambassador-program .heading--2 {
-    font-size: 62px;
+    font-size: 62px !important;
 }}
 
 
