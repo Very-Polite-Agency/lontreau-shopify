@@ -893,7 +893,6 @@ h1.default-page__heading.heading--2::after{
     background: rgba(var(--theme-colour-grass), 1);
     height: 15px!important;
     display: block;
-    opacity: 0.75;
     margin-top:-15px;
     
 }
