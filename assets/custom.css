@@ -853,7 +853,7 @@ margin-bottom:10px !important;
     content:"";
     background-image:url('https://cdn.shopify.com/s/files/1/0637/7737/4458/files/First_Image.png?v=1713165417');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     color:white;
     text-align:center;
   height:400px;
