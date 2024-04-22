@@ -917,4 +917,24 @@ h1.default-page__heading.heading--2 {
     padding-right: 40px !important;
     padding-left:40px !important;
 }}
+
+
+.page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_NceiWB .fifty-fifty-custom {
+ padding-top:0px;
+   padding-bottom:30px;
+    background-color: rgb(15, 94, 56);
+    color: white;
+}
+
+.page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_NceiWB .fifty-fifty-custom .fifty-fifty-custom__cta {
+   margin-top:0px
+}
+
+.page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_NceiWB .fifty-fifty-custom h6{
+display:none;
+}
+
+.page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_Nitywr div#fifty-fifty-custom--template--17726303240442__fifty_fifty_custom_content_Nitywr {
+   padding-bottom:50px;
+}
 /* end harsh css 10-april*/
