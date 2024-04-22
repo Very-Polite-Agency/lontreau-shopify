@@ -810,7 +810,7 @@ nav.header__shop.shop a {
 }
 
 .page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_ttxqjg .fifty-fifty-custom__layout{
-    height:600px;
+    height:550px;
     justify-content:center;
 }
 
@@ -820,8 +820,13 @@ nav.header__shop.shop a {
 }
 }
 
-@media(min-width:1200px){.page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_Nitywr .fifty-fifty-custom__layout{
-    height:450px;
+@media(min-width:1200px){.page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_ttxqjg .fifty-fifty-custom__layout{
+    height:600px;
+    justify-content:center;
+}
+                         .page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_Nitywr .fifty-fifty-custom__layout{
+  
+    height:500px;
     justify-content:center;
 }}
 
