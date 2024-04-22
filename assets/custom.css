@@ -937,4 +937,9 @@ display:none;
 .page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_Nitywr div#fifty-fifty-custom--template--17726303240442__fifty_fifty_custom_content_Nitywr {
    padding-bottom:50px;
 }
+
+#shopify-section-template--17726303240442__fifty_fifty_custom_content_NceiWB .fifty-fifty-custom__content a:hover{
+    background-color: rgb(9, 56, 34)!important;
+    color: #fff;
+}
 /* end harsh css 10-april*/
