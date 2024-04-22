@@ -909,12 +909,12 @@ h1.default-page__heading.heading--2 {
     margin: 0px auto;
 }
 
-.page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_ttxqjg .fifty-fifty-custom__content.aos-init.aos-animate {
+@media(min-width:992px){.page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_ttxqjg .fifty-fifty-custom__content.aos-init.aos-animate {
     padding-right: 40px !important;
     padding-left:40px !important;
 }
 .page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_Nitywr .fifty-fifty-custom__content.aos-init.aos-animate {
     padding-right: 40px !important;
     padding-left:40px !important;
-}
+}}
 /* end harsh css 10-april*/
