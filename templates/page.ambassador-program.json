@@ -82,22 +82,6 @@
         "layout": "image-right",
         "colour_theme": "light"
       }
-    },
-    "fifty_fifty_feature_Uhzpm3": {
-      "type": "fifty-fifty-feature",
-      "settings": {
-        "title": "",
-        "heading": "",
-        "heading_highlight": "standard",
-        "message": "",
-        "cta_title": "dfd",
-        "cta_link": "https:\/\/lontreau.refersion.com\/affiliate\/registration",
-        "hide_image_mobile": false,
-        "anchor_id": "",
-        "style": "standard",
-        "layout": "image-right",
-        "colour_theme": "light"
-      }
     }
   },
   "order": [
@@ -106,7 +90,6 @@
     "fifty_fifty_custom_content_RWza8B",
     "fifty_fifty_custom_content_ttxqjg",
     "fifty_fifty_custom_content_Nitywr",
-    "fifty_fifty_custom_content_NceiWB",
-    "fifty_fifty_feature_Uhzpm3"
+    "fifty_fifty_custom_content_NceiWB"
   ]
 }
