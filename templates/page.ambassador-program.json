@@ -58,10 +58,43 @@
         "heading_highlight": "standard",
         "content": "<span class=\"text\">We provide our ambassadors with the following:<\/span>\n<ul>\n<li>One Free Core Kit Per Term (3 Months)<\/li>\n<li>10% Commission On Sales Using Your Unique Code<\/li>\n<li>First Access To Product Launches<\/li>\n<\/ul>",
         "cta_title": "",
-        "cta_link": "",
+        "cta_link": "https:\/\/lontreau.refersion.com\/affiliate\/registration",
         "image": "shopify:\/\/shop_images\/third_photo.png",
         "hide_image_mobile": false,
         "anchor_id": "",
+        "layout": "image-right",
+        "colour_theme": "light"
+      }
+    },
+    "fifty_fifty_custom_content_NceiWB": {
+      "type": "fifty-fifty-custom-content",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "<h6><a href=\"https:\/\/lontreau.refersion.com\/affiliate\/registration\" title=\"APPLY TODAY\">APPLY TODAY<\/a><\/h6>",
+        "heading_highlight": "standard",
+        "content": "",
+        "cta_title": "APPLY TODAY",
+        "cta_link": "https:\/\/lontreau.refersion.com\/affiliate\/registration",
+        "hide_image_mobile": false,
+        "anchor_id": "",
+        "layout": "image-right",
+        "colour_theme": "light"
+      }
+    },
+    "fifty_fifty_feature_Uhzpm3": {
+      "type": "fifty-fifty-feature",
+      "settings": {
+        "title": "",
+        "heading": "",
+        "heading_highlight": "standard",
+        "message": "",
+        "cta_title": "dfd",
+        "cta_link": "https:\/\/lontreau.refersion.com\/affiliate\/registration",
+        "hide_image_mobile": false,
+        "anchor_id": "",
+        "style": "standard",
         "layout": "image-right",
         "colour_theme": "light"
       }
@@ -72,6 +105,8 @@
     "fifty_fifty_custom_content_7q6kgk",
     "fifty_fifty_custom_content_RWza8B",
     "fifty_fifty_custom_content_ttxqjg",
-    "fifty_fifty_custom_content_Nitywr"
+    "fifty_fifty_custom_content_Nitywr",
+    "fifty_fifty_custom_content_NceiWB",
+    "fifty_fifty_feature_Uhzpm3"
   ]
 }
