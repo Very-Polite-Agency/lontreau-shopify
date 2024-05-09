@@ -906,7 +906,7 @@ font-style:italic;
     padding-right:50px !important;
 }
 
-h1.default-page__heading.heading--2::after{
+.page--ambassador-program h1.default-page__heading.heading--2::after{
     content:"";
     background: rgba(var(--theme-colour-grass), 1);
     height: 15px!important;
@@ -915,14 +915,14 @@ h1.default-page__heading.heading--2::after{
     
 }
 
-h1.default-page__heading.heading--2 {
+.page--ambassador-program h1.default-page__heading.heading--2 {
     position: absolute;
 }
-h1.default-page__heading.heading--2 {
+.page--ambassador-program h1.default-page__heading.heading--2 {
     width: max-content;
 }
 
-.col-12.col-lg-8.offset-lg-2 {
+.page--ambassador-program .col-12.col-lg-8.offset-lg-2 {
     max-width: 320px;
     margin: 0px auto;
 }
@@ -956,7 +956,7 @@ display:none;
    padding-bottom:50px;
 }
 
-#shopify-section-template--17726303240442__fifty_fifty_custom_content_NceiWB .fifty-fifty-custom__content a:hover{
+.page--ambassador-program #shopify-section-template--17726303240442__fifty_fifty_custom_content_NceiWB .fifty-fifty-custom__content a:hover{
     background-color: rgb(9, 56, 34)!important;
     color: #fff;
 }
