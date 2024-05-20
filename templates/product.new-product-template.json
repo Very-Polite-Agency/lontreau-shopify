@@ -1,0 +1,203 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+      }
+    },
+    "1652808272ab3b42c7": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "<p>You may <em>also<\/em> like<\/p>",
+        "heading_highlight": "stroke",
+        "product_limit": 6
+      }
+    },
+    "1651797713ccbee475": {
+      "type": "fifty-fifty-feature",
+      "settings": {
+        "title": "",
+        "heading": "<p>We <em>know<\/em> skin<\/p>",
+        "heading_highlight": "standard",
+        "message": "<p>Lontreau is founded by the co-owner of renowned medical aesthetic and cosmetic surgery clinic, 8 West Clinic. With over a decade in the business of skin, Lontreau products have been developed to support the common concerns of clients, while being uniquely tailored to the needs of an athlete's skin. The team behind Lontreau is passionate about sport and use their own experience to develop products that can benefit everyone from everyday movers to all types of athletes.<\/p>",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/Lontreau_We-Know-Skin2.png",
+        "hide_image_mobile": true,
+        "anchor_id": "",
+        "style": "wide",
+        "layout": "image-right",
+        "colour_theme": "grey"
+      }
+    },
+    "165179579849f0b545": {
+      "type": "carousel-education",
+      "blocks": {
+        "327057bd-4d48-41b5-94ea-784c83f206d6": {
+          "type": "minimal",
+          "settings": {
+            "title": "Paraben-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-12_3x_5e0ac86b-d3c1-4820-8054-7b4bff68e178.png"
+          }
+        },
+        "aca824eb-74ef-4789-9863-96c1624c04f2": {
+          "type": "minimal",
+          "settings": {
+            "title": "Vegan",
+            "image": "shopify:\/\/shop_images\/our-standards-vegan.png"
+          }
+        },
+        "303bd46e-98ba-4903-a6b4-48c75aca8962": {
+          "type": "minimal",
+          "settings": {
+            "title": "Sustainable",
+            "image": "shopify:\/\/shop_images\/our-standards-sustainable.png"
+          }
+        },
+        "6a1789b0-e878-44ef-bd68-4c86cd4faabb": {
+          "type": "minimal",
+          "settings": {
+            "title": "Alcohol-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-16_3x_cd0189b0-0bfa-491f-b693-00a110948a54.png"
+          }
+        },
+        "97b9e10f-d0e8-49a9-9af1-90bf0fb4f8f3": {
+          "type": "minimal",
+          "settings": {
+            "title": "Cruelty-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-11_3x_00ad60ce-4caa-41da-8c52-507018efdd4c.png"
+          }
+        },
+        "19cd96d1-7eb4-4d74-bbd3-c4917339f053": {
+          "type": "minimal",
+          "settings": {
+            "title": "Responsibly Sourced",
+            "image": "shopify:\/\/shop_images\/our-standards-14_3x_11a11132-03e4-484a-b011-1eeb3bdb19da.png"
+          }
+        },
+        "08fd06be-2782-4e46-acc6-566d23c5f472": {
+          "type": "minimal",
+          "settings": {
+            "title": "Aluminum-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-17_3x_eb7c837e-53d8-4411-b4c6-5a243414c60a.png"
+          }
+        },
+        "0d8ae498-d6b4-4d31-aae0-57c226801123": {
+          "type": "minimal",
+          "settings": {
+            "title": "Clean",
+            "image": "shopify:\/\/shop_images\/our-standards-15_3x_7f85d4aa-9a34-41a4-a4fc-49825641d8df.png"
+          }
+        },
+        "e1019745-02f3-4732-b5ad-8adc64096d71": {
+          "type": "minimal",
+          "settings": {
+            "title": "Gluten-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-18_3x_3a0b5683-a52b-4aa4-9d3e-44238435cc5b.png"
+          }
+        },
+        "a3739516-5c3b-4ad3-aa48-4a6f30672d85": {
+          "type": "minimal",
+          "settings": {
+            "title": "Mineral Oils-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-mineraloilsfree_c002443e-a7fe-40eb-9507-0c77db40ed9f.png"
+          }
+        },
+        "251406ea-2a5b-4dfb-a245-cbcdf5d363bc": {
+          "type": "minimal",
+          "settings": {
+            "title": "Formaldehyde Donors-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-formaldehydedonorsfree.png"
+          }
+        },
+        "96fec912-0885-423a-b9b9-bdbc1f07b7c4": {
+          "type": "minimal",
+          "settings": {
+            "title": "Silicone-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-siliconefree.png"
+          }
+        },
+        "d2c74ce3-037e-4454-b91f-a5000137d20a": {
+          "type": "minimal",
+          "settings": {
+            "title": "Synthetic Fragrance-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-syntheticfragrancefree.png"
+          }
+        },
+        "58a870a8-3eab-4cd7-ac5d-47419361df83": {
+          "type": "minimal",
+          "settings": {
+            "title": "Phthalates-Free",
+            "image": "shopify:\/\/shop_images\/our-standards-phthalatesfree.png"
+          }
+        }
+      },
+      "block_order": [
+        "327057bd-4d48-41b5-94ea-784c83f206d6",
+        "aca824eb-74ef-4789-9863-96c1624c04f2",
+        "303bd46e-98ba-4903-a6b4-48c75aca8962",
+        "6a1789b0-e878-44ef-bd68-4c86cd4faabb",
+        "97b9e10f-d0e8-49a9-9af1-90bf0fb4f8f3",
+        "19cd96d1-7eb4-4d74-bbd3-c4917339f053",
+        "08fd06be-2782-4e46-acc6-566d23c5f472",
+        "0d8ae498-d6b4-4d31-aae0-57c226801123",
+        "e1019745-02f3-4732-b5ad-8adc64096d71",
+        "a3739516-5c3b-4ad3-aa48-4a6f30672d85",
+        "251406ea-2a5b-4dfb-a245-cbcdf5d363bc",
+        "96fec912-0885-423a-b9b9-bdbc1f07b7c4",
+        "d2c74ce3-037e-4454-b91f-a5000137d20a",
+        "58a870a8-3eab-4cd7-ac5d-47419361df83"
+      ],
+      "settings": {
+        "content_type": "minimal",
+        "alignment": "center",
+        "heading": "<p>We have <em>high standards<\/em><\/p>",
+        "heading_highlight": "circle",
+        "message": "",
+        "anchor_id": "",
+        "colour_theme": "light"
+      }
+    },
+    "1651797643f6f520ba": {
+      "type": "full-width-feature",
+      "settings": {
+        "text_theme": "light",
+        "title": "",
+        "heading": "<p>Defy the elements,<\/p><p><em>Defy expectations<\/em><\/p>",
+        "heading_highlight": "circle",
+        "message": "",
+        "cta_title": "",
+        "cta_link": "",
+        "image": "shopify:\/\/shop_images\/DSC01191_900c869c-eabe-417f-b8f7-0e46d06bdd0b.jpg",
+        "parallax": false,
+        "anchor_id": "",
+        "height": "auto",
+        "curved_arrow_enable": false
+      }
+    },
+    "judgeme_section_review_widget_bce4": {
+      "type": "apps",
+      "blocks": {
+        "judgeme_review_widget_c393ae0f": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judgeme_review_widget_c393ae0f"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "judgeme_section_review_widget_bce4",
+    "1652808272ab3b42c7",
+    "1651797713ccbee475",
+    "165179579849f0b545",
+    "1651797643f6f520ba"
+  ]
+}
