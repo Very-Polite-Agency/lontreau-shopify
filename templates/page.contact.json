@@ -36,7 +36,7 @@
       "settings": {
         "text_theme": "light",
         "title": "Don’t Like Forms? Email us at",
-        "heading": "<p>hello@lontreau.com<\/p>",
+        "heading": "<p><a href=\"mailto:hello@lontreau.com\">hello@lontreau.com<\/a><\/p>",
         "heading_highlight": "standard",
         "message": "",
         "cta_title": "",
