@@ -2,16 +2,8 @@
   "sections": {
     "main": {
       "type": "main-product-1",
-      "blocks": {
-        "seal_subscriptions_subscription_widget_3whpaB": {
-          "type": "shopify:\/\/apps\/seal-subscriptions\/blocks\/subscription-widget\/13b25004-a140-4ab7-b5fe-29918f759699",
-          "settings": {
-            "product": "{{product}}"
-          }
-        }
-      },
-      "block_order": [
-        "seal_subscriptions_subscription_widget_3whpaB"
+      "custom_css": [
+        "select.product-single__variants {width: 33px;}"
       ],
       "settings": {
       }
