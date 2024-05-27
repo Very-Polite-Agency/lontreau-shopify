@@ -71,9 +71,7 @@
       data-featured-image="{{ featured_image | image_url: width: 200 }}"
       {% unless available %}disabled{% endunless %}
     >
-      <span class="button__title">
-        {% assign product_price = product.selected_or_first_available_variant %}
-        {% if available %}Add to Cart * {{ product_price.price | money }}{% else %}Unavailable{% endif %} </span>
+      <span class="button__title">{% if available %}Add to Cart * {% else %}Unavailable{% endif %} </span>
     </button>
 
     <button
