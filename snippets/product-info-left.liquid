@@ -12,7 +12,7 @@
     {% if description != blank %}
       {% assign accordion_id = 'product-info-accordion--description' %}
       <div class="{{ snippet_name }}__info-item collapsible">
-        <button class="button--collapsible collapsible__trigger heading--4" type="button" data-bs-toggle="collapse" data-bs-target="#{{ accordion_id }}" aria-expanded="false" aria-controls="{{ accordion_id }}">
+        <button class="button--collapsible collapsible__trigger heading--4" type="button" data-bs-toggle="collapse" data-bs-target="#{{ accordion_id }}" aria-controls="{{ accordion_id }}">
           <span class="collapsible__trigger-title button__title">Description</span>
           <span class="collapsible__trigger-icon button__icon">
             <span class="button__icon-plus">{% render 'svg', type: 'icon.plus' %}</span>
