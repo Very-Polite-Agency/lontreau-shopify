@@ -35,6 +35,7 @@
         </div>
 
         <div class="col-12 col-lg-6">
+          {% render 'product-info-right', product: product %}
           <div class="{{ section_name }}__details d-none d-lg-flex">
             
             {% if product_type != blank %}<strong class="{{ section_name }}__type label--2">{{ product_type }}</strong>{% endif %}
@@ -42,7 +43,7 @@
             {% render 'price-variant', classes: 'product__price body-copy--regular', product: product,  show_symbol: true %}
           </div>
           {% render 'product-actions', classes: '', product: product %}
-          {% render 'product-info-right', product: product %}
+          
           
         </div>
 
