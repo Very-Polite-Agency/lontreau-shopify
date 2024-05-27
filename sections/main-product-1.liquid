@@ -22,6 +22,7 @@
 
         <div class="col-12 col-lg-6">
           <h2 class="{{ section_name }}__title heading--2">{{ product_title }}</h2>
+          {% render 'product-info', product: product %}
         </div>
 
         <div class="col-12 col-lg-6">
@@ -35,13 +36,13 @@
 
         <div class="col-12 col-lg-6">
           <div class="{{ section_name }}__details d-none d-lg-flex">
-            
+            {% render 'product-info', product: product %}
             {% if product_type != blank %}<strong class="{{ section_name }}__type label--2">{{ product_type }}</strong>{% endif %}
             {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
             {% render 'price-variant', classes: 'product__price body-copy--regular', product: product,  show_symbol: true %}
           </div>
           {% render 'product-actions', classes: '', product: product %}
-          {% render 'product-info', product: product %}
+          
         </div>
 
       </div>
