@@ -3,7 +3,7 @@
     "main": {
       "type": "main-product-1",
       "custom_css": [
-        "select.product-single__variants {width: 33px;}"
+        "select.product-single__variants {width: 33%;}"
       ],
       "settings": {
       }
