@@ -1,6 +1,96 @@
+{%- assign section_name = 'product' -%}
+{%- assign section_id = section_name | append: '--' | append: section.id -%}
+
+{% assign featued_image = product.featured_image | default: false %}
+{% assign gallery = false %}
+{% assign gallery_id = 'product-gallery--' | append: section.id %}
+{% assign gallery_style = 'product-gallery' %}
+{% assign product_title = product.title | default: '' %}
+{% assign product_type = product.type | default: '' %}
+
+{% if product.images.size > 1 %}
+  {% assign gallery = true %}
+{% endif %}
+
+{% render 'json-ld', article: product, type: 'product' %}
+
+<div class="{{ section_name }}" itemscope itemtype="http://schema.org/Product">
+  {%- form 'product', product, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+
+    {% render 'bs-container', state: 'open' %}
+      <div class="row row--inner">
+
+        <div class="col-12 col-lg-6">
+          <div class="{{ section_name }}__details d-lg-none">
+            <h1 class="{{ section_name }}__title heading--2">{{ product_title }}</h1>
+            {% render 'price-variant', classes: 'product__price body-copy--regular', product: product, show_symbol: true %}
+            {% if product_type != blank %}<strong class="{{ section_name }}__type label--2">{{ product_type }}</strong>{% endif %}
+          </div>
+          {% render 'product-gallery', product: product %}
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="{{ section_name }}__details d-none d-lg-flex">
+            <h2 class="{{ section_name }}__title heading--2">{{ product_title }}</h2>
+            {% if product_type != blank %}<strong class="{{ section_name }}__type label--2">{{ product_type }}</strong>{% endif %}
+            {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
+            {% render 'price-variant', classes: 'product__price body-copy--regular', product: product,  show_symbol: true %}
+          </div>
+          {% render 'product-actions', classes: '', product: product %}
+          {% render 'product-info', product: product %}
+        </div>
+
+      </div>
+    {% render 'bs-container', state: 'closed' %}
+
+  {%- endform -%}
+</div>
+
+{% render 'dropdown-product' %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Product",
+  "tag": "section",
+  "class": "section section--product",
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+     "name": "Recommended Products",
+     "type": "recommended-products",
+     "limit": 1,
+     "settings": [
+        {
+          "label": "Heading",
+          "type": "richtext",
+          "id": "heading"
+        },
+        {
+          "label": "Heading Highlight",
+          "type": "select",
+          "options": [
+            { "value": "standard", "label": "Standard" },
+            { "value": "stroke", "label": "Stroke" },
+            { "value": "circle", "label": "Circle" }
+          ],
+          "default": "standard",
+          "id": "heading_highlight"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product - NEW"
+    }
+  ]
+}
 {% endschema %}
