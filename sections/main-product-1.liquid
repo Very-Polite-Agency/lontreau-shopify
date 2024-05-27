@@ -21,11 +21,8 @@
       <div class="row row--inner">
 
         <div class="col-12 col-lg-6">
-          <h1 class="{{ section_name }}__title heading--2">{{ product_title }}</h1>
-        </div>
-
-        <div class="col-12 col-lg-6">
           <div class="{{ section_name }}__details d-lg-none">
+            <h1 class="{{ section_name }}__title heading--2">{{ product_title }}</h1>
             {% render 'price-variant', classes: 'product__price body-copy--regular', product: product, show_symbol: true %}
             {% if product_type != blank %}<strong class="{{ section_name }}__type label--2">{{ product_type }}</strong>{% endif %}
           </div>
