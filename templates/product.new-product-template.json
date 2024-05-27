@@ -136,14 +136,14 @@
     "judgeme_section_review_widget_bce4": {
       "type": "apps",
       "blocks": {
-        "judgeme_review_widget_c393ae0f": {
+        "judge_me_reviews_review_widget_6ayTiK": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
       },
       "block_order": [
-        "judgeme_review_widget_c393ae0f"
+        "judge_me_reviews_review_widget_6ayTiK"
       ],
       "settings": {
         "include_margins": true
