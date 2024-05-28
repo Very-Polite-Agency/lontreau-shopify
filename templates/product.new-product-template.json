@@ -6,17 +6,18 @@
         "image_7wLUqA": {
           "type": "image",
           "settings": {
-            "icon-title": "Title Here",
-            "icon-subtitle": "Sub-Title",
-            "icon-description": "<p>description here<\/p>"
+            "icon-title": "Kakadu Plum Extract",
+            "icon-subtitle": "Fights Oxidative Stress",
+            "icon-description": "<ul><li><em>Fights oxidative stress<\/em><\/li><li><em>Reduces appearance of wrinkles and fine lines<\/em><\/li><li><em>Enhances radiance and luminosity<\/em><\/li><\/ul>",
+            "icon-image": "shopify:\/\/shop_images\/image_5.png"
           }
         },
         "image_n4gBJV": {
           "type": "image",
           "settings": {
-            "icon-title": "Title Here",
-            "icon-subtitle": "Sub-Title",
-            "icon-description": "<p>description here<\/p>"
+            "icon-title": "Knotgrass Extract",
+            "icon-subtitle": "Increases skin elasticity & firmness",
+            "icon-description": "<ul><li><em>Increases elasticity<\/em><\/li><li><em>Increases firmness<\/em><\/li><li><em>Decrease of wrinkles<\/em><\/li><\/ul>"
           }
         }
       },
