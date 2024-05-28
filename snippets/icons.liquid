@@ -1,0 +1,47 @@
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .column-img {
+      float: left;
+      width: 25%;
+      padding: 10px 90px 0px 90px;
+    }
+    .column-text {
+      float: left;
+      width: 75%;
+    }
+    .text {
+        font-style: italic;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    </style>
+
+    </head>
+    <body>
+
+    <div class="row">
+      <div class="column-img">
+        <img src="{{block.settings.icon-image}}" width="80px;" height="78px;">
+      </div>
+      <div class="column-text">
+        <h2 class="title">{{block.settings.icon-title}}</h2>
+        <h4 class="sub-title" style="margin-top: -20px;">{{block.settings.icon-subtitle}}/h4>
+        <p class="text">{{block.settings.icon-description}}</p>
+      </div>
+    </div>
