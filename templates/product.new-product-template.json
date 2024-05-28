@@ -2,6 +2,19 @@
   "sections": {
     "main": {
       "type": "main-product-1",
+      "blocks": {
+        "image_7wLUqA": {
+          "type": "image",
+          "settings": {
+            "icon-title": "Title Here",
+            "icon-subtitle": "Sub-Title",
+            "icon-description": "<p>description here<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_7wLUqA"
+      ],
       "custom_css": [
         "select.product-single__variants {width: 33%;}"
       ],
