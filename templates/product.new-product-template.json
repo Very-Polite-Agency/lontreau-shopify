@@ -10,10 +10,19 @@
             "icon-subtitle": "Sub-Title",
             "icon-description": "<p>description here<\/p>"
           }
+        },
+        "image_n4gBJV": {
+          "type": "image",
+          "settings": {
+            "icon-title": "Title Here",
+            "icon-subtitle": "Sub-Title",
+            "icon-description": "<p>description here<\/p>"
+          }
         }
       },
       "block_order": [
-        "image_7wLUqA"
+        "image_7wLUqA",
+        "image_n4gBJV"
       ],
       "custom_css": [
         "select.product-single__variants {width: 33%;}"
