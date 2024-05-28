@@ -1,5 +1,3 @@
-<!-- This liquid file is the final liquid for new block of Product Section -->
-
 <style>
     * {
       box-sizing: border-box;
@@ -18,6 +16,13 @@
     }
     .text {
         font-style: italic;
+    }
+    .icon-title {
+      font-size: 22px;
+    }
+
+    .icon-subtitle {
+      font-size: 15px;
     }
     
     /* Clear floats after the columns */
@@ -39,10 +44,10 @@
     <body>
 
     <div class="row">
-      <div class="column-img">
+      <div class="column-img column">
         <img src="{{block.settings.icon-image}}" width="80px;" height="78px;">
       </div>
-      <div class="column-text">
+      <div class="column-text column">
         <h2 class="icon-title">{{block.settings.icon-title}}</h2>
         <h4 class="icon-subtitle" style="margin-top: -5px;">{{block.settings.icon-subtitle}}</h4>
         <p class="icon-description"style="margin-top: 30px;">{{block.settings.icon-description}}</p>
