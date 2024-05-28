@@ -15,16 +15,16 @@
 {% render 'json-ld', article: product, type: 'product' %}
 
 <div class="{{ section_name }}" itemscope itemtype="http://schema.org/Product">
-  {%- for block in section.blocks -%}
   {%- form 'product', product, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
 
     {% render 'bs-container', state: 'open' %}
       <div class="row row--inner">
-
+        {%- for block in section.blocks -%}
         <div class="col-12 col-lg-6">
           <h2 class="{{ section_name }}__title heading--2">{{ product_title }}</h2>
           {% render 'product-info-left', product: product %}
         </div>
+        {%- endfor -%}
 
         <div class="col-12 col-lg-6">
           <div class="{{ section_name }}__details d-lg-none">
@@ -51,7 +51,6 @@
     {% render 'bs-container', state: 'closed' %}
 
   {%- endform -%}
-  {%- endfor -%}
 </div>
 
 {% render 'dropdown-product' %}
