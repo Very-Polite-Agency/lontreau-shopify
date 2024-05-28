@@ -19,12 +19,13 @@
 
     {% render 'bs-container', state: 'open' %}
       <div class="row row--inner">
-        {%- for block in section.blocks -%}
         <div class="col-12 col-lg-6">
           <h2 class="{{ section_name }}__title heading--2">{{ product_title }}</h2>
           {% render 'product-info-left', product: product %}
+          {%- for block in section.blocks -%}
+            {%- render icons -%}
+           {%- endfor -%}
         </div>
-        {%- endfor -%}
 
         <div class="col-12 col-lg-6">
           <div class="{{ section_name }}__details d-lg-none">
@@ -69,6 +70,10 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "name": "Icons",
+      "type": "image"
     },
     {
      "name": "Recommended Products",
