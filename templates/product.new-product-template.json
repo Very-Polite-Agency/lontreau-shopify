@@ -7,7 +7,6 @@
           "type": "image",
           "settings": {
             "icon-title": "Kakadu Plum Extract",
-            "icon-subtitle": "",
             "icon-description": "<p><em>Fights oxidative stress<\/em><\/p><p><em>Reduces appearance of wrinkles and fine lines<\/em><\/p><p><em>Enhances radiance and luminosity<\/em><\/p>",
             "icon-image": "shopify:\/\/shop_images\/image_5.png"
           }
@@ -16,15 +15,23 @@
           "type": "image",
           "settings": {
             "icon-title": "Knotgrass Extract",
-            "icon-subtitle": "",
             "icon-description": "<p><em>Increases elasticity<\/em><\/p><p><em>Increases firmness<\/em><\/p><p><em>Decrease of wrinkles<\/em><\/p>",
             "icon-image": "shopify:\/\/shop_images\/image_5.png"
+          }
+        },
+        "text_wWxP9t": {
+          "type": "text",
+          "settings": {
+            "icon-image-1": "shopify:\/\/shop_images\/Group_345.png",
+            "icon-image-2": "shopify:\/\/shop_images\/Group_346.png",
+            "icon-image-3": "shopify:\/\/shop_images\/Group_347.png"
           }
         }
       },
       "block_order": [
         "image_7wLUqA",
-        "image_n4gBJV"
+        "image_n4gBJV",
+        "text_wWxP9t"
       ],
       "custom_css": [
         "select.product-single__variants {width: 33%;}"
