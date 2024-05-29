@@ -1,0 +1,42 @@
+<!-- This liquid file is the final liquid for new block of Product Section -->
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .column-img {
+      float: left;
+      width: 33.33%;
+      padding: 10px 15px
+    }
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    </style>
+
+    </head>
+    <body>
+
+    <div class="row">
+      <div class="column-img column">
+        <img src="{{block.settings.icon-image-1 | img_url:'master' }}" width="158px;" height="16px;">
+      </div>
+      <div class="column-img column">
+        <img src="{{block.settings.icon-image-2 | img_url:'master' }}" width="158px;" height="16px;">
+      </div>
+      <div class="column-img column">
+        <img src="{{block.settings.icon-image-3 | img_url:'master' }}" width="158px;" height="16px;">
+      </div>
+    </div>
