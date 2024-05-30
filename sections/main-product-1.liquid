@@ -44,9 +44,12 @@
             {% render 'price-variant', classes: 'product__price body-copy--regular', product: product,  show_symbol: true %}
           </div>
           {% render 'product-actions', classes: '', product: product %}
-          {%- for block in section.blocks -%}
-            {%- include 'usps' -%}
-          {%- endfor -%}
+          
+           <div class="row-usps">
+              <div class="column-img-usps column-usps">
+                  <img src="{{block.settings.icon-image-1 | img_url:'master' }}" width="158px;" height="26px;">
+              </div>
+          </div>
           
           
         </div>
@@ -64,6 +67,34 @@
 
 {% javascript %}
 {% endjavascript %}
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .column-img-usps {
+      float: left;
+      width: 100%;
+      padding: 10px 15px
+    }
+    /* Clear floats after the columns */
+    .row-usps:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column-usps {
+        width: 100%;
+      }
+    }
+</style>
+
+
 
 {% schema %}
 {
