@@ -12,8 +12,6 @@
     {% if description != blank %}
       {% assign accordion_id = 'product-info-accordion--description' %}
       <div class="{{ snippet_name }}__info-item collapsible">
-        <div class="button--collapsible collapsible__trigger heading--4">
-        </div>
         <div class="collapsible__main collapse show" id="{{ accordion_id }}">
           <div class="collapsible__content body-copy--alt">{{ description }}</div>
         </div>
