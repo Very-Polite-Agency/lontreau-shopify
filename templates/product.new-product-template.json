@@ -18,11 +18,18 @@
             "icon-description": "<p><em>Increases elasticity<\/em><\/p><p><em>Increases firmness<\/em><\/p><p><em>Decrease of wrinkles<\/em><\/p>",
             "icon-image": "shopify:\/\/shop_images\/image_5.png"
           }
+        },
+        "text_7VAjkK": {
+          "type": "text",
+          "settings": {
+            "icon-image-1": "shopify:\/\/shop_images\/Group_141.png"
+          }
         }
       },
       "block_order": [
         "image_7wLUqA",
-        "image_n4gBJV"
+        "image_n4gBJV",
+        "text_7VAjkK"
       ],
       "custom_css": [
         "select.product-single__variants {width: 33%;}"
