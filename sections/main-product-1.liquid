@@ -45,7 +45,7 @@
           </div>
           {% render 'product-actions', classes: '', product: product %}
           {%- for block in section.blocks -%}
-            {%- render 'usps' -%}
+            {%- include 'usps' -%}
            {%- endfor -%}
           
           
