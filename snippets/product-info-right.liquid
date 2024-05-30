@@ -3,6 +3,7 @@
   {%- assign snippet_name = 'product' -%}
 
   {% assign description = product.description | default: '' %}
+  {% assign ingredients = product.metafields.info.benefits | default: '' %}
   {% assign ingredients = product.metafields.info.ingredients | default: '' %}
   {% assign standards = product.metafields.info.standards | default: '' %}
   {% assign usage = product.metafields.info.usage | default: '' %}
