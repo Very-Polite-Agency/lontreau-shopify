@@ -23,7 +23,7 @@
           <h2 class="{{ section_name }}__title heading--2">{{ product_title }}</h2>
           {% render 'product-info-left', product: product %}
           {%- for block in section.blocks -%}
-            {%- render 'icons' -%}
+            {%- include 'icons' -%}
            {%- endfor -%}
         </div>
 
@@ -45,7 +45,7 @@
           </div>
           {% render 'product-actions', classes: '', product: product %}
           {%- for block in section.blocks -%}
-            {%- render 'usps' -%}
+            {%- include 'usps' -%}
           {%- endfor -%}
           
           
