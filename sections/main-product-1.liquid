@@ -44,7 +44,9 @@
             {% render 'price-variant', classes: 'product__price body-copy--regular', product: product,  show_symbol: true %}
           </div>
           {% render 'product-actions', classes: '', product: product %}
-            {%- render 'usps' -%}
+          {%- for block in section.blocks -%}
+            {%- include 'usps' -%}
+           {%- endfor -%}
           
           
         </div>
