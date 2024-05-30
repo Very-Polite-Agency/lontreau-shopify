@@ -9,6 +9,22 @@
 
   <div class="{{ snippet_name }}__info">
 
+    {% if benefits != blank %}
+      {% assign accordion_id = 'product-info-accordion--benefits' %}
+      <div class="{{ snippet_name }}__info-item collapsible">
+        <button class="button--collapsible collapsible__trigger heading--4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ accordion_id }}" aria-expanded="false" aria-controls="{{ accordion_id }}">
+          <span class="button__title">Benefits</span>
+          <span class="button__icon">
+            <span class="button__icon-plus">{% render 'svg', type: 'icon.plus' %}</span>
+            <span class="button__icon-minus">{% render 'svg', type: 'icon.minus' %}</span>
+          </span>
+        </button>
+        <div class="collapsible__main collapse" id="{{ accordion_id }}">
+          <div class="collapsible__content body-copy--alt">{{ ingredients }}</div>
+        </div>
+      </div>
+    {% endif %}
+    
     {% if ingredients != blank %}
       {% assign accordion_id = 'product-info-accordion--ingredients' %}
       <div class="{{ snippet_name }}__info-item collapsible">
