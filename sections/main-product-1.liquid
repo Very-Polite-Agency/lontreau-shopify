@@ -39,12 +39,13 @@
           {%- endif %}
         </div>
         {% render 'product-gallery', product: product %}
-      </div id="mobile">
+      <div id="mobile">
       <h2 class="{{ section_name }}__title heading--2">{{ product_title }}</h2>
         {% render 'product-info-left', product: product %}
         {%- for block in section.blocks -%}
           {%- include 'icons' -%}
         {%- endfor -%}
+      </div>
       <div class="col-12 col-lg-6">
         {% render 'product-info-right', product: product %}
         <div>
