@@ -63,6 +63,7 @@
           %}
         </div>
         {% render 'product-actions', classes: '', product: product %}
+        /* Mobile Layout Part - start */
         <div class="mobile" id="mobile">
           <h2 class="{{ section_name }}__title heading--2">{{ product_title }}</h2>
           {% render 'product-info-left', product: product %}
@@ -71,6 +72,7 @@
           {%- endfor -%}
           {% render 'product-info-right', product: product %}
         </div>
+        /* Mobile Layout Part - end */
 
         <div class="row-usps">
           <div class="column-img-usps column-usps">
