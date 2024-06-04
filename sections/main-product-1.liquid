@@ -17,8 +17,8 @@
 <div class="{{ section_name }}" itemscope itemtype="http://schema.org/Product">
   {%- form 'product', product, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
     {% render 'bs-container', state: 'open' %}
-    <div class="row row--inner" id="desktop">
-      <div class="col-12 col-lg-6">
+    <div class="row row--inner">
+      <div class="col-12 col-lg-6" id="desktop">
         <h2 class="{{ section_name }}__title heading--2">{{ product_title }}</h2>
         {% render 'product-info-left', product: product %}
         {%- for block in section.blocks -%}
@@ -111,6 +111,12 @@
       width: 100%;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    #desktop {
+        display: none;
+    }
+}
 
 @media screen and (min-width: 601px) {
     #mobile {
