@@ -42,14 +42,6 @@
       </div>
 
       <div class="col-12 col-lg-6">
-        <div class="mobile" id="mobile">
-          <h2 class="{{ section_name }}__title heading--2">{{ product_title }}</h2>
-          {% render 'product-info-left', product: product %}
-          {%- for block in section.blocks -%}
-            {%- include 'icons' -%}
-          {%- endfor -%}
-        </div>
-
         {% render 'product-info-right', product: product %}
         <div class="{{ section_name }}__details d-none d-lg-flex">
           {% if product_type != blank -%}
@@ -68,6 +60,13 @@
           %}
         </div>
         {% render 'product-actions', classes: '', product: product %}
+        <div class="mobile" id="mobile">
+          <h2 class="{{ section_name }}__title heading--2">{{ product_title }}</h2>
+          {% render 'product-info-left', product: product %}
+          {%- for block in section.blocks -%}
+            {%- include 'icons' -%}
+          {%- endfor -%}
+        </div>
 
         <div class="row-usps">
           <div class="column-img-usps column-usps">
