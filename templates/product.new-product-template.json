@@ -25,7 +25,7 @@
         "image_n4gBJV"
       ],
       "custom_css": [
-        "select.product-single__variants {width: 33%;}"
+        "select.product-single__variants {width: 43%;}"
       ],
       "settings": {
         "icon-image-1": "shopify:\/\/shop_images\/Group_160_2.png"
