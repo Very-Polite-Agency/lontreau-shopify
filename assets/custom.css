@@ -975,4 +975,9 @@ display:none;
 
 /* desktop 3 column layout - end */
 
-
+  .collapsible__content.body-copy--alt {
+    font-family: "Self Modern", serif!important;
+    font-size: 15px!important;
+    text-transform: none;
+    line-height: 1.5rem!important;
+  }
